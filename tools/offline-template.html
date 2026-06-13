@@ -810,7 +810,7 @@ function renderNumGrid(containerId, data){
   data.forEach(item=>{
     const d=document.createElement('div');
     d.className='num-card';
-    d.innerHTML=`<div class="num-big">${item.n}</div><div class="num-de">${item.de}</div><div class="num-py">${item.py}</div><button class="speak-btn" type="button" title="朗读" style="margin-top:6px">🔊</button>`;
+    d.innerHTML=`<div class="num-big">${item.n}</div><div class="num-de" lang="de">${item.de}</div><div class="num-py">${item.py}</div><button class="speak-btn" type="button" title="朗读" aria-label="朗读 ${item.de}" style="margin-top:6px">🔊</button>`;
     d.querySelector('.speak-btn').addEventListener('click',(e)=>{e.stopPropagation();speakDE(item.de,e.currentTarget);});
     g.appendChild(d);
   });
@@ -1018,7 +1018,7 @@ function makeCard(p,id){
   const d=document.createElement('div');
   d.className='card'+(flippedCards[id]?' flipped':'');
   d.id='card-'+id;
-  d.innerHTML=`<div class="card-de-row"><button class="speak-btn" type="button" title="朗读">🔊</button><div class="card-de">${p.de}</div></div><div class="card-zh">${p.zh}</div><div class="card-py"><span class="py-label">谐音</span><span class="py-text">${p.py}</span></div>`;
+  d.innerHTML=`<div class="card-de-row"><button class="speak-btn" type="button" title="朗读" aria-label="朗读 ${p.de}">🔊</button><div class="card-de" lang="de">${p.de}</div></div><div class="card-zh">${p.zh}</div><div class="card-py"><span class="py-label">谐音</span><span class="py-text">${p.py}</span></div>`;
   const sb=d.querySelector('.speak-btn');
   sb.addEventListener('click',(e)=>{e.stopPropagation();speakDE(p.de,sb);});
   d.addEventListener('click',()=>{
@@ -1219,10 +1219,10 @@ function renderReadings(){
     const body=r.paras.map(p=>`<div style="margin-bottom:10px"><div style="font-size:15px;color:var(--text);line-height:1.6">${p[0]}</div><div style="font-size:13px;color:var(--text-dim);margin-top:2px">${p[1]}</div></div>`).join('');
     return `<div class="card" style="cursor:default;margin-bottom:14px">
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
-        <span style="font-size:17px;font-weight:600;color:#46a302">${r.title}</span>
+        <span style="font-size:17px;font-weight:600;color:#46a302" lang="de">${r.title}</span>
         <span class="level-badge ${READ_LB[r.level]}">${READ_LN[r.level]}</span>
         <span style="font-size:13px;color:var(--text-dim)">${r.zh}</span>
-        <button class="speak-btn" type="button" title="朗读全文" style="margin-left:auto" onclick='speakReading(this,${JSON.stringify(full)})'>🔊</button>
+        <button class="speak-btn" type="button" title="朗读全文" aria-label="朗读全文：${r.title}" style="margin-left:auto" onclick='speakReading(this,${JSON.stringify(full)})'>🔊</button>
       </div>${body}</div>`;
   }).join('');
 }
