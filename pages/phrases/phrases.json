@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "词句大全",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "sec-title": "/components/sec-title/sec-title",
+    "phrase-card": "/components/phrase-card/phrase-card"
+  }
+}

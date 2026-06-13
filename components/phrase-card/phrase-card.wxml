@@ -1,0 +1,11 @@
+<view class="phrase-card {{_flipped ? 'phrase-card--active' : ''}}" bindtap="onTap">
+  <view class="phrase-card__fav" catchtap="onFavTap">
+    <text class="phrase-card__fav-icon {{_isFav ? 'phrase-card__fav-icon--on' : ''}}">{{_isFav ? '★' : '☆'}}</text>
+  </view>
+  <text class="phrase-de">{{de}}</text>
+  <text class="phrase-zh">{{zh}}</text>
+  <view wx:if="{{_flipped && py}}" class="phrase-py-row">
+    <text class="phrase-py-label">谐音</text>
+    <text class="phrase-py">{{py}}</text>
+  </view>
+</view>

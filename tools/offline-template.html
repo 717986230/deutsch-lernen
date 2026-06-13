@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>德语学习手册 · 发音·语法·3000词句</title>
+<style>
+:root {
+  --gold: #58cc02;
+  --gold-dim: #58cc0266;
+  --gold-faint: #58cc0222;
+  --bg: #f7f9fc;
+  --bg2: #ffffff;
+  --bg3: #ffffff;
+  --text: #3c3c3c;
+  --text-dim: #777777;
+  --text-faint: #afafaf;
+  --red: #ff4b4b;
+  --green: #58cc02;
+  --blue: #1cb0f6;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Georgia',serif;min-height:100vh;overflow-x:hidden}
+/* NAV */
+#nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,0.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--gold-faint);display:flex;align-items:center;gap:0;overflow-x:auto;scrollbar-width:none;padding:0 8px}
+.nav-btn{flex-shrink:0;padding:14px 16px;font-size:12px;letter-spacing:1px;color:var(--text-dim);background:none;border:none;cursor:pointer;border-bottom:2px solid transparent;transition:all .2s;white-space:nowrap;font-family:inherit}
+.nav-btn.active{color:var(--gold);border-bottom-color:var(--gold)}
+.nav-btn:hover{color:var(--text)}
+/* SECTIONS */
+.section{display:none;padding:70px 0 40px}
+.section.active{display:block}
+.container{max-width:900px;margin:0 auto;padding:0 16px}
+/* HERO */
+.hero{text-align:center;padding:40px 16px 32px;background:linear-gradient(180deg,rgba(88,204,2,.08) 0%,transparent 100%)}
+.hero-label{font-size:11px;letter-spacing:6px;color:var(--gold);text-transform:uppercase;margin-bottom:12px}
+.hero h1{font-size:clamp(24px,5vw,42px);font-weight:400;letter-spacing:2px;color:var(--text);margin-bottom:8px}
+.hero p{font-size:14px;color:var(--text-dim);line-height:1.6}
+/* CARDS */
+.card{background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:12px;padding:16px;margin-bottom:10px;transition:all .2s;cursor:pointer}
+.card:hover{background:rgba(88,204,2,.06);border-color:var(--gold-dim)}
+.card.flipped{background:rgba(88,204,2,.1);border-color:var(--gold-dim)}
+.card-de{font-size:16px;color:var(--text);font-style:italic}
+.card-de-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.speak-btn{flex-shrink:0;width:30px;height:30px;border:none;border-radius:50%;background:rgba(88,204,2,.14);color:#46a302;font-size:15px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;line-height:1;padding:0}
+.speak-btn:active{transform:scale(.88)}
+.speak-btn.speaking{background:#58cc02;color:#fff;animation:pulse .7s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(88,204,2,.4)}50%{box-shadow:0 0 0 6px rgba(88,204,2,0)}}
+.card.speaking-now{border-color:#58cc02;background:rgba(88,204,2,.08);box-shadow:0 0 0 2px rgba(88,204,2,.45),0 4px 16px rgba(88,204,2,.2)}
+.btn.playing{background:#ff4b4b;border-bottom-color:#c13a3a}
+.spk-panel{display:flex;align-items:center;gap:18px;flex-wrap:wrap;background:#fff;border:1px solid var(--line,#e8eaed);border-radius:12px;padding:8px 14px;margin:0 0 10px;font-size:13px;color:#777}
+.spk-panel label{display:flex;align-items:center;gap:6px;white-space:nowrap}
+.spk-panel input[type=range]{width:110px;accent-color:#58cc02}
+.spk-panel input[type=checkbox]{accent-color:#58cc02;width:15px;height:15px}
+.spk-panel select{border:1px solid #e8eaed;border-radius:8px;padding:2px 6px;color:#46a302;font-family:inherit}
+#spkRateV{color:#46a302;font-weight:600;min-width:32px}
+.card-zh{font-size:14px;color:#777777;margin-bottom:0}
+.card-py{display:none;margin-top:10px;padding-top:10px;border-top:1px solid var(--gold-faint)}
+.card.flipped .card-py{display:flex;align-items:center;gap:8px}
+.py-label{font-size:11px;color:var(--gold-dim);letter-spacing:1px}
+.py-text{font-size:13px;color:var(--gold);background:rgba(88,204,2,.12);padding:2px 12px;border-radius:20px}
+to{opacity:1}}
+/* GRID */
+.phrase-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+/* SECTION TITLE */
+.sec-title{display:flex;align-items:center;gap:10px;margin:28px 0 14px;padding-bottom:10px;border-bottom:1px solid var(--gold-faint)}
+.sec-title-icon{font-size:20px}
+.sec-title-text{font-size:15px;color:var(--gold);letter-spacing:1px}
+.sec-title-count{font-size:11px;color:var(--gold-dim);margin-left:auto}
+/* SEARCH */
+.search-wrap{position:relative;max-width:440px;margin:20px auto}
+.search-wrap input{width:100%;padding:12px 44px 12px 18px;border-radius:30px;border:1px solid var(--gold-dim);background:rgba(88,204,2,.06);color:var(--text);font-size:14px;outline:none;font-family:inherit}
+.search-wrap input::placeholder{color:var(--text-faint)}
+.search-icon{position:absolute;right:16px;top:50%;transform:translateY(-50%);opacity:.4;font-size:16px}
+/* CAT TABS */
+.cat-tabs{display:flex;gap:8px;overflow-x:auto;padding:12px 0 8px;scrollbar-width:none}
+.cat-tab{flex-shrink:0;padding:6px 14px;border-radius:20px;border:1px solid var(--gold-faint);background:transparent;color:#777777;cursor:pointer;font-size:12px;font-family:inherit;white-space:nowrap;transition:all .2s}
+.cat-tab.active{border-color:var(--gold);background:rgba(88,204,2,.15);color:var(--gold)}
+/* LEVEL SYSTEM */
+.level-tabs{display:flex;gap:8px;overflow-x:auto;padding:4px 0 12px;margin-bottom:4px;-webkit-overflow-scrolling:touch}
+.level-tab{flex-shrink:0;padding:8px 16px;border-radius:22px;border:1px solid var(--gold-faint);background:transparent;color:#777777;cursor:pointer;font-size:13px;font-weight:500;font-family:inherit;white-space:nowrap;transition:all .2s}
+.level-tab.active{border-color:var(--gold);background:rgba(88,204,2,.18);color:var(--gold)}
+.level-info{display:none;border-left:3px solid var(--gold);background:rgba(0,0,0,.03);padding:10px 14px;border-radius:0 8px 8px 0;margin:0 0 14px;font-size:13px;line-height:1.6;color:var(--text-dim)}
+.level-badge{display:inline-block;margin-left:6px;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:600;vertical-align:middle}
+.lb-0{background:rgba(88,204,2,.18);color:#58cc02}
+.lb-a1{background:rgba(28,176,246,.18);color:#1cb0f6}
+.lb-a2{background:rgba(88,204,2,.18);color:var(--gold)}
+.lb-b1{background:rgba(255,122,77,.18);color:#ff7a4d}
+.lb-b2{background:rgba(255,75,75,.18);color:#ff4b4b}
+.lb-c1{background:rgba(168,85,247,.18);color:#a855f7}
+.lb-c2{background:rgba(99,102,241,.2);color:#6366f1}
+/* LEVEL CARDS on home */
+.level-card{position:relative;overflow:hidden;cursor:pointer;border-radius:14px;padding:18px 18px 16px;border:1px solid var(--gold-faint);background:linear-gradient(135deg,rgba(0,0,0,.04),rgba(0,0,0,.01));transition:all .25s}
+.level-card:hover{transform:translateY(-3px);border-color:var(--gold);box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.level-card .lc-stage{font-size:12px;font-weight:600;letter-spacing:.5px;margin-bottom:6px}
+.level-card .lc-title{font-size:17px;color:var(--text);margin-bottom:8px;font-weight:600}
+.level-card .lc-desc{font-size:12px;color:var(--text-dim);line-height:1.6}
+.level-card .lc-arrow{position:absolute;right:16px;bottom:14px;font-size:18px;color:var(--gold);opacity:.6}
+/* NUMBER SECTION */
+.num-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-bottom:20px}
+.num-card{background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:14px;text-align:center;cursor:pointer;transition:all .2s}
+.num-card:hover{border-color:var(--gold-dim);background:rgba(88,204,2,.07)}
+.num-card.active{border-color:var(--gold);background:rgba(88,204,2,.15)}
+.num-big{font-size:28px;font-weight:700;color:var(--gold);margin-bottom:4px}
+.num-de{font-size:14px;color:var(--text);font-style:italic;margin-bottom:3px}
+.num-py{font-size:12px;color:var(--text-dim)}
+/* RULES BOX */
+.rule-box{background:rgba(88,204,2,.05);border:1px solid var(--gold-faint);border-radius:12px;padding:20px;margin-bottom:16px}
+.rule-box h3{font-size:14px;color:var(--gold);margin-bottom:12px;letter-spacing:1px}
+.rule-row{display:flex;gap:12px;margin-bottom:8px;align-items:baseline;flex-wrap:wrap}
+.rule-num{font-size:22px;font-weight:700;color:var(--gold);width:48px;flex-shrink:0}
+.rule-de{font-size:14px;color:var(--text);font-style:italic;flex:1;min-width:100px}
+.rule-zh{font-size:13px;color:var(--text-dim);width:40px}
+.rule-py{font-size:12px;color:#58cc0288;flex:1;min-width:80px}
+/* QUIZ */
+.quiz-box{background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.08);border-radius:16px;padding:28px;text-align:center;max-width:520px;margin:0 auto}
+.quiz-q{font-size:32px;color:var(--gold);font-weight:700;margin-bottom:8px}
+.quiz-hint{font-size:13px;color:var(--text-dim);margin-bottom:24px}
+.quiz-opts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px}
+.quiz-opt{padding:12px;border-radius:10px;border:1px solid rgba(0,0,0,.1);background:transparent;color:var(--text);font-size:15px;cursor:pointer;font-family:inherit;transition:all .2s}
+.quiz-opt:hover{border-color:var(--gold-dim);background:rgba(88,204,2,.08)}
+.quiz-opt.correct{border-color:var(--green);background:rgba(88,204,2,.15);color:var(--green)}
+.quiz-opt.wrong{border-color:var(--red);background:rgba(255,75,75,.12);color:var(--red)}
+.quiz-score{font-size:13px;color:var(--text-dim);margin-bottom:16px}
+.btn{padding:10px 24px;border-radius:24px;border:1px solid var(--gold-dim);background:rgba(88,204,2,.12);color:var(--gold);font-size:13px;cursor:pointer;font-family:inherit;letter-spacing:.5px;transition:all .2s}
+.btn:hover{background:rgba(88,204,2,.22)}
+/* PRONUNCIATION */
+.pron-table{width:100%;border-collapse:collapse;margin-bottom:20px}
+.pron-table th{text-align:left;padding:8px 12px;font-size:11px;letter-spacing:2px;color:var(--gold);border-bottom:1px solid var(--gold-faint);font-weight:400}
+.pron-table td{padding:10px 12px;border-bottom:1px solid rgba(0,0,0,.04);font-size:13px;vertical-align:top}
+.pron-table tr:hover td{background:rgba(88,204,2,.04)}
+.pron-letter{font-size:16px;color:var(--text);font-style:italic;font-weight:600}
+.pron-sound{color:var(--gold)}
+.pron-example{color:var(--text-dim)}
+.pron-zh{color:#777777}
+/* TIPS */
+.tip-card{background:rgba(0,0,0,.03);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;padding:14px 16px;margin-bottom:12px}
+.tip-title{font-size:13px;color:var(--gold);margin-bottom:6px;letter-spacing:.5px}
+.tip-body{font-size:13px;color:var(--text-dim);line-height:1.7}
+.tip-body b{color:var(--text)}
+/* PROGRESS */
+.progress-bar{height:4px;background:rgba(0,0,0,.08);border-radius:2px;margin:16px 0}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--gold),#7ed957);border-radius:2px;transition:width .4s}
+/* BADGE */
+.badge{display:inline-block;padding:2px 10px;border-radius:12px;font-size:11px;background:rgba(88,204,2,.12);color:var(--gold);margin-left:8px;vertical-align:middle}
+/* HIGHLIGHT */
+.hl-red{color:#ff4b4b}
+.hl-blue{color:#1cb0f6}
+.hl-gold{color:var(--gold)}
+.hl-green{color:#58cc02}
+/* RESULT */
+.result-box{padding:20px;border-radius:12px;margin-top:16px;text-align:center}
+.result-box.good{background:rgba(88,204,2,.1);border:1px solid rgba(88,204,2,.3)}
+.result-box.ok{background:rgba(88,204,2,.1);border:1px solid var(--gold-faint)}
+.result-box.bad{background:rgba(255,75,75,.1);border:1px solid rgba(255,75,75,.3)}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <button class="nav-btn active" onclick="showSection('home')">🏠 首页</button>
+  <button class="nav-btn" onclick="showSection('pronunciation')">🔤 发音规律</button>
+  <button class="nav-btn" onclick="showSection('numbers')">🔢 数字规律</button>
+  <button class="nav-btn" onclick="showSection('grammar')">📐 语法速记</button>
+  <button class="nav-btn" onclick="showSection('phrases')">💬 词句大全</button>
+  <button class="nav-btn" onclick="showSection('reading')">📖 阅读短文</button>
+  <button class="nav-btn" onclick="showSection('quiz')">🎯 练习测验</button>
+</nav>
+
+<!-- ══════════════ HOME ══════════════ -->
+<div id="home" class="section active">
+  <div class="hero">
+    <div class="hero-label">Deutsche Sprache · 德语学习</div>
+    <h1>德语学习手册</h1>
+    <p>发音 · 数字 · 语法 · 3100+ 词句 · 5阶段进阶 · 互动测验</p>
+  </div>
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:24px">
+      <div class="card" onclick="showSection('pronunciation')" style="text-align:center;padding:24px 16px">
+        <div style="font-size:32px;margin-bottom:10px">🔤</div>
+        <div style="font-size:15px;color:var(--gold);margin-bottom:6px">发音规律</div>
+        <div style="font-size:12px;color:var(--text-dim)">字母发音·变音·组合音</div>
+      </div>
+      <div class="card" onclick="showSection('numbers')" style="text-align:center;padding:24px 16px">
+        <div style="font-size:32px;margin-bottom:10px">🔢</div>
+        <div style="font-size:15px;color:var(--gold);margin-bottom:6px">数字规律</div>
+        <div style="font-size:12px;color:var(--text-dim)">0-100万·规律·测验</div>
+      </div>
+      <div class="card" onclick="showSection('grammar')" style="text-align:center;padding:24px 16px">
+        <div style="font-size:32px;margin-bottom:10px">📐</div>
+        <div style="font-size:15px;color:var(--gold);margin-bottom:6px">语法速记</div>
+        <div style="font-size:12px;color:var(--text-dim)">冠词·动词变位·格</div>
+      </div>
+      <div class="card" onclick="showSection('phrases')" style="text-align:center;padding:24px 16px">
+        <div style="font-size:32px;margin-bottom:10px">💬</div>
+        <div style="font-size:15px;color:var(--gold);margin-bottom:6px">词句大全</div>
+        <div style="font-size:12px;color:var(--text-dim)">93分类·含谐音</div>
+      </div>
+      <div class="card" onclick="showSection('quiz')" style="text-align:center;padding:24px 16px">
+        <div style="font-size:32px;margin-bottom:10px">🎯</div>
+        <div style="font-size:15px;color:var(--gold);margin-bottom:6px">练习测验</div>
+        <div style="font-size:12px;color:var(--text-dim)">数字·单词·句子</div>
+      </div>
+    </div>
+
+    <div class="sec-title" style="margin-top:36px"><span class="sec-title-icon">🎯</span><span class="sec-title-text">按阶段学习 · 点击进入</span></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-bottom:8px">
+      <div class="level-card" onclick="goLevel('0')">
+        <div class="lc-stage" style="color:#58cc02">🌱 零基础 · 第1天</div>
+        <div class="lc-title">打招呼就能开口</div>
+        <div class="lc-desc">问候、道别、礼貌用语<br>140个词句 · 7个分类</div>
+        <div class="lc-arrow">→</div>
+      </div>
+      <div class="level-card" onclick="goLevel('a1')">
+        <div class="lc-stage" style="color:#1cb0f6">⭐ A1 初级 · 第1-2周</div>
+        <div class="lc-title">简单日常交流</div>
+        <div class="lc-desc">自我介绍、时间、天气、家庭、高频词<br>1138个词句 · 21个分类</div>
+        <div class="lc-arrow">→</div>
+      </div>
+      <div class="level-card" onclick="goLevel('a2')">
+        <div class="lc-stage" style="color:var(--gold)">⭐⭐ A2 基础 · 第1-2月</div>
+        <div class="lc-title">熟悉场景顺畅沟通</div>
+        <div class="lc-desc">购物、餐厅、交通、旅行、菜单<br>1053个词句 · 24个分类</div>
+        <div class="lc-arrow">→</div>
+      </div>
+      <div class="level-card" onclick="goLevel('b1')">
+        <div class="lc-stage" style="color:#ff7a4d">🔥 B1 中级 · 第3-6月</div>
+        <div class="lc-title">理解生活主要内容</div>
+        <div class="lc-desc">医疗、银行、情感、语法、俗语<br>622个词句 · 13个分类</div>
+        <div class="lc-arrow">→</div>
+      </div>
+      <div class="level-card" onclick="goLevel('b2')">
+        <div class="lc-stage" style="color:#ff4b4b">💎 B2 中高级 · 第6月+</div>
+        <div class="lc-title">接近流利交流</div>
+        <div class="lc-desc">政府、科技、经济、历史、学术<br>161个词句 · 6个分类</div>
+        <div class="lc-arrow">→</div>
+      </div>
+    </div>
+
+    <div class="sec-title" style="margin-top:36px"><span class="sec-title-icon">⚡</span><span class="sec-title-text">学习路线建议</span></div>
+    <div class="tip-card"><div class="tip-title">第一步：掌握发音（1-2天）</div><div class="tip-body">德语发音<b>规则极强</b>，几乎完全按拼写读音。先学26个字母+变音字母（ä ö ü），再学常见组合音（ei/ie/ch/sch/sp/st）。</div></div>
+    <div class="tip-card"><div class="tip-title">第二步：记住数字（1天）</div><div class="tip-body">数字有<b>清晰规律</b>：1-12单独记，13-19用"数字+zehn"，20-90用"tens+zig"，21-99是<b>个位+und+十位</b>（倒序！）。</div></div>
+    <div class="tip-card"><div class="tip-title">第三步：学语法框架（3-5天）</div><div class="tip-body">德语有<b>三种冠词性别</b>（der/die/das）和四个格。先记"万能公式"，每天练5个句型。</div></div>
+    <div class="tip-card"><div class="tip-title">第四步：日常对话与词汇（持续）</div><div class="tip-body">按需学习近3000个词句，每天选一个场景（如购物/餐厅），把10-15句练熟。<b>开口说比默记更重要！</b></div></div>
+
+    <div class="sec-title" style="margin-top:36px"><span class="sec-title-icon">🇨🇳</span><span class="sec-title-text">中国人学德语 · 最优方法与规律</span></div>
+    <div class="tip-card"><div class="tip-title">① 发音先行，规则极强</div><div class="tip-body">德语<b>"所见即所读"</b>，1-2天拿下字母表+变音(ä ö ü)+组合音(ei/ie/ch/sch)，看词就能拼读。<b>谐音只是拐杖，尽早换成模仿真人发音。</b></div></div>
+    <div class="tip-card"><div class="tip-title">② 名词永远连冠词一起背</div><div class="tip-body">der/die/das 决定格与词尾。背单词=<b>冠词+名词+复数</b>三件套。规律：-ung/-heit/-ion→die；-er/-ling/-ismus→der；-chen/-lein/-um→das。</div></div>
+    <div class="tip-card"><div class="tip-title">③ 借英语同源词滚雪球</div><div class="tip-body">德英同源词极多：Haus/house、Wasser/water、Buch/book、gut/good、trinken/drink、Hand/hand。<b>有英语底子可快速白嫖上千词。</b></div></div>
+    <div class="tip-card"><div class="tip-title">④ 死磕高频词，别啃生僻</div><div class="tip-body">约 <b>600-800 高频词覆盖日常 80%</b>。先把 Goethe A1/A2 核心词吃透（本手册已收录），扩词比求全更重要。</div></div>
+    <div class="tip-card"><div class="tip-title">⑤ 抓动词框架这根骨架</div><div class="tip-body">陈述句<b>动词永远第二位</b>，可分动词前缀甩句尾，从句动词到句末。记牢 sein/haben/können/möchten + 万能句型，半数日常句就能拼。</div></div>
+    <div class="tip-card"><div class="tip-title">⑥ 四个格先攻"第一格+第四格"</div><div class="tip-body">日常主要用主格和宾语(第四格)，二三格后补。<b>别被"4格×3性"吓住，先够用再求全。</b></div></div>
+    <div class="tip-card"><div class="tip-title">⑦ 数字记规律不硬背</div><div class="tip-body">1-12硬记，13-19=数字+zehn，整十=词根+zig，<b>21-99是个位+und+十位（倒序！）</b></div></div>
+    <div class="tip-card"><div class="tip-title">⑧ 场景化 + 每天开口跟读</div><div class="tip-body">按场景成块学（问候/点餐/问路），<b>影子跟读(Shadowing)模仿语调</b>。开口比默记有效10倍。</div></div>
+    <div class="tip-card"><div class="tip-title">⑨ 间隔重复，少量多次</div><div class="tip-body">按遗忘曲线复习，<b>每天15-20分钟，胜过周末突击3小时。</b></div></div>
+    <div class="tip-card"><div class="tip-title">⑩ 磨耳朵：先熟语流再听懂</div><div class="tip-body">听德语慢速新闻(langsam gesprochene Nachrichten / DW)、儿歌、播客。<b>先求"听惯节奏"，别一开始追求字字听懂。</b></div></div>
+  </div>
+</div>
+
+<!-- ══════════════ PRONUNCIATION ══════════════ -->
+<div id="pronunciation" class="section">
+  <div class="container">
+    <div class="hero-label" style="text-align:center;padding-top:20px">Aussprache</div>
+    <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 24px;color:var(--text)">德语发音规律</h2>
+
+    <div class="sec-title"><span class="sec-title-icon">🔡</span><span class="sec-title-text">26个字母完整发音表</span></div>
+    <div style="margin-bottom:10px;font-size:12px;color:var(--text-dim)">💡 括号内为该字母的<b style="color:var(--gold)">名称读音</b>，发音栏说明该字母在单词中的<b style="color:var(--gold)">实际发音</b></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:8px;margin-bottom:20px">
+
+      <!-- A -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">A a</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>啊</b>（ah）</div>
+        <div style="font-size:11px;color:var(--text-dim)">发音：长/短"啊"<br>Alt=啊尔特，ja=雅</div>
+      </div>
+
+      <!-- B -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">B b</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>贝</b>（beh）</div>
+        <div style="font-size:11px;color:var(--text-dim)">发音："b"<br>词尾变清音"p"<br>Brot=布罗特</div>
+      </div>
+
+      <!-- C -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">C c</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>采</b>（tseh）</div>
+        <div style="font-size:11px;color:var(--text-dim)">e/i前→"ts采"<br>其他→"k卡"<br>Café=卡菲</div>
+      </div>
+
+      <!-- D -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">D d</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>德</b>（deh）</div>
+        <div style="font-size:11px;color:var(--text-dim)">发音："d"<br>词尾变清音"t"<br>Danke=当克</div>
+      </div>
+
+      <!-- E -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">E e</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>诶</b>（eh）</div>
+        <div style="font-size:11px;color:var(--text-dim)">重读→"诶"<br>词尾轻读→"厄"<br>es=埃斯</div>
+      </div>
+
+      <!-- F -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">F f</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>艾夫</b>（ef）</div>
+        <div style="font-size:11px;color:var(--text-dim)">发音："f夫"<br>Frau=弗劳</div>
+      </div>
+
+      <!-- G -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">G g</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>格</b>（geh）</div>
+        <div style="font-size:11px;color:var(--text-dim)">发音："g格"<br>词尾变"k克"<br>gut=古特</div>
+      </div>
+
+      <!-- H -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">H h</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>哈</b>（hah）</div>
+        <div style="font-size:11px;color:var(--text-dim)">词首发"h哈"<br>母音后不发音<br>Hallo=哈洛</div>
+      </div>
+
+      <!-- I -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">I i</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>伊</b>（ih）</div>
+        <div style="font-size:11px;color:var(--text-dim)">短"i伊"或长"i依"<br>ich=伊希<br>ie→长"依"</div>
+      </div>
+
+      <!-- J -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">J j</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>约特</b>（yot）</div>
+        <div style="font-size:11px;color:var(--text-dim)">⚠️ 发"y雅"音！<br>不是英语"j"<br>ja=雅，Jahr=雅尔</div>
+      </div>
+
+      <!-- K -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">K k</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>卡</b>（kah）</div>
+        <div style="font-size:11px;color:var(--text-dim)">发音："k卡"<br>Kaffee=卡菲<br>kalt=卡尔特</div>
+      </div>
+
+      <!-- L -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">L l</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>艾尔</b>（el）</div>
+        <div style="font-size:11px;color:var(--text-dim)">发音："l勒"（清晰）<br>lieben=里本<br>laut=劳特</div>
+      </div>
+
+      <!-- M -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">M m</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>艾姆</b>（em）</div>
+        <div style="font-size:11px;color:var(--text-dim)">发音："m妈"<br>Morgen=摩根<br>Milch=米尔希</div>
+      </div>
+
+      <!-- N -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">N n</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>艾恩</b>（en）</div>
+        <div style="font-size:11px;color:var(--text-dim)">发音："n嫩"<br>nein=奈因<br>Nacht=纳赫特</div>
+      </div>
+
+      <!-- O -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">O o</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>哦</b>（oh）</div>
+        <div style="font-size:11px;color:var(--text-dim)">长/短"哦"<br>oder=哦德尔<br>oben=哦本</div>
+      </div>
+
+      <!-- P -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">P p</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>配</b>（peh）</div>
+        <div style="font-size:11px;color:var(--text-dim)">发音："p配"<br>Pause=葩乌泽<br>Post=波斯特</div>
+      </div>
+
+      <!-- Q -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">Q q</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>库</b>（kuh）</div>
+        <div style="font-size:11px;color:var(--text-dim)">⚠️ qu→"kv夸"<br>不是"kw"<br>Qualität=克瓦利泰特</div>
+      </div>
+
+      <!-- R -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">R r</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>艾尔</b>（er）</div>
+        <div style="font-size:11px;color:var(--text-dim)">⚠️ 喉部颤音<br>词尾→弱化"厄"<br>rot=罗特</div>
+      </div>
+
+      <!-- S -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">S s</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>艾斯</b>（es）</div>
+        <div style="font-size:11px;color:var(--text-dim)">母音间→"z兹"<br>其余→"s斯"<br>See=泽，das=达斯</div>
+      </div>
+
+      <!-- T -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">T t</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>特</b>（teh）</div>
+        <div style="font-size:11px;color:var(--text-dim)">发音："t特"<br>Tag=塔克<br>Tisch=提什</div>
+      </div>
+
+      <!-- U -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">U u</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>乌</b>（uh）</div>
+        <div style="font-size:11px;color:var(--text-dim)">长/短"乌"<br>und=温特<br>Uhr=乌尔</div>
+      </div>
+
+      <!-- V -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">V v</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>法乌</b>（fau）</div>
+        <div style="font-size:11px;color:var(--text-dim)">⚠️ 发"f夫"音！<br>外来词发"v"<br>Vater=法特尔</div>
+      </div>
+
+      <!-- W -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">W w</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>韦</b>（veh）</div>
+        <div style="font-size:11px;color:var(--text-dim)">⚠️ 发"v"音！<br>不是英语"w"<br>Wasser=瓦瑟</div>
+      </div>
+
+      <!-- X -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">X x</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>伊克斯</b>（iks）</div>
+        <div style="font-size:11px;color:var(--text-dim)">发"ks"音<br>Taxi=塔克西<br>（主要在外来词）</div>
+      </div>
+
+      <!-- Y -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">Y y</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>于普西龙</b>（Ypsilon）</div>
+        <div style="font-size:11px;color:var(--text-dim)">德语词→"ü于"<br>外来词→"i伊/j雅"<br>（主要外来词）</div>
+      </div>
+
+      <!-- Z -->
+      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">Z z</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>采特</b>（tset）</div>
+        <div style="font-size:11px;color:var(--text-dim)">⚠️ 发"ts茨"！<br>不是英语"z"<br>Zeit=采特，zu=楚</div>
+      </div>
+
+      <!-- Ä -->
+      <div style="background:rgba(88,204,2,.08);border:1px solid var(--gold-faint);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">Ä ä</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>埃</b>（ä）</div>
+        <div style="font-size:11px;color:var(--text-dim)">发"ä诶"（类似"诶"）<br>Mädchen=梅特兴<br>Äpfel=埃普费尔</div>
+      </div>
+
+      <!-- Ö -->
+      <div style="background:rgba(88,204,2,.08);border:1px solid var(--gold-faint);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">Ö ö</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>欧</b>（ö）</div>
+        <div style="font-size:11px;color:var(--text-dim)">⚠️ 圆唇发"诶"<br>嘴形成"o"说"e"<br>schön=舍恩</div>
+      </div>
+
+      <!-- Ü -->
+      <div style="background:rgba(88,204,2,.08);border:1px solid var(--gold-faint);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">Ü ü</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>于</b>（ü）</div>
+        <div style="font-size:11px;color:var(--text-dim)">⚠️ 圆唇发"衣"<br>嘴形成"u"说"i"<br>grün=格吕恩</div>
+      </div>
+
+      <!-- ß -->
+      <div style="background:rgba(88,204,2,.08);border:1px solid var(--gold-faint);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">ß</div>
+        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>艾斯采特</b>（Eszett）</div>
+        <div style="font-size:11px;color:var(--text-dim)">等于双ss"斯"<br>长元音/双元音后用<br>Straße=施特拉瑟</div>
+      </div>
+
+    </div>
+
+    <div class="tip-card" style="border-left-color:#ff4b4b">
+      <div class="tip-title" style="color:#ff4b4b">⚠️ 最易出错的6个字母</div>
+      <div class="tip-body">
+        <b>J</b> → 发"y"音 ✦ ja＝雅，不是"贾"<br>
+        <b>V</b> → 发"f"音 ✦ Vater＝法特尔，不是"瓦特尔"<br>
+        <b>W</b> → 发"v"音 ✦ Wasser＝瓦瑟，不是英语的"w"<br>
+        <b>Z</b> → 发"ts"音 ✦ zu＝楚，Zeit＝采特，不是"兹"<br>
+        <b>S</b> → 母音间发"z兹" ✦ See＝泽，sonst＝松斯特<br>
+        <b>Q</b> → qu发"kv" ✦ Qualität＝克瓦利泰特，不是"kw"
+      </div>
+    </div>
+
+    <div class="sec-title"><span class="sec-title-icon">🔤</span><span class="sec-title-text">特殊字母（变音 Umlaute）</span></div>
+    <table class="pron-table">
+      <tr><th>字母</th><th>发音</th><th>近似汉语谐音</th><th>例词</th></tr>
+      <tr><td class="pron-letter">Ä / ä</td><td class="pron-sound">类似"诶"拉长</td><td class="pron-zh">诶</td><td class="pron-example">Mädchen（女孩）= 梅特兴</td></tr>
+      <tr><td class="pron-letter">Ö / ö</td><td class="pron-sound">圆唇发"诶"</td><td class="pron-zh">呃（圆唇）</td><td class="pron-example">schön（美）= 修恩</td></tr>
+      <tr><td class="pron-letter">Ü / ü</td><td class="pron-sound">圆唇发"衣"</td><td class="pron-zh">于</td><td class="pron-example">grün（绿）= 格吕因</td></tr>
+      <tr><td class="pron-letter">ß</td><td class="pron-sound">双重S音</td><td class="pron-zh">斯</td><td class="pron-example">Straße（街道）= 斯特拉斯</td></tr>
+    </table>
+
+    <div class="sec-title"><span class="sec-title-icon">🔗</span><span class="sec-title-text">常见字母组合发音</span></div>
+    <table class="pron-table">
+      <tr><th>组合</th><th>发音规则</th><th>谐音</th><th>例词</th></tr>
+      <tr><td class="pron-letter">ei</td><td>发"ai"音</td><td class="pron-zh">艾</td><td class="pron-example">Wein（酒）= 魏因</td></tr>
+      <tr><td class="pron-letter">ie</td><td>发长"i"音</td><td class="pron-zh">伊</td><td class="pron-example">viel（多）= 菲尔</td></tr>
+      <tr><td class="pron-letter">eu/äu</td><td>发"oi"音</td><td class="pron-zh">欧伊</td><td class="pron-example">Freund（朋友）= 弗洛伊恩特</td></tr>
+      <tr><td class="pron-letter">au</td><td>发"ao"音</td><td class="pron-zh">奥</td><td class="pron-example">blau（蓝）= 布劳</td></tr>
+      <tr><td class="pron-letter">ch</td><td>舌后摩擦音</td><td class="pron-zh">希/赫</td><td class="pron-example">ich（我）= 伊希；Bach = 巴赫</td></tr>
+      <tr><td class="pron-letter">sch</td><td>类似"sh"</td><td class="pron-zh">施</td><td class="pron-example">schön（美）= 修恩</td></tr>
+      <tr><td class="pron-letter">sp/st</td><td>词首发"shp/sht"</td><td class="pron-zh">斯普/斯特</td><td class="pron-example">Sprache（语言）= 斯普拉赫</td></tr>
+      <tr><td class="pron-letter">qu</td><td>发"kv"音</td><td class="pron-zh">克夫</td><td class="pron-example">Qualität = 克法利泰特</td></tr>
+      <tr><td class="pron-letter">ng</td><td>鼻音"ng"</td><td class="pron-zh">嗯（鼻音）</td><td class="pron-example">jung（年轻）= 永</td></tr>
+      <tr><td class="pron-letter">pf</td><td>"pf"连读</td><td class="pron-zh">普夫</td><td class="pron-example">Kopf（头）= 科普夫</td></tr>
+      <tr><td class="pron-letter">tz</td><td>发"ts"</td><td class="pron-zh">茨</td><td class="pron-example">Satz（句子）= 扎茨</td></tr>
+      <tr><td class="pron-letter">chs</td><td>发"ks"</td><td class="pron-zh">克斯</td><td class="pron-example">wachsen（生长）= 瓦克森</td></tr>
+    </table>
+
+    <div class="sec-title"><span class="sec-title-icon">📌</span><span class="sec-title-text">关键发音规则</span></div>
+    <div class="tip-card"><div class="tip-title">规则1：字尾 -e 轻读</div><div class="tip-body">词尾的e通常发轻声"呃"。例：<b>Hunde</b>（狗们）= 洪德<b>呃</b>，<b>Sprache</b>（语言）= 斯普拉赫<b>呃</b></div></div>
+    <div class="tip-card"><div class="tip-title">规则2：-ig 结尾发"希"</div><div class="tip-body">词尾-ig发/ɪç/音，近似"希"。例：<b>richtig</b>（正确的）= 里希<b>希</b>，<b>lustig</b>（有趣的）= 卢斯<b>希</b></div></div>
+    <div class="tip-card"><div class="tip-title">规则3：词尾辅音清化</div><div class="tip-body">词尾的b/d/g变清音p/t/k。例：<b>Hund</b>（狗）读作"洪<b>特</b>"，<b>Weg</b>（路）读作"韦<b>克</b>"</div></div>
+    <div class="tip-card"><div class="tip-title">规则4：重音基本在第一音节</div><div class="tip-body">德语词重音通常在第一个音节。外来词例外。例：<b>KOM</b>-men，<b>SPRA</b>-che，<b>GU</b>-ten</div></div>
+    <div class="tip-card"><div class="tip-title">规则5：v 发"f"音</div><div class="tip-body">德语v通常发"f"音。例：<b>Vater</b>（父亲）= <b>法</b>特尔，<b>viel</b>（多）= <b>菲</b>尔</div></div>
+    <div class="tip-card"><div class="tip-title">规则6：w 发"v"音</div><div class="tip-body">德语w发"v"音（英语的v）。例：<b>Wasser</b>（水）= <b>瓦</b>瑟，<b>weiß</b>（白色）= <b>魏</b>斯</div></div>
+  </div>
+</div>
+
+<!-- ══════════════ NUMBERS ══════════════ -->
+<div id="numbers" class="section">
+  <div class="container">
+    <div class="hero-label" style="text-align:center;padding-top:20px">Zahlen</div>
+    <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 24px;color:var(--text)">德语数字规律</h2>
+
+    <div class="sec-title"><span class="sec-title-icon">1️⃣</span><span class="sec-title-text">基础数字 0–12（必须单独记）</span></div>
+    <div class="num-grid" id="numGrid0"></div>
+
+    <div class="sec-title"><span class="sec-title-icon">🔟</span><span class="sec-title-text">13–19：数字 + zehn（十）</span></div>
+    <div class="rule-box">
+      <h3>规律：个位数 + zehn = 1X</h3>
+      <div class="rule-row"><span class="rule-num">13</span><span class="rule-de">drei<span class="hl-gold">zehn</span></span><span class="rule-zh">十三</span><span class="rule-py">德莱<span class="hl-gold">岑</span></span></div>
+      <div class="rule-row"><span class="rule-num">14</span><span class="rule-de">vier<span class="hl-gold">zehn</span></span><span class="rule-zh">十四</span><span class="rule-py">菲尔<span class="hl-gold">岑</span></span></div>
+      <div class="rule-row"><span class="rule-num">15</span><span class="rule-de">fünf<span class="hl-gold">zehn</span></span><span class="rule-zh">十五</span><span class="rule-py">菲因夫<span class="hl-gold">岑</span></span></div>
+      <div class="rule-row"><span class="rule-num">16</span><span class="rule-de">sech<span class="hl-gold">zehn</span></span><span class="rule-zh">十六</span><span class="rule-py">泽赫<span class="hl-gold">岑</span></span></div>
+      <div class="rule-row"><span class="rule-num">17</span><span class="rule-de">sieb<span class="hl-gold">zehn</span></span><span class="rule-zh">十七</span><span class="rule-py">集普<span class="hl-gold">岑</span></span></div>
+      <div class="rule-row"><span class="rule-num">18</span><span class="rule-de">acht<span class="hl-gold">zehn</span></span><span class="rule-zh">十八</span><span class="rule-py">阿赫特<span class="hl-gold">岑</span></span></div>
+      <div class="rule-row"><span class="rule-num">19</span><span class="rule-de">neun<span class="hl-gold">zehn</span></span><span class="rule-zh">十九</span><span class="rule-py">诺伊因<span class="hl-gold">岑</span></span></div>
+    </div>
+
+    <div class="sec-title"><span class="sec-title-icon">💡</span><span class="sec-title-text">整十数 20–90：数字 + zig</span></div>
+    <div class="rule-box">
+      <h3>规律：变形 + zig（注意不规则）</h3>
+      <div class="rule-row"><span class="rule-num">20</span><span class="rule-de">zwan<span class="hl-gold">zig</span></span><span class="rule-zh">二十</span><span class="rule-py">茨万<span class="hl-gold">齐希</span>（不规则！）</span></div>
+      <div class="rule-row"><span class="rule-num">30</span><span class="rule-de">drei<span class="hl-gold">ßig</span></span><span class="rule-zh">三十</span><span class="rule-py">德莱<span class="hl-gold">西希</span>（ß特殊）</span></div>
+      <div class="rule-row"><span class="rule-num">40</span><span class="rule-de">vier<span class="hl-gold">zig</span></span><span class="rule-zh">四十</span><span class="rule-py">菲尔<span class="hl-gold">齐希</span></span></div>
+      <div class="rule-row"><span class="rule-num">50</span><span class="rule-de">fünf<span class="hl-gold">zig</span></span><span class="rule-zh">五十</span><span class="rule-py">菲因夫<span class="hl-gold">齐希</span></span></div>
+      <div class="rule-row"><span class="rule-num">60</span><span class="rule-de">sech<span class="hl-gold">zig</span></span><span class="rule-zh">六十</span><span class="rule-py">泽赫<span class="hl-gold">齐希</span></span></div>
+      <div class="rule-row"><span class="rule-num">70</span><span class="rule-de">sieb<span class="hl-gold">zig</span></span><span class="rule-zh">七十</span><span class="rule-py">集普<span class="hl-gold">齐希</span></span></div>
+      <div class="rule-row"><span class="rule-num">80</span><span class="rule-de">acht<span class="hl-gold">zig</span></span><span class="rule-zh">八十</span><span class="rule-py">阿赫特<span class="hl-gold">齐希</span></span></div>
+      <div class="rule-row"><span class="rule-num">90</span><span class="rule-de">neun<span class="hl-gold">zig</span></span><span class="rule-zh">九十</span><span class="rule-py">诺伊因<span class="hl-gold">齐希</span></span></div>
+    </div>
+
+    <div class="sec-title"><span class="sec-title-icon">🔀</span><span class="sec-title-text">21–99：⚠️ 倒序！个位 + und + 十位</span></div>
+    <div class="rule-box" style="border-color:rgba(255,75,75,.3);background:rgba(255,75,75,.05)">
+      <h3 style="color:#ff4b4b">⚠️ 重要规律：个位在前，十位在后！</h3>
+      <div class="rule-row"><span class="rule-num">21</span><span class="rule-de"><span class="hl-red">ein</span><span class="hl-gold">und</span><span class="hl-blue">zwanzig</span></span><span class="rule-zh">二十一</span><span class="rule-py"><span class="hl-red">一</span><span class="hl-gold">和</span><span class="hl-blue">二十</span> → 倒序</span></div>
+      <div class="rule-row"><span class="rule-num">35</span><span class="rule-de"><span class="hl-red">fünf</span><span class="hl-gold">und</span><span class="hl-blue">dreißig</span></span><span class="rule-zh">三十五</span><span class="rule-py"><span class="hl-red">五</span><span class="hl-gold">和</span><span class="hl-blue">三十</span></span></div>
+      <div class="rule-row"><span class="rule-num">48</span><span class="rule-de"><span class="hl-red">acht</span><span class="hl-gold">und</span><span class="hl-blue">vierzig</span></span><span class="rule-zh">四十八</span><span class="rule-py"><span class="hl-red">八</span><span class="hl-gold">和</span><span class="hl-blue">四十</span></span></div>
+      <div class="rule-row"><span class="rule-num">99</span><span class="rule-de"><span class="hl-red">neun</span><span class="hl-gold">und</span><span class="hl-blue">neunzig</span></span><span class="rule-zh">九十九</span><span class="rule-py"><span class="hl-red">九</span><span class="hl-gold">和</span><span class="hl-blue">九十</span></span></div>
+    </div>
+
+    <div class="sec-title"><span class="sec-title-icon">💯</span><span class="sec-title-text">大数字</span></div>
+    <div class="num-grid" id="numGridBig"></div>
+
+    <div class="sec-title"><span class="sec-title-icon">🎮</span><span class="sec-title-text">数字互动练习</span></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px">
+      <button class="btn" onclick="startNumQuiz('de2zh')">数字→德语</button>
+      <button class="btn" onclick="startNumQuiz('zh2de')">中文→德语</button>
+      <button class="btn" onclick="startNumQuiz('calc')">计算训练</button>
+    </div>
+    <div id="numQuizArea"></div>
+  </div>
+</div>
+
+<!-- ══════════════ GRAMMAR ══════════════ -->
+<div id="grammar" class="section">
+  <div class="container">
+    <div class="hero-label" style="text-align:center;padding-top:20px">Grammatik</div>
+    <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 24px;color:var(--text)">德语语法速记</h2>
+
+    <div class="sec-title"><span class="sec-title-icon">🏷️</span><span class="sec-title-text">名词性别（冠词）</span></div>
+    <div class="rule-box">
+      <h3>三种性别 = 三种定冠词</h3>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px">
+        <div style="text-align:center;padding:12px;background:rgba(28,176,246,.1);border-radius:8px;border:1px solid rgba(28,176,246,.3)">
+          <div style="font-size:20px;color:#1cb0f6;font-style:italic">der</div>
+          <div style="font-size:12px;color:var(--text-dim);margin-top:4px">阳性 (m)</div>
+          <div style="font-size:12px;color:#1cb0f6;margin-top:6px">der Mann<br>der Vater</div>
+        </div>
+        <div style="text-align:center;padding:12px;background:rgba(255,75,75,.1);border-radius:8px;border:1px solid rgba(255,75,75,.3)">
+          <div style="font-size:20px;color:#ff4b4b;font-style:italic">die</div>
+          <div style="font-size:12px;color:var(--text-dim);margin-top:4px">阴性 (f)</div>
+          <div style="font-size:12px;color:#ff4b4b;margin-top:6px">die Frau<br>die Mutter</div>
+        </div>
+        <div style="text-align:center;padding:12px;background:rgba(88,204,2,.1);border-radius:8px;border:1px solid rgba(88,204,2,.3)">
+          <div style="font-size:20px;color:#58cc02;font-style:italic">das</div>
+          <div style="font-size:12px;color:var(--text-dim);margin-top:4px">中性 (n)</div>
+          <div style="font-size:12px;color:#58cc02;margin-top:6px">das Kind<br>das Buch</div>
+        </div>
+      </div>
+    </div>
+    <div class="tip-card"><div class="tip-title">性别记忆技巧</div><div class="tip-body">
+      • 以 <b>-er/-eur/-ismus/-ling</b> 结尾 → 多为 <b style="color:#1cb0f6">der</b><br>
+      • 以 <b>-ung/-heit/-keit/-schaft/-ion</b> 结尾 → 多为 <b style="color:#ff4b4b">die</b><br>
+      • 以 <b>-chen/-lein/-ment/-tum</b> 结尾 → 多为 <b style="color:#58cc02">das</b><br>
+      • <b>动词名词化</b>（das Essen, das Lernen）→ 永远是 <b style="color:#58cc02">das</b>
+    </div></div>
+
+    <div class="sec-title"><span class="sec-title-icon">🔄</span><span class="sec-title-text">动词变位（现在时）</span></div>
+    <div class="rule-box">
+      <h3>规则动词：machen（做）</h3>
+      <table style="width:100%;font-size:13px">
+        <tr><th style="text-align:left;color:var(--gold-dim);padding:4px 0;border-bottom:1px solid var(--gold-faint)">人称</th><th style="text-align:left;color:var(--gold-dim);padding:4px 8px;border-bottom:1px solid var(--gold-faint)">变位</th><th style="text-align:left;color:var(--gold-dim);padding:4px 0;border-bottom:1px solid var(--gold-faint)">中文</th><th style="text-align:left;color:var(--gold-dim);padding:4px 8px;border-bottom:1px solid var(--gold-faint)">词尾</th></tr>
+        <tr><td style="padding:6px 0">ich</td><td style="padding:6px 8px;color:#777777">mach<b style="color:var(--gold)">e</b></td><td style="padding:6px 0;color:var(--text-dim)">我做</td><td style="padding:6px 8px;color:var(--gold)">-e</td></tr>
+        <tr><td style="padding:6px 0">du</td><td style="padding:6px 8px;color:#777777">mach<b style="color:var(--gold)">st</b></td><td style="padding:6px 0;color:var(--text-dim)">你做</td><td style="padding:6px 8px;color:var(--gold)">-st</td></tr>
+        <tr><td style="padding:6px 0">er/sie/es</td><td style="padding:6px 8px;color:#777777">mach<b style="color:var(--gold)">t</b></td><td style="padding:6px 0;color:var(--text-dim)">他/她/它做</td><td style="padding:6px 8px;color:var(--gold)">-t</td></tr>
+        <tr><td style="padding:6px 0">wir</td><td style="padding:6px 8px;color:#777777">mach<b style="color:var(--gold)">en</b></td><td style="padding:6px 0;color:var(--text-dim)">我们做</td><td style="padding:6px 8px;color:var(--gold)">-en</td></tr>
+        <tr><td style="padding:6px 0">ihr</td><td style="padding:6px 8px;color:#777777">mach<b style="color:var(--gold)">t</b></td><td style="padding:6px 0;color:var(--text-dim)">你们做</td><td style="padding:6px 8px;color:var(--gold)">-t</td></tr>
+        <tr><td style="padding:6px 0">Sie/sie</td><td style="padding:6px 8px;color:#777777">mach<b style="color:var(--gold)">en</b></td><td style="padding:6px 0;color:var(--text-dim)">您/他们做</td><td style="padding:6px 8px;color:var(--gold)">-en</td></tr>
+      </table>
+    </div>
+
+    <div class="rule-box" style="margin-top:10px">
+      <h3>不规则动词：sein（是）/ haben（有）</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <div>
+          <div style="font-size:12px;color:var(--gold-dim);margin-bottom:8px;letter-spacing:1px">SEIN（是）</div>
+          <div style="font-size:13px;line-height:2;color:#777777">ich <b style="color:var(--gold)">bin</b>（我是）<br>du <b style="color:var(--gold)">bist</b>（你是）<br>er/sie/es <b style="color:var(--gold)">ist</b>（他是）<br>wir <b style="color:var(--gold)">sind</b>（我们是）<br>ihr <b style="color:var(--gold)">seid</b>（你们是）<br>sie/Sie <b style="color:var(--gold)">sind</b>（他们是）</div>
+        </div>
+        <div>
+          <div style="font-size:12px;color:var(--gold-dim);margin-bottom:8px;letter-spacing:1px">HABEN（有）</div>
+          <div style="font-size:13px;line-height:2;color:#777777">ich <b style="color:var(--gold)">habe</b>（我有）<br>du <b style="color:var(--gold)">hast</b>（你有）<br>er/sie/es <b style="color:var(--gold)">hat</b>（他有）<br>wir <b style="color:var(--gold)">haben</b>（我们有）<br>ihr <b style="color:var(--gold)">habt</b>（你们有）<br>sie/Sie <b style="color:var(--gold)">haben</b>（他们有）</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-title"><span class="sec-title-icon">📊</span><span class="sec-title-text">四个格（简化版）</span></div>
+    <table class="pron-table">
+      <tr><th>格</th><th>用途</th><th>der变化</th><th>die变化</th><th>das变化</th></tr>
+      <tr><td><b style="color:var(--gold)">第一格</b><br><small style="color:var(--text-dim)">Nominativ</small></td><td style="color:var(--text-dim)">主语（谁）</td><td>der</td><td>die</td><td>das</td></tr>
+      <tr><td><b style="color:#1cb0f6">第二格</b><br><small style="color:var(--text-dim)">Genitiv</small></td><td style="color:var(--text-dim)">所有格（谁的）</td><td>des</td><td>der</td><td>des</td></tr>
+      <tr><td><b style="color:#ff4b4b">第三格</b><br><small style="color:var(--text-dim)">Dativ</small></td><td style="color:var(--text-dim)">间接宾语（给谁）</td><td>dem</td><td>der</td><td>dem</td></tr>
+      <tr><td><b style="color:#58cc02">第四格</b><br><small style="color:var(--text-dim)">Akkusativ</small></td><td style="color:var(--text-dim)">直接宾语（做什么）</td><td>den</td><td>die</td><td>das</td></tr>
+    </table>
+    <div class="tip-card"><div class="tip-title">快速记忆：只有阳性der变化最多</div><div class="tip-body">阴性/中性/复数：第三格加m，第四格阴中不变。<b>初学先掌握第一格和第四格</b>，日常交流够用了！</div></div>
+
+    <div class="sec-title"><span class="sec-title-icon">⚡</span><span class="sec-title-text">常用句型模板</span></div>
+    <div class="rule-box">
+      <h3>万能句型</h3>
+      <div style="font-size:13px;line-height:2.2;color:#777777">
+        <div>Ich <b style="color:var(--gold)">möchte</b> + 名词/动词原形 → 我想要……</div>
+        <div>Ich <b style="color:var(--gold)">bin</b> + 形容词/职业 → 我是……</div>
+        <div>Ich <b style="color:var(--gold)">habe</b> + 名词（四格） → 我有……</div>
+        <div>Kann ich + 动词原形? → 我可以……吗？</div>
+        <div>Wo ist + 地点? → ……在哪里？</div>
+        <div>Was <b style="color:var(--gold)">kostet</b> + 物品? → ……多少钱？</div>
+        <div>Wie <b style="color:var(--gold)">heißen</b> Sie? → 您叫什么名字？</div>
+        <div>Bitte + 动词 → 请……（命令式）</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ PHRASES ══════════════ -->
+<div id="phrases" class="section">
+  <div class="container">
+    <div class="hero-label" style="text-align:center;padding-top:20px">Alltagsdeutsch</div>
+    <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 4px;color:var(--text)">日常对话 + 词汇大全</h2>
+    <p style="text-align:center;font-size:13px;color:var(--text-dim);margin-bottom:4px">71个分类 · 3114个词句 · 点击卡片看谐音 · 🔊 点喇叭听地道德语发音</p>
+    <div style="text-align:center;margin:6px 0 2px"><span onclick="document.getElementById('voiceGuide').style.display=document.getElementById('voiceGuide').style.display==='none'?'block':'none'" style="font-size:12px;color:#58cc02;cursor:pointer;border:1px solid rgba(88,204,2,.3);border-radius:20px;padding:3px 12px;display:inline-block">🎧 发音不地道？点这里装系统语音包</span></div>
+    <div id="voiceGuide" style="display:none;background:#fff;border:1px solid var(--line,#e8eaed);border-radius:14px;padding:14px 16px;margin:8px 0;font-size:13px;line-height:1.8;color:#555">
+      <div style="font-weight:600;color:#2b2b2b;margin-bottom:6px">为什么要装语音包？</div>
+      朗读用的是<b>系统自带的神经语音引擎</b>（完全离线）。装上原生德语/中文语音后，发音从"机器味"变成接近真人。一次性设置，永久生效。
+      <div style="font-weight:600;color:#46a302;margin:12px 0 4px">🍎 iPhone / iPad</div>
+      设置 → 辅助功能 → 朗读内容 → 声音 → <b>德语</b>（选 Anna/Petra/Markus）下载；中文选「普通话」。
+      <div style="font-weight:600;color:#46a302;margin:10px 0 4px">💻 Mac</div>
+      系统设置 → 辅助功能 → 朗读内容 → 系统声音 → 管理声音 → 勾选<b>德语 Anna/Petra</b> + <b>中文 婷婷</b> 下载。
+      <div style="font-weight:600;color:#46a302;margin:10px 0 4px">🤖 安卓</div>
+      设置 → 搜索"文字转语音/TTS" → 选 Google 语音引擎 → 安装语音数据 → 下载<b>德语 + 中文</b>。
+      <div style="font-weight:600;color:#46a302;margin:10px 0 4px">🌐 电脑 Chrome / Edge</div>
+      自带在线德语/中文语音（Google/Microsoft），通常无需额外安装，音质已很好。
+      <div style="font-size:12px;color:#afafaf;margin-top:10px">装好后回到本页刷新，🔊 会自动选用新语音。</div>
+    </div>
+    <div class="search-wrap">
+      <input type="text" id="searchInput" placeholder="搜索德语、中文或谐音..." oninput="filterPhrases()">
+      <span class="search-icon">🔍</span>
+    </div>
+    
+    
+    <div class="level-tabs">
+      <button class="level-tab active" onclick="setLevel('all',this)">📚 全部</button>
+      <button class="level-tab" onclick="setLevel('0',this)">🌱 零基础</button>
+      <button class="level-tab" onclick="setLevel('a1',this)">⭐ A1</button>
+      <button class="level-tab" onclick="setLevel('a2',this)">⭐⭐ A2</button>
+      <button class="level-tab" onclick="setLevel('b1',this)">🔥 B1</button>
+      <button class="level-tab" onclick="setLevel('b2',this)">💎 B2</button>
+    </div>
+    <div class="level-info" id="levelInfo"></div>
+    <div class="cat-tabs" id="catTabs"></div>
+    <div style="display:flex;align-items:center;gap:10px;margin:10px 0;flex-wrap:wrap">
+      <button id="playAllBtn" class="btn" onclick="toggleAutoPlay()" style="padding:8px 18px;font-size:13px">▶ 全部循环朗读</button>
+      <span id="playAllInfo" style="font-size:12px;color:var(--text-dim)"></span>
+    </div>
+    <div class="spk-panel">
+      <label>语速 <input type="range" min="0.4" max="1.1" step="0.05" value="0.62" id="spkRate" oninput="spkSet('rate',+this.value);document.getElementById('spkRateV').textContent=this.value"> <span id="spkRateV">0.62</span></label>
+      <label>遍数 <select id="spkRepeat" onchange="spkSet('repeat',+this.value)"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option></select></label>
+      <label><input type="checkbox" id="spkZh" checked onchange="spkSet('zh',this.checked)"> 读中文</label>
+      <label><input type="checkbox" id="spkShuffle" onchange="spkSet('shuffle',this.checked)"> 乱序</label>
+    </div>
+    <div id="phraseResults" style="font-size:12px;color:var(--gold-dim);margin:8px 0"></div>
+    <div id="phraseContent"></div>
+  </div>
+</div>
+
+<!-- ══════════════ QUIZ ══════════════ -->
+<div id="quiz" class="section">
+  <div class="container">
+    <div class="hero-label" style="text-align:center;padding-top:20px">Übungen</div>
+    <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 24px;color:var(--text)">练习测验</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:24px">
+      <div class="card" onclick="startQuiz('numde')" style="text-align:center;padding:20px">
+        <div style="font-size:28px;margin-bottom:8px">🔢</div>
+        <div style="color:var(--gold);margin-bottom:4px">数字测验</div>
+        <div style="font-size:12px;color:var(--text-dim)">看数字→说德语</div>
+      </div>
+      <div class="card" onclick="startQuiz('phrase')" style="text-align:center;padding:20px">
+        <div style="font-size:28px;margin-bottom:8px">💬</div>
+        <div style="color:var(--gold);margin-bottom:4px">词汇测验</div>
+        <div style="font-size:12px;color:var(--text-dim)">看中文→选德语</div>
+      </div>
+      <div class="card" onclick="startQuiz('reverse')" style="text-align:center;padding:20px">
+        <div style="font-size:28px;margin-bottom:8px">🔄</div>
+        <div style="color:var(--gold);margin-bottom:4px">反向测验</div>
+        <div style="font-size:12px;color:var(--text-dim)">看德语→选中文</div>
+      </div>
+    </div>
+    <div id="mainQuizArea"></div>
+  </div>
+</div>
+
+<!-- ══════════════ READING ══════════════ -->
+<div id="reading" class="section">
+  <div class="container">
+    <div class="hero-label" style="text-align:center;padding-top:20px">Lesen</div>
+    <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 4px;color:var(--text)">分级阅读短文</h2>
+    <p style="text-align:center;font-size:13px;color:var(--text-dim);margin-bottom:4px">0基础 → B1 循序渐进 · 中德对照 · 🔊 整篇朗读（慢速）</p>
+    <div class="level-tabs" id="readLevelTabs"></div>
+    <div id="readList"></div>
+  </div>
+</div>
+
+<script>
+// ══════════════════════════════════════
+// DATA
+// ══════════════════════════════════════
+const nums0 = [
+  {n:0,de:'null',py:'努尔'},{n:1,de:'eins',py:'艾因斯'},{n:2,de:'zwei',py:'茨威'},
+  {n:3,de:'drei',py:'德莱'},{n:4,de:'vier',py:'费尔'},{n:5,de:'fünf',py:'费因夫'},
+  {n:6,de:'sechs',py:'泽克斯'},{n:7,de:'sieben',py:'泽本'},{n:8,de:'acht',py:'阿赫特'},
+  {n:9,de:'neun',py:'诺伊因'},{n:10,de:'zehn',py:'泽恩'},{n:11,de:'elf',py:'埃尔夫'},
+  {n:12,de:'zwölf',py:'茨沃尔夫'}
+];
+const numsBig = [
+  {n:100,de:'hundert',py:'洪德特'},{n:1000,de:'tausend',py:'套森特'},
+  {n:1000000,de:'eine Million',py:'艾嫩 米利昂'},{n:1000000000,de:'eine Milliarde',py:'艾嫩 米利阿德'},
+  {n:0.5,de:'ein halb',py:'艾因 哈尔普'},{n:'1.',de:'erste',py:'尔斯特'}
+];
+
+/*__CATEGORIES__*/
+
+function showSection(id){
+  if(typeof stopAutoPlay==='function')stopAutoPlay();
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  const btns=document.querySelectorAll('.nav-btn');
+  btns.forEach(b=>{if(b.getAttribute('onclick').includes("'"+id+"'"))b.classList.add('active')});
+  window.scrollTo(0,0);
+}
+
+// ══════════════════════════════════════
+// NUMBERS
+// ══════════════════════════════════════
+function renderNumGrid(containerId, data){
+  const g=document.getElementById(containerId);
+  if(!g)return;
+  data.forEach(item=>{
+    const d=document.createElement('div');
+    d.className='num-card';
+    d.innerHTML=`<div class="num-big">${item.n}</div><div class="num-de">${item.de}</div><div class="num-py">${item.py}</div><button class="speak-btn" type="button" title="朗读" style="margin-top:6px">🔊</button>`;
+    d.querySelector('.speak-btn').addEventListener('click',(e)=>{e.stopPropagation();speakDE(item.de,e.currentTarget);});
+    g.appendChild(d);
+  });
+}
+renderNumGrid('numGrid0',nums0);
+renderNumGrid('numGridBig',numsBig);
+
+// Number quiz
+let numQ={score:0,total:0,mode:'de2zh',current:null};
+function startNumQuiz(mode){
+  numQ={score:0,total:0,mode:mode,current:null};
+  nextNumQ();
+}
+function nextNumQ(){
+  const pool=[...nums0,...[
+    {n:13,de:'dreizehn',py:'德莱岑'},{n:20,de:'zwanzig',py:'茨万齐希'},
+    {n:30,de:'dreißig',py:'德莱西希'},{n:50,de:'fünfzig',py:'菲因夫齐希'},
+    {n:100,de:'hundert',py:'洪德特'},{n:21,de:'einundzwanzig',py:'艾因温楚万齐希'},
+    {n:35,de:'fünfunddreißig',py:'菲因夫温德莱西希'},{n:99,de:'neunundneunzig',py:'诺伊因温诺伊因齐希'},
+  ]];
+  const idx=Math.floor(Math.random()*pool.length);
+  numQ.current=pool[idx];
+  const wrong=[];
+  while(wrong.length<3){
+    const w=pool[Math.floor(Math.random()*pool.length)];
+    if(w.n!==numQ.current.n&&!wrong.find(x=>x.n===w.n))wrong.push(w);
+  }
+  const opts=[numQ.current,...wrong].sort(()=>Math.random()-.5);
+  let qText='',optText='';
+  if(numQ.mode==='de2zh'){
+    qText=`<div class="quiz-q">${numQ.current.n}</div><div class="quiz-hint">这个数字的德语怎么说？</div>`;
+    optText=opts.map(o=>`<button class="quiz-opt" onclick="checkNumQ(this,'${o.de}','${numQ.current.de}')">${o.de}</button>`).join('');
+  } else if(numQ.mode==='zh2de'){
+    qText=`<div class="quiz-q" style="font-size:24px">${numQ.current.de}</div><div class="quiz-hint">这个德语数字是多少？</div>`;
+    optText=opts.map(o=>`<button class="quiz-opt" onclick="checkNumQ(this,${o.n},${numQ.current.n})">${o.n}</button>`).join('');
+  } else {
+    const a=pool[Math.floor(Math.random()*8)];
+    const b=pool[Math.floor(Math.random()*8)];
+    const ans=a.n+b.n;
+    const ansObj={n:ans,de:`${ans}`};
+    qText=`<div class="quiz-q" style="font-size:22px">${a.n} + ${b.n} = ?</div><div class="quiz-hint">用德语说出答案</div>`;
+    const wrongNums=[ans+1,ans-1,ans+2,ans-2].filter(x=>x>=0);
+    const calcOpts=[ansObj,...wrongNums.slice(0,3).map(x=>({n:x,de:String(x)}))].sort(()=>Math.random()-.5);
+    optText=calcOpts.map(o=>`<button class="quiz-opt" onclick="checkNumQ(this,${o.n},${ans})">${o.n}</button>`).join('');
+  }
+  document.getElementById('numQuizArea').innerHTML=`
+    <div class="quiz-box">
+      <div class="quiz-score">得分：${numQ.score} / ${numQ.total}</div>
+      ${qText}
+      <div class="quiz-opts">${optText}</div>
+    </div>`;
+}
+function checkNumQ(btn,selected,correct){
+  document.querySelectorAll('#numQuizArea .quiz-opt').forEach(b=>b.disabled=true);
+  numQ.total++;
+  if(String(selected)===String(correct)){
+    btn.classList.add('correct');
+    numQ.score++;
+  } else {
+    btn.classList.add('wrong');
+    document.querySelectorAll('#numQuizArea .quiz-opt').forEach(b=>{
+      if(String(b.getAttribute('onclick')).includes(`'${correct}'`)||String(b.getAttribute('onclick')).includes(`,${correct})`))b.classList.add('correct');
+    });
+  }
+  setTimeout(nextNumQ,1200);
+}
+
+// ══════════════════════════════════════
+// PHRASES
+// ══════════════════════════════════════
+let activeCat='all';
+let flippedCards={};
+
+
+let activeLevel = 'all';
+
+const levelMeta = {
+  'all': {label:'全部', desc:'', color:'var(--gold)'},
+  '0':   {label:'🌱 零基础', desc:'打招呼·道别·礼貌用语，第一天就能开口！', color:'#58cc02'},
+  'a1':  {label:'⭐ A1 初级', desc:'自我介绍·时间·天气·家庭，能进行最简单的日常交流。', color:'#1cb0f6'},
+  'a2':  {label:'⭐⭐ A2 基础', desc:'购物·点餐·交通·住宿，能在熟悉场景下顺畅沟通。', color:'var(--gold)'},
+  'b1':  {label:'🔥 B1 中级', desc:'情感·医疗·银行·娱乐，能理解日常生活主要内容。', color:'#ff7a4d'},
+  'b2':  {label:'💎 B2 中高级', desc:'职场·出行·科技话题，接近流利日常交流水平。', color:'#ff4b4b'},
+};
+
+function getLevelCats() {
+  if (activeLevel === 'all') return categories;
+  return categories.filter(c => c.level === activeLevel);
+}
+
+function goLevel(level) {
+  showSection('phrases');
+  setTimeout(() => {
+    activeLevel = level;
+    activeCat = 'all';
+    document.querySelectorAll('.level-tab').forEach(b => b.classList.remove('active'));
+    const levMap = {'all':0,'0':1,'a1':2,'a2':3,'b1':4,'b2':5};
+    const allTabs = document.querySelectorAll('.level-tab');
+    if (allTabs[levMap[level]]) allTabs[levMap[level]].classList.add('active');
+    const info = document.getElementById('levelInfo');
+    const m = levelMeta[level];
+    if (m && level !== 'all') {
+      info.style.display = 'block';
+      info.style.borderLeftColor = m.color;
+      info.innerHTML = '<b style="color:'+m.color+'">'+m.label+'</b>　'+m.desc;
+    } else { info.style.display = 'none'; }
+    buildCatTabs();
+    renderPhrases();
+  }, 80);
+}
+
+function setLevel(level, btn) {
+  activeLevel = level;
+  activeCat = 'all';
+  document.querySelectorAll('.level-tab').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  const info = document.getElementById('levelInfo');
+  const m = levelMeta[level];
+  if (level === 'all') { info.style.display = 'none'; }
+  else {
+    info.style.display = 'block';
+    info.style.borderLeftColor = m.color;
+    info.innerHTML = '<b style="color:'+m.color+'">'+m.label+'</b>　'+m.desc;
+  }
+  buildCatTabs();
+  renderPhrases();
+}
+
+function buildCatTabs() {
+  const tabs = document.getElementById('catTabs');
+  const lb = {'0':'lb-0','a1':'lb-a1','a2':'lb-a2','b1':'lb-b1','b2':'lb-b2'};
+  const ln = {'0':'零基础','a1':'A1','a2':'A2','b1':'B1','b2':'B2'};
+  tabs.innerHTML = '<button class="cat-tab active" onclick="setCat(\'all\',this)">全部</button>';
+  getLevelCats().forEach(cat => {
+    const b = document.createElement('button');
+    b.className = 'cat-tab';
+    const badge = activeLevel === 'all'
+      ? `<span class="level-badge ${lb[cat.level]||''}">${ln[cat.level]||''}</span>` : '';
+    b.innerHTML = cat.icon + ' ' + cat.name + badge;
+    b.setAttribute('onclick', `setCat('${cat.name}',this)`);
+    tabs.appendChild(b);
+  });
+}
+
+function initPhrases() {
+  buildCatTabs();
+  renderPhrases();
+}
+
+function setCat(cat,btn){
+  activeCat=cat;
+  document.querySelectorAll('.cat-tab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  filterPhrases();
+}
+
+function filterPhrases(){
+  if(typeof stopAutoPlay==='function')stopAutoPlay();
+  const q=document.getElementById('searchInput').value.toLowerCase();
+  let results=[];
+  const pool = q ? categories : getLevelCats();
+  pool.forEach((cat,ci)=>{
+    if(activeCat!=='all'&&cat.name!==activeCat)return;
+    cat.phrases.forEach((p,pi)=>{
+      if(!q||p.de.toLowerCase().includes(q)||p.zh.includes(q)||p.py.includes(q)){
+        results.push({...p,cat:cat.name,icon:cat.icon,id:`${ci}-${pi}`});
+      }
+    });
+  });
+  const res=document.getElementById('phraseResults');
+  if(q||activeCat!=='all') res.textContent=`找到 ${results.length} 条结果`;
+  else res.textContent='';
+  renderSearchResults(results,q||activeCat!=='all');
+}
+
+function renderPhrases(){
+  if(typeof stopAutoPlay==='function')stopAutoPlay();
+  const el=document.getElementById('phraseContent');
+  el.innerHTML='';
+  const lb={'0':'lb-0','a1':'lb-a1','a2':'lb-a2','b1':'lb-b1','b2':'lb-b2'};
+  const ln={'0':'零基础','a1':'A1','a2':'A2','b1':'B1','b2':'B2'};
+  getLevelCats().forEach((cat,ci)=>{
+    const sec=document.createElement('div');
+    const badge=activeLevel==='all'?`<span class="level-badge ${lb[cat.level]||''}">${ln[cat.level]||''}</span>`:'';
+    sec.innerHTML=`<div class="sec-title"><span class="sec-title-icon">${cat.icon}</span><span class="sec-title-text">${cat.name}</span>${badge}<span class="sec-title-count" style="margin-left:auto">${cat.phrases.length}句</span></div>`;
+    const grid=document.createElement('div');
+    grid.className='phrase-grid';
+    cat.phrases.forEach((p,pi)=>grid.appendChild(makeCard(p,`${ci}-${pi}`)));
+    sec.appendChild(grid);
+    el.appendChild(sec);
+  });
+}
+
+function renderSearchResults(results, isFiltered){
+  const el=document.getElementById('phraseContent');
+  if(!isFiltered){ renderPhrases(); return; }
+  el.innerHTML='';
+  const grid=document.createElement('div');
+  grid.className='phrase-grid';
+  results.forEach(p=>grid.appendChild(makeCard(p,p.id)));
+  el.appendChild(grid);
+}
+
+function makeCard(p,id){
+  const d=document.createElement('div');
+  d.className='card'+(flippedCards[id]?' flipped':'');
+  d.id='card-'+id;
+  d.innerHTML=`<div class="card-de-row"><button class="speak-btn" type="button" title="朗读">🔊</button><div class="card-de">${p.de}</div></div><div class="card-zh">${p.zh}</div><div class="card-py"><span class="py-label">谐音</span><span class="py-text">${p.py}</span></div>`;
+  const sb=d.querySelector('.speak-btn');
+  sb.addEventListener('click',(e)=>{e.stopPropagation();speakDE(p.de,sb);});
+  d.addEventListener('click',()=>{
+    flippedCards[id]=!flippedCards[id];
+    d.classList.toggle('flipped');
+  });
+  return d;
+}
+
+// ══════════════ 德语朗读（贴合真实德国发音）══════════════
+// 用浏览器德语语音引擎(de-DE)朗读德语原文，自动优选系统德语真人语音
+// 朗读设置（控制面板，localStorage 记忆）
+let _spk={rate:0.62,repeat:2,zh:true,shuffle:false};
+try{Object.assign(_spk,JSON.parse(localStorage.getItem('spkCfg')||'{}'));}catch(e){}
+function spkSet(k,v){_spk[k]=v;try{localStorage.setItem('spkCfg',JSON.stringify(_spk));}catch(e){}}
+function spkInitPanel(){
+  const r=document.getElementById('spkRate');if(r){r.value=_spk.rate;document.getElementById('spkRateV').textContent=_spk.rate;}
+  const p=document.getElementById('spkRepeat');if(p)p.value=String(_spk.repeat);
+  const z=document.getElementById('spkZh');if(z)z.checked=_spk.zh;
+  const s=document.getElementById('spkShuffle');if(s)s.checked=_spk.shuffle;
+}
+document.addEventListener('DOMContentLoaded',spkInitPanel);
+let _deVoice=null,_zhVoice=null;
+function pickGermanVoice(){
+  if(!('speechSynthesis' in window))return;
+  const vs=speechSynthesis.getVoices();
+  // 优选常见高质量德语语音；其次任意 de-DE；再次任意 de-*
+  const pref=['Anna','Petra','Markus','Yannick','Helena','Google Deutsch','Microsoft Katja','Microsoft Hedda','Microsoft Stefan'];
+  _deVoice = vs.find(v=>v.lang==='de-DE'&&pref.some(p=>v.name.includes(p)))
+           || vs.find(v=>v.lang==='de-DE')
+           || vs.find(v=>(v.lang||'').toLowerCase().startsWith('de'))
+           || null;
+  // 中文语音（读释义用）
+  const zpref=['Tingting','婷婷','Google 普通话','Microsoft Xiaoxiao','Microsoft Huihui','Mei-Jia'];
+  _zhVoice = vs.find(v=>(v.lang||'').replace('_','-').toLowerCase().startsWith('zh')&&zpref.some(p=>v.name.includes(p)))
+           || vs.find(v=>(v.lang||'').replace('_','-').toLowerCase().startsWith('zh'))
+           || null;
+}
+if('speechSynthesis' in window){ pickGermanVoice(); speechSynthesis.onvoiceschanged=pickGermanVoice; }
+function speakDE(text,btn){
+  if(!('speechSynthesis' in window)){alert('当前浏览器不支持朗读，请用 Chrome/Edge/Safari');return;}
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text);
+  u.lang='de-DE';                 // 关键：用德语发音规则朗读
+  if(_deVoice)u.voice=_deVoice;   // 用系统德语真人语音
+  u.rate=_spk.rate;               // 语速由控制面板设定
+  u.pitch=1;
+  if(btn){
+    document.querySelectorAll('.speak-btn.speaking').forEach(b=>b.classList.remove('speaking'));
+    btn.classList.add('speaking');
+    u.onend=u.onerror=()=>btn.classList.remove('speaking');
+  }
+  speechSynthesis.speak(u);
+}
+
+// ══════════════ 一键全部循环朗读 ══════════════
+let _auto={on:false,cards:[],i:0,cur:null};
+function clearAutoHighlight(){
+  document.querySelectorAll('.card.speaking-now').forEach(c=>c.classList.remove('speaking-now'));
+  if(_auto.cur){_auto.cur.classList.remove('flipped');_auto.cur=null;} // 收起上一张自动展开的卡
+}
+function toggleAutoPlay(){
+  const btn=document.getElementById('playAllBtn');
+  if(_auto.on){ stopAutoPlay(); return; }
+  if(!('speechSynthesis' in window)){alert('当前浏览器不支持朗读，请用 Chrome/Edge/Safari');return;}
+  let cards=[...document.querySelectorAll('#phraseContent .card')];
+  if(!cards.length)return;
+  if(_spk.shuffle)cards=cards.map(c=>[Math.random(),c]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]); // 乱序
+  _auto={on:true,cards,i:0};
+  btn.textContent='⏹ 停止循环';
+  btn.classList.add('playing');
+  autoNext();
+}
+function autoNext(){
+  if(!_auto.on)return;
+  if(_auto.i>=_auto.cards.length)_auto.i=0; // 到底循环
+  const card=_auto.cards[_auto.i];
+  const deEl=card&&card.querySelector('.card-de');
+  if(!deEl){_auto.i++;return autoNext();}
+  clearAutoHighlight();
+  card.classList.add('speaking-now');
+  card.classList.add('flipped');   // 展开当前卡，露出谐音
+  _auto.cur=card;
+  card.scrollIntoView({block:'center',behavior:'smooth'});
+  const info=document.getElementById('playAllInfo');
+  if(info)info.textContent=`朗读中 ${_auto.i+1}/${_auto.cards.length}`;
+  speechSynthesis.cancel();
+  const text=deEl.textContent;
+  const zhEl=card.querySelector('.card-zh');
+  const zhText=zhEl?zhEl.textContent:'';
+  let pass=0;                       // 德语读 N 遍（面板可调），可选再读中文
+  const next=()=>{ if(_auto.on){ _auto.i++; setTimeout(autoNext,700); } };
+  const speakZh=()=>{
+    if(!_auto.on)return;
+    if(!_spk.zh||!zhText)return next();
+    const u=new SpeechSynthesisUtterance(zhText);
+    u.lang='zh-CN'; if(_zhVoice)u.voice=_zhVoice;
+    u.rate=0.9;
+    u.onend=next; u.onerror=next;
+    speechSynthesis.speak(u);
+  };
+  const speakOnce=()=>{
+    const u=new SpeechSynthesisUtterance(text);
+    u.lang='de-DE'; if(_deVoice)u.voice=_deVoice;
+    u.rate=_spk.rate;               // 语速由面板设定
+    u.onend=()=>{
+      if(!_auto.on)return;
+      pass++;
+      if(pass<_spk.repeat){ setTimeout(speakOnce,500); } // 遍数由面板设定
+      else { setTimeout(speakZh,500); }                  // 之后读中文（可关）
+    };
+    u.onerror=u.onend;
+    speechSynthesis.speak(u);
+  };
+  speakOnce();
+}
+function stopAutoPlay(){
+  _auto.on=false; speechSynthesis.cancel(); clearAutoHighlight();
+  const btn=document.getElementById('playAllBtn');
+  if(btn){btn.textContent='▶ 全部循环朗读';btn.classList.remove('playing');}
+  const info=document.getElementById('playAllInfo'); if(info)info.textContent='';
+}
+
+// ══════════════════════════════════════
+// MAIN QUIZ
+// ══════════════════════════════════════
+let mq={score:0,total:0,mode:'',current:null};
+function startQuiz(mode){
+  mq={score:0,total:0,mode:mode,current:null};
+  nextQ();
+}
+function getAllPhrases(){
+  return categories.flatMap((c,ci)=>c.phrases.map((p,pi)=>({...p,id:`${ci}-${pi}`})));
+}
+function nextQ(){
+  const all=getAllPhrases();
+  const idx=Math.floor(Math.random()*all.length);
+  mq.current=all[idx];
+  const wrong=[];
+  while(wrong.length<3){
+    const w=all[Math.floor(Math.random()*all.length)];
+    if(w.id!==mq.current.id&&!wrong.find(x=>x.id===w.id))wrong.push(w);
+  }
+  const opts=[mq.current,...wrong].sort(()=>Math.random()-.5);
+  let qHtml='',optsHtml='';
+  if(mq.mode==='phrase'){
+    qHtml=`<div class="quiz-q" style="font-size:20px">${mq.current.zh}</div><div class="quiz-hint">请选择正确的德语翻译</div>`;
+    optsHtml=opts.map(o=>`<button class="quiz-opt" onclick="checkQ(this,'${escQ(o.de)}','${escQ(mq.current.de)}')">${o.de}</button>`).join('');
+  } else {
+    qHtml=`<div class="quiz-q" style="font-size:18px;font-style:italic">${mq.current.de}</div><div class="quiz-hint">请选择正确的中文翻译</div>`;
+    optsHtml=opts.map(o=>`<button class="quiz-opt" onclick="checkQ(this,'${escQ(o.zh)}','${escQ(mq.current.zh)}')">${o.zh}</button>`).join('');
+  }
+  const pct=mq.total>0?Math.round(mq.score/mq.total*100):0;
+  document.getElementById('mainQuizArea').innerHTML=`
+    <div class="quiz-box">
+      <div class="quiz-score">得分：${mq.score} / ${mq.total} （${pct}%）</div>
+      <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
+      ${qHtml}
+      <div class="quiz-opts">${optsHtml}</div>
+      <button class="btn" onclick="startQuiz('${mq.mode}')" style="font-size:12px">重新开始</button>
+    </div>`;
+}
+function escQ(s){return s.replace(/'/g,"&#39;").replace(/"/g,'&quot;')}
+function checkQ(btn,selected,correct){
+  document.querySelectorAll('#mainQuizArea .quiz-opt').forEach(b=>b.disabled=true);
+  mq.total++;
+  const sel=selected.replace(/&#39;/g,"'").replace(/&quot;/g,'"');
+  const cor=correct.replace(/&#39;/g,"'").replace(/&quot;/g,'"');
+  if(sel===cor){btn.classList.add('correct');mq.score++;}
+  else{
+    btn.classList.add('wrong');
+    document.querySelectorAll('#mainQuizArea .quiz-opt').forEach(b=>{
+      if(b.textContent.trim()===cor)b.classList.add('correct');
+    });
+  }
+  setTimeout(nextQ,1200);
+}
+
+// ══════════════════════════════════════
+// READING / 分级阅读短文
+// ══════════════════════════════════════
+const READINGS = /*__READINGS__*/[];
+
+const READ_LEVELS=[['all','📚 全部'],['0','🌱 零基础'],['a1','⭐ A1'],['a2','⭐⭐ A2'],['b1','🔥 B1'],['b2','💎 B2'],['c1','🏆 C1'],['c2','👑 C2']];
+const READ_LB={'0':'lb-0','a1':'lb-a1','a2':'lb-a2','b1':'lb-b1','b2':'lb-b2','c1':'lb-c1','c2':'lb-c2'};
+const READ_LN={'0':'零基础','a1':'A1','a2':'A2','b1':'B1','b2':'B2','c1':'C1','c2':'C2'};
+let readActive='all';
+function buildReadTabs(){
+  document.getElementById('readLevelTabs').innerHTML=READ_LEVELS.map(([k,l])=>
+    `<button class="level-tab${k===readActive?' active':''}" onclick="setReadLevel('${k}')">${l}</button>`).join('');
+}
+function setReadLevel(k){readActive=k;buildReadTabs();renderReadings();}
+function renderReadings(){
+  const list=READINGS.filter(r=>readActive==='all'||r.level===readActive);
+  const el=document.getElementById('readList');
+  el.innerHTML=list.map((r,i)=>{
+    const full=r.paras.map(p=>p[0]).join(' ');
+    const body=r.paras.map(p=>`<div style="margin-bottom:10px"><div style="font-size:15px;color:var(--text);line-height:1.6">${p[0]}</div><div style="font-size:13px;color:var(--text-dim);margin-top:2px">${p[1]}</div></div>`).join('');
+    return `<div class="card" style="cursor:default;margin-bottom:14px">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+        <span style="font-size:17px;font-weight:600;color:#46a302">${r.title}</span>
+        <span class="level-badge ${READ_LB[r.level]}">${READ_LN[r.level]}</span>
+        <span style="font-size:13px;color:var(--text-dim)">${r.zh}</span>
+        <button class="speak-btn" type="button" title="朗读全文" style="margin-left:auto" onclick='speakReading(this,${JSON.stringify(full)})'>🔊</button>
+      </div>${body}</div>`;
+  }).join('');
+}
+function speakReading(btn,text){
+  if(typeof stopAutoPlay==='function')stopAutoPlay();
+  speakDE(text,btn);
+}
+
+// INIT
+initPhrases();
+buildReadTabs();renderReadings();
+</script>
+<div id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="回到顶部">↑</div>
+<style>
+#toTop{position:fixed;right:18px;bottom:24px;z-index:300;width:46px;height:46px;border-radius:50%;background:#58cc02;color:#fff;font-size:24px;line-height:46px;text-align:center;cursor:pointer;box-shadow:0 4px 14px rgba(88,204,2,.4);border-bottom:3px solid #46a302;opacity:0;visibility:hidden;transform:translateY(10px);transition:all .25s}
+#toTop.show{opacity:1;visibility:visible;transform:translateY(0)}
+#toTop:active{transform:scale(.9)}
+</style>
+<script>
+(function(){
+  var btn=document.getElementById('toTop');
+  function onScroll(){ (window.scrollY>300?btn.classList.add('show'):btn.classList.remove('show')); }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+})();
+</script>
+</body>
+</html>

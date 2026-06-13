@@ -1,0 +1,7 @@
+<view class="tip-card" style="border-left-color: {{accent}};">
+  <text wx:if="{{title}}" class="tip-title" style="color: {{accent}};">{{title}}</text>
+  <text wx:if="{{body}}" class="tip-body">{{body}}</text>
+  <block wx:if="{{!body}}">
+    <slot></slot>
+  </block>
+</view>

@@ -1,0 +1,51 @@
+<scroll-view class="page" scroll-y>
+  <view class="container">
+    <view class="hero-label" style="text-align:center;padding-top:40rpx">Aussprache</view>
+    <view style="text-align:center;font-size:48rpx;font-weight:400;color:#3c3c3c;margin:16rpx 0 48rpx">德语发音规律</view>
+
+    <!-- 26个字母 -->
+    <sec-title icon="🔡" text="26个字母完整发音表" />
+    <view style="font-size:24rpx;color:#777777;margin-bottom:20rpx">💡 括号内为字母<text style="color:#58cc02">名称读音</text>，发音栏说明该字母在单词中的<text style="color:#58cc02">实际发音</text></view>
+    <view class="letter-grid">
+      <view wx:for="{{letters}}" wx:key="l"
+            class="letter-card {{item.special ? 'letter-card-special' : ''}}">
+        <view class="letter-big">{{item.l}}</view>
+        <view class="letter-name">{{item.name}}</view>
+        <view class="letter-desc">{{item.desc}}</view>
+      </view>
+    </view>
+
+    <!-- 易错字母 -->
+    <tip-card title="⚠️ 最易出错的6个字母" accent="#ff4b4b">
+      <view class="tip-body">
+        <text style="color:#3c3c3c">J</text> → 发"y"音 ✦ ja＝雅，不是"贾"\n
+        <text style="color:#3c3c3c">V</text> → 发"f"音 ✦ Vater＝法特尔，不是"瓦特尔"\n
+        <text style="color:#3c3c3c">W</text> → 发"v"音 ✦ Wasser＝瓦瑟，不是英语的"w"\n
+        <text style="color:#3c3c3c">Z</text> → 发"ts"音 ✦ zu＝楚，Zeit＝采特，不是"兹"\n
+        <text style="color:#3c3c3c">S</text> → 母音间发"z兹" ✦ See＝泽，sonst＝松斯特\n
+        <text style="color:#3c3c3c">Q</text> → qu发"kv" ✦ Qualität＝克瓦利泰特，不是"kw"
+      </view>
+    </tip-card>
+
+    <!-- 字母组合 -->
+    <sec-title icon="🔗" text="常见字母组合发音" />
+    <view class="combo-table">
+      <view class="combo-header">
+        <text class="combo-col1">组合</text>
+        <text class="combo-col2">发音规则</text>
+        <text class="combo-col3">谐音</text>
+        <text class="combo-col4">例词</text>
+      </view>
+      <view wx:for="{{combos}}" wx:key="c" class="combo-row">
+        <text class="combo-col1 combo-letter">{{item.c}}</text>
+        <text class="combo-col2">{{item.rule}}</text>
+        <text class="combo-col3 combo-zh">{{item.zh}}</text>
+        <text class="combo-col4 combo-ex">{{item.ex}}</text>
+      </view>
+    </view>
+
+    <!-- 关键规则 -->
+    <sec-title icon="📌" text="关键发音规则" />
+    <tip-card wx:for="{{rules}}" wx:key="title" title="{{item.title}}" body="{{item.body}}" />
+  </view>
+</scroll-view>

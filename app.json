@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/pronunciation/pronunciation",
+    "pages/numbers/numbers",
+    "pages/grammar/grammar",
+    "pages/phrases/phrases",
+    "pages/quiz/quiz",
+    "pages/favorites/favorites",
+    "pages/offline/offline"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "德语学习手册",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f7f9fc"
+  },
+  "tabBar": {
+    "color": "#777777",
+    "selectedColor": "#58cc02",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/phrases/phrases",
+        "text": "词句"
+      },
+      {
+        "pagePath": "pages/quiz/quiz",
+        "text": "测验"
+      },
+      {
+        "pagePath": "pages/favorites/favorites",
+        "text": "收藏"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "subPackages": [
+    {
+      "root": "packageData",
+      "pages": []
+    },
+    {
+      "root": "packageOffline",
+      "pages": []
+    }
+  ],
+  "lazyCodeLoading": "requiredComponents"
+}

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "数字规律",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "sec-title": "/components/sec-title/sec-title",
+    "quiz-box": "/components/quiz-box/quiz-box"
+  }
+}

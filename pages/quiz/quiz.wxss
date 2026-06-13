@@ -1,0 +1,42 @@
+.page { background: #f7f9fc; min-height: 100vh; }
+.container { padding: 0 32rpx 100rpx; }
+.loading { text-align: center; color: #777777; font-size: 28rpx; padding: 80rpx 0; }
+
+/* ---- 模式选择网格 ---- */
+.mode-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20rpx; }
+.mode-card {
+  background: #ffffff;
+  border: 1rpx solid #e8eaed;
+  border-radius: 28rpx;
+  padding: 52rpx 24rpx 44rpx;
+  text-align: center;
+  box-shadow: 0 4rpx 24rpx rgba(0,0,0,0.07), inset 0 1rpx 0 rgba(255,255,255,0.6);
+  transition: all 0.18s;
+}
+.mode-card:active {
+  transform: scale(0.96);
+  background: linear-gradient(145deg, rgba(88,204,2,0.12) 0%, rgba(88,204,2,0.04) 100%);
+  border-color: rgba(88,204,2,0.35);
+  box-shadow: 0 2rpx 16rpx rgba(88,204,2,0.18), inset 0 1rpx 0 rgba(88,204,2,0.1);
+}
+.mode-icon {
+  font-size: 60rpx;
+  margin-bottom: 18rpx;
+  display: block;
+  filter: drop-shadow(0 2rpx 8rpx rgba(88,204,2,0.25));
+}
+.mode-title {
+  color: #58cc02;
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+  font-weight: 600;
+  letter-spacing: 1rpx;
+}
+.mode-desc { font-size: 24rpx; color: #777777; line-height: 1.5; }
+.tip-hint {
+  text-align: center;
+  color: #777777;
+  font-size: 24rpx;
+  margin-top: 44rpx;
+  opacity: 0.75;
+}

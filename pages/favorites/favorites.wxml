@@ -1,0 +1,25 @@
+<view class="fav-page">
+  <!-- Loading -->
+  <view wx:if="{{loading}}" class="fav-loading">
+    <text class="fav-loading-text">加载中…</text>
+  </view>
+
+  <!-- Empty state -->
+  <view wx:elif="{{list.length === 0}}" class="fav-empty">
+    <text class="fav-empty-icon">☆</text>
+    <text class="fav-empty-text">还没有收藏，去词句页点 ☆ 收藏吧</text>
+  </view>
+
+  <!-- List -->
+  <view wx:else class="fav-list">
+    <view class="fav-header">
+      <text class="fav-header-text">共 {{list.length}} 条收藏</text>
+    </view>
+    <view wx:for="{{list}}" wx:key="favId" class="fav-item">
+      <phrase-card de="{{item.de}}" zh="{{item.zh}}" py="{{item.py}}" />
+      <view class="fav-remove" data-favid="{{item.favId}}" bindtap="onUnfav">
+        <text class="fav-remove-text">取消收藏</text>
+      </view>
+    </view>
+  </view>
+</view>

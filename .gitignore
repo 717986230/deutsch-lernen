@@ -1,0 +1,14 @@
+# 依赖与生成产物
+node_modules/
+miniprogram_npm/
+
+# 微信开发者工具本地/私有配置
+project.private.config.json
+
+# 系统文件
+.DS_Store
+*.log
+
+# 本地 Claude Code 工具配置（与项目无关）
+.claude/
+skills-lock.json

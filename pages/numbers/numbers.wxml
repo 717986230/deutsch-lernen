@@ -1,0 +1,71 @@
+<scroll-view class="page" scroll-y>
+  <view class="container">
+    <view class="hero-label" style="text-align:center;padding-top:40rpx">Zahlen</view>
+    <view style="text-align:center;font-size:48rpx;font-weight:400;color:#3c3c3c;margin:16rpx 0 48rpx">德语数字规律</view>
+
+    <!-- 0-12 -->
+    <sec-title icon="0️⃣" text="基础数字 0–12（单独记忆）" />
+    <view class="num-grid">
+      <view wx:for="{{nums0}}" wx:key="n" class="num-card">
+        <view class="num-big">{{item.n}}</view>
+        <view class="num-de">{{item.de}}</view>
+        <view class="num-py">{{item.py}}</view>
+      </view>
+    </view>
+
+    <!-- 规律 -->
+    <sec-title icon="📐" text="数字构成规律" />
+    <view class="rule-box">
+      <view class="rule-box-title">13–19：数字 + zehn（十）</view>
+      <view class="rule-item"><text class="rule-num">13</text><text class="rule-de">dreizehn</text><text class="rule-py">= drei + zehn</text></view>
+      <view class="rule-item"><text class="rule-num">19</text><text class="rule-de">neunzehn</text><text class="rule-py">= neun + zehn</text></view>
+    </view>
+    <view class="rule-box">
+      <view class="rule-box-title">20–90（整十）：数字词根 + zig</view>
+      <view class="rule-item"><text class="rule-num">20</text><text class="rule-de">zwanzig</text><text class="rule-py">茨万齐希</text></view>
+      <view class="rule-item"><text class="rule-num">30</text><text class="rule-de">dreißig</text><text class="rule-py">德莱西希</text></view>
+      <view class="rule-item"><text class="rule-num">40</text><text class="rule-de">vierzig</text><text class="rule-py">费尔齐希</text></view>
+      <view class="rule-item"><text class="rule-num">50</text><text class="rule-de">fünfzig</text><text class="rule-py">菲因夫齐希</text></view>
+      <view class="rule-item"><text class="rule-num">60</text><text class="rule-de">sechzig</text><text class="rule-py">泽克齐希</text></view>
+      <view class="rule-item"><text class="rule-num">70</text><text class="rule-de">siebzig</text><text class="rule-py">泽布齐希</text></view>
+      <view class="rule-item"><text class="rule-num">80</text><text class="rule-de">achtzig</text><text class="rule-py">阿赫特齐希</text></view>
+      <view class="rule-item"><text class="rule-num">90</text><text class="rule-de">neunzig</text><text class="rule-py">诺伊因齐希</text></view>
+    </view>
+    <view class="rule-box">
+      <view class="rule-box-title">21–99：个位 + und + 十位（⚠️ 倒序！）</view>
+      <view class="rule-item"><text class="rule-num">21</text><text class="rule-de">einundzwanzig</text><text class="rule-py">ein + und + zwanzig</text></view>
+      <view class="rule-item"><text class="rule-num">35</text><text class="rule-de">fünfunddreißig</text><text class="rule-py">fünf + und + dreißig</text></view>
+      <view class="rule-item"><text class="rule-num">99</text><text class="rule-de">neunundneunzig</text><text class="rule-py">neun + und + neunzig</text></view>
+    </view>
+
+    <!-- 大数字 -->
+    <sec-title icon="💯" text="大数字" />
+    <view class="num-grid">
+      <view wx:for="{{numsBig}}" wx:key="n" class="num-card">
+        <view class="num-big" style="font-size:36rpx">{{item.n}}</view>
+        <view class="num-de">{{item.de}}</view>
+        <view class="num-py">{{item.py}}</view>
+      </view>
+    </view>
+
+    <!-- 测验 -->
+    <sec-title icon="🎯" text="数字测验" />
+    <block wx:if="{{!mode}}">
+      <view class="quiz-btns">
+        <view class="quiz-start-btn" bindtap="startQuiz" data-mode="de2zh">
+          <view style="font-size:40rpx;margin-bottom:12rpx">🔢</view>
+          <view style="color:#58cc02;font-size:28rpx">看数字→说德语</view>
+        </view>
+        <view class="quiz-start-btn" bindtap="startQuiz" data-mode="zh2de">
+          <view style="font-size:40rpx;margin-bottom:12rpx">🔤</view>
+          <view style="color:#58cc02;font-size:28rpx">看德语→选数字</view>
+        </view>
+      </view>
+    </block>
+    <quiz-box wx:else
+              score="{{score}}" total="{{total}}"
+              question="{{question}}" hint="{{hint}}"
+              opts="{{opts}}" showProgress="{{false}}"
+              bind:select="onSelect" bind:restart="onRestart" bind:exit="onExit" />
+  </view>
+</scroll-view>

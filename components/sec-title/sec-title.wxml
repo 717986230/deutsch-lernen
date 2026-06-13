@@ -1,0 +1,5 @@
+<view class="sec-title">
+  <text wx:if="{{icon}}" class="sec-title-icon">{{icon}}</text>
+  <text class="sec-title-text">{{text}}</text>
+  <text wx:if="{{count}}" class="sec-title-count">{{count}}</text>
+</view>

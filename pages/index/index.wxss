@@ -1,0 +1,108 @@
+.page { background: #f7f9fc; min-height: 100vh; }
+
+/* ---- 功能入口网格 ---- */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20rpx;
+  margin-top: 48rpx;
+}
+.feature-card {
+  background: #ffffff;
+  border: 1rpx solid #e8eaed;
+  border-radius: 28rpx;
+  padding: 52rpx 32rpx 44rpx;
+  text-align: center;
+  box-shadow: 0 4rpx 24rpx rgba(0,0,0,0.07), inset 0 1rpx 0 rgba(255,255,255,0.6);
+  transition: all 0.18s;
+}
+.feature-card:active {
+  transform: scale(0.96);
+  background: linear-gradient(145deg, rgba(88,204,2,0.12) 0%, rgba(88,204,2,0.04) 100%);
+  border-color: rgba(88,204,2,0.35);
+  box-shadow: 0 2rpx 16rpx rgba(88,204,2,0.18), inset 0 1rpx 0 rgba(88,204,2,0.1);
+}
+
+.feature-icon {
+  font-size: 68rpx;
+  margin-bottom: 22rpx;
+  display: block;
+  filter: drop-shadow(0 2rpx 8rpx rgba(88,204,2,0.3));
+}
+.feature-name {
+  font-size: 30rpx;
+  color: #58cc02;
+  margin-bottom: 12rpx;
+  letter-spacing: 1rpx;
+  font-weight: 600;
+}
+.feature-desc { font-size: 24rpx; color: #777777; line-height: 1.5; }
+
+/* ---- 级别卡片 ---- */
+.level-cards { display: flex; flex-direction: column; gap: 20rpx; }
+
+.level-card {
+  position: relative;
+  border-radius: 28rpx;
+  padding: 36rpx 36rpx 36rpx 48rpx;
+  border: 1rpx solid rgba(88,204,2,0.15);
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 4rpx 24rpx rgba(0,0,0,0.06), inset 0 1rpx 0 rgba(255,255,255,0.6);
+  transition: all 0.18s;
+}
+.level-card:active {
+  transform: scale(0.985);
+  box-shadow: 0 2rpx 16rpx rgba(0,0,0,0.08);
+}
+
+/* 左侧彩色强调条 — 根据级别覆盖 */
+.level-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 6rpx;
+  border-radius: 28rpx 0 0 28rpx;
+  background: #58cc02;
+}
+/* 级别专属渐变 & 强调条 */
+.level-card.lv-0  { border-color: rgba(88,204,2,0.2);  background: linear-gradient(135deg, rgba(88,204,2,0.07) 0%, #ffffff 90%); }
+.level-card.lv-0::before  { background: linear-gradient(180deg, #58cc02, #46a302); }
+.level-card.lv-a1 { border-color: rgba(28,176,246,0.2);  background: linear-gradient(135deg, rgba(28,176,246,0.07) 0%, #ffffff 90%); }
+.level-card.lv-a1::before { background: linear-gradient(180deg, #1cb0f6, #1cb0f6); }
+.level-card.lv-a2 { border-color: rgba(255,150,0,0.25); background: linear-gradient(135deg, rgba(255,150,0,0.09) 0%, #ffffff 90%); }
+.level-card.lv-a2::before { background: linear-gradient(180deg, #ff9600, #ff7a00); }
+.level-card.lv-b1 { border-color: rgba(255,122,77,0.2);  background: linear-gradient(135deg, rgba(255,122,77,0.07) 0%, #ffffff 90%); }
+.level-card.lv-b1::before { background: linear-gradient(180deg, #ff7a4d, #ff7a4d); }
+.level-card.lv-b2 { border-color: rgba(206,130,255,0.2);   background: linear-gradient(135deg, rgba(206,130,255,0.07) 0%, #ffffff 90%); }
+.level-card.lv-b2::before { background: linear-gradient(180deg, #ce82ff, #ce82ff); }
+
+.lc-stage {
+  font-size: 22rpx;
+  font-weight: 700;
+  margin-bottom: 10rpx;
+  letter-spacing: 2rpx;
+  text-transform: uppercase;
+}
+.lc-title {
+  font-size: 34rpx;
+  color: #3c3c3c;
+  margin-bottom: 14rpx;
+  font-weight: 600;
+  letter-spacing: 1rpx;
+}
+.lc-desc {
+  font-size: 24rpx;
+  color: #777777;
+  line-height: 1.75;
+  white-space: pre-line;
+  padding-right: 48rpx;
+}
+.lc-arrow {
+  position: absolute;
+  right: 32rpx;
+  bottom: 28rpx;
+  font-size: 36rpx;
+  color: #58cc02;
+  opacity: 0.5;
+}

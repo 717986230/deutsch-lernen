@@ -1,0 +1,42 @@
+<view class="quiz-box">
+  <!-- 得分行 -->
+  <view class="quiz-score-row">
+    <text class="quiz-score-label">得分：</text>
+    <text class="quiz-score-val">{{score}} / {{total}}</text>
+    <text class="quiz-score-pct">（{{_percent}}%）</text>
+  </view>
+
+  <!-- 进度条 -->
+  <view wx:if="{{showProgress}}" class="progress-bar">
+    <view class="progress-fill" style="width: {{_percent}}%;"></view>
+  </view>
+
+  <!-- 题目 -->
+  <view class="quiz-question">{{question}}</view>
+
+  <!-- 提示 -->
+  <view wx:if="{{hint}}" class="quiz-hint">{{hint}}</view>
+
+  <!-- 选项网格 -->
+  <view class="quiz-opts-grid">
+    <view
+      wx:for="{{opts}}"
+      wx:key="index"
+      class="quiz-opt {{item.state === 'correct' ? 'quiz-opt--correct' : ''}} {{item.state === 'wrong' ? 'quiz-opt--wrong' : ''}}"
+      data-index="{{index}}"
+      bindtap="onSelect"
+    >
+      <text class="quiz-opt-label">{{item.label}}</text>
+    </view>
+  </view>
+
+  <!-- 底部按钮 -->
+  <view class="quiz-actions">
+    <view class="quiz-btn quiz-btn--restart" bindtap="onRestart">
+      <text>重新开始</text>
+    </view>
+    <view class="quiz-btn quiz-btn--exit" bindtap="onExit">
+      <text>退出</text>
+    </view>
+  </view>
+</view>

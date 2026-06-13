@@ -1,0 +1,65 @@
+<view class="page">
+  <view class="header">
+    <view class="hero-label" style="text-align:center;padding-top:32rpx">Alltagsdeutsch</view>
+    <view style="text-align:center;font-size:44rpx;font-weight:400;color:#3c3c3c;margin:12rpx 0 8rpx">日常对话 + 词汇大全</view>
+    <view style="text-align:center;font-size:24rpx;color:#777777;margin-bottom:16rpx">71个分类 · 3114个词句 · 点击卡片看谐音</view>
+
+    <!-- 搜索 -->
+    <view class="search-wrap">
+      <input class="search-input" placeholder="搜索德语、中文或谐音..." placeholder-class="search-ph"
+             value="{{keyword}}" bindinput="onSearch" />
+      <text class="search-icon">🔍</text>
+    </view>
+
+    <!-- 级别标签 -->
+    <scroll-view class="level-tabs" scroll-x>
+      <view wx:for="{{levelTabs}}" wx:key="key"
+            class="level-tab {{activeLevel === item.key ? 'level-tab-active' : ''}}"
+            bindtap="onLevelTap" data-level="{{item.key}}">{{item.label}}</view>
+    </scroll-view>
+
+    <!-- 级别说明 -->
+    <view wx:if="{{levelInfo}}" class="level-info" style="border-left-color:{{levelInfo.color}}">
+      <text style="color:{{levelInfo.color}};font-weight:600">{{levelInfo.label}}</text>　{{levelInfo.desc}}
+    </view>
+
+    <!-- 分类标签：仅在选定具体级别时显示，避免“全部”下上百标签 -->
+    <scroll-view wx:if="{{activeLevel !== 'all'}}" class="cat-tabs" scroll-x>
+      <view class="cat-tab {{activeCat === 'all' ? 'cat-tab-active' : ''}}"
+            bindtap="onCatTap" data-cat="all">全部</view>
+      <view wx:for="{{catTabs}}" wx:key="name"
+            class="cat-tab {{activeCat === item.name ? 'cat-tab-active' : ''}}"
+            bindtap="onCatTap" data-cat="{{item.name}}">
+        {{item.icon}} {{item.name}}
+      </view>
+    </scroll-view>
+    <view wx:else class="cat-hint">👆 选择上方级别可按分类筛选，或直接搜索</view>
+
+    <view wx:if="{{resultText}}" class="result-text">{{resultText}}</view>
+  </view>
+
+  <scroll-view class="content" scroll-y>
+    <view wx:if="{{loading}}" class="loading">数据加载中…</view>
+    <view wx:elif="{{loadError}}" class="loading" bindtap="retryLoad">加载失败，点击重试</view>
+
+    <!-- 筛选/搜索结果：平铺卡片 -->
+    <block wx:elif="{{isFiltered}}">
+      <view class="phrase-grid">
+        <phrase-card wx:for="{{searchResults}}" wx:key="index"
+                     de="{{item.de}}" zh="{{item.zh}}" py="{{item.py}}" />
+      </view>
+      <view wx:if="{{searchResults.length === 0}}" class="empty">没有找到匹配的词句</view>
+    </block>
+
+    <!-- 分级浏览：分区 -->
+    <block wx:else>
+      <view wx:for="{{sections}}" wx:key="name" class="section">
+        <sec-title icon="{{item.icon}}" text="{{item.name}}" count="{{item.count}}" />
+        <view class="phrase-grid">
+          <phrase-card wx:for="{{item.phrases}}" wx:for-item="p" wx:key="de"
+                       de="{{p.de}}" zh="{{p.zh}}" py="{{p.py}}" />
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

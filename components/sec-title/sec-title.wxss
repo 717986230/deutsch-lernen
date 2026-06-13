@@ -1,0 +1,43 @@
+/* sec-title 组件样式 */
+.sec-title {
+  display: flex;
+  align-items: center;
+  margin: 40rpx 0 20rpx;
+  padding-bottom: 16rpx;
+  border-bottom: 1rpx solid rgba(88,204,2,0.18);
+  position: relative;
+}
+
+/* 金色底部强调线 */
+.sec-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1rpx;
+  width: 48rpx;
+  height: 2rpx;
+  background: linear-gradient(90deg, #58cc02, transparent);
+  border-radius: 1rpx;
+}
+
+.sec-title-icon {
+  font-size: 40rpx;
+  margin-right: 14rpx;
+}
+
+.sec-title-text {
+  font-size: 30rpx;
+  color: #58cc02;
+  letter-spacing: 3rpx;
+  font-weight: 600;
+}
+
+.sec-title-count {
+  font-size: 20rpx;
+  color: rgba(88,204,2,0.45);
+  margin-left: auto;
+  background: rgba(88,204,2,0.08);
+  padding: 3rpx 14rpx;
+  border-radius: 20rpx;
+  letter-spacing: 1rpx;
+}

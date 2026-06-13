@@ -1,0 +1,79 @@
+/* phrase-card 组件样式 */
+.phrase-card {
+  position: relative;
+  background: #ffffff;
+  border: 1rpx solid #e8eaed;
+  border-radius: 24rpx;
+  padding: 32rpx;
+  margin-bottom: 20rpx;
+  transition: all 0.2s;
+}
+
+.phrase-card--active {
+  background: rgba(88,204,2,0.1);
+  border-color: rgba(88,204,2,0.4);
+}
+
+/* 收藏按钮 */
+.phrase-card__fav {
+  position: absolute;
+  top: 16rpx;
+  right: 16rpx;
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.phrase-card__fav-icon {
+  font-size: 40rpx;
+  color: rgba(119,119,119,0.6);
+  line-height: 1;
+}
+
+.phrase-card__fav-icon--on {
+  color: #58cc02;
+}
+
+.phrase-de {
+  display: block;
+  font-size: 34rpx;
+  color: #58cc02;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 12rpx;
+  line-height: 1.5;
+}
+
+.phrase-zh {
+  display: block;
+  font-size: 28rpx;
+  color: #3c3c3c;
+  line-height: 1.6;
+}
+
+.phrase-py-row {
+  display: flex;
+  align-items: center;
+  margin-top: 18rpx;
+  flex-wrap: wrap;
+  gap: 12rpx;
+}
+
+.phrase-py-label {
+  font-size: 20rpx;
+  color: rgba(88,204,2,0.7);
+  background: rgba(88,204,2,0.12);
+  border: 1rpx solid rgba(88,204,2,0.3);
+  border-radius: 20rpx;
+  padding: 4rpx 16rpx;
+  letter-spacing: 1rpx;
+}
+
+.phrase-py {
+  font-size: 24rpx;
+  color: #777777;
+  line-height: 1.6;
+}

@@ -1,0 +1,115 @@
+<scroll-view class="page" scroll-y>
+  <view class="container">
+    <view class="hero-label" style="text-align:center;padding-top:40rpx">Grammatik</view>
+    <view style="text-align:center;font-size:48rpx;font-weight:400;color:#3c3c3c;margin:16rpx 0 48rpx">德语语法速记</view>
+
+    <!-- 冠词性别 -->
+    <sec-title icon="🏷️" text="名词性别（冠词）" />
+    <view class="rule-box">
+      <view class="rule-box-title">三种性别 = 三种定冠词</view>
+      <view class="gender-grid">
+        <view class="gender-card" style="background:rgba(28,176,246,0.1);border-color:rgba(28,176,246,0.3)">
+          <view style="font-size:40rpx;color:#1cb0f6;font-style:italic">der</view>
+          <view style="font-size:24rpx;color:#777777;margin:8rpx 0">阳性 (m)</view>
+          <view style="font-size:24rpx;color:#1cb0f6;line-height:1.8">der Mann\nder Vater</view>
+        </view>
+        <view class="gender-card" style="background:rgba(255,75,75,0.1);border-color:rgba(255,75,75,0.3)">
+          <view style="font-size:40rpx;color:#ff4b4b;font-style:italic">die</view>
+          <view style="font-size:24rpx;color:#777777;margin:8rpx 0">阴性 (f)</view>
+          <view style="font-size:24rpx;color:#ff4b4b;line-height:1.8">die Frau\ndie Mutter</view>
+        </view>
+        <view class="gender-card" style="background:rgba(88,204,2,0.1);border-color:rgba(88,204,2,0.3)">
+          <view style="font-size:40rpx;color:#58cc02;font-style:italic">das</view>
+          <view style="font-size:24rpx;color:#777777;margin:8rpx 0">中性 (n)</view>
+          <view style="font-size:24rpx;color:#58cc02;line-height:1.8">das Kind\ndas Buch</view>
+        </view>
+      </view>
+    </view>
+    <tip-card title="性别记忆技巧">
+      <view class="tip-body">
+• 以 <text style="color:#3c3c3c">-er/-eur/-ismus/-ling</text> 结尾 → 多为 <text style="color:#1cb0f6">der</text>\n• 以 <text style="color:#3c3c3c">-ung/-heit/-keit/-schaft/-ion</text> 结尾 → 多为 <text style="color:#ff4b4b">die</text>\n• 以 <text style="color:#3c3c3c">-chen/-lein/-ment/-tum</text> 结尾 → 多为 <text style="color:#58cc02">das</text>\n• <text style="color:#3c3c3c">动词名词化</text>（das Essen, das Lernen）→ 永远是 <text style="color:#58cc02">das</text>
+      </view>
+    </tip-card>
+
+    <!-- 动词变位 -->
+    <sec-title icon="🔄" text="动词变位（现在时）" />
+    <view class="rule-box">
+      <view class="rule-box-title">规则动词：machen（做）</view>
+      <view class="verb-table">
+        <view class="verb-header">
+          <text class="vc1">人称</text><text class="vc2">变位</text><text class="vc3">中文</text><text class="vc4">词尾</text>
+        </view>
+        <view class="verb-row"><text class="vc1">ich</text><text class="vc2">mach<text style="color:#58cc02">e</text></text><text class="vc3 dim">我做</text><text class="vc4 gold">-e</text></view>
+        <view class="verb-row"><text class="vc1">du</text><text class="vc2">mach<text style="color:#58cc02">st</text></text><text class="vc3 dim">你做</text><text class="vc4 gold">-st</text></view>
+        <view class="verb-row"><text class="vc1">er/sie/es</text><text class="vc2">mach<text style="color:#58cc02">t</text></text><text class="vc3 dim">他/她/它做</text><text class="vc4 gold">-t</text></view>
+        <view class="verb-row"><text class="vc1">wir</text><text class="vc2">mach<text style="color:#58cc02">en</text></text><text class="vc3 dim">我们做</text><text class="vc4 gold">-en</text></view>
+        <view class="verb-row"><text class="vc1">ihr</text><text class="vc2">mach<text style="color:#58cc02">t</text></text><text class="vc3 dim">你们做</text><text class="vc4 gold">-t</text></view>
+        <view class="verb-row"><text class="vc1">Sie/sie</text><text class="vc2">mach<text style="color:#58cc02">en</text></text><text class="vc3 dim">您/他们做</text><text class="vc4 gold">-en</text></view>
+      </view>
+    </view>
+    <view class="rule-box">
+      <view class="rule-box-title">不规则动词：sein（是）/ haben（有）</view>
+      <view style="display:flex;gap:32rpx">
+        <view style="flex:1">
+          <view style="font-size:24rpx;color:rgba(88,204,2,0.5);margin-bottom:16rpx;letter-spacing:2rpx">SEIN（是）</view>
+          <view class="irreg-row">ich <text style="color:#58cc02">bin</text>（我是）</view>
+          <view class="irreg-row">du <text style="color:#58cc02">bist</text>（你是）</view>
+          <view class="irreg-row">er/sie/es <text style="color:#58cc02">ist</text>（他是）</view>
+          <view class="irreg-row">wir <text style="color:#58cc02">sind</text>（我们是）</view>
+          <view class="irreg-row">ihr <text style="color:#58cc02">seid</text>（你们是）</view>
+          <view class="irreg-row">sie/Sie <text style="color:#58cc02">sind</text>（他们是）</view>
+        </view>
+        <view style="flex:1">
+          <view style="font-size:24rpx;color:rgba(88,204,2,0.5);margin-bottom:16rpx;letter-spacing:2rpx">HABEN（有）</view>
+          <view class="irreg-row">ich <text style="color:#58cc02">habe</text>（我有）</view>
+          <view class="irreg-row">du <text style="color:#58cc02">hast</text>（你有）</view>
+          <view class="irreg-row">er/sie/es <text style="color:#58cc02">hat</text>（他有）</view>
+          <view class="irreg-row">wir <text style="color:#58cc02">haben</text>（我们有）</view>
+          <view class="irreg-row">ihr <text style="color:#58cc02">habt</text>（你们有）</view>
+          <view class="irreg-row">sie/Sie <text style="color:#58cc02">haben</text>（他们有）</view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 四个格 -->
+    <sec-title icon="📊" text="四个格（简化版）" />
+    <view class="case-table">
+      <view class="case-header">
+        <text class="cc1">格</text><text class="cc2">用途</text><text class="cc3">der→</text><text class="cc4">die→</text><text class="cc5">das→</text>
+      </view>
+      <view class="case-row">
+        <view class="cc1"><text style="color:#58cc02">第一格</text>\nNominativ</view>
+        <text class="cc2 dim">主语（谁）</text><text class="cc3">der</text><text class="cc4">die</text><text class="cc5">das</text>
+      </view>
+      <view class="case-row">
+        <view class="cc1"><text style="color:#1cb0f6">第二格</text>\nGenitiv</view>
+        <text class="cc2 dim">所有格（谁的）</text><text class="cc3">des</text><text class="cc4">der</text><text class="cc5">des</text>
+      </view>
+      <view class="case-row">
+        <view class="cc1"><text style="color:#ff4b4b">第三格</text>\nDativ</view>
+        <text class="cc2 dim">间接宾语（给谁）</text><text class="cc3">dem</text><text class="cc4">der</text><text class="cc5">dem</text>
+      </view>
+      <view class="case-row">
+        <view class="cc1"><text style="color:#58cc02">第四格</text>\nAkkusativ</view>
+        <text class="cc2 dim">直接宾语（做什么）</text><text class="cc3">den</text><text class="cc4">die</text><text class="cc5">das</text>
+      </view>
+    </view>
+    <tip-card title="快速记忆：只有阳性der变化最多">
+      <view class="tip-body">阴性/中性/复数：第三格加m，第四格阴中不变。<text style="color:#3c3c3c">初学先掌握第一格和第四格</text>，日常交流够用了！</view>
+    </tip-card>
+
+    <!-- 万能句型 -->
+    <sec-title icon="⚡" text="常用句型模板" />
+    <view class="rule-box">
+      <view class="rule-box-title">万能句型</view>
+      <view class="pattern-row">Ich <text style="color:#58cc02">möchte</text> + 名词/动词原形 → 我想要……</view>
+      <view class="pattern-row">Ich <text style="color:#58cc02">bin</text> + 形容词/职业 → 我是……</view>
+      <view class="pattern-row">Ich <text style="color:#58cc02">habe</text> + 名词（四格） → 我有……</view>
+      <view class="pattern-row">Kann ich + 动词原形? → 我可以……吗？</view>
+      <view class="pattern-row">Wo ist + 地点? → ……在哪里？</view>
+      <view class="pattern-row">Was <text style="color:#58cc02">kostet</text> + 物品? → ……多少钱？</view>
+      <view class="pattern-row">Wie <text style="color:#58cc02">heißen</text> Sie? → 您叫什么名字？</view>
+      <view class="pattern-row">Bitte + 动词 → 请……（命令式）</view>
+    </view>
+  </view>
+</scroll-view>

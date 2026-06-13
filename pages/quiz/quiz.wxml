@@ -1,0 +1,29 @@
+<scroll-view class="page" scroll-y>
+  <view class="container">
+    <view class="hero-label" style="text-align:center;padding-top:40rpx">Übungen</view>
+    <view style="text-align:center;font-size:48rpx;font-weight:400;color:#3c3c3c;margin:16rpx 0 40rpx">练习测验</view>
+
+    <!-- 模式选择 -->
+    <block wx:if="{{!mode}}">
+      <view class="mode-grid">
+        <view wx:for="{{modes}}" wx:key="key" class="mode-card"
+              bindtap="startQuiz" data-mode="{{item.key}}">
+          <view class="mode-icon">{{item.icon}}</view>
+          <view class="mode-title">{{item.title}}</view>
+          <view class="mode-desc">{{item.desc}}</view>
+        </view>
+      </view>
+      <view class="tip-hint">💡 数字测验请前往「数字」页</view>
+    </block>
+
+    <!-- 测验进行中 -->
+    <view wx:elif="{{loading}}" class="loading">题库加载中…</view>
+    <view wx:elif="{{loadError}}" class="loading" bindtap="retryLoad">加载失败，点击重试</view>
+
+    <quiz-box wx:else
+              score="{{score}}" total="{{total}}"
+              question="{{question}}" hint="{{hint}}"
+              opts="{{opts}}" showProgress="{{true}}"
+              bind:select="onSelect" bind:restart="onRestart" bind:exit="onExit" />
+  </view>
+</scroll-view>

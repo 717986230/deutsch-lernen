@@ -1,0 +1,138 @@
+.page { background: #f7f9fc; min-height: 100vh; }
+.container { padding: 0 32rpx 100rpx; }
+
+/* ---- 数字卡片网格 ---- */
+.num-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18rpx;
+  margin-bottom: 44rpx;
+}
+.num-card {
+  background: #ffffff;
+  border: 1rpx solid #e8eaed;
+  border-radius: 24rpx;
+  padding: 32rpx 12rpx;
+  text-align: center;
+  box-shadow: 0 4rpx 20rpx rgba(0,0,0,0.06), inset 0 1rpx 0 rgba(255,255,255,0.6);
+  transition: all 0.15s;
+}
+.num-card:active {
+  transform: scale(0.93);
+  background: linear-gradient(145deg, rgba(88,204,2,0.12) 0%, rgba(88,204,2,0.04) 100%);
+  border-color: rgba(88,204,2,0.35);
+}
+.num-big {
+  font-size: 60rpx;
+  font-weight: 700;
+  color: #58cc02;
+  margin-bottom: 8rpx;
+  display: block;
+  text-shadow: 0 0 24rpx rgba(88,204,2,0.4);
+  line-height: 1.1;
+}
+.num-de {
+  font-size: 26rpx;
+  color: #3c3c3c;
+  font-style: italic;
+  margin-bottom: 6rpx;
+  display: block;
+}
+.num-py { font-size: 22rpx; color: #777777; display: block; }
+
+/* ---- 规则列表 ---- */
+.rule-item {
+  display: flex;
+  align-items: baseline;
+  gap: 24rpx;
+  margin-bottom: 20rpx;
+  padding: 16rpx 0;
+  border-bottom: 1rpx solid #e8eaed;
+}
+.rule-num {
+  font-size: 44rpx;
+  font-weight: 700;
+  color: #58cc02;
+  width: 96rpx;
+  flex-shrink: 0;
+  text-shadow: 0 0 16rpx rgba(88,204,2,0.3);
+}
+.rule-de { font-size: 28rpx; color: #3c3c3c; font-style: italic; flex: 1; }
+.rule-py { font-size: 24rpx; color: rgba(88,204,2,0.5); flex: 1; }
+
+/* ---- 测验入口按钮 ---- */
+.quiz-btns { display: flex; gap: 20rpx; margin-bottom: 44rpx; }
+.quiz-start-btn {
+  flex: 1;
+  background: #ffffff;
+  border: 1rpx solid #e8eaed;
+  border-radius: 28rpx;
+  padding: 52rpx 24rpx;
+  text-align: center;
+  box-shadow: 0 4rpx 20rpx rgba(0,0,0,0.06), inset 0 1rpx 0 rgba(255,255,255,0.6);
+  transition: all 0.15s;
+}
+.quiz-start-btn:active {
+  transform: scale(0.96);
+  background: linear-gradient(145deg, rgba(88,204,2,0.12) 0%, rgba(88,204,2,0.04) 100%);
+  border-color: rgba(88,204,2,0.35);
+}
+
+/* ---- 内联测验区 ---- */
+.quiz-box {
+  background: #ffffff;
+  border: 1rpx solid #e8eaed;
+  border-radius: 36rpx;
+  padding: 60rpx 48rpx;
+  text-align: center;
+  margin-top: 16rpx;
+  box-shadow: 0 6rpx 40rpx rgba(0,0,0,0.08), inset 0 1rpx 0 rgba(255,255,255,0.6);
+}
+.quiz-exit {
+  font-size: 24rpx;
+  color: #777777;
+  text-align: right;
+  margin-bottom: 28rpx;
+  opacity: 0.8;
+}
+.quiz-score {
+  font-size: 26rpx;
+  color: #777777;
+  margin-bottom: 36rpx;
+  letter-spacing: 1rpx;
+}
+.quiz-question {
+  font-size: 104rpx;
+  color: #58cc02;
+  font-weight: 700;
+  margin-bottom: 16rpx;
+  text-shadow: 0 0 40rpx rgba(88,204,2,0.45);
+  display: block;
+}
+.quiz-hint { font-size: 26rpx; color: #777777; margin-bottom: 52rpx; }
+.quiz-opts { display: grid; grid-template-columns: 1fr 1fr; gap: 20rpx; }
+.quiz-opt {
+  padding: 28rpx;
+  border-radius: 22rpx;
+  border: 1rpx solid #e8eaed;
+  color: #3c3c3c;
+  font-size: 30rpx;
+  background: #ffffff;
+  transition: all 0.15s;
+}
+.quiz-opt:active {
+  transform: scale(0.95);
+  background: rgba(88,204,2,0.1);
+  border-color: rgba(88,204,2,0.4);
+}
+.quiz-opt-correct {
+  border-color: #58cc02;
+  background: rgba(88,204,2,0.15);
+  color: #58cc02;
+  box-shadow: 0 0 16rpx rgba(88,204,2,0.2);
+}
+.quiz-opt-wrong {
+  border-color: #ff4b4b;
+  background: rgba(255,75,75,0.12);
+  color: #ff4b4b;
+}

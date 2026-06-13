@@ -1,0 +1,126 @@
+<scroll-view class="page" scroll-y>
+  <view class="hero">
+    <view class="hero-label">Deutsche Sprache · 德语学习</view>
+    <view class="hero-title">德语学习手册</view>
+    <view class="hero-sub">发音 · 数字 · 语法 · 3100+ 词句 · 5阶段进阶 · 互动测验</view>
+  </view>
+
+  <view class="container">
+    <!-- 功能入口 -->
+    <view class="feature-grid">
+      <view class="feature-card" bindtap="goPage" data-url="/pages/pronunciation/pronunciation">
+        <view class="feature-icon">🔤</view>
+        <view class="feature-name">发音规律</view>
+        <view class="feature-desc">字母发音·变音·组合音</view>
+      </view>
+      <view class="feature-card" bindtap="goPage" data-url="/pages/numbers/numbers">
+        <view class="feature-icon">🔢</view>
+        <view class="feature-name">数字规律</view>
+        <view class="feature-desc">0-100万·规律·测验</view>
+      </view>
+      <view class="feature-card" bindtap="goPage" data-url="/pages/grammar/grammar">
+        <view class="feature-icon">📐</view>
+        <view class="feature-name">语法速记</view>
+        <view class="feature-desc">冠词·动词变位·格</view>
+      </view>
+      <view class="feature-card" bindtap="goPage" data-url="/pages/phrases/phrases">
+        <view class="feature-icon">💬</view>
+        <view class="feature-name">词句大全</view>
+        <view class="feature-desc">93分类·含谐音</view>
+      </view>
+      <view class="feature-card" bindtap="goPage" data-url="/pages/quiz/quiz">
+        <view class="feature-icon">🎯</view>
+        <view class="feature-name">练习测验</view>
+        <view class="feature-desc">数字·单词·句子</view>
+      </view>
+      <view class="feature-card" bindtap="goPage" data-url="/pages/offline/offline">
+        <view class="feature-icon">📥</view>
+        <view class="feature-name">离线下载</view>
+        <view class="feature-desc">导出网页·离线学</view>
+      </view>
+    </view>
+
+    <!-- 按阶段学习 -->
+    <view style="margin-top:56rpx"><sec-title icon="🎯" text="按阶段学习 · 点击进入" /></view>
+    <view class="level-cards">
+      <view class="level-card" bindtap="goLevel" data-level="0">
+        <view class="lc-stage" style="color:#58cc02">🌱 零基础 · 第1天</view>
+        <view class="lc-title">打招呼就能开口</view>
+        <view class="lc-desc">问候、道别、礼貌用语{{"\n"}}140个词句 · 7个分类</view>
+        <view class="lc-arrow">→</view>
+      </view>
+      <view class="level-card" bindtap="goLevel" data-level="a1">
+        <view class="lc-stage" style="color:#1cb0f6">⭐ A1 初级 · 第1-2周</view>
+        <view class="lc-title">简单日常交流</view>
+        <view class="lc-desc">自我介绍、时间、天气、家庭、高频词{{"\n"}}1138个词句 · 21个分类</view>
+        <view class="lc-arrow">→</view>
+      </view>
+      <view class="level-card" bindtap="goLevel" data-level="a2">
+        <view class="lc-stage" style="color:#ff9600">⭐⭐ A2 基础 · 第1-2月</view>
+        <view class="lc-title">熟悉场景顺畅沟通</view>
+        <view class="lc-desc">购物、餐厅、交通、旅行、菜单{{"\n"}}1053个词句 · 24个分类</view>
+        <view class="lc-arrow">→</view>
+      </view>
+      <view class="level-card" bindtap="goLevel" data-level="b1">
+        <view class="lc-stage" style="color:#ff7a4d">🔥 B1 中级 · 第3-6月</view>
+        <view class="lc-title">理解生活主要内容</view>
+        <view class="lc-desc">医疗、银行、情感、语法、俗语{{"\n"}}622个词句 · 13个分类</view>
+        <view class="lc-arrow">→</view>
+      </view>
+      <view class="level-card" bindtap="goLevel" data-level="b2">
+        <view class="lc-stage" style="color:#ce82ff">💎 B2 中高级 · 第6月+</view>
+        <view class="lc-title">接近流利交流</view>
+        <view class="lc-desc">政府、科技、经济、历史、学术{{"\n"}}161个词句 · 6个分类</view>
+        <view class="lc-arrow">→</view>
+      </view>
+    </view>
+
+    <!-- 学习路线 -->
+    <view style="margin-top:56rpx"><sec-title icon="⚡" text="学习路线建议" /></view>
+    <tip-card title="第一步：掌握发音（1-2天）">
+      <view class="tip-body">德语发音<text style="color:#3c3c3c">规则极强</text>，几乎完全按拼写读音。先学26个字母+变音字母（ä ö ü），再学常见组合音（ei/ie/ch/sch/sp/st）。</view>
+    </tip-card>
+    <tip-card title="第二步：记住数字（1天）">
+      <view class="tip-body">数字有<text style="color:#3c3c3c">清晰规律</text>：1-12单独记，13-19用"数字+zehn"，20-90用"tens+zig"，21-99是<text style="color:#3c3c3c">个位+und+十位</text>（倒序！）。</view>
+    </tip-card>
+    <tip-card title="第三步：学语法框架（3-5天）">
+      <view class="tip-body">德语有<text style="color:#3c3c3c">三种冠词性别</text>（der/die/das）和四个格。先记"万能公式"，每天练5个句型。</view>
+    </tip-card>
+    <tip-card title="第四步：日常对话与词汇（持续）">
+      <view class="tip-body">按需学习近3000个词句，每天选一个场景（如购物/餐厅），把10-15句练熟。<text style="color:#3c3c3c">开口说比默记更重要！</text></view>
+    </tip-card>
+
+    <!-- 中国人学德语·最优方法与规律 -->
+    <view style="margin-top:56rpx"><sec-title icon="🇨🇳" text="中国人学德语 · 最优方法与规律" /></view>
+    <tip-card title="① 发音先行，规则极强" accent="#58cc02">
+      <view class="tip-body">德语<text style="color:#3c3c3c">"所见即所读"</text>，1-2 天拿下字母表+变音(ä ö ü)+组合音(ei/ie/ch/sch)，之后看词就能拼读。<text style="color:#3c3c3c">谐音只是拐杖，尽早换成模仿真人发音。</text></view>
+    </tip-card>
+    <tip-card title="② 名词永远连冠词一起背" accent="#1cb0f6">
+      <view class="tip-body">der/die/das 决定格与词尾。背单词=<text style="color:#3c3c3c">冠词+名词+复数</text>三件套。规律：-ung/-heit/-keit/-ion→<text style="color:#ff4b4b">die</text>；-er/-ling/-ismus→<text style="color:#1cb0f6">der</text>；-chen/-lein/-um→<text style="color:#58cc02">das</text>。</view>
+    </tip-card>
+    <tip-card title="③ 借英语同源词滚雪球" accent="#ff9600">
+      <view class="tip-body">德英同源词极多：Haus/house、Wasser/water、Buch/book、gut/good、trinken/drink、Hand/hand。<text style="color:#3c3c3c">有英语底子可快速白嫖上千词。</text></view>
+    </tip-card>
+    <tip-card title="④ 死磕高频词，别啃生僻" accent="#58cc02">
+      <view class="tip-body">约 <text style="color:#3c3c3c">600-800 高频词覆盖日常 80%</text>。先把 Goethe A1/A2 核心词吃透（本 App 已收录），扩词比求全更重要。</view>
+    </tip-card>
+    <tip-card title="⑤ 抓动词框架这根骨架" accent="#1cb0f6">
+      <view class="tip-body">陈述句<text style="color:#3c3c3c">动词永远第二位</text>，可分动词前缀甩句尾，从句动词到句末。记牢 sein/haben/können/möchten 四大金刚 + 万能句型，半数日常句就能拼。</view>
+    </tip-card>
+    <tip-card title="⑥ 四个格先攻"第一格+第四格"" accent="#ff7a4d">
+      <view class="tip-body">日常主要用主格和宾语(第四格)，二三格后补。<text style="color:#3c3c3c">别被"4格×3性"吓住，先够用再求全。</text></view>
+    </tip-card>
+    <tip-card title="⑦ 数字记规律不硬背" accent="#58cc02">
+      <view class="tip-body">1-12 硬记，13-19=数字+zehn，整十=词根+zig，<text style="color:#3c3c3c">21-99 是个位+und+十位（倒序！）</text></view>
+    </tip-card>
+    <tip-card title="⑧ 场景化 + 每天开口跟读" accent="#1cb0f6">
+      <view class="tip-body">按场景成块学（问候/点餐/问路），<text style="color:#3c3c3c">影子跟读(Shadowing)模仿语调</text>。开口比默记有效 10 倍。</view>
+    </tip-card>
+    <tip-card title="⑨ 间隔重复，少量多次" accent="#ff9600">
+      <view class="tip-body">用本 App 测验或 Anki 按遗忘曲线复习，<text style="color:#3c3c3c">每天 15-20 分钟，胜过周末突击 3 小时。</text></view>
+    </tip-card>
+    <tip-card title="⑩ 磨耳朵：先熟语流再听懂" accent="#ce82ff">
+      <view class="tip-body">听德语慢速新闻(langsam gesprochene Nachrichten / DW)、儿歌、播客。<text style="color:#3c3c3c">先求"听惯节奏"，别一开始追求字字听懂。</text></view>
+    </tip-card>
+  </view>
+</scroll-view>

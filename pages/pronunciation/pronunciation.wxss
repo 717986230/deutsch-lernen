@@ -1,0 +1,83 @@
+.page { background: #f7f9fc; min-height: 100vh; }
+.container { padding: 0 32rpx 100rpx; }
+
+/* ---- 字母卡片网格 ---- */
+.letter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16rpx;
+  margin-bottom: 44rpx;
+}
+.letter-card {
+  background: #ffffff;
+  border: 1rpx solid #e8eaed;
+  border-radius: 24rpx;
+  padding: 28rpx 16rpx;
+  text-align: center;
+  box-shadow: 0 4rpx 20rpx rgba(0,0,0,0.06), inset 0 1rpx 0 rgba(255,255,255,0.6);
+  transition: all 0.15s;
+}
+.letter-card:active {
+  transform: scale(0.93);
+  background: linear-gradient(145deg, rgba(88,204,2,0.12) 0%, rgba(88,204,2,0.04) 100%);
+  border-color: rgba(88,204,2,0.35);
+}
+.letter-card-special {
+  background: linear-gradient(145deg, rgba(88,204,2,0.1) 0%, rgba(88,204,2,0.03) 100%);
+  border-color: rgba(88,204,2,0.22);
+  box-shadow: 0 4rpx 20rpx rgba(0,0,0,0.06), inset 0 1rpx 0 rgba(88,204,2,0.12);
+}
+
+.letter-big {
+  font-size: 48rpx;
+  font-weight: 700;
+  color: #58cc02;
+  text-shadow: 0 0 20rpx rgba(88,204,2,0.4);
+  display: block;
+  margin-bottom: 4rpx;
+}
+.letter-name {
+  font-size: 24rpx;
+  color: #3c3c3c;
+  margin: 8rpx 0 4rpx;
+  font-weight: 500;
+}
+.letter-desc {
+  font-size: 20rpx;
+  color: #777777;
+  white-space: pre-line;
+  line-height: 1.65;
+}
+
+/* ---- 组合发音表格 ---- */
+.combo-table { margin-bottom: 44rpx; }
+.combo-header {
+  display: flex;
+  padding: 16rpx 0;
+  border-bottom: 1rpx solid rgba(88,204,2,0.18);
+  font-size: 22rpx;
+  color: rgba(88,204,2,0.65);
+  letter-spacing: 4rpx;
+  font-weight: 600;
+}
+.combo-row {
+  display: flex;
+  padding: 22rpx 0;
+  border-bottom: 1rpx solid #e8eaed;
+  font-size: 24rpx;
+  align-items: flex-start;
+}
+.combo-row:active { background: rgba(88,204,2,0.04); }
+.combo-col1 { width: 120rpx; flex-shrink: 0; }
+.combo-col2 { flex: 1; }
+.combo-col3 { width: 100rpx; flex-shrink: 0; }
+.combo-col4 { flex: 1.5; }
+.combo-letter {
+  font-size: 30rpx;
+  color: #3c3c3c;
+  font-style: italic;
+  font-weight: 700;
+  text-shadow: 0 0 12rpx rgba(88,204,2,0.2);
+}
+.combo-zh { color: #777777; }
+.combo-ex { color: #777777; }

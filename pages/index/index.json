@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "德语学习手册",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "sec-title": "/components/sec-title/sec-title",
+    "tip-card": "/components/tip-card/tip-card"
+  }
+}
