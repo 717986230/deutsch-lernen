@@ -3469,6 +3469,71 @@ module.exports = [
         "de": "die Energie",
         "zh": "能量/能源",
         "py": "迪 埃内尔基"
+      },
+      {
+        "de": "die Fähigkeit",
+        "zh": "能力",
+        "py": "迪 费伊希凯特"
+      },
+      {
+        "de": "der Faktor",
+        "zh": "因素",
+        "py": "德尔 法克托尔"
+      },
+      {
+        "de": "der Fall",
+        "zh": "情况/案件/坠落",
+        "py": "德尔 法尔"
+      },
+      {
+        "de": "die Fantasie",
+        "zh": "幻想/想象力",
+        "py": "迪 凡塔西"
+      },
+      {
+        "de": "die Fläche",
+        "zh": "面积/平面",
+        "py": "迪 弗莱希"
+      },
+      {
+        "de": "die Flucht",
+        "zh": "逃跑/逃亡",
+        "py": "迪 弗鲁赫特"
+      },
+      {
+        "de": "die Folge",
+        "zh": "后果/集数/顺序",
+        "py": "迪 福尔格"
+      },
+      {
+        "de": "die Form",
+        "zh": "形状/形式",
+        "py": "迪 福姆"
+      },
+      {
+        "de": "der Fortschritt",
+        "zh": "进步",
+        "py": "德尔 福特施里特"
+      },
+      {
+        "de": "die Fortsetzung",
+        "zh": "续集/延续",
+        "py": "迪 福特泽茨翁"
+      },
+      {
+        "de": "die Figur",
+        "zh": "身材/人物/图形",
+        "py": "迪 菲古尔"
+      },
+      {
+        "de": "die Flüssigkeit",
+        "zh": "液体",
+        "py": "迪 弗吕西希凯特"
+      },
+      {
+        "de": "der Feierabend",
+        "zh": "下班时间",
+        "py": "德尔 费尔阿本特"
       }
     ]
   },
@@ -3616,6 +3681,41 @@ module.exports = [
         "de": "die Erlaubnis",
         "zh": "许可",
         "py": "迪 埃尔劳普尼斯"
+      },
+      {
+        "de": "der Experte",
+        "zh": "专家",
+        "py": "德尔 埃克斯佩特"
+      },
+      {
+        "de": "der Fachmann",
+        "zh": "专家/行家",
+        "py": "德尔 法赫曼"
+      },
+      {
+        "de": "die Fachfrau",
+        "zh": "女专家/女行家",
+        "py": "迪 法赫弗劳"
+      },
+      {
+        "de": "die Fachleute",
+        "zh": "专业人员（复数）",
+        "py": "迪 法赫洛伊特"
+      },
+      {
+        "de": "der Fleischhauer",
+        "zh": "屠夫/肉商（奥地利）",
+        "py": "德尔 弗莱施豪尔"
+      },
+      {
+        "de": "der Fotograf",
+        "zh": "摄影师",
+        "py": "德尔 福托格拉夫"
+      },
+      {
+        "de": "die Fortbildung",
+        "zh": "进修/继续教育",
+        "py": "迪 福特比尔东"
       }
     ]
   },
@@ -3768,6 +3868,66 @@ module.exports = [
         "de": "die Etage",
         "zh": "楼层",
         "py": "迪 埃塔热"
+      },
+      {
+        "de": "die Fähre",
+        "zh": "渡轮",
+        "py": "迪 费勒"
+      },
+      {
+        "de": "die Fahrbahn",
+        "zh": "车道",
+        "py": "迪 法尔巴恩"
+      },
+      {
+        "de": "das Fahrzeug",
+        "zh": "车辆",
+        "py": "达斯 法尔措伊克"
+      },
+      {
+        "de": "die Fernbedienung",
+        "zh": "遥控器",
+        "py": "迪 费恩贝迪农"
+      },
+      {
+        "de": "das Feuerzeug",
+        "zh": "打火机",
+        "py": "达斯 福伊尔措伊克"
+      },
+      {
+        "de": "die Festplatte",
+        "zh": "硬盘",
+        "py": "迪 费斯特普拉特"
+      },
+      {
+        "de": "die Flöte",
+        "zh": "长笛",
+        "py": "迪 弗勒特"
+      },
+      {
+        "de": "der Flur",
+        "zh": "走廊/门厅",
+        "py": "德尔 弗鲁尔"
+      },
+      {
+        "de": "das Forum",
+        "zh": "论坛",
+        "py": "达斯 福鲁姆"
+      },
+      {
+        "de": "das Feld",
+        "zh": "田地/领域",
+        "py": "达斯 费尔特"
+      },
+      {
+        "de": "der Fauteuil",
+        "zh": "扶手椅（奥地利/瑞士）",
+        "py": "德尔 福特伊"
+      },
+      {
+        "de": "der Fleck",
+        "zh": "污点/斑点",
+        "py": "德尔 弗莱克"
       }
     ]
   },
@@ -3812,6 +3972,16 @@ module.exports = [
         "de": "der Erdapfel",
         "zh": "土豆（奥地利）",
         "py": "德尔 埃尔特阿普弗尔"
+      },
+      {
+        "de": "das Faschierte",
+        "zh": "肉馅（奥地利）",
+        "py": "达斯 法施尔特"
+      },
+      {
+        "de": "das Fett",
+        "zh": "脂肪/油脂",
+        "py": "达斯 费特"
       }
     ]
   },
@@ -3846,6 +4016,43 @@ module.exports = [
         "de": "die Einzahlung",
         "zh": "存款/缴款",
         "py": "迪 艾因察隆"
+      },
+      {
+        "de": "der Export",
+        "zh": "出口",
+        "py": "德尔 埃克斯波特"
+      },
+      {
+        "de": "die Fabrik",
+        "zh": "工厂",
+        "py": "迪 法布里克"
+      },
+      {
+        "de": "die Forderung",
+        "zh": "要求/索求",
+        "py": "迪 福尔德容"
+      },
+      {
+        "de": "die Förderung",
+        "zh": "资助/促进",
+        "py": "迪 弗尔德容"
+      }
+    ]
+  },
+  {
+    "name": "文化·节日",
+    "level": "b1",
+    "icon": "📘",
+    "phrases": [
+      {
+        "de": "der Fasching",
+        "zh": "狂欢节（南德/奥地利）",
+        "py": "德尔 法兴"
+      },
+      {
+        "de": "die Fasnacht",
+        "zh": "狂欢节（瑞士）",
+        "py": "迪 法斯纳赫特"
       }
     ]
   }
