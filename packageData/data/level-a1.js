@@ -715,7 +715,7 @@ module.exports = [
       {
         "de": "die Familie",
         "zh": "家庭",
-        "py": "迪 法米利恩"
+        "py": "迪 法米莉耶"
       },
       {
         "de": "der Vater",
