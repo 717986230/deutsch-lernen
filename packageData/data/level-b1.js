@@ -3199,5 +3199,226 @@ module.exports = [
         "py": "当克 黑尔 多克托尔"
       }
     ]
+  },
+  {
+    "name": "抽象·概念",
+    "level": "b1",
+    "icon": "📘",
+    "phrases": [
+      {
+        "de": "die Abbildung",
+        "zh": "插图/图示",
+        "py": "迪 阿普比尔东"
+      },
+      {
+        "de": "der Abschnitt",
+        "zh": "段落/部分",
+        "py": "德尔 阿普施尼特"
+      },
+      {
+        "de": "die Absicht",
+        "zh": "意图/打算",
+        "py": "迪 阿普齐希特"
+      },
+      {
+        "de": "die Aktion",
+        "zh": "行动/促销活动",
+        "py": "迪 阿克齐翁"
+      },
+      {
+        "de": "die Aktivität",
+        "zh": "活动",
+        "py": "迪 阿克蒂维泰特"
+      },
+      {
+        "de": "die Alternative",
+        "zh": "替代方案",
+        "py": "迪 阿尔特纳蒂韦"
+      },
+      {
+        "de": "der Alltag",
+        "zh": "日常生活",
+        "py": "德尔 阿尔塔克"
+      },
+      {
+        "de": "die Änderung",
+        "zh": "更改/变动",
+        "py": "迪 恩德鲁恩"
+      },
+      {
+        "de": "die Angabe",
+        "zh": "说明/数据",
+        "py": "迪 安加贝"
+      },
+      {
+        "de": "der Anspruch",
+        "zh": "要求/权利",
+        "py": "德尔 安施普鲁赫"
+      },
+      {
+        "de": "die Aufnahme",
+        "zh": "录制/接纳/录取",
+        "py": "迪 奥夫纳梅"
+      },
+      {
+        "de": "der Ausdruck",
+        "zh": "表达/打印件",
+        "py": "德尔 奥斯德鲁克"
+      },
+      {
+        "de": "die Ausgabe",
+        "zh": "支出/发放/版本",
+        "py": "迪 奥斯加贝"
+      },
+      {
+        "de": "der Augenblick",
+        "zh": "瞬间/片刻",
+        "py": "德尔 奥根布利克"
+      },
+      {
+        "de": "die Ausnahme",
+        "zh": "例外",
+        "py": "迪 奥斯纳梅"
+      },
+      {
+        "de": "die Aussicht",
+        "zh": "展望/景色",
+        "py": "迪 奥斯齐希特"
+      },
+      {
+        "de": "die Auswahl",
+        "zh": "选择/精选",
+        "py": "迪 奥斯瓦尔"
+      },
+      {
+        "de": "die Anleitung",
+        "zh": "说明书/指南",
+        "py": "迪 安莱东"
+      },
+      {
+        "de": "die Annonce",
+        "zh": "广告/启事",
+        "py": "迪 阿农瑟"
+      },
+      {
+        "de": "der Auftrag",
+        "zh": "委托/订单",
+        "py": "德尔 奥夫特拉克"
+      },
+      {
+        "de": "die Anlage",
+        "zh": "设施/附件/投资",
+        "py": "迪 安拉格"
+      },
+      {
+        "de": "die Aussprache",
+        "zh": "发音",
+        "py": "迪 奥斯施普拉赫"
+      }
+    ]
+  },
+  {
+    "name": "社会·生活",
+    "level": "b1",
+    "icon": "📘",
+    "phrases": [
+      {
+        "de": "die Absenderin",
+        "zh": "寄件人（女）",
+        "py": "迪 阿普曾德林"
+      },
+      {
+        "de": "der Angehörige",
+        "zh": "亲属/家属",
+        "py": "德尔 安格赫里格"
+      },
+      {
+        "de": "die Ausländerin",
+        "zh": "外国人（女）",
+        "py": "迪 奥斯伦德林"
+      },
+      {
+        "de": "die Aushilfe",
+        "zh": "临时帮工",
+        "py": "迪 奥斯希尔费"
+      },
+      {
+        "de": "der Anbieter",
+        "zh": "供应商/提供方",
+        "py": "德尔 安比特"
+      },
+      {
+        "de": "der Autor",
+        "zh": "作者",
+        "py": "德尔 奥托尔"
+      },
+      {
+        "de": "der Abwart",
+        "zh": "楼房管理员/门房（瑞士）",
+        "py": "德尔 阿普瓦特"
+      },
+      {
+        "de": "das Altenheim",
+        "zh": "养老院",
+        "py": "达斯 阿尔滕海姆"
+      },
+      {
+        "de": "das Altersheim",
+        "zh": "养老院",
+        "py": "达斯 阿尔特斯海姆"
+      }
+    ]
+  },
+  {
+    "name": "日常·物品",
+    "level": "b1",
+    "icon": "📘",
+    "phrases": [
+      {
+        "de": "der Abfall",
+        "zh": "垃圾",
+        "py": "德尔 阿普法尔"
+      },
+      {
+        "de": "der Abfalleimer",
+        "zh": "垃圾桶",
+        "py": "德尔 阿普法尔艾默"
+      },
+      {
+        "de": "das Alphabet",
+        "zh": "字母表",
+        "py": "达斯 阿尔法贝特"
+      },
+      {
+        "de": "der Alarm",
+        "zh": "警报",
+        "py": "德尔 阿拉姆"
+      },
+      {
+        "de": "der Alkohol",
+        "zh": "酒精/含酒精饮料",
+        "py": "德尔 阿尔科霍尔"
+      },
+      {
+        "de": "der Bart",
+        "zh": "胡子",
+        "py": "德尔 巴特"
+      },
+      {
+        "de": "die Badewanne",
+        "zh": "浴缸",
+        "py": "迪 巴德万讷"
+      },
+      {
+        "de": "die U-Bahn",
+        "zh": "地铁",
+        "py": "迪 乌巴恩"
+      },
+      {
+        "de": "die Batterie",
+        "zh": "电池",
+        "py": "迪 巴特里"
+      }
+    ]
   }
 ];
