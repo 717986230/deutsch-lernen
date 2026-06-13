@@ -3208,32 +3208,32 @@ module.exports = [
       {
         "de": "die Abbildung",
         "zh": "插图/图示",
-        "py": "迪 阿普比尔东"
+        "py": "迪 阿比尔东"
       },
       {
         "de": "der Abschnitt",
         "zh": "段落/部分",
-        "py": "德尔 阿普施尼特"
+        "py": "德尔 阿布施尼特"
       },
       {
         "de": "die Absicht",
         "zh": "意图/打算",
-        "py": "迪 阿普齐希特"
+        "py": "迪 阿布西特"
       },
       {
         "de": "die Aktion",
         "zh": "行动/促销活动",
-        "py": "迪 阿克齐翁"
+        "py": "迪 阿克齐昂"
       },
       {
         "de": "die Aktivität",
         "zh": "活动",
-        "py": "迪 阿克蒂维泰特"
+        "py": "迪 阿克提维泰特"
       },
       {
         "de": "die Alternative",
         "zh": "替代方案",
-        "py": "迪 阿尔特纳蒂韦"
+        "py": "迪 阿尔特纳提娃"
       },
       {
         "de": "der Alltag",
@@ -3243,7 +3243,7 @@ module.exports = [
       {
         "de": "die Änderung",
         "zh": "更改/变动",
-        "py": "迪 恩德鲁恩"
+        "py": "迪 恩德容"
       },
       {
         "de": "die Angabe",
@@ -3253,7 +3253,7 @@ module.exports = [
       {
         "de": "der Anspruch",
         "zh": "要求/权利",
-        "py": "德尔 安施普鲁赫"
+        "py": "德尔 安施普鲁"
       },
       {
         "de": "die Aufnahme",
@@ -3283,7 +3283,7 @@ module.exports = [
       {
         "de": "die Aussicht",
         "zh": "展望/景色",
-        "py": "迪 奥斯齐希特"
+        "py": "迪 奥斯西特"
       },
       {
         "de": "die Auswahl",
@@ -3293,7 +3293,7 @@ module.exports = [
       {
         "de": "die Anleitung",
         "zh": "说明书/指南",
-        "py": "迪 安莱东"
+        "py": "迪 安莱图翁"
       },
       {
         "de": "die Annonce",
@@ -3314,6 +3314,81 @@ module.exports = [
         "de": "die Aussprache",
         "zh": "发音",
         "py": "迪 奥斯施普拉赫"
+      },
+      {
+        "de": "die Breite",
+        "zh": "宽度",
+        "py": "迪 布莱特"
+      },
+      {
+        "de": "die Darstellung",
+        "zh": "表现/描述",
+        "py": "迪 达尔施特隆"
+      },
+      {
+        "de": "die Dauer",
+        "zh": "持续时间",
+        "py": "迪 道尔"
+      },
+      {
+        "de": "der Gedanke",
+        "zh": "想法/念头",
+        "py": "德尔 格丹克"
+      },
+      {
+        "de": "die Daten",
+        "zh": "数据",
+        "py": "迪 达滕"
+      },
+      {
+        "de": "das Detail",
+        "zh": "细节",
+        "py": "达斯 德泰"
+      },
+      {
+        "de": "der Dialekt",
+        "zh": "方言",
+        "py": "德尔 迪亚莱克特"
+      },
+      {
+        "de": "der Dialog",
+        "zh": "对话",
+        "py": "德尔 迪亚洛克"
+      },
+      {
+        "de": "die Diskussion",
+        "zh": "讨论",
+        "py": "迪 迪斯库西昂"
+      },
+      {
+        "de": "die Distanz",
+        "zh": "距离",
+        "py": "迪 迪斯坦茨"
+      },
+      {
+        "de": "das Dokument",
+        "zh": "文件",
+        "py": "达斯 多库门特"
+      },
+      {
+        "de": "das Diplom",
+        "zh": "文凭",
+        "py": "达斯 迪普洛姆"
+      },
+      {
+        "de": "der Druck",
+        "zh": "压力/印刷",
+        "py": "德尔 德鲁克"
+      },
+      {
+        "de": "der Durchschnitt",
+        "zh": "平均（数）",
+        "py": "德尔 杜希施尼特"
+      },
+      {
+        "de": "die Eile",
+        "zh": "匆忙/急",
+        "py": "迪 艾勒"
       }
     ]
   },
@@ -3325,17 +3400,17 @@ module.exports = [
       {
         "de": "die Absenderin",
         "zh": "寄件人（女）",
-        "py": "迪 阿普曾德林"
+        "py": "迪 阿布森德林"
       },
       {
         "de": "der Angehörige",
         "zh": "亲属/家属",
-        "py": "德尔 安格赫里格"
+        "py": "德尔 安格何里格"
       },
       {
         "de": "die Ausländerin",
         "zh": "外国人（女）",
-        "py": "迪 奥斯伦德林"
+        "py": "迪 奥斯兰德林"
       },
       {
         "de": "die Aushilfe",
@@ -3355,7 +3430,7 @@ module.exports = [
       {
         "de": "der Abwart",
         "zh": "楼房管理员/门房（瑞士）",
-        "py": "德尔 阿普瓦特"
+        "py": "德尔 阿布瓦特"
       },
       {
         "de": "das Altenheim",
@@ -3366,6 +3441,46 @@ module.exports = [
         "de": "das Altersheim",
         "zh": "养老院",
         "py": "达斯 阿尔特斯海姆"
+      },
+      {
+        "de": "der Bub",
+        "zh": "男孩（南德/奥地利）",
+        "py": "德尔 布普"
+      },
+      {
+        "de": "der Bürger",
+        "zh": "市民/公民",
+        "py": "德尔 比尔格"
+      },
+      {
+        "de": "die Bürgerin",
+        "zh": "女市民/女公民",
+        "py": "迪 比尔格林"
+      },
+      {
+        "de": "der Coiffeur",
+        "zh": "理发师（瑞士）",
+        "py": "德尔 夸弗尔"
+      },
+      {
+        "de": "der Dieb",
+        "zh": "小偷",
+        "py": "德尔 迪普"
+      },
+      {
+        "de": "der Dienst",
+        "zh": "服务/值班",
+        "py": "德尔 迪恩斯特"
+      },
+      {
+        "de": "der Direktor",
+        "zh": "主任/校长/总监",
+        "py": "德尔 迪雷克托尔"
+      },
+      {
+        "de": "die Droge",
+        "zh": "毒品",
+        "py": "迪 德罗格"
       }
     ]
   },
@@ -3377,12 +3492,12 @@ module.exports = [
       {
         "de": "der Abfall",
         "zh": "垃圾",
-        "py": "德尔 阿普法尔"
+        "py": "德尔 阿布法尔"
       },
       {
         "de": "der Abfalleimer",
         "zh": "垃圾桶",
-        "py": "德尔 阿普法尔艾默"
+        "py": "德尔 阿布法尔艾默"
       },
       {
         "de": "das Alphabet",
@@ -3407,7 +3522,7 @@ module.exports = [
       {
         "de": "die Badewanne",
         "zh": "浴缸",
-        "py": "迪 巴德万讷"
+        "py": "迪 巴德瓦呢"
       },
       {
         "de": "die U-Bahn",
@@ -3418,6 +3533,112 @@ module.exports = [
         "de": "die Batterie",
         "zh": "电池",
         "py": "迪 巴特里"
+      },
+      {
+        "de": "die Brieftasche",
+        "zh": "钱包/皮夹",
+        "py": "迪 布里夫塔舍"
+      },
+      {
+        "de": "die Broschüre",
+        "zh": "小册子",
+        "py": "迪 布罗许勒"
+      },
+      {
+        "de": "die Bremse",
+        "zh": "刹车",
+        "py": "迪 布雷姆泽"
+      },
+      {
+        "de": "das Brötli",
+        "zh": "小面包（瑞士）",
+        "py": "达斯 布勒特利"
+      },
+      {
+        "de": "die Büchse",
+        "zh": "罐头/盒子",
+        "py": "迪 比克瑟"
+      },
+      {
+        "de": "das Buffet",
+        "zh": "自助餐台",
+        "py": "达斯 布菲"
+      },
+      {
+        "de": "die Bürste",
+        "zh": "刷子",
+        "py": "迪 比尔斯特"
+      },
+      {
+        "de": "die Zahnbürste",
+        "zh": "牙刷",
+        "py": "迪 灿比尔斯特"
+      },
+      {
+        "de": "die Couch",
+        "zh": "沙发",
+        "py": "迪 考奇"
+      },
+      {
+        "de": "das Couvert",
+        "zh": "信封（瑞士）",
+        "py": "达斯 库维尔"
+      },
+      {
+        "de": "die Dose",
+        "zh": "罐头/易拉罐",
+        "py": "迪 多泽"
+      },
+      {
+        "de": "die e-card",
+        "zh": "电子卡（奥地利医保卡）",
+        "py": "迪 伊卡"
+      },
+      {
+        "de": "der Dreck",
+        "zh": "污垢/脏东西",
+        "py": "德尔 德雷克"
+      }
+    ]
+  },
+  {
+    "name": "身体·健康",
+    "level": "b1",
+    "icon": "📘",
+    "phrases": [
+      {
+        "de": "die Brust",
+        "zh": "胸部",
+        "py": "迪 布鲁斯特"
+      },
+      {
+        "de": "die Diät",
+        "zh": "节食/饮食疗法",
+        "py": "迪 迪埃特"
+      }
+    ]
+  },
+  {
+    "name": "饮食·美食",
+    "level": "b1",
+    "icon": "📘",
+    "phrases": [
+      {
+        "de": "das Dessert",
+        "zh": "甜点",
+        "py": "达斯 德塞尔"
+      }
+    ]
+  },
+  {
+    "name": "自然·天气",
+    "level": "b1",
+    "icon": "📘",
+    "phrases": [
+      {
+        "de": "der Donner",
+        "zh": "雷",
+        "py": "德尔 多纳"
       }
     ]
   }
