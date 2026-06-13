@@ -3389,6 +3389,86 @@ module.exports = [
         "de": "die Eile",
         "zh": "匆忙/急",
         "py": "迪 艾勒"
+      },
+      {
+        "de": "der Eindruck",
+        "zh": "印象",
+        "py": "德尔 艾因德鲁克"
+      },
+      {
+        "de": "der Einfall",
+        "zh": "主意/灵感",
+        "py": "德尔 艾因法尔"
+      },
+      {
+        "de": "der Einfluss",
+        "zh": "影响",
+        "py": "德尔 艾因弗鲁斯"
+      },
+      {
+        "de": "die Einführung",
+        "zh": "引入/导论",
+        "py": "迪 艾因夫容"
+      },
+      {
+        "de": "die Einnahme",
+        "zh": "收入/服药",
+        "py": "迪 艾因纳梅"
+      },
+      {
+        "de": "die Einzelheit",
+        "zh": "细节",
+        "py": "迪 艾因策尔海特"
+      },
+      {
+        "de": "die Entfernung",
+        "zh": "距离/移除",
+        "py": "迪 恩特费容"
+      },
+      {
+        "de": "die Enttäuschung",
+        "zh": "失望",
+        "py": "迪 恩特托伊施翁"
+      },
+      {
+        "de": "die Entwicklung",
+        "zh": "发展",
+        "py": "迪 恩特维克隆"
+      },
+      {
+        "de": "das Ereignis",
+        "zh": "事件",
+        "py": "达斯 埃尔艾格尼斯"
+      },
+      {
+        "de": "die Erhöhung",
+        "zh": "提高/上涨",
+        "py": "迪 埃尔何翁"
+      },
+      {
+        "de": "die Erholung",
+        "zh": "休养/恢复",
+        "py": "迪 埃尔霍隆"
+      },
+      {
+        "de": "die Erinnerung",
+        "zh": "回忆/提醒",
+        "py": "迪 埃尔因纳容"
+      },
+      {
+        "de": "die Erklärung",
+        "zh": "解释/说明",
+        "py": "迪 埃尔克莱容"
+      },
+      {
+        "de": "das Erlebnis",
+        "zh": "经历/体验",
+        "py": "达斯 埃尔莱普尼斯"
+      },
+      {
+        "de": "die Energie",
+        "zh": "能量/能源",
+        "py": "迪 埃内尔基"
       }
     ]
   },
@@ -3481,6 +3561,61 @@ module.exports = [
         "de": "die Droge",
         "zh": "毒品",
         "py": "迪 德罗格"
+      },
+      {
+        "de": "der Einbrecher",
+        "zh": "入室盗贼",
+        "py": "德尔 艾因布雷希尔"
+      },
+      {
+        "de": "die Einbrecherin",
+        "zh": "女入室盗贼",
+        "py": "迪 艾因布雷希林"
+      },
+      {
+        "de": "der Einbruch",
+        "zh": "入室盗窃",
+        "py": "德尔 艾因布鲁赫"
+      },
+      {
+        "de": "die Ehe",
+        "zh": "婚姻",
+        "py": "迪 埃耶"
+      },
+      {
+        "de": "das Ehepaar",
+        "zh": "夫妻",
+        "py": "达斯 埃耶帕尔"
+      },
+      {
+        "de": "der Einwohner",
+        "zh": "居民",
+        "py": "德尔 艾因沃纳"
+      },
+      {
+        "de": "die Einwohnerin",
+        "zh": "女居民",
+        "py": "迪 艾因沃纳林"
+      },
+      {
+        "de": "der Enkel",
+        "zh": "孙子/外孙",
+        "py": "德尔 恩克尔"
+      },
+      {
+        "de": "die Enkelin",
+        "zh": "孙女/外孙女",
+        "py": "迪 恩克林"
+      },
+      {
+        "de": "die Entlassung",
+        "zh": "解雇",
+        "py": "迪 恩特拉松"
+      },
+      {
+        "de": "die Erlaubnis",
+        "zh": "许可",
+        "py": "迪 埃尔劳普尼斯"
       }
     ]
   },
@@ -3598,6 +3733,41 @@ module.exports = [
         "de": "der Dreck",
         "zh": "污垢/脏东西",
         "py": "德尔 德雷克"
+      },
+      {
+        "de": "die ec-Karte",
+        "zh": "借记卡（德国银行卡）",
+        "py": "迪 衣策卡特"
+      },
+      {
+        "de": "das Eck",
+        "zh": "角落（南德/奥地利）",
+        "py": "达斯 埃克"
+      },
+      {
+        "de": "die Einfahrt",
+        "zh": "入口/驶入",
+        "py": "迪 艾因法特"
+      },
+      {
+        "de": "die Einrichtung",
+        "zh": "设施/家具布置/机构",
+        "py": "迪 艾因里希东"
+      },
+      {
+        "de": "das Einschreiben",
+        "zh": "挂号信",
+        "py": "达斯 艾因施莱本"
+      },
+      {
+        "de": "die Eisenbahn",
+        "zh": "铁路",
+        "py": "迪 艾森巴恩"
+      },
+      {
+        "de": "die Etage",
+        "zh": "楼层",
+        "py": "迪 埃塔热"
       }
     ]
   },
@@ -3615,6 +3785,11 @@ module.exports = [
         "de": "die Diät",
         "zh": "节食/饮食疗法",
         "py": "迪 迪埃特"
+      },
+      {
+        "de": "die Ernährung",
+        "zh": "营养/饮食",
+        "py": "迪 埃尔奈容"
       }
     ]
   },
@@ -3627,6 +3802,16 @@ module.exports = [
         "de": "das Dessert",
         "zh": "甜点",
         "py": "达斯 德塞尔"
+      },
+      {
+        "de": "das Eis",
+        "zh": "冰/冰淇淋",
+        "py": "达斯 艾斯"
+      },
+      {
+        "de": "der Erdapfel",
+        "zh": "土豆（奥地利）",
+        "py": "德尔 埃尔特阿普弗尔"
       }
     ]
   },
@@ -3639,6 +3824,28 @@ module.exports = [
         "de": "der Donner",
         "zh": "雷",
         "py": "德尔 多纳"
+      }
+    ]
+  },
+  {
+    "name": "经济·金融",
+    "level": "b1",
+    "icon": "📘",
+    "phrases": [
+      {
+        "de": "der Einkauf",
+        "zh": "购物/采购",
+        "py": "德尔 艾因考夫"
+      },
+      {
+        "de": "das Einkommen",
+        "zh": "收入",
+        "py": "达斯 艾因科门"
+      },
+      {
+        "de": "die Einzahlung",
+        "zh": "存款/缴款",
+        "py": "迪 艾因察隆"
       }
     ]
   }
