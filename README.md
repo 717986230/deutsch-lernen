@@ -44,7 +44,7 @@ npm run build:offline
 > 注：微信 tabBar 最多 5 项，故核心 4 页用 tabBar，发音/数字/语法作为内容页从首页进入。
 
 ### 设计要点
-- **分包异步化**：2977 条词句数据放入 `packageData` 分包，由 `phrase-service` 通过 `require(path, cb)` 按需加载，主包体积可控、首屏更快。
+- **分包异步化**：3482 条词句数据放入 `packageData` 分包，由 `phrase-service` 通过 `require(path, cb)` 按需加载，主包体积可控、首屏更快。
 - **组件化**：卡片、测验框、标题、提示卡抽成自定义组件，页面只负责数据编排。
 - **状态管理**：`mobx-miniprogram` 统一管理跨页状态，替代 globalData。
 - **数据分层**：页面 → service → 分包数据，单向依赖。
@@ -61,4 +61,4 @@ npm run build:offline
 3. 编译预览即可。
 
 ## 数据完整性
-- 分类数：93，词句数：2977（与原 HTML 一致，已校验）。
+- 分类数：86，词句数：3482（由 `build:offline` 校验输出）。
