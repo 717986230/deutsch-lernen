@@ -689,7 +689,7 @@ to{opacity:1}}
   <div class="container">
     <div class="hero-label" style="text-align:center;padding-top:20px">Alltagsdeutsch</div>
     <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 4px;color:var(--text)">日常对话 + 词汇大全</h2>
-    <p style="text-align:center;font-size:13px;color:var(--text-dim);margin-bottom:4px">71个分类 · 3114个词句 · 点击卡片看谐音 · 🔊 点喇叭听地道德语发音</p>
+    <p style="text-align:center;font-size:13px;color:var(--text-dim);margin-bottom:4px">{{CAT_COUNT}}个分类 · {{PHRASE_COUNT}}个词句 · 点击卡片看谐音 · 🔊 点喇叭听地道德语发音</p>
     <div style="text-align:center;margin:6px 0 2px"><span onclick="document.getElementById('voiceGuide').style.display=document.getElementById('voiceGuide').style.display==='none'?'block':'none'" style="font-size:12px;color:#58cc02;cursor:pointer;border:1px solid rgba(88,204,2,.3);border-radius:20px;padding:3px 12px;display:inline-block">🎧 发音不地道？点这里装系统语音包</span></div>
     <div id="voiceGuide" style="display:none;background:#fff;border:1px solid var(--line,#e8eaed);border-radius:14px;padding:14px 16px;margin:8px 0;font-size:13px;line-height:1.8;color:#555">
       <div style="font-weight:600;color:#2b2b2b;margin-bottom:6px">为什么要装语音包？</div>
@@ -711,8 +711,8 @@ to{opacity:1}}
     
     
     <div class="level-tabs">
-      <button class="level-tab active" onclick="setLevel('all',this)">📚 全部</button>
-      <button class="level-tab" onclick="setLevel('0',this)">🌱 零基础</button>
+      <button class="level-tab" onclick="setLevel('all',this)">📚 全部</button>
+      <button class="level-tab active" onclick="setLevel('0',this)">🌱 零基础</button>
       <button class="level-tab" onclick="setLevel('a1',this)">⭐ A1</button>
       <button class="level-tab" onclick="setLevel('a2',this)">⭐⭐ A2</button>
       <button class="level-tab" onclick="setLevel('b1',this)">🔥 B1</button>
@@ -885,7 +885,7 @@ let activeCat='all';
 let flippedCards={};
 
 
-let activeLevel = 'all';
+let activeLevel = '0';   // 默认进「零基础」，避免首屏一次渲染数千张卡（全部仍可一键切换）
 
 const levelMeta = {
   'all': {label:'全部', desc:'', color:'var(--gold)'},
@@ -956,6 +956,13 @@ function buildCatTabs() {
 }
 
 function initPhrases() {
+  const info = document.getElementById('levelInfo');
+  const m = levelMeta[activeLevel];
+  if (m && activeLevel !== 'all') {
+    info.style.display = 'block';
+    info.style.borderLeftColor = m.color;
+    info.innerHTML = '<b style="color:'+m.color+'">'+m.label+'</b>　'+m.desc;
+  }
   buildCatTabs();
   renderPhrases();
 }
