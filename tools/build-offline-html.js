@@ -27,10 +27,26 @@ function build() {
   const catCount = categories.length
   const phraseCount = categories.reduce((s, c) => s + c.phrases.length, 0)
 
-  const tpl = fs.readFileSync(TEMPLATE, 'utf8')
+  // 各级别分类数 / 词句数（首页计数的唯一数据源，避免写死过期）
+  const byLevel = {}
+  categories.forEach(c => {
+    const k = byLevel[c.level] || (byLevel[c.level] = { c: 0, p: 0 })
+    k.c++; k.p += c.phrases.length
+  })
+
+  let tpl = fs.readFileSync(TEMPLATE, 'utf8')
   if (!tpl.includes('/*__CATEGORIES__*/')) {
     throw new Error('模板缺少 /*__CATEGORIES__*/ 占位符')
   }
+
+  // 先把 {{...}} 计数占位符替换为真实数字（生成静态文本，利于 SEO、无闪烁）
+  const tokens = { PHRASE_COUNT: phraseCount, CAT_COUNT: catCount }
+  ;['0', 'a1', 'a2', 'b1', 'b2', 'c1', 'c2'].forEach(l => {
+    tokens['P_' + l] = (byLevel[l] || {}).p || 0
+    tokens['C_' + l] = (byLevel[l] || {}).c || 0
+  })
+  tpl = tpl.replace(/\{\{(\w+)\}\}/g, (m, k) => (k in tokens ? String(tokens[k]) : m))
+
   const injected = 'const categories = ' + JSON.stringify(categories) + ';'
   // 用函数形式避免 $ 替换语义
   let html = tpl.replace('/*__CATEGORIES__*/', () => injected)

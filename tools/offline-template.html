@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>德语学习手册 · 发音·语法·3000词句</title>
-<meta name="description" content="德语学习手册：2977 条德语常用词句，覆盖 A1–B2 五个级别，含发音规律、数字规律、语法速记、德语朗读与练习测验。单文件、离线可用。">
+<title>德语学习手册 · 发音·语法·{{PHRASE_COUNT}}词句</title>
+<meta name="description" content="德语学习手册：{{PHRASE_COUNT}} 条德语常用词句，覆盖 A1–B2 五个级别，含发音规律、数字规律、语法速记、德语朗读与练习测验。单文件、离线可用。">
 <meta name="theme-color" content="#58cc02">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2358cc02'/%3E%3Ctext x='50' y='70' font-size='54' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='white'%3EDE%3C/text%3E%3C/svg%3E">
 <!-- Open Graph / 微信·Twitter 分享卡片 -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="德语学习手册 · 发音·语法·3000词句">
-<meta property="og:description" content="2977 条德语常用词句，覆盖 A1–B2，含发音规律、语法速记与德语朗读。单文件、离线可用。">
+<meta property="og:title" content="德语学习手册 · 发音·语法·{{PHRASE_COUNT}}词句">
+<meta property="og:description" content="{{PHRASE_COUNT}} 条德语常用词句，覆盖 A1–B2，含发音规律、语法速记与德语朗读。单文件、离线可用。">
 <meta property="og:url" content="https://717986230.github.io/deutsch-lernen-site/">
 <meta property="og:locale" content="zh_CN">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="德语学习手册 · 发音·语法·3000词句">
-<meta name="twitter:description" content="2977 条德语常用词句，覆盖 A1–B2，含发音规律、语法速记与德语朗读。单文件、离线可用。">
+<meta name="twitter:title" content="德语学习手册 · 发音·语法·{{PHRASE_COUNT}}词句">
+<meta name="twitter:description" content="{{PHRASE_COUNT}} 条德语常用词句，覆盖 A1–B2，含发音规律、语法速记与德语朗读。单文件、离线可用。">
 <style>
 :root {
   --gold: #58cc02;
@@ -184,7 +184,7 @@ to{opacity:1}}
   <div class="hero">
     <div class="hero-label">Deutsche Sprache · 德语学习</div>
     <h1>德语学习手册</h1>
-    <p>发音 · 数字 · 语法 · 3100+ 词句 · 5阶段进阶 · 互动测验</p>
+    <p>发音 · 数字 · 语法 · {{PHRASE_COUNT}} 词句 · 5阶段进阶 · 互动测验</p>
   </div>
   <div class="container">
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:24px">
@@ -206,7 +206,7 @@ to{opacity:1}}
       <div class="card" onclick="showSection('phrases')" style="text-align:center;padding:24px 16px">
         <div style="font-size:32px;margin-bottom:10px">💬</div>
         <div style="font-size:15px;color:var(--gold);margin-bottom:6px">词句大全</div>
-        <div style="font-size:12px;color:var(--text-dim)">93分类·含谐音</div>
+        <div style="font-size:12px;color:var(--text-dim)">{{CAT_COUNT}}分类·含谐音</div>
       </div>
       <div class="card" onclick="showSection('quiz')" style="text-align:center;padding:24px 16px">
         <div style="font-size:32px;margin-bottom:10px">🎯</div>
@@ -220,31 +220,31 @@ to{opacity:1}}
       <div class="level-card" onclick="goLevel('0')">
         <div class="lc-stage" style="color:#58cc02">🌱 零基础 · 第1天</div>
         <div class="lc-title">打招呼就能开口</div>
-        <div class="lc-desc">问候、道别、礼貌用语<br>140个词句 · 7个分类</div>
+        <div class="lc-desc">问候、道别、礼貌用语<br>{{P_0}}个词句 · {{C_0}}个分类</div>
         <div class="lc-arrow">→</div>
       </div>
       <div class="level-card" onclick="goLevel('a1')">
         <div class="lc-stage" style="color:#1cb0f6">⭐ A1 初级 · 第1-2周</div>
         <div class="lc-title">简单日常交流</div>
-        <div class="lc-desc">自我介绍、时间、天气、家庭、高频词<br>1138个词句 · 21个分类</div>
+        <div class="lc-desc">自我介绍、时间、天气、家庭、高频词<br>{{P_a1}}个词句 · {{C_a1}}个分类</div>
         <div class="lc-arrow">→</div>
       </div>
       <div class="level-card" onclick="goLevel('a2')">
         <div class="lc-stage" style="color:var(--gold)">⭐⭐ A2 基础 · 第1-2月</div>
         <div class="lc-title">熟悉场景顺畅沟通</div>
-        <div class="lc-desc">购物、餐厅、交通、旅行、菜单<br>1053个词句 · 24个分类</div>
+        <div class="lc-desc">购物、餐厅、交通、旅行、菜单<br>{{P_a2}}个词句 · {{C_a2}}个分类</div>
         <div class="lc-arrow">→</div>
       </div>
       <div class="level-card" onclick="goLevel('b1')">
         <div class="lc-stage" style="color:#ff7a4d">🔥 B1 中级 · 第3-6月</div>
         <div class="lc-title">理解生活主要内容</div>
-        <div class="lc-desc">医疗、银行、情感、语法、俗语<br>622个词句 · 13个分类</div>
+        <div class="lc-desc">情感、医疗、银行、社会、抽象词汇<br>{{P_b1}}个词句 · {{C_b1}}个分类</div>
         <div class="lc-arrow">→</div>
       </div>
       <div class="level-card" onclick="goLevel('b2')">
         <div class="lc-stage" style="color:#ff4b4b">💎 B2 中高级 · 第6月+</div>
         <div class="lc-title">接近流利交流</div>
-        <div class="lc-desc">政府、科技、经济、历史、学术<br>161个词句 · 6个分类</div>
+        <div class="lc-desc">政府、科技、经济、历史、学术<br>{{P_b2}}个词句 · {{C_b2}}个分类</div>
         <div class="lc-arrow">→</div>
       </div>
     </div>
@@ -892,8 +892,8 @@ const levelMeta = {
   '0':   {label:'🌱 零基础', desc:'打招呼·道别·礼貌用语，第一天就能开口！', color:'#58cc02'},
   'a1':  {label:'⭐ A1 初级', desc:'自我介绍·时间·天气·家庭，能进行最简单的日常交流。', color:'#1cb0f6'},
   'a2':  {label:'⭐⭐ A2 基础', desc:'购物·点餐·交通·住宿，能在熟悉场景下顺畅沟通。', color:'var(--gold)'},
-  'b1':  {label:'🔥 B1 中级', desc:'情感·医疗·银行·娱乐，能理解日常生活主要内容。', color:'#ff7a4d'},
-  'b2':  {label:'💎 B2 中高级', desc:'职场·出行·科技话题，接近流利日常交流水平。', color:'#ff4b4b'},
+  'b1':  {label:'🔥 B1 中级', desc:'情感·医疗·银行·社会·抽象词汇，能理解日常生活主要内容。', color:'#ff7a4d'},
+  'b2':  {label:'💎 B2 中高级', desc:'政府·科技·经济·历史·学术，接近流利日常交流水平。', color:'#ff4b4b'},
 };
 
 function getLevelCats() {
