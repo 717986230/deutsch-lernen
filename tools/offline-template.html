@@ -1235,9 +1235,9 @@ function speakReading(btn,text){
 initPhrases();
 buildReadTabs();renderReadings();
 </script>
-<div id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="回到顶部">↑</div>
+<button id="toTop" type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="回到顶部" aria-label="回到顶部">↑</button>
 <style>
-#toTop{position:fixed;right:18px;bottom:24px;z-index:300;width:46px;height:46px;border-radius:50%;background:#58cc02;color:#fff;font-size:24px;line-height:46px;text-align:center;cursor:pointer;box-shadow:0 4px 14px rgba(88,204,2,.4);border-bottom:3px solid #46a302;opacity:0;visibility:hidden;transform:translateY(10px);transition:all .25s}
+#toTop{position:fixed;right:18px;bottom:24px;z-index:300;width:46px;height:46px;border-radius:50%;background:#58cc02;color:#fff;font-size:24px;line-height:46px;text-align:center;cursor:pointer;box-shadow:0 4px 14px rgba(88,204,2,.4);border:none;border-bottom:3px solid #46a302;font-family:inherit;padding:0;opacity:0;visibility:hidden;transform:translateY(10px);transition:all .25s}
 #toTop.show{opacity:1;visibility:visible;transform:translateY(0)}
 #toTop:active{transform:scale(.9)}
 </style>
