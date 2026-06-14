@@ -3534,6 +3534,86 @@ module.exports = [
         "de": "der Feierabend",
         "zh": "下班时间",
         "py": "德尔 费尔阿本特"
+      },
+      {
+        "de": "der Gang",
+        "zh": "走廊/档位/进程",
+        "py": "德尔 冈"
+      },
+      {
+        "de": "das Gebiet",
+        "zh": "地区/领域",
+        "py": "达斯 格比特"
+      },
+      {
+        "de": "die Gebühr",
+        "zh": "费用",
+        "py": "迪 格比尔"
+      },
+      {
+        "de": "die Geburt",
+        "zh": "出生",
+        "py": "迪 格布尔特"
+      },
+      {
+        "de": "das Gefühl",
+        "zh": "感觉/情感",
+        "py": "达斯 格菲尔"
+      },
+      {
+        "de": "das Geheimnis",
+        "zh": "秘密",
+        "py": "达斯 格海姆尼斯"
+      },
+      {
+        "de": "die Gegend",
+        "zh": "地区/周边",
+        "py": "迪 格根特"
+      },
+      {
+        "de": "der Gegensatz",
+        "zh": "对立/反差",
+        "py": "德尔 格根扎茨"
+      },
+      {
+        "de": "der Gegenstand",
+        "zh": "物品/对象",
+        "py": "德尔 格根施坦特"
+      },
+      {
+        "de": "die Gelegenheit",
+        "zh": "机会",
+        "py": "迪 格莱根海特"
+      },
+      {
+        "de": "das Geschlecht",
+        "zh": "性别",
+        "py": "达斯 格施莱希特"
+      },
+      {
+        "de": "der Geschmack",
+        "zh": "味道/品味",
+        "py": "德尔 格施马克"
+      },
+      {
+        "de": "die Geschwindigkeit",
+        "zh": "速度",
+        "py": "迪 格施温迪希凯特"
+      },
+      {
+        "de": "die Gewalt",
+        "zh": "暴力/权力",
+        "py": "迪 格瓦尔特"
+      },
+      {
+        "de": "das Gewissen",
+        "zh": "良心",
+        "py": "达斯 格维森"
+      },
+      {
+        "de": "die Gewohnheit",
+        "zh": "习惯",
+        "py": "迪 格沃恩海特"
       }
     ]
   },
@@ -3716,6 +3796,61 @@ module.exports = [
         "de": "die Fortbildung",
         "zh": "进修/继续教育",
         "py": "迪 福特比尔东"
+      },
+      {
+        "de": "die Freundschaft",
+        "zh": "友谊",
+        "py": "迪 弗罗因特沙夫特"
+      },
+      {
+        "de": "der Friede",
+        "zh": "和平",
+        "py": "德尔 弗里德"
+      },
+      {
+        "de": "der Friseur",
+        "zh": "理发师",
+        "py": "德尔 弗里泽尔"
+      },
+      {
+        "de": "die Friseurin",
+        "zh": "女理发师",
+        "py": "迪 弗里泽林"
+      },
+      {
+        "de": "der Fußgänger",
+        "zh": "行人",
+        "py": "德尔 富斯根格尔"
+      },
+      {
+        "de": "die Fußgängerin",
+        "zh": "女行人",
+        "py": "迪 富斯根格林"
+      },
+      {
+        "de": "der Gegner",
+        "zh": "对手",
+        "py": "德尔 格格纳"
+      },
+      {
+        "de": "die Gemeinschaft",
+        "zh": "共同体/社群",
+        "py": "迪 格迈因沙夫特"
+      },
+      {
+        "de": "die Generation",
+        "zh": "一代人",
+        "py": "迪 格内拉齐昂"
+      },
+      {
+        "de": "die Gesellschaft",
+        "zh": "社会/公司",
+        "py": "迪 格泽尔沙夫特"
+      },
+      {
+        "de": "die Gewerkschaft",
+        "zh": "工会",
+        "py": "迪 格维克沙夫特"
       }
     ]
   },
@@ -3928,6 +4063,61 @@ module.exports = [
         "de": "der Fleck",
         "zh": "污点/斑点",
         "py": "德尔 弗莱克"
+      },
+      {
+        "de": "die Frisur",
+        "zh": "发型",
+        "py": "迪 弗里组尔"
+      },
+      {
+        "de": "der Führerausweis",
+        "zh": "驾照（瑞士）",
+        "py": "德尔 菲勒尔奥斯瓦伊斯"
+      },
+      {
+        "de": "das Fundbüro",
+        "zh": "失物招领处",
+        "py": "达斯 丰特比罗"
+      },
+      {
+        "de": "die Garderobe",
+        "zh": "衣帽间/衣柜",
+        "py": "迪 加德罗贝"
+      },
+      {
+        "de": "das Gas",
+        "zh": "气体/天然气",
+        "py": "达斯 加斯"
+      },
+      {
+        "de": "das Gasthaus",
+        "zh": "餐馆/客栈",
+        "py": "达斯 加斯特豪斯"
+      },
+      {
+        "de": "die Gaststätte",
+        "zh": "餐馆",
+        "py": "迪 加斯特施泰特"
+      },
+      {
+        "de": "das Gebäude",
+        "zh": "建筑物",
+        "py": "达斯 格博伊德"
+      },
+      {
+        "de": "die Gebrauchsanweisung",
+        "zh": "使用说明书",
+        "py": "迪 格布劳赫斯安瓦伊宗"
+      },
+      {
+        "de": "das Geschirr",
+        "zh": "餐具",
+        "py": "达斯 格希尔"
+      },
+      {
+        "de": "die Geschwindigkeitsbeschränkung",
+        "zh": "限速",
+        "py": "迪 格施温迪希凯茨贝施伦孔"
       }
     ]
   },
@@ -3950,6 +4140,11 @@ module.exports = [
         "de": "die Ernährung",
         "zh": "营养/饮食",
         "py": "迪 埃尔奈容"
+      },
+      {
+        "de": "die Gesundheit",
+        "zh": "健康",
+        "py": "迪 格宗特海特"
       }
     ]
   },
@@ -3982,6 +4177,11 @@ module.exports = [
         "de": "das Fett",
         "zh": "脂肪/油脂",
         "py": "达斯 费特"
+      },
+      {
+        "de": "das Gebäck",
+        "zh": "糕点",
+        "py": "达斯 格贝克"
       }
     ]
   },
