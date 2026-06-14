@@ -144,6 +144,14 @@ to{opacity:1}}
 .pron-sound{color:var(--gold)}
 .pron-example{color:var(--text-dim)}
 .pron-zh{color:#777777}
+/* ALPHABET */
+.letter-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:8px;margin-bottom:20px}
+.letter-card{background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center}
+.letter-card.special{background:rgba(88,204,2,.08);border-color:var(--gold-faint)}
+.lc-letter{font-size:22px;font-weight:700;color:var(--gold)}
+.lc-name{font-size:13px;color:var(--text);margin:4px 0}
+.lc-sound{font-size:11px;color:var(--text-dim);line-height:1.5}
+.letter-card .speak-btn{margin-top:8px}
 /* TIPS */
 .tip-card{background:rgba(0,0,0,.03);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;padding:14px 16px;margin-bottom:12px}
 .tip-title{font-size:13px;color:var(--gold);margin-bottom:6px;letter-spacing:.5px}
@@ -285,219 +293,7 @@ to{opacity:1}}
 
     <div class="sec-title"><span class="sec-title-icon">🔡</span><span class="sec-title-text">26个字母完整发音表</span></div>
     <div style="margin-bottom:10px;font-size:12px;color:var(--text-dim)">💡 括号内为该字母的<b style="color:var(--gold)">名称读音</b>，发音栏说明该字母在单词中的<b style="color:var(--gold)">实际发音</b></div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:8px;margin-bottom:20px">
-
-      <!-- A -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">A a</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>啊</b>（ah）</div>
-        <div style="font-size:11px;color:var(--text-dim)">发音：长/短"啊"<br>Alt=啊尔特，ja=雅</div>
-      </div>
-
-      <!-- B -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">B b</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>贝</b>（beh）</div>
-        <div style="font-size:11px;color:var(--text-dim)">发音："b"<br>词尾变清音"p"<br>Brot=布罗特</div>
-      </div>
-
-      <!-- C -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">C c</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>采</b>（tseh）</div>
-        <div style="font-size:11px;color:var(--text-dim)">e/i前→"ts采"<br>其他→"k卡"<br>Café=卡菲</div>
-      </div>
-
-      <!-- D -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">D d</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>德</b>（deh）</div>
-        <div style="font-size:11px;color:var(--text-dim)">发音："d"<br>词尾变清音"t"<br>Danke=当克</div>
-      </div>
-
-      <!-- E -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">E e</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>诶</b>（eh）</div>
-        <div style="font-size:11px;color:var(--text-dim)">重读→"诶"<br>词尾轻读→"厄"<br>es=埃斯</div>
-      </div>
-
-      <!-- F -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">F f</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>艾夫</b>（ef）</div>
-        <div style="font-size:11px;color:var(--text-dim)">发音："f夫"<br>Frau=弗劳</div>
-      </div>
-
-      <!-- G -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">G g</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>格</b>（geh）</div>
-        <div style="font-size:11px;color:var(--text-dim)">发音："g格"<br>词尾变"k克"<br>gut=古特</div>
-      </div>
-
-      <!-- H -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">H h</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>哈</b>（hah）</div>
-        <div style="font-size:11px;color:var(--text-dim)">词首发"h哈"<br>母音后不发音<br>Hallo=哈洛</div>
-      </div>
-
-      <!-- I -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">I i</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>伊</b>（ih）</div>
-        <div style="font-size:11px;color:var(--text-dim)">短"i伊"或长"i依"<br>ich=伊希<br>ie→长"依"</div>
-      </div>
-
-      <!-- J -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">J j</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>约特</b>（yot）</div>
-        <div style="font-size:11px;color:var(--text-dim)">⚠️ 发"y雅"音！<br>不是英语"j"<br>ja=雅，Jahr=雅尔</div>
-      </div>
-
-      <!-- K -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">K k</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>卡</b>（kah）</div>
-        <div style="font-size:11px;color:var(--text-dim)">发音："k卡"<br>Kaffee=卡菲<br>kalt=卡尔特</div>
-      </div>
-
-      <!-- L -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">L l</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>艾尔</b>（el）</div>
-        <div style="font-size:11px;color:var(--text-dim)">发音："l勒"（清晰）<br>lieben=里本<br>laut=劳特</div>
-      </div>
-
-      <!-- M -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">M m</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>艾姆</b>（em）</div>
-        <div style="font-size:11px;color:var(--text-dim)">发音："m妈"<br>Morgen=摩根<br>Milch=米尔希</div>
-      </div>
-
-      <!-- N -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">N n</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>艾恩</b>（en）</div>
-        <div style="font-size:11px;color:var(--text-dim)">发音："n嫩"<br>nein=奈因<br>Nacht=纳赫特</div>
-      </div>
-
-      <!-- O -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">O o</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>哦</b>（oh）</div>
-        <div style="font-size:11px;color:var(--text-dim)">长/短"哦"<br>oder=哦德尔<br>oben=哦本</div>
-      </div>
-
-      <!-- P -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">P p</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>配</b>（peh）</div>
-        <div style="font-size:11px;color:var(--text-dim)">发音："p配"<br>Pause=葩乌泽<br>Post=波斯特</div>
-      </div>
-
-      <!-- Q -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">Q q</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>库</b>（kuh）</div>
-        <div style="font-size:11px;color:var(--text-dim)">⚠️ qu→"kv夸"<br>不是"kw"<br>Qualität=克瓦利泰特</div>
-      </div>
-
-      <!-- R -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">R r</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>艾尔</b>（er）</div>
-        <div style="font-size:11px;color:var(--text-dim)">⚠️ 喉部颤音<br>词尾→弱化"厄"<br>rot=罗特</div>
-      </div>
-
-      <!-- S -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">S s</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>艾斯</b>（es）</div>
-        <div style="font-size:11px;color:var(--text-dim)">母音间→"z兹"<br>其余→"s斯"<br>See=泽，das=达斯</div>
-      </div>
-
-      <!-- T -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">T t</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>特</b>（teh）</div>
-        <div style="font-size:11px;color:var(--text-dim)">发音："t特"<br>Tag=塔克<br>Tisch=提什</div>
-      </div>
-
-      <!-- U -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">U u</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>乌</b>（uh）</div>
-        <div style="font-size:11px;color:var(--text-dim)">长/短"乌"<br>und=温特<br>Uhr=乌尔</div>
-      </div>
-
-      <!-- V -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">V v</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>法乌</b>（fau）</div>
-        <div style="font-size:11px;color:var(--text-dim)">⚠️ 发"f夫"音！<br>外来词发"v"<br>Vater=法特尔</div>
-      </div>
-
-      <!-- W -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">W w</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>韦</b>（veh）</div>
-        <div style="font-size:11px;color:var(--text-dim)">⚠️ 发"v"音！<br>不是英语"w"<br>Wasser=瓦瑟</div>
-      </div>
-
-      <!-- X -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">X x</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>伊克斯</b>（iks）</div>
-        <div style="font-size:11px;color:var(--text-dim)">发"ks"音<br>Taxi=塔克西<br>（主要在外来词）</div>
-      </div>
-
-      <!-- Y -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">Y y</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>于普西龙</b>（Ypsilon）</div>
-        <div style="font-size:11px;color:var(--text-dim)">德语词→"ü于"<br>外来词→"i伊/j雅"<br>（主要外来词）</div>
-      </div>
-
-      <!-- Z -->
-      <div style="background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.07);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">Z z</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>采特</b>（tset）</div>
-        <div style="font-size:11px;color:var(--text-dim)">⚠️ 发"ts茨"！<br>不是英语"z"<br>Zeit=采特，zu=楚</div>
-      </div>
-
-      <!-- Ä -->
-      <div style="background:rgba(88,204,2,.08);border:1px solid var(--gold-faint);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">Ä ä</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>埃</b>（ä）</div>
-        <div style="font-size:11px;color:var(--text-dim)">发"ä诶"（类似"诶"）<br>Mädchen=梅特兴<br>Äpfel=埃普费尔</div>
-      </div>
-
-      <!-- Ö -->
-      <div style="background:rgba(88,204,2,.08);border:1px solid var(--gold-faint);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">Ö ö</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>欧</b>（ö）</div>
-        <div style="font-size:11px;color:var(--text-dim)">⚠️ 圆唇发"诶"<br>嘴形成"o"说"e"<br>schön=舍恩</div>
-      </div>
-
-      <!-- Ü -->
-      <div style="background:rgba(88,204,2,.08);border:1px solid var(--gold-faint);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">Ü ü</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>于</b>（ü）</div>
-        <div style="font-size:11px;color:var(--text-dim)">⚠️ 圆唇发"衣"<br>嘴形成"u"说"i"<br>grün=格吕恩</div>
-      </div>
-
-      <!-- ß -->
-      <div style="background:rgba(88,204,2,.08);border:1px solid var(--gold-faint);border-radius:10px;padding:12px;text-align:center">
-        <div style="font-size:22px;font-weight:700;color:var(--gold)">ß</div>
-        <div style="font-size:13px;color:var(--text);margin:4px 0">名称：<b>艾斯采特</b>（Eszett）</div>
-        <div style="font-size:11px;color:var(--text-dim)">等于双ss"斯"<br>长元音/双元音后用<br>Straße=施特拉瑟</div>
-      </div>
-
-    </div>
+    <div class="letter-grid" id="letterGrid"></div>
 
     <div class="tip-card" style="border-left-color:#ff4b4b">
       <div class="tip-title" style="color:#ff4b4b">⚠️ 最易出错的6个字母</div>
@@ -796,6 +592,39 @@ const numsBig = [
   {n:1000000,de:'eine Million',py:'艾嫩 米利昂'},{n:1000000000,de:'eine Milliarde',py:'艾嫩 米利阿德'},
   {n:0.5,de:'ein halb',py:'艾因 哈尔普'},{n:'1.',de:'erste',py:'尔斯特'}
 ];
+// 字母表（say=点🔊朗读的字母名称发音）
+const LETTERS = [
+  {l:'A a',name:'啊（ah）',sound:'长/短"啊"<br>Alt=啊尔特，ja=雅',say:'A'},
+  {l:'B b',name:'贝（beh）',sound:'"b"<br>词尾变清音"p"<br>Brot=布罗特',say:'B'},
+  {l:'C c',name:'采（tseh）',sound:'e/i前→"ts采"<br>其他→"k卡"<br>Café=卡菲',say:'C'},
+  {l:'D d',name:'德（deh）',sound:'"d"<br>词尾变清音"t"<br>Danke=当克',say:'D'},
+  {l:'E e',name:'诶（eh）',sound:'重读→"诶"<br>词尾轻读→"厄"<br>es=埃斯',say:'E'},
+  {l:'F f',name:'艾夫（ef）',sound:'"f夫"<br>Frau=弗劳',say:'F'},
+  {l:'G g',name:'格（geh）',sound:'"g格"<br>词尾变"k克"<br>gut=古特',say:'G'},
+  {l:'H h',name:'哈（hah）',sound:'词首发"h哈"<br>母音后不发音<br>Hallo=哈洛',say:'H'},
+  {l:'I i',name:'伊（ih）',sound:'短"i伊"或长"i依"<br>ich=伊希<br>ie→长"依"',say:'I'},
+  {l:'J j',name:'约特（yot）',sound:'⚠️ 发"y雅"音！<br>不是英语"j"<br>ja=雅，Jahr=雅尔',say:'J'},
+  {l:'K k',name:'卡（kah）',sound:'"k卡"<br>Kaffee=卡菲<br>kalt=卡尔特',say:'K'},
+  {l:'L l',name:'艾尔（el）',sound:'"l勒"（清晰）<br>lieben=里本<br>laut=劳特',say:'L'},
+  {l:'M m',name:'艾姆（em）',sound:'"m妈"<br>Morgen=摩根<br>Milch=米尔希',say:'M'},
+  {l:'N n',name:'艾恩（en）',sound:'"n嫩"<br>nein=奈因<br>Nacht=纳赫特',say:'N'},
+  {l:'O o',name:'哦（oh）',sound:'长/短"哦"<br>oder=哦德尔<br>oben=哦本',say:'O'},
+  {l:'P p',name:'配（peh）',sound:'"p配"<br>Pause=葩乌泽<br>Post=波斯特',say:'P'},
+  {l:'Q q',name:'库（kuh）',sound:'⚠️ qu→"kv夸"<br>不是"kw"<br>Qualität=克瓦利泰特',say:'Q'},
+  {l:'R r',name:'艾尔（er）',sound:'⚠️ 喉部颤音<br>词尾→弱化"厄"<br>rot=罗特',say:'R'},
+  {l:'S s',name:'艾斯（es）',sound:'母音间→"z兹"<br>其余→"s斯"<br>See=泽，das=达斯',say:'S'},
+  {l:'T t',name:'特（teh）',sound:'"t特"<br>Tag=塔克<br>Tisch=提什',say:'T'},
+  {l:'U u',name:'乌（uh）',sound:'长/短"乌"<br>und=温特<br>Uhr=乌尔',say:'U'},
+  {l:'V v',name:'法乌（fau）',sound:'⚠️ 发"f夫"音！<br>外来词发"v"<br>Vater=法特尔',say:'V'},
+  {l:'W w',name:'韦（veh）',sound:'⚠️ 发"v"音！<br>不是英语"w"<br>Wasser=瓦瑟',say:'W'},
+  {l:'X x',name:'伊克斯（iks）',sound:'发"ks"音<br>Taxi=塔克西<br>（主要在外来词）',say:'X'},
+  {l:'Y y',name:'于普西龙（Ypsilon）',sound:'德语词→"ü于"<br>外来词→"i伊/j雅"<br>（主要外来词）',say:'Y'},
+  {l:'Z z',name:'采特（tset）',sound:'⚠️ 发"ts茨"！<br>不是英语"z"<br>Zeit=采特，zu=楚',say:'Z'},
+  {l:'Ä ä',name:'埃（ä）',sound:'发"ä诶"（类似"诶"）<br>Mädchen=梅特兴<br>Äpfel=埃普费尔',say:'ä',sp:1},
+  {l:'Ö ö',name:'厄（圆唇 ö）',sound:'⚠️ 圆唇发"诶"<br>嘴形成"o"说"e"<br>schön=舍恩',say:'ö',sp:1},
+  {l:'Ü ü',name:'于（ü）',sound:'⚠️ 圆唇发"衣"<br>嘴形成"u"说"i"<br>grün=格吕恩',say:'ü',sp:1},
+  {l:'ß',name:'艾斯采特（Eszett）',sound:'等于双ss"斯"<br>长元音/双元音后用<br>Straße=施特拉瑟',say:'ß',sp:1},
+];
 
 /*__CATEGORIES__*/
 
@@ -825,6 +654,14 @@ function renderNumGrid(containerId, data){
 }
 renderNumGrid('numGrid0',nums0);
 renderNumGrid('numGridBig',numsBig);
+
+// 字母表渲染（含🔊朗读）
+function renderLetterGrid(){
+  const g=document.getElementById('letterGrid');
+  if(!g)return;
+  g.innerHTML=LETTERS.map(x=>`<div class="letter-card${x.sp?' special':''}"><div class="lc-letter">${x.l}</div><div class="lc-name">名称：<b>${x.name}</b></div><div class="lc-sound">${x.sound}</div><button class="speak-btn" type="button" title="朗读字母" aria-label="朗读字母 ${x.l}" onclick="speakDE('${x.say}',this)">🔊</button></div>`).join('');
+}
+renderLetterGrid();
 
 // Number quiz
 let numQ={score:0,total:0,mode:'de2zh',current:null};
