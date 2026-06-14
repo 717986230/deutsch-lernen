@@ -3614,6 +3614,81 @@ module.exports = [
         "de": "die Gewohnheit",
         "zh": "习惯",
         "py": "迪 格沃恩海特"
+      },
+      {
+        "de": "die Gratulation",
+        "zh": "祝贺",
+        "py": "迪 格拉图拉齐昂"
+      },
+      {
+        "de": "die Gymnastik",
+        "zh": "体操",
+        "py": "迪 居姆纳斯蒂克"
+      },
+      {
+        "de": "das Heimweh",
+        "zh": "思乡",
+        "py": "达斯 海姆维"
+      },
+      {
+        "de": "die Herausforderung",
+        "zh": "挑战",
+        "py": "迪 黑劳斯福德容"
+      },
+      {
+        "de": "die Herkunft",
+        "zh": "出身/来源",
+        "py": "迪 黑尔孔夫特"
+      },
+      {
+        "de": "der Hinweis",
+        "zh": "提示/指示",
+        "py": "德尔 欣瓦伊斯"
+      },
+      {
+        "de": "der Humor",
+        "zh": "幽默",
+        "py": "德尔 胡莫尔"
+      },
+      {
+        "de": "die Höhe",
+        "zh": "高度",
+        "py": "迪 赫厄"
+      },
+      {
+        "de": "der Inhalt",
+        "zh": "内容",
+        "py": "德尔 因哈尔特"
+      },
+      {
+        "de": "die Integration",
+        "zh": "融入/一体化",
+        "py": "迪 因特格拉齐昂"
+      },
+      {
+        "de": "die Intelligenz",
+        "zh": "智力/智能",
+        "py": "迪 因特利根茨"
+      },
+      {
+        "de": "der Import",
+        "zh": "进口",
+        "py": "德尔 因波特"
+      },
+      {
+        "de": "die Industrie",
+        "zh": "工业",
+        "py": "迪 因杜斯特里"
+      },
+      {
+        "de": "das Institut",
+        "zh": "研究所/学院",
+        "py": "达斯 因斯蒂图特"
+      },
+      {
+        "de": "das Inserat",
+        "zh": "广告/启事",
+        "py": "达斯 因泽拉特"
       }
     ]
   },
@@ -3851,6 +3926,51 @@ module.exports = [
         "de": "die Gewerkschaft",
         "zh": "工会",
         "py": "迪 格维克沙夫特"
+      },
+      {
+        "de": "der Gott",
+        "zh": "神/上帝",
+        "py": "德尔 戈特"
+      },
+      {
+        "de": "der Handel",
+        "zh": "贸易/商业",
+        "py": "德尔 汉德尔"
+      },
+      {
+        "de": "der Händler",
+        "zh": "商人/经销商",
+        "py": "德尔 亨德勒"
+      },
+      {
+        "de": "der Hausmeister",
+        "zh": "楼管/管理员",
+        "py": "德尔 豪斯迈斯特"
+      },
+      {
+        "de": "der Held",
+        "zh": "英雄",
+        "py": "德尔 黑尔特"
+      },
+      {
+        "de": "die Heldin",
+        "zh": "女英雄",
+        "py": "迪 黑尔丁"
+      },
+      {
+        "de": "der Hersteller",
+        "zh": "制造商",
+        "py": "德尔 黑尔施泰勒"
+      },
+      {
+        "de": "der Ingenieur",
+        "zh": "工程师",
+        "py": "德尔 因热尼厄尔"
+      },
+      {
+        "de": "das Heim",
+        "zh": "家/福利院",
+        "py": "达斯 海姆"
       }
     ]
   },
@@ -4118,6 +4238,51 @@ module.exports = [
         "de": "die Geschwindigkeitsbeschränkung",
         "zh": "限速",
         "py": "迪 格施温迪希凯茨贝施伦孔"
+      },
+      {
+        "de": "das Gift",
+        "zh": "毒药",
+        "py": "达斯 吉夫特"
+      },
+      {
+        "de": "das Gold",
+        "zh": "黄金",
+        "py": "达斯 戈尔特"
+      },
+      {
+        "de": "die Grafik",
+        "zh": "图表/图形",
+        "py": "迪 格拉菲克"
+      },
+      {
+        "de": "das Grundstück",
+        "zh": "地皮/地产",
+        "py": "达斯 格伦特施蒂克"
+      },
+      {
+        "de": "der Hut",
+        "zh": "帽子",
+        "py": "德尔 胡特"
+      },
+      {
+        "de": "die Hütte",
+        "zh": "小屋/棚屋",
+        "py": "迪 徽特"
+      },
+      {
+        "de": "der Hof",
+        "zh": "院子/农场",
+        "py": "德尔 霍夫"
+      },
+      {
+        "de": "der Bauernhof",
+        "zh": "农场/农庄",
+        "py": "德尔 鲍尔恩霍夫"
+      },
+      {
+        "de": "der Hörer",
+        "zh": "听筒/听众",
+        "py": "德尔 赫勒"
       }
     ]
   },
@@ -4182,6 +4347,26 @@ module.exports = [
         "de": "das Gebäck",
         "zh": "糕点",
         "py": "达斯 格贝克"
+      },
+      {
+        "de": "das Gewürz",
+        "zh": "香料/调料",
+        "py": "达斯 格维尔茨"
+      },
+      {
+        "de": "die Glace",
+        "zh": "冰淇淋（瑞士）",
+        "py": "迪 格拉斯"
+      },
+      {
+        "de": "das Hackfleisch",
+        "zh": "绞肉/肉馅",
+        "py": "达斯 哈克弗莱施"
+      },
+      {
+        "de": "der Grill",
+        "zh": "烤架/烧烤",
+        "py": "德尔 格里尔"
       }
     ]
   },
@@ -4194,6 +4379,21 @@ module.exports = [
         "de": "der Donner",
         "zh": "雷",
         "py": "德尔 多纳"
+      },
+      {
+        "de": "der Himmel",
+        "zh": "天空/天堂",
+        "py": "德尔 希默尔"
+      },
+      {
+        "de": "die Hitze",
+        "zh": "炎热/高温",
+        "py": "迪 希策"
+      },
+      {
+        "de": "der Hügel",
+        "zh": "小山丘",
+        "py": "德尔 徽格尔"
       }
     ]
   },
