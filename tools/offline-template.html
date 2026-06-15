@@ -1066,21 +1066,53 @@ function setReadLevel(k){readActive=k;buildReadTabs();renderReadings();}
 function renderReadings(){
   const list=READINGS.filter(r=>readActive==='all'||r.level===readActive);
   const el=document.getElementById('readList');
-  el.innerHTML=list.map((r,i)=>{
-    const full=r.paras.map(p=>p[0]).join(' ');
-    const body=r.paras.map(p=>`<div style="margin-bottom:10px"><div style="font-size:15px;color:var(--text);line-height:1.6">${p[0]}</div><div style="font-size:13px;color:var(--text-dim);margin-top:2px">${p[1]}</div></div>`).join('');
+  el.innerHTML=list.map((r,ri)=>{
+    const body=r.paras.map((p,pi)=>`<div class="read-para" id="rp_${ri}_${pi}" style="margin-bottom:10px;padding:4px 6px;border-radius:6px;transition:background .2s"><div style="display:flex;align-items:start;gap:6px"><div style="flex:1"><div style="font-size:15px;color:var(--text);line-height:1.6" lang="de">${p[0]}</div><div style="font-size:13px;color:var(--text-dim);margin-top:2px">${p[1]}</div></div><button class="speak-btn" type="button" title="朗读本段" aria-label="朗读本段" onclick="speakPara(this,'${p[0].replace(/'/g,"\\'")}')">🔊</button></div></div>`).join('');
     return `<div class="card" style="cursor:default;margin-bottom:14px">
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
         <span style="font-size:17px;font-weight:600;color:#46a302" lang="de">${r.title}</span>
         <span class="level-badge ${READ_LB[r.level]}">${READ_LN[r.level]}</span>
         <span style="font-size:13px;color:var(--text-dim)">${r.zh}</span>
-        <button class="speak-btn" type="button" title="朗读全文" aria-label="朗读全文：${r.title}" style="margin-left:auto" onclick='speakReading(this,${JSON.stringify(full)})'>🔊</button>
+        <button class="speak-btn read-all-btn" type="button" title="朗读全文" aria-label="朗读全文：${r.title}" style="margin-left:auto" onclick="speakReadingAll(this,${ri})">🔊 全文</button>
       </div>${body}</div>`;
   }).join('');
 }
-function speakReading(btn,text){
-  if(typeof stopAutoPlay==='function')stopAutoPlay();
+var _readingQueue=null;
+function speakPara(btn,text){
+  stopReadingAll();
   speakDE(text,btn);
+}
+function speakReadingAll(btn,ri){
+  stopReadingAll();
+  const list=READINGS.filter(r=>readActive==='all'||r.level===readActive);
+  const r=list[ri]; if(!r)return;
+  const paras=r.paras.map(p=>p[0]);
+  btn.classList.add('speaking');
+  btn.textContent='⏹ 停止';
+  _readingQueue={btn,ri,idx:0,paras};
+  _playNextPara();
+}
+function _playNextPara(){
+  const q=_readingQueue; if(!q)return;
+  document.querySelectorAll('.read-para').forEach(e=>e.style.background='');
+  if(q.idx>=q.paras.length){stopReadingAll();return;}
+  const el=document.getElementById('rp_'+q.ri+'_'+q.idx);
+  if(el){el.style.background='rgba(88,204,2,.12)';el.scrollIntoView({behavior:'smooth',block:'nearest'});}
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(q.paras[q.idx]);
+  u.lang='de-DE';if(_deVoice)u.voice=_deVoice;u.rate=_spk.rate;u.pitch=1;
+  u.onend=()=>{if(!_readingQueue)return;q.idx++;_playNextPara();};
+  u.onerror=()=>{if(!_readingQueue)return;q.idx++;_playNextPara();};
+  speechSynthesis.speak(u);
+}
+function stopReadingAll(){
+  if(_readingQueue){
+    _readingQueue.btn.classList.remove('speaking');
+    _readingQueue.btn.textContent='🔊 全文';
+    _readingQueue=null;
+  }
+  document.querySelectorAll('.read-para').forEach(e=>e.style.background='');
+  speechSynthesis.cancel();
 }
 
 // INIT
