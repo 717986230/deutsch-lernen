@@ -55,6 +55,19 @@ body{background:var(--bg);color:var(--text);font-family:'Georgia',serif;min-heig
 .card-de-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
 .speak-btn{flex-shrink:0;width:30px;height:30px;border:none;border-radius:50%;background:rgba(88,204,2,.14);color:#46a302;font-size:15px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;line-height:1;padding:0}
 .speak-btn:active{transform:scale(.88)}
+.loop-all-btn{border:none;border-radius:22px;background:#58cc02;color:#fff;font-size:15px;font-weight:600;cursor:pointer;padding:9px 24px;white-space:nowrap;font-family:inherit;line-height:1.2;box-shadow:0 3px 10px rgba(88,204,2,.32)}
+.loop-all-btn:active{transform:scale(.96)}
+.loop-all-btn.speaking{background:#ff4b4b;box-shadow:0 3px 10px rgba(255,75,75,.32)}
+/* 阅读：单篇朗读按钮 */
+.read-art-btn{flex-shrink:0;border:none;border-radius:16px;background:rgba(88,204,2,.14);color:#46a302;font-size:12px;font-weight:600;cursor:pointer;padding:5px 14px;white-space:nowrap;font-family:inherit;line-height:1.2}
+.read-art-btn:active{transform:scale(.95)}
+.read-art-btn.speaking{background:#ff4b4b;color:#fff}
+/* 阅读：单段朗读小按钮（轻量幽灵态） */
+.para-spk{flex-shrink:0;width:26px;height:26px;border:none;border-radius:50%;background:transparent;color:var(--text-faint);font-size:13px;cursor:pointer;opacity:.5;transition:all .15s;display:inline-flex;align-items:center;justify-content:center;line-height:1;padding:0}
+.para-spk:hover{opacity:1;background:rgba(88,204,2,.14);color:#46a302}
+.para-spk.speaking{opacity:1;background:#58cc02;color:#fff}
+.read-para{margin-bottom:10px;padding:6px 8px;border-radius:8px;transition:background .2s}
+.read-para.rp-on{background:rgba(88,204,2,.12)}
 .speak-btn.speaking{background:#58cc02;color:#fff;animation:pulse .7s infinite}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(88,204,2,.4)}50%{box-shadow:0 0 0 6px rgba(88,204,2,0)}}
 .card.speaking-now{border-color:#58cc02;background:rgba(88,204,2,.08);box-shadow:0 0 0 2px rgba(88,204,2,.45),0 4px 16px rgba(88,204,2,.2)}
@@ -570,9 +583,11 @@ to{opacity:1}}
   <div class="container">
     <div class="hero-label" style="text-align:center;padding-top:20px">Lesen</div>
     <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 4px;color:var(--text)">分级阅读短文</h2>
-    <p style="text-align:center;font-size:13px;color:var(--text-dim);margin-bottom:4px">0基础 → B1 循序渐进 · 中德对照 · 🔊 朗读（慢速）</p>
-    <div style="text-align:center;margin:8px 0"><button id="loopAllBtn" class="speak-btn" type="button" style="font-size:15px;padding:6px 18px;border-radius:20px" onclick="toggleLoopAll()">🔊 循环朗读全部</button></div>
+    <p style="text-align:center;font-size:13px;color:var(--text-dim);margin-bottom:4px">0基础 → C2 循序渐进 · 中德对照 · 🔊 慢速朗读</p>
+    <div style="text-align:center;margin:10px 0 6px"><button id="loopAllBtn" class="loop-all-btn" type="button" onclick="toggleLoopAll()">🔊 循环朗读全部</button></div>
+    <p style="text-align:center;font-size:12px;color:var(--text-faint);margin-bottom:6px">逐句朗读并高亮 · 读完自动循环 · 点小喇叭可单独听某句</p>
     <div class="level-tabs" id="readLevelTabs"></div>
+    <div id="readCount" style="font-size:12px;color:var(--gold-dim);margin:4px 0 10px"></div>
     <div id="readList"></div>
   </div>
 </div>
@@ -631,6 +646,7 @@ const LETTERS = [
 
 function showSection(id){
   if(typeof stopAutoPlay==='function')stopAutoPlay();
+  if(typeof stopReading==='function')stopReading();
   document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
   document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
   document.getElementById(id).classList.add('active');
@@ -1063,54 +1079,57 @@ function buildReadTabs(){
   document.getElementById('readLevelTabs').innerHTML=READ_LEVELS.map(([k,l])=>
     `<button class="level-tab${k===readActive?' active':''}" onclick="setReadLevel('${k}')">${l}</button>`).join('');
 }
-function setReadLevel(k){readActive=k;buildReadTabs();renderReadings();}
+function setReadLevel(k){stopReading();readActive=k;buildReadTabs();renderReadings();}
+function _getReadList(){return READINGS.filter(r=>readActive==='all'||r.level===readActive);}
 function renderReadings(){
-  const list=READINGS.filter(r=>readActive==='all'||r.level===readActive);
+  const list=_getReadList();
+  const cnt=document.getElementById('readCount');
+  if(cnt)cnt.textContent='共 '+list.length+' 篇短文';
   const el=document.getElementById('readList');
   el.innerHTML=list.map((r,ri)=>{
-    const body=r.paras.map((p,pi)=>`<div class="read-para" id="rp_${ri}_${pi}" style="margin-bottom:10px;padding:4px 6px;border-radius:6px;transition:background .2s"><div style="display:flex;align-items:start;gap:6px"><div style="flex:1"><div style="font-size:15px;color:var(--text);line-height:1.6" lang="de">${p[0]}</div><div style="font-size:13px;color:var(--text-dim);margin-top:2px">${p[1]}</div></div><button class="speak-btn" type="button" title="朗读本段" aria-label="朗读本段" onclick="speakPara(this,'${p[0].replace(/'/g,"\\'")}')">🔊</button></div></div>`).join('');
-    return `<div class="card" style="cursor:default;margin-bottom:14px">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+    const body=r.paras.map((p,pi)=>`<div class="read-para" id="rp_${ri}_${pi}"><div style="display:flex;align-items:start;gap:8px"><button class="para-spk" type="button" title="朗读本句" aria-label="朗读本句" onclick="speakPara(this,'${p[0].replace(/\\/g,"\\\\").replace(/'/g,"\\'")}')">🔊</button><div style="flex:1"><div style="font-size:15px;color:var(--text);line-height:1.6" lang="de">${p[0]}</div><div style="font-size:13px;color:var(--text-dim);margin-top:2px">${p[1]}</div></div></div></div>`).join('');
+    return `<div class="card" id="rcard_${ri}" style="cursor:default;margin-bottom:14px">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap">
         <span style="font-size:17px;font-weight:600;color:#46a302" lang="de">${r.title}</span>
         <span class="level-badge ${READ_LB[r.level]}">${READ_LN[r.level]}</span>
         <span style="font-size:13px;color:var(--text-dim)">${r.zh}</span>
-        <button class="speak-btn read-all-btn" type="button" title="朗读全文" aria-label="朗读全文：${r.title}" style="margin-left:auto" onclick="speakReadingAll(this,${ri})">🔊 全文</button>
+        <button class="read-art-btn" id="rab_${ri}" type="button" title="朗读全文" aria-label="朗读全文：${r.title}" style="margin-left:auto" onclick="toggleArticle(this,${ri})">▶ 朗读</button>
       </div>${body}</div>`;
   }).join('');
 }
-var _rq=null;
-function _getReadList(){return READINGS.filter(r=>readActive==='all'||r.level===readActive);}
-function speakPara(btn,text){
-  stopReadingAll();
-  speakDE(text,btn);
-}
-function speakReadingAll(btn,ri){
-  stopReadingAll();
-  _startReading(ri,false);
-}
+// ── 统一阅读朗读引擎：单句 / 单篇 / 循环全部 ──
+var _rq=null; // {ri,pi,mode:'loop'|'one'}
+function speakPara(btn,text){stopReading();speakDE(text,btn);}
 function toggleLoopAll(){
-  if(_rq){stopReadingAll();return;}
-  _startReading(0,true);
+  if(_rq&&_rq.mode==='loop'){stopReading();return;}
+  stopReading();
+  if(!_getReadList().length)return;
+  _rq={ri:0,pi:0,mode:'loop'};_syncReadBtns();_playNext();
 }
-function _startReading(ri,loop){
-  const list=_getReadList();
-  if(!list.length)return;
+function toggleArticle(btn,ri){
+  if(_rq&&_rq.mode==='one'&&_rq.ri===ri){stopReading();return;}
+  stopReading();
+  _rq={ri:ri,pi:0,mode:'one'};_syncReadBtns();_playNext();
+}
+function _syncReadBtns(){
   const lb=document.getElementById('loopAllBtn');
-  if(loop){lb.classList.add('speaking');lb.textContent='⏹ 停止朗读';}
-  _rq={ri,pi:0,loop};
-  _playNext();
+  if(lb){const on=_rq&&_rq.mode==='loop';lb.classList.toggle('speaking',on);lb.textContent=on?'⏹ 停止朗读':'🔊 循环朗读全部';}
+  document.querySelectorAll('.read-art-btn').forEach(b=>{b.classList.remove('speaking');b.textContent='▶ 朗读';});
+  if(_rq&&_rq.mode==='one'){const ab=document.getElementById('rab_'+_rq.ri);if(ab){ab.classList.add('speaking');ab.textContent='⏹ 停止';}}
 }
+function _clearReadHL(){document.querySelectorAll('.read-para.rp-on').forEach(e=>e.classList.remove('rp-on'));}
 function _playNext(){
   const q=_rq;if(!q)return;
   const list=_getReadList();
-  if(q.ri>=list.length){
-    if(q.loop){q.ri=0;q.pi=0;}else{stopReadingAll();return;}
-  }
+  if(q.ri>=list.length){if(q.mode==='loop'){q.ri=0;q.pi=0;}else{stopReading();return;}}
   const r=list[q.ri];
-  document.querySelectorAll('.read-para').forEach(e=>e.style.background='');
-  if(q.pi>=r.paras.length){q.ri++;q.pi=0;_playNext();return;}
+  _clearReadHL();
+  if(q.pi>=r.paras.length){
+    if(q.mode==='one'){stopReading();return;}
+    q.ri++;q.pi=0;return _playNext();
+  }
   const el=document.getElementById('rp_'+q.ri+'_'+q.pi);
-  if(el){el.style.background='rgba(88,204,2,.12)';el.scrollIntoView({behavior:'smooth',block:'nearest'});}
+  if(el){el.classList.add('rp-on');el.scrollIntoView({behavior:'smooth',block:'center'});}
   speechSynthesis.cancel();
   const u=new SpeechSynthesisUtterance(r.paras[q.pi][0]);
   u.lang='de-DE';if(_deVoice)u.voice=_deVoice;u.rate=_spk.rate;u.pitch=1;
@@ -1118,12 +1137,8 @@ function _playNext(){
   u.onerror=()=>{if(!_rq)return;q.pi++;_playNext();};
   speechSynthesis.speak(u);
 }
-function stopReadingAll(){
-  _rq=null;
-  const lb=document.getElementById('loopAllBtn');
-  if(lb){lb.classList.remove('speaking');lb.textContent='🔊 循环朗读全部';}
-  document.querySelectorAll('.read-para').forEach(e=>e.style.background='');
-  speechSynthesis.cancel();
+function stopReading(){
+  _rq=null;speechSynthesis.cancel();_clearReadHL();_syncReadBtns();
 }
 
 // INIT
