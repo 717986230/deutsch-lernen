@@ -558,7 +558,7 @@ to{opacity:1}}
     <div class="hero-label" style="text-align:center;padding-top:20px">Übungen</div>
     <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 24px;color:var(--text)">练习测验</h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:24px">
-      <div class="card" onclick="startQuiz('numde')" style="text-align:center;padding:20px">
+      <div class="card" onclick="startQuiz('num')" style="text-align:center;padding:20px">
         <div style="font-size:28px;margin-bottom:8px">🔢</div>
         <div style="color:var(--gold);margin-bottom:4px">数字测验</div>
         <div style="font-size:12px;color:var(--text-dim)">看数字→说德语</div>
@@ -607,6 +607,13 @@ const numsBig = [
   {n:100,de:'hundert',py:'洪德特'},{n:1000,de:'tausend',py:'套森特'},
   {n:1000000,de:'eine Million',py:'艾嫩 米利昂'},{n:1000000000,de:'eine Milliarde',py:'艾嫩 米利阿德'},
   {n:0.5,de:'ein halb',py:'艾因 哈尔普'},{n:'1.',de:'erste',py:'尔斯特'}
+];
+// 数字测验题库（练习测验「数字测验」用）
+const NUM_POOL=[...nums0,
+  {n:13,de:'dreizehn'},{n:14,de:'vierzehn'},{n:16,de:'sechzehn'},{n:17,de:'siebzehn'},{n:19,de:'neunzehn'},
+  {n:20,de:'zwanzig'},{n:21,de:'einundzwanzig'},{n:30,de:'dreißig'},{n:35,de:'fünfunddreißig'},
+  {n:40,de:'vierzig'},{n:50,de:'fünfzig'},{n:60,de:'sechzig'},{n:70,de:'siebzig'},{n:80,de:'achtzig'},
+  {n:90,de:'neunzig'},{n:99,de:'neunundneunzig'},{n:100,de:'hundert'},{n:1000,de:'tausend'}
 ];
 // 字母表（say=喂给 TTS 的德语字母名称拼写，确保稳定读出德语念法；裸单字母会被部分引擎按英文念）
 const LETTERS = [
@@ -1023,6 +1030,7 @@ function getAllPhrases(){
   return categories.flatMap((c,ci)=>c.phrases.map((p,pi)=>({...p,id:`${ci}-${pi}`})));
 }
 function nextQ(){
+  if(mq.mode==='num'){ nextNumMainQ(); return; }
   const all=getAllPhrases();
   const idx=Math.floor(Math.random()*all.length);
   mq.current=all[idx];
@@ -1064,6 +1072,28 @@ function checkQ(btn,selected,correct){
     });
   }
   setTimeout(nextQ,1200);
+}
+// 练习测验·数字题（看数字→选德语）
+function nextNumMainQ(){
+  const pool=NUM_POOL;
+  mq.current=pool[Math.floor(Math.random()*pool.length)];
+  const wrong=[];
+  while(wrong.length<3){
+    const w=pool[Math.floor(Math.random()*pool.length)];
+    if(w.n!==mq.current.n&&!wrong.find(x=>x.n===w.n))wrong.push(w);
+  }
+  const opts=[mq.current,...wrong].sort(()=>Math.random()-.5);
+  const pct=mq.total>0?Math.round(mq.score/mq.total*100):0;
+  const qHtml=`<div class="quiz-q">${mq.current.n}</div><div class="quiz-hint">这个数字的德语怎么说？</div>`;
+  const optsHtml=opts.map(o=>`<button class="quiz-opt" lang="de" onclick="checkQ(this,'${escQ(o.de)}','${escQ(mq.current.de)}')">${o.de}</button>`).join('');
+  document.getElementById('mainQuizArea').innerHTML=`
+    <div class="quiz-box">
+      <div class="quiz-score">得分：${mq.score} / ${mq.total} （${pct}%）</div>
+      <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
+      ${qHtml}
+      <div class="quiz-opts">${optsHtml}</div>
+      <button class="btn" onclick="startQuiz('num')" style="font-size:12px">重新开始</button>
+    </div>`;
 }
 
 // ══════════════════════════════════════
