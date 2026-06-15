@@ -570,7 +570,8 @@ to{opacity:1}}
   <div class="container">
     <div class="hero-label" style="text-align:center;padding-top:20px">Lesen</div>
     <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 4px;color:var(--text)">分级阅读短文</h2>
-    <p style="text-align:center;font-size:13px;color:var(--text-dim);margin-bottom:4px">0基础 → B1 循序渐进 · 中德对照 · 🔊 整篇朗读（慢速）</p>
+    <p style="text-align:center;font-size:13px;color:var(--text-dim);margin-bottom:4px">0基础 → B1 循序渐进 · 中德对照 · 🔊 朗读（慢速）</p>
+    <div style="text-align:center;margin:8px 0"><button id="loopAllBtn" class="speak-btn" type="button" style="font-size:15px;padding:6px 18px;border-radius:20px" onclick="toggleLoopAll()">🔊 循环朗读全部</button></div>
     <div class="level-tabs" id="readLevelTabs"></div>
     <div id="readList"></div>
   </div>
@@ -1077,40 +1078,50 @@ function renderReadings(){
       </div>${body}</div>`;
   }).join('');
 }
-var _readingQueue=null;
+var _rq=null;
+function _getReadList(){return READINGS.filter(r=>readActive==='all'||r.level===readActive);}
 function speakPara(btn,text){
   stopReadingAll();
   speakDE(text,btn);
 }
 function speakReadingAll(btn,ri){
   stopReadingAll();
-  const list=READINGS.filter(r=>readActive==='all'||r.level===readActive);
-  const r=list[ri]; if(!r)return;
-  const paras=r.paras.map(p=>p[0]);
-  btn.classList.add('speaking');
-  btn.textContent='⏹ 停止';
-  _readingQueue={btn,ri,idx:0,paras};
-  _playNextPara();
+  _startReading(ri,false);
 }
-function _playNextPara(){
-  const q=_readingQueue; if(!q)return;
+function toggleLoopAll(){
+  if(_rq){stopReadingAll();return;}
+  _startReading(0,true);
+}
+function _startReading(ri,loop){
+  const list=_getReadList();
+  if(!list.length)return;
+  const lb=document.getElementById('loopAllBtn');
+  if(loop){lb.classList.add('speaking');lb.textContent='⏹ 停止朗读';}
+  _rq={ri,pi:0,loop};
+  _playNext();
+}
+function _playNext(){
+  const q=_rq;if(!q)return;
+  const list=_getReadList();
+  if(q.ri>=list.length){
+    if(q.loop){q.ri=0;q.pi=0;}else{stopReadingAll();return;}
+  }
+  const r=list[q.ri];
   document.querySelectorAll('.read-para').forEach(e=>e.style.background='');
-  if(q.idx>=q.paras.length){stopReadingAll();return;}
-  const el=document.getElementById('rp_'+q.ri+'_'+q.idx);
+  if(q.pi>=r.paras.length){q.ri++;q.pi=0;_playNext();return;}
+  const el=document.getElementById('rp_'+q.ri+'_'+q.pi);
   if(el){el.style.background='rgba(88,204,2,.12)';el.scrollIntoView({behavior:'smooth',block:'nearest'});}
   speechSynthesis.cancel();
-  const u=new SpeechSynthesisUtterance(q.paras[q.idx]);
+  const u=new SpeechSynthesisUtterance(r.paras[q.pi][0]);
   u.lang='de-DE';if(_deVoice)u.voice=_deVoice;u.rate=_spk.rate;u.pitch=1;
-  u.onend=()=>{if(!_readingQueue)return;q.idx++;_playNextPara();};
-  u.onerror=()=>{if(!_readingQueue)return;q.idx++;_playNextPara();};
+  u.onend=()=>{if(!_rq)return;q.pi++;_playNext();};
+  u.onerror=()=>{if(!_rq)return;q.pi++;_playNext();};
   speechSynthesis.speak(u);
 }
 function stopReadingAll(){
-  if(_readingQueue){
-    _readingQueue.btn.classList.remove('speaking');
-    _readingQueue.btn.textContent='🔊 全文';
-    _readingQueue=null;
-  }
+  _rq=null;
+  const lb=document.getElementById('loopAllBtn');
+  if(lb){lb.classList.remove('speaking');lb.textContent='🔊 循环朗读全部';}
   document.querySelectorAll('.read-para').forEach(e=>e.style.background='');
   speechSynthesis.cancel();
 }
