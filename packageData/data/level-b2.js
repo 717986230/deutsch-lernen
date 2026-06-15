@@ -845,5 +845,166 @@ module.exports = [
         "py": "德尔 诺特法尔阿尔茨特"
       }
     ]
+  },
+  {
+    "name": "动词·进阶",
+    "level": "b2",
+    "icon": "📘",
+    "phrases": [
+      {
+        "de": "gelten",
+        "zh": "有效/被视为",
+        "py": "盖尔滕"
+      },
+      {
+        "de": "ermöglichen",
+        "zh": "使成为可能",
+        "py": "埃尔默格利兴"
+      },
+      {
+        "de": "vermeiden",
+        "zh": "避免",
+        "py": "费尔迈登"
+      },
+      {
+        "de": "behaupten",
+        "zh": "声称/断言",
+        "py": "贝豪普滕"
+      },
+      {
+        "de": "erwähnen",
+        "zh": "提及/提到",
+        "py": "埃尔韦嫩"
+      },
+      {
+        "de": "betrachten",
+        "zh": "观察/看待",
+        "py": "贝特拉赫滕"
+      },
+      {
+        "de": "verursachen",
+        "zh": "引起/导致",
+        "py": "费尔乌尔扎亨"
+      },
+      {
+        "de": "unterscheiden",
+        "zh": "区分/区别",
+        "py": "温特尔沙伊登"
+      },
+      {
+        "de": "überzeugen",
+        "zh": "说服",
+        "py": "于贝尔措伊根"
+      },
+      {
+        "de": "verlangen",
+        "zh": "要求/索取",
+        "py": "费尔朗恩"
+      },
+      {
+        "de": "verzichten",
+        "zh": "放弃/不要",
+        "py": "费尔齐希滕"
+      },
+      {
+        "de": "berücksichtigen",
+        "zh": "考虑到/顾及",
+        "py": "贝吕克西希提根"
+      }
+    ]
+  },
+  {
+    "name": "抽象·进阶",
+    "level": "b2",
+    "icon": "📘",
+    "phrases": [
+      {
+        "de": "die Voraussetzung",
+        "zh": "前提/条件",
+        "py": "迪 福尔奥斯泽聪"
+      },
+      {
+        "de": "die Auswirkung",
+        "zh": "影响/后果",
+        "py": "迪 奥斯维尔孔"
+      },
+      {
+        "de": "der Zusammenhang",
+        "zh": "关联/联系",
+        "py": "德尔 楚扎门汉"
+      },
+      {
+        "de": "die Maßnahme",
+        "zh": "措施",
+        "py": "迪 马斯纳默"
+      },
+      {
+        "de": "die Verantwortung",
+        "zh": "责任",
+        "py": "迪 费尔安特沃尔通"
+      },
+      {
+        "de": "die Umgebung",
+        "zh": "周边/环境",
+        "py": "迪 乌姆格布翁"
+      },
+      {
+        "de": "der Zweck",
+        "zh": "目的/用途",
+        "py": "德尔 茨韦克"
+      },
+      {
+        "de": "der Aspekt",
+        "zh": "方面/角度",
+        "py": "德尔 阿斯佩克特"
+      },
+      {
+        "de": "die Tatsache",
+        "zh": "事实",
+        "py": "迪 塔特扎赫"
+      }
+    ]
+  },
+  {
+    "name": "描述·进阶",
+    "level": "b2",
+    "icon": "📘",
+    "phrases": [
+      {
+        "de": "wesentlich",
+        "zh": "本质的/重要的",
+        "py": "韦森特利希"
+      },
+      {
+        "de": "ähnlich",
+        "zh": "相似的",
+        "py": "埃恩利希"
+      },
+      {
+        "de": "erheblich",
+        "zh": "相当大的/可观的",
+        "py": "埃尔黑普利希"
+      },
+      {
+        "de": "zahlreich",
+        "zh": "众多的",
+        "py": "察尔莱希"
+      },
+      {
+        "de": "erforderlich",
+        "zh": "必需的",
+        "py": "埃尔福德利希"
+      },
+      {
+        "de": "ausführlich",
+        "zh": "详尽的",
+        "py": "奥斯菲尔利希"
+      },
+      {
+        "de": "gewöhnlich",
+        "zh": "通常的/平常的",
+        "py": "格弗恩利希"
+      }
+    ]
   }
 ];
