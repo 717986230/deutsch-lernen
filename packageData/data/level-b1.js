@@ -1996,11 +1996,6 @@ module.exports = [
         "py": "德尔 卡尔内瓦尔"
       },
       {
-        "de": "Fasching",
-        "zh": "狂欢节（奥地利）",
-        "py": "法兴"
-      },
-      {
         "de": "das Bayramfest",
         "zh": "开斋节",
         "py": "达斯 拜拉姆费斯特"
@@ -3346,11 +3341,6 @@ module.exports = [
         "py": "达斯 德泰"
       },
       {
-        "de": "der Dialekt",
-        "zh": "方言",
-        "py": "德尔 迪亚莱克特"
-      },
-      {
         "de": "der Dialog",
         "zh": "对话",
         "py": "德尔 迪亚洛克"
@@ -3773,11 +3763,6 @@ module.exports = [
         "py": "德尔 奥托尔"
       },
       {
-        "de": "der Abwart",
-        "zh": "楼房管理员/门房（瑞士）",
-        "py": "德尔 阿布瓦特"
-      },
-      {
         "de": "das Altenheim",
         "zh": "养老院",
         "py": "达斯 阿尔滕海姆"
@@ -3788,11 +3773,6 @@ module.exports = [
         "py": "达斯 阿尔特斯海姆"
       },
       {
-        "de": "der Bub",
-        "zh": "男孩（南德/奥地利）",
-        "py": "德尔 布普"
-      },
-      {
         "de": "der Bürger",
         "zh": "市民/公民",
         "py": "德尔 比尔格"
@@ -3801,11 +3781,6 @@ module.exports = [
         "de": "die Bürgerin",
         "zh": "女市民/女公民",
         "py": "迪 比尔格林"
-      },
-      {
-        "de": "der Coiffeur",
-        "zh": "理发师（瑞士）",
-        "py": "德尔 夸弗尔"
       },
       {
         "de": "der Dieb",
@@ -3901,11 +3876,6 @@ module.exports = [
         "de": "die Fachleute",
         "zh": "专业人员（复数）",
         "py": "迪 法赫洛伊特"
-      },
-      {
-        "de": "der Fleischhauer",
-        "zh": "屠夫/肉商（奥地利）",
-        "py": "德尔 弗莱施豪尔"
       },
       {
         "de": "der Fotograf",
@@ -4115,11 +4085,6 @@ module.exports = [
         "py": "迪 布雷姆泽"
       },
       {
-        "de": "das Brötli",
-        "zh": "小面包（瑞士）",
-        "py": "达斯 布勒特利"
-      },
-      {
         "de": "die Büchse",
         "zh": "罐头/盒子",
         "py": "迪 比克瑟"
@@ -4145,19 +4110,9 @@ module.exports = [
         "py": "迪 考奇"
       },
       {
-        "de": "das Couvert",
-        "zh": "信封（瑞士）",
-        "py": "达斯 库维尔"
-      },
-      {
         "de": "die Dose",
         "zh": "罐头/易拉罐",
         "py": "迪 多泽"
-      },
-      {
-        "de": "die e-card",
-        "zh": "电子卡（奥地利医保卡）",
-        "py": "迪 伊卡"
       },
       {
         "de": "der Dreck",
@@ -4168,11 +4123,6 @@ module.exports = [
         "de": "die ec-Karte",
         "zh": "借记卡（德国银行卡）",
         "py": "迪 衣策卡特"
-      },
-      {
-        "de": "das Eck",
-        "zh": "角落（南德/奥地利）",
-        "py": "达斯 埃克"
       },
       {
         "de": "die Einfahrt",
@@ -4250,11 +4200,6 @@ module.exports = [
         "py": "达斯 费尔特"
       },
       {
-        "de": "der Fauteuil",
-        "zh": "扶手椅（奥地利/瑞士）",
-        "py": "德尔 福特伊"
-      },
-      {
         "de": "der Fleck",
         "zh": "污点/斑点",
         "py": "德尔 弗莱克"
@@ -4263,11 +4208,6 @@ module.exports = [
         "de": "die Frisur",
         "zh": "发型",
         "py": "迪 弗里组尔"
-      },
-      {
-        "de": "der Führerausweis",
-        "zh": "驾照（瑞士）",
-        "py": "德尔 菲勒尔奥斯瓦伊斯"
       },
       {
         "de": "das Fundbüro",
@@ -4424,16 +4364,6 @@ module.exports = [
         "py": "达斯 艾斯"
       },
       {
-        "de": "der Erdapfel",
-        "zh": "土豆（奥地利）",
-        "py": "德尔 埃尔特阿普弗尔"
-      },
-      {
-        "de": "das Faschierte",
-        "zh": "肉馅（奥地利）",
-        "py": "达斯 法施尔特"
-      },
-      {
         "de": "das Fett",
         "zh": "脂肪/油脂",
         "py": "达斯 费特"
@@ -4447,11 +4377,6 @@ module.exports = [
         "de": "das Gewürz",
         "zh": "香料/调料",
         "py": "达斯 格维尔茨"
-      },
-      {
-        "de": "die Glace",
-        "zh": "冰淇淋（瑞士）",
-        "py": "迪 格拉斯"
       },
       {
         "de": "das Hackfleisch",
@@ -4536,23 +4461,6 @@ module.exports = [
         "de": "die Förderung",
         "zh": "资助/促进",
         "py": "迪 弗尔德容"
-      }
-    ]
-  },
-  {
-    "name": "文化·节日",
-    "level": "b1",
-    "icon": "📘",
-    "phrases": [
-      {
-        "de": "der Fasching",
-        "zh": "狂欢节（南德/奥地利）",
-        "py": "德尔 法兴"
-      },
-      {
-        "de": "die Fasnacht",
-        "zh": "狂欢节（瑞士）",
-        "py": "迪 法斯纳赫特"
       }
     ]
   }

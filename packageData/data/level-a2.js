@@ -5671,11 +5671,6 @@ module.exports = [
     "icon": "🇦🇹",
     "phrases": [
       {
-        "de": "Grüß Gott! (=Hallo)",
-        "zh": "你好！（奥地利）",
-        "py": "格吕斯 戈特"
-      },
-      {
         "de": "Servus! (=Hallo/Tschüss)",
         "zh": "你好/再见！",
         "py": "塞尔乌斯"
@@ -5684,11 +5679,6 @@ module.exports = [
         "de": "Baba! (=Tschüss)",
         "zh": "再见！（维也纳口语）",
         "py": "巴巴"
-      },
-      {
-        "de": "Pfiat di! (=Tschüss)",
-        "zh": "再见！（方言）",
-        "py": "菲亚特 迪"
       },
       {
         "de": "Passt! (=OK)",
@@ -5701,11 +5691,6 @@ module.exports = [
         "py": "根 比特"
       },
       {
-        "de": "Bitte! (=多种含义)",
-        "zh": "请/不客气/什么（奥地利特色）",
-        "py": "比特"
-      },
-      {
         "de": "Schauen wir mal.",
         "zh": "我们看看吧。",
         "py": "绍恩 维尔 马尔"
@@ -5714,11 +5699,6 @@ module.exports = [
         "de": "Das wird scho. (=Das wird schon.)",
         "zh": "会好的。",
         "py": "达斯 维尔特 肖"
-      },
-      {
-        "de": "Ich habe fertig. (=Ich bin fertig.)",
-        "zh": "我做完了。（奥地利方言）",
-        "py": "伊希 哈贝 费尔迪希"
       },
       {
         "de": "der Tschecherl",
@@ -5766,26 +5746,6 @@ module.exports = [
         "py": "达斯 古拉什"
       },
       {
-        "de": "die Marille (=Aprikose)",
-        "zh": "杏子（奥地利词）",
-        "py": "迪 玛里勒"
-      },
-      {
-        "de": "der Paradeiser (=Tomate)",
-        "zh": "番茄（奥地利词）",
-        "py": "德尔 帕拉代泽尔"
-      },
-      {
-        "de": "das Erdäpfel (=Kartoffel)",
-        "zh": "土豆（奥地利词）",
-        "py": "达斯 尔达普弗尔"
-      },
-      {
-        "de": "die Jause (=Pause/Imbiss)",
-        "zh": "小休/小吃（奥地利）",
-        "py": "迪 哟乌斯"
-      },
-      {
         "de": "der Heurige",
         "zh": "新酒/酒馆",
         "py": "德尔 霍伊里格"
@@ -5809,11 +5769,6 @@ module.exports = [
         "de": "der Christkindlmarkt",
         "zh": "圣诞市场",
         "py": "德尔 克里斯特金德尔马尔克特"
-      },
-      {
-        "de": "Österreich ist schön!",
-        "zh": "奥地利很美！",
-        "py": "欧斯特莱希 伊斯特 舍恩"
       }
     ]
   },
