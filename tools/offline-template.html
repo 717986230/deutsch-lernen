@@ -80,7 +80,17 @@ body{background:var(--bg);color:var(--text);font-family:'Georgia',serif;min-heig
 #spkRateV{color:#46a302;font-weight:600;min-width:32px}
 .card-zh{font-size:14px;color:#777777;margin-bottom:0}
 .card-py{display:none;margin-top:10px;padding-top:10px;border-top:1px solid var(--gold-faint)}
-.card.flipped .card-py{display:flex;align-items:center;gap:8px}
+.card.flipped .card-py{display:block}
+/* 拼读拆解 */
+.ph-row{display:flex;flex-wrap:wrap;align-items:flex-end;gap:3px}
+.ph-chip{display:inline-flex;flex-direction:column;align-items:center;padding:3px 7px;border-radius:8px;background:rgba(88,204,2,.08);border:1px solid var(--gold-faint)}
+.ph-chip b{font-size:15px;color:#46a302;font-style:normal;line-height:1.2}
+.ph-chip i{font-size:11px;color:var(--text-dim);font-style:normal;line-height:1.2;margin-top:2px}
+.ph-chip.vow{background:rgba(28,176,246,.1);border-color:rgba(28,176,246,.25)}
+.ph-chip.vow b{color:#1497d4}
+.ph-chip.lg{padding:6px 11px}.ph-chip.lg b{font-size:19px}.ph-chip.lg i{font-size:12px}
+.ph-try{display:inline-block;margin:2px 4px;padding:2px 10px;border-radius:14px;border:1px solid var(--gold-faint);color:#46a302;cursor:pointer;font-size:12px}
+.ph-try:hover{background:rgba(88,204,2,.1)}
 .py-label{font-size:11px;color:var(--gold-dim);letter-spacing:1px}
 .py-text{font-size:13px;color:var(--gold);background:rgba(88,204,2,.12);padding:2px 12px;border-radius:20px}
 to{opacity:1}}
@@ -336,6 +346,23 @@ to{opacity:1}}
         <b>Z</b> → 发"ts"音 ✦ zu＝楚，Zeit＝采特，不是"兹"<br>
         <b>S</b> → 母音间发"z兹" ✦ See＝泽，sonst＝松斯特<br>
         <b>Q</b> → qu发"kv" ✦ Qualität＝克瓦利泰特，不是"kw"
+      </div>
+    </div>
+
+    <div class="sec-title"><span class="sec-title-icon">🧩</span><span class="sec-title-text">拼读器 · 输入任意德语词，看怎么拼读</span></div>
+    <div class="rule-box">
+      <div style="font-size:13px;color:var(--text-dim);margin-bottom:10px">德语<b style="color:var(--gold)">所见即所读</b>。输入一个德语单词，下面会按字母组合拆开，告诉你每段怎么发音——照着拼，不用背谐音。</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+        <input type="text" id="phInput" placeholder="如 Schule、Wasser、zwanzig…" oninput="renderPhTool()" style="flex:1;min-width:180px;padding:10px 14px;border-radius:24px;border:1px solid var(--gold-dim);background:rgba(88,204,2,.06);color:var(--text);font-size:15px;outline:none;font-family:inherit" lang="de">
+        <button class="speak-btn" type="button" title="朗读" onclick="var v=document.getElementById('phInput').value.trim();if(v)speakDE(v,this)">🔊</button>
+      </div>
+      <div id="phToolOut" style="margin-top:14px"></div>
+      <div style="margin-top:10px;font-size:12px;color:var(--text-faint)">试试：
+        <span class="ph-try" onclick="phTry('Schule')">Schule</span>
+        <span class="ph-try" onclick="phTry('Wasser')">Wasser</span>
+        <span class="ph-try" onclick="phTry('vierzig')">vierzig</span>
+        <span class="ph-try" onclick="phTry('schön')">schön</span>
+        <span class="ph-try" onclick="phTry('Entschuldigung')">Entschuldigung</span>
       </div>
     </div>
 
@@ -934,12 +961,90 @@ function renderSearchResults(results, isFiltered){
   el.appendChild(grid);
 }
 
+// ── 德语"拼读"拆解：把词按字母组合切分并标注读音，帮助脱离谐音自行拼读 ──
+function dePhonics(text){
+  if(!text)return[];
+  const V='aeiouäöü';
+  const isV=c=>c&&(V.indexOf(c)>=0||c==='y');
+  const out=[];
+  text.split(/(\s+)/).forEach(tok=>{
+    if(!tok)return;
+    if(/^\s+$/.test(tok)){out.push({g:' ',sp:1});return;}
+    const lo=tok.toLowerCase(),n=lo.length;let i=0;
+    while(i<n){
+      const r=lo.slice(i),start=(i===0),prev=lo[i-1];
+      let len=1,zh='',note='',vow=false;
+      const is=s=>r.indexOf(s)===0;
+      if(is('tsch')){len=4;zh='期';note='tsch';}
+      else if(is('sch')){len=3;zh='施';note='sch';}
+      else if(is('chs')){len=3;zh='克斯';note='chs=ks';}
+      else if(is('ch')){if(prev==='a'||prev==='o'||prev==='u'){len=2;zh='赫';note='a/o/u后的ch';}else{len=2;zh='希';note='ch';}}
+      else if(is('ck')){len=2;zh='克';note='ck=k';}
+      else if(is('ng')){len=2;zh='嗯';note='ng鼻音';}
+      else if(is('pf')){len=2;zh='普夫';note='pf连读';}
+      else if(is('ph')){len=2;zh='夫';note='ph=f';}
+      else if(is('qu')){len=2;zh='克夫';note='qu=kv';}
+      else if(is('th')){len=2;zh='特';note='th=t';}
+      else if(is('tz')){len=2;zh='茨';note='tz=ts';}
+      else if(is('ss')){len=2;zh='斯';note='ss=s';}
+      else if(is('ei')||is('ai')){len=2;zh='艾';note=r.slice(0,2)+'=ai';vow=true;}
+      else if(is('ie')){len=2;zh='伊';note='ie长i';vow=true;}
+      else if(is('eu')||is('äu')){len=2;zh='欧伊';note=r.slice(0,2)+'=oi';vow=true;}
+      else if(is('au')){len=2;zh='奥';note='au';vow=true;}
+      else if(is('ee')){len=2;zh='诶';note='ee长e';vow=true;}
+      else if(is('aa')){len=2;zh='啊';note='aa长a';vow=true;}
+      else if(is('oo')){len=2;zh='哦';note='oo长o';vow=true;}
+      else if('aeiouäöü'.indexOf(lo[i])>=0&&lo[i+1]==='h'&&(i+2>=n||!isV(lo[i+2]))){
+        const mv={a:'啊',e:'诶',i:'伊',o:'哦',u:'乌','ä':'诶','ö':'厄','ü':'于'}[lo[i]];
+        len=2;zh=mv+'(长)';note='元音+h拉长，h不发音';vow=true;
+      }
+      else if(is('er')&&i+2===n&&n>2){len=2;zh='厄';note='词尾-er弱化';}
+      else if(is('ig')&&i+2===n){len=2;zh='伊希';note='词尾-ig=ich';}
+      else if(start&&is('sp')){len=2;zh='施普';note='词首sp→shp';}
+      else if(start&&is('st')){len=2;zh='施特';note='词首st→sht';}
+      else{
+        const c=lo[i];len=1;
+        switch(c){
+          case'a':zh='啊';vow=true;break;case'e':zh=(((i===n-1&&n>1)||((lo[i+1]==='n'||lo[i+1]==='l')&&i+2===n))?'呃(轻)':'诶');vow=true;break;
+          case'i':zh='伊';vow=true;break;case'o':zh='哦';vow=true;break;case'u':zh='乌';vow=true;break;
+          case'ä':zh='诶';note='ä';vow=true;break;case'ö':zh='厄';note='ö圆唇';vow=true;break;case'ü':zh='于';note='ü圆唇';vow=true;break;
+          case'b':zh=(i===n-1?'普':'布');note=(i===n-1?'词尾b→p':'');break;
+          case'd':zh=(i===n-1?'特':'德');note=(i===n-1?'词尾d→t':'');break;
+          case'g':zh=(i===n-1?'克':'格');note=(i===n-1?'词尾g→k':'');break;
+          case'c':zh=('eiäöy'.indexOf(lo[i+1])>=0?'茨':'克');break;
+          case'f':zh='夫';break;case'h':zh='哈';break;case'j':zh='雅';note='j=y';break;
+          case'k':zh='克';break;case'l':zh='勒';break;case'm':zh='姆';break;case'n':zh='呢';break;case'p':zh='普';break;
+          case'r':zh='尔';note='r小舌音';break;
+          case's':zh=(isV(lo[i+1])?'兹':'斯');note=(isV(lo[i+1])?'s在元音前→浊z':'');break;
+          case't':zh='特';break;case'v':zh='夫';note='v=f（外来词读v）';break;case'w':zh='喂';note='w=英语v';break;
+          case'x':zh='克斯';note='x=ks';break;case'y':zh='于';note='y≈ü';vow=true;break;case'z':zh='茨';note='z=ts';break;case'ß':zh='斯';note='ß=ss';break;
+          default:zh='';
+        }
+      }
+      out.push({g:tok.substr(i,len),zh:zh,note:note,vow:vow});
+      i+=len;
+    }
+  });
+  return out;
+}
+function phonicsHtml(de,lg){
+  const cls=lg?' lg':'';
+  return dePhonics(de).map(s=>s.sp?'<span style="width:7px;display:inline-block"></span>':
+    `<span class="ph-chip${cls}${s.vow?' vow':''}" title="${s.note||''}"><b lang="de">${s.g}</b><i>${s.zh}</i></span>`).join('');
+}
+function renderPhTool(){
+  const v=(document.getElementById('phInput').value||'').trim();
+  const out=document.getElementById('phToolOut');if(!out)return;
+  if(!v){out.innerHTML='';return;}
+  out.innerHTML=`<div class="ph-row">${phonicsHtml(v,true)}</div><div style="font-size:12px;color:var(--text-faint);margin-top:8px">蓝色=元音(响)，绿色=辅音。把每段连起来念，就是这个词的读音。点上方 🔊 听真人发音对照。</div>`;
+}
+function phTry(w){const el=document.getElementById('phInput');if(el){el.value=w;renderPhTool();speakDE(w);}}
 function makeCard(p,id){
   const d=document.createElement('div');
   d.className='card'+(flippedCards[id]?' flipped':'');
   d.id='card-'+id;
   const starred=typeof srsHas==='function'&&srsHas(p.de);
-  d.innerHTML=`<div class="card-de-row"><button class="speak-btn" type="button" title="朗读" aria-label="朗读 ${p.de}">🔊</button><div class="card-de" lang="de">${p.de}</div><button class="star-btn${starred?' on':''}" type="button" title="${starred?'已收藏（点击移除）':'收藏到生词本'}" aria-label="收藏到生词本" style="margin-left:auto">${starred?'★':'☆'}</button></div><div class="card-zh">${p.zh}</div><div class="card-py"><span class="py-label">谐音</span><span class="py-text">${p.py}</span></div>`;
+  d.innerHTML=`<div class="card-de-row"><button class="speak-btn" type="button" title="朗读" aria-label="朗读 ${p.de}">🔊</button><div class="card-de" lang="de">${p.de}</div><button class="star-btn${starred?' on':''}" type="button" title="${starred?'已收藏（点击移除）':'收藏到生词本'}" aria-label="收藏到生词本" style="margin-left:auto">${starred?'★':'☆'}</button></div><div class="card-zh">${p.zh}</div><div class="card-py"><div class="py-label" style="margin-bottom:5px">拼读（按字母组合自己读出来）</div><div class="ph-row">${phonicsHtml(p.de)}</div><div style="margin-top:8px"><span class="py-label">谐音参考</span> <span class="py-text">${p.py}</span></div></div>`;
   const sb=d.querySelector('.speak-btn');
   sb.addEventListener('click',(e)=>{e.stopPropagation();speakDE(p.de,sb);});
   const star=d.querySelector('.star-btn');
@@ -1233,7 +1338,8 @@ function srsShowCard(){
     area.innerHTML=`<div class="quiz-box">${head}
       <div style="font-size:22px;color:var(--text);font-weight:600;margin:14px 0 2px">${c.zh}</div>
       <div style="font-size:22px;color:#46a302;font-style:italic;margin:6px 0" lang="de">${c.de} <button class="speak-btn" type="button" title="朗读" onclick="speakDE('${say}',this)">🔊</button></div>
-      <div style="font-size:13px;color:var(--text-dim);margin-bottom:16px">谐音：${c.py||''}</div>
+      <div class="ph-row" style="justify-content:center;margin:8px 0">${phonicsHtml(c.de)}</div>
+      <div style="font-size:12px;color:var(--text-dim);margin-bottom:16px">谐音参考：${c.py||''}</div>
       <div style="display:flex;gap:8px">
         <button class="srs-rate-btn forgot" onclick="srsRate(0)">忘了</button>
         <button class="srs-rate-btn fuzzy" onclick="srsRate(1)">模糊</button>
