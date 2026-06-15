@@ -3689,6 +3689,51 @@ module.exports = [
         "de": "das Inserat",
         "zh": "广告/启事",
         "py": "达斯 因泽拉特"
+      },
+      {
+        "de": "der Bedarf",
+        "zh": "需求",
+        "py": "德尔 贝达夫"
+      },
+      {
+        "de": "die Bedingung",
+        "zh": "条件",
+        "py": "迪 贝丁翁"
+      },
+      {
+        "de": "der Beginn",
+        "zh": "开始",
+        "py": "德尔 贝吉因"
+      },
+      {
+        "de": "der Bereich",
+        "zh": "领域/范围",
+        "py": "德尔 贝莱希"
+      },
+      {
+        "de": "die Bestätigung",
+        "zh": "确认",
+        "py": "迪 贝施泰提翁"
+      },
+      {
+        "de": "die Bewegung",
+        "zh": "运动/动作",
+        "py": "迪 贝韦贡"
+      },
+      {
+        "de": "der Beweis",
+        "zh": "证据",
+        "py": "德尔 贝瓦伊斯"
+      },
+      {
+        "de": "die Beziehung",
+        "zh": "关系",
+        "py": "迪 贝齐翁"
+      },
+      {
+        "de": "der Blick",
+        "zh": "目光/一瞥",
+        "py": "德尔 布利克"
       }
     ]
   },
@@ -3971,6 +4016,36 @@ module.exports = [
         "de": "das Heim",
         "zh": "家/福利院",
         "py": "达斯 海姆"
+      },
+      {
+        "de": "der Bauer",
+        "zh": "农民",
+        "py": "德尔 鲍尔"
+      },
+      {
+        "de": "die Beratung",
+        "zh": "咨询/建议",
+        "py": "迪 贝拉图翁"
+      },
+      {
+        "de": "die Beschäftigung",
+        "zh": "工作/从事",
+        "py": "迪 贝谢夫提翁"
+      },
+      {
+        "de": "der Betrag",
+        "zh": "金额",
+        "py": "德尔 贝特拉克"
+      },
+      {
+        "de": "der Betrieb",
+        "zh": "企业/运营",
+        "py": "德尔 贝特里普"
+      },
+      {
+        "de": "die Bevölkerung",
+        "zh": "人口",
+        "py": "迪 贝弗尔克翁"
       }
     ]
   },
@@ -4283,6 +4358,26 @@ module.exports = [
         "de": "der Hörer",
         "zh": "听筒/听众",
         "py": "德尔 赫勒"
+      },
+      {
+        "de": "der Bau",
+        "zh": "建筑/工地",
+        "py": "德尔 鲍"
+      },
+      {
+        "de": "der Beleg",
+        "zh": "凭证/收据",
+        "py": "德尔 贝雷克"
+      },
+      {
+        "de": "das Benzin",
+        "zh": "汽油",
+        "py": "达斯 本钦"
+      },
+      {
+        "de": "das Boot",
+        "zh": "小船",
+        "py": "达斯 波特"
       }
     ]
   },
@@ -4394,6 +4489,11 @@ module.exports = [
         "de": "der Hügel",
         "zh": "小山丘",
         "py": "德尔 徽格尔"
+      },
+      {
+        "de": "der Blitz",
+        "zh": "闪电",
+        "py": "德尔 布利茨"
       }
     ]
   },
