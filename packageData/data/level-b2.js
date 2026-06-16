@@ -849,7 +849,7 @@ module.exports = [
   {
     "name": "动词·进阶",
     "level": "b2",
-    "icon": "📘",
+    "icon": "🏃",
     "phrases": [
       {
         "de": "gelten",
@@ -916,7 +916,7 @@ module.exports = [
   {
     "name": "抽象·进阶",
     "level": "b2",
-    "icon": "📘",
+    "icon": "💭",
     "phrases": [
       {
         "de": "die Voraussetzung",
@@ -968,7 +968,7 @@ module.exports = [
   {
     "name": "描述·进阶",
     "level": "b2",
-    "icon": "📘",
+    "icon": "🎨",
     "phrases": [
       {
         "de": "wesentlich",
@@ -1010,7 +1010,7 @@ module.exports = [
   {
     "name": "职场·经济",
     "level": "b2",
-    "icon": "📘",
+    "icon": "💼",
     "phrases": [
       {
         "de": "der Arbeitgeber",
@@ -1052,7 +1052,7 @@ module.exports = [
   {
     "name": "科技·环境",
     "level": "b2",
-    "icon": "📘",
+    "icon": "🌍",
     "phrases": [
       {
         "de": "die Nachhaltigkeit",
@@ -1074,7 +1074,7 @@ module.exports = [
   {
     "name": "社会·政治",
     "level": "b2",
-    "icon": "📘",
+    "icon": "📰",
     "phrases": [
       {
         "de": "die Öffentlichkeit",

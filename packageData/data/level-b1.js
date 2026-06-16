@@ -4467,7 +4467,7 @@ module.exports = [
   {
     "name": "动词·进阶",
     "level": "b1",
-    "icon": "📘",
+    "icon": "🏃",
     "phrases": [
       {
         "de": "führen",
@@ -4499,7 +4499,7 @@ module.exports = [
   {
     "name": "职场·经济",
     "level": "b1",
-    "icon": "📘",
+    "icon": "💼",
     "phrases": [
       {
         "de": "die Werbung",
@@ -4511,7 +4511,7 @@ module.exports = [
   {
     "name": "科技·环境",
     "level": "b1",
-    "icon": "📘",
+    "icon": "🌍",
     "phrases": [
       {
         "de": "die Umwelt",
@@ -4533,7 +4533,7 @@ module.exports = [
   {
     "name": "社会·政治",
     "level": "b1",
-    "icon": "📘",
+    "icon": "📰",
     "phrases": [
       {
         "de": "die Politik",
