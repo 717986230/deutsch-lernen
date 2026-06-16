@@ -4541,5 +4541,63 @@ module.exports = [
         "py": "迪 波利提克"
       }
     ]
+  },
+  {
+    "name": "教育·学术",
+    "level": "b1",
+    "icon": "🎓",
+    "phrases": [
+      {
+        "de": "die Bildung",
+        "zh": "教育/培养",
+        "py": "迪 比尔德翁"
+      }
+    ]
+  },
+  {
+    "name": "心理·情感",
+    "level": "b1",
+    "icon": "🧠",
+    "phrases": [
+      {
+        "de": "die Sorge",
+        "zh": "担忧/操心",
+        "py": "迪 佐尔格"
+      }
+    ]
+  },
+  {
+    "name": "媒体·沟通",
+    "level": "b1",
+    "icon": "🗣️",
+    "phrases": [
+      {
+        "de": "die Rede",
+        "zh": "演讲/讲话",
+        "py": "迪 雷德"
+      }
+    ]
+  },
+  {
+    "name": "健康进阶",
+    "level": "b1",
+    "icon": "🏥",
+    "phrases": [
+      {
+        "de": "die Behandlung",
+        "zh": "治疗",
+        "py": "迪 贝汉德翁"
+      },
+      {
+        "de": "die Untersuchung",
+        "zh": "检查",
+        "py": "迪 温特尔组赫翁"
+      },
+      {
+        "de": "der Patient",
+        "zh": "病人",
+        "py": "德尔 帕齐恩特"
+      }
+    ]
   }
 ];

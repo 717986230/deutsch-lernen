@@ -1097,5 +1097,100 @@ module.exports = [
         "py": "迪 民德海特"
       }
     ]
+  },
+  {
+    "name": "教育·学术",
+    "level": "b2",
+    "icon": "🎓",
+    "phrases": [
+      {
+        "de": "das Wissen",
+        "zh": "知识",
+        "py": "达斯 维森"
+      },
+      {
+        "de": "die Kenntnis",
+        "zh": "知识/了解",
+        "py": "迪 肯特尼斯"
+      }
+    ]
+  },
+  {
+    "name": "法律·权利",
+    "level": "b2",
+    "icon": "⚖️",
+    "phrases": [
+      {
+        "de": "das Verbot",
+        "zh": "禁令",
+        "py": "达斯 费尔波特"
+      }
+    ]
+  },
+  {
+    "name": "心理·情感",
+    "level": "b2",
+    "icon": "🧠",
+    "phrases": [
+      {
+        "de": "die Stimmung",
+        "zh": "情绪/气氛",
+        "py": "迪 施提姆翁"
+      },
+      {
+        "de": "die Erwartung",
+        "zh": "期待/期望",
+        "py": "迪 埃尔瓦尔图翁"
+      },
+      {
+        "de": "das Bewusstsein",
+        "zh": "意识",
+        "py": "达斯 贝武斯特扎因"
+      }
+    ]
+  },
+  {
+    "name": "媒体·沟通",
+    "level": "b2",
+    "icon": "🗣️",
+    "phrases": [
+      {
+        "de": "die Mitteilung",
+        "zh": "通知/通告",
+        "py": "迪 米特泰翁"
+      },
+      {
+        "de": "das Argument",
+        "zh": "论点/论据",
+        "py": "达斯 阿尔古门特"
+      },
+      {
+        "de": "die Stellungnahme",
+        "zh": "表态/意见",
+        "py": "迪 施泰隆纳默"
+      }
+    ]
+  },
+  {
+    "name": "健康进阶",
+    "level": "b2",
+    "icon": "🏥",
+    "phrases": [
+      {
+        "de": "die Heilung",
+        "zh": "治愈",
+        "py": "迪 海尔翁"
+      },
+      {
+        "de": "die Verletzung",
+        "zh": "受伤/伤口",
+        "py": "迪 费尔莱聪"
+      },
+      {
+        "de": "das Symptom",
+        "zh": "症状",
+        "py": "达斯 西姆普托姆"
+      }
+    ]
   }
 ];
