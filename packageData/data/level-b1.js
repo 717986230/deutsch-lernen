@@ -4495,5 +4495,51 @@ module.exports = [
         "py": "瓦克森"
       }
     ]
+  },
+  {
+    "name": "职场·经济",
+    "level": "b1",
+    "icon": "📘",
+    "phrases": [
+      {
+        "de": "die Werbung",
+        "zh": "广告",
+        "py": "迪 韦尔布翁"
+      }
+    ]
+  },
+  {
+    "name": "科技·环境",
+    "level": "b1",
+    "icon": "📘",
+    "phrases": [
+      {
+        "de": "die Umwelt",
+        "zh": "环境",
+        "py": "迪 乌姆韦尔特"
+      },
+      {
+        "de": "der Müll",
+        "zh": "垃圾",
+        "py": "德尔 米尔"
+      },
+      {
+        "de": "das Netzwerk",
+        "zh": "网络",
+        "py": "达斯 内茨韦尔克"
+      }
+    ]
+  },
+  {
+    "name": "社会·政治",
+    "level": "b1",
+    "icon": "📘",
+    "phrases": [
+      {
+        "de": "die Politik",
+        "zh": "政治",
+        "py": "迪 波利提克"
+      }
+    ]
   }
 ];

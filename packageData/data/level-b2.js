@@ -1006,5 +1006,96 @@ module.exports = [
         "py": "格弗恩利希"
       }
     ]
+  },
+  {
+    "name": "职场·经济",
+    "level": "b2",
+    "icon": "📘",
+    "phrases": [
+      {
+        "de": "der Arbeitgeber",
+        "zh": "雇主",
+        "py": "德尔 阿尔拜特格贝"
+      },
+      {
+        "de": "der Arbeitnehmer",
+        "zh": "雇员",
+        "py": "德尔 阿尔拜特内默"
+      },
+      {
+        "de": "die Karriere",
+        "zh": "职业生涯",
+        "py": "迪 卡里耶勒"
+      },
+      {
+        "de": "die Konkurrenz",
+        "zh": "竞争/对手",
+        "py": "迪 孔库伦茨"
+      },
+      {
+        "de": "das Unternehmen",
+        "zh": "企业/公司",
+        "py": "达斯 温特尔内门"
+      },
+      {
+        "de": "die Branche",
+        "zh": "行业",
+        "py": "迪 布朗舍"
+      },
+      {
+        "de": "der Umsatz",
+        "zh": "营业额",
+        "py": "德尔 乌姆扎茨"
+      }
+    ]
+  },
+  {
+    "name": "科技·环境",
+    "level": "b2",
+    "icon": "📘",
+    "phrases": [
+      {
+        "de": "die Nachhaltigkeit",
+        "zh": "可持续性",
+        "py": "迪 纳赫哈尔提希凯特"
+      },
+      {
+        "de": "die Verschmutzung",
+        "zh": "污染",
+        "py": "迪 费尔施穆聪"
+      },
+      {
+        "de": "die Anwendung",
+        "zh": "应用/用途",
+        "py": "迪 安文德翁"
+      }
+    ]
+  },
+  {
+    "name": "社会·政治",
+    "level": "b2",
+    "icon": "📘",
+    "phrases": [
+      {
+        "de": "die Öffentlichkeit",
+        "zh": "公众",
+        "py": "迪 厄芬特利希凯特"
+      },
+      {
+        "de": "die Gerechtigkeit",
+        "zh": "公正/正义",
+        "py": "迪 格雷希提希凯特"
+      },
+      {
+        "de": "die Mehrheit",
+        "zh": "多数",
+        "py": "迪 梅尔海特"
+      },
+      {
+        "de": "die Minderheit",
+        "zh": "少数",
+        "py": "迪 民德海特"
+      }
+    ]
   }
 ];
