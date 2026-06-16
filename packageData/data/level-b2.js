@@ -690,7 +690,7 @@ module.exports = [
     ]
   },
   {
-    "name": "医疗进阶",
+    "name": "医疗·健康",
     "level": "b2",
     "icon": "🏥",
     "phrases": [
@@ -843,6 +843,21 @@ module.exports = [
         "de": "der Notfallarzt",
         "zh": "急诊医生",
         "py": "德尔 诺特法尔阿尔茨特"
+      },
+      {
+        "de": "die Heilung",
+        "zh": "治愈",
+        "py": "迪 海尔翁"
+      },
+      {
+        "de": "die Verletzung",
+        "zh": "受伤/伤口",
+        "py": "迪 费尔莱聪"
+      },
+      {
+        "de": "das Symptom",
+        "zh": "症状",
+        "py": "达斯 西姆普托姆"
       }
     ]
   },
@@ -1172,24 +1187,63 @@ module.exports = [
     ]
   },
   {
-    "name": "健康进阶",
+    "name": "艺术·文化",
     "level": "b2",
-    "icon": "🏥",
+    "icon": "🎨",
     "phrases": [
       {
-        "de": "die Heilung",
-        "zh": "治愈",
-        "py": "迪 海尔翁"
+        "de": "die Vorstellung",
+        "zh": "演出/想象",
+        "py": "迪 福尔施泰翁"
       },
       {
-        "de": "die Verletzung",
-        "zh": "受伤/伤口",
-        "py": "迪 费尔莱聪"
+        "de": "das Werk",
+        "zh": "作品/著作",
+        "py": "达斯 韦尔克"
       },
       {
-        "de": "das Symptom",
-        "zh": "症状",
-        "py": "达斯 西姆普托姆"
+        "de": "das Publikum",
+        "zh": "观众/公众",
+        "py": "达斯 普布利库姆"
+      }
+    ]
+  },
+  {
+    "name": "旅行·地理",
+    "level": "b2",
+    "icon": "🧳",
+    "phrases": [
+      {
+        "de": "die Küste",
+        "zh": "海岸",
+        "py": "迪 屈斯特"
+      },
+      {
+        "de": "der Aufenthalt",
+        "zh": "逗留/停留",
+        "py": "德尔 奥夫恩哈尔特"
+      }
+    ]
+  },
+  {
+    "name": "饮食进阶",
+    "level": "b2",
+    "icon": "🍽️",
+    "phrases": [
+      {
+        "de": "die Mahlzeit",
+        "zh": "餐/进餐",
+        "py": "迪 马尔采特"
+      },
+      {
+        "de": "die Ernte",
+        "zh": "收成/收获",
+        "py": "迪 埃恩特"
+      },
+      {
+        "de": "die Verpflegung",
+        "zh": "伙食/膳食",
+        "py": "迪 费尔普弗莱贡"
       }
     ]
   }

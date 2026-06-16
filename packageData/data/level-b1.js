@@ -418,6 +418,41 @@ module.exports = [
         "de": "die Sauce / die Soße",
         "zh": "酱汁",
         "py": "迪 扎乌斯 / 地 佐斯"
+      },
+      {
+        "de": "die Brust",
+        "zh": "胸部",
+        "py": "迪 布鲁斯特"
+      },
+      {
+        "de": "die Diät",
+        "zh": "节食/饮食疗法",
+        "py": "迪 迪埃特"
+      },
+      {
+        "de": "die Ernährung",
+        "zh": "营养/饮食",
+        "py": "迪 埃尔奈容"
+      },
+      {
+        "de": "die Gesundheit",
+        "zh": "健康",
+        "py": "迪 格宗特海特"
+      },
+      {
+        "de": "die Behandlung",
+        "zh": "治疗",
+        "py": "迪 贝汉德翁"
+      },
+      {
+        "de": "die Untersuchung",
+        "zh": "检查",
+        "py": "迪 温特尔组赫翁"
+      },
+      {
+        "de": "der Patient",
+        "zh": "病人",
+        "py": "德尔 帕齐恩特"
       }
     ]
   },
@@ -4322,33 +4357,6 @@ module.exports = [
     ]
   },
   {
-    "name": "身体·健康",
-    "level": "b1",
-    "icon": "📘",
-    "phrases": [
-      {
-        "de": "die Brust",
-        "zh": "胸部",
-        "py": "迪 布鲁斯特"
-      },
-      {
-        "de": "die Diät",
-        "zh": "节食/饮食疗法",
-        "py": "迪 迪埃特"
-      },
-      {
-        "de": "die Ernährung",
-        "zh": "营养/饮食",
-        "py": "迪 埃尔奈容"
-      },
-      {
-        "de": "die Gesundheit",
-        "zh": "健康",
-        "py": "迪 格宗特海特"
-      }
-    ]
-  },
-  {
     "name": "饮食·美食",
     "level": "b1",
     "icon": "📘",
@@ -4579,24 +4587,14 @@ module.exports = [
     ]
   },
   {
-    "name": "健康进阶",
+    "name": "饮食进阶",
     "level": "b1",
-    "icon": "🏥",
+    "icon": "🍽️",
     "phrases": [
       {
-        "de": "die Behandlung",
-        "zh": "治疗",
-        "py": "迪 贝汉德翁"
-      },
-      {
-        "de": "die Untersuchung",
-        "zh": "检查",
-        "py": "迪 温特尔组赫翁"
-      },
-      {
-        "de": "der Patient",
-        "zh": "病人",
-        "py": "德尔 帕齐恩特"
+        "de": "die Zutat",
+        "zh": "配料/原料",
+        "py": "迪 楚塔特"
       }
     ]
   }
