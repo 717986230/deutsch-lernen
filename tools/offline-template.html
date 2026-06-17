@@ -195,6 +195,12 @@ to{opacity:1}}
 .result-box.good{background:rgba(88,204,2,.1);border:1px solid rgba(88,204,2,.3)}
 .result-box.ok{background:rgba(88,204,2,.1);border:1px solid var(--gold-faint)}
 .result-box.bad{background:rgba(255,75,75,.1);border:1px solid rgba(255,75,75,.3)}
+/* 语言切换 */
+.lang-switch{position:fixed;top:9px;right:12px;z-index:260;display:flex;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid var(--gold-faint);border-radius:16px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.lang-btn{border:none;background:transparent;color:var(--text-dim);font-size:12px;padding:5px 11px;cursor:pointer;font-family:inherit;white-space:nowrap;transition:all .15s}
+.lang-btn.active{background:#58cc02;color:#fff}
+#nav{padding-right:150px}
+body.lang-en .nav-de-only{display:none}
 /* SRS 生词本 */
 .srs-badge{display:inline-block;min-width:16px;padding:0 5px;margin-left:4px;border-radius:9px;background:#ff4b4b;color:#fff;font-size:10px;line-height:16px;text-align:center;vertical-align:middle}
 .star-btn{flex-shrink:0;width:28px;height:28px;border:none;border-radius:50%;background:transparent;color:var(--text-faint);font-size:15px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;line-height:1;padding:0;transition:all .15s}
@@ -212,14 +218,20 @@ to{opacity:1}}
 </head>
 <body>
 
+<!-- 语言切换：德 / 英 -->
+<div class="lang-switch">
+  <button class="lang-btn active" data-lang="de" onclick="setLang('de')">🇩🇪 德语</button>
+  <button class="lang-btn" data-lang="en" onclick="setLang('en')">🇬🇧 英语</button>
+</div>
+
 <!-- NAV -->
 <nav id="nav">
   <button class="nav-btn active" onclick="showSection('home')">🏠 首页</button>
-  <button class="nav-btn" onclick="showSection('pronunciation')">🔤 发音规律</button>
-  <button class="nav-btn" onclick="showSection('numbers')">🔢 数字规律</button>
-  <button class="nav-btn" onclick="showSection('grammar')">📐 语法速记</button>
+  <button class="nav-btn nav-de-only" onclick="showSection('pronunciation')">🔤 发音规律</button>
+  <button class="nav-btn nav-de-only" onclick="showSection('numbers')">🔢 数字规律</button>
+  <button class="nav-btn nav-de-only" onclick="showSection('grammar')">📐 语法速记</button>
   <button class="nav-btn" onclick="showSection('phrases')">💬 词句大全</button>
-  <button class="nav-btn" onclick="showSection('reading')">📖 阅读短文</button>
+  <button class="nav-btn nav-de-only" onclick="showSection('reading')">📖 阅读短文</button>
   <button class="nav-btn" onclick="showSection('quiz')">🎯 练习测验</button>
   <button class="nav-btn" onclick="showSection('srs')">📌 生词本<span id="srsNavBadge" class="srs-badge" style="display:none"></span></button>
 </nav>
@@ -227,9 +239,9 @@ to{opacity:1}}
 <!-- ══════════════ HOME ══════════════ -->
 <div id="home" class="section active">
   <div class="hero">
-    <div class="hero-label">Deutsche Sprache · 德语学习</div>
-    <h1>德语学习手册</h1>
-    <p>发音 · 数字 · 语法 · {{PHRASE_COUNT}} 词句 · 5阶段进阶 · 互动测验</p>
+    <div class="hero-label" id="heroLabel">Deutsche Sprache · 德语学习</div>
+    <h1 id="heroTitle">德语学习手册</h1>
+    <p id="heroSub">发音 · 数字 · 语法 · {{PHRASE_COUNT}} 词句 · 5阶段进阶 · 互动测验</p>
   </div>
   <div class="container">
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:24px">
@@ -722,6 +734,75 @@ const LETTERS = [
 
 /*__CATEGORIES__*/
 
+// ══════════════ 双语框架：德语 / 英语 整站切换 ══════════════
+// categories 是 const 数组，切换时原地替换内容，所有引用它的功能自动跟随。
+const DE_CATEGORIES = categories.slice();
+// 英语版起步词库（中文谐音学英语）。框架先行，词量随后逐步补。
+// 注：英语词放在 de 字段，复用全部现有逻辑（卡片/朗读/测验/生词本）。英语不可规则拼读，故英语模式隐藏「拼读」只显谐音。
+const EN_CATEGORIES = [
+  {name:'问候·寒暄',level:'0',icon:'👋',phrases:[
+    {de:'Hello!',zh:'你好！',py:'哈喽'},
+    {de:'Hi!',zh:'嗨！',py:'嗨'},
+    {de:'Good morning!',zh:'早上好！',py:'古德 莫宁'},
+    {de:'Good evening!',zh:'晚上好！',py:'古德 伊夫宁'},
+    {de:'How are you?',zh:'你好吗？',py:'好 阿 优'},
+    {de:"I'm fine, thank you.",zh:'我很好，谢谢。',py:'阿姆 fai恩 三克 优'},
+    {de:'Goodbye!',zh:'再见！',py:'古德拜'},
+    {de:'See you later!',zh:'回头见！',py:'西 优 雷特'},
+    {de:'Thank you!',zh:'谢谢！',py:'三克 优'},
+    {de:"You're welcome.",zh:'不客气。',py:'优阿 威尔康'},
+    {de:'Please.',zh:'请。',py:'普利兹'},
+    {de:'Sorry!',zh:'对不起！',py:'索瑞'},
+  ]},
+  {name:'日常·实用',level:'a1',icon:'💬',phrases:[
+    {de:'Yes.',zh:'是的。',py:'耶斯'},
+    {de:'No.',zh:'不。',py:'弄'},
+    {de:'My name is ...',zh:'我叫……',py:'买 内姆 伊兹'},
+    {de:'Nice to meet you.',zh:'很高兴见到你。',py:'奈斯 图 米特 优'},
+    {de:'I don\'t understand.',zh:'我不明白。',py:'阿 哄特 安德斯坦德'},
+    {de:'Can you help me?',zh:'你能帮我吗？',py:'坎 优 害普 米'},
+    {de:'How much is it?',zh:'这多少钱？',py:'好 马奇 伊兹 伊特'},
+    {de:'Where is the toilet?',zh:'厕所在哪？',py:'威尔 伊兹 泽 托伊雷特'},
+    {de:'I love you.',zh:'我爱你。',py:'阿 拉夫 优'},
+    {de:'Excuse me.',zh:'打扰一下。',py:'伊克斯Q斯 米'},
+  ]},
+];
+let LANG='de';
+try{const s=localStorage.getItem('siteLang');if(s==='en'||s==='de')LANG=s;}catch(e){}
+function applyLangData(){
+  const src=(LANG==='en')?EN_CATEGORIES:DE_CATEGORIES;
+  categories.length=0; src.forEach(c=>categories.push(c));
+}
+function setLang(lang){
+  if(lang!==LANG){
+    LANG=lang;
+    try{localStorage.setItem('siteLang',lang);}catch(e){}
+  }
+  applyLangData();
+  if(typeof stopAutoPlay==='function')stopAutoPlay();
+  if(typeof stopReading==='function')stopReading();
+  // 切换语言相关 UI
+  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.dataset.lang===LANG));
+  document.body.classList.toggle('lang-en',LANG==='en');
+  updateHeroLang();
+  // 词句版块默认回到「全部」级别，避免英语词少时空白
+  activeLevel = (LANG==='en')?'all':activeLevel;
+  activeCat='all';
+  if(typeof initPhrases==='function'){buildCatTabs();renderPhrases();}
+  const li=document.getElementById('levelInfo'); if(li&&LANG==='en')li.style.display='none';
+  // 英语模式下若停留在德语专属版块，跳到「词句大全」
+  const cur=[...document.querySelectorAll('.section')].find(s=>s.classList.contains('active'));
+  if(LANG==='en'&&cur&&['pronunciation','numbers','grammar','reading'].includes(cur.id))showSection('phrases');
+}
+function updateHeroLang(){
+  const lab=document.getElementById('heroLabel'),tit=document.getElementById('heroTitle'),sub=document.getElementById('heroSub');
+  if(!lab)return;
+  if(LANG==='en'){lab.textContent='English · 英语学习';tit.textContent='英语学习手册';sub.textContent='中文谐音学英语 · 词句 · 朗读 · 测验 · 生词本';}
+  else{lab.textContent='Deutsche Sprache · 德语学习';tit.textContent='德语学习手册';sub.textContent='发音 · 数字 · 语法 · 词句 · 5阶段进阶 · 互动测验';}
+}
+// 启动时若存为英语，载入英语数据
+if(LANG==='en')applyLangData();
+
 function showSection(id){
   if(typeof stopAutoPlay==='function')stopAutoPlay();
   if(typeof stopReading==='function')stopReading();
@@ -1045,7 +1126,11 @@ function makeCard(p,id){
   d.className='card'+(flippedCards[id]?' flipped':'');
   d.id='card-'+id;
   const starred=typeof srsHas==='function'&&srsHas(p.de);
-  d.innerHTML=`<div class="card-de-row"><button class="speak-btn" type="button" title="朗读" aria-label="朗读 ${p.de}">🔊</button><div class="card-de" lang="de">${p.de}</div><button class="star-btn${starred?' on':''}" type="button" title="${starred?'已收藏（点击移除）':'收藏到生词本'}" aria-label="收藏到生词本" style="margin-left:auto">${starred?'★':'☆'}</button></div><div class="card-zh">${p.zh}</div><div class="card-py"><div class="py-label" style="margin-bottom:5px">拼读（按字母组合自己读出来）</div><div class="ph-row">${phonicsHtml(p.de)}</div><div style="margin-top:8px"><span class="py-label">谐音参考</span> <span class="py-text">${p.py}</span></div></div>`;
+  const lng=(typeof LANG!=='undefined'&&LANG==='en')?'en':'de';
+  const phon=(lng==='de')
+    ? `<div class="py-label" style="margin-bottom:5px">拼读（按字母组合自己读出来）</div><div class="ph-row">${phonicsHtml(p.de)}</div><div style="margin-top:8px"><span class="py-label">谐音参考</span> <span class="py-text">${p.py}</span></div>`
+    : `<span class="py-label">谐音</span> <span class="py-text">${p.py}</span>`;
+  d.innerHTML=`<div class="card-de-row"><button class="speak-btn" type="button" title="朗读" aria-label="朗读 ${p.de}">🔊</button><div class="card-de" lang="${lng}">${p.de}</div><button class="star-btn${starred?' on':''}" type="button" title="${starred?'已收藏（点击移除）':'收藏到生词本'}" aria-label="收藏到生词本" style="margin-left:auto">${starred?'★':'☆'}</button></div><div class="card-zh">${p.zh}</div><div class="card-py">${phon}</div>`;
   const sb=d.querySelector('.speak-btn');
   sb.addEventListener('click',(e)=>{e.stopPropagation();speakDE(p.de,sb);});
   const star=d.querySelector('.star-btn');
@@ -1070,7 +1155,7 @@ function spkInitPanel(){
   const s=document.getElementById('spkShuffle');if(s)s.checked=_spk.shuffle;
 }
 document.addEventListener('DOMContentLoaded',spkInitPanel);
-let _deVoice=null,_zhVoice=null;
+let _deVoice=null,_zhVoice=null,_enVoice=null;
 function pickGermanVoice(){
   if(!('speechSynthesis' in window))return;
   const vs=speechSynthesis.getVoices();
@@ -1080,6 +1165,12 @@ function pickGermanVoice(){
            || vs.find(v=>v.lang==='de-DE')
            || vs.find(v=>(v.lang||'').toLowerCase().startsWith('de'))
            || null;
+  // 英语语音（英语版朗读用）
+  const epref=['Samantha','Daniel','Karen','Moira','Google US English','Google UK English','Microsoft Aria','Microsoft Guy','Microsoft Zira'];
+  _enVoice = vs.find(v=>v.lang==='en-US'&&epref.some(p=>v.name.includes(p)))
+           || vs.find(v=>(v.lang||'').toLowerCase().startsWith('en-us'))
+           || vs.find(v=>(v.lang||'').toLowerCase().startsWith('en'))
+           || null;
   // 中文语音（读释义用）
   const zpref=['Tingting','婷婷','Google 普通话','Microsoft Xiaoxiao','Microsoft Huihui','Mei-Jia'];
   _zhVoice = vs.find(v=>(v.lang||'').replace('_','-').toLowerCase().startsWith('zh')&&zpref.some(p=>v.name.includes(p)))
@@ -1087,12 +1178,15 @@ function pickGermanVoice(){
            || null;
 }
 if('speechSynthesis' in window){ pickGermanVoice(); speechSynthesis.onvoiceschanged=pickGermanVoice; }
+// 目标语言（'de'德语 / 'en'英语），整站切换用
+function tgtLang(){return LANG==='en'?'en-US':'de-DE';}
+function tgtVoice(){return LANG==='en'?_enVoice:_deVoice;}
 function speakDE(text,btn){
   if(!('speechSynthesis' in window)){alert('当前浏览器不支持朗读，请用 Chrome/Edge/Safari');return;}
   speechSynthesis.cancel();
   const u=new SpeechSynthesisUtterance(text);
-  u.lang='de-DE';                 // 关键：用德语发音规则朗读
-  if(_deVoice)u.voice=_deVoice;   // 用系统德语真人语音
+  u.lang=tgtLang();               // 按当前语言朗读（德/英）
+  if(tgtVoice())u.voice=tgtVoice();
   u.rate=_spk.rate;               // 语速由控制面板设定
   u.pitch=1;
   if(btn){
@@ -1151,7 +1245,7 @@ function autoNext(){
   };
   const speakOnce=()=>{
     const u=new SpeechSynthesisUtterance(text);
-    u.lang='de-DE'; if(_deVoice)u.voice=_deVoice;
+    u.lang=tgtLang(); if(tgtVoice())u.voice=tgtVoice();
     u.rate=_spk.rate;               // 语速由面板设定
     u.onend=()=>{
       if(!_auto.on)return;
@@ -1463,6 +1557,7 @@ function stopReading(){
 initPhrases();
 buildReadTabs();renderReadings();
 srsUpdateBadge();
+setLang(LANG); // 应用初始语言（含 localStorage 记忆）
 </script>
 <button id="toTop" type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="回到顶部" aria-label="回到顶部">↑</button>
 <style>
