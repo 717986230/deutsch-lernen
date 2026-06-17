@@ -201,6 +201,7 @@ to{opacity:1}}
 .lang-btn.active{background:#58cc02;color:#fff}
 #nav{padding-right:150px}
 body.lang-en .nav-de-only{display:none}
+body:not(.lang-en) .nav-en-only{display:none}
 /* SRS 生词本 */
 .srs-badge{display:inline-block;min-width:16px;padding:0 5px;margin-left:4px;border-radius:9px;background:#ff4b4b;color:#fff;font-size:10px;line-height:16px;text-align:center;vertical-align:middle}
 .star-btn{flex-shrink:0;width:28px;height:28px;border:none;border-radius:50%;background:transparent;color:var(--text-faint);font-size:15px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;line-height:1;padding:0;transition:all .15s}
@@ -230,6 +231,9 @@ body.lang-en .nav-de-only{display:none}
   <button class="nav-btn nav-de-only" onclick="showSection('pronunciation')">🔤 发音规律</button>
   <button class="nav-btn nav-de-only" onclick="showSection('numbers')">🔢 数字规律</button>
   <button class="nav-btn nav-de-only" onclick="showSection('grammar')">📐 语法速记</button>
+  <button class="nav-btn nav-en-only" onclick="showSection('en-pron')">🔤 英语发音</button>
+  <button class="nav-btn nav-en-only" onclick="showSection('en-num')">🔢 英语数字</button>
+  <button class="nav-btn nav-en-only" onclick="showSection('en-grammar')">📐 英语语法</button>
   <button class="nav-btn" onclick="showSection('phrases')">💬 词句大全</button>
   <button class="nav-btn nav-de-only" onclick="showSection('reading')">📖 阅读短文</button>
   <button class="nav-btn" onclick="showSection('quiz')">🎯 练习测验</button>
@@ -585,14 +589,7 @@ body.lang-en .nav-de-only{display:none}
     </div>
     
     
-    <div class="level-tabs">
-      <button class="level-tab" onclick="setLevel('all',this)">📚 全部</button>
-      <button class="level-tab active" onclick="setLevel('0',this)">🌱 零基础</button>
-      <button class="level-tab" onclick="setLevel('a1',this)">⭐ A1</button>
-      <button class="level-tab" onclick="setLevel('a2',this)">⭐⭐ A2</button>
-      <button class="level-tab" onclick="setLevel('b1',this)">🔥 B1</button>
-      <button class="level-tab" onclick="setLevel('b2',this)">💎 B2</button>
-    </div>
+    <div class="level-tabs" id="levelTabs"></div>
     <div class="level-info" id="levelInfo"></div>
     <div class="cat-tabs" id="catTabs"></div>
     <div style="display:flex;align-items:center;gap:10px;margin:10px 0;flex-wrap:wrap">
@@ -672,6 +669,151 @@ body.lang-en .nav-de-only{display:none}
     <div class="level-tabs" id="readLevelTabs"></div>
     <div id="readCount" style="font-size:12px;color:var(--gold-dim);margin:4px 0 10px"></div>
     <div id="readList"></div>
+  </div>
+</div>
+
+<!-- ══════════════ 英语发音 ══════════════ -->
+<div id="en-pron" class="section">
+  <div class="container">
+    <div class="hero-label" style="text-align:center;padding-top:20px">Pronunciation</div>
+    <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 6px;color:var(--text)">英语发音规律</h2>
+    <p style="text-align:center;font-size:13px;color:var(--text-dim);margin-bottom:10px">英语<b>不像德语"所见即所读"</b>——同样字母常有多种读法。下面是中国人最该先掌握的规律 + 谐音示例。</p>
+
+    <div class="sec-title"><span class="sec-title-icon">🔤</span><span class="sec-title-text">5个元音字母：长音 vs 短音</span></div>
+    <table class="pron-table">
+      <tr><th>字母</th><th>短音</th><th>长音（字母本名）</th></tr>
+      <tr><td class="pron-letter">A a</td><td class="pron-zh">æ 诶（cat 凯特）</td><td class="pron-sound">eɪ 诶（cake 凯克）</td></tr>
+      <tr><td class="pron-letter">E e</td><td class="pron-zh">e 诶（bed 拜德）</td><td class="pron-sound">iː 伊（he 嗨/he）</td></tr>
+      <tr><td class="pron-letter">I i</td><td class="pron-zh">ɪ 伊（sit 西特）</td><td class="pron-sound">aɪ 艾（like 赖克）</td></tr>
+      <tr><td class="pron-letter">O o</td><td class="pron-zh">ɒ 啊（hot 哈特）</td><td class="pron-sound">əʊ 欧（go 高）</td></tr>
+      <tr><td class="pron-letter">U u</td><td class="pron-zh">ʌ 啊（cup 卡普）</td><td class="pron-sound">juː 优（use 优兹）</td></tr>
+    </table>
+    <div class="tip-card"><div class="tip-title">规律：词尾 "不发音的 e" 让前面元音读长音（本名）</div><div class="tip-body"><b>cap</b> 凯普 → <b>cape</b> 凯普(长)；<b>hop</b> 哈普 → <b>hope</b> 候普；<b>bit</b> 比特 → <b>bite</b> 拜特。词尾 e 自己不读，但把前面元音"拉成字母本名"。</div></div>
+
+    <div class="sec-title"><span class="sec-title-icon">🔗</span><span class="sec-title-text">常见字母组合</span></div>
+    <table class="pron-table">
+      <tr><th>组合</th><th>读音/谐音</th><th>例词</th></tr>
+      <tr><td class="pron-letter">th</td><td class="pron-sound">θ/ð 咬舌"斯/泽"</td><td class="pron-example">think 辛克、this 迪斯</td></tr>
+      <tr><td class="pron-letter">sh</td><td class="pron-sound">ʃ 室</td><td class="pron-example">she 师、fish 飞什</td></tr>
+      <tr><td class="pron-letter">ch</td><td class="pron-sound">tʃ 七</td><td class="pron-example">chair 切尔、much 马奇</td></tr>
+      <tr><td class="pron-letter">ph</td><td class="pron-sound">f 夫</td><td class="pron-example">phone 佛恩、photo 佛投</td></tr>
+      <tr><td class="pron-letter">wh</td><td class="pron-sound">w 我（h多不发音）</td><td class="pron-example">what 沃特、why 外</td></tr>
+      <tr><td class="pron-letter">ee / ea</td><td class="pron-sound">iː 长"伊"</td><td class="pron-example">see 西、tea 踢</td></tr>
+      <tr><td class="pron-letter">oo</td><td class="pron-sound">uː/ʊ "乌"</td><td class="pron-example">food 福德、book 布克</td></tr>
+      <tr><td class="pron-letter">ai / ay</td><td class="pron-sound">eɪ 诶</td><td class="pron-example">rain 瑞恩、day 得伊</td></tr>
+      <tr><td class="pron-letter">ow / ou</td><td class="pron-sound">aʊ 奥</td><td class="pron-example">now 闹、house 豪斯</td></tr>
+      <tr><td class="pron-letter">oo<small>r</small> / or</td><td class="pron-sound">ɔː 哦</td><td class="pron-example">door 多、for 佛</td></tr>
+      <tr><td class="pron-letter">ar</td><td class="pron-sound">ɑː 啊</td><td class="pron-example">car 卡、star 斯达</td></tr>
+      <tr><td class="pron-letter">er / ir / ur</td><td class="pron-sound">ɜː/ə 厄</td><td class="pron-example">her 喝、bird 伯德、turn 特恩</td></tr>
+    </table>
+    <div class="tip-card" style="border-left-color:#ff4b4b"><div class="tip-title" style="color:#ff4b4b">⚠️ 谐音只是拐杖</div><div class="tip-body">英语很多音中文没有(θ、ð、æ、卷舌 r)，谐音只能"近似"。<b>务必点 🔊 多听真人发音模仿</b>，别死记谐音。</div></div>
+  </div>
+</div>
+
+<!-- ══════════════ 英语数字 ══════════════ -->
+<div id="en-num" class="section">
+  <div class="container">
+    <div class="hero-label" style="text-align:center;padding-top:20px">Numbers</div>
+    <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 16px;color:var(--text)">英语数字规律</h2>
+
+    <div class="sec-title"><span class="sec-title-icon">1️⃣</span><span class="sec-title-text">1–12（单独记）</span></div>
+    <div class="rule-box">
+      <div class="rule-row"><span class="rule-num">1</span><span class="rule-de">one</span><span class="rule-py">万</span><span class="rule-num">2</span><span class="rule-de">two</span><span class="rule-py">图</span><span class="rule-num">3</span><span class="rule-de">three</span><span class="rule-py">斯瑞</span></div>
+      <div class="rule-row"><span class="rule-num">4</span><span class="rule-de">four</span><span class="rule-py">佛</span><span class="rule-num">5</span><span class="rule-de">five</span><span class="rule-py">法夫</span><span class="rule-num">6</span><span class="rule-de">six</span><span class="rule-py">西克斯</span></div>
+      <div class="rule-row"><span class="rule-num">7</span><span class="rule-de">seven</span><span class="rule-py">赛文</span><span class="rule-num">8</span><span class="rule-de">eight</span><span class="rule-py">诶特</span><span class="rule-num">9</span><span class="rule-de">nine</span><span class="rule-py">奈恩</span></div>
+      <div class="rule-row"><span class="rule-num">10</span><span class="rule-de">ten</span><span class="rule-py">腾</span><span class="rule-num">11</span><span class="rule-de">eleven</span><span class="rule-py">衣勒文</span><span class="rule-num">12</span><span class="rule-de">twelve</span><span class="rule-py">退尔夫</span></div>
+    </div>
+
+    <div class="sec-title"><span class="sec-title-icon">🔟</span><span class="sec-title-text">13–19：词尾 + teen（틴）</span></div>
+    <div class="rule-box">
+      <h3>规律：个位变体 + <span class="hl-gold">teen</span></h3>
+      <div class="rule-row"><span class="rule-num">13</span><span class="rule-de">thir<span class="hl-gold">teen</span></span><span class="rule-py">瑟<span class="hl-gold">廷</span></span></div>
+      <div class="rule-row"><span class="rule-num">15</span><span class="rule-de">fif<span class="hl-gold">teen</span></span><span class="rule-py">飞夫<span class="hl-gold">廷</span></span></div>
+      <div class="rule-row"><span class="rule-num">18</span><span class="rule-de">eigh<span class="hl-gold">teen</span></span><span class="rule-py">诶<span class="hl-gold">廷</span></span></div>
+    </div>
+
+    <div class="sec-title"><span class="sec-title-icon">💡</span><span class="sec-title-text">整十：词尾 + ty（提）</span></div>
+    <div class="rule-box">
+      <div class="rule-row"><span class="rule-num">20</span><span class="rule-de">twen<span class="hl-gold">ty</span></span><span class="rule-py">湍<span class="hl-gold">提</span></span><span class="rule-num">30</span><span class="rule-de">thir<span class="hl-gold">ty</span></span><span class="rule-py">瑟<span class="hl-gold">提</span></span></div>
+      <div class="rule-row"><span class="rule-num">50</span><span class="rule-de">fif<span class="hl-gold">ty</span></span><span class="rule-py">飞夫<span class="hl-gold">提</span></span><span class="rule-num">80</span><span class="rule-de">eigh<span class="hl-gold">ty</span></span><span class="rule-py">诶<span class="hl-gold">提</span></span></div>
+      <div class="rule-row" style="color:var(--text-dim);font-size:13px">⚠️ 注意区分 <b>-teen（廷,重音在后)</b> 和 <b>-ty（提,重音在前)</b>：fourteen 佛廷(14) ≠ forty 佛提(40)</div>
+    </div>
+
+    <div class="sec-title"><span class="sec-title-icon">🔀</span><span class="sec-title-text">21–99 & 大数</span></div>
+    <div class="rule-box">
+      <div class="rule-row"><span class="rule-num">21</span><span class="rule-de">twenty-one</span><span class="rule-py">湍提-万（十位+个位，顺序同中文）</span></div>
+      <div class="rule-row"><span class="rule-num">100</span><span class="rule-de">one hundred</span><span class="rule-py">万 航追德</span></div>
+      <div class="rule-row"><span class="rule-num">1000</span><span class="rule-de">one thousand</span><span class="rule-py">万 骚怎德</span></div>
+      <div class="rule-row"><span class="rule-num">百万</span><span class="rule-de">one million</span><span class="rule-py">万 米利恩</span></div>
+    </div>
+
+    <div class="sec-title"><span class="sec-title-icon">🥇</span><span class="sec-title-text">序数词（第几）</span></div>
+    <div class="rule-box">
+      <div class="rule-row"><span class="rule-de">1st first</span><span class="rule-py">佛斯特</span><span class="rule-de">2nd second</span><span class="rule-py">赛肯德</span><span class="rule-de">3rd third</span><span class="rule-py">瑟德</span></div>
+      <div class="rule-row" style="color:var(--text-dim);font-size:13px">其余多为"基数词 + th"：fourth 佛斯、fifth 飞夫斯、tenth 腾斯。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ 英语语法 ══════════════ -->
+<div id="en-grammar" class="section">
+  <div class="container">
+    <div class="hero-label" style="text-align:center;padding-top:20px">Grammar</div>
+    <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 16px;color:var(--text)">英语语法速记</h2>
+
+    <div class="sec-title"><span class="sec-title-icon">🔑</span><span class="sec-title-text">be 动词：am / is / are</span></div>
+    <div class="rule-box">
+      <div style="font-size:13px;line-height:2.1;color:#777">
+        <div>I <b style="color:var(--gold)">am</b>（我是）· You/We/They <b style="color:var(--gold)">are</b>（你/我们/他们是）</div>
+        <div>He/She/It <b style="color:var(--gold)">is</b>（他/她/它是）</div>
+        <div style="color:var(--text-dim);margin-top:6px">口诀：<b>我 am，你/复数 are，单数他/她/它 is。</b></div>
+      </div>
+    </div>
+
+    <div class="sec-title"><span class="sec-title-icon">🏷️</span><span class="sec-title-text">冠词 a / an / the</span></div>
+    <div class="tip-card"><div class="tip-body"><b>a</b> + 辅音开头（a book）；<b>an</b> + 元音音开头（an apple, an hour）；<b>the</b> = 特指"这个/那个"。<b>泛指单数可数名词前必须加 a/an。</b></div></div>
+
+    <div class="sec-title"><span class="sec-title-icon">➕</span><span class="sec-title-text">名词复数</span></div>
+    <div class="rule-box">
+      <div style="font-size:13px;line-height:2;color:#777">
+        <div>一般 <b>+s</b>：book→book<b style="color:var(--gold)">s</b></div>
+        <div>s/x/ch/sh 结尾 <b>+es</b>：box→box<b style="color:var(--gold)">es</b></div>
+        <div>辅音+y → <b>去y加ies</b>：city→cit<b style="color:var(--gold)">ies</b></div>
+        <div>不规则：man→men, child→children, foot→feet</div>
+      </div>
+    </div>
+
+    <div class="sec-title"><span class="sec-title-icon">👤</span><span class="sec-title-text">人称代词</span></div>
+    <table class="pron-table">
+      <tr><th>主格(谁)</th><th>宾格(被…)</th><th>物主(…的)</th></tr>
+      <tr><td>I 我</td><td>me</td><td>my</td></tr>
+      <tr><td>you 你</td><td>you</td><td>your</td></tr>
+      <tr><td>he/she/it</td><td>him/her/it</td><td>his/her/its</td></tr>
+      <tr><td>we 我们</td><td>us</td><td>our</td></tr>
+      <tr><td>they 他们</td><td>them</td><td>their</td></tr>
+    </table>
+
+    <div class="sec-title"><span class="sec-title-icon">⏳</span><span class="sec-title-text">三大基本时态</span></div>
+    <div class="rule-box">
+      <div style="font-size:13px;line-height:2.1;color:#777">
+        <div><b style="color:#1cb0f6">现在</b>：I <b>work</b>. / He <b>works</b>.（习惯、事实）</div>
+        <div><b style="color:var(--gold)">过去</b>：I <b>worked</b>.（规则+ed；不规则 go→went, see→saw）</div>
+        <div><b style="color:#ff7a4d">将来</b>：I <b>will work</b>. / I'm <b>going to</b> work.</div>
+        <div><b style="color:#58cc02">现在进行</b>：I <b>am working</b>.（正在做）</div>
+      </div>
+    </div>
+
+    <div class="sec-title"><span class="sec-title-icon">⚡</span><span class="sec-title-text">基本语序 + 万能句型</span></div>
+    <div class="rule-box">
+      <h3>主 + 谓 + 宾（SVO，和中文一样）</h3>
+      <div style="font-size:13px;line-height:2.1;color:#777">
+        <div>I <b style="color:var(--gold)">want</b> + 名词 → 我想要……</div>
+        <div>Can I + 动词原形? → 我可以……吗？</div>
+        <div>Where is + 地点? → ……在哪？</div>
+        <div>How much is + 物品? → ……多少钱？</div>
+        <div>否定：加 <b>not</b>（don't / isn't / can't）；疑问：<b>be/助动词提到句首</b>。</div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -761,11 +903,11 @@ function setLang(lang){
   // 词句版块默认回到「全部」级别，避免英语词少时空白
   activeLevel = (LANG==='en')?'all':activeLevel;
   activeCat='all';
-  if(typeof initPhrases==='function'){buildCatTabs();renderPhrases();}
-  const li=document.getElementById('levelInfo'); if(li&&LANG==='en')li.style.display='none';
+  if(typeof buildLevelTabs==='function'){buildLevelTabs();buildCatTabs();renderPhrases();showLevelInfo(activeLevel);}
   // 英语模式下若停留在德语专属版块，跳到「词句大全」
   const cur=[...document.querySelectorAll('.section')].find(s=>s.classList.contains('active'));
-  if(LANG==='en'&&cur&&['pronunciation','numbers','grammar','reading'].includes(cur.id))showSection('phrases');
+  if(cur&&LANG==='en'&&['pronunciation','numbers','grammar','reading'].includes(cur.id))showSection('phrases');
+  if(cur&&LANG==='de'&&['en-pron','en-num','en-grammar'].includes(cur.id))showSection('phrases');
 }
 function updateHeroLang(){
   const lab=document.getElementById('heroLabel'),tit=document.getElementById('heroTitle'),sub=document.getElementById('heroSub');
@@ -890,10 +1032,40 @@ const levelMeta = {
   'b1':  {label:'🔥 B1 中级', desc:'情感·医疗·银行·社会·抽象词汇，能理解日常生活主要内容。', color:'#ff7a4d'},
   'b2':  {label:'💎 B2 中高级', desc:'政府·科技·经济·历史·学术，接近流利日常交流水平。', color:'#ff4b4b'},
 };
+// 英语按中国考试体系分级（入门/中考/高考/四级/六级）
+const levelMetaEN = {
+  'all': {label:'全部', desc:'', color:'var(--gold)'},
+  '0':   {label:'🌱 入门', desc:'最常用的问候与日常，零基础就能开口。', color:'#58cc02'},
+  'a1':  {label:'⭐ 中考', desc:'初中水平高频词句。', color:'#1cb0f6'},
+  'a2':  {label:'⭐⭐ 高考', desc:'高中水平常用表达。', color:'var(--gold)'},
+  'b1':  {label:'🔥 四级', desc:'CET-4 词汇与表达。', color:'#ff7a4d'},
+  'b2':  {label:'💎 六级', desc:'CET-6 进阶词汇。', color:'#ff4b4b'},
+};
+const LEVEL_TABS_DE=[['all','📚 全部'],['0','🌱 零基础'],['a1','⭐ A1'],['a2','⭐⭐ A2'],['b1','🔥 B1'],['b2','💎 B2']];
+const LEVEL_TABS_EN=[['all','📚 全部'],['0','🌱 入门'],['a1','⭐ 中考'],['a2','⭐⭐ 高考'],['b1','🔥 四级'],['b2','💎 六级']];
+const LN_DE={'0':'零基础','a1':'A1','a2':'A2','b1':'B1','b2':'B2'};
+const LN_EN={'0':'入门','a1':'中考','a2':'高考','b1':'四级','b2':'六级'};
+function curLevelMeta(){return LANG==='en'?levelMetaEN:levelMeta;}
+function levelName(l){return (LANG==='en'?LN_EN:LN_DE)[l]||'';}
+function buildLevelTabs(){
+  const el=document.getElementById('levelTabs'); if(!el)return;
+  const def=LANG==='en'?LEVEL_TABS_EN:LEVEL_TABS_DE;
+  el.innerHTML=def.map(([k,lab])=>`<button class="level-tab${k===activeLevel?' active':''}" onclick="setLevel('${k}',this)">${lab}</button>`).join('');
+}
 
 function getLevelCats() {
   if (activeLevel === 'all') return categories;
   return categories.filter(c => c.level === activeLevel);
+}
+
+function showLevelInfo(level){
+  const info = document.getElementById('levelInfo');
+  const m = curLevelMeta()[level];
+  if (m && level !== 'all') {
+    info.style.display = 'block';
+    info.style.borderLeftColor = m.color;
+    info.innerHTML = '<b style="color:'+m.color+'">'+m.label+'</b>　'+m.desc;
+  } else { info.style.display = 'none'; }
 }
 
 function goLevel(level) {
@@ -901,17 +1073,8 @@ function goLevel(level) {
   setTimeout(() => {
     activeLevel = level;
     activeCat = 'all';
-    document.querySelectorAll('.level-tab').forEach(b => b.classList.remove('active'));
-    const levMap = {'all':0,'0':1,'a1':2,'a2':3,'b1':4,'b2':5};
-    const allTabs = document.querySelectorAll('.level-tab');
-    if (allTabs[levMap[level]]) allTabs[levMap[level]].classList.add('active');
-    const info = document.getElementById('levelInfo');
-    const m = levelMeta[level];
-    if (m && level !== 'all') {
-      info.style.display = 'block';
-      info.style.borderLeftColor = m.color;
-      info.innerHTML = '<b style="color:'+m.color+'">'+m.label+'</b>　'+m.desc;
-    } else { info.style.display = 'none'; }
+    buildLevelTabs();
+    showLevelInfo(level);
     buildCatTabs();
     renderPhrases();
   }, 80);
@@ -920,16 +1083,8 @@ function goLevel(level) {
 function setLevel(level, btn) {
   activeLevel = level;
   activeCat = 'all';
-  document.querySelectorAll('.level-tab').forEach(b => b.classList.remove('active'));
-  if (btn) btn.classList.add('active');
-  const info = document.getElementById('levelInfo');
-  const m = levelMeta[level];
-  if (level === 'all') { info.style.display = 'none'; }
-  else {
-    info.style.display = 'block';
-    info.style.borderLeftColor = m.color;
-    info.innerHTML = '<b style="color:'+m.color+'">'+m.label+'</b>　'+m.desc;
-  }
+  buildLevelTabs();
+  showLevelInfo(level);
   buildCatTabs();
   renderPhrases();
 }
@@ -937,13 +1092,12 @@ function setLevel(level, btn) {
 function buildCatTabs() {
   const tabs = document.getElementById('catTabs');
   const lb = {'0':'lb-0','a1':'lb-a1','a2':'lb-a2','b1':'lb-b1','b2':'lb-b2'};
-  const ln = {'0':'零基础','a1':'A1','a2':'A2','b1':'B1','b2':'B2'};
   tabs.innerHTML = '<button class="cat-tab active" onclick="setCat(\'all\',this)">全部</button>';
   getLevelCats().forEach(cat => {
     const b = document.createElement('button');
     b.className = 'cat-tab';
     const badge = activeLevel === 'all'
-      ? `<span class="level-badge ${lb[cat.level]||''}">${ln[cat.level]||''}</span>` : '';
+      ? `<span class="level-badge ${lb[cat.level]||''}">${levelName(cat.level)}</span>` : '';
     b.innerHTML = cat.icon + ' ' + cat.name + badge;
     b.setAttribute('onclick', `setCat('${cat.name}',this)`);
     tabs.appendChild(b);
@@ -951,13 +1105,8 @@ function buildCatTabs() {
 }
 
 function initPhrases() {
-  const info = document.getElementById('levelInfo');
-  const m = levelMeta[activeLevel];
-  if (m && activeLevel !== 'all') {
-    info.style.display = 'block';
-    info.style.borderLeftColor = m.color;
-    info.innerHTML = '<b style="color:'+m.color+'">'+m.label+'</b>　'+m.desc;
-  }
+  buildLevelTabs();
+  showLevelInfo(activeLevel);
   buildCatTabs();
   renderPhrases();
 }
@@ -993,10 +1142,9 @@ function renderPhrases(){
   const el=document.getElementById('phraseContent');
   el.innerHTML='';
   const lb={'0':'lb-0','a1':'lb-a1','a2':'lb-a2','b1':'lb-b1','b2':'lb-b2'};
-  const ln={'0':'零基础','a1':'A1','a2':'A2','b1':'B1','b2':'B2'};
   getLevelCats().forEach((cat,ci)=>{
     const sec=document.createElement('div');
-    const badge=activeLevel==='all'?`<span class="level-badge ${lb[cat.level]||''}">${ln[cat.level]||''}</span>`:'';
+    const badge=activeLevel==='all'?`<span class="level-badge ${lb[cat.level]||''}">${levelName(cat.level)}</span>`:'';
     sec.innerHTML=`<div class="sec-title"><span class="sec-title-icon">${cat.icon}</span><span class="sec-title-text">${cat.name}</span>${badge}<span class="sec-title-count" style="margin-left:auto">${cat.phrases.length}句</span></div>`;
     const grid=document.createElement('div');
     grid.className='phrase-grid';
