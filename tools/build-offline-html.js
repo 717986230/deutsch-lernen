@@ -51,6 +51,18 @@ function build() {
   // 用函数形式避免 $ 替换语义
   let html = tpl.replace('/*__CATEGORIES__*/', () => injected)
 
+  // 注入英语词库（packageData/data/en.js）
+  try {
+    const enPath = path.join(__dirname, '..', 'packageData', 'data', 'en.js')
+    delete require.cache[require.resolve(enPath)]
+    const enCats = require(enPath)
+    html = html.replace('/*__EN_CATEGORIES__*/[]', () => JSON.stringify(enCats))
+    const ec = enCats.reduce((s, c) => s + c.phrases.length, 0)
+    console.log('  英语词库：%d 分类 / %d 词句', enCats.length, ec)
+  } catch (e) {
+    console.warn('  ⚠ en.js 注入失败（跳过）：', e.message)
+  }
+
   // 注入分级阅读短文（tools/readings.js）
   try {
     const readingsPath = path.join(__dirname, 'readings.js')

@@ -737,36 +737,9 @@ const LETTERS = [
 // ══════════════ 双语框架：德语 / 英语 整站切换 ══════════════
 // categories 是 const 数组，切换时原地替换内容，所有引用它的功能自动跟随。
 const DE_CATEGORIES = categories.slice();
-// 英语版起步词库（中文谐音学英语）。框架先行，词量随后逐步补。
+// 英语版词库（中文谐音学英语）。数据源：packageData/data/en.js，构建时注入。
 // 注：英语词放在 de 字段，复用全部现有逻辑（卡片/朗读/测验/生词本）。英语不可规则拼读，故英语模式隐藏「拼读」只显谐音。
-const EN_CATEGORIES = [
-  {name:'问候·寒暄',level:'0',icon:'👋',phrases:[
-    {de:'Hello!',zh:'你好！',py:'哈喽'},
-    {de:'Hi!',zh:'嗨！',py:'嗨'},
-    {de:'Good morning!',zh:'早上好！',py:'古德 莫宁'},
-    {de:'Good evening!',zh:'晚上好！',py:'古德 伊夫宁'},
-    {de:'How are you?',zh:'你好吗？',py:'好 阿 优'},
-    {de:"I'm fine, thank you.",zh:'我很好，谢谢。',py:'阿姆 fai恩 三克 优'},
-    {de:'Goodbye!',zh:'再见！',py:'古德拜'},
-    {de:'See you later!',zh:'回头见！',py:'西 优 雷特'},
-    {de:'Thank you!',zh:'谢谢！',py:'三克 优'},
-    {de:"You're welcome.",zh:'不客气。',py:'优阿 威尔康'},
-    {de:'Please.',zh:'请。',py:'普利兹'},
-    {de:'Sorry!',zh:'对不起！',py:'索瑞'},
-  ]},
-  {name:'日常·实用',level:'a1',icon:'💬',phrases:[
-    {de:'Yes.',zh:'是的。',py:'耶斯'},
-    {de:'No.',zh:'不。',py:'弄'},
-    {de:'My name is ...',zh:'我叫……',py:'买 内姆 伊兹'},
-    {de:'Nice to meet you.',zh:'很高兴见到你。',py:'奈斯 图 米特 优'},
-    {de:'I don\'t understand.',zh:'我不明白。',py:'阿 哄特 安德斯坦德'},
-    {de:'Can you help me?',zh:'你能帮我吗？',py:'坎 优 害普 米'},
-    {de:'How much is it?',zh:'这多少钱？',py:'好 马奇 伊兹 伊特'},
-    {de:'Where is the toilet?',zh:'厕所在哪？',py:'威尔 伊兹 泽 托伊雷特'},
-    {de:'I love you.',zh:'我爱你。',py:'阿 拉夫 优'},
-    {de:'Excuse me.',zh:'打扰一下。',py:'伊克斯Q斯 米'},
-  ]},
-];
+const EN_CATEGORIES = /*__EN_CATEGORIES__*/[];
 let LANG='de';
 try{const s=localStorage.getItem('siteLang');if(s==='en'||s==='de')LANG=s;}catch(e){}
 function applyLangData(){
