@@ -147,7 +147,7 @@ module.exports = [
       {
         "de": "der Ausverkauf",
         "zh": "清仓",
-        "py": "德尔 奥斯弗尔考夫"
+        "py": "德尔 奥斯费尔考夫"
       },
       {
         "de": "die Quittung",
@@ -307,7 +307,7 @@ module.exports = [
       {
         "de": "der Schlussverkauf",
         "zh": "季末清仓",
-        "py": "德尔 斯卢斯弗尔考夫"
+        "py": "德尔 斯卢斯费尔考夫"
       },
       {
         "de": "der Black Friday",
@@ -504,7 +504,7 @@ module.exports = [
       {
         "de": "Ich habe meinen Zug verpasst.",
         "zh": "我错过了火车。",
-        "py": "伊希 哈贝 迈嫩 楚克 弗尔帕斯特"
+        "py": "伊希 哈贝 迈嫩 楚克 费尔帕斯特"
       },
       {
         "de": "Gibt es einen Sitzplatz?",
@@ -524,7 +524,7 @@ module.exports = [
       {
         "de": "Der Bus hat Verspätung.",
         "zh": "公交车晚点了。",
-        "py": "德尔 布斯 哈特 弗尔施佩通"
+        "py": "德尔 布斯 哈特 费尔施佩通"
       },
       {
         "de": "Fährt dieser Bus zum Zentrum?",
@@ -629,7 +629,7 @@ module.exports = [
       {
         "de": "die Vorfahrt",
         "zh": "优先通行权",
-        "py": "迪 丰尔法尔特"
+        "py": "迪 福尔法尔特"
       },
       {
         "de": "der Stau",
@@ -791,7 +791,7 @@ module.exports = [
       {
         "de": "Ich möchte verlängern.",
         "zh": "我想延长住宿。",
-        "py": "伊希 默希特 弗尔伦格尔恩"
+        "py": "伊希 默希特 费尔伦格尔恩"
       },
       {
         "de": "Haben Sie ein ruhigeres Zimmer?",
@@ -853,7 +853,7 @@ module.exports = [
       {
         "de": "die Verspätung",
         "zh": "延误",
-        "py": "迪 弗尔斯贝通"
+        "py": "迪 费尔斯贝通"
       },
       {
         "de": "die Unterkunft",
@@ -868,7 +868,7 @@ module.exports = [
       {
         "de": "die Vollpension",
         "zh": "全食宿",
-        "py": "迪 丰尔彭细欧恩"
+        "py": "迪 福尔彭细欧恩"
       },
       {
         "de": "der Stadtplan",
@@ -893,7 +893,7 @@ module.exports = [
       {
         "de": "die Reiseversicherung",
         "zh": "旅行保险",
-        "py": "迪 莱斯弗尔济黑荣"
+        "py": "迪 莱斯费尔济黑荣"
       },
       {
         "de": "der Reisende",
@@ -915,7 +915,7 @@ module.exports = [
       {
         "de": "die Vorspeise",
         "zh": "前菜",
-        "py": "迪 丰尔斯派斯"
+        "py": "迪 福尔斯派斯"
       },
       {
         "de": "die Hauptspeise",
@@ -3002,7 +3002,7 @@ module.exports = [
       {
         "de": "vergessen",
         "zh": "忘记",
-        "py": "弗尔格森"
+        "py": "费尔格森"
       },
       {
         "de": "erinnern",
@@ -3611,7 +3611,7 @@ module.exports = [
       {
         "de": "voll",
         "zh": "满/完整",
-        "py": "丰尔"
+        "py": "福尔"
       },
       {
         "de": "leer",
@@ -4264,7 +4264,7 @@ module.exports = [
       {
         "de": "das Foul",
         "zh": "犯规",
-        "py": "达斯 丰尔"
+        "py": "达斯 福尔"
       },
       {
         "de": "der Elfmeter",
@@ -4279,7 +4279,7 @@ module.exports = [
       {
         "de": "verlieren",
         "zh": "失去",
-        "py": "弗尔里伦"
+        "py": "费尔里伦"
       },
       {
         "de": "unentschieden",
@@ -5122,7 +5122,7 @@ module.exports = [
       {
         "de": "Ich habe das vergessen.",
         "zh": "我忘了这个。",
-        "py": "伊希 哈贝 达斯 弗尔格森"
+        "py": "伊希 哈贝 达斯 费尔格森"
       },
       {
         "de": "Hast du das gemacht?",
@@ -5177,7 +5177,7 @@ module.exports = [
       {
         "de": "Wir haben verloren.",
         "zh": "我们输了。",
-        "py": "维尔 哈本 弗尔洛伦"
+        "py": "维尔 哈本 费尔洛伦"
       },
       {
         "de": "Ich bin müde geworden.",
@@ -5374,7 +5374,7 @@ module.exports = [
       {
         "de": "Fortschritte machen",
         "zh": "取得进步",
-        "py": "丰尔特斯里特 马赫恩"
+        "py": "福尔特斯里特 马赫恩"
       },
       {
         "de": "Rücksicht nehmen",
@@ -5399,7 +5399,7 @@ module.exports = [
       {
         "de": "zur Verfügung stehen",
         "zh": "可供使用",
-        "py": "楚尔 弗尔菲根 施泰恩"
+        "py": "楚尔 费尔菲根 施泰恩"
       },
       {
         "de": "in Anspruch nehmen",
@@ -5646,7 +5646,7 @@ module.exports = [
       {
         "de": "v.a. (vor allem)",
         "zh": "尤其",
-        "py": "丰尔 阿伦"
+        "py": "福尔 阿伦"
       },
       {
         "de": "i.A. (im Auftrag)",

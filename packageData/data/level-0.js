@@ -209,7 +209,7 @@ module.exports = [
       {
         "de": "Mit Vergnügen.",
         "zh": "很乐意。",
-        "py": "米特 弗尔格尼根"
+        "py": "米特 费尔格尼根"
       },
       {
         "de": "Entschuldigung.",
@@ -269,7 +269,7 @@ module.exports = [
       {
         "de": "Selbstverständlich.",
         "zh": "理所当然。",
-        "py": "泽尔布斯特弗尔施坦德利希"
+        "py": "泽尔布斯特费尔施坦德利希"
       },
       {
         "de": "Herzlichen Glückwunsch!",

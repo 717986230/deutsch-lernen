@@ -980,7 +980,7 @@ module.exports = [
       {
         "de": "Ich verzeihe dir.",
         "zh": "我原谅你。",
-        "py": "伊希 弗尔查呃 迪尔"
+        "py": "伊希 费尔查呃 迪尔"
       },
       {
         "de": "Zusammen sind wir stark.",
@@ -995,7 +995,7 @@ module.exports = [
       {
         "de": "Ich vermisse euch.",
         "zh": "我想念你们。",
-        "py": "伊希 弗尔米斯 欧赫"
+        "py": "伊希 费尔米斯 欧赫"
       },
       {
         "de": "der Mensch",
@@ -2228,7 +2228,7 @@ module.exports = [
       {
         "de": "Ich habe Sie nicht verstanden.",
         "zh": "我没听懂您说的。",
-        "py": "伊希 哈贝 济 尼希特 弗尔斯坦顿"
+        "py": "伊希 哈贝 济 尼希特 费尔斯坦顿"
       },
       {
         "de": "Können Sie das aufschreiben?",
@@ -2288,12 +2288,12 @@ module.exports = [
       {
         "de": "Das habe ich verstanden.",
         "zh": "我明白了。",
-        "py": "达斯 哈贝 伊希 弗尔斯坦顿"
+        "py": "达斯 哈贝 伊希 费尔斯坦顿"
       },
       {
         "de": "Das verstehe ich leider nicht.",
         "zh": "我很遗憾不明白这个。",
-        "py": "达斯 弗尔施泰恩 伊希 莱德尔 尼希特"
+        "py": "达斯 费尔施泰恩 伊希 莱德尔 尼希特"
       },
       {
         "de": "Können Sie ein Beispiel geben?",
@@ -2338,7 +2338,7 @@ module.exports = [
       {
         "de": "Ich mache Fortschritte.",
         "zh": "我在进步。",
-        "py": "伊希 马黑 丰尔特斯里特"
+        "py": "伊希 马黑 福尔特斯里特"
       },
       {
         "de": "Deutsch macht Spaß!",
@@ -2373,7 +2373,7 @@ module.exports = [
       {
         "de": "Ich bin verloren.",
         "zh": "我迷路了。",
-        "py": "伊希 宾 弗尔洛伦"
+        "py": "伊希 宾 费尔洛伦"
       },
       {
         "de": "Einen Arzt, bitte!",
@@ -3518,7 +3518,7 @@ module.exports = [
       {
         "de": "vor",
         "zh": "在……前",
-        "py": "丰尔"
+        "py": "福尔"
       },
       {
         "de": "hinter",
@@ -4204,7 +4204,7 @@ module.exports = [
       {
         "de": "die Universität",
         "zh": "大学",
-        "py": "迪 乌尼弗尔西特"
+        "py": "迪 乌尼维尔西泰特"
       },
       {
         "de": "der Hörsaal",
@@ -4219,7 +4219,7 @@ module.exports = [
       {
         "de": "die Vorlesung",
         "zh": "讲座",
-        "py": "迪 丰尔雷松"
+        "py": "迪 福尔雷松"
       },
       {
         "de": "das Semester",
@@ -4301,7 +4301,7 @@ module.exports = [
       {
         "de": "verneigen",
         "zh": "鞠躬",
-        "py": "弗尔奈根"
+        "py": "费尔奈根"
       },
       {
         "de": "greifen",
@@ -4448,7 +4448,7 @@ module.exports = [
       {
         "de": "voll ↔ leer",
         "zh": "满 ↔ 空",
-        "py": "丰尔 ↔ 雷尔"
+        "py": "福尔 ↔ 雷尔"
       },
       {
         "de": "offen ↔ geschlossen",
@@ -4538,7 +4538,7 @@ module.exports = [
       {
         "de": "kaufen ↔ verkaufen",
         "zh": "买 ↔ 卖",
-        "py": "考芬 ↔ 弗尔考芬"
+        "py": "考芬 ↔ 费尔考芬"
       },
       {
         "de": "anfangen ↔ aufhören",

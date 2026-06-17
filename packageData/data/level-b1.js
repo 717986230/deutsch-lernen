@@ -137,7 +137,7 @@ module.exports = [
       {
         "de": "Ich möchte einen Termin vereinbaren.",
         "zh": "我想预约。",
-        "py": "伊希 默希特 艾嫩 特尔明 弗尔艾因巴伦"
+        "py": "伊希 默希特 艾嫩 特尔明 费尔艾因巴伦"
       },
       {
         "de": "Was soll ich nehmen?",
@@ -147,7 +147,7 @@ module.exports = [
       {
         "de": "Ich habe mich verletzt.",
         "zh": "我受伤了。",
-        "py": "伊希 哈贝 米希 弗尔雷茨特"
+        "py": "伊希 哈贝 米希 费尔雷茨特"
       },
       {
         "de": "die Tablette",
@@ -277,7 +277,7 @@ module.exports = [
       {
         "de": "die Krankenversicherung",
         "zh": "医疗保险",
-        "py": "迪 克兰肯弗尔济黑荣"
+        "py": "迪 克兰肯费尔济黑荣"
       },
       {
         "de": "der Hausarzt",
@@ -292,7 +292,7 @@ module.exports = [
       {
         "de": "Informationen zu Allergenen",
         "zh": "过敏原信息",
-        "py": "因丰尔马细欧嫩 楚 阿勒尔根恩"
+        "py": "因福尔马细欧嫩 楚 阿勒尔根恩"
       },
       {
         "de": "A – glutenhaltiges Getreide",
@@ -499,7 +499,7 @@ module.exports = [
       {
         "de": "Meine PIN habe ich vergessen.",
         "zh": "我忘记了密码。",
-        "py": "迈嫩 平 哈贝 伊希 弗尔格森"
+        "py": "迈嫩 平 哈贝 伊希 费尔格森"
       },
       {
         "de": "Meine Karte ist gesperrt.",
@@ -626,7 +626,7 @@ module.exports = [
       {
         "de": "Ich vermisse dich.",
         "zh": "我想念你。",
-        "py": "伊希 弗尔米斯 迪希"
+        "py": "伊希 费尔米斯 迪希"
       },
       {
         "de": "Du fehlst mir.",
@@ -831,7 +831,7 @@ module.exports = [
       {
         "de": "die Verzweiflung",
         "zh": "绝望",
-        "py": "迪 弗尔茨魏弗伦"
+        "py": "迪 费尔茨魏弗伦"
       },
       {
         "de": "die Erleichterung",
@@ -851,7 +851,7 @@ module.exports = [
       {
         "de": "das Vertrauen",
         "zh": "信任",
-        "py": "达斯 弗尔特劳恩"
+        "py": "达斯 费尔特劳恩"
       },
       {
         "de": "das Misstrauen",
@@ -1158,7 +1158,7 @@ module.exports = [
       {
         "de": "der Vorhang",
         "zh": "幕布",
-        "py": "德尔 丰尔汉"
+        "py": "德尔 福尔汉"
       },
       {
         "de": "die Premiere",
@@ -1195,7 +1195,7 @@ module.exports = [
       {
         "de": "verbessern",
         "zh": "改善",
-        "py": "弗尔贝瑟恩"
+        "py": "费尔贝瑟恩"
       },
       {
         "de": "ändern",
@@ -1215,7 +1215,7 @@ module.exports = [
       {
         "de": "versuchen",
         "zh": "尝试",
-        "py": "弗尔祖赫恩"
+        "py": "费尔祖赫恩"
       },
       {
         "de": "entscheiden",
@@ -1275,7 +1275,7 @@ module.exports = [
       {
         "de": "vergleichen",
         "zh": "比较",
-        "py": "弗尔格莱黑恩"
+        "py": "费尔格莱黑恩"
       },
       {
         "de": "beurteilen",
@@ -1340,7 +1340,7 @@ module.exports = [
       {
         "de": "fördern",
         "zh": "促进",
-        "py": "丰尔德恩"
+        "py": "福尔德恩"
       },
       {
         "de": "unterstützen",
@@ -1360,7 +1360,7 @@ module.exports = [
       {
         "de": "informieren",
         "zh": "告知",
-        "py": "因丰尔米伦"
+        "py": "因福尔米伦"
       },
       {
         "de": "kommunizieren",
@@ -1497,7 +1497,7 @@ module.exports = [
       {
         "de": "die Verbindung",
         "zh": "连接",
-        "py": "迪 弗尔宾顿"
+        "py": "迪 费尔宾顿"
       },
       {
         "de": "das WLAN",
@@ -1577,7 +1577,7 @@ module.exports = [
       {
         "de": "folgen",
         "zh": "关注",
-        "py": "丰尔根"
+        "py": "福尔根"
       },
       {
         "de": "abonnieren",
@@ -1846,7 +1846,7 @@ module.exports = [
       {
         "de": "die Vorschrift",
         "zh": "规定",
-        "py": "迪 丰尔斯里夫特"
+        "py": "迪 福尔斯里夫特"
       },
       {
         "de": "die Regel",
@@ -1871,7 +1871,7 @@ module.exports = [
       {
         "de": "der Vertrag",
         "zh": "合同",
-        "py": "德尔 弗尔特拉克"
+        "py": "德尔 费尔特拉克"
       },
       {
         "de": "kündigen",
@@ -2155,7 +2155,7 @@ module.exports = [
       {
         "de": "Bevor du gehst, ruf mich an.",
         "zh": "在你走之前，给我打电话。",
-        "py": "贝丰尔 度 盖斯特 鲁夫 米希 安"
+        "py": "贝福尔 度 盖斯特 鲁夫 米希 安"
       },
       {
         "de": "Je mehr ich lerne, desto besser werde ich.",
@@ -2325,7 +2325,7 @@ module.exports = [
       {
         "de": "einverstanden sein mit + D",
         "zh": "同意……",
-        "py": "艾因弗尔斯坦顿 扎因 米特"
+        "py": "艾因费尔斯坦顿 扎因 米特"
       },
       {
         "de": "zufrieden sein mit + D",
@@ -2335,7 +2335,7 @@ module.exports = [
       {
         "de": "verwandt sein mit + D",
         "zh": "与……有亲戚关系",
-        "py": "弗尔万特 扎因 米特"
+        "py": "费尔万特 扎因 米特"
       },
       {
         "de": "bekannt sein für + A",
@@ -2345,7 +2345,7 @@ module.exports = [
       {
         "de": "verantwortlich sein für + A",
         "zh": "负责……",
-        "py": "弗尔安特沃尔特利希 扎因 菲尔"
+        "py": "费尔安特沃尔特利希 扎因 菲尔"
       },
       {
         "de": "stolz sein auf + A",
@@ -2395,12 +2395,12 @@ module.exports = [
       {
         "de": "ver- (vergessen)",
         "zh": "ver-忘记",
-        "py": "弗尔 格森"
+        "py": "费尔 格森"
       },
       {
         "de": "ver- (verstehen)",
         "zh": "ver-理解",
-        "py": "弗尔 施泰恩"
+        "py": "费尔 施泰恩"
       },
       {
         "de": "er- (erklären)",
@@ -2485,12 +2485,12 @@ module.exports = [
       {
         "de": "vor- (vorstellen)",
         "zh": "vor-介绍",
-        "py": "丰尔 斯泰伦"
+        "py": "福尔 斯泰伦"
       },
       {
         "de": "vor- (vorbereiten)",
         "zh": "vor-准备",
-        "py": "丰尔 贝莱腾"
+        "py": "福尔 贝莱腾"
       },
       {
         "de": "nach- (nachfragen)",
@@ -2597,7 +2597,7 @@ module.exports = [
       {
         "de": "Bei Fragen stehe ich gerne zur Verfügung.",
         "zh": "如有问题，我随时愿意解答。",
-        "py": "拜 弗拉根 斯泰呃 伊希 根呃 楚尔 弗尔菲根"
+        "py": "拜 弗拉根 斯泰呃 伊希 根呃 楚尔 费尔菲根"
       },
       {
         "de": "Ich bitte um Ihre Rückmeldung bis...",
@@ -2622,7 +2622,7 @@ module.exports = [
       {
         "de": "Hochachtungsvoll",
         "zh": "谨致崇高敬意",
-        "py": "霍赫阿赫通斯丰尔"
+        "py": "霍赫阿赫通斯福尔"
       },
       {
         "de": "Mit besten Grüßen",
@@ -2642,17 +2642,17 @@ module.exports = [
       {
         "de": "Ich hoffe, diese Information ist hilfreich.",
         "zh": "我希望这些信息有帮助。",
-        "py": "伊希 霍弗 地泽 因丰尔马细欧恩 伊斯特 希尔费莱希"
+        "py": "伊希 霍弗 地泽 因福尔马细欧恩 伊斯特 希尔费莱希"
       },
       {
         "de": "Sollten Sie Fragen haben, stehe ich gerne zur Verfügung.",
         "zh": "如有疑问，请随时联系我。",
-        "py": "佐尔腾 济 弗拉根 哈本 斯泰呃 伊希 根呃 楚尔 弗尔菲根"
+        "py": "佐尔腾 济 弗拉根 哈本 斯泰呃 伊希 根呃 楚尔 费尔菲根"
       },
       {
         "de": "Ich bedanke mich im Voraus.",
         "zh": "提前感谢。",
-        "py": "伊希 贝当克 米希 因姆 丰尔奥斯"
+        "py": "伊希 贝当克 米希 因姆 福尔奥斯"
       },
       {
         "de": "Entschuldigen Sie die späte Antwort.",
@@ -2672,7 +2672,7 @@ module.exports = [
       {
         "de": "Laut unserer Vereinbarung...",
         "zh": "根据我们的协议……",
-        "py": "劳特 乌恩泽雷尔 弗尔艾因巴荣"
+        "py": "劳特 乌恩泽雷尔 费尔艾因巴荣"
       },
       {
         "de": "Im Anhang finden Sie...",
@@ -2849,7 +2849,7 @@ module.exports = [
       {
         "de": "Vergiss es!",
         "zh": "算了/忘了吧",
-        "py": "弗尔吉斯 埃斯"
+        "py": "费尔吉斯 埃斯"
       },
       {
         "de": "Lass mal sehen.",
@@ -2909,7 +2909,7 @@ module.exports = [
       {
         "de": "Voll gut!",
         "zh": "超好！（口语）",
-        "py": "丰尔 古特"
+        "py": "福尔 古特"
       },
       {
         "de": "Nicht schlecht!",
@@ -2969,7 +2969,7 @@ module.exports = [
       {
         "de": "Viele Köche verderben den Brei.",
         "zh": "厨师太多毁了汤。（人多坏事）",
-        "py": "菲勒 科赫 弗尔德尔本 登 布莱"
+        "py": "菲勒 科赫 费尔德尔本 登 布莱"
       },
       {
         "de": "Was man nicht im Kopf hat, hat man in den Beinen.",
@@ -3019,7 +3019,7 @@ module.exports = [
       {
         "de": "Man soll den Tag nicht vor dem Abend loben.",
         "zh": "不到晚上不算成功。",
-        "py": "曼 佐尔 登 塔克 尼希特 丰尔 登姆 阿本特 洛本"
+        "py": "曼 佐尔 登 塔克 尼希特 福尔 登姆 阿本特 洛本"
       },
       {
         "de": "Es ist noch kein Meister vom Himmel gefallen.",

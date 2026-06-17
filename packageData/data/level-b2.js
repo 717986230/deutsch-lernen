@@ -199,7 +199,7 @@ module.exports = [
       {
         "de": "die Verfassung",
         "zh": "宪法",
-        "py": "迪 弗尔法松"
+        "py": "迪 费尔法松"
       },
       {
         "de": "das Grundgesetz",
@@ -244,7 +244,7 @@ module.exports = [
       {
         "de": "die Verwaltung",
         "zh": "行政管理",
-        "py": "迪 弗尔瓦尔通"
+        "py": "迪 费尔瓦尔通"
       },
       {
         "de": "die Steuer",
@@ -254,7 +254,7 @@ module.exports = [
       {
         "de": "die Sozialversicherung",
         "zh": "社会保险",
-        "py": "迪 佐察雷弗尔济黑荣"
+        "py": "迪 佐察雷费尔济黑荣"
       },
       {
         "de": "die Gemeinde",
@@ -346,7 +346,7 @@ module.exports = [
       {
         "de": "das Volk",
         "zh": "人民",
-        "py": "达斯 丰尔克"
+        "py": "达斯 福尔克"
       },
       {
         "de": "die Kultur",
@@ -408,7 +408,7 @@ module.exports = [
       {
         "de": "die Forschung",
         "zh": "研究",
-        "py": "迪 丰尔松"
+        "py": "迪 福尔松"
       },
       {
         "de": "das Experiment",
@@ -428,7 +428,7 @@ module.exports = [
       {
         "de": "der Forscher",
         "zh": "研究员",
-        "py": "德尔 丰尔舍尔"
+        "py": "德尔 福尔舍尔"
       },
       {
         "de": "die Entdeckung",
@@ -538,7 +538,7 @@ module.exports = [
       {
         "de": "die Informatik",
         "zh": "计算机科学",
-        "py": "迪 因丰尔马蒂克"
+        "py": "迪 因福尔马蒂克"
       }
     ]
   },
@@ -620,7 +620,7 @@ module.exports = [
       {
         "de": "der Verlust",
         "zh": "亏损",
-        "py": "德尔 弗尔卢斯特"
+        "py": "德尔 费尔卢斯特"
       },
       {
         "de": "die Dividende",
