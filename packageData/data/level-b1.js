@@ -172,7 +172,7 @@ module.exports = [
       {
         "de": "die Spritze",
         "zh": "注射器",
-        "py": "迪 斯普里泽"
+        "py": "迪 施普里泽"
       },
       {
         "de": "das Antibiotikum",
@@ -182,7 +182,7 @@ module.exports = [
       {
         "de": "das Schmerzmittel",
         "zh": "止痛药",
-        "py": "达斯 斯梅尔茨米特尔"
+        "py": "达斯 施梅尔茨米特尔"
       },
       {
         "de": "das Fiebermittel",
@@ -192,7 +192,7 @@ module.exports = [
       {
         "de": "das Schlafmittel",
         "zh": "安眠药",
-        "py": "达斯 斯拉夫米特尔"
+        "py": "达斯 施拉夫米特尔"
       },
       {
         "de": "der Hustensaft",
@@ -247,7 +247,7 @@ module.exports = [
       {
         "de": "der Ausschlag",
         "zh": "皮疹",
-        "py": "德尔 奥斯斯拉克"
+        "py": "德尔 奥斯施拉克"
       },
       {
         "de": "die Wunde",
@@ -786,7 +786,7 @@ module.exports = [
       {
         "de": "die Scham",
         "zh": "羞耻",
-        "py": "迪 斯哈姆"
+        "py": "迪 施哈姆"
       },
       {
         "de": "der Neid",
@@ -866,7 +866,7 @@ module.exports = [
       {
         "de": "der Stress",
         "zh": "压力",
-        "py": "德尔 斯特雷斯"
+        "py": "德尔 施特雷斯"
       },
       {
         "de": "die Entspannung",
@@ -1365,7 +1365,7 @@ module.exports = [
       {
         "de": "kommunizieren",
         "zh": "沟通",
-        "py": "科穆尼兹伦"
+        "py": "科穆尼齐伦"
       },
       {
         "de": "reagieren",
@@ -1794,7 +1794,7 @@ module.exports = [
       {
         "de": "der Stahl",
         "zh": "钢",
-        "py": "德尔 斯塔尔"
+        "py": "德尔 施塔尔"
       },
       {
         "de": "das Holz",
@@ -1926,7 +1926,7 @@ module.exports = [
       {
         "de": "die Strafe",
         "zh": "惩罚",
-        "py": "迪 斯特拉弗"
+        "py": "迪 施特拉弗"
       },
       {
         "de": "das Bußgeld",
@@ -2205,7 +2205,7 @@ module.exports = [
       {
         "de": "Er ist so müde, dass er schläft.",
         "zh": "他如此疲倦以至于睡着了。",
-        "py": "尔 伊斯特 佐 米德 达斯 尔 斯莱夫特"
+        "py": "尔 伊斯特 佐 米德 达斯 尔 施莱夫特"
       },
       {
         "de": "Das ist so interessant, dass ich mehr lesen will.",
@@ -2799,7 +2799,7 @@ module.exports = [
       {
         "de": "Schwamm drüber!",
         "zh": "一笔勾销！",
-        "py": "斯万姆 丢贝尔"
+        "py": "施万姆 丢贝尔"
       },
       {
         "de": "Das ist doch klar!",
@@ -2994,7 +2994,7 @@ module.exports = [
       {
         "de": "Stille Wasser sind tief.",
         "zh": "静水流深。",
-        "py": "斯蒂勒 瓦瑟 辛特 提夫"
+        "py": "施蒂勒 瓦瑟 辛特 提夫"
       },
       {
         "de": "Ein Unglück kommt selten allein.",
@@ -3116,7 +3116,7 @@ module.exports = [
       {
         "de": "Ja, und Halsschmerzen.",
         "zh": "是的，还有喉咙痛。",
-        "py": "雅 温特 哈尔斯斯梅尔腾"
+        "py": "雅 温特 哈尔斯施梅尔腾"
       },
       {
         "de": "Ich messe jetzt Ihr Fieber.",

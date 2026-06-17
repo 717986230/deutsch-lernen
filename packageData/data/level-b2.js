@@ -87,7 +87,7 @@ module.exports = [
       {
         "de": "das schwarze Loch",
         "zh": "黑洞",
-        "py": "达斯 斯瓦尔泽 洛赫"
+        "py": "达斯 施瓦尔泽 洛赫"
       },
       {
         "de": "die Supernova",
@@ -249,7 +249,7 @@ module.exports = [
       {
         "de": "die Steuer",
         "zh": "税",
-        "py": "迪 斯托伊尔"
+        "py": "迪 施托伊尔"
       },
       {
         "de": "die Sozialversicherung",
@@ -650,7 +650,7 @@ module.exports = [
       {
         "de": "die Steuerlast",
         "zh": "税收负担",
-        "py": "迪 斯托伊尔拉斯特"
+        "py": "迪 施托伊尔拉斯特"
       },
       {
         "de": "das Sozialprodukt",
@@ -777,7 +777,7 @@ module.exports = [
       {
         "de": "die Strahlentherapie",
         "zh": "放射治疗",
-        "py": "迪 斯特拉伦特拉皮"
+        "py": "迪 施特拉伦特拉皮"
       },
       {
         "de": "die Physiotherapie",
@@ -822,7 +822,7 @@ module.exports = [
       {
         "de": "das Spenderorgan",
         "zh": "捐献器官",
-        "py": "达斯 斯彭德尔奥尔干"
+        "py": "达斯 施彭德尔奥尔干"
       },
       {
         "de": "die Transplantation",

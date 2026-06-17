@@ -247,7 +247,7 @@ module.exports = [
       {
         "de": "der Gutschein",
         "zh": "优惠券",
-        "py": "德尔 古特斯莱因"
+        "py": "德尔 古特施莱因"
       },
       {
         "de": "die Treuekarte",
@@ -277,7 +277,7 @@ module.exports = [
       {
         "de": "der Stil",
         "zh": "风格",
-        "py": "德尔 斯提尔"
+        "py": "德尔 施提尔"
       },
       {
         "de": "das Outfit",
@@ -302,12 +302,12 @@ module.exports = [
       {
         "de": "das Schnäppchen",
         "zh": "便宜货",
-        "py": "达斯 斯奈普黑恩"
+        "py": "达斯 施奈普黑恩"
       },
       {
         "de": "der Schlussverkauf",
         "zh": "季末清仓",
-        "py": "德尔 斯卢斯费尔考夫"
+        "py": "德尔 施卢斯费尔考夫"
       },
       {
         "de": "der Black Friday",
@@ -347,7 +347,7 @@ module.exports = [
       {
         "de": "sportlich",
         "zh": "运动的",
-        "py": "斯博特利希"
+        "py": "施博特利希"
       },
       {
         "de": "festlich",
@@ -649,7 +649,7 @@ module.exports = [
       {
         "de": "der Führerschein",
         "zh": "驾照",
-        "py": "德尔 菲勒斯莱因"
+        "py": "德尔 菲勒施莱因"
       }
     ]
   },
@@ -970,12 +970,12 @@ module.exports = [
       {
         "de": "das Spiegelei",
         "zh": "荷包蛋",
-        "py": "达斯 斯皮格尔艾"
+        "py": "达斯 施皮格尔艾"
       },
       {
         "de": "der Spinat",
         "zh": "菠菜",
-        "py": "德尔 斯皮纳特"
+        "py": "德尔 施皮纳特"
       },
       {
         "de": "der Kürbis",
@@ -1055,7 +1055,7 @@ module.exports = [
       {
         "de": "schneiden",
         "zh": "切",
-        "py": "斯奈顿"
+        "py": "施奈顿"
       },
       {
         "de": "hacken",
@@ -1070,7 +1070,7 @@ module.exports = [
       {
         "de": "schälen",
         "zh": "削皮",
-        "py": "斯雪伦"
+        "py": "施雪伦"
       },
       {
         "de": "waschen",
@@ -1115,7 +1115,7 @@ module.exports = [
       {
         "de": "abschmecken",
         "zh": "品尝调味",
-        "py": "阿普斯梅肯"
+        "py": "阿普施梅肯"
       },
       {
         "de": "umrühren",
@@ -2895,7 +2895,7 @@ module.exports = [
       {
         "de": "Nur in Blau und Schwarz.",
         "zh": "只有蓝色和黑色。",
-        "py": "努尔 因 布劳 温特 斯瓦尔茨"
+        "py": "努尔 因 布劳 温特 施瓦尔茨"
       },
       {
         "de": "Die Umkleidekabine ist dort.",
@@ -4015,7 +4015,7 @@ module.exports = [
       {
         "de": "der Schreibtisch",
         "zh": "办公桌",
-        "py": "德尔 斯莱布提什"
+        "py": "德尔 施莱布提什"
       },
       {
         "de": "das Passwort",
@@ -4102,7 +4102,7 @@ module.exports = [
       {
         "de": "die Sprechanlage",
         "zh": "对讲机",
-        "py": "迪 斯普雷赫安拉格"
+        "py": "迪 施普雷赫安拉格"
       },
       {
         "de": "der Backofen",
@@ -4147,7 +4147,7 @@ module.exports = [
       {
         "de": "die Steckdose",
         "zh": "插座",
-        "py": "迪 斯特克多斯"
+        "py": "迪 施特克多斯"
       },
       {
         "de": "der Lichtschalter",
@@ -4309,7 +4309,7 @@ module.exports = [
       {
         "de": "der Schiedsrichter",
         "zh": "裁判",
-        "py": "德尔 斯意茨里希特尔"
+        "py": "德尔 施意茨里希特尔"
       }
     ]
   },
@@ -4446,7 +4446,7 @@ module.exports = [
       {
         "de": "der Stamm",
         "zh": "树干",
-        "py": "德尔 斯塔姆"
+        "py": "德尔 施塔姆"
       },
       {
         "de": "der Ast",
@@ -4516,7 +4516,7 @@ module.exports = [
       {
         "de": "der Schimpanse",
         "zh": "黑猩猩",
-        "py": "德尔 斯孟帕恩斯"
+        "py": "德尔 施孟帕恩斯"
       },
       {
         "de": "der Bär",
@@ -4591,7 +4591,7 @@ module.exports = [
       {
         "de": "die Schildkröte",
         "zh": "乌龟",
-        "py": "迪 斯黑尔德克罗特"
+        "py": "迪 施黑尔德克罗特"
       },
       {
         "de": "das Krokodil",
@@ -4601,12 +4601,12 @@ module.exports = [
       {
         "de": "die Schlange",
         "zh": "蛇",
-        "py": "迪 斯拉格"
+        "py": "迪 施拉格"
       },
       {
         "de": "der Schmetterling",
         "zh": "蝴蝶",
-        "py": "德尔 斯梅特尔林"
+        "py": "德尔 施梅特尔林"
       },
       {
         "de": "die Biene",
@@ -4698,7 +4698,7 @@ module.exports = [
       {
         "de": "die Steppe",
         "zh": "草原",
-        "py": "迪 斯特普"
+        "py": "迪 施特普"
       },
       {
         "de": "das Moor",
@@ -4815,7 +4815,7 @@ module.exports = [
       {
         "de": "der Winterschnee",
         "zh": "冬雪",
-        "py": "德尔 文特尔斯奈"
+        "py": "德尔 文特尔施奈"
       },
       {
         "de": "Es taut.",
@@ -4825,7 +4825,7 @@ module.exports = [
       {
         "de": "Der erste Schnee fällt.",
         "zh": "第一场雪降下了。",
-        "py": "德尔 尔斯特 斯奈 费尔特"
+        "py": "德尔 尔斯特 施奈 费尔特"
       },
       {
         "de": "Die Blumen blühen.",
@@ -5242,7 +5242,7 @@ module.exports = [
       {
         "de": "schnell – schneller – am schnellsten",
         "zh": "快 – 更快 – 最快",
-        "py": "施奈尔 斯奈勒尔 安姆 施奈尔斯腾"
+        "py": "施奈尔 施奈勒尔 安姆 施奈尔斯腾"
       },
       {
         "de": "langsam – langsamer – am langsamsten",
@@ -5292,7 +5292,7 @@ module.exports = [
       {
         "de": "schwach – schwächer – am schwächsten",
         "zh": "弱 – 更弱 – 最弱",
-        "py": "斯瓦赫 斯韦黑尔 安姆 斯韦赫斯腾"
+        "py": "施瓦赫 施韦黑尔 安姆 施韦赫斯腾"
       },
       {
         "de": "schön – schöner – am schönsten",
@@ -5409,12 +5409,12 @@ module.exports = [
       {
         "de": "Bescheid wissen",
         "zh": "知情/了解",
-        "py": "贝斯莱特 维森"
+        "py": "贝施莱特 维森"
       },
       {
         "de": "Bescheid geben",
         "zh": "通知",
-        "py": "贝斯莱特 根本"
+        "py": "贝施莱特 根本"
       },
       {
         "de": "auf dem Laufenden bleiben",

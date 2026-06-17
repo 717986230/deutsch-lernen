@@ -860,7 +860,7 @@ module.exports = [
       {
         "de": "Schlaf gut!",
         "zh": "睡个好觉！",
-        "py": "斯拉夫 古特"
+        "py": "施拉夫 古特"
       },
       {
         "de": "Träum süß!",
@@ -970,7 +970,7 @@ module.exports = [
       {
         "de": "Streit muss nicht sein.",
         "zh": "争吵没有必要。",
-        "py": "斯特莱特 姆斯 尼希特 扎因"
+        "py": "施特莱特 姆斯 尼希特 扎因"
       },
       {
         "de": "Entschuldige bitte.",
@@ -3014,7 +3014,7 @@ module.exports = [
       {
         "de": "die Stimme",
         "zh": "声音",
-        "py": "迪 斯提梅"
+        "py": "迪 施提梅"
       },
       {
         "de": "das Gesicht",
@@ -3131,7 +3131,7 @@ module.exports = [
       {
         "de": "schmutzig",
         "zh": "脏",
-        "py": "斯穆茨齐希"
+        "py": "施穆茨齐希"
       },
       {
         "de": "allein",
@@ -4114,12 +4114,12 @@ module.exports = [
       {
         "de": "der Schüler",
         "zh": "学生（男）",
-        "py": "德尔 斯许勒"
+        "py": "德尔 施许勒"
       },
       {
         "de": "die Schülerin",
         "zh": "学生（女）",
-        "py": "迪 斯许勒林"
+        "py": "迪 施许勒林"
       },
       {
         "de": "das Fach",
@@ -4129,7 +4129,7 @@ module.exports = [
       {
         "de": "der Stundenplan",
         "zh": "课程表",
-        "py": "德尔 斯通登普兰"
+        "py": "德尔 施通登普兰"
       },
       {
         "de": "die Pause",
@@ -4229,7 +4229,7 @@ module.exports = [
       {
         "de": "der Abschluss",
         "zh": "毕业",
-        "py": "德尔 阿普斯卢斯"
+        "py": "德尔 阿普施卢斯"
       },
       {
         "de": "das Zeugnis",
@@ -4261,7 +4261,7 @@ module.exports = [
       {
         "de": "schreien",
         "zh": "叫喊",
-        "py": "斯莱恩"
+        "py": "施莱恩"
       },
       {
         "de": "flüstern",
@@ -4276,7 +4276,7 @@ module.exports = [
       {
         "de": "schütteln",
         "zh": "摇头",
-        "py": "斯许特尔恩"
+        "py": "施许特尔恩"
       },
       {
         "de": "winken",
@@ -4296,7 +4296,7 @@ module.exports = [
       {
         "de": "händeschütteln",
         "zh": "握手",
-        "py": "汉德斯许特尔恩"
+        "py": "汉德施许特尔恩"
       },
       {
         "de": "verneigen",
@@ -4331,7 +4331,7 @@ module.exports = [
       {
         "de": "schieben",
         "zh": "推",
-        "py": "斯意本"
+        "py": "施意本"
       },
       {
         "de": "ziehen",
@@ -4341,7 +4341,7 @@ module.exports = [
       {
         "de": "stechen",
         "zh": "刺",
-        "py": "斯特黑恩"
+        "py": "施特黑恩"
       },
       {
         "de": "kratzen",
@@ -4351,7 +4351,7 @@ module.exports = [
       {
         "de": "streicheln",
         "zh": "抚摸",
-        "py": "斯特莱黑尔恩"
+        "py": "施特莱黑尔恩"
       },
       {
         "de": "klopfen",
@@ -4371,7 +4371,7 @@ module.exports = [
       {
         "de": "schleichen",
         "zh": "溜步",
-        "py": "斯莱黑恩"
+        "py": "施莱黑恩"
       },
       {
         "de": "kriechen",
@@ -4381,7 +4381,7 @@ module.exports = [
       {
         "de": "stolpern",
         "zh": "绊倒",
-        "py": "斯托尔佩恩"
+        "py": "施托尔佩恩"
       },
       {
         "de": "hinfallen",
@@ -4458,7 +4458,7 @@ module.exports = [
       {
         "de": "sauber ↔ schmutzig",
         "zh": "干净 ↔ 脏",
-        "py": "扎乌贝尔 ↔ 斯穆茨齐希"
+        "py": "扎乌贝尔 ↔ 施穆茨齐希"
       },
       {
         "de": "jung ↔ alt",
@@ -4478,7 +4478,7 @@ module.exports = [
       {
         "de": "stark ↔ schwach",
         "zh": "强 ↔ 弱",
-        "py": "施塔尔克 ↔ 斯瓦赫"
+        "py": "施塔尔克 ↔ 施瓦赫"
       },
       {
         "de": "rich ↔ arm (reich ↔ arm)",
@@ -4700,7 +4700,7 @@ module.exports = [
       {
         "de": "der Schinken",
         "zh": "火腿",
-        "py": "德尔 斯欣肯"
+        "py": "德尔 施欣肯"
       },
       {
         "de": "das Gemüse",
