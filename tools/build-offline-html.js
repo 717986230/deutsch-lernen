@@ -51,11 +51,17 @@ function build() {
   // 用函数形式避免 $ 替换语义
   let html = tpl.replace('/*__CATEGORIES__*/', () => injected)
 
-  // 注入英语词库（packageData/data/en.js）
+  // 注入英语词库：手写 en.js（优先）+ 自动 en-auto.js（ECDICT 生成）
   try {
     const enPath = path.join(__dirname, '..', 'packageData', 'data', 'en.js')
     delete require.cache[require.resolve(enPath)]
-    const enCats = require(enPath)
+    let enCats = require(enPath)
+    try {
+      const autoPath = path.join(__dirname, '..', 'packageData', 'data', 'en-auto.js')
+      delete require.cache[require.resolve(autoPath)]
+      const autoCats = require(autoPath)
+      enCats = enCats.concat(autoCats)
+    } catch (e2) { console.warn('  ⚠ en-auto.js 跳过：', e2.message) }
     html = html.replace('/*__EN_CATEGORIES__*/[]', () => JSON.stringify(enCats))
     const ec = enCats.reduce((s, c) => s + c.phrases.length, 0)
     console.log('  英语词库：%d 分类 / %d 词句', enCats.length, ec)

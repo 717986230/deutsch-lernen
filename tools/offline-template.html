@@ -961,7 +961,7 @@ function setLang(lang){
   document.body.classList.toggle('lang-en',LANG==='en');
   updateHeroLang();
   // 词句版块默认回到「全部」级别，避免英语词少时空白
-  activeLevel = (LANG==='en')?'all':activeLevel;
+  activeLevel = (LANG==='en')?'0':activeLevel;
   activeCat='all';
   if(typeof buildLevelTabs==='function'){buildLevelTabs();buildCatTabs();renderPhrases();showLevelInfo(activeLevel);}
   // 英语模式下若停留在德语专属版块，跳到「词句大全」
