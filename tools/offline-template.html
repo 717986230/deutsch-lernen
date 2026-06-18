@@ -202,6 +202,8 @@ to{opacity:1}}
 #nav{padding-right:150px}
 body.lang-en .nav-de-only{display:none}
 body:not(.lang-en) .nav-en-only{display:none}
+body.lang-en .de-only-block{display:none}
+body:not(.lang-en) .en-only-block{display:none}
 /* SRS 生词本 */
 .srs-badge{display:inline-block;min-width:16px;padding:0 5px;margin-left:4px;border-radius:9px;background:#ff4b4b;color:#fff;font-size:10px;line-height:16px;text-align:center;vertical-align:middle}
 .star-btn{flex-shrink:0;width:28px;height:28px;border:none;border-radius:50%;background:transparent;color:var(--text-faint);font-size:15px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;line-height:1;padding:0;transition:all .15s}
@@ -248,6 +250,7 @@ body:not(.lang-en) .nav-en-only{display:none}
     <p id="heroSub">发音 · 数字 · 语法 · {{PHRASE_COUNT}} 词句 · 5阶段进阶 · 互动测验</p>
   </div>
   <div class="container">
+   <div class="de-only-block">
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:24px">
       <div class="card" onclick="showSection('pronunciation')" style="text-align:center;padding:24px 16px">
         <div style="font-size:32px;margin-bottom:10px">🔤</div>
@@ -340,6 +343,78 @@ body:not(.lang-en) .nav-en-only{display:none}
     <div class="tip-card"><div class="tip-title">⑯ 把手机系统语言切成德语</div><div class="tip-body">制造<b>被动沉浸</b>：每天自然接触几十个高频词(Einstellungen 设置、Senden 发送、Löschen 删除…)。零成本、全天候磨语感。</div></div>
     <div class="tip-card"><div class="tip-title">⑰ 称呼先分清 du / Sie</div><div class="tip-body">朋友家人用 <b>du</b>，陌生人·长辈·正式场合用 <b>Sie</b>(动词跟着变)。<b>用错比语法错更扎眼</b>——这是礼貌问题，优先记牢。</div></div>
     <div class="tip-card"><div class="tip-title">⑱ 别怕开口犯错</div><div class="tip-body">德国人欣赏"敢说"。<b>说错→被纠正→记住，正是进步最快的循环</b>。沉默才是最大的障碍，每天逼自己开口几句。</div></div>
+   </div><!-- /de-only-block -->
+
+   <div class="en-only-block">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:24px">
+      <div class="card" onclick="showSection('en-pron')" style="text-align:center;padding:24px 16px">
+        <div style="font-size:32px;margin-bottom:10px">🔤</div>
+        <div style="font-size:15px;color:var(--gold);margin-bottom:6px">英语发音</div>
+        <div style="font-size:12px;color:var(--text-dim)">元音·组合音·谐音示例</div>
+      </div>
+      <div class="card" onclick="showSection('en-num')" style="text-align:center;padding:24px 16px">
+        <div style="font-size:32px;margin-bottom:10px">🔢</div>
+        <div style="font-size:15px;color:var(--gold);margin-bottom:6px">英语数字</div>
+        <div style="font-size:12px;color:var(--text-dim)">teen/ty·大数·序数词</div>
+      </div>
+      <div class="card" onclick="showSection('en-grammar')" style="text-align:center;padding:24px 16px">
+        <div style="font-size:32px;margin-bottom:10px">📐</div>
+        <div style="font-size:15px;color:var(--gold);margin-bottom:6px">英语语法</div>
+        <div style="font-size:12px;color:var(--text-dim)">be动词·冠词·时态·语序</div>
+      </div>
+      <div class="card" onclick="showSection('phrases')" style="text-align:center;padding:24px 16px">
+        <div style="font-size:32px;margin-bottom:10px">💬</div>
+        <div style="font-size:15px;color:var(--gold);margin-bottom:6px">词句大全</div>
+        <div style="font-size:12px;color:var(--text-dim)">常用英语·含中文谐音</div>
+      </div>
+      <div class="card" onclick="showSection('quiz')" style="text-align:center;padding:24px 16px">
+        <div style="font-size:32px;margin-bottom:10px">🎯</div>
+        <div style="font-size:15px;color:var(--gold);margin-bottom:6px">练习测验</div>
+        <div style="font-size:12px;color:var(--text-dim)">看中文·选英语</div>
+      </div>
+      <div class="card" onclick="showSection('srs')" style="text-align:center;padding:24px 16px">
+        <div style="font-size:32px;margin-bottom:10px">📌</div>
+        <div style="font-size:15px;color:var(--gold);margin-bottom:6px">生词本</div>
+        <div style="font-size:12px;color:var(--text-dim)">间隔重复·主动回忆</div>
+      </div>
+    </div>
+
+    <div class="sec-title" style="margin-top:36px"><span class="sec-title-icon">🎯</span><span class="sec-title-text">按阶段学习 · 点击进入</span></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-bottom:8px">
+      <div class="level-card" onclick="goLevel('0')">
+        <div class="lc-stage" style="color:#58cc02">🌱 入门</div>
+        <div class="lc-title">开口说第一句</div>
+        <div class="lc-desc">问候、数字、最常用日常表达</div><div class="lc-arrow">→</div>
+      </div>
+      <div class="level-card" onclick="goLevel('a1')">
+        <div class="lc-stage" style="color:#1cb0f6">⭐ 中考</div>
+        <div class="lc-title">初中水平</div>
+        <div class="lc-desc">自我介绍、时间、家庭、高频词</div><div class="lc-arrow">→</div>
+      </div>
+      <div class="level-card" onclick="goLevel('a2')">
+        <div class="lc-stage" style="color:var(--gold)">⭐⭐ 高考</div>
+        <div class="lc-title">高中水平</div>
+        <div class="lc-desc">购物、餐厅、旅行、天气等场景</div><div class="lc-arrow">→</div>
+      </div>
+      <div class="level-card" onclick="goLevel('b1')">
+        <div class="lc-stage" style="color:#ff7a4d">🔥 四级 CET-4</div>
+        <div class="lc-title">大学四级</div>
+        <div class="lc-desc">更广的词汇与表达（持续扩充中）</div><div class="lc-arrow">→</div>
+      </div>
+      <div class="level-card" onclick="goLevel('b2')">
+        <div class="lc-stage" style="color:#ff4b4b">💎 六级 CET-6</div>
+        <div class="lc-title">大学六级</div>
+        <div class="lc-desc">进阶词汇（持续扩充中）</div><div class="lc-arrow">→</div>
+      </div>
+    </div>
+
+    <div class="sec-title" style="margin-top:36px"><span class="sec-title-icon">🔑</span><span class="sec-title-text">学习秘诀 · 中国人学英语</span></div>
+    <div class="tip-card"><div class="tip-title">① 谐音只是拐杖，尽早换成真人发音</div><div class="tip-body">英语很多音中文没有（th、卷舌 r、æ）。先用谐音敢开口，但<b>务必点 🔊 跟读模仿</b>，别长期依赖谐音。</div></div>
+    <div class="tip-card"><div class="tip-title">② 死磕高频词，别贪多</div><div class="tip-body"><b>约 800–1000 高频词覆盖日常 80%</b>。先把入门/中考词吃透，再上四级六级，扩词比求全重要。</div></div>
+    <div class="tip-card"><div class="tip-title">③ 成块记句子，别只背单词</div><div class="tip-body">按场景整句记（问候/点餐/问路），开口就能用。<b>影子跟读(Shadowing)模仿语调</b>最练口语。</div></div>
+    <div class="tip-card"><div class="tip-title">④ 间隔重复，每天少量</div><div class="tip-body">点单词卡上的 <b style="color:#ffb300">☆</b> 收藏，到「📌 生词本」按遗忘曲线复习；<b>每天 15 分钟胜过周末突击</b>。</div></div>
+    <div class="tip-card"><div class="tip-title">⑤ 磨耳朵 + 别怕犯错</div><div class="tip-body">多听慢速英语、儿歌、播客先熟节奏；<b>说错→被纠正→记住</b>是进步最快的循环，沉默才是最大障碍。</div></div>
+   </div><!-- /en-only-block -->
   </div>
 </div>
 
