@@ -704,6 +704,11 @@ body:not(.lang-en) .en-only-block{display:none}
         <div style="color:var(--gold);margin-bottom:4px">反向测验</div>
         <div style="font-size:12px;color:var(--text-dim)">看德语→选中文</div>
       </div>
+      <div class="card de-only-block" onclick="startQuiz('gender')" style="text-align:center;padding:20px">
+        <div style="font-size:28px;margin-bottom:8px">🏷️</div>
+        <div style="color:var(--gold);margin-bottom:4px">冠词测验</div>
+        <div style="font-size:12px;color:var(--text-dim)">猜 der·die·das</div>
+      </div>
     </div>
     <div style="font-size:12px;color:var(--text-faint);margin-bottom:4px">出题范围（词汇 / 反向测验）：</div>
     <div class="level-tabs" id="quizLevelTabs">
@@ -1481,6 +1486,7 @@ function quizHeader(){
 }
 function nextQ(){
   if(mq.mode==='num'){ nextNumMainQ(); return; }
+  if(mq.mode==='gender'){ nextGenderQ(); return; }
   const all=getAllPhrases();
   const idx=Math.floor(Math.random()*all.length);
   mq.current=all[idx];
@@ -1562,6 +1568,38 @@ function nextNumMainQ(){
       <div class="quiz-opts">${optsHtml}</div>
       <button class="btn" onclick="startQuiz('num')" style="font-size:12px">重新开始</button>
     </div>`;
+}
+// 练习测验·冠词题（猜 der/die/das）—— 德语最难点专项
+const GENDER_COLOR={der:'#1cb0f6',die:'#ff4b4b',das:'#58cc02'};
+function nextGenderQ(){
+  const all=getAllPhrases().filter(p=>/^(der|die|das)\s+\S/.test(p.de));
+  if(!all.length){document.getElementById('mainQuizArea').innerHTML='<div class="quiz-box">该范围暂无带冠词的名词，换个出题范围试试。</div>';return;}
+  mq.current=all[Math.floor(Math.random()*all.length)];
+  const noun=mq.current.de.replace(/^(der|die|das)\s+/,'');
+  const correct=mq.current.de.match(/^(der|die|das)/)[1];
+  const opts=['der','die','das'];
+  const optsHtml=opts.map(o=>`<button class="quiz-opt" lang="de" style="font-weight:700;color:${GENDER_COLOR[o]}" onclick="checkGenderQ(this,'${o}','${correct}')">${o}</button>`).join('');
+  document.getElementById('mainQuizArea').innerHTML=`
+    <div class="quiz-box">
+      ${quizHeader()}
+      <div class="quiz-q" style="font-size:24px" lang="de">${noun}</div>
+      <div class="quiz-hint">这个名词是 der / die / das？<br><span style="font-size:11px"><b style="color:#1cb0f6">der</b> 阳 · <b style="color:#ff4b4b">die</b> 阴 · <b style="color:#58cc02">das</b> 中</span></div>
+      <div class="quiz-opts" style="grid-template-columns:1fr 1fr 1fr">${optsHtml}</div>
+      <button class="btn" onclick="startQuiz('gender')" style="font-size:12px">重新开始</button>
+    </div>`;
+}
+function checkGenderQ(btn,sel,correct){
+  document.querySelectorAll('#mainQuizArea .quiz-opt').forEach(b=>b.disabled=true);
+  mq.total++;
+  if(sel===correct){btn.classList.add('correct');mq.score++;}
+  else{
+    btn.classList.add('wrong');
+    document.querySelectorAll('#mainQuizArea .quiz-opt').forEach(b=>{if(b.textContent.trim()===correct)b.classList.add('correct');});
+    if(typeof srsAdd==='function')srsAdd(mq.current); // 答错的词进生词本
+  }
+  if(mq.current&&mq.current.de){try{speakDE(mq.current.de);}catch(e){}}
+  const done=mq.total>=mq.roundLen;
+  setTimeout(done?showQuizResult:nextQ,1400);
 }
 
 // ══════════════════════════════════════
