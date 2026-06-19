@@ -68,6 +68,10 @@ body{background:var(--bg);color:var(--text);font-family:'Georgia',serif;min-heig
 .para-spk.speaking{opacity:1;background:#58cc02;color:#fff}
 .read-para{margin-bottom:10px;padding:6px 8px;border-radius:8px;transition:background .2s}
 .read-para.rp-on{background:rgba(88,204,2,.12)}
+.rd-word{cursor:pointer;border-radius:3px;transition:background .12s}
+.rd-word:hover{background:rgba(88,204,2,.18)}
+.rd-toast{position:fixed;left:50%;bottom:84px;transform:translateX(-50%) translateY(10px);z-index:400;background:rgba(40,40,40,.92);color:#fff;font-size:13px;padding:9px 16px;border-radius:20px;opacity:0;visibility:hidden;transition:all .2s;max-width:88%;text-align:center}
+.rd-toast.show{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
 .speak-btn.speaking{background:#58cc02;color:#fff;animation:pulse .7s infinite}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(88,204,2,.4)}50%{box-shadow:0 0 0 6px rgba(88,204,2,0)}}
 .card.speaking-now{border-color:#58cc02;background:rgba(88,204,2,.08);box-shadow:0 0 0 2px rgba(88,204,2,.45),0 4px 16px rgba(88,204,2,.2)}
@@ -745,7 +749,7 @@ body:not(.lang-en) .en-only-block{display:none}
     <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 4px;color:var(--text)">分级阅读短文</h2>
     <p style="text-align:center;font-size:13px;color:var(--text-dim);margin-bottom:4px">0基础 → C2 循序渐进 · 中德对照 · 🔊 慢速朗读</p>
     <div style="text-align:center;margin:10px 0 6px"><button id="loopAllBtn" class="loop-all-btn" type="button" onclick="toggleLoopAll()">🔊 循环朗读全部</button></div>
-    <p style="text-align:center;font-size:12px;color:var(--text-faint);margin-bottom:6px">逐句朗读并高亮 · 读完自动循环 · 点小喇叭可单独听某句</p>
+    <p style="text-align:center;font-size:12px;color:var(--text-faint);margin-bottom:6px">逐句朗读并高亮 · 读完自动循环 · 点小喇叭听某句 · 💡 <b style="color:#46a302">点句中德语词</b>可听发音并加入生词本</p>
     <div class="level-tabs" id="readLevelTabs"></div>
     <div id="readCount" style="font-size:12px;color:var(--gold-dim);margin:4px 0 10px"></div>
     <div id="readList"></div>
@@ -1721,13 +1725,47 @@ function buildReadTabs(){
 }
 function setReadLevel(k){stopReading();readActive=k;buildReadTabs();renderReadings();}
 function _getReadList(){return READINGS.filter(r=>readActive==='all'||r.level===readActive);}
+// 阅读点词入生词本：词库查表（德语）
+let _deWordMap=null;
+function buildDeWordMap(){
+  _deWordMap={};
+  DE_CATEGORIES.forEach(c=>c.phrases.forEach(p=>{
+    const noun=p.de.replace(/^(der|die|das)\s+/,'');
+    if(!/\s/.test(noun)){ const k=noun.toLowerCase(); if(!_deWordMap[k])_deWordMap[k]=p; }
+    const full=p.de.toLowerCase(); if(!_deWordMap[full])_deWordMap[full]=p;
+  }));
+}
+function wrapWords(text){
+  return text.split(/(\s+)/).map(t=>/\S/.test(t)?`<span class="rd-word" onclick="readWordClick(event,this)">${t}</span>`:t).join('');
+}
+function readWordClick(e,el){
+  e.stopPropagation();
+  if(!_deWordMap)buildDeWordMap();
+  const raw=el.textContent;
+  const clean=raw.replace(/^[^A-Za-zÄÖÜäöüß]+|[^A-Za-zÄÖÜäöüß]+$/g,'');
+  if(!clean)return;
+  try{speakDE(clean);}catch(_){}
+  const hit=_deWordMap[clean.toLowerCase()];
+  if(hit){
+    if(typeof srsAdd==='function'){ const added=srsAdd(hit); rdToast(added?('✓ 已加入生词本：'+hit.de):('已在生词本：'+hit.de)); }
+  } else {
+    rdToast('词库暂无「'+clean+'」，可在词句大全搜索');
+  }
+}
+let _rdToastT=null;
+function rdToast(msg){
+  let t=document.getElementById('rdToast');
+  if(!t){t=document.createElement('div');t.id='rdToast';t.className='rd-toast';document.body.appendChild(t);}
+  t.textContent=msg; t.classList.add('show');
+  clearTimeout(_rdToastT); _rdToastT=setTimeout(()=>t.classList.remove('show'),1800);
+}
 function renderReadings(){
   const list=_getReadList();
   const cnt=document.getElementById('readCount');
   if(cnt)cnt.textContent='共 '+list.length+' 篇短文';
   const el=document.getElementById('readList');
   el.innerHTML=list.map((r,ri)=>{
-    const body=r.paras.map((p,pi)=>`<div class="read-para" id="rp_${ri}_${pi}"><div style="display:flex;align-items:start;gap:8px"><button class="para-spk" type="button" title="朗读本句" aria-label="朗读本句" onclick="speakPara(this,'${p[0].replace(/\\/g,"\\\\").replace(/'/g,"\\'")}')">🔊</button><div style="flex:1"><div style="font-size:15px;color:var(--text);line-height:1.6" lang="de">${p[0]}</div><div style="font-size:13px;color:var(--text-dim);margin-top:2px">${p[1]}</div></div></div></div>`).join('');
+    const body=r.paras.map((p,pi)=>`<div class="read-para" id="rp_${ri}_${pi}"><div style="display:flex;align-items:start;gap:8px"><button class="para-spk" type="button" title="朗读本句" aria-label="朗读本句" onclick="speakPara(this,'${p[0].replace(/\\/g,"\\\\").replace(/'/g,"\\'")}')">🔊</button><div style="flex:1"><div style="font-size:15px;color:var(--text);line-height:1.6" lang="de">${wrapWords(p[0])}</div><div style="font-size:13px;color:var(--text-dim);margin-top:2px">${p[1]}</div></div></div></div>`).join('');
     return `<div class="card" id="rcard_${ri}" style="cursor:default;margin-bottom:14px">
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap">
         <span style="font-size:17px;font-weight:600;color:#46a302" lang="de">${r.title}</span>
