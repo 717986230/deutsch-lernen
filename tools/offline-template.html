@@ -696,17 +696,17 @@ body:not(.lang-en) .en-only-block{display:none}
       <div class="card" onclick="startQuiz('num')" style="text-align:center;padding:20px">
         <div style="font-size:28px;margin-bottom:8px">🔢</div>
         <div style="color:var(--gold);margin-bottom:4px">数字测验</div>
-        <div style="font-size:12px;color:var(--text-dim)">看数字→说德语</div>
+        <div style="font-size:12px;color:var(--text-dim)" id="qdNum">看数字→说德语</div>
       </div>
       <div class="card" onclick="startQuiz('phrase')" style="text-align:center;padding:20px">
         <div style="font-size:28px;margin-bottom:8px">💬</div>
         <div style="color:var(--gold);margin-bottom:4px">词汇测验</div>
-        <div style="font-size:12px;color:var(--text-dim)">看中文→选德语</div>
+        <div style="font-size:12px;color:var(--text-dim)" id="qdPhrase">看中文→选德语</div>
       </div>
       <div class="card" onclick="startQuiz('reverse')" style="text-align:center;padding:20px">
         <div style="font-size:28px;margin-bottom:8px">🔄</div>
         <div style="color:var(--gold);margin-bottom:4px">反向测验</div>
-        <div style="font-size:12px;color:var(--text-dim)">看德语→选中文</div>
+        <div style="font-size:12px;color:var(--text-dim)" id="qdReverse">看德语→选中文</div>
       </div>
       <div class="card de-only-block" onclick="startQuiz('gender')" style="text-align:center;padding:20px">
         <div style="font-size:28px;margin-bottom:8px">🏷️</div>
@@ -969,6 +969,7 @@ function setLang(lang){
   document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.dataset.lang===LANG));
   document.body.classList.toggle('lang-en',LANG==='en');
   updateHeroLang();
+  updateQuizCardLang();
   // 词句版块默认回到「全部」级别，避免英语词少时空白
   activeLevel = (LANG==='en')?'0':activeLevel;
   activeCat='all';
@@ -977,6 +978,13 @@ function setLang(lang){
   const cur=[...document.querySelectorAll('.section')].find(s=>s.classList.contains('active'));
   if(cur&&LANG==='en'&&['pronunciation','numbers','grammar','reading'].includes(cur.id))showSection('phrases');
   if(cur&&LANG==='de'&&['en-pron','en-num','en-grammar'].includes(cur.id))showSection('phrases');
+}
+function updateQuizCardLang(){
+  const en=LANG==='en';
+  const set=(id,t)=>{const e=document.getElementById(id);if(e)e.textContent=t;};
+  set('qdNum', en?'看数字→选英语':'看数字→说德语');
+  set('qdPhrase', en?'看中文→选英语':'看中文→选德语');
+  set('qdReverse', en?'看英语→选中文':'看德语→选中文');
 }
 function updateHeroLang(){
   const lab=document.getElementById('heroLabel'),tit=document.getElementById('heroTitle'),sub=document.getElementById('heroSub');
@@ -1024,6 +1032,7 @@ renderNumGrid('enNum1',enNums1);
 renderNumGrid('enNum2',enNums2);
 renderNumGrid('enNum3',enNums3);
 renderNumGrid('enNum4',enNums4);
+const EN_NUM_POOL=[...enNums1,...enNums2,...enNums3]; // 英语数字测验池
 
 // 字母表渲染（含🔊朗读）
 function renderLetterGrid(){
@@ -1555,7 +1564,7 @@ function showQuizResult(){
 }
 // 练习测验·数字题（看数字→选德语）
 function nextNumMainQ(){
-  const pool=NUM_POOL;
+  const pool=(typeof LANG!=='undefined'&&LANG==='en')?EN_NUM_POOL:NUM_POOL;
   mq.current=pool[Math.floor(Math.random()*pool.length)];
   const wrong=[];
   while(wrong.length<3){
