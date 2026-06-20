@@ -711,7 +711,7 @@ body:not(.lang-en) .en-only-block{display:none}
       <span id="playAllInfo" style="font-size:12px;color:var(--text-dim)"></span>
     </div>
     <div class="spk-panel">
-      <label>语速 <input type="range" min="0.4" max="1.1" step="0.05" value="0.62" id="spkRate" oninput="spkSet('rate',+this.value);document.getElementById('spkRateV').textContent=this.value"> <span id="spkRateV">0.62</span></label>
+      <label>语速 <input type="range" min="0.4" max="1.1" step="0.05" value="0.62" id="spkRate" oninput="setSpkRate(this.value)"> <span id="spkRateV">0.62</span></label>
       <label>遍数 <select id="spkRepeat" onchange="spkSet('repeat',+this.value)"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option></select></label>
       <label><input type="checkbox" id="spkZh" checked onchange="spkSet('zh',this.checked)"> 读中文</label>
       <label><input type="checkbox" id="spkShuffle" onchange="spkSet('shuffle',this.checked)"> 乱序</label>
@@ -788,6 +788,7 @@ body:not(.lang-en) .en-only-block{display:none}
     <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 4px;color:var(--text)">分级阅读短文</h2>
     <p style="text-align:center;font-size:13px;color:var(--text-dim);margin-bottom:4px">0基础 → C2 循序渐进 · 中德对照 · 🔊 慢速朗读</p>
     <div style="text-align:center;margin:10px 0 6px"><button id="loopAllBtn" class="loop-all-btn" type="button" onclick="toggleLoopAll()">🔊 循环朗读全部</button></div>
+    <div style="text-align:center;margin:2px 0 6px;font-size:13px;color:var(--text-dim)">🐢 朗读语速 <input type="range" min="0.4" max="1.1" step="0.05" value="0.62" id="readRate" oninput="setSpkRate(this.value)" style="vertical-align:middle;width:150px;accent-color:#58cc02"> <span id="readRateV" style="color:#46a302;font-weight:600">0.62</span> 🐇</div>
     <p style="text-align:center;font-size:12px;color:var(--text-faint);margin-bottom:6px">逐句朗读并高亮 · 读完自动循环 · 点小喇叭听某句 · 💡 <b style="color:#46a302">点句中德语词</b>可听发音并加入生词本</p>
     <div class="level-tabs" id="readLevelTabs"></div>
     <div id="readCount" style="font-size:12px;color:var(--gold-dim);margin:4px 0 10px"></div>
@@ -1395,8 +1396,14 @@ function makeCard(p,id){
 let _spk={rate:0.62,repeat:2,zh:true,shuffle:false};
 try{Object.assign(_spk,JSON.parse(localStorage.getItem('spkCfg')||'{}'));}catch(e){}
 function spkSet(k,v){_spk[k]=v;try{localStorage.setItem('spkCfg',JSON.stringify(_spk));}catch(e){}}
+function setSpkRate(v){ // 语速：词句区/阅读区共享，改一处两边同步
+  v=+v; spkSet('rate',v);
+  ['spkRate','readRate'].forEach(id=>{const e=document.getElementById(id);if(e)e.value=v;});
+  ['spkRateV','readRateV'].forEach(id=>{const e=document.getElementById(id);if(e)e.textContent=v;});
+}
 function spkInitPanel(){
   const r=document.getElementById('spkRate');if(r){r.value=_spk.rate;document.getElementById('spkRateV').textContent=_spk.rate;}
+  const rr=document.getElementById('readRate');if(rr){rr.value=_spk.rate;document.getElementById('readRateV').textContent=_spk.rate;}
   const p=document.getElementById('spkRepeat');if(p)p.value=String(_spk.repeat);
   const z=document.getElementById('spkZh');if(z)z.checked=_spk.zh;
   const s=document.getElementById('spkShuffle');if(s)s.checked=_spk.shuffle;
