@@ -639,6 +639,40 @@ body:not(.lang-en) .en-only-block{display:none}
         <div>Bitte + 动词 → 请……（命令式）</div>
       </div>
     </div>
+
+    <div class="sec-title"><span class="sec-title-icon">🧩</span><span class="sec-title-text">完成时 Perfekt（最常用的过去）</span></div>
+    <div class="rule-box">
+      <h3>haben / sein + 过去分词（句尾）</h3>
+      <div style="font-size:13px;line-height:2.1;color:#777">
+        <div>Ich <b style="color:var(--gold)">habe</b> Deutsch <b style="color:var(--gold)">gelernt</b>.（我学了德语）</div>
+        <div>Ich <b style="color:var(--gold)">bin</b> nach Berlin <b style="color:var(--gold)">gefahren</b>.（我去了柏林）</div>
+        <div style="color:var(--text-dim);margin-top:4px">规律：<b>位移/状态变化用 sein</b>(gehen/kommen/fahren/werden)，<b>其余多用 haben</b>。过去分词常是 <b>ge-…-t</b>(规则) 或 <b>ge-…-en</b>(不规则)，永远<b>甩到句尾</b>。</div>
+      </div>
+    </div>
+
+    <div class="sec-title"><span class="sec-title-icon">✂️</span><span class="sec-title-text">可分动词</span></div>
+    <div class="tip-card"><div class="tip-body"><b>aufstehen</b>(起床)→ Ich <b style="color:var(--gold)">stehe</b> um 7 Uhr <b style="color:var(--gold)">auf</b>.（前缀 auf 甩句尾）。常见可分前缀：auf-/an-/ein-/aus-/mit-/zu-/ab-/vor-。<b>听句子要等到最后</b>——前缀能改变词义(stehen 站 → aufstehen 起床)。</div></div>
+
+    <div class="sec-title"><span class="sec-title-icon">🔚</span><span class="sec-title-text">从句语序：动词到句尾</span></div>
+    <div class="rule-box">
+      <div style="font-size:13px;line-height:2.1;color:#777">
+        <div>主句：Ich bleibe zu Hause.（我待在家）</div>
+        <div>加 <b style="color:var(--gold)">weil/dass/wenn/ob</b> → 动词去句尾：</div>
+        <div>…, <b>weil</b> ich krank <b style="color:var(--gold)">bin</b>.（因为我病了）</div>
+        <div>…, <b>dass</b> er morgen <b style="color:var(--gold)">kommt</b>.（……他明天来）</div>
+        <div style="color:var(--text-dim);margin-top:4px">口诀：<b>weil/dass/wenn 一出现，变位动词站最后。</b></div>
+      </div>
+    </div>
+
+    <div class="sec-title"><span class="sec-title-icon">🎨</span><span class="sec-title-text">形容词词尾（德语难点）</span></div>
+    <div class="rule-box">
+      <h3>定冠词后（der/die/das）第一格</h3>
+      <div style="font-size:13px;line-height:2.1;color:#777">
+        <div>der gut<b style="color:var(--gold)">e</b> Mann（好男人）· die gut<b style="color:var(--gold)">e</b> Frau · das gut<b style="color:var(--gold)">e</b> Kind</div>
+        <div>不定冠词后：ein gut<b style="color:#ff4b4b">er</b> Mann · eine gut<b style="color:#ff4b4b">e</b> Frau · ein gut<b style="color:#ff4b4b">es</b> Kind</div>
+        <div style="color:var(--text-dim);margin-top:4px">先记最常用：<b>der/die/das + 形容词-e</b>；<b>ein + 形容词 跟冠词"借"词尾</b>(-er/-e/-es)。这是德语最磨人的点，<b>先够用、用多了自然顺</b>。</div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -712,6 +746,11 @@ body:not(.lang-en) .en-only-block{display:none}
         <div style="font-size:28px;margin-bottom:8px">🏷️</div>
         <div style="color:var(--gold);margin-bottom:4px">冠词测验</div>
         <div style="font-size:12px;color:var(--text-dim)">猜 der·die·das</div>
+      </div>
+      <div class="card de-only-block" onclick="startQuiz('conj')" style="text-align:center;padding:20px">
+        <div style="font-size:28px;margin-bottom:8px">🔄</div>
+        <div style="color:var(--gold);margin-bottom:4px">动词变位</div>
+        <div style="font-size:12px;color:var(--text-dim)">选对的变位形式</div>
       </div>
     </div>
     <div style="font-size:12px;color:var(--text-faint);margin-bottom:4px">出题范围（词汇 / 反向测验）：</div>
@@ -1500,6 +1539,7 @@ function quizHeader(){
 function nextQ(){
   if(mq.mode==='num'){ nextNumMainQ(); return; }
   if(mq.mode==='gender'){ nextGenderQ(); return; }
+  if(mq.mode==='conj'){ nextConjQ(); return; }
   const all=getAllPhrases();
   const idx=Math.floor(Math.random()*all.length);
   mq.current=all[idx];
@@ -1600,6 +1640,53 @@ function nextGenderQ(){
       <div class="quiz-opts" style="grid-template-columns:1fr 1fr 1fr">${optsHtml}</div>
       <button class="btn" onclick="startQuiz('gender')" style="font-size:12px">重新开始</button>
     </div>`;
+}
+// 练习测验·动词变位（现在时）
+const VERB_CONJ=[
+  {inf:'machen',zh:'做',f:['mache','machst','macht','machen','macht','machen']},
+  {inf:'lernen',zh:'学',f:['lerne','lernst','lernt','lernen','lernt','lernen']},
+  {inf:'spielen',zh:'玩',f:['spiele','spielst','spielt','spielen','spielt','spielen']},
+  {inf:'wohnen',zh:'住',f:['wohne','wohnst','wohnt','wohnen','wohnt','wohnen']},
+  {inf:'kommen',zh:'来',f:['komme','kommst','kommt','kommen','kommt','kommen']},
+  {inf:'gehen',zh:'走/去',f:['gehe','gehst','geht','gehen','geht','gehen']},
+  {inf:'sein',zh:'是',f:['bin','bist','ist','sind','seid','sind']},
+  {inf:'haben',zh:'有',f:['habe','hast','hat','haben','habt','haben']},
+  {inf:'fahren',zh:'开车/行驶',f:['fahre','fährst','fährt','fahren','fahrt','fahren']},
+  {inf:'sehen',zh:'看见',f:['sehe','siehst','sieht','sehen','seht','sehen']},
+  {inf:'essen',zh:'吃',f:['esse','isst','isst','essen','esst','essen']},
+  {inf:'sprechen',zh:'说',f:['spreche','sprichst','spricht','sprechen','sprecht','sprechen']},
+  {inf:'nehmen',zh:'拿',f:['nehme','nimmst','nimmt','nehmen','nehmt','nehmen']},
+  {inf:'lesen',zh:'读',f:['lese','liest','liest','lesen','lest','lesen']},
+  {inf:'geben',zh:'给',f:['gebe','gibst','gibt','geben','gebt','geben']},
+];
+const CONJ_PERSON=['ich','du','er/sie/es','wir','ihr','sie/Sie'];
+function nextConjQ(){
+  const v=VERB_CONJ[Math.floor(Math.random()*VERB_CONJ.length)];
+  const idx=Math.floor(Math.random()*6);
+  const correct=v.f[idx];
+  const wrong=[];
+  const pool=v.f.filter(x=>x!==correct);
+  while(wrong.length<3&&pool.length){const w=pool.splice(Math.floor(Math.random()*pool.length),1)[0];if(!wrong.includes(w))wrong.push(w);}
+  const opts=[correct,...wrong].sort(()=>Math.random()-.5);
+  mq.current={de:CONJ_PERSON[idx]+' '+correct,zh:v.zh};
+  const optsHtml=opts.map(o=>`<button class="quiz-opt" lang="de" onclick="checkConjQ(this,'${o}','${correct}')">${o}</button>`).join('');
+  document.getElementById('mainQuizArea').innerHTML=`
+    <div class="quiz-box">
+      ${quizHeader()}
+      <div class="quiz-q" style="font-size:22px" lang="de"><b style="color:#1cb0f6">${CONJ_PERSON[idx]}</b> ____</div>
+      <div class="quiz-hint">选 <b lang="de">${v.inf}</b>（${v.zh}）的正确变位</div>
+      <div class="quiz-opts">${optsHtml}</div>
+      <button class="btn" onclick="startQuiz('conj')" style="font-size:12px">重新开始</button>
+    </div>`;
+}
+function checkConjQ(btn,sel,correct){
+  document.querySelectorAll('#mainQuizArea .quiz-opt').forEach(b=>b.disabled=true);
+  mq.total++;
+  if(sel===correct){btn.classList.add('correct');mq.score++;}
+  else{btn.classList.add('wrong');document.querySelectorAll('#mainQuizArea .quiz-opt').forEach(b=>{if(b.textContent.trim()===correct)b.classList.add('correct');});}
+  try{speakDE(mq.current.de);}catch(e){}
+  const done=mq.total>=mq.roundLen;
+  setTimeout(done?showQuizResult:nextQ,1400);
 }
 function checkGenderQ(btn,sel,correct){
   document.querySelectorAll('#mainQuizArea .quiz-opt').forEach(b=>b.disabled=true);
