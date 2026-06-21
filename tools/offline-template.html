@@ -681,7 +681,7 @@ body:not(.lang-en) .en-only-block{display:none}
   <div class="container">
     <div class="hero-label" style="text-align:center;padding-top:20px">Alltagsdeutsch</div>
     <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 4px;color:var(--text)">日常对话 + 词汇大全</h2>
-    <p style="text-align:center;font-size:13px;color:var(--text-dim);margin-bottom:4px">{{CAT_COUNT}}个分类 · {{PHRASE_COUNT}}个词句 · 点击卡片看谐音 · 🔊 点喇叭听地道德语发音</p>
+    <p id="phrasesSub" style="text-align:center;font-size:13px;color:var(--text-dim);margin-bottom:4px">{{CAT_COUNT}}个分类 · {{PHRASE_COUNT}}个词句 · 点击卡片看谐音 · 🔊 点喇叭听地道德语发音</p>
     <div style="text-align:center;margin:6px 0 2px"><span onclick="document.getElementById('voiceGuide').style.display=document.getElementById('voiceGuide').style.display==='none'?'block':'none'" style="font-size:12px;color:#58cc02;cursor:pointer;border:1px solid rgba(88,204,2,.3);border-radius:20px;padding:3px 12px;display:inline-block">🎧 发音不地道？点这里装系统语音包</span></div>
     <div id="voiceGuide" style="display:none;background:#fff;border:1px solid var(--line,#e8eaed);border-radius:14px;padding:14px 16px;margin:8px 0;font-size:13px;line-height:1.8;color:#555">
       <div style="font-weight:600;color:#2b2b2b;margin-bottom:6px">为什么要装语音包？</div>
@@ -1010,6 +1010,7 @@ function setLang(lang){
   document.body.classList.toggle('lang-en',LANG==='en');
   updateHeroLang();
   updateQuizCardLang();
+  updatePhrasesSub();
   // 词句版块默认回到「全部」级别，避免英语词少时空白
   activeLevel = (LANG==='en')?'0':activeLevel;
   activeCat='all';
@@ -1018,6 +1019,16 @@ function setLang(lang){
   const cur=[...document.querySelectorAll('.section')].find(s=>s.classList.contains('active'));
   if(cur&&LANG==='en'&&['pronunciation','numbers','grammar','reading'].includes(cur.id))showSection('phrases');
   if(cur&&LANG==='de'&&['en-pron','en-num','en-grammar'].includes(cur.id))showSection('phrases');
+}
+function updatePhrasesSub(){
+  const el=document.getElementById('phrasesSub');
+  if(el){
+    const cc=categories.length, pc=categories.reduce((s,c)=>s+c.phrases.length,0);
+    const lw=LANG==='en'?'英语':'德语';
+    el.textContent=cc+'个分类 · '+pc+'个词句 · 点击卡片看谐音 · 🔊 点喇叭听地道'+lw+'发音';
+  }
+  const si=document.getElementById('searchInput');
+  if(si)si.placeholder=(LANG==='en'?'搜索英语、中文或谐音...':'搜索德语、中文或谐音...');
 }
 function updateQuizCardLang(){
   const en=LANG==='en';
