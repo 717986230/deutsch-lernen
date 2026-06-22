@@ -431,7 +431,8 @@ body:not(.lang-en) .en-only-block{display:none}
 <div id="pronunciation" class="section">
   <div class="container">
     <div class="hero-label" style="text-align:center;padding-top:20px">Aussprache</div>
-    <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 24px;color:var(--text)">德语发音规律</h2>
+    <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 14px;color:var(--text)">德语发音规律</h2>
+    <div class="subnav" id="pronSubnav"></div>
 
     <div class="sec-title"><span class="sec-title-icon">🔡</span><span class="sec-title-text">26个字母完整发音表</span></div>
     <div style="margin-bottom:10px;font-size:12px;color:var(--text-dim)">💡 括号内为该字母的<b style="color:var(--gold)">名称读音</b>，发音栏说明该字母在单词中的<b style="color:var(--gold)">实际发音</b></div>
@@ -506,7 +507,8 @@ body:not(.lang-en) .en-only-block{display:none}
 <div id="numbers" class="section">
   <div class="container">
     <div class="hero-label" style="text-align:center;padding-top:20px">Zahlen</div>
-    <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 24px;color:var(--text)">德语数字规律</h2>
+    <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 14px;color:var(--text)">德语数字规律</h2>
+    <div class="subnav" id="numSubnav"></div>
 
     <div class="sec-title"><span class="sec-title-icon">1️⃣</span><span class="sec-title-text">基础数字 0–12（必须单独记）</span></div>
     <div class="num-grid" id="numGrid0"></div>
@@ -936,6 +938,7 @@ body:not(.lang-en) .en-only-block{display:none}
   <div class="container">
     <div class="hero-label" style="text-align:center;padding-top:20px">Pronunciation</div>
     <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 6px;color:var(--text)">英语发音规律</h2>
+    <div class="subnav" id="enPronSubnav"></div>
     <p style="text-align:center;font-size:13px;color:var(--text-dim);margin-bottom:10px">英语<b>不像德语"所见即所读"</b>——同样字母常有多种读法。下面是中国人最该先掌握的规律 + 谐音示例。</p>
 
     <div class="sec-title"><span class="sec-title-icon">🔤</span><span class="sec-title-text">5个元音字母：长音 vs 短音</span></div>
@@ -973,7 +976,8 @@ body:not(.lang-en) .en-only-block{display:none}
 <div id="en-num" class="section">
   <div class="container">
     <div class="hero-label" style="text-align:center;padding-top:20px">Numbers</div>
-    <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 16px;color:var(--text)">英语数字规律</h2>
+    <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 14px;color:var(--text)">英语数字规律</h2>
+    <div class="subnav" id="enNumSubnav"></div>
 
     <div class="sec-title"><span class="sec-title-icon">1️⃣</span><span class="sec-title-text">1–12（单独记）</span></div>
     <div class="num-grid" id="enNum1"></div>
@@ -2251,6 +2255,10 @@ function buildSubNav(sectionId,navId){
 }
 buildSubNav('grammar','grammarSubnav');
 buildSubNav('en-grammar','enGrammarSubnav');
+buildSubNav('pronunciation','pronSubnav');
+buildSubNav('numbers','numSubnav');
+buildSubNav('en-pron','enPronSubnav');
+buildSubNav('en-num','enNumSubnav');
 setLang(LANG); // 应用初始语言（含 localStorage 记忆）
 </script>
 <button id="toTop" type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="回到顶部" aria-label="回到顶部">↑</button>
