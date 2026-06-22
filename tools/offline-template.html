@@ -100,8 +100,13 @@ body{background:var(--bg);color:var(--text);font-family:'Georgia',serif;min-heig
 to{opacity:1}}
 /* GRID */
 .phrase-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+/* 长版块快速跳转条 */
+.subnav{position:sticky;top:47px;z-index:150;display:flex;gap:6px;overflow-x:auto;background:rgba(247,249,252,.95);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:8px 16px;margin:0 -16px 8px;scrollbar-width:none;border-bottom:1px solid var(--gold-faint)}
+.subnav::-webkit-scrollbar{display:none}
+.subnav-chip{flex-shrink:0;padding:5px 12px;border-radius:14px;background:rgba(88,204,2,.1);color:#46a302;font-size:12px;white-space:nowrap;cursor:pointer;border:1px solid var(--gold-faint);font-family:inherit}
+.subnav-chip:active{background:rgba(88,204,2,.25)}
 /* SECTION TITLE */
-.sec-title{display:flex;align-items:center;gap:10px;margin:28px 0 14px;padding-bottom:10px;border-bottom:1px solid var(--gold-faint)}
+.sec-title{display:flex;align-items:center;gap:10px;margin:28px 0 14px;padding-bottom:10px;border-bottom:1px solid var(--gold-faint);scroll-margin-top:100px}
 .sec-title-icon{font-size:20px}
 .sec-title-text{font-size:15px;color:var(--gold);letter-spacing:1px}
 .sec-title-count{font-size:11px;color:var(--gold-dim);margin-left:auto}
@@ -557,7 +562,8 @@ body:not(.lang-en) .en-only-block{display:none}
 <div id="grammar" class="section">
   <div class="container">
     <div class="hero-label" style="text-align:center;padding-top:20px">Grammatik</div>
-    <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 24px;color:var(--text)">德语语法速记</h2>
+    <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 14px;color:var(--text)">德语语法速记</h2>
+    <div class="subnav" id="grammarSubnav"></div>
 
     <div class="sec-title"><span class="sec-title-icon">🏷️</span><span class="sec-title-text">名词性别（冠词）</span></div>
     <div class="rule-box">
@@ -997,7 +1003,8 @@ body:not(.lang-en) .en-only-block{display:none}
 <div id="en-grammar" class="section">
   <div class="container">
     <div class="hero-label" style="text-align:center;padding-top:20px">Grammar</div>
-    <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 16px;color:var(--text)">英语语法速记</h2>
+    <h2 style="text-align:center;font-weight:400;font-size:24px;margin:8px 0 14px;color:var(--text)">英语语法速记</h2>
+    <div class="subnav" id="enGrammarSubnav"></div>
 
     <div class="sec-title"><span class="sec-title-icon">🔑</span><span class="sec-title-text">be 动词：am / is / are</span></div>
     <div class="rule-box">
@@ -2228,6 +2235,22 @@ function stopReading(){
 initPhrases();
 buildReadTabs();renderReadings();
 srsUpdateBadge();
+// 长版块快速跳转条
+function buildSubNav(sectionId,navId){
+  const sec=document.getElementById(sectionId), nav=document.getElementById(navId);
+  if(!sec||!nav)return;
+  nav.innerHTML='';
+  sec.querySelectorAll('.sec-title').forEach((t,i)=>{
+    const id=sectionId+'_s'+i; t.id=id;
+    const lab=t.querySelector('.sec-title-text'); if(!lab)return;
+    const chip=document.createElement('button');
+    chip.className='subnav-chip'; chip.type='button'; chip.textContent=lab.textContent;
+    chip.onclick=function(){document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'});};
+    nav.appendChild(chip);
+  });
+}
+buildSubNav('grammar','grammarSubnav');
+buildSubNav('en-grammar','enGrammarSubnav');
 setLang(LANG); // 应用初始语言（含 localStorage 记忆）
 </script>
 <button id="toTop" type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="回到顶部" aria-label="回到顶部">↑</button>
