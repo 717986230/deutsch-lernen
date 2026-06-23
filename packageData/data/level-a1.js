@@ -269,16 +269,6 @@ module.exports = [
         "py": "维尔黑斯 达图姆 伊斯特 豪特"
       },
       {
-        "de": "morgen",
-        "zh": "明天",
-        "py": "摩根"
-      },
-      {
-        "de": "gestern",
-        "zh": "昨天",
-        "py": "盖斯特恩"
-      },
-      {
         "de": "vorgestern",
         "zh": "前天",
         "py": "福尔盖斯特恩"
@@ -352,41 +342,6 @@ module.exports = [
         "de": "abends",
         "zh": "晚上",
         "py": "阿本茨"
-      },
-      {
-        "de": "früh",
-        "zh": "早",
-        "py": "弗吕"
-      },
-      {
-        "de": "spät",
-        "zh": "晚/迟",
-        "py": "施佩特"
-      },
-      {
-        "de": "immer",
-        "zh": "总是",
-        "py": "伊梅尔"
-      },
-      {
-        "de": "nie",
-        "zh": "从不",
-        "py": "尼"
-      },
-      {
-        "de": "manchmal",
-        "zh": "有时",
-        "py": "曼希马尔"
-      },
-      {
-        "de": "schon",
-        "zh": "已经",
-        "py": "肖恩"
-      },
-      {
-        "de": "noch",
-        "zh": "还/仍",
-        "py": "诺赫"
       },
       {
         "de": "der Frühling",
@@ -1061,11 +1016,6 @@ module.exports = [
         "de": "der Mittag",
         "zh": "中午",
         "py": "德尔 米塔克"
-      },
-      {
-        "de": "oft",
-        "zh": "经常",
-        "py": "奥夫特"
       }
     ]
   },
@@ -1145,26 +1095,6 @@ module.exports = [
         "py": "贝日"
       },
       {
-        "de": "groß",
-        "zh": "大的",
-        "py": "格罗斯"
-      },
-      {
-        "de": "klein",
-        "zh": "小的",
-        "py": "克莱因"
-      },
-      {
-        "de": "lang",
-        "zh": "长的",
-        "py": "朗"
-      },
-      {
-        "de": "kurz",
-        "zh": "短的",
-        "py": "库尔茨"
-      },
-      {
         "de": "breit",
         "zh": "宽的",
         "py": "布莱特"
@@ -1175,44 +1105,9 @@ module.exports = [
         "py": "施马尔"
       },
       {
-        "de": "schön",
-        "zh": "美丽的",
-        "py": "舍恩"
-      },
-      {
         "de": "hässlich",
         "zh": "丑的",
         "py": "黑斯利希"
-      },
-      {
-        "de": "schnell",
-        "zh": "快的",
-        "py": "施奈尔"
-      },
-      {
-        "de": "langsam",
-        "zh": "慢的",
-        "py": "朗扎姆"
-      },
-      {
-        "de": "neu",
-        "zh": "新的",
-        "py": "诺伊"
-      },
-      {
-        "de": "alt",
-        "zh": "旧的/老的",
-        "py": "阿尔特"
-      },
-      {
-        "de": "teuer",
-        "zh": "贵的",
-        "py": "托伊尔"
-      },
-      {
-        "de": "billig",
-        "zh": "便宜的",
-        "py": "比利希"
       },
       {
         "de": "hellrot",
@@ -1392,16 +1287,6 @@ module.exports = [
         "py": "施泰恩"
       },
       {
-        "de": "lassen",
-        "zh": "让/留",
-        "py": "拉森"
-      },
-      {
-        "de": "bringen",
-        "zh": "带来",
-        "py": "布林根"
-      },
-      {
         "de": "denken",
         "zh": "思考",
         "py": "邓肯"
@@ -1410,11 +1295,6 @@ module.exports = [
         "de": "fragen",
         "zh": "问",
         "py": "弗拉根"
-      },
-      {
-        "de": "bleiben",
-        "zh": "留/保持",
-        "py": "布莱本"
       },
       {
         "de": "liegen",
@@ -1430,16 +1310,6 @@ module.exports = [
         "de": "glauben",
         "zh": "相信",
         "py": "格劳本"
-      },
-      {
-        "de": "halten",
-        "zh": "拿/停",
-        "py": "哈尔腾"
-      },
-      {
-        "de": "zeigen",
-        "zh": "指/展示",
-        "py": "茨艾根"
       },
       {
         "de": "lernen",
@@ -1472,11 +1342,6 @@ module.exports = [
         "py": "哈本"
       },
       {
-        "de": "werden",
-        "zh": "将要/变成",
-        "py": "韦尔顿"
-      },
-      {
         "de": "antworten",
         "zh": "回答",
         "py": "安特沃尔腾"
@@ -1505,11 +1370,6 @@ module.exports = [
         "de": "anbieten",
         "zh": "提供",
         "py": "安比腾"
-      },
-      {
-        "de": "anfangen",
-        "zh": "开始",
-        "py": "安方恩"
       },
       {
         "de": "anklicken",
@@ -1572,16 +1432,6 @@ module.exports = [
         "py": "贝吉嫩"
       },
       {
-        "de": "bekommen",
-        "zh": "得到",
-        "py": "贝科门"
-      },
-      {
-        "de": "benutzen",
-        "zh": "使用",
-        "py": "贝努岑"
-      },
-      {
         "de": "besichtigen",
         "zh": "参观",
         "py": "贝齐希提根"
@@ -1595,11 +1445,6 @@ module.exports = [
         "de": "besuchen",
         "zh": "拜访",
         "py": "贝祖亨"
-      },
-      {
-        "de": "bezahlen",
-        "zh": "付款",
-        "py": "贝察伦"
       },
       {
         "de": "brauchen",
@@ -1717,11 +1562,6 @@ module.exports = [
         "py": "弗吕施蒂肯"
       },
       {
-        "de": "gefallen",
-        "zh": "中意/喜欢",
-        "py": "格法伦"
-      },
-      {
         "de": "gehören",
         "zh": "属于",
         "py": "格赫伦"
@@ -1772,11 +1612,6 @@ module.exports = [
         "py": "肯嫩莱嫩"
       },
       {
-        "de": "kosten",
-        "zh": "花费",
-        "py": "科斯滕"
-      },
-      {
         "de": "kriegen",
         "zh": "得到",
         "py": "克里根"
@@ -1795,11 +1630,6 @@ module.exports = [
         "de": "leben",
         "zh": "生活",
         "py": "莱本"
-      },
-      {
-        "de": "legen",
-        "zh": "放置",
-        "py": "莱根"
       },
       {
         "de": "lesen",
@@ -1892,16 +1722,6 @@ module.exports = [
         "py": "施拉芬"
       },
       {
-        "de": "schließen",
-        "zh": "关闭",
-        "py": "施利森"
-      },
-      {
-        "de": "schmecken",
-        "zh": "尝/好吃",
-        "py": "施梅肯"
-      },
-      {
         "de": "schreiben",
         "zh": "写",
         "py": "施莱本"
@@ -1927,19 +1747,9 @@ module.exports = [
         "py": "施普雷程"
       },
       {
-        "de": "stellen",
-        "zh": "放置",
-        "py": "施特伦"
-      },
-      {
         "de": "studieren",
         "zh": "上大学",
         "py": "施图迪伦"
-      },
-      {
-        "de": "suchen",
-        "zh": "寻找",
-        "py": "祖赫恩"
       },
       {
         "de": "tanzen",
@@ -2000,11 +1810,6 @@ module.exports = [
         "de": "wandern",
         "zh": "徒步",
         "py": "万德恩"
-      },
-      {
-        "de": "warten",
-        "zh": "等待",
-        "py": "瓦尔滕"
       },
       {
         "de": "weh tun",
@@ -3024,44 +2829,9 @@ module.exports = [
     "icon": "🔤",
     "phrases": [
       {
-        "de": "jung",
-        "zh": "年轻",
-        "py": "永"
-      },
-      {
-        "de": "leicht",
-        "zh": "轻/容易",
-        "py": "莱希特"
-      },
-      {
-        "de": "schwer",
-        "zh": "重/困难",
-        "py": "施韦尔"
-      },
-      {
-        "de": "einfach",
-        "zh": "简单",
-        "py": "艾因法赫"
-      },
-      {
         "de": "schwierig",
         "zh": "困难",
         "py": "施维里希"
-      },
-      {
-        "de": "richtig",
-        "zh": "正确",
-        "py": "里希蒂希"
-      },
-      {
-        "de": "falsch",
-        "zh": "错误",
-        "py": "法尔施"
-      },
-      {
-        "de": "wichtig",
-        "zh": "重要",
-        "py": "维希蒂希"
       },
       {
         "de": "interessant",
@@ -3079,34 +2849,9 @@ module.exports = [
         "py": "勒克尔"
       },
       {
-        "de": "kalt",
-        "zh": "凉的",
-        "py": "卡尔特"
-      },
-      {
-        "de": "warm",
-        "zh": "热的",
-        "py": "瓦尔姆"
-      },
-      {
         "de": "heiß",
         "zh": "热",
         "py": "海斯"
-      },
-      {
-        "de": "sauber",
-        "zh": "干净",
-        "py": "扎乌贝尔"
-      },
-      {
-        "de": "schmutzig",
-        "zh": "脏",
-        "py": "施穆茨齐希"
-      },
-      {
-        "de": "allein",
-        "zh": "独自",
-        "py": "阿莱因"
       },
       {
         "de": "arbeitslos",
@@ -3122,11 +2867,6 @@ module.exports = [
         "de": "automatisch",
         "zh": "自动的",
         "py": "奥托马提什"
-      },
-      {
-        "de": "bald",
-        "zh": "很快",
-        "py": "巴尔特"
       },
       {
         "de": "bar",
@@ -3249,11 +2989,6 @@ module.exports = [
         "py": "欣滕"
       },
       {
-        "de": "hoch",
-        "zh": "高的",
-        "py": "霍赫"
-      },
-      {
         "de": "international",
         "zh": "国际的",
         "py": "因特纳齐奥纳尔"
@@ -3262,11 +2997,6 @@ module.exports = [
         "de": "kaputt",
         "zh": "坏了的",
         "py": "卡普特"
-      },
-      {
-        "de": "krank",
-        "zh": "生病的",
-        "py": "克兰克"
       },
       {
         "de": "kulturell",
@@ -3287,11 +3017,6 @@ module.exports = [
         "de": "ledig",
         "zh": "单身的",
         "py": "莱迪希"
-      },
-      {
-        "de": "leider",
-        "zh": "可惜",
-        "py": "莱德尔"
       },
       {
         "de": "leise",
@@ -3322,11 +3047,6 @@ module.exports = [
         "de": "möglich",
         "zh": "可能的",
         "py": "莫格利希"
-      },
-      {
-        "de": "müde",
-        "zh": "累的",
-        "py": "缪德"
       },
       {
         "de": "normal",
@@ -3372,11 +3092,6 @@ module.exports = [
         "de": "so",
         "zh": "这样/如此",
         "py": "索"
-      },
-      {
-        "de": "sofort",
-        "zh": "立刻",
-        "py": "佐福尔特"
       },
       {
         "de": "später",
@@ -3427,11 +3142,6 @@ module.exports = [
         "de": "zurück",
         "zh": "回/返回",
         "py": "楚吕克"
-      },
-      {
-        "de": "zusammen",
-        "zh": "一起",
-        "py": "楚萨门"
       },
       {
         "de": "zurzeit",
@@ -3604,11 +3314,6 @@ module.exports = [
         "de": "nichts",
         "zh": "没什么",
         "py": "尼希茨"
-      },
-      {
-        "de": "nur",
-        "zh": "只/仅",
-        "py": "努尔"
       },
       {
         "de": "man",
@@ -4292,11 +3997,6 @@ module.exports = [
         "de": "heben",
         "zh": "抬起",
         "py": "黑本"
-      },
-      {
-        "de": "tragen",
-        "zh": "携带",
-        "py": "特拉根"
       },
       {
         "de": "schieben",
@@ -6076,6 +5776,437 @@ module.exports = [
         "de": "der Stift",
         "zh": "笔",
         "py": "德尔 施蒂夫特"
+      }
+    ]
+  },
+  {
+    "name": "高频·形容词",
+    "level": "a1",
+    "icon": "🎨",
+    "phrases": [
+      {
+        "de": "gut",
+        "zh": "好的",
+        "py": "古特"
+      },
+      {
+        "de": "schlecht",
+        "zh": "差的/坏的",
+        "py": "施莱希特"
+      },
+      {
+        "de": "früh",
+        "zh": "早",
+        "py": "弗吕"
+      },
+      {
+        "de": "spät",
+        "zh": "晚/迟",
+        "py": "施佩特"
+      },
+      {
+        "de": "groß",
+        "zh": "大的",
+        "py": "格罗斯"
+      },
+      {
+        "de": "klein",
+        "zh": "小的",
+        "py": "克莱因"
+      },
+      {
+        "de": "lang",
+        "zh": "长的",
+        "py": "朗"
+      },
+      {
+        "de": "kurz",
+        "zh": "短的",
+        "py": "库尔茨"
+      },
+      {
+        "de": "schön",
+        "zh": "美丽的",
+        "py": "舍恩"
+      },
+      {
+        "de": "schnell",
+        "zh": "快的",
+        "py": "施奈尔"
+      },
+      {
+        "de": "langsam",
+        "zh": "慢的",
+        "py": "朗扎姆"
+      },
+      {
+        "de": "neu",
+        "zh": "新的",
+        "py": "诺伊"
+      },
+      {
+        "de": "alt",
+        "zh": "旧的/老的",
+        "py": "阿尔特"
+      },
+      {
+        "de": "teuer",
+        "zh": "贵的",
+        "py": "托伊尔"
+      },
+      {
+        "de": "billig",
+        "zh": "便宜的",
+        "py": "比利希"
+      },
+      {
+        "de": "jung",
+        "zh": "年轻",
+        "py": "永"
+      },
+      {
+        "de": "leicht",
+        "zh": "轻/容易",
+        "py": "莱希特"
+      },
+      {
+        "de": "schwer",
+        "zh": "重/困难",
+        "py": "施韦尔"
+      },
+      {
+        "de": "einfach",
+        "zh": "简单",
+        "py": "艾因法赫"
+      },
+      {
+        "de": "richtig",
+        "zh": "正确",
+        "py": "里希蒂希"
+      },
+      {
+        "de": "falsch",
+        "zh": "错误",
+        "py": "法尔施"
+      },
+      {
+        "de": "wichtig",
+        "zh": "重要",
+        "py": "维希蒂希"
+      },
+      {
+        "de": "kalt",
+        "zh": "凉的",
+        "py": "卡尔特"
+      },
+      {
+        "de": "warm",
+        "zh": "热的",
+        "py": "瓦尔姆"
+      },
+      {
+        "de": "sauber",
+        "zh": "干净",
+        "py": "扎乌贝尔"
+      },
+      {
+        "de": "schmutzig",
+        "zh": "脏",
+        "py": "施穆茨齐希"
+      },
+      {
+        "de": "hoch",
+        "zh": "高的",
+        "py": "霍赫"
+      },
+      {
+        "de": "krank",
+        "zh": "生病的",
+        "py": "克兰克"
+      },
+      {
+        "de": "müde",
+        "zh": "累的",
+        "py": "缪德"
+      },
+      {
+        "de": "voll",
+        "zh": "满/完整",
+        "py": "福尔"
+      },
+      {
+        "de": "leer",
+        "zh": "空",
+        "py": "雷尔"
+      },
+      {
+        "de": "gesund",
+        "zh": "健康的",
+        "py": "格准特"
+      }
+    ]
+  },
+  {
+    "name": "高频·副词",
+    "level": "a1",
+    "icon": "⏩",
+    "phrases": [
+      {
+        "de": "auch",
+        "zh": "也",
+        "py": "奥赫"
+      },
+      {
+        "de": "sehr",
+        "zh": "很/非常",
+        "py": "泽尔"
+      },
+      {
+        "de": "hier",
+        "zh": "这里",
+        "py": "希尔"
+      },
+      {
+        "de": "dort",
+        "zh": "那里",
+        "py": "多尔特"
+      },
+      {
+        "de": "jetzt",
+        "zh": "现在",
+        "py": "耶茨特"
+      },
+      {
+        "de": "heute",
+        "zh": "今天",
+        "py": "霍伊特"
+      },
+      {
+        "de": "morgen",
+        "zh": "明天",
+        "py": "摩根"
+      },
+      {
+        "de": "gestern",
+        "zh": "昨天",
+        "py": "盖斯特恩"
+      },
+      {
+        "de": "immer",
+        "zh": "总是",
+        "py": "伊梅尔"
+      },
+      {
+        "de": "nie",
+        "zh": "从不",
+        "py": "尼"
+      },
+      {
+        "de": "manchmal",
+        "zh": "有时",
+        "py": "曼希马尔"
+      },
+      {
+        "de": "schon",
+        "zh": "已经",
+        "py": "肖恩"
+      },
+      {
+        "de": "noch",
+        "zh": "还/仍",
+        "py": "诺赫"
+      },
+      {
+        "de": "oft",
+        "zh": "经常",
+        "py": "奥夫特"
+      },
+      {
+        "de": "allein",
+        "zh": "独自",
+        "py": "阿莱因"
+      },
+      {
+        "de": "bald",
+        "zh": "很快",
+        "py": "巴尔特"
+      },
+      {
+        "de": "leider",
+        "zh": "可惜",
+        "py": "莱德尔"
+      },
+      {
+        "de": "sofort",
+        "zh": "立刻",
+        "py": "佐福尔特"
+      },
+      {
+        "de": "zusammen",
+        "zh": "一起",
+        "py": "楚萨门"
+      },
+      {
+        "de": "nur",
+        "zh": "只/仅",
+        "py": "努尔"
+      },
+      {
+        "de": "gern",
+        "zh": "乐意/喜欢",
+        "py": "盖恩"
+      },
+      {
+        "de": "genug",
+        "zh": "足够",
+        "py": "格努克"
+      },
+      {
+        "de": "fast",
+        "zh": "几乎",
+        "py": "法斯特"
+      },
+      {
+        "de": "endlich",
+        "zh": "终于",
+        "py": "恩德利希"
+      },
+      {
+        "de": "natürlich",
+        "zh": "当然",
+        "py": "纳图尔利希"
+      },
+      {
+        "de": "vielleicht",
+        "zh": "也许",
+        "py": "菲莱希特"
+      },
+      {
+        "de": "wieder",
+        "zh": "再次",
+        "py": "维德"
+      }
+    ]
+  },
+  {
+    "name": "高频·动词",
+    "level": "a1",
+    "icon": "🏃",
+    "phrases": [
+      {
+        "de": "lassen",
+        "zh": "让/留",
+        "py": "拉森"
+      },
+      {
+        "de": "bringen",
+        "zh": "带来",
+        "py": "布林根"
+      },
+      {
+        "de": "bleiben",
+        "zh": "留/保持",
+        "py": "布莱本"
+      },
+      {
+        "de": "halten",
+        "zh": "拿/停",
+        "py": "哈尔腾"
+      },
+      {
+        "de": "zeigen",
+        "zh": "指/展示",
+        "py": "茨艾根"
+      },
+      {
+        "de": "werden",
+        "zh": "将要/变成",
+        "py": "韦尔顿"
+      },
+      {
+        "de": "anfangen",
+        "zh": "开始",
+        "py": "安方恩"
+      },
+      {
+        "de": "bekommen",
+        "zh": "得到",
+        "py": "贝科门"
+      },
+      {
+        "de": "benutzen",
+        "zh": "使用",
+        "py": "贝努岑"
+      },
+      {
+        "de": "bezahlen",
+        "zh": "付款",
+        "py": "贝察伦"
+      },
+      {
+        "de": "gefallen",
+        "zh": "中意/喜欢",
+        "py": "格法伦"
+      },
+      {
+        "de": "kosten",
+        "zh": "花费",
+        "py": "科斯滕"
+      },
+      {
+        "de": "legen",
+        "zh": "放置",
+        "py": "莱根"
+      },
+      {
+        "de": "schließen",
+        "zh": "关闭",
+        "py": "施利森"
+      },
+      {
+        "de": "schmecken",
+        "zh": "尝/好吃",
+        "py": "施梅肯"
+      },
+      {
+        "de": "stellen",
+        "zh": "放置",
+        "py": "施特伦"
+      },
+      {
+        "de": "suchen",
+        "zh": "寻找",
+        "py": "祖赫恩"
+      },
+      {
+        "de": "warten",
+        "zh": "等待",
+        "py": "瓦尔滕"
+      },
+      {
+        "de": "tragen",
+        "zh": "携带",
+        "py": "特拉根"
+      },
+      {
+        "de": "vergessen",
+        "zh": "忘记",
+        "py": "费尔格森"
+      },
+      {
+        "de": "aufhören",
+        "zh": "停止",
+        "py": "奥夫赫伦"
+      },
+      {
+        "de": "passieren",
+        "zh": "发生",
+        "py": "帕西伦"
+      },
+      {
+        "de": "versuchen",
+        "zh": "尝试",
+        "py": "费尔祖赫恩"
       }
     ]
   }

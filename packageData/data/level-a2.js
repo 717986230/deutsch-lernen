@@ -2478,11 +2478,6 @@ module.exports = [
         "py": "奥夫施泰恩"
       },
       {
-        "de": "vergessen",
-        "zh": "忘记",
-        "py": "费尔格森"
-      },
-      {
         "de": "erinnern",
         "zh": "记得",
         "py": "尔伊嫩"
@@ -2596,11 +2591,6 @@ module.exports = [
         "de": "ansehen",
         "zh": "观看",
         "py": "安泽恩"
-      },
-      {
-        "de": "aufhören",
-        "zh": "停止",
-        "py": "奥夫赫伦"
       },
       {
         "de": "aufmachen",
@@ -3077,16 +3067,6 @@ module.exports = [
     "icon": "🟢",
     "phrases": [
       {
-        "de": "voll",
-        "zh": "满/完整",
-        "py": "福尔"
-      },
-      {
-        "de": "leer",
-        "zh": "空",
-        "py": "雷尔"
-      },
-      {
         "de": "offen",
         "zh": "开着",
         "py": "奥芬"
@@ -3105,11 +3085,6 @@ module.exports = [
         "de": "nötig",
         "zh": "需要",
         "py": "诺蒂希"
-      },
-      {
-        "de": "genug",
-        "zh": "足够",
-        "py": "格努克"
       },
       {
         "de": "zu viel",
@@ -3192,11 +3167,6 @@ module.exports = [
         "py": "考姆"
       },
       {
-        "de": "fast",
-        "zh": "几乎",
-        "py": "法斯特"
-      },
-      {
         "de": "gar nicht",
         "zh": "根本不",
         "py": "加尔 尼希特"
@@ -3257,11 +3227,6 @@ module.exports = [
         "py": "达纳赫"
       },
       {
-        "de": "endlich",
-        "zh": "终于",
-        "py": "恩德利希"
-      },
-      {
         "de": "plötzlich",
         "zh": "突然",
         "py": "普勒茨利希"
@@ -3270,16 +3235,6 @@ module.exports = [
         "de": "zum Glück",
         "zh": "幸运地",
         "py": "楚姆 格吕克"
-      },
-      {
-        "de": "natürlich",
-        "zh": "当然",
-        "py": "纳图尔利希"
-      },
-      {
-        "de": "vielleicht",
-        "zh": "也许",
-        "py": "菲莱希特"
       }
     ]
   },
@@ -6070,11 +6025,6 @@ module.exports = [
         "py": "格费尔利希"
       },
       {
-        "de": "gesund",
-        "zh": "健康的",
-        "py": "格准特"
-      },
-      {
         "de": "hart",
         "zh": "硬的",
         "py": "哈特"
@@ -6515,11 +6465,6 @@ module.exports = [
         "de": "wenn",
         "zh": "如果/当",
         "py": "文"
-      },
-      {
-        "de": "wieder",
-        "zh": "再次",
-        "py": "维德"
       },
       {
         "de": "wirklich",

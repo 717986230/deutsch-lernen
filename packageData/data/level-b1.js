@@ -1173,11 +1173,6 @@ module.exports = [
     "icon": "🔵",
     "phrases": [
       {
-        "de": "passieren",
-        "zh": "发生",
-        "py": "帕西伦"
-      },
-      {
         "de": "geschehen",
         "zh": "发生",
         "py": "格斯恩"
@@ -1211,11 +1206,6 @@ module.exports = [
         "de": "erreichen",
         "zh": "达到",
         "py": "尔莱黑恩"
-      },
-      {
-        "de": "versuchen",
-        "zh": "尝试",
-        "py": "费尔祖赫恩"
       },
       {
         "de": "entscheiden",
