@@ -1737,11 +1737,6 @@ module.exports = [
         "py": "格拉图利伦"
       },
       {
-        "de": "grillen",
-        "zh": "烤（炉）",
-        "py": "格里伦"
-      },
-      {
         "de": "heiraten",
         "zh": "结婚",
         "py": "海拉滕"
@@ -1775,11 +1770,6 @@ module.exports = [
         "de": "kennenlernen",
         "zh": "结识",
         "py": "肯嫩莱嫩"
-      },
-      {
-        "de": "kochen",
-        "zh": "做饭",
-        "py": "科赫恩"
       },
       {
         "de": "kosten",
@@ -4688,11 +4678,6 @@ module.exports = [
         "py": "达斯 格特伦克"
       },
       {
-        "de": "das Glas",
-        "zh": "玻璃杯",
-        "py": "达斯 格拉斯"
-      },
-      {
         "de": "die Flasche",
         "zh": "瓶子",
         "py": "迪 弗拉舍"
@@ -4751,16 +4736,6 @@ module.exports = [
         "de": "das Sofa",
         "zh": "沙发",
         "py": "达斯 索法"
-      },
-      {
-        "de": "der Herd",
-        "zh": "炉灶",
-        "py": "德尔 黑尔特"
-      },
-      {
-        "de": "der Kühlschrank",
-        "zh": "冰箱",
-        "py": "德尔 屈尔施兰克"
       },
       {
         "de": "das Telefon",

@@ -1038,24 +1038,9 @@ module.exports = [
         "py": "德尔 霍尼希"
       },
       {
-        "de": "schneiden",
-        "zh": "切",
-        "py": "施奈顿"
-      },
-      {
         "de": "hacken",
         "zh": "切碎",
         "py": "哈肯"
-      },
-      {
-        "de": "reiben",
-        "zh": "磨碎",
-        "py": "莱本"
-      },
-      {
-        "de": "schälen",
-        "zh": "削皮",
-        "py": "施雪伦"
       },
       {
         "de": "waschen",
@@ -1068,54 +1053,9 @@ module.exports = [
         "py": "阿普斯皮伦"
       },
       {
-        "de": "braten",
-        "zh": "煎炒",
-        "py": "布拉腾"
-      },
-      {
-        "de": "backen",
-        "zh": "烤",
-        "py": "巴肯"
-      },
-      {
-        "de": "dünsten",
-        "zh": "蒸",
-        "py": "丹斯腾"
-      },
-      {
-        "de": "frittieren",
-        "zh": "炸",
-        "py": "弗里蒂伦"
-      },
-      {
-        "de": "würzen",
-        "zh": "调味",
-        "py": "维尔泽恩"
-      },
-      {
-        "de": "salzen",
-        "zh": "加盐",
-        "py": "萨尔泽恩"
-      },
-      {
         "de": "abschmecken",
         "zh": "品尝调味",
         "py": "阿普施梅肯"
-      },
-      {
-        "de": "umrühren",
-        "zh": "搅拌",
-        "py": "乌姆吕伦"
-      },
-      {
-        "de": "mischen",
-        "zh": "混合",
-        "py": "米施恩"
-      },
-      {
-        "de": "kneten",
-        "zh": "揉",
-        "py": "克内腾"
       },
       {
         "de": "aufkochen",
@@ -1131,11 +1071,6 @@ module.exports = [
         "de": "anbraten",
         "zh": "煎一下",
         "py": "安布拉腾"
-      },
-      {
-        "de": "aufwärmen",
-        "zh": "加热",
-        "py": "奥夫韦尔梅恩"
       },
       {
         "de": "abkühlen",
@@ -1161,11 +1096,6 @@ module.exports = [
         "de": "abschrecken",
         "zh": "过冷水",
         "py": "阿普斯雷肯"
-      },
-      {
-        "de": "servieren",
-        "zh": "上菜",
-        "py": "泽尔维伦"
       },
       {
         "de": "anrichten",
@@ -2583,11 +2513,6 @@ module.exports = [
         "py": "普兰泽恩"
       },
       {
-        "de": "gießen",
-        "zh": "浇水",
-        "py": "吉森"
-      },
-      {
         "de": "recyceln",
         "zh": "回收",
         "py": "雷西克尔恩"
@@ -2861,11 +2786,6 @@ module.exports = [
         "de": "passen",
         "zh": "合适",
         "py": "帕森"
-      },
-      {
-        "de": "probieren",
-        "zh": "尝试",
-        "py": "普罗比伦"
       },
       {
         "de": "prüfen",
@@ -3653,24 +3573,9 @@ module.exports = [
         "py": "迪 施普雷赫安拉格"
       },
       {
-        "de": "der Backofen",
-        "zh": "烤箱",
-        "py": "德尔 巴克奥芬"
-      },
-      {
-        "de": "die Mikrowelle",
-        "zh": "微波炉",
-        "py": "迪 米克罗韦勒"
-      },
-      {
         "de": "die Gefriertruhe",
         "zh": "冷冻柜",
         "py": "迪 格弗里尔特鲁呃"
-      },
-      {
-        "de": "die Spülmaschine",
-        "zh": "洗碗机",
-        "py": "迪 施皮尔玛斯乘"
       },
       {
         "de": "die Waschmaschine",
@@ -5318,41 +5223,6 @@ module.exports = [
     "icon": "🍴",
     "phrases": [
       {
-        "de": "die Gabel",
-        "zh": "叉子",
-        "py": "迪 加贝尔"
-      },
-      {
-        "de": "der Löffel",
-        "zh": "勺子",
-        "py": "德尔 勒费尔"
-      },
-      {
-        "de": "das Messer",
-        "zh": "刀",
-        "py": "达斯 梅瑟"
-      },
-      {
-        "de": "der Teller",
-        "zh": "盘子",
-        "py": "德尔 特勒"
-      },
-      {
-        "de": "die Tasse",
-        "zh": "杯子",
-        "py": "迪 塔瑟"
-      },
-      {
-        "de": "der Topf",
-        "zh": "锅",
-        "py": "德尔 托普夫"
-      },
-      {
-        "de": "die Schere",
-        "zh": "剪刀",
-        "py": "迪 谢勒"
-      },
-      {
         "de": "die Seife",
         "zh": "肥皂",
         "py": "迪 扎伊费"
@@ -6722,6 +6592,245 @@ module.exports = [
         "de": "sich umziehen",
         "zh": "换衣服",
         "py": "西希 乌姆齐恩"
+      }
+    ]
+  },
+  {
+    "name": "厨房用具",
+    "level": "a2",
+    "icon": "🍳",
+    "phrases": [
+      {
+        "de": "das Glas",
+        "zh": "玻璃杯",
+        "py": "达斯 格拉斯"
+      },
+      {
+        "de": "der Herd",
+        "zh": "炉灶",
+        "py": "德尔 黑尔特"
+      },
+      {
+        "de": "der Kühlschrank",
+        "zh": "冰箱",
+        "py": "德尔 屈尔施兰克"
+      },
+      {
+        "de": "der Backofen",
+        "zh": "烤箱",
+        "py": "德尔 巴克奥芬"
+      },
+      {
+        "de": "die Mikrowelle",
+        "zh": "微波炉",
+        "py": "迪 米克罗韦勒"
+      },
+      {
+        "de": "die Spülmaschine",
+        "zh": "洗碗机",
+        "py": "迪 施皮尔玛斯乘"
+      },
+      {
+        "de": "die Gabel",
+        "zh": "叉子",
+        "py": "迪 加贝尔"
+      },
+      {
+        "de": "der Löffel",
+        "zh": "勺子",
+        "py": "德尔 勒费尔"
+      },
+      {
+        "de": "das Messer",
+        "zh": "刀",
+        "py": "达斯 梅瑟"
+      },
+      {
+        "de": "der Teller",
+        "zh": "盘子",
+        "py": "德尔 特勒"
+      },
+      {
+        "de": "die Tasse",
+        "zh": "杯子",
+        "py": "迪 塔瑟"
+      },
+      {
+        "de": "der Topf",
+        "zh": "锅",
+        "py": "德尔 托普夫"
+      },
+      {
+        "de": "die Schere",
+        "zh": "剪刀",
+        "py": "迪 谢勒"
+      },
+      {
+        "de": "die Pfanne",
+        "zh": "平底锅",
+        "py": "迪 普凡讷"
+      },
+      {
+        "de": "die Schüssel",
+        "zh": "碗/大盆",
+        "py": "迪 施徽塞尔"
+      },
+      {
+        "de": "das Schneidebrett",
+        "zh": "砧板",
+        "py": "达斯 施奈德布雷特"
+      },
+      {
+        "de": "der Wasserkocher",
+        "zh": "电热水壶",
+        "py": "德尔 瓦瑟科赫尔"
+      },
+      {
+        "de": "das Sieb",
+        "zh": "滤网/筛子",
+        "py": "达斯 集普"
+      },
+      {
+        "de": "die Schürze",
+        "zh": "围裙",
+        "py": "迪 施徽尔策"
+      },
+      {
+        "de": "die Waage",
+        "zh": "秤",
+        "py": "迪 瓦格"
+      },
+      {
+        "de": "der Mixer",
+        "zh": "搅拌机",
+        "py": "德尔 米克瑟尔"
+      },
+      {
+        "de": "der Deckel",
+        "zh": "盖子",
+        "py": "德尔 戴克尔"
+      },
+      {
+        "de": "der Kochlöffel",
+        "zh": "木勺",
+        "py": "德尔 科赫勒费尔"
+      }
+    ]
+  },
+  {
+    "name": "烹饪动词",
+    "level": "a2",
+    "icon": "🔪",
+    "phrases": [
+      {
+        "de": "grillen",
+        "zh": "烤（炉）",
+        "py": "格里伦"
+      },
+      {
+        "de": "kochen",
+        "zh": "做饭",
+        "py": "科赫恩"
+      },
+      {
+        "de": "schneiden",
+        "zh": "切",
+        "py": "施奈顿"
+      },
+      {
+        "de": "reiben",
+        "zh": "磨碎",
+        "py": "莱本"
+      },
+      {
+        "de": "schälen",
+        "zh": "削皮",
+        "py": "施雪伦"
+      },
+      {
+        "de": "braten",
+        "zh": "煎炒",
+        "py": "布拉腾"
+      },
+      {
+        "de": "backen",
+        "zh": "烤",
+        "py": "巴肯"
+      },
+      {
+        "de": "dünsten",
+        "zh": "蒸",
+        "py": "丹斯腾"
+      },
+      {
+        "de": "frittieren",
+        "zh": "炸",
+        "py": "弗里蒂伦"
+      },
+      {
+        "de": "würzen",
+        "zh": "调味",
+        "py": "维尔泽恩"
+      },
+      {
+        "de": "salzen",
+        "zh": "加盐",
+        "py": "萨尔泽恩"
+      },
+      {
+        "de": "umrühren",
+        "zh": "搅拌",
+        "py": "乌姆吕伦"
+      },
+      {
+        "de": "mischen",
+        "zh": "混合",
+        "py": "米施恩"
+      },
+      {
+        "de": "kneten",
+        "zh": "揉",
+        "py": "克内腾"
+      },
+      {
+        "de": "aufwärmen",
+        "zh": "加热",
+        "py": "奥夫韦尔梅恩"
+      },
+      {
+        "de": "servieren",
+        "zh": "上菜",
+        "py": "泽尔维伦"
+      },
+      {
+        "de": "gießen",
+        "zh": "浇水",
+        "py": "吉森"
+      },
+      {
+        "de": "probieren",
+        "zh": "尝试",
+        "py": "普罗比伦"
+      },
+      {
+        "de": "dämpfen",
+        "zh": "蒸",
+        "py": "戴姆普芬"
+      },
+      {
+        "de": "rühren",
+        "zh": "搅拌",
+        "py": "吕伦"
+      },
+      {
+        "de": "erhitzen",
+        "zh": "加热",
+        "py": "埃尔希岑"
+      },
+      {
+        "de": "zubereiten",
+        "zh": "准备(食物)",
+        "py": "楚贝赖滕"
       }
     ]
   }
