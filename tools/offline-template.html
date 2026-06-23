@@ -2167,7 +2167,7 @@ function buildReadTabs(){
   document.getElementById('readLevelTabs').innerHTML=READ_LEVELS.map(([k,l])=>
     `<button class="level-tab${k===readActive?' active':''}" onclick="setReadLevel('${k}')">${l}</button>`).join('');
 }
-function setReadLevel(k){stopReading();readActive=k;buildReadTabs();renderReadings();}
+function setReadLevel(k){stopReading();_readResume=null;readActive=k;buildReadTabs();renderReadings();}
 function _getReadList(){return READINGS.filter(r=>readActive==='all'||r.level===readActive);}
 // 阅读点词入生词本：词库查表（德语）
 let _deWordMap=null;
@@ -2219,29 +2219,36 @@ function renderReadings(){
       </div>${body}</div>`;
   }).join('');
 }
-// ── 统一阅读朗读引擎：单句 / 单篇 / 循环全部 ──
-var _rq=null; // {ri,pi,mode:'loop'|'one'}
+// ── 统一阅读朗读引擎：单句 / 单篇 / 循环全部（支持暂停/继续，记住位置；刷新即重置）──
+var _rq=null; // {ri,pi,mode:'loop'|'one',paused}
+var _readResume=null; // 暂停/离开时记住的循环位置（仅内存，不持久化）
 function speakPara(btn,text){stopReading();speakDE(text,btn);}
+function togglePauseRead(){
+  if(!_rq)return;
+  if(_rq.paused){_rq.paused=false;_syncReadBtns();_playNext();}      // 继续
+  else{_rq.paused=true;speechSynthesis.cancel();_syncReadBtns();}    // 暂停（保留位置）
+}
 function toggleLoopAll(){
-  if(_rq&&_rq.mode==='loop'){stopReading();return;}
+  if(_rq&&_rq.mode==='loop'){togglePauseRead();return;}
   stopReading();
   if(!_getReadList().length)return;
-  _rq={ri:0,pi:0,mode:'loop'};_syncReadBtns();_playNext();
+  const st=_readResume||{ri:0,pi:0}; _readResume=null;               // 从上次暂停处继续
+  _rq={ri:st.ri,pi:st.pi,mode:'loop',paused:false};_syncReadBtns();_playNext();
 }
 function toggleArticle(btn,ri){
-  if(_rq&&_rq.mode==='one'&&_rq.ri===ri){stopReading();return;}
+  if(_rq&&_rq.mode==='one'&&_rq.ri===ri){togglePauseRead();return;}
   stopReading();
-  _rq={ri:ri,pi:0,mode:'one'};_syncReadBtns();_playNext();
+  _rq={ri:ri,pi:0,mode:'one',paused:false};_syncReadBtns();_playNext();
 }
 function _syncReadBtns(){
   const lb=document.getElementById('loopAllBtn');
-  if(lb){const on=_rq&&_rq.mode==='loop';lb.classList.toggle('speaking',on);lb.textContent=on?'⏹ 停止':'🔊 循环朗读';}
+  if(lb){const on=_rq&&_rq.mode==='loop';lb.classList.toggle('speaking',!!(on&&!_rq.paused));lb.textContent=!on?'🔊 循环朗读':(_rq.paused?'▶ 继续':'⏸ 暂停');}
   document.querySelectorAll('.read-art-btn').forEach(b=>{b.classList.remove('speaking');b.textContent='▶ 朗读';});
-  if(_rq&&_rq.mode==='one'){const ab=document.getElementById('rab_'+_rq.ri);if(ab){ab.classList.add('speaking');ab.textContent='⏹ 停止';}}
+  if(_rq&&_rq.mode==='one'){const ab=document.getElementById('rab_'+_rq.ri);if(ab){ab.classList.toggle('speaking',!_rq.paused);ab.textContent=_rq.paused?'▶ 继续':'⏸ 暂停';}}
 }
 function _clearReadHL(){document.querySelectorAll('.read-para.rp-on').forEach(e=>e.classList.remove('rp-on'));}
 function _playNext(){
-  const q=_rq;if(!q)return;
+  const q=_rq;if(!q||q.paused)return;
   const list=_getReadList();
   if(q.ri>=list.length){if(q.mode==='loop'){q.ri=0;q.pi=0;}else{stopReading();return;}}
   const r=list[q.ri];
@@ -2255,11 +2262,12 @@ function _playNext(){
   speechSynthesis.cancel();
   const u=new SpeechSynthesisUtterance(r.paras[q.pi][0]);
   u.lang='de-DE';if(_deVoice)u.voice=_deVoice;u.rate=_spk.rate;u.pitch=1;
-  u.onend=()=>{if(!_rq)return;q.pi++;_playNext();};
-  u.onerror=()=>{if(!_rq)return;q.pi++;_playNext();};
+  u.onend=()=>{if(!_rq||_rq.paused)return;q.pi++;_playNext();};   // 暂停时不前进，继续后重读本句
+  u.onerror=()=>{if(!_rq||_rq.paused)return;q.pi++;_playNext();};
   speechSynthesis.speak(u);
 }
 function stopReading(){
+  if(_rq&&_rq.mode==='loop')_readResume={ri:_rq.ri,pi:_rq.pi};      // 离开/停止时记住循环位置
   _rq=null;speechSynthesis.cancel();_clearReadHL();_syncReadBtns();
 }
 
