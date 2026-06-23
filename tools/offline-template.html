@@ -1560,31 +1560,58 @@ function filterPhrases(){
   renderSearchResults(results,q||activeCat!=='all');
 }
 
+// ── 分块渲染：大列表(英语高考/四级上千卡)滚动到哪挂载到哪，首屏轻、滚动顺 ──
+let _phChunk=null;
+const PH_CHUNK=100;
+function mountChunk(){
+  const s=_phChunk; if(!s)return;
+  const frag=document.createDocumentFragment();
+  const end=Math.min(s.idx+PH_CHUNK,s.items.length);
+  for(;s.idx<end;s.idx++) frag.appendChild(s.makeFn(s.items[s.idx]));
+  s.grid.appendChild(frag);
+  if(s.idx>=s.items.length){ if(s.observer)s.observer.disconnect(); if(s.sentinel)s.sentinel.remove(); }
+}
+function mountAllChunks(){ while(_phChunk&&_phChunk.idx<_phChunk.items.length) mountChunk(); }
+// 兜底：滚动到接近底部也挂载下一批（防 IntersectionObserver 偶发不触发）
+window.addEventListener('scroll',function(){
+  if(_phChunk&&_phChunk.idx<_phChunk.items.length&&window.innerHeight+window.scrollY>document.body.offsetHeight-900) mountChunk();
+},{passive:true});
+function startChunkedRender(container,items,makeFn){
+  if(_phChunk&&_phChunk.observer)_phChunk.observer.disconnect();
+  container.innerHTML='';
+  const grid=document.createElement('div'); grid.className='phrase-grid'; container.appendChild(grid);
+  const sentinel=document.createElement('div'); sentinel.style.height='1px'; container.appendChild(sentinel);
+  _phChunk={items,idx:0,grid,makeFn,sentinel,observer:null};
+  mountChunk();
+  if(items.length>PH_CHUNK&&'IntersectionObserver' in window){
+    const obs=new IntersectionObserver(es=>{if(es[0].isIntersecting)mountChunk();},{rootMargin:'700px'});
+    obs.observe(sentinel); _phChunk.observer=obs;
+  } else { sentinel.remove(); }
+}
 function renderPhrases(){
   if(typeof stopAutoPlay==='function')stopAutoPlay();
   const el=document.getElementById('phraseContent');
-  el.innerHTML='';
   const lb={'0':'lb-0','a1':'lb-a1','a2':'lb-a2','b1':'lb-b1','b2':'lb-b2'};
+  const items=[];
   getLevelCats().forEach((cat,ci)=>{
-    const sec=document.createElement('div');
-    const badge=activeLevel==='all'?`<span class="level-badge ${lb[cat.level]||''}">${levelName(cat.level)}</span>`:'';
-    sec.innerHTML=`<div class="sec-title"><span class="sec-title-icon">${cat.icon}</span><span class="sec-title-text">${cat.name}</span>${badge}<span class="sec-title-count" style="margin-left:auto">${cat.phrases.length}句</span></div>`;
-    const grid=document.createElement('div');
-    grid.className='phrase-grid';
-    cat.phrases.forEach((p,pi)=>grid.appendChild(makeCard(p,`${ci}-${pi}`)));
-    sec.appendChild(grid);
-    el.appendChild(sec);
+    items.push({header:true,cat:cat});
+    cat.phrases.forEach((p,pi)=>items.push({p:p,id:`${ci}-${pi}`}));
+  });
+  startChunkedRender(el,items,function(it){
+    if(it.header){
+      const d=document.createElement('div'); d.style.gridColumn='1/-1';
+      const badge=activeLevel==='all'?`<span class="level-badge ${lb[it.cat.level]||''}">${levelName(it.cat.level)}</span>`:'';
+      d.innerHTML=`<div class="sec-title"><span class="sec-title-icon">${it.cat.icon}</span><span class="sec-title-text">${it.cat.name}</span>${badge}<span class="sec-title-count" style="margin-left:auto">${it.cat.phrases.length}句</span></div>`;
+      return d;
+    }
+    return makeCard(it.p,it.id);
   });
 }
 
 function renderSearchResults(results, isFiltered){
   const el=document.getElementById('phraseContent');
   if(!isFiltered){ renderPhrases(); return; }
-  el.innerHTML='';
-  const grid=document.createElement('div');
-  grid.className='phrase-grid';
-  results.forEach(p=>grid.appendChild(makeCard(p,p.id)));
-  el.appendChild(grid);
+  startChunkedRender(el,results,function(p){return makeCard(p,p.id);});
 }
 
 // ── 德语"拼读"拆解：把词按字母组合切分并标注读音，帮助脱离谐音自行拼读 ──
@@ -1757,6 +1784,7 @@ function toggleAutoPlay(){
   const btn=document.getElementById('playAllBtn');
   if(_auto.on){ stopAutoPlay(); return; }
   if(!('speechSynthesis' in window)){alert('当前浏览器不支持朗读，请用 Chrome/Edge/Safari');return;}
+  if(typeof mountAllChunks==='function')mountAllChunks(); // 循环朗读前先全部挂载
   let cards=[...document.querySelectorAll('#phraseContent .card')];
   if(!cards.length)return;
   if(_spk.shuffle)cards=cards.map(c=>[Math.random(),c]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]); // 乱序
