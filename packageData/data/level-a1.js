@@ -2623,19 +2623,9 @@ module.exports = [
         "py": "迪 鲍施泰勒"
       },
       {
-        "de": "das Haus",
-        "zh": "房子",
-        "py": "达斯 豪斯"
-      },
-      {
         "de": "die Wohnung",
         "zh": "公寓",
         "py": "迪 沃农"
-      },
-      {
-        "de": "das Zimmer",
-        "zh": "房间",
-        "py": "达斯 齐默尔"
       },
       {
         "de": "die Straße",
@@ -2920,16 +2910,6 @@ module.exports = [
         "de": "das Licht",
         "zh": "光/灯",
         "py": "达斯 利希特"
-      },
-      {
-        "de": "der Baum",
-        "zh": "树",
-        "py": "德尔 鲍姆"
-      },
-      {
-        "de": "die Blume",
-        "zh": "花",
-        "py": "迪 布卢梅"
       },
       {
         "de": "das Tier",
@@ -4658,39 +4638,9 @@ module.exports = [
         "py": "达斯 埃森"
       },
       {
-        "de": "das Brot",
-        "zh": "面包",
-        "py": "达斯 布罗特"
-      },
-      {
         "de": "das Brötchen",
         "zh": "小面包",
         "py": "达斯 布勒特兴"
-      },
-      {
-        "de": "die Butter",
-        "zh": "黄油",
-        "py": "迪 布特尔"
-      },
-      {
-        "de": "das Ei",
-        "zh": "鸡蛋",
-        "py": "达斯 艾"
-      },
-      {
-        "de": "der Käse",
-        "zh": "奶酪",
-        "py": "德尔 凯泽"
-      },
-      {
-        "de": "das Fleisch",
-        "zh": "肉",
-        "py": "达斯 弗莱什"
-      },
-      {
-        "de": "der Fisch",
-        "zh": "鱼",
-        "py": "德尔 菲什"
       },
       {
         "de": "das Hähnchen",
@@ -4703,64 +4653,14 @@ module.exports = [
         "py": "德尔 施欣肯"
       },
       {
-        "de": "das Gemüse",
-        "zh": "蔬菜",
-        "py": "达斯 格缪泽"
-      },
-      {
-        "de": "das Obst",
-        "zh": "水果",
-        "py": "达斯 奥普斯特"
-      },
-      {
-        "de": "der Apfel",
-        "zh": "苹果",
-        "py": "德尔 阿普费尔"
-      },
-      {
-        "de": "die Banane",
-        "zh": "香蕉",
-        "py": "迪 巴纳讷"
-      },
-      {
         "de": "die Birne",
         "zh": "梨",
         "py": "迪 比尔讷"
       },
       {
-        "de": "die Kartoffel",
-        "zh": "土豆",
-        "py": "迪 卡托费尔"
-      },
-      {
-        "de": "die Tomate",
-        "zh": "番茄",
-        "py": "迪 托马特"
-      },
-      {
         "de": "der Salat",
         "zh": "沙拉/生菜",
         "py": "德尔 萨拉特"
-      },
-      {
-        "de": "der Reis",
-        "zh": "米饭",
-        "py": "德尔 莱斯"
-      },
-      {
-        "de": "das Salz",
-        "zh": "盐",
-        "py": "达斯 扎尔茨"
-      },
-      {
-        "de": "der Kuchen",
-        "zh": "蛋糕",
-        "py": "德尔 库亨"
-      },
-      {
-        "de": "die Milch",
-        "zh": "牛奶",
-        "py": "迪 米尔希"
       },
       {
         "de": "der Kaffee",
@@ -4771,11 +4671,6 @@ module.exports = [
         "de": "der Tee",
         "zh": "茶",
         "py": "德尔 特"
-      },
-      {
-        "de": "der Saft",
-        "zh": "果汁",
-        "py": "德尔 萨夫特"
       },
       {
         "de": "das Bier",
@@ -4833,19 +4728,9 @@ module.exports = [
         "py": "达斯 巴特"
       },
       {
-        "de": "die Küche",
-        "zh": "厨房",
-        "py": "迪 屈讷"
-      },
-      {
         "de": "der Balkon",
         "zh": "阳台",
         "py": "德尔 巴尔孔"
-      },
-      {
-        "de": "der Garten",
-        "zh": "花园",
-        "py": "德尔 加尔腾"
       },
       {
         "de": "die Dusche",
@@ -4856,16 +4741,6 @@ module.exports = [
         "de": "die Toilette",
         "zh": "厕所",
         "py": "迪 托瓦莱特"
-      },
-      {
-        "de": "das Bett",
-        "zh": "床",
-        "py": "达斯 贝特"
-      },
-      {
-        "de": "der Tisch",
-        "zh": "桌子",
-        "py": "德尔 提什"
       },
       {
         "de": "der Schrank",
@@ -4888,19 +4763,9 @@ module.exports = [
         "py": "德尔 屈尔施兰克"
       },
       {
-        "de": "die Uhr",
-        "zh": "钟/表",
-        "py": "迪 乌尔"
-      },
-      {
         "de": "das Telefon",
         "zh": "电话",
         "py": "达斯 特勒丰"
-      },
-      {
-        "de": "das Handy",
-        "zh": "手机",
-        "py": "达斯 亨迪"
       },
       {
         "de": "der Computer",
@@ -4933,16 +4798,6 @@ module.exports = [
         "py": "德尔 科费尔"
       },
       {
-        "de": "die Tasche",
-        "zh": "包/口袋",
-        "py": "迪 塔舍"
-      },
-      {
-        "de": "der Schlüssel",
-        "zh": "钥匙",
-        "py": "德尔 施吕塞尔"
-      },
-      {
         "de": "das Hobby",
         "zh": "爱好",
         "py": "达斯 霍比"
@@ -4971,11 +4826,6 @@ module.exports = [
         "de": "der Test",
         "zh": "测验",
         "py": "德尔 特斯特"
-      },
-      {
-        "de": "das Buch",
-        "zh": "书",
-        "py": "达斯 布赫"
       },
       {
         "de": "der Text",
@@ -5118,29 +4968,14 @@ module.exports = [
         "py": "德尔 特尔民"
       },
       {
-        "de": "die Jacke",
-        "zh": "夹克",
-        "py": "迪 雅克"
-      },
-      {
         "de": "die Kleidung",
         "zh": "衣服",
         "py": "迪 克莱东"
       },
       {
-        "de": "der Schuh",
-        "zh": "鞋",
-        "py": "德尔 舒"
-      },
-      {
         "de": "die Farbe",
         "zh": "颜色",
         "py": "迪 法尔贝"
-      },
-      {
-        "de": "der Hund",
-        "zh": "狗",
-        "py": "德尔 洪特"
       },
       {
         "de": "das Apartment",
@@ -5210,11 +5045,6 @@ module.exports = [
         "py": "迪 安昆夫特"
       },
       {
-        "de": "das Auto",
-        "zh": "汽车",
-        "py": "达斯 奥托"
-      },
-      {
         "de": "die Autobahn",
         "zh": "高速公路",
         "py": "迪 奥托班"
@@ -5258,11 +5088,6 @@ module.exports = [
         "de": "das Taxi",
         "zh": "出租车",
         "py": "达斯 塔克西"
-      },
-      {
-        "de": "das Fahrrad",
-        "zh": "自行车",
-        "py": "达斯 法拉特"
       },
       {
         "de": "der Fahrer",
@@ -5533,11 +5358,6 @@ module.exports = [
         "de": "das Wiederhören",
         "zh": "（电话）再见",
         "py": "达斯 维德赫伦"
-      },
-      {
-        "de": "das Geld",
-        "zh": "钱",
-        "py": "达斯 盖尔特"
       },
       {
         "de": "der Preis",
@@ -5833,6 +5653,454 @@ module.exports = [
         "de": "die Maschine",
         "zh": "机器",
         "py": "迪 马希讷"
+      }
+    ]
+  },
+  {
+    "name": "动物",
+    "level": "a1",
+    "icon": "🐶",
+    "phrases": [
+      {
+        "de": "der Fisch",
+        "zh": "鱼",
+        "py": "德尔 菲什"
+      },
+      {
+        "de": "der Hund",
+        "zh": "狗",
+        "py": "德尔 洪特"
+      },
+      {
+        "de": "die Kuh",
+        "zh": "牛",
+        "py": "迪 库"
+      },
+      {
+        "de": "das Schaf",
+        "zh": "羊",
+        "py": "达斯 沙夫"
+      },
+      {
+        "de": "der Affe",
+        "zh": "猴子",
+        "py": "德尔 阿费"
+      },
+      {
+        "de": "das Kaninchen",
+        "zh": "兔子",
+        "py": "达斯 卡宁兴"
+      },
+      {
+        "de": "die Ente",
+        "zh": "鸭子",
+        "py": "迪 恩特"
+      },
+      {
+        "de": "das Huhn",
+        "zh": "鸡",
+        "py": "达斯 胡恩"
+      },
+      {
+        "de": "der Löwe",
+        "zh": "狮子",
+        "py": "德尔 洛韦"
+      },
+      {
+        "de": "der Tiger",
+        "zh": "老虎",
+        "py": "德尔 提格尔"
+      },
+      {
+        "de": "der Elefant",
+        "zh": "大象",
+        "py": "德尔 埃勒凡特"
+      },
+      {
+        "de": "der Bär",
+        "zh": "熊",
+        "py": "德尔 贝尔"
+      },
+      {
+        "de": "der Wolf",
+        "zh": "狼",
+        "py": "德尔 沃尔夫"
+      },
+      {
+        "de": "der Fuchs",
+        "zh": "狐狸",
+        "py": "德尔 富克斯"
+      },
+      {
+        "de": "die Schlange",
+        "zh": "蛇",
+        "py": "迪 施拉格"
+      },
+      {
+        "de": "der Schmetterling",
+        "zh": "蝴蝶",
+        "py": "德尔 施梅特尔林"
+      },
+      {
+        "de": "die Biene",
+        "zh": "蜜蜂",
+        "py": "迪 比嫩"
+      },
+      {
+        "de": "die Katze",
+        "zh": "猫",
+        "py": "迪 卡策"
+      },
+      {
+        "de": "das Pferd",
+        "zh": "马",
+        "py": "达斯 费尔特"
+      },
+      {
+        "de": "das Schwein",
+        "zh": "猪",
+        "py": "达斯 施瓦因"
+      },
+      {
+        "de": "der Vogel",
+        "zh": "鸟",
+        "py": "德尔 福格尔"
+      },
+      {
+        "de": "die Maus",
+        "zh": "鼠标",
+        "py": "迪 豪斯"
+      }
+    ]
+  },
+  {
+    "name": "花草·植物",
+    "level": "a1",
+    "icon": "🌸",
+    "phrases": [
+      {
+        "de": "der Baum",
+        "zh": "树",
+        "py": "德尔 鲍姆"
+      },
+      {
+        "de": "die Blume",
+        "zh": "花",
+        "py": "迪 布卢梅"
+      },
+      {
+        "de": "der Samen",
+        "zh": "种子",
+        "py": "德尔 扎门"
+      },
+      {
+        "de": "die Rose",
+        "zh": "玫瑰",
+        "py": "迪 罗斯"
+      },
+      {
+        "de": "die Tulpe",
+        "zh": "郁金香",
+        "py": "迪 图尔普"
+      },
+      {
+        "de": "die Sonnenblume",
+        "zh": "向日葵",
+        "py": "迪 宗嫩布卢梅"
+      },
+      {
+        "de": "das Gras",
+        "zh": "草",
+        "py": "达斯 格拉斯"
+      },
+      {
+        "de": "die Wurzel",
+        "zh": "根",
+        "py": "迪 乌尔泽尔"
+      },
+      {
+        "de": "der Ast",
+        "zh": "树枝",
+        "py": "德尔 阿斯特"
+      },
+      {
+        "de": "das Blatt",
+        "zh": "叶子",
+        "py": "达斯 布拉特"
+      },
+      {
+        "de": "die Blüte",
+        "zh": "花朵",
+        "py": "迪 布吕特"
+      },
+      {
+        "de": "die Pflanze",
+        "zh": "植物",
+        "py": "迪 普弗兰策"
+      },
+      {
+        "de": "der Wald",
+        "zh": "森林",
+        "py": "德尔 瓦尔特"
+      }
+    ]
+  },
+  {
+    "name": "食物·果蔬",
+    "level": "a1",
+    "icon": "🍎",
+    "phrases": [
+      {
+        "de": "das Brot",
+        "zh": "面包",
+        "py": "达斯 布罗特"
+      },
+      {
+        "de": "die Butter",
+        "zh": "黄油",
+        "py": "迪 布特尔"
+      },
+      {
+        "de": "das Ei",
+        "zh": "鸡蛋",
+        "py": "达斯 艾"
+      },
+      {
+        "de": "der Käse",
+        "zh": "奶酪",
+        "py": "德尔 凯泽"
+      },
+      {
+        "de": "das Fleisch",
+        "zh": "肉",
+        "py": "达斯 弗莱什"
+      },
+      {
+        "de": "das Gemüse",
+        "zh": "蔬菜",
+        "py": "达斯 格缪泽"
+      },
+      {
+        "de": "das Obst",
+        "zh": "水果",
+        "py": "达斯 奥普斯特"
+      },
+      {
+        "de": "der Apfel",
+        "zh": "苹果",
+        "py": "德尔 阿普费尔"
+      },
+      {
+        "de": "die Banane",
+        "zh": "香蕉",
+        "py": "迪 巴纳讷"
+      },
+      {
+        "de": "die Kartoffel",
+        "zh": "土豆",
+        "py": "迪 卡托费尔"
+      },
+      {
+        "de": "die Tomate",
+        "zh": "番茄",
+        "py": "迪 托马特"
+      },
+      {
+        "de": "der Reis",
+        "zh": "米饭",
+        "py": "德尔 莱斯"
+      },
+      {
+        "de": "das Salz",
+        "zh": "盐",
+        "py": "达斯 扎尔茨"
+      },
+      {
+        "de": "der Kuchen",
+        "zh": "蛋糕",
+        "py": "德尔 库亨"
+      },
+      {
+        "de": "die Milch",
+        "zh": "牛奶",
+        "py": "迪 米尔希"
+      },
+      {
+        "de": "der Saft",
+        "zh": "果汁",
+        "py": "德尔 萨夫特"
+      },
+      {
+        "de": "die Traube",
+        "zh": "葡萄",
+        "py": "迪 特劳贝"
+      },
+      {
+        "de": "die Erdbeere",
+        "zh": "草莓",
+        "py": "迪 埃尔特贝雷"
+      },
+      {
+        "de": "der Zucker",
+        "zh": "糖",
+        "py": "德尔 楚克尔"
+      },
+      {
+        "de": "die Nudeln",
+        "zh": "面条",
+        "py": "迪 努德尔恩"
+      },
+      {
+        "de": "die Suppe",
+        "zh": "汤",
+        "py": "迪 祖普"
+      },
+      {
+        "de": "die Zwiebel",
+        "zh": "洋葱",
+        "py": "迪 茨维本"
+      },
+      {
+        "de": "die Zitrone",
+        "zh": "柠檬",
+        "py": "迪 齐特龙"
+      },
+      {
+        "de": "die Karotte",
+        "zh": "胡萝卜",
+        "py": "迪 卡罗特"
+      },
+      {
+        "de": "die Orange",
+        "zh": "橙子",
+        "py": "迪 奥朗热"
+      }
+    ]
+  },
+  {
+    "name": "居家·日常",
+    "level": "a1",
+    "icon": "🏠",
+    "phrases": [
+      {
+        "de": "das Haus",
+        "zh": "房子",
+        "py": "达斯 豪斯"
+      },
+      {
+        "de": "das Zimmer",
+        "zh": "房间",
+        "py": "达斯 齐默尔"
+      },
+      {
+        "de": "die Küche",
+        "zh": "厨房",
+        "py": "迪 屈讷"
+      },
+      {
+        "de": "der Garten",
+        "zh": "花园",
+        "py": "德尔 加尔腾"
+      },
+      {
+        "de": "das Bett",
+        "zh": "床",
+        "py": "达斯 贝特"
+      },
+      {
+        "de": "der Tisch",
+        "zh": "桌子",
+        "py": "德尔 提什"
+      },
+      {
+        "de": "die Uhr",
+        "zh": "钟/表",
+        "py": "迪 乌尔"
+      },
+      {
+        "de": "das Handy",
+        "zh": "手机",
+        "py": "达斯 亨迪"
+      },
+      {
+        "de": "die Tasche",
+        "zh": "包/口袋",
+        "py": "迪 塔舍"
+      },
+      {
+        "de": "der Schlüssel",
+        "zh": "钥匙",
+        "py": "德尔 施吕塞尔"
+      },
+      {
+        "de": "das Buch",
+        "zh": "书",
+        "py": "达斯 布赫"
+      },
+      {
+        "de": "die Jacke",
+        "zh": "夹克",
+        "py": "迪 雅克"
+      },
+      {
+        "de": "der Schuh",
+        "zh": "鞋",
+        "py": "德尔 舒"
+      },
+      {
+        "de": "das Auto",
+        "zh": "汽车",
+        "py": "达斯 奥托"
+      },
+      {
+        "de": "das Fahrrad",
+        "zh": "自行车",
+        "py": "达斯 法拉特"
+      },
+      {
+        "de": "das Geld",
+        "zh": "钱",
+        "py": "达斯 盖尔特"
+      },
+      {
+        "de": "der Spiegel",
+        "zh": "镜子",
+        "py": "德尔 施皮格尔"
+      },
+      {
+        "de": "die Hose",
+        "zh": "裤子",
+        "py": "迪 霍泽"
+      },
+      {
+        "de": "das Hemd",
+        "zh": "衬衫",
+        "py": "达斯 黑姆特"
+      },
+      {
+        "de": "die Lampe",
+        "zh": "灯",
+        "py": "迪 兰佩"
+      },
+      {
+        "de": "der Stuhl",
+        "zh": "椅子",
+        "py": "德尔 施图尔"
+      },
+      {
+        "de": "das Fenster",
+        "zh": "窗户",
+        "py": "达斯 芬斯特"
+      },
+      {
+        "de": "die Tür",
+        "zh": "门",
+        "py": "迪 提尔"
+      },
+      {
+        "de": "der Stift",
+        "zh": "笔",
+        "py": "德尔 施蒂夫特"
       }
     ]
   }

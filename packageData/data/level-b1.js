@@ -1535,11 +1535,6 @@ module.exports = [
         "py": "迪 塔斯塔图尔"
       },
       {
-        "de": "die Maus",
-        "zh": "鼠标",
-        "py": "迪 豪斯"
-      },
-      {
         "de": "der Post",
         "zh": "帖子",
         "py": "德尔 波斯特"

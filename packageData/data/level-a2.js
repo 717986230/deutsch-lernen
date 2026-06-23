@@ -933,11 +933,6 @@ module.exports = [
         "py": "迪 拜拉格"
       },
       {
-        "de": "die Suppe",
-        "zh": "汤",
-        "py": "迪 祖普"
-      },
-      {
         "de": "der Eintopf",
         "zh": "炖菜",
         "py": "德尔 艾因托普夫"
@@ -983,19 +978,9 @@ module.exports = [
         "py": "德尔 库尔比斯"
       },
       {
-        "de": "die Zwiebel",
-        "zh": "洋葱",
-        "py": "迪 茨维本"
-      },
-      {
         "de": "der Knoblauch",
         "zh": "大蒜",
         "py": "德尔 克诺布劳赫"
-      },
-      {
-        "de": "die Zitrone",
-        "zh": "柠檬",
-        "py": "迪 齐特龙"
       },
       {
         "de": "die Kirsche",
@@ -1381,11 +1366,6 @@ module.exports = [
         "de": "die Avocado",
         "zh": "牛油果",
         "py": "迪 阿沃卡多"
-      },
-      {
-        "de": "die Karotte",
-        "zh": "胡萝卜",
-        "py": "迪 卡罗特"
       },
       {
         "de": "die Gurke",
@@ -3887,21 +3867,6 @@ module.exports = [
     "icon": "🦁",
     "phrases": [
       {
-        "de": "die Rose",
-        "zh": "玫瑰",
-        "py": "迪 罗斯"
-      },
-      {
-        "de": "die Tulpe",
-        "zh": "郁金香",
-        "py": "迪 图尔普"
-      },
-      {
-        "de": "die Sonnenblume",
-        "zh": "向日葵",
-        "py": "迪 宗嫩布卢梅"
-      },
-      {
         "de": "die Orchidee",
         "zh": "兰花",
         "py": "迪 奥尔基德"
@@ -3992,11 +3957,6 @@ module.exports = [
         "py": "德尔 法尔恩"
       },
       {
-        "de": "das Gras",
-        "zh": "草",
-        "py": "达斯 格拉斯"
-      },
-      {
         "de": "die Distel",
         "zh": "蓟",
         "py": "迪 迪斯特尔"
@@ -4007,29 +3967,9 @@ module.exports = [
         "py": "达斯 乌恩克劳特"
       },
       {
-        "de": "die Wurzel",
-        "zh": "根",
-        "py": "迪 乌尔泽尔"
-      },
-      {
         "de": "der Stamm",
         "zh": "树干",
         "py": "德尔 施塔姆"
-      },
-      {
-        "de": "der Ast",
-        "zh": "树枝",
-        "py": "德尔 阿斯特"
-      },
-      {
-        "de": "das Blatt",
-        "zh": "叶子",
-        "py": "达斯 布拉特"
-      },
-      {
-        "de": "die Blüte",
-        "zh": "花朵",
-        "py": "迪 布吕特"
       },
       {
         "de": "die Frucht",
@@ -4037,24 +3977,9 @@ module.exports = [
         "py": "迪 弗鲁赫特"
       },
       {
-        "de": "der Löwe",
-        "zh": "狮子",
-        "py": "德尔 洛韦"
-      },
-      {
-        "de": "der Tiger",
-        "zh": "老虎",
-        "py": "德尔 提格尔"
-      },
-      {
         "de": "der Leopard",
         "zh": "豹子",
         "py": "德尔 雷欧帕尔特"
-      },
-      {
-        "de": "der Elefant",
-        "zh": "大象",
-        "py": "德尔 埃勒凡特"
       },
       {
         "de": "das Nashorn",
@@ -4085,21 +4010,6 @@ module.exports = [
         "de": "der Schimpanse",
         "zh": "黑猩猩",
         "py": "德尔 施孟帕恩斯"
-      },
-      {
-        "de": "der Bär",
-        "zh": "熊",
-        "py": "德尔 贝尔"
-      },
-      {
-        "de": "der Wolf",
-        "zh": "狼",
-        "py": "德尔 沃尔夫"
-      },
-      {
-        "de": "der Fuchs",
-        "zh": "狐狸",
-        "py": "德尔 富克斯"
       },
       {
         "de": "der Hase",
@@ -4165,21 +4075,6 @@ module.exports = [
         "de": "das Krokodil",
         "zh": "鳄鱼",
         "py": "达斯 克罗科迪尔"
-      },
-      {
-        "de": "die Schlange",
-        "zh": "蛇",
-        "py": "迪 施拉格"
-      },
-      {
-        "de": "der Schmetterling",
-        "zh": "蝴蝶",
-        "py": "德尔 施梅特尔林"
-      },
-      {
-        "de": "die Biene",
-        "zh": "蜜蜂",
-        "py": "迪 比嫩"
       },
       {
         "de": "der Marienkäfer",
@@ -5356,16 +5251,6 @@ module.exports = [
         "py": "迪 布鲁泽"
       },
       {
-        "de": "die Hose",
-        "zh": "裤子",
-        "py": "迪 霍泽"
-      },
-      {
-        "de": "das Hemd",
-        "zh": "衬衫",
-        "py": "达斯 黑姆特"
-      },
-      {
         "de": "das Kleid",
         "zh": "连衣裙",
         "py": "达斯 克莱特"
@@ -5494,26 +5379,6 @@ module.exports = [
     "level": "a2",
     "icon": "🛋️",
     "phrases": [
-      {
-        "de": "die Lampe",
-        "zh": "灯",
-        "py": "迪 兰佩"
-      },
-      {
-        "de": "der Stuhl",
-        "zh": "椅子",
-        "py": "德尔 施图尔"
-      },
-      {
-        "de": "das Fenster",
-        "zh": "窗户",
-        "py": "达斯 芬斯特"
-      },
-      {
-        "de": "die Tür",
-        "zh": "门",
-        "py": "迪 提尔"
-      },
       {
         "de": "das Schlafzimmer",
         "zh": "卧室",
@@ -5803,11 +5668,6 @@ module.exports = [
         "py": "迪 努德尔"
       },
       {
-        "de": "die Orange",
-        "zh": "橙子",
-        "py": "迪 奥朗热"
-      },
-      {
         "de": "die Pizza",
         "zh": "披萨",
         "py": "迪 皮萨"
@@ -5840,39 +5700,9 @@ module.exports = [
     "icon": "🦁",
     "phrases": [
       {
-        "de": "die Katze",
-        "zh": "猫",
-        "py": "迪 卡策"
-      },
-      {
-        "de": "das Pferd",
-        "zh": "马",
-        "py": "达斯 费尔特"
-      },
-      {
         "de": "das Rind",
         "zh": "牛",
         "py": "达斯 林特"
-      },
-      {
-        "de": "das Schwein",
-        "zh": "猪",
-        "py": "达斯 施瓦因"
-      },
-      {
-        "de": "der Vogel",
-        "zh": "鸟",
-        "py": "德尔 福格尔"
-      },
-      {
-        "de": "die Pflanze",
-        "zh": "植物",
-        "py": "迪 普弗兰策"
-      },
-      {
-        "de": "der Wald",
-        "zh": "森林",
-        "py": "德尔 瓦尔特"
       },
       {
         "de": "die Landschaft",
@@ -6014,11 +5844,6 @@ module.exports = [
         "de": "das Heft",
         "zh": "本子",
         "py": "达斯 黑夫特"
-      },
-      {
-        "de": "der Stift",
-        "zh": "笔",
-        "py": "德尔 施蒂夫特"
       },
       {
         "de": "der Kalender",
