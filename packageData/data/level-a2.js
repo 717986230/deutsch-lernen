@@ -5538,16 +5538,6 @@ module.exports = [
         "de": "der Strand",
         "zh": "海滩",
         "py": "德尔 施特兰特"
-      },
-      {
-        "de": "die Wolke",
-        "zh": "云",
-        "py": "迪 沃尔克"
-      },
-      {
-        "de": "das Gewitter",
-        "zh": "雷雨",
-        "py": "达斯 格维特"
       }
     ]
   },
@@ -5930,11 +5920,6 @@ module.exports = [
         "py": "贝吕姆特"
       },
       {
-        "de": "bewölkt",
-        "zh": "多云的",
-        "py": "贝沃尔克特"
-      },
-      {
         "de": "blöd",
         "zh": "愚蠢的",
         "py": "布勒特"
@@ -6065,11 +6050,6 @@ module.exports = [
         "py": "纳斯"
       },
       {
-        "de": "neblig",
-        "zh": "有雾的",
-        "py": "内布利希"
-      },
-      {
         "de": "nervös",
         "zh": "紧张的",
         "py": "内尔沃斯"
@@ -6155,11 +6135,6 @@ module.exports = [
         "py": "西希尔"
       },
       {
-        "de": "sonnig",
-        "zh": "晴朗的",
-        "py": "索尼希"
-      },
-      {
         "de": "spannend",
         "zh": "扣人心弦的",
         "py": "施潘恩特"
@@ -6243,11 +6218,6 @@ module.exports = [
         "de": "weich",
         "zh": "软的",
         "py": "瓦伊希"
-      },
-      {
-        "de": "windig",
-        "zh": "有风的",
-        "py": "温迪希"
       },
       {
         "de": "witzig",

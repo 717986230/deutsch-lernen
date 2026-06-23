@@ -1996,11 +1996,6 @@ module.exports = [
         "py": "达斯 费斯特"
       },
       {
-        "de": "der Feiertag",
-        "zh": "假日",
-        "py": "德尔 福伊尔塔克"
-      },
-      {
         "de": "das Silvester",
         "zh": "除夕/跨年",
         "py": "达斯 济尔维斯特尔"
@@ -4392,11 +4387,6 @@ module.exports = [
         "de": "der Donner",
         "zh": "雷",
         "py": "德尔 多纳"
-      },
-      {
-        "de": "der Himmel",
-        "zh": "天空/天堂",
-        "py": "德尔 希默尔"
       },
       {
         "de": "die Hitze",

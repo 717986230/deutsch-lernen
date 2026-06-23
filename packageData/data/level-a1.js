@@ -502,163 +502,76 @@ module.exports = [
         "de": "nächstes Jahr",
         "zh": "明年",
         "py": "内希斯特斯 雅尔"
-      }
-    ]
-  },
-  {
-    "name": "天气",
-    "level": "a1",
-    "icon": "🌤️",
-    "phrases": [
-      {
-        "de": "Wie ist das Wetter heute?",
-        "zh": "今天天气怎么样？",
-        "py": "维 伊斯特 达斯 韦特尔 豪特"
       },
       {
-        "de": "Wie wird das Wetter morgen?",
-        "zh": "明天天气会怎样？",
-        "py": "维 维尔特 达斯 韦特尔 摩根"
+        "de": "das Jahr",
+        "zh": "年",
+        "py": "达斯 雅尔"
       },
       {
-        "de": "Es ist schön.",
-        "zh": "天气很好。",
-        "py": "埃斯 伊斯特 舍恩"
+        "de": "der Tag",
+        "zh": "天/日",
+        "py": "德尔 塔克"
       },
       {
-        "de": "Es ist sonnig.",
-        "zh": "天气晴朗。",
-        "py": "埃斯 伊斯特 宗尼希"
+        "de": "die Zeit",
+        "zh": "时间",
+        "py": "迪 查特"
       },
       {
-        "de": "Es regnet.",
-        "zh": "在下雨。",
-        "py": "埃斯 雷格内特"
+        "de": "die Stunde",
+        "zh": "课/小时",
+        "py": "迪 施通德"
       },
       {
-        "de": "Es schneit.",
-        "zh": "在下雪。",
-        "py": "埃斯 施奈特"
+        "de": "die Minute",
+        "zh": "分钟",
+        "py": "迪 米努特"
       },
       {
-        "de": "Es hagelt.",
-        "zh": "在下冰雹。",
-        "py": "埃斯 哈格尔特"
+        "de": "der Monat",
+        "zh": "月",
+        "py": "德尔 摩纳特"
       },
       {
-        "de": "Es ist nebelig.",
-        "zh": "有雾。",
-        "py": "埃斯 伊斯特 内贝利希"
+        "de": "die Woche",
+        "zh": "周",
+        "py": "迪 沃黑"
       },
       {
-        "de": "Es ist kalt.",
-        "zh": "很冷。",
-        "py": "埃斯 伊斯特 卡尔特"
+        "de": "der Morgen",
+        "zh": "早晨",
+        "py": "德尔 摩根"
       },
       {
-        "de": "Es ist warm.",
-        "zh": "很暖和。",
-        "py": "埃斯 伊斯特 瓦尔姆"
+        "de": "der Abend",
+        "zh": "晚上",
+        "py": "德尔 阿本特"
       },
       {
-        "de": "Es ist heiß.",
-        "zh": "很热。",
-        "py": "埃斯 伊斯特 海斯"
+        "de": "die Nacht",
+        "zh": "夜晚",
+        "py": "迪 纳赫特"
       },
       {
-        "de": "Es ist windig.",
-        "zh": "有风。",
-        "py": "埃斯 伊斯特 文迪希"
+        "de": "der Mittag",
+        "zh": "中午",
+        "py": "德尔 米塔克"
       },
       {
-        "de": "Es ist bewölkt.",
-        "zh": "多云。",
-        "py": "埃斯 伊斯特 贝沃尔克特"
+        "de": "die Sekunde",
+        "zh": "秒",
+        "py": "迪 泽孔德"
       },
       {
-        "de": "Es gibt Gewitter.",
-        "zh": "有雷阵雨。",
-        "py": "埃斯 吉普特 格维特尔"
+        "de": "das Wochenende",
+        "zh": "周末",
+        "py": "达斯 沃亨恩德"
       },
       {
-        "de": "Es gibt ein Unwetter.",
-        "zh": "有暴风雨。",
-        "py": "埃斯 吉普特 艾因 乌维特尔"
-      },
-      {
-        "de": "Wie viel Grad ist es?",
-        "zh": "现在几度？",
-        "py": "维 费尔 格拉特 伊斯特 埃斯"
-      },
-      {
-        "de": "Es ist 20 Grad.",
-        "zh": "现在20度。",
-        "py": "埃斯 伊斯特 茨万齐希 格拉特"
-      },
-      {
-        "de": "Minus fünf Grad.",
-        "zh": "零下五度。",
-        "py": "米努斯 费因夫 格拉特"
-      },
-      {
-        "de": "Der Himmel ist blau.",
-        "zh": "天空是蓝色的。",
-        "py": "德尔 希梅尔 伊斯特 布劳"
-      },
-      {
-        "de": "Nehmen Sie einen Regenschirm mit.",
-        "zh": "带上雨伞。",
-        "py": "内梅 泽 艾嫩 雷根施尔姆 米特"
-      },
-      {
-        "de": "Ziehen Sie sich warm an.",
-        "zh": "穿暖和点。",
-        "py": "茨嗯 泽 济赫 瓦尔姆 安"
-      },
-      {
-        "de": "Die Sonne scheint.",
-        "zh": "太阳照耀着。",
-        "py": "地 宗内 施莱因特"
-      },
-      {
-        "de": "Der Wind ist stark.",
-        "zh": "风很大。",
-        "py": "德尔 文特 伊斯特 施塔尔克"
-      },
-      {
-        "de": "Es ist schwül.",
-        "zh": "天气很闷热。",
-        "py": "埃斯 伊斯特 施维尔"
-      },
-      {
-        "de": "Die Luft ist frisch.",
-        "zh": "空气很清新。",
-        "py": "地 鲁夫特 伊斯特 弗里施"
-      },
-      {
-        "de": "Es friert.",
-        "zh": "在结冰。",
-        "py": "埃斯 弗里尔特"
-      },
-      {
-        "de": "Glatteis.",
-        "zh": "路面结冰。",
-        "py": "格拉特艾斯"
-      },
-      {
-        "de": "Wie ist die Wettervorhersage?",
-        "zh": "天气预报怎么说？",
-        "py": "维 伊斯特 地 韦特尔福尔黑扎格"
-      },
-      {
-        "de": "Es wird wärmer.",
-        "zh": "会变暖。",
-        "py": "埃斯 维尔特 韦尔梅尔"
-      },
-      {
-        "de": "Die Temperatur fällt.",
-        "zh": "气温下降。",
-        "py": "地 腾佩拉图尔 费尔特"
+        "de": "der Feiertag",
+        "zh": "假日",
+        "py": "德尔 福伊尔塔克"
       }
     ]
   },
@@ -961,233 +874,6 @@ module.exports = [
         "de": "die Person",
         "zh": "人/个人",
         "py": "迪 佩尔佐恩"
-      },
-      {
-        "de": "das Jahr",
-        "zh": "年",
-        "py": "达斯 雅尔"
-      },
-      {
-        "de": "der Tag",
-        "zh": "天/日",
-        "py": "德尔 塔克"
-      },
-      {
-        "de": "die Zeit",
-        "zh": "时间",
-        "py": "迪 查特"
-      },
-      {
-        "de": "die Stunde",
-        "zh": "课/小时",
-        "py": "迪 施通德"
-      },
-      {
-        "de": "die Minute",
-        "zh": "分钟",
-        "py": "迪 米努特"
-      },
-      {
-        "de": "der Monat",
-        "zh": "月",
-        "py": "德尔 摩纳特"
-      },
-      {
-        "de": "die Woche",
-        "zh": "周",
-        "py": "迪 沃黑"
-      },
-      {
-        "de": "der Morgen",
-        "zh": "早晨",
-        "py": "德尔 摩根"
-      },
-      {
-        "de": "der Abend",
-        "zh": "晚上",
-        "py": "德尔 阿本特"
-      },
-      {
-        "de": "die Nacht",
-        "zh": "夜晚",
-        "py": "迪 纳赫特"
-      },
-      {
-        "de": "der Mittag",
-        "zh": "中午",
-        "py": "德尔 米塔克"
-      }
-    ]
-  },
-  {
-    "name": "颜色",
-    "level": "a1",
-    "icon": "🎨",
-    "phrases": [
-      {
-        "de": "rot",
-        "zh": "红色",
-        "py": "罗特"
-      },
-      {
-        "de": "dunkelrot",
-        "zh": "深红色",
-        "py": "顿克尔罗特"
-      },
-      {
-        "de": "blau",
-        "zh": "蓝色",
-        "py": "布劳"
-      },
-      {
-        "de": "hellblau",
-        "zh": "浅蓝色",
-        "py": "黑尔布劳"
-      },
-      {
-        "de": "grün",
-        "zh": "绿色",
-        "py": "格吕恩"
-      },
-      {
-        "de": "gelb",
-        "zh": "黄色",
-        "py": "格尔普"
-      },
-      {
-        "de": "schwarz",
-        "zh": "黑色",
-        "py": "施瓦尔茨"
-      },
-      {
-        "de": "weiß",
-        "zh": "白色",
-        "py": "魏斯"
-      },
-      {
-        "de": "grau",
-        "zh": "灰色",
-        "py": "格劳"
-      },
-      {
-        "de": "braun",
-        "zh": "棕色",
-        "py": "布劳恩"
-      },
-      {
-        "de": "rosa",
-        "zh": "粉红色",
-        "py": "罗萨"
-      },
-      {
-        "de": "orange",
-        "zh": "橙色",
-        "py": "奥朗热"
-      },
-      {
-        "de": "lila",
-        "zh": "紫色",
-        "py": "利拉"
-      },
-      {
-        "de": "beige",
-        "zh": "米色",
-        "py": "贝日"
-      },
-      {
-        "de": "breit",
-        "zh": "宽的",
-        "py": "布莱特"
-      },
-      {
-        "de": "schmal",
-        "zh": "窄的",
-        "py": "施马尔"
-      },
-      {
-        "de": "hässlich",
-        "zh": "丑的",
-        "py": "黑斯利希"
-      },
-      {
-        "de": "hellrot",
-        "zh": "浅红",
-        "py": "黑尔罗特"
-      },
-      {
-        "de": "dunkelblau",
-        "zh": "深蓝",
-        "py": "顿克尔布劳"
-      },
-      {
-        "de": "dunkelgrün",
-        "zh": "深绿",
-        "py": "顿克尔格吕因"
-      },
-      {
-        "de": "hellgrün",
-        "zh": "浅绿",
-        "py": "黑尔格吕因"
-      },
-      {
-        "de": "pink",
-        "zh": "粉",
-        "py": "平克"
-      },
-      {
-        "de": "silber",
-        "zh": "银",
-        "py": "济尔贝尔"
-      },
-      {
-        "de": "gold",
-        "zh": "金",
-        "py": "戈尔特"
-      },
-      {
-        "de": "türkis",
-        "zh": "青绿",
-        "py": "图尔基斯"
-      },
-      {
-        "de": "violett",
-        "zh": "紫罗兰",
-        "py": "菲欧雷特"
-      },
-      {
-        "de": "magenta",
-        "zh": "品红",
-        "py": "马根塔"
-      },
-      {
-        "de": "creme",
-        "zh": "乳白",
-        "py": "克雷梅"
-      },
-      {
-        "de": "anthrazit",
-        "zh": "炭灰",
-        "py": "安特拉齐特"
-      },
-      {
-        "de": "mintgrün",
-        "zh": "薄荷绿",
-        "py": "明特格吕因"
-      },
-      {
-        "de": "dunkel",
-        "zh": "深色",
-        "py": "顿克尔"
-      },
-      {
-        "de": "hell",
-        "zh": "浅色",
-        "py": "黑尔"
-      },
-      {
-        "de": "bunt",
-        "zh": "五彩",
-        "py": "本特"
       }
     ]
   },
@@ -2712,114 +2398,9 @@ module.exports = [
         "py": "达斯 蒂尔"
       },
       {
-        "de": "der Kopf",
-        "zh": "头",
-        "py": "德尔 科普夫"
-      },
-      {
-        "de": "das Auge",
-        "zh": "眼睛",
-        "py": "达斯 奥格"
-      },
-      {
-        "de": "das Ohr",
-        "zh": "耳朵",
-        "py": "达斯 奥尔"
-      },
-      {
-        "de": "die Nase",
-        "zh": "鼻子",
-        "py": "迪 纳斯"
-      },
-      {
-        "de": "der Mund",
-        "zh": "嘴",
-        "py": "德尔 蒙特"
-      },
-      {
-        "de": "der Arm",
-        "zh": "手臂",
-        "py": "德尔 阿尔姆"
-      },
-      {
-        "de": "die Hand",
-        "zh": "手",
-        "py": "迪 汉特"
-      },
-      {
-        "de": "das Bein",
-        "zh": "腿",
-        "py": "达斯 拜因"
-      },
-      {
-        "de": "der Fuß",
-        "zh": "脚",
-        "py": "德尔 富斯"
-      },
-      {
-        "de": "das Herz",
-        "zh": "心脏",
-        "py": "达斯 赫尔茨"
-      },
-      {
-        "de": "der Rücken",
-        "zh": "背",
-        "py": "德尔 吕肯"
-      },
-      {
-        "de": "der Bauch",
-        "zh": "肚子",
-        "py": "德尔 鲍赫"
-      },
-      {
-        "de": "das Blut",
-        "zh": "血",
-        "py": "达斯 布鲁特"
-      },
-      {
-        "de": "die Haut",
-        "zh": "皮肤",
-        "py": "迪 豪特"
-      },
-      {
-        "de": "das Haar",
-        "zh": "头发",
-        "py": "达斯 哈尔"
-      },
-      {
         "de": "die Stimme",
         "zh": "声音",
         "py": "迪 施提梅"
-      },
-      {
-        "de": "das Gesicht",
-        "zh": "脸",
-        "py": "达斯 格齐希特"
-      },
-      {
-        "de": "der Hals",
-        "zh": "脖子",
-        "py": "德尔 哈尔斯"
-      },
-      {
-        "de": "die Schulter",
-        "zh": "肩膀",
-        "py": "迪 施尔特尔"
-      },
-      {
-        "de": "der Finger",
-        "zh": "手指",
-        "py": "德尔 芬格尔"
-      },
-      {
-        "de": "das Knie",
-        "zh": "膝盖",
-        "py": "达斯 克尼"
-      },
-      {
-        "de": "der Zahn",
-        "zh": "牙齿",
-        "py": "德尔 查恩"
       }
     ]
   },
@@ -4568,26 +4149,6 @@ module.exports = [
         "py": "德尔 施图登特"
       },
       {
-        "de": "die Sonne",
-        "zh": "太阳",
-        "py": "迪 索讷"
-      },
-      {
-        "de": "der Regen",
-        "zh": "雨",
-        "py": "德尔 雷根"
-      },
-      {
-        "de": "der Wind",
-        "zh": "风",
-        "py": "德尔 温特"
-      },
-      {
-        "de": "das Wetter",
-        "zh": "天气",
-        "py": "达斯 韦特尔"
-      },
-      {
         "de": "der See",
         "zh": "湖",
         "py": "德尔 泽"
@@ -6207,6 +5768,282 @@ module.exports = [
         "de": "versuchen",
         "zh": "尝试",
         "py": "费尔祖赫恩"
+      }
+    ]
+  },
+  {
+    "name": "身体部位",
+    "level": "a1",
+    "icon": "🧍",
+    "phrases": [
+      {
+        "de": "der Kopf",
+        "zh": "头",
+        "py": "德尔 科普夫"
+      },
+      {
+        "de": "das Auge",
+        "zh": "眼睛",
+        "py": "达斯 奥格"
+      },
+      {
+        "de": "das Ohr",
+        "zh": "耳朵",
+        "py": "达斯 奥尔"
+      },
+      {
+        "de": "die Nase",
+        "zh": "鼻子",
+        "py": "迪 纳斯"
+      },
+      {
+        "de": "der Mund",
+        "zh": "嘴",
+        "py": "德尔 蒙特"
+      },
+      {
+        "de": "der Arm",
+        "zh": "手臂",
+        "py": "德尔 阿尔姆"
+      },
+      {
+        "de": "die Hand",
+        "zh": "手",
+        "py": "迪 汉特"
+      },
+      {
+        "de": "das Bein",
+        "zh": "腿",
+        "py": "达斯 拜因"
+      },
+      {
+        "de": "der Fuß",
+        "zh": "脚",
+        "py": "德尔 富斯"
+      },
+      {
+        "de": "das Herz",
+        "zh": "心脏",
+        "py": "达斯 赫尔茨"
+      },
+      {
+        "de": "der Rücken",
+        "zh": "背",
+        "py": "德尔 吕肯"
+      },
+      {
+        "de": "der Bauch",
+        "zh": "肚子",
+        "py": "德尔 鲍赫"
+      },
+      {
+        "de": "das Blut",
+        "zh": "血",
+        "py": "达斯 布鲁特"
+      },
+      {
+        "de": "die Haut",
+        "zh": "皮肤",
+        "py": "迪 豪特"
+      },
+      {
+        "de": "das Haar",
+        "zh": "头发",
+        "py": "达斯 哈尔"
+      },
+      {
+        "de": "das Gesicht",
+        "zh": "脸",
+        "py": "达斯 格齐希特"
+      },
+      {
+        "de": "der Hals",
+        "zh": "脖子",
+        "py": "德尔 哈尔斯"
+      },
+      {
+        "de": "die Schulter",
+        "zh": "肩膀",
+        "py": "迪 施尔特尔"
+      },
+      {
+        "de": "der Finger",
+        "zh": "手指",
+        "py": "德尔 芬格尔"
+      },
+      {
+        "de": "das Knie",
+        "zh": "膝盖",
+        "py": "达斯 克尼"
+      },
+      {
+        "de": "der Zahn",
+        "zh": "牙齿",
+        "py": "德尔 查恩"
+      },
+      {
+        "de": "die Lippe",
+        "zh": "嘴唇",
+        "py": "迪 利佩"
+      },
+      {
+        "de": "die Zunge",
+        "zh": "舌头",
+        "py": "迪 聪格"
+      },
+      {
+        "de": "der Knochen",
+        "zh": "骨头",
+        "py": "德尔 克诺亨"
+      }
+    ]
+  },
+  {
+    "name": "颜色",
+    "level": "a1",
+    "icon": "🎨",
+    "phrases": [
+      {
+        "de": "rot",
+        "zh": "红色",
+        "py": "罗特"
+      },
+      {
+        "de": "blau",
+        "zh": "蓝色",
+        "py": "布劳"
+      },
+      {
+        "de": "grün",
+        "zh": "绿色",
+        "py": "格吕恩"
+      },
+      {
+        "de": "gelb",
+        "zh": "黄色",
+        "py": "格尔普"
+      },
+      {
+        "de": "schwarz",
+        "zh": "黑色",
+        "py": "施瓦尔茨"
+      },
+      {
+        "de": "weiß",
+        "zh": "白色",
+        "py": "魏斯"
+      },
+      {
+        "de": "grau",
+        "zh": "灰色",
+        "py": "格劳"
+      },
+      {
+        "de": "braun",
+        "zh": "棕色",
+        "py": "布劳恩"
+      },
+      {
+        "de": "rosa",
+        "zh": "粉红色",
+        "py": "罗萨"
+      },
+      {
+        "de": "orange",
+        "zh": "橙色",
+        "py": "奥朗热"
+      },
+      {
+        "de": "lila",
+        "zh": "紫色",
+        "py": "利拉"
+      },
+      {
+        "de": "bunt",
+        "zh": "五彩",
+        "py": "本特"
+      }
+    ]
+  },
+  {
+    "name": "天气",
+    "level": "a1",
+    "icon": "🌦️",
+    "phrases": [
+      {
+        "de": "der Schnee",
+        "zh": "雪",
+        "py": "德尔 施奈"
+      },
+      {
+        "de": "der Nebel",
+        "zh": "雾",
+        "py": "德尔 内贝尔"
+      },
+      {
+        "de": "die Temperatur",
+        "zh": "温度",
+        "py": "迪 滕佩拉图尔"
+      },
+      {
+        "de": "regnerisch",
+        "zh": "多雨的",
+        "py": "雷格讷里施"
+      },
+      {
+        "de": "die Sonne",
+        "zh": "太阳",
+        "py": "迪 索讷"
+      },
+      {
+        "de": "der Regen",
+        "zh": "雨",
+        "py": "德尔 雷根"
+      },
+      {
+        "de": "der Wind",
+        "zh": "风",
+        "py": "德尔 温特"
+      },
+      {
+        "de": "das Wetter",
+        "zh": "天气",
+        "py": "达斯 韦特尔"
+      },
+      {
+        "de": "die Wolke",
+        "zh": "云",
+        "py": "迪 沃尔克"
+      },
+      {
+        "de": "das Gewitter",
+        "zh": "雷雨",
+        "py": "达斯 格维特"
+      },
+      {
+        "de": "bewölkt",
+        "zh": "多云的",
+        "py": "贝沃尔克特"
+      },
+      {
+        "de": "neblig",
+        "zh": "有雾的",
+        "py": "内布利希"
+      },
+      {
+        "de": "sonnig",
+        "zh": "晴朗的",
+        "py": "索尼希"
+      },
+      {
+        "de": "windig",
+        "zh": "有风的",
+        "py": "温迪希"
+      },
+      {
+        "de": "der Himmel",
+        "zh": "天空/天堂",
+        "py": "德尔 希默尔"
       }
     ]
   }
