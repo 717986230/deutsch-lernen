@@ -4,7 +4,7 @@
   "description": "德语学习微信小程序",
   "scripts": {
     "build:offline": "node tools/build-offline-html.js",
-    "deploy": "npm run build:offline && cp \"$HOME/Desktop/德语学习手册-明亮版.html\" \"$HOME/Desktop/deutsch-lernen-site/index.html\" && cd \"$HOME/Desktop/deutsch-lernen-site\" && git add -A && git commit -m 'Update content' && git push && echo '✅ 已发布: https://717986230.github.io/deutsch-lernen-site/'"
+    "deploy": "npm run build:offline && cp \"$HOME/Desktop/德语学习手册-明亮版.html\" \"$HOME/Desktop/deutsch-lernen-site/index.html\" && cd \"$HOME/Desktop/deutsch-lernen-site\" && git add -A && git commit -m 'Update content' && git push && echo '✅ 已发布: https://de.uuoo.site/'"
   },
   "dependencies": {
     "mobx-miniprogram": "^6.12.3",
