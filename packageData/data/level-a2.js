@@ -1,4220 +1,1354 @@
+// 自动生成（请勿手改）：由 npm run sync:site 从网站 data/categories.json 同步
 module.exports = [
   {
-    "name": "购物",
-    "level": "a2",
-    "icon": "🛍️",
-    "phrases": [
-      {
-        "de": "Was kostet das?",
-        "zh": "这个多少钱？",
-        "py": "瓦斯 科斯特 达斯"
-      },
-      {
-        "de": "Wie viel kostet es?",
-        "zh": "它多少钱？",
-        "py": "维 费尔 科斯特 埃斯"
-      },
-      {
-        "de": "Was kostet das alles zusammen?",
-        "zh": "这些一共多少钱？",
-        "py": "瓦斯 科斯特 达斯 阿勒斯 楚扎门"
-      },
-      {
-        "de": "Das ist günstig.",
-        "zh": "这很便宜。",
-        "py": "达斯 伊斯特 金斯蒂希"
-      },
-      {
-        "de": "Haben Sie etwas Billigeres?",
-        "zh": "有更便宜的吗？",
-        "py": "哈本 泽 埃特瓦斯 比利格雷斯"
-      },
-      {
-        "de": "Ich möchte das kaufen.",
-        "zh": "我想买这个。",
-        "py": "伊希 默希特 达斯 考芬"
-      },
-      {
-        "de": "Ich nehme das.",
-        "zh": "我要这个。",
-        "py": "伊希 内梅 达斯"
-      },
-      {
-        "de": "Kann ich das anprobieren?",
-        "zh": "我可以试穿吗？",
-        "py": "坎 伊希 达斯 安普罗比伦"
-      },
-      {
-        "de": "Wo sind die Umkleidekabinen?",
-        "zh": "试衣间在哪里？",
-        "py": "沃 辛特 地 乌姆克莱德卡宾恩"
-      },
-      {
-        "de": "Das passt gut.",
-        "zh": "这个很合身。",
-        "py": "达斯 帕斯特 古特"
-      },
-      {
-        "de": "Das passt mir nicht.",
-        "zh": "这个不合适我。",
-        "py": "达斯 帕斯特 米尔 尼希特"
-      },
-      {
-        "de": "Zahlen bitte.",
-        "zh": "请结账。",
-        "py": "扎伦 比特"
-      },
-      {
-        "de": "Bar oder Karte?",
-        "zh": "现金还是刷卡？",
-        "py": "巴尔 奥德尔 卡尔特"
-      },
-      {
-        "de": "Die Quittung bitte.",
-        "zh": "请给我收据。",
-        "py": "地 克维通 比特"
-      },
-      {
-        "de": "Haben Sie eine Tüte?",
-        "zh": "有袋子吗？",
-        "py": "哈本 泽 艾嫩 图特"
-      },
-      {
-        "de": "Gibt es Rabatt?",
-        "zh": "有折扣吗？",
-        "py": "吉普特 埃斯 拉巴特"
-      },
-      {
-        "de": "Das ist im Angebot.",
-        "zh": "这个在特价。",
-        "py": "达斯 伊斯特 因姆 安格博特"
-      },
-      {
-        "de": "Kann ich umtauschen?",
-        "zh": "可以换货吗？",
-        "py": "坎 伊希 乌姆套兴"
-      },
-      {
-        "de": "Kann ich das zurückgeben?",
-        "zh": "可以退货吗？",
-        "py": "坎 伊希 达斯 楚吕克根本"
-      },
-      {
-        "de": "Ich schaue nur.",
-        "zh": "我只是看看。",
-        "py": "伊希 施奥呃 努尔"
-      },
-      {
-        "de": "Wo finde ich die Kasse?",
-        "zh": "收银台在哪里？",
-        "py": "沃 芬德 伊希 地 卡斯"
-      },
-      {
-        "de": "Gibt es Ermäßigung für Studenten?",
-        "zh": "学生有优惠吗？",
-        "py": "吉普特 埃斯 尔梅西根 费尔 施图登腾"
-      },
-      {
-        "de": "Haben Sie Kleingeld?",
-        "zh": "您有零钱吗？",
-        "py": "哈本 泽 克莱因格尔德"
-      },
-      {
-        "de": "Welche Größe haben Sie?",
-        "zh": "您穿什么尺码？",
-        "py": "维尔黑 格若斯 哈本 泽"
-      },
-      {
-        "de": "Ich trage Größe M.",
-        "zh": "我穿M码。",
-        "py": "伊希 特拉格 格若斯 艾姆"
-      },
-      {
-        "de": "Haben Sie das in einer anderen Farbe?",
-        "zh": "这个有其他颜色吗？",
-        "py": "哈本 泽 达斯 因 艾嫩 安德伦 法尔贝"
-      },
-      {
-        "de": "Stimmt so.",
-        "zh": "不用找零了。",
-        "py": "施提姆特 佐"
-      },
-      {
-        "de": "der Rabatt",
-        "zh": "折扣",
-        "py": "德尔 拉巴特"
-      },
-      {
-        "de": "der Ausverkauf",
-        "zh": "清仓",
-        "py": "德尔 奥斯费尔考夫"
-      },
-      {
-        "de": "die Quittung",
-        "zh": "收据",
-        "py": "迪 克维通"
-      },
-      {
-        "de": "die Zahlung",
-        "zh": "付款",
-        "py": "迪 扎伦"
-      },
-      {
-        "de": "mit Karte",
-        "zh": "刷卡",
-        "py": "米特 卡尔特"
-      },
-      {
-        "de": "die Kreditkarte",
-        "zh": "信用卡",
-        "py": "迪 克雷迪特卡尔特"
-      },
-      {
-        "de": "die Debitkarte",
-        "zh": "借记卡",
-        "py": "迪 德比特卡尔特"
-      },
-      {
-        "de": "das Wechselgeld",
-        "zh": "零钱",
-        "py": "达斯 魏克塞尔格尔德"
-      },
-      {
-        "de": "der Bon",
-        "zh": "小票",
-        "py": "德尔 博恩"
-      },
-      {
-        "de": "die Garantie",
-        "zh": "保修",
-        "py": "迪 加兰蒂"
-      },
-      {
-        "de": "die Reklamation",
-        "zh": "投诉",
-        "py": "迪 雷克拉玛细欧恩"
-      },
-      {
-        "de": "umtauschen",
-        "zh": "换货",
-        "py": "乌姆套兴"
-      },
-      {
-        "de": "zurückgeben",
-        "zh": "退货",
-        "py": "楚吕克根本"
-      },
-      {
-        "de": "der Einkaufswagen",
-        "zh": "购物车",
-        "py": "德尔 艾因考夫斯瓦根"
-      },
-      {
-        "de": "der Einkaufskorb",
-        "zh": "购物篮",
-        "py": "德尔 艾因考夫斯科尔普"
-      },
-      {
-        "de": "die Tüte",
-        "zh": "袋子",
-        "py": "迪 图特"
-      },
-      {
-        "de": "die Tragetasche",
-        "zh": "手提袋",
-        "py": "迪 特拉格塔舍"
-      },
-      {
-        "de": "das Modell",
-        "zh": "型号",
-        "py": "达斯 摩德尔"
-      },
-      {
-        "de": "die Marke",
-        "zh": "品牌",
-        "py": "迪 马尔克"
-      },
-      {
-        "de": "die Kollektion",
-        "zh": "系列",
-        "py": "迪 科勒克细欧恩"
-      },
-      {
-        "de": "das Sonderangebot",
-        "zh": "特价商品",
-        "py": "达斯 宗德尔安格博特"
-      },
-      {
-        "de": "der Gutschein",
-        "zh": "优惠券",
-        "py": "德尔 古特施莱因"
-      },
-      {
-        "de": "die Treuekarte",
-        "zh": "积分卡",
-        "py": "迪 特洛伊卡尔特"
-      },
-      {
-        "de": "die Mode",
-        "zh": "时尚",
-        "py": "迪 摩德"
-      },
-      {
-        "de": "trendy",
-        "zh": "时髦的",
-        "py": "特伦迪"
-      },
-      {
-        "de": "altmodisch",
-        "zh": "过时的",
-        "py": "阿尔特摩迪施"
-      },
-      {
-        "de": "klassisch",
-        "zh": "经典的",
-        "py": "克拉西施"
-      },
-      {
-        "de": "der Stil",
-        "zh": "风格",
-        "py": "德尔 施提尔"
-      },
-      {
-        "de": "das Outfit",
-        "zh": "套装/着装",
-        "py": "达斯 奥特菲特"
-      },
-      {
-        "de": "die Saison",
-        "zh": "季节/时令",
-        "py": "迪 泽宗"
-      },
-      {
-        "de": "die Frühjahrsmode",
-        "zh": "春季时尚",
-        "py": "迪 弗吕雅尔斯摩德"
-      },
-      {
-        "de": "die Herbstmode",
-        "zh": "秋季时尚",
-        "py": "迪 赫尔布斯特摩德"
-      },
-      {
-        "de": "das Schnäppchen",
-        "zh": "便宜货",
-        "py": "达斯 施奈普黑恩"
-      },
-      {
-        "de": "der Schlussverkauf",
-        "zh": "季末清仓",
-        "py": "德尔 施卢斯费尔考夫"
-      },
-      {
-        "de": "der Black Friday",
-        "zh": "黑色星期五",
-        "py": "德尔 布雷克 弗莱塔克"
-      },
-      {
-        "de": "die Umkleidekabine",
-        "zh": "试衣间",
-        "py": "迪 乌姆克莱德卡宾"
-      },
-      {
-        "de": "die Größentabelle",
-        "zh": "尺码表",
-        "py": "迪 格若斯腾塔贝勒"
-      },
-      {
-        "de": "eng",
-        "zh": "紧/窄",
-        "py": "恩克"
-      },
-      {
-        "de": "figurbetont",
-        "zh": "修身的",
-        "py": "菲古尔贝托恩特"
-      },
-      {
-        "de": "lässig",
-        "zh": "休闲的",
-        "py": "雷希"
-      },
-      {
-        "de": "elegant",
-        "zh": "优雅的",
-        "py": "埃雷冈特"
-      },
-      {
-        "de": "sportlich",
-        "zh": "运动的",
-        "py": "施博特利希"
-      },
-      {
-        "de": "festlich",
-        "zh": "正式的",
-        "py": "费斯特利希"
-      },
-      {
-        "de": "das Kunstleder",
-        "zh": "人造皮革",
-        "py": "达斯 孔斯特雷德尔"
-      },
-      {
-        "de": "das Leder",
-        "zh": "皮革",
-        "py": "达斯 雷德尔"
-      },
-      {
-        "de": "die Baumwolle",
-        "zh": "棉",
-        "py": "迪 鲍姆沃勒"
-      },
-      {
-        "de": "die Seide",
-        "zh": "丝绸",
-        "py": "迪 扎德"
-      },
-      {
-        "de": "das Leinen",
-        "zh": "亚麻",
-        "py": "达斯 莱嫩"
-      },
-      {
-        "de": "die Wolle",
-        "zh": "羊毛",
-        "py": "迪 沃勒"
-      },
-      {
-        "de": "das Polyester",
-        "zh": "聚酯",
-        "py": "达斯 波里埃斯特尔"
-      },
-      {
-        "de": "das Nilon",
-        "zh": "尼龙",
-        "py": "达斯 尼洛恩"
-      },
-      {
-        "de": "handgemacht",
-        "zh": "手工制作的",
-        "py": "汉特格马赫特"
-      },
-      {
-        "de": "nachhaltig",
-        "zh": "可持续的",
-        "py": "纳赫哈尔蒂希"
-      }
-    ]
-  },
-  {
-    "name": "交通·出行",
-    "level": "a2",
-    "icon": "🚌",
-    "phrases": [
-      {
-        "de": "Wo ist die Haltestelle?",
-        "zh": "车站在哪里？",
-        "py": "沃 伊斯特 地 哈尔特施泰勒"
-      },
-      {
-        "de": "Wo ist die U-Bahn-Station?",
-        "zh": "地铁站在哪里？",
-        "py": "沃 伊斯特 地 乌班 施塔细欧恩"
-      },
-      {
-        "de": "Wann fährt der nächste Zug ab?",
-        "zh": "下一班火车几点出发？",
-        "py": "万 费尔特 德尔 内希斯特 楚克 阿普"
-      },
-      {
-        "de": "Eine Fahrkarte nach Wien bitte.",
-        "zh": "请给一张去维也纳的票。",
-        "py": "艾嫩 法尔卡尔特 纳赫 维恩 比特"
-      },
-      {
-        "de": "Hin und zurück.",
-        "zh": "来回票。",
-        "py": "欣 温特 楚吕克"
-      },
-      {
-        "de": "Einfach.",
-        "zh": "单程。",
-        "py": "艾因法赫"
-      },
-      {
-        "de": "Zweite Klasse bitte.",
-        "zh": "请给二等座。",
-        "py": "茨威特 克拉斯 比特"
-      },
-      {
-        "de": "Welcher Bahnsteig?",
-        "zh": "几号站台？",
-        "py": "维尔黑尔 班施泰格"
-      },
-      {
-        "de": "Wie lange dauert die Fahrt?",
-        "zh": "行程需要多久？",
-        "py": "维 朗格 道尔特 地 法尔特"
-      },
-      {
-        "de": "Wo muss ich umsteigen?",
-        "zh": "我在哪里换乘？",
-        "py": "沃 米斯 伊希 乌姆施泰根"
-      },
-      {
-        "de": "Bitte rufen Sie ein Taxi.",
-        "zh": "请叫一辆出租车。",
-        "py": "比特 鲁芬 泽 艾因 塔克西"
-      },
-      {
-        "de": "Zum Flughafen bitte.",
-        "zh": "请去机场。",
-        "py": "楚姆 弗卢格哈芬 比特"
-      },
-      {
-        "de": "Wie weit ist es noch?",
-        "zh": "还有多远？",
-        "py": "维 魏特 伊斯特 埃斯 诺赫"
-      },
-      {
-        "de": "Links abbiegen.",
-        "zh": "向左拐。",
-        "py": "林克斯 阿比根"
-      },
-      {
-        "de": "Rechts abbiegen.",
-        "zh": "向右拐。",
-        "py": "雷希茨 阿比根"
-      },
-      {
-        "de": "Geradeaus.",
-        "zh": "直走。",
-        "py": "格拉德奥斯"
-      },
-      {
-        "de": "Kann ich zu Fuß gehen?",
-        "zh": "我可以步行去吗？",
-        "py": "坎 伊希 楚 富斯 根恩"
-      },
-      {
-        "de": "Der Stau ist sehr lang.",
-        "zh": "堵车很严重。",
-        "py": "德尔 施陶 伊斯特 泽尔 朗"
-      },
-      {
-        "de": "Ich habe meinen Zug verpasst.",
-        "zh": "我错过了火车。",
-        "py": "伊希 哈贝 迈嫩 楚克 费尔帕斯特"
-      },
-      {
-        "de": "Gibt es einen Sitzplatz?",
-        "zh": "有座位吗？",
-        "py": "吉普特 埃斯 艾嫩 齐茨普拉茨"
-      },
-      {
-        "de": "Wie komme ich zur Stadtmitte?",
-        "zh": "我怎么去市中心？",
-        "py": "维 科梅 伊希 楚尔 施塔特米特"
-      },
-      {
-        "de": "Wo kann ich parken?",
-        "zh": "我可以在哪里停车？",
-        "py": "沃 坎 伊希 帕尔肯"
-      },
-      {
-        "de": "Der Bus hat Verspätung.",
-        "zh": "公交车晚点了。",
-        "py": "德尔 布斯 哈特 费尔施佩通"
-      },
-      {
-        "de": "Fährt dieser Bus zum Zentrum?",
-        "zh": "这辆车去市中心吗？",
-        "py": "费尔特 地泽尔 布斯 楚姆 曾特鲁姆"
-      },
-      {
-        "de": "Halten Sie hier an bitte.",
-        "zh": "请在这里停。",
-        "py": "哈尔腾 泽 黑尔 安 比特"
-      },
-      {
-        "de": "An der nächsten Kreuzung links.",
-        "zh": "在下一个路口左转。",
-        "py": "安 德尔 内希斯腾 克洛伊宗 林克斯"
-      },
-      {
-        "de": "Etwa zehn Minuten zu Fuß.",
-        "zh": "步行约10分钟。",
-        "py": "埃特瓦 泽恩 米努腾 楚 富斯"
-      },
-      {
-        "de": "Welche Linie fährt zum Zentrum?",
-        "zh": "哪条线去市中心？",
-        "py": "维尔黑 里尼 费尔特 楚姆 曾特鲁姆"
-      },
-      {
-        "de": "Wo ist die U-Bahn?",
-        "zh": "地铁站在哪里？",
-        "py": "沃 伊斯特 地 乌班"
-      },
-      {
-        "de": "die Kreuzung",
-        "zh": "十字路口",
-        "py": "迪 克洛伊尊"
-      },
-      {
-        "de": "die Kurve",
-        "zh": "弯道",
-        "py": "迪 库尔韦"
-      },
-      {
-        "de": "die Einbahnstraße",
-        "zh": "单行道",
-        "py": "迪 艾因班施特拉斯"
-      },
-      {
-        "de": "die Bundesstraße",
-        "zh": "联邦公路",
-        "py": "迪 邦德斯施特拉斯"
-      },
-      {
-        "de": "die Sackgasse",
-        "zh": "死胡同",
-        "py": "迪 扎克加斯"
-      },
-      {
-        "de": "der Gehweg",
-        "zh": "人行道",
-        "py": "德尔 根韦克"
-      },
-      {
-        "de": "der Radweg",
-        "zh": "自行车道",
-        "py": "德尔 拉特韦克"
-      },
-      {
-        "de": "die Rolltreppe",
-        "zh": "自动扶梯",
-        "py": "迪 洛尔特雷普"
-      },
-      {
-        "de": "geradeaus",
-        "zh": "直行",
-        "py": "格拉德奥斯"
-      },
-      {
-        "de": "links abbiegen",
-        "zh": "左转",
-        "py": "林克斯 阿比根"
-      },
-      {
-        "de": "rechts abbiegen",
-        "zh": "右转",
-        "py": "雷希茨 阿比根"
-      },
-      {
-        "de": "wenden",
-        "zh": "掉头",
-        "py": "文顿"
-      },
-      {
-        "de": "parken",
-        "zh": "停车",
-        "py": "帕尔肯"
-      },
-      {
-        "de": "überholen",
-        "zh": "超车",
-        "py": "于贝尔霍伦"
-      },
-      {
-        "de": "die Vorfahrt",
-        "zh": "优先通行权",
-        "py": "迪 福尔法尔特"
-      },
-      {
-        "de": "der Stau",
-        "zh": "堵车",
-        "py": "德尔 施陶"
-      },
-      {
-        "de": "die Umleitung",
-        "zh": "绕行",
-        "py": "迪 乌姆莱通"
-      },
-      {
-        "de": "die Ausfahrt",
-        "zh": "出口匝道",
-        "py": "迪 奥斯法尔特"
-      },
-      {
-        "de": "der Führerschein",
-        "zh": "驾照",
-        "py": "德尔 菲勒施莱因"
-      }
-    ]
-  },
-  {
-    "name": "住宿·酒店",
-    "level": "a2",
-    "icon": "🏨",
-    "phrases": [
-      {
-        "de": "Ich habe eine Reservierung.",
-        "zh": "我有预订。",
-        "py": "伊希 哈贝 艾嫩 雷泽维荣"
-      },
-      {
-        "de": "Haben Sie ein Zimmer frei?",
-        "zh": "有空房间吗？",
-        "py": "哈本 泽 艾因 齐默尔 弗莱"
-      },
-      {
-        "de": "Ein Einzelzimmer bitte.",
-        "zh": "请给一间单人间。",
-        "py": "艾因 艾因泽尔齐默尔 比特"
-      },
-      {
-        "de": "Ein Doppelzimmer bitte.",
-        "zh": "请给一间双人间。",
-        "py": "艾因 多普尔齐默尔 比特"
-      },
-      {
-        "de": "Wie viel kostet die Nacht?",
-        "zh": "一晚多少钱？",
-        "py": "维 费尔 科斯特 地 纳赫特"
-      },
-      {
-        "de": "Für drei Nächte bitte.",
-        "zh": "请给三晚。",
-        "py": "费尔 德莱 内希特 比特"
-      },
-      {
-        "de": "Frühstück inbegriffen?",
-        "zh": "包含早餐吗？",
-        "py": "弗吕施图克 因贝格里芬"
-      },
-      {
-        "de": "Wann ist Check-in?",
-        "zh": "几点可以入住？",
-        "py": "万 伊斯特 切克因"
-      },
-      {
-        "de": "Wann ist Check-out?",
-        "zh": "几点必须退房？",
-        "py": "万 伊斯特 切克奥特"
-      },
-      {
-        "de": "Der Schlüssel bitte.",
-        "zh": "请给钥匙。",
-        "py": "德尔 施吕瑟尔 比特"
-      },
-      {
-        "de": "Mein Zimmer ist nicht sauber.",
-        "zh": "我的房间不干净。",
-        "py": "迈因 齐默尔 伊斯特 尼希特 扎乌贝尔"
-      },
-      {
-        "de": "Die Klimaanlage funktioniert nicht.",
-        "zh": "空调坏了。",
-        "py": "地 克利玛安拉格 丰克细欧尼尔特 尼希特"
-      },
-      {
-        "de": "Die Heizung funktioniert nicht.",
-        "zh": "暖气坏了。",
-        "py": "地 海宗 丰克细欧尼尔特 尼希特"
-      },
-      {
-        "de": "Gibt es WLAN?",
-        "zh": "有无线网络吗？",
-        "py": "吉普特 埃斯 维兰"
-      },
-      {
-        "de": "Was ist das WLAN-Passwort?",
-        "zh": "无线网络密码是什么？",
-        "py": "瓦斯 伊斯特 达斯 维兰 帕斯沃尔特"
-      },
-      {
-        "de": "Wecken Sie mich um 7 Uhr.",
-        "zh": "请7点叫醒我。",
-        "py": "韦肯 泽 米希 乌姆 泽本 乌尔"
-      },
-      {
-        "de": "Können Sie mein Gepäck aufbewahren?",
-        "zh": "您能帮我保管行李吗？",
-        "py": "克嫩 泽 迈因 格佩克 奥夫贝瓦伦"
-      },
-      {
-        "de": "Ich möchte auschecken.",
-        "zh": "我要退房。",
-        "py": "伊希 默希特 奥斯切肯"
-      },
-      {
-        "de": "Wo ist der Aufzug?",
-        "zh": "电梯在哪里？",
-        "py": "沃 伊斯特 德尔 奥夫楚克"
-      },
-      {
-        "de": "Haben Sie einen Safe?",
-        "zh": "有保险箱吗？",
-        "py": "哈本 泽 艾嫩 泽夫"
-      },
-      {
-        "de": "Bitte reinigen Sie mein Zimmer.",
-        "zh": "请打扫我的房间。",
-        "py": "比特 莱尼根 泽 迈因 齐默尔"
-      },
-      {
-        "de": "Kann ich früher einchecken?",
-        "zh": "我可以早点入住吗？",
-        "py": "坎 伊希 弗吕尔 艾因切肯"
-      },
-      {
-        "de": "Kann ich später auschecken?",
-        "zh": "我可以晚点退房吗？",
-        "py": "坎 伊希 施派特尔 奥斯切肯"
-      },
-      {
-        "de": "Das Zimmer gefällt mir sehr gut.",
-        "zh": "我非常喜欢这个房间。",
-        "py": "达斯 齐默尔 格费尔特 米尔 泽尔 古特"
-      },
-      {
-        "de": "Wo ist das Restaurant?",
-        "zh": "餐厅在哪里？",
-        "py": "沃 伊斯特 达斯 雷斯托朗"
-      },
-      {
-        "de": "Handtücher bitte.",
-        "zh": "请给毛巾。",
-        "py": "汉特图赫尔 比特"
-      },
-      {
-        "de": "Ich möchte verlängern.",
-        "zh": "我想延长住宿。",
-        "py": "伊希 默希特 费尔伦格尔恩"
-      },
-      {
-        "de": "Haben Sie ein ruhigeres Zimmer?",
-        "zh": "有更安静的房间吗？",
-        "py": "哈本 泽 艾因 鲁伊格雷斯 齐默尔"
-      },
-      {
-        "de": "Auf welchen Namen?",
-        "zh": "以什么名字？",
-        "py": "奥夫 维尔黑恩 纳梅恩"
-      },
-      {
-        "de": "Für wie viele Nächte?",
-        "zh": "住几晚？",
-        "py": "费尔 维 费勒 内希特"
-      }
-    ]
-  },
-  {
-    "name": "旅行",
-    "level": "a2",
-    "icon": "🧳",
-    "phrases": [
-      {
-        "de": "der Reisepass",
-        "zh": "护照",
-        "py": "德尔 莱施帕斯"
-      },
-      {
-        "de": "das Visum",
-        "zh": "签证",
-        "py": "达斯 维祖姆"
-      },
-      {
-        "de": "die Buchung",
-        "zh": "预订",
-        "py": "迪 布洪"
-      },
-      {
-        "de": "der Rucksack",
-        "zh": "背包",
-        "py": "德尔 鲁克扎克"
-      },
-      {
-        "de": "das Handgepäck",
-        "zh": "手提行李",
-        "py": "达斯 汉特格佩克"
-      },
-      {
-        "de": "der Check-in",
-        "zh": "登机手续",
-        "py": "德尔 切克因"
-      },
-      {
-        "de": "das Gate",
-        "zh": "登机口",
-        "py": "达斯 盖特"
-      },
-      {
-        "de": "die Verspätung",
-        "zh": "延误",
-        "py": "迪 费尔斯贝通"
-      },
-      {
-        "de": "die Unterkunft",
-        "zh": "住宿",
-        "py": "迪 乌腾孔夫特"
-      },
-      {
-        "de": "das Hostel",
-        "zh": "青年旅舍",
-        "py": "达斯 霍斯特尔"
-      },
-      {
-        "de": "die Vollpension",
-        "zh": "全食宿",
-        "py": "迪 福尔彭细欧恩"
-      },
-      {
-        "de": "der Stadtplan",
-        "zh": "城市地图",
-        "py": "德尔 施塔特普兰"
-      },
-      {
-        "de": "das Souvenir",
-        "zh": "纪念品",
-        "py": "达斯 祖维尼尔"
-      },
-      {
-        "de": "die Währung",
-        "zh": "货币",
-        "py": "迪 韦荣"
-      },
-      {
-        "de": "der Wechselkurs",
-        "zh": "汇率",
-        "py": "德尔 魏克塞尔库尔斯"
-      },
-      {
-        "de": "die Reiseversicherung",
-        "zh": "旅行保险",
-        "py": "迪 莱斯费尔济黑荣"
-      },
-      {
-        "de": "der Reisende",
-        "zh": "旅行者",
-        "py": "德尔 莱泽恩德"
-      },
-      {
-        "de": "das Abenteuer",
-        "zh": "冒险",
-        "py": "达斯 阿本托伊尔"
-      }
-    ]
-  },
-  {
-    "name": "餐厅·烹饪",
+    "name": "餐饮·美食",
     "level": "a2",
     "icon": "🍳",
     "phrases": [
-      {
-        "de": "die Vorspeise",
-        "zh": "前菜",
-        "py": "迪 福尔斯派斯"
-      },
-      {
-        "de": "die Hauptspeise",
-        "zh": "主菜",
-        "py": "迪 豪普特斯派斯"
-      },
-      {
-        "de": "die Nachspeise",
-        "zh": "甜点",
-        "py": "迪 纳赫斯派斯"
-      },
-      {
-        "de": "die Beilage",
-        "zh": "配菜",
-        "py": "迪 拜拉格"
-      },
-      {
-        "de": "der Eintopf",
-        "zh": "炖菜",
-        "py": "德尔 艾因托普夫"
-      },
-      {
-        "de": "das Schnitzel",
-        "zh": "炸肉排",
-        "py": "达斯 施尼泽尔"
-      },
-      {
-        "de": "der Braten",
-        "zh": "烤肉",
-        "py": "德尔 布拉腾"
-      },
-      {
-        "de": "der Gulasch",
-        "zh": "匈牙利炖牛肉",
-        "py": "德尔 古拉什"
-      },
-      {
-        "de": "die Wurst",
-        "zh": "香肠",
-        "py": "迪 乌尔斯特"
-      },
-      {
-        "de": "das Rührei",
-        "zh": "炒蛋",
-        "py": "达斯 吕雷"
-      },
-      {
-        "de": "das Spiegelei",
-        "zh": "荷包蛋",
-        "py": "达斯 施皮格尔艾"
-      },
-      {
-        "de": "der Spinat",
-        "zh": "菠菜",
-        "py": "德尔 施皮纳特"
-      },
-      {
-        "de": "der Kürbis",
-        "zh": "南瓜",
-        "py": "德尔 库尔比斯"
-      },
-      {
-        "de": "der Knoblauch",
-        "zh": "大蒜",
-        "py": "德尔 克诺布劳赫"
-      },
-      {
-        "de": "die Kirsche",
-        "zh": "樱桃",
-        "py": "迪 基尔舍"
-      },
-      {
-        "de": "die Weintraube",
-        "zh": "葡萄",
-        "py": "迪 魏因特劳贝"
-      },
-      {
-        "de": "die Ananas",
-        "zh": "菠萝",
-        "py": "迪 阿纳纳斯"
-      },
-      {
-        "de": "die Mango",
-        "zh": "芒果",
-        "py": "迪 芒果"
-      },
-      {
-        "de": "das Mehl",
-        "zh": "面粉",
-        "py": "达斯 梅尔"
-      },
-      {
-        "de": "das Öl",
-        "zh": "油",
-        "py": "达斯 奥尔"
-      },
-      {
-        "de": "der Essig",
-        "zh": "醋",
-        "py": "德尔 埃西希"
-      },
-      {
-        "de": "die Mayonnaise",
-        "zh": "蛋黄酱",
-        "py": "迪 玛由内斯"
-      },
-      {
-        "de": "der Senf",
-        "zh": "芥末",
-        "py": "德尔 泽恩夫"
-      },
-      {
-        "de": "die Marmelade",
-        "zh": "果酱",
-        "py": "迪 马尔梅拉德"
-      },
-      {
-        "de": "der Honig",
-        "zh": "蜂蜜",
-        "py": "德尔 霍尼希"
-      },
-      {
-        "de": "hacken",
-        "zh": "切碎",
-        "py": "哈肯"
-      },
-      {
-        "de": "waschen",
-        "zh": "清洗",
-        "py": "瓦施恩"
-      },
-      {
-        "de": "abspülen",
-        "zh": "冲洗",
-        "py": "阿普斯皮伦"
-      },
-      {
-        "de": "abschmecken",
-        "zh": "品尝调味",
-        "py": "阿普施梅肯"
-      },
-      {
-        "de": "aufkochen",
-        "zh": "烧开",
-        "py": "奥夫科赫恩"
-      },
-      {
-        "de": "einkochen",
-        "zh": "收汁",
-        "py": "艾因科赫恩"
-      },
-      {
-        "de": "anbraten",
-        "zh": "煎一下",
-        "py": "安布拉腾"
-      },
-      {
-        "de": "abkühlen",
-        "zh": "冷却",
-        "py": "阿普库伦"
-      },
-      {
-        "de": "einfrieren",
-        "zh": "冷冻",
-        "py": "艾因弗里伦"
-      },
-      {
-        "de": "auftauen",
-        "zh": "解冻",
-        "py": "奥夫陶恩"
-      },
-      {
-        "de": "abgießen",
-        "zh": "沥水",
-        "py": "阿普吉森"
-      },
-      {
-        "de": "abschrecken",
-        "zh": "过冷水",
-        "py": "阿普斯雷肯"
-      },
-      {
-        "de": "anrichten",
-        "zh": "摆盘",
-        "py": "安里希腾"
-      },
-      {
-        "de": "garnieren",
-        "zh": "装饰",
-        "py": "加尔尼伦"
-      },
-      {
-        "de": "gebraten",
-        "zh": "煎/炒的",
-        "py": "格布拉腾"
-      },
-      {
-        "de": "gekocht",
-        "zh": "煮的",
-        "py": "格科赫特"
-      },
-      {
-        "de": "gebacken",
-        "zh": "烤/炸的",
-        "py": "格巴肯"
-      },
-      {
-        "de": "gedämpft",
-        "zh": "蒸的",
-        "py": "格登普夫特"
-      },
-      {
-        "de": "gegrillt",
-        "zh": "烤的",
-        "py": "格格里尔特"
-      },
-      {
-        "de": "frittiert",
-        "zh": "油炸的",
-        "py": "弗里蒂尔特"
-      },
-      {
-        "de": "knusprig",
-        "zh": "脆的",
-        "py": "克努斯普里希"
-      },
-      {
-        "de": "frisch",
-        "zh": "新鲜的",
-        "py": "弗里施"
-      },
-      {
-        "de": "hausgemacht",
-        "zh": "自制的",
-        "py": "豪斯格马赫特"
-      },
-      {
-        "de": "scharf",
-        "zh": "辣的",
-        "py": "施卡尔夫"
-      },
-      {
-        "de": "mild",
-        "zh": "不辣的",
-        "py": "米尔特"
-      },
-      {
-        "de": "süß",
-        "zh": "甜的",
-        "py": "祖斯"
-      },
-      {
-        "de": "sauer",
-        "zh": "酸的",
-        "py": "扎乌尔"
-      },
-      {
-        "de": "salzig",
-        "zh": "咸的",
-        "py": "扎尔齐希"
-      },
-      {
-        "de": "würzig",
-        "zh": "香的",
-        "py": "维尔齐希"
-      },
-      {
-        "de": "vegetarisch",
-        "zh": "素食的",
-        "py": "韦格塔里施"
-      },
-      {
-        "de": "vegan",
-        "zh": "纯素的",
-        "py": "韦根"
-      },
-      {
-        "de": "glutenfrei",
-        "zh": "无麸质",
-        "py": "格鲁腾弗莱"
-      },
-      {
-        "de": "laktosefrei",
-        "zh": "无乳糖",
-        "py": "拉克托斯弗莱"
-      },
-      {
-        "de": "ohne Nüsse",
-        "zh": "无坚果",
-        "py": "奥嫩 尼斯"
-      },
-      {
-        "de": "bio",
-        "zh": "有机的",
-        "py": "比欧"
-      },
-      {
-        "de": "regional",
-        "zh": "本地的",
-        "py": "雷吉欧纳尔"
-      },
-      {
-        "de": "saisonal",
-        "zh": "时令的",
-        "py": "扎宗纳尔"
-      },
-      {
-        "de": "die Portion",
-        "zh": "份量",
-        "py": "迪 波尔细欧恩"
-      },
-      {
-        "de": "die Stück",
-        "zh": "块/件",
-        "py": "迪 施图克"
-      },
-      {
-        "de": "zum Mitnehmen",
-        "zh": "外带",
-        "py": "楚姆 米特内梅"
-      },
-      {
-        "de": "hier essen",
-        "zh": "堂食",
-        "py": "黑尔 埃森"
-      },
-      {
-        "de": "die Tageskarte",
-        "zh": "今日菜单",
-        "py": "迪 塔格斯卡尔特"
-      },
-      {
-        "de": "der Lachs",
-        "zh": "三文鱼",
-        "py": "德尔 拉克斯"
-      },
-      {
-        "de": "der Thunfisch",
-        "zh": "金枪鱼",
-        "py": "德尔 图恩菲什"
-      },
-      {
-        "de": "die Garnelen",
-        "zh": "虾",
-        "py": "迪 加尔内伦"
-      },
-      {
-        "de": "das Rindfleisch",
-        "zh": "牛肉",
-        "py": "达斯 林德弗莱施"
-      },
-      {
-        "de": "das Hühnerfleisch",
-        "zh": "鸡肉",
-        "py": "达斯 胡恩弗莱施"
-      },
-      {
-        "de": "das Schweinefleisch",
-        "zh": "猪肉",
-        "py": "达斯 施魏因弗莱施"
-      },
-      {
-        "de": "das Entenfleisch",
-        "zh": "鸭肉",
-        "py": "达斯 恩腾弗莱施"
-      },
-      {
-        "de": "das Lammfleisch",
-        "zh": "羊肉",
-        "py": "达斯 拉姆弗莱施"
-      },
-      {
-        "de": "der Tofu",
-        "zh": "豆腐",
-        "py": "德尔 托夫"
-      },
-      {
-        "de": "die Avocado",
-        "zh": "牛油果",
-        "py": "迪 阿沃卡多"
-      },
-      {
-        "de": "die Gurke",
-        "zh": "黄瓜",
-        "py": "迪 古尔克"
-      },
-      {
-        "de": "der Pak Choi",
-        "zh": "小白菜",
-        "py": "德尔 帕克 乔伊"
-      },
-      {
-        "de": "der Koriander",
-        "zh": "香菜",
-        "py": "德尔 科里安德尔"
-      },
-      {
-        "de": "der Ingwer",
-        "zh": "姜",
-        "py": "德尔 因格韦尔"
-      },
-      {
-        "de": "die Zitronengras",
-        "zh": "柠檬草",
-        "py": "迪 齐特龙恩格拉斯"
-      },
-      {
-        "de": "die Kokosmilch",
-        "zh": "椰奶",
-        "py": "迪 科克斯米尔希"
-      },
-      {
-        "de": "das Sesamöl",
-        "zh": "芝麻油",
-        "py": "达斯 泽扎姆奥尔"
-      },
-      {
-        "de": "die Sojasauce",
-        "zh": "酱油",
-        "py": "迪 佐雅扎乌斯"
-      },
-      {
-        "de": "die Austernsauce",
-        "zh": "蚝油",
-        "py": "迪 奥斯特尔扎乌斯"
-      },
-      {
-        "de": "die Fischsauce",
-        "zh": "鱼露",
-        "py": "迪 菲什扎乌斯"
-      },
-      {
-        "de": "das Miso",
-        "zh": "味噌",
-        "py": "达斯 米佐"
-      },
-      {
-        "de": "der Wasabi",
-        "zh": "芥末（日式）",
-        "py": "德尔 瓦扎比"
-      },
-      {
-        "de": "der Ingwer eingelegte",
-        "zh": "腌姜",
-        "py": "德尔 因格韦尔 艾因格雷格特"
-      },
-      {
-        "de": "die Frühlingsrolle",
-        "zh": "春卷",
-        "py": "迪 弗吕灵斯洛勒"
-      },
-      {
-        "de": "das Dashi",
-        "zh": "日式高汤",
-        "py": "达斯 大希"
-      },
-      {
-        "de": "das Nori",
-        "zh": "海苔",
-        "py": "达斯 诺里"
-      },
-      {
-        "de": "der Reisessig",
-        "zh": "米醋",
-        "py": "德尔 莱斯埃西希"
-      }
+      {"de":"die Vorspeise","zh":"前菜","py":"迪 福尔斯派斯"},
+      {"de":"die Hauptspeise","zh":"主菜","py":"迪 豪普特斯派斯"},
+      {"de":"die Nachspeise","zh":"甜点","py":"迪 纳赫斯派斯"},
+      {"de":"die Beilage","zh":"配菜","py":"迪 拜拉格"},
+      {"de":"der Eintopf","zh":"炖菜","py":"德尔 艾因托普夫"},
+      {"de":"das Schnitzel","zh":"炸肉排","py":"达斯 施尼策尔"},
+      {"de":"der Braten","zh":"烤肉","py":"德尔 布拉腾"},
+      {"de":"der Gulasch","zh":"匈牙利炖牛肉","py":"德尔 古拉什"},
+      {"de":"die Wurst","zh":"香肠","py":"迪 乌尔斯特"},
+      {"de":"das Rührei","zh":"炒蛋","py":"达斯 吕雷"},
+      {"de":"das Spiegelei","zh":"荷包蛋","py":"达斯 施皮格尔艾"},
+      {"de":"der Spinat","zh":"菠菜","py":"德尔 施皮纳特"},
+      {"de":"der Kürbis","zh":"南瓜","py":"德尔 库尔比斯"},
+      {"de":"die Kirsche","zh":"樱桃","py":"迪 基尔舍"},
+      {"de":"die Weintraube","zh":"葡萄","py":"迪 瓦因特劳贝"},
+      {"de":"die Ananas","zh":"菠萝","py":"迪 阿纳纳斯"},
+      {"de":"die Mango","zh":"芒果","py":"迪 芒果"},
+      {"de":"das Mehl","zh":"面粉","py":"达斯 梅尔"},
+      {"de":"das Öl","zh":"油","py":"达斯 奥尔"},
+      {"de":"der Essig","zh":"醋","py":"德尔 埃西希"},
+      {"de":"die Mayonnaise","zh":"蛋黄酱","py":"迪 玛由内斯"},
+      {"de":"der Senf","zh":"芥末","py":"德尔 泽恩夫"},
+      {"de":"die Marmelade","zh":"果酱","py":"迪 马尔梅拉德"},
+      {"de":"der Honig","zh":"蜂蜜","py":"德尔 霍尼希"},
+      {"de":"hacken","zh":"切碎","py":"哈肯"},
+      {"de":"abspülen","zh":"冲洗","py":"阿普斯皮伦"},
+      {"de":"abschmecken","zh":"品尝调味","py":"阿普施梅肯"},
+      {"de":"aufkochen","zh":"烧开","py":"奥夫科赫恩"},
+      {"de":"einkochen","zh":"收汁","py":"艾因科赫恩"},
+      {"de":"anbraten","zh":"煎一下","py":"安布拉腾"},
+      {"de":"abkühlen","zh":"冷却","py":"阿普库伦"},
+      {"de":"einfrieren","zh":"冷冻","py":"艾因弗里伦"},
+      {"de":"auftauen","zh":"解冻","py":"奥夫陶恩"},
+      {"de":"abgießen","zh":"沥水","py":"阿普吉森"},
+      {"de":"abschrecken","zh":"过冷水","py":"阿普斯雷肯"},
+      {"de":"anrichten","zh":"摆盘","py":"安里希腾"},
+      {"de":"garnieren","zh":"装饰","py":"加尔尼伦"},
+      {"de":"gebraten","zh":"煎/炒的","py":"格布拉腾"},
+      {"de":"gekocht","zh":"煮的","py":"格科赫特"},
+      {"de":"gebacken","zh":"烤/炸的","py":"格巴肯"},
+      {"de":"gedämpft","zh":"蒸的","py":"格登普夫特"},
+      {"de":"gegrillt","zh":"烤的","py":"格格里尔特"},
+      {"de":"frittiert","zh":"油炸的","py":"弗里蒂尔特"},
+      {"de":"knusprig","zh":"脆的","py":"克努斯普里希"},
+      {"de":"frisch","zh":"新鲜的","py":"弗里施"},
+      {"de":"hausgemacht","zh":"自制的","py":"豪斯格马赫特"},
+      {"de":"mild","zh":"不辣的","py":"米尔特"},
+      {"de":"süß","zh":"甜的","py":"聚斯"},
+      {"de":"sauer","zh":"酸的","py":"扎乌尔"},
+      {"de":"salzig","zh":"咸的","py":"扎尔齐希"},
+      {"de":"würzig","zh":"香的","py":"维尔齐希"},
+      {"de":"glutenfrei","zh":"无麸质","py":"格鲁腾弗莱"},
+      {"de":"laktosefrei","zh":"无乳糖","py":"拉克托斯弗莱"},
+      {"de":"ohne Nüsse","zh":"无坚果","py":"奥讷 尼斯"},
+      {"de":"bio","zh":"有机的","py":"比欧"},
+      {"de":"regional","zh":"本地的","py":"雷吉欧纳尔"},
+      {"de":"saisonal","zh":"时令的","py":"扎宗纳尔"},
+      {"de":"die Portion","zh":"份量","py":"迪 波尔齐翁"},
+      {"de":"zum Mitnehmen","zh":"外带","py":"粗姆 米特内门"},
+      {"de":"hier essen","zh":"堂食","py":"希尔 埃森"},
+      {"de":"die Tageskarte","zh":"今日菜单","py":"迪 塔格斯卡尔特"},
+      {"de":"der Lachs","zh":"三文鱼","py":"德尔 拉克斯"},
+      {"de":"der Thunfisch","zh":"金枪鱼","py":"德尔 图恩菲什"},
+      {"de":"die Garnelen","zh":"虾","py":"迪 加尔内伦"},
+      {"de":"das Rindfleisch","zh":"牛肉","py":"达斯 林德弗莱施"},
+      {"de":"das Hühnerfleisch","zh":"鸡肉","py":"达斯 胡恩弗莱施"},
+      {"de":"das Schweinefleisch","zh":"猪肉","py":"达斯 施瓦因弗莱施"},
+      {"de":"das Entenfleisch","zh":"鸭肉","py":"达斯 恩腾弗莱施"},
+      {"de":"das Lammfleisch","zh":"羊肉","py":"达斯 拉姆弗莱施"},
+      {"de":"der Tofu","zh":"豆腐","py":"德尔 托夫"},
+      {"de":"die Avocado","zh":"牛油果","py":"迪 阿沃卡多"},
+      {"de":"die Gurke","zh":"黄瓜","py":"迪 古尔克"},
+      {"de":"der Pak Choi","zh":"小白菜","py":"德尔 帕克 乔伊"},
+      {"de":"der Koriander","zh":"香菜","py":"德尔 科里安德尔"},
+      {"de":"der Ingwer","zh":"姜","py":"德尔 因格韦尔"},
+      {"de":"das Zitronengras","zh":"柠檬草","py":"达斯 齐特龙恩格拉斯"},
+      {"de":"die Kokosmilch","zh":"椰奶","py":"迪 科克斯米尔希"},
+      {"de":"das Sesamöl","zh":"芝麻油","py":"达斯 泽扎姆奥尔"},
+      {"de":"die Sojasauce","zh":"酱油","py":"迪 佐雅扎乌斯"},
+      {"de":"die Austernsauce","zh":"蚝油","py":"迪 奥斯特尔扎乌斯"},
+      {"de":"die Fischsauce","zh":"鱼露","py":"迪 菲什扎乌斯"},
+      {"de":"das Miso","zh":"味噌","py":"达斯 米佐"},
+      {"de":"der Wasabi","zh":"芥末（日式）","py":"德尔 瓦扎比"},
+      {"de":"der Ingwer eingelegte","zh":"腌姜","py":"德尔 因格韦尔 艾因格雷格特"},
+      {"de":"die Frühlingsrolle","zh":"春卷","py":"迪 弗吕灵斯洛勒"},
+      {"de":"das Dashi","zh":"日式高汤","py":"达斯 达施"},
+      {"de":"das Nori","zh":"海苔","py":"达斯 诺里"},
+      {"de":"der Reisessig","zh":"米醋","py":"德尔 莱斯埃西希"},
+      {"de":"die Seife","zh":"肥皂","py":"迪 扎伊费"},
+      {"de":"das Handtuch","zh":"毛巾","py":"达斯 汉特图赫"},
+      {"de":"die Creme","zh":"护肤霜","py":"迪 克雷姆"},
+      {"de":"das Parfüm","zh":"香水","py":"达斯 帕尔菲姆"},
+      {"de":"die Bohne","zh":"豆子","py":"迪 博讷"},
+      {"de":"die Nudel","zh":"面条","py":"迪 努德尔"},
+      {"de":"die Pizza","zh":"披萨","py":"迪 皮萨"},
+      {"de":"die Torte","zh":"蛋糕","py":"迪 托尔特"},
+      {"de":"der Hamburger","zh":"汉堡","py":"德尔 汉堡格"},
+      {"de":"die Süßigkeiten","zh":"糖果","py":"迪 聚西希凯滕"},
+      {"de":"das Mittagessen","zh":"午餐","py":"达斯 米塔克埃森"},
+      {"de":"der Zimt","zh":"肉桂","py":"德尔 青特"},
+      {"de":"die Vanille","zh":"香草","py":"迪 瓦尼勒"},
+      {"de":"die Chili","zh":"辣椒","py":"迪 奇利"},
+      {"de":"der Curry","zh":"咖喱","py":"德尔 库里"},
+      {"de":"das Basilikum","zh":"罗勒","py":"达斯 巴济利库姆"},
+      {"de":"der Oregano","zh":"牛至/披萨草","py":"德尔 奥雷加诺"},
+      {"de":"die Petersilie","zh":"欧芹","py":"迪 佩特西莉耶"},
+      {"de":"der Schnittlauch","zh":"细香葱","py":"德尔 施尼特劳赫"},
+      {"de":"der Tintenfisch","zh":"鱿鱼/墨鱼","py":"德尔 廷腾菲什"},
+      {"de":"die Muschel","zh":"贻贝/蛤蜊","py":"迪 穆舍尔"},
+      {"de":"die Forelle","zh":"鳟鱼","py":"迪 佛雷勒"},
+      {"de":"der Speck","zh":"培根/咸肉","py":"德尔 施佩克"},
+      {"de":"Ich möchte bestellen.","zh":"我想点菜。","py":"伊希 麦希特 贝斯泰伦"},
+      {"de":"Was empfehlen Sie heute?","zh":"今天您推荐什么？","py":"瓦斯 恩普费伦 齐 霍伊特"},
+      {"de":"Was ist das Tagesgericht?","zh":"今日特餐是什么？","py":"瓦斯 伊斯特 达斯 塔格斯格里希特"},
+      {"de":"Ist das scharf?","zh":"这个辣吗？","py":"伊斯特 达斯 沙夫"},
+      {"de":"Ich mag kein Scharf.","zh":"我不喜欢辣。","py":"伊希 马克 凯因 沙夫"},
+      {"de":"Ohne Koriander bitte.","zh":"请不要加香菜。","py":"奥讷 科里安德尔 比特"},
+      {"de":"Enthält das Gluten?","zh":"这含有麸质吗？","py":"恩特哈尔特 达斯 格鲁腾"},
+      {"de":"Ich bin allergisch gegen Erdnüsse.","zh":"我对花生过敏。","py":"伊希 宾 阿勒吉施 盖根 尔德尼斯"},
+      {"de":"Haben Sie eine vegetarische Option?","zh":"有素食选项吗？","py":"哈本 齐 埃内 韦格塔里舍 奥普齐翁"},
+      {"de":"Wie viele Stück sind das?","zh":"这是几件？","py":"维 菲勒 施图克 辛特 达斯"},
+      {"de":"Kann ich das auch zum Mitnehmen?","zh":"这个也可以外带吗？","py":"坎 伊希 达斯 奥赫 粗姆 米特内梅"},
+      {"de":"Das schmeckt ausgezeichnet!","zh":"这太好吃了！","py":"达斯 施梅克特 奥斯格查黑内特"},
+      {"de":"Noch eine Portion bitte.","zh":"再来一份请。","py":"诺赫 埃内 波尔齐翁 比特"},
+      {"de":"Bitte bringen Sie die Rechnung.","zh":"请给我账单。","py":"比特 布林根 齐 迪 雷希农"},
+      {"de":"Ist die Bedienung inbegriffen?","zh":"服务费包含在内吗？","py":"伊斯特 迪 贝迪嫩 因贝格里芬"},
+      {"de":"Kann ich bitte Wasser haben?","zh":"请给我水好吗？","py":"坎 伊希 比特 瓦瑟 哈本"},
+      {"de":"Was ist der Unterschied zwischen R1 und R2?","zh":"R1和R2有什么区别？","py":"瓦斯 伊斯特 德尔 乌腾斯克伊特 茨威顺"},
+      {"de":"Welches Gericht würden Sie empfehlen?","zh":"您会推荐哪道菜？","py":"维尔黑斯 格里希特 维尔顿 齐 恩普费伦"},
+      {"de":"Wie lange dauert es?","zh":"需要多长时间？","py":"维 朗厄 道尔特 埃斯"},
+      {"de":"Etwa 10-15 Minuten.","zh":"大约10-15分钟。","py":"埃特瓦 泽恩 菲因夫辰 米努腾"},
+      {"de":"Das war sehr lecker!","zh":"这非常好吃！","py":"达斯 瓦尔 泽尔 勒克尔"},
+      {"de":"Die Portion war sehr groß.","zh":"份量很大。","py":"迪 波尔齐翁 瓦尔 泽尔 格罗斯"},
+      {"de":"Ich habe keinen Hunger mehr.","zh":"我不饿了。","py":"伊希 哈贝 凯嫩 洪格尔 梅尔"},
+      {"de":"Kann ich das einpacken lassen?","zh":"可以帮我打包吗？","py":"坎 伊希 达斯 艾因帕肯 拉森"},
+      {"de":"Einen Tisch für zwei bitte.","zh":"请给两位安排桌子。","py":"艾嫩 提什 菲尔 茨威 比特"},
+      {"de":"Haben Sie noch einen freien Tisch?","zh":"还有空桌吗？","py":"哈本 齐 诺赫 艾嫩 弗莱恩 提什"},
+      {"de":"Wir möchten draußen sitzen.","zh":"我们想坐外面。","py":"维尔 麦希腾 德劳森 齐腾"},
+      {"de":"Die Speisekarte bitte.","zh":"请给菜单。","py":"迪 施派泽卡尔特 比特"},
+      {"de":"Alkoholfrei","zh":"无酒精饮品","py":"阿尔科霍尔弗莱"},
+      {"de":"Cola","zh":"可乐","py":"科拉"},
+      {"de":"Cola Zero","zh":"零度可乐","py":"科拉 采罗"},
+      {"de":"Eistee","zh":"冰茶","py":"艾斯特"},
+      {"de":"Fanta","zh":"芬达","py":"凡塔"},
+      {"de":"Römerquelle","zh":"罗默尔奎勒矿泉水","py":"罗默尔克韦勒"},
+      {"de":"still","zh":"静水/无气","py":"施提尔"},
+      {"de":"prickelnd","zh":"气泡水","py":"普里克恩特"},
+      {"de":"Aloe Vera","zh":"芦荟汁","py":"阿洛埃 韦拉"},
+      {"de":"Apfelsaft gespritzt","zh":"苹果汁苏打水","py":"阿普费尔扎夫特 格施普里茨特"},
+      {"de":"Orangensaft gespritzt","zh":"橙汁苏打水","py":"奥朗根扎夫特 格施普里茨特"},
+      {"de":"Lycheesaft","zh":"荔枝汁","py":"利奇扎夫特"},
+      {"de":"Red Bull","zh":"红牛","py":"雷特 布尔"},
+      {"de":"Saft mit Wasser","zh":"果汁加水","py":"扎夫特 米特 瓦瑟"},
+      {"de":"Glas Wasser","zh":"玻璃杯装水","py":"格拉斯 瓦瑟"},
+      {"de":"SODAS und Homemade Tea","zh":"苏打水与自制茶饮","py":"佐达斯 温特 霍姆梅德 提"},
+      {"de":"Soda Wasser","zh":"苏打水","py":"佐达 瓦瑟"},
+      {"de":"Soda Zitrone","zh":"柠檬苏打","py":"佐达 齐特罗内"},
+      {"de":"Holunder Soda","zh":"接骨木苏打","py":"霍伦德尔 佐达"},
+      {"de":"Himbeer Soda","zh":"覆盆子苏打","py":"欣贝尔 佐达"},
+      {"de":"Erdbeer Soda","zh":"草莓苏打","py":"埃尔特贝尔 佐达"},
+      {"de":"Kirsch Soda","zh":"樱桃苏打","py":"基尔施 佐达"},
+      {"de":"Mango Soda","zh":"芒果苏打","py":"芒果 佐达"},
+      {"de":"Minze","zh":"薄荷","py":"明策"},
+      {"de":"Limette","zh":"青柠","py":"利梅特"},
+      {"de":"Erdbeer Frucht Eistee","zh":"草莓水果冰茶","py":"埃尔特贝尔 弗鲁赫特 艾斯特"},
+      {"de":"Mango Frucht Eistee","zh":"芒果水果冰茶","py":"芒果 弗鲁赫特 艾斯特"},
+      {"de":"Limetten Frucht Eistee","zh":"青柠水果冰茶","py":"利梅滕 弗鲁赫特 艾斯特"},
+      {"de":"Jugendgetränk","zh":"青少年饮品","py":"尤根特格特伦克"},
+      {"de":"Wieselburger Fass","zh":"维塞尔堡生啤","py":"维塞尔布尔格尔 法斯"},
+      {"de":"Wieselburger Stammbräu","zh":"维塞尔堡原浆啤酒","py":"维塞尔布尔格尔 施塔姆布罗伊"},
+      {"de":"Alkoholfreies Bier","zh":"无酒精啤酒","py":"阿尔科霍尔弗莱斯 比尔"},
+      {"de":"Japanisches Bier","zh":"日本啤酒","py":"雅帕尼舍斯 比尔"},
+      {"de":"Flasche","zh":"瓶装","py":"弗拉舍"},
+      {"de":"Fass","zh":"桶装/生啤","py":"法斯"},
+      {"de":"Wein und Aperitif","zh":"葡萄酒与开胃酒","py":"瓦因 温特 阿佩里提夫"},
+      {"de":"Grüner Veltliner","zh":"绿维特利纳（白葡萄酒）","py":"格吕讷尔 费尔特利讷"},
+      {"de":"Zweigelt","zh":"茨威格（红葡萄酒）","py":"茨威格尔特"},
+      {"de":"Weißer Spritzer","zh":"白葡萄酒苏打","py":"魏瑟尔 施普里策尔"},
+      {"de":"Kaiser Spritzer","zh":"凯撒苏打","py":"凯泽尔 施普里策尔"},
+      {"de":"Aperol","zh":"阿佩罗","py":"阿佩罗尔"},
+      {"de":"Aperol Prosecco","zh":"阿佩罗起泡酒","py":"阿佩罗尔 普罗塞科"},
+      {"de":"Hugo","zh":"雨果（接骨木花+薄荷+青柠）","py":"胡戈"},
+      {"de":"Sake","zh":"清酒","py":"萨凯"},
+      {"de":"der Wodka","zh":"伏特加","py":"德尔 沃德卡"},
+      {"de":"der Rum","zh":"朗姆酒","py":"德尔 鲁姆"},
+      {"de":"weißer Rum","zh":"白朗姆","py":"魏瑟尔 鲁姆"},
+      {"de":"brauner Rum","zh":"棕朗姆（陈年）","py":"布劳讷尔 鲁姆"},
+      {"de":"der Whisky","zh":"威士忌","py":"德尔 维斯基"},
+      {"de":"der Gin","zh":"金酒（杜松子酒）","py":"德尔 金"},
+      {"de":"der Tequila","zh":"龙舌兰酒","py":"德尔 特基拉"},
+      {"de":"der Weinbrand","zh":"白兰地（德语本土叫法）","py":"德尔 瓦因布兰特"},
+      {"de":"der Cognac","zh":"干邑","py":"德尔 科尼亚克"},
+      {"de":"der Likör","zh":"利口酒（甜味）","py":"德尔 利克尔"},
+      {"de":"der Wermut","zh":"味美思","py":"德尔 维尔穆特"},
+      {"de":"der Absinth","zh":"苦艾酒","py":"德尔 阿普辛特"},
+      {"de":"der Obstler","zh":"水果烧酒（南德/奥地利常见）","py":"德尔 奥普斯特勒尔"},
+      {"de":"der Korn","zh":"谷物烧酒（⚠️ der Korn 是酒，das Korn 才是谷物）","py":"德尔 科恩"},
+      {"de":"die Spirituose","zh":"烈酒（统称）","py":"迪 施皮里图奥泽"},
+      {"de":"der Reiswein","zh":"米酒","py":"德尔 莱斯瓦因"},
+      {"de":"der Soju","zh":"韩国烧酒","py":"德尔 索尤"},
+      {"de":"chinesischer Schnaps","zh":"中国白酒","py":"希内西舍尔 施纳普斯"},
+      {"de":"der Sekt","zh":"起泡酒（德国最常见）","py":"德尔 泽克特"},
+      {"de":"der Champagner","zh":"香槟","py":"德尔 尚潘耶尔"},
+      {"de":"der Prosecco","zh":"普罗塞克起泡酒","py":"德尔 普罗塞科"},
+      {"de":"der Roséwein","zh":"桃红葡萄酒","py":"德尔 罗泽瓦因"},
+      {"de":"der Glühwein","zh":"热红酒（圣诞市场）","py":"德尔 格吕瓦因"},
+      {"de":"der Apfelwein","zh":"苹果酒","py":"德尔 阿普费尔瓦因"},
+      {"de":"der Met","zh":"蜂蜜酒","py":"德尔 梅特"},
+      {"de":"trockener Wein","zh":"干型葡萄酒","py":"特罗克讷尔 瓦因"},
+      {"de":"süßer Wein","zh":"甜型葡萄酒","py":"聚瑟尔 瓦因"},
+      {"de":"das Weizenbier","zh":"小麦啤酒","py":"达斯 瓦岑比尔"},
+      {"de":"das Pils","zh":"皮尔森啤酒","py":"达斯 皮尔斯"},
+      {"de":"das Fassbier","zh":"扎啤（桶装）","py":"达斯 法斯比尔"},
+      {"de":"das Radler","zh":"啤酒兑柠檬汽水","py":"达斯 拉德勒尔"},
+      {"de":"das dunkle Bier","zh":"黑啤","py":"达斯 敦克勒 比尔"},
+      {"de":"das helle Bier","zh":"淡色啤酒","py":"达斯 黑勒 比尔"},
+      {"de":"der Cocktail","zh":"鸡尾酒","py":"德尔 科克泰尔"},
+      {"de":"die Bowle","zh":"潘趣果酒","py":"迪 博勒"},
+      {"de":"Zum Wohl!","zh":"干杯！（比 Prost 正式）","py":"粗姆 沃尔"},
+      {"de":"Ich trinke keinen Alkohol.","zh":"我不喝酒。","py":"伊希 特林肯 凯嫩 阿尔科霍尔"},
+      {"de":"Was für Spirituosen haben Sie?","zh":"你们有什么烈酒？","py":"瓦斯 菲尔 施皮里图奥曾 哈本 齐"},
+      {"de":"Espresso","zh":"浓缩咖啡","py":"埃斯普雷索"},
+      {"de":"Doppelter Espresso","zh":"双份浓缩咖啡","py":"多佩尔特尔 埃斯普雷索"},
+      {"de":"Verlängerter","zh":"美式咖啡","py":"费尔伦格尔特尔"},
+      {"de":"Melange","zh":"维也纳咖啡","py":"梅朗热"},
+      {"de":"Cappuccino","zh":"卡布奇诺","py":"卡布奇诺"},
+      {"de":"Großer Brauner","zh":"大杯牛奶咖啡","py":"格罗瑟尔 布劳讷尔"},
+      {"de":"Latte Macchiato","zh":"拿铁玛奇朵","py":"拉特 玛奇阿托"},
+      {"de":"div. Sorten","zh":"多种口味","py":"迪韦尔泽 佐尔滕"},
+      {"de":"der Herd","zh":"炉灶","py":"德尔 黑尔特"},
+      {"de":"der Kühlschrank","zh":"冰箱","py":"德尔 屈尔施兰克"},
+      {"de":"der Backofen","zh":"烤箱","py":"德尔 巴克奥芬"},
+      {"de":"die Mikrowelle","zh":"微波炉","py":"迪 米克罗韦勒"},
+      {"de":"die Spülmaschine","zh":"洗碗机","py":"迪 施皮尔玛斯乘"},
+      {"de":"der Topf","zh":"锅","py":"德尔 托普夫"},
+      {"de":"die Schere","zh":"剪刀","py":"迪 舍勒"},
+      {"de":"die Pfanne","zh":"平底锅","py":"迪 普凡呢"},
+      {"de":"das Schneidebrett","zh":"砧板","py":"达斯 施奈德布雷特"},
+      {"de":"der Wasserkocher","zh":"电热水壶","py":"德尔 瓦瑟科赫尔"},
+      {"de":"das Sieb","zh":"滤网/筛子","py":"达斯 集普"},
+      {"de":"die Schürze","zh":"围裙","py":"迪 施徽尔策"},
+      {"de":"die Waage","zh":"秤","py":"迪 瓦格"},
+      {"de":"der Mixer","zh":"搅拌机","py":"德尔 米克瑟尔"},
+      {"de":"der Deckel","zh":"盖子","py":"德尔 戴克尔"},
+      {"de":"der Kochlöffel","zh":"木勺","py":"德尔 科赫勒费尔"},
+      {"de":"der Teller","zh":"盘子","py":"德尔 泰勒"},
+      {"de":"die Gabel","zh":"叉子","py":"迪 加贝尔"},
+      {"de":"das Messer","zh":"刀子","py":"达斯 梅瑟"},
+      {"de":"die Stäbchen","zh":"筷子（复数，德语里筷子只用复数）","py":"迪 施泰普兴"},
+      {"de":"mit Stäbchen essen","zh":"用筷子吃","py":"米特 施泰普兴 埃森"},
+      {"de":"der Löffel","zh":"勺子","py":"德尔 勒费尔"},
+      {"de":"das Glas","zh":"玻璃杯","py":"达斯 格拉斯"},
+      {"de":"die Tasse","zh":"杯子（茶杯）","py":"迪 塔瑟"},
+      {"de":"die Schale","zh":"碗/浅盘","py":"迪 沙勒"},
+      {"de":"das Tablett","zh":"托盘","py":"达斯 塔布莱特"},
+      {"de":"die Schüssel","zh":"大碗/汤碗","py":"迪 舒塞尔"},
+      {"de":"der Becher","zh":"马克杯","py":"德尔 贝希尔"},
+      {"de":"die Kaffeetasse","zh":"咖啡杯","py":"迪 卡菲塔瑟"},
+      {"de":"die Teetasse","zh":"茶杯","py":"迪 特塔瑟"},
+      {"de":"der Teelöffel","zh":"茶匙","py":"德尔 特勒费尔"},
+      {"de":"die Cafetière","zh":"法压咖啡壶","py":"迪 卡菲提耶尔"},
+      {"de":"die Teekanne","zh":"茶壶","py":"迪 特卡呢"},
+      {"de":"der Krug","zh":"带柄水壶","py":"德尔 克鲁克"},
+      {"de":"der Eierbecher","zh":"蛋杯","py":"德尔 艾尔贝希尔"},
+      {"de":"das Weinglas","zh":"酒杯","py":"达斯 瓦因格拉斯"},
+      {"de":"das Wasserglas","zh":"平底玻璃杯","py":"达斯 瓦瑟格拉斯"},
+      {"de":"die Glaswaren","zh":"玻璃器皿","py":"迪 格拉斯瓦伦"},
+      {"de":"der Serviettenring","zh":"餐巾套环","py":"德尔 泽尔维耶滕林克"},
+      {"de":"der Beilagenteller","zh":"配菜盘","py":"德尔 拜拉根泰勒"},
+      {"de":"der Essteller","zh":"正餐用盘","py":"德尔 埃斯泰勒"},
+      {"de":"der Suppenteller","zh":"汤盘","py":"德尔 祖彭泰勒"},
+      {"de":"der Suppenlöffel","zh":"汤匙","py":"德尔 祖彭勒费尔"},
+      {"de":"das Gedeck","zh":"一套餐具摆放","py":"达斯 格德克"},
+      {"de":"das Set","zh":"餐具垫","py":"达斯 塞特"},
+      {"de":"den Tisch decken","zh":"摆桌子","py":"登 提什 德肯"},
+      {"de":"hungrig","zh":"饿的","py":"洪格里希"},
+      {"de":"satt","zh":"饱的","py":"萨特"},
+      {"de":"das Abendessen","zh":"晚餐","py":"达斯 阿本特埃森"},
+      {"de":"der Gastgeber","zh":"男主人","py":"德尔 加斯特格贝尔"},
+      {"de":"die Gastgeberin","zh":"女主人","py":"迪 加斯特格贝林"},
+      {"de":"Könnte ich bitte noch ein bisschen haben?","zh":"请再给我加一些，好吗？","py":"克嫩特 伊希 比特 诺赫 艾因 比斯兴 哈本"},
+      {"de":"Ich bin satt, danke.","zh":"我吃饱了，谢谢。","py":"伊希 宾 萨特，当克"},
+      {"de":"Das war lecker.","zh":"很好吃。","py":"达斯 瓦尔 勒克尔"},
+      {"de":"grillen","zh":"烤（炉）","py":"格里伦"},
+      {"de":"schneiden","zh":"切","py":"施奈顿"},
+      {"de":"reiben","zh":"磨碎","py":"莱本"},
+      {"de":"schälen","zh":"削皮","py":"施雪伦"},
+      {"de":"braten","zh":"煎炒","py":"布拉腾"},
+      {"de":"backen","zh":"烤","py":"巴肯"},
+      {"de":"dünsten","zh":"蒸","py":"丹斯腾"},
+      {"de":"frittieren","zh":"炸","py":"弗里蒂伦"},
+      {"de":"würzen","zh":"调味","py":"维尔泽恩"},
+      {"de":"salzen","zh":"加盐","py":"萨尔泽恩"},
+      {"de":"umrühren","zh":"搅拌","py":"乌姆吕伦"},
+      {"de":"mischen","zh":"混合","py":"米施恩"},
+      {"de":"kneten","zh":"揉","py":"克内腾"},
+      {"de":"aufwärmen","zh":"加热","py":"奥夫韦尔梅恩"},
+      {"de":"servieren","zh":"上菜","py":"泽尔维伦"},
+      {"de":"gießen","zh":"浇水","py":"吉森"},
+      {"de":"probieren","zh":"尝试","py":"普罗比伦"},
+      {"de":"dämpfen","zh":"蒸","py":"戴姆普芬"},
+      {"de":"rühren","zh":"搅拌","py":"吕伦"},
+      {"de":"erhitzen","zh":"加热","py":"埃尔希岑"},
+      {"de":"zubereiten","zh":"准备(食物)","py":"粗贝赖滕"},
+      {"de":"das Sushi","zh":"寿司","py":"达斯 祖施"},
+      {"de":"das Gericht","zh":"菜肴/一道菜","py":"达斯 格里希特"}
     ]
   },
   {
-    "name": "餐厅·点餐",
+    "name": "餐厅打工",
+    "level": "a2",
+    "icon": "🤵",
+    "phrases": [
+      {"de":"der Kellner / die Kellnerin","zh":"服务员（男/女）","py":"德尔 凯尔纳 / 迪 凯尔纳琳"},
+      {"de":"die Bedienung","zh":"服务/服务员","py":"迪 贝迪农"},
+      {"de":"der Gast / die Gäste","zh":"客人/客人们","py":"德尔 加斯特 / 迪 盖斯特"},
+      {"de":"der Stammgast","zh":"常客/熟客","py":"德尔 施塔姆加斯特"},
+      {"de":"die Getränkekarte","zh":"酒水单","py":"迪 格特兰克卡尔特"},
+      {"de":"das Trinkgeld","zh":"小费","py":"达斯 特林克盖尔特"},
+      {"de":"die Reservierung","zh":"预订","py":"迪 雷泽维尔龙"},
+      {"de":"das Besteck","zh":"（整套）餐具","py":"达斯 贝施泰克"},
+      {"de":"die Serviette","zh":"餐巾","py":"迪 泽尔维耶特"},
+      {"de":"die Schicht","zh":"班次","py":"迪 施希特"},
+      {"de":"der Feierabend","zh":"下班","py":"德尔 法伊尔阿本特"},
+      {"de":"die Küche","zh":"厨房/后厨","py":"迪 屈歇"},
+      {"de":"der Koch / die Köchin","zh":"厨师（男/女）","py":"德尔 科赫 / 迪 克欣"},
+      {"de":"Guten Abend, wie viele Personen sind Sie?","zh":"晚上好，请问几位？","py":"古腾 阿本特，维 菲勒 佩尔佐嫩 辛特 泽"},
+      {"de":"Haben Sie reserviert?","zh":"您预订了吗？","py":"哈本 齐 雷泽维尔特"},
+      {"de":"Hier entlang, bitte.","zh":"这边请。","py":"希尔 恩特朗，比特"},
+      {"de":"Möchten Sie drinnen oder draußen sitzen?","zh":"您想坐里面还是外面？","py":"麦希腾 齐 德里嫩 奥德尔 德劳森 西岑"},
+      {"de":"Der Tisch ist leider reserviert.","zh":"这张桌子已有预订。","py":"德尔 提什 伊斯特 莱德尔 雷泽维尔特"},
+      {"de":"Einen Moment bitte, ich bringe Ihnen die Karte.","zh":"请稍等，我给您拿菜单。","py":"艾嫩 摩门特 比特，伊希 布林厄 伊嫩 迪 卡尔特"},
+      {"de":"Möchten Sie schon bestellen?","zh":"您现在要点单吗？","py":"麦希腾 齐 肖恩 贝施泰伦？"},
+      {"de":"Was darf es sein?","zh":"您想来点什么？","py":"瓦斯 达尔夫 埃斯 扎因"},
+      {"de":"Was möchten Sie trinken?","zh":"您想喝点什么？","py":"瓦斯 麦希腾 齐 特林肯？"},
+      {"de":"Ich kann Ihnen das Schnitzel empfehlen.","zh":"我给您推荐炸猪排。","py":"伊希 坎 伊嫩 达斯 施尼策尔 恩普费伦"},
+      {"de":"Das Tagesgericht ist heute Gulasch.","zh":"今日特餐是红烩牛肉。","py":"达斯 塔格斯格里希特 伊斯特 霍伊特 古拉什"},
+      {"de":"Klein oder groß?","zh":"小份还是大份？","py":"克莱因 奥德尔 格罗斯"},
+      {"de":"Mit oder ohne Eis?","zh":"加冰还是不加冰？","py":"米特 奥德尔 奥讷 艾斯"},
+      {"de":"Gerne, kommt sofort!","zh":"好的，马上就来！","py":"格尔呢，科姆特 佐佛特"},
+      {"de":"Darf es noch etwas sein?","zh":"还需要别的吗？","py":"达尔夫 埃斯 诺赫 埃特瓦斯 扎因"},
+      {"de":"Hier ist Ihr Essen, guten Appetit!","zh":"您的菜来了，请慢用！","py":"希尔 伊斯特 伊尔 埃森，古腾 阿佩提特"},
+      {"de":"Vorsicht, der Teller ist heiß!","zh":"小心，盘子很烫！","py":"佛尔西希特，德尔 泰勒 伊斯特 海斯"},
+      {"de":"Einmal Schnitzel — für wen ist das?","zh":"一份炸猪排——是哪位点的？","py":"艾因马 施尼策尔——菲尔 文 伊斯特 达斯"},
+      {"de":"Schmeckt es Ihnen?","zh":"味道还合口吗？","py":"施梅克特 埃斯 伊嫩"},
+      {"de":"Ist alles in Ordnung?","zh":"一切都好吗？","py":"伊斯特 阿勒斯 因 奥德农"},
+      {"de":"Möchten Sie noch ein Getränk?","zh":"要再来一杯饮料吗？","py":"麦希腾 齐 诺赫 艾因 格特兰克"},
+      {"de":"Kann ich abräumen?","zh":"可以收盘子了吗？","py":"坎 伊希 阿普罗伊门"},
+      {"de":"Möchten Sie ein Dessert?","zh":"要来份甜点吗？","py":"麦希腾 齐 艾因 德塞尔"},
+      {"de":"Zusammen oder getrennt?","zh":"一起付还是分开付？","py":"粗扎门 奥德尔 格特雷恩特？"},
+      {"de":"Das macht 25 Euro 80.","zh":"一共25欧80。","py":"达斯 马赫特 菲云夫温特茨万齐希 奥伊罗 阿赫齐希"},
+      {"de":"Bar oder mit Karte?","zh":"付现金还是刷卡？","py":"巴尔 奥德尔 米特 卡尔特"},
+      {"de":"Ich bringe Ihnen die Rechnung.","zh":"我给您拿账单。","py":"伊希 布林厄 伊嫩 迪 雷希农"},
+      {"de":"Stimmt so.","zh":"不用找了。（客人常说）","py":"施蒂姆特 佐"},
+      {"de":"Vielen Dank für Ihren Besuch!","zh":"感谢您的光临！","py":"菲伦 当克 菲尔 伊伦 贝祖赫"},
+      {"de":"Schönen Abend noch!","zh":"祝您晚上愉快！","py":"舍嫩 阿本特 诺赫"},
+      {"de":"Entschuldigung, das tut mir leid.","zh":"抱歉，非常对不起。","py":"恩特舒尔迪贡，达斯 图特 米尔 莱特"},
+      {"de":"Ich frage in der Küche nach.","zh":"我去后厨问一下。","py":"伊希 弗拉格 因 德尔 屈歇 纳赫"},
+      {"de":"Das dauert noch etwa zehn Minuten.","zh":"还需要大约10分钟。","py":"达斯 道尔特 诺赫 埃特瓦 岑 米努腾"},
+      {"de":"Ich bringe Ihnen sofort ein neues.","zh":"我马上给您换一份新的。","py":"伊希 布林厄 伊嫩 佐佛特 艾因 诺伊斯"},
+      {"de":"Das Gericht ist leider aus.","zh":"这道菜今天卖完了。","py":"达斯 格里希特 伊斯特 莱德尔 奥斯"},
+      {"de":"Wir schließen um 22 Uhr.","zh":"我们22点打烊。","py":"维尔 施利森 乌姆 茨维温特茨万齐希 乌尔"},
+      {"de":"die Lieferung","zh":"送餐上门/外卖配送","py":"迪 利弗容"},
+      {"de":"zum Mitnehmen","zh":"打包带走/自提","py":"粗姆 米特内门"},
+      {"de":"die Bestellung","zh":"订单","py":"迪 贝施泰龙"},
+      {"de":"der Lieferdienst","zh":"外卖平台/送餐服务","py":"德尔 利弗丁斯特"},
+      {"de":"Lieferando / Wolt / Uber Eats","zh":"德国主流外卖App","py":"利弗兰多 / 沃尔特 / 优步意茨"},
+      {"de":"die Lieferzeit","zh":"配送时长","py":"迪 利弗采特"},
+      {"de":"die Liefergebühr","zh":"配送费","py":"迪 利弗格毕尔"},
+      {"de":"der Mindestbestellwert","zh":"最低起送价","py":"德尔 明德斯特-贝施泰尔维尔特"},
+      {"de":"die Hausnummer","zh":"门牌号","py":"迪 豪斯努默尔"},
+      {"de":"der Türcode","zh":"门禁密码","py":"德尔 提尔科德"},
+      {"de":"ohne ...","zh":"不加/不要……","py":"欧呢"},
+      {"de":"die Zwiebeln","zh":"洋葱","py":"迪 茨维贝尔恩"},
+      {"de":"der Knoblauch","zh":"大蒜","py":"德尔 克诺布劳赫"},
+      {"de":"scharf","zh":"辣的","py":"沙尔夫"},
+      {"de":"die Soße","zh":"酱汁","py":"迪 佐瑟"},
+      {"de":"extra","zh":"多加","py":"埃克斯特拉"},
+      {"de":"vegetarisch","zh":"素食的","py":"维格塔里什"},
+      {"de":"vegan","zh":"纯素的","py":"维甘"},
+      {"de":"allergisch gegen ...","zh":"对……过敏","py":"阿勒尔基什 给根"},
+      {"de":"Guten Tag, ich möchte eine Lieferung bestellen.","zh":"您好，我想点送餐上门。","py":"古腾 塔克，伊希 默希特 艾呢 利弗容 贝施泰伦"},
+      {"de":"Liefern Sie zu mir nach ...?","zh":"你们能送到……（街道+门牌号）吗？","py":"利芬 泽 粗 米尔 纳赫"},
+      {"de":"Ich hätte gerne eine Pizza Margherita und eine Cola.","zh":"我想要一份玛格丽特披萨和一瓶可乐。","py":"伊希 海特 格尔呢 埃内 皮萨 玛格丽塔 温特 埃内 科拉"},
+      {"de":"Einmal Schnitzel mit Pommes zum Mitnehmen.","zh":"一份炸猪排配薯条，打包带走。","py":"艾因马 施尼策尔 米特 波姆斯 粗姆 米特内门"},
+      {"de":"Bitte ohne Zwiebeln und Knoblauch.","zh":"请不要洋葱和大蒜。","py":"比特 奥讷 茨维贝尔恩 温特 克诺布劳赫"},
+      {"de":"Keine scharfe Soße, bitte.","zh":"不要辣酱。","py":"凯呢 沙尔弗 佐瑟，比特"},
+      {"de":"Soße bitte separat.","zh":"酱汁请分开放。","py":"佐瑟 比特 泽帕拉特"},
+      {"de":"Extra Ketchup, danke.","zh":"多加点番茄酱，谢谢。","py":"埃克斯特拉 凯恰普，当克"},
+      {"de":"Ich bin allergisch gegen Nüsse.","zh":"我对坚果过敏。","py":"伊希 宾 阿雷尔基施 盖根 纽瑟。"},
+      {"de":"Meine Adresse ist ...","zh":"我的地址是……","py":"迈呢 阿德雷瑟 伊斯特"},
+      {"de":"Der Türcode ist 1234, bitte anrufen, wenn Sie unten sind.","zh":"门禁码1234，到楼下请打电话。","py":"德尔 提尔科德 伊斯特 艾因斯-茨维-德莱-菲尔，比特 安鲁芬，文 泽 温腾 辛特"},
+      {"de":"Wie lange dauert die Lieferung ungefähr?","zh":"配送大概要多久？","py":"维 朗厄 道尔特 迪 利弗容 温格费尔"},
+      {"de":"Gibt es einen Mindestbestellwert?","zh":"有最低起送价吗？","py":"吉普特 埃斯 艾嫩 明德斯特-贝施泰尔维尔特"},
+      {"de":"Kann ich mit Karte bezahlen?","zh":"可以刷卡支付吗？","py":"坎 伊希 米特 卡尔特 贝差伦"},
+      {"de":"Ich zahle bar.","zh":"我付现金。","py":"伊希 差勒 巴尔"},
+      {"de":"Hallo, Ihre Lieferung!","zh":"您好，您的外卖到了！","py":"哈罗，伊勒 利弗容"},
+      {"de":"Vielen Dank, schönen Tag!","zh":"非常感谢，祝您愉快！","py":"菲伦 当克，舍嫩 塔克"},
+      {"de":"Hier ist Trinkgeld.","zh":"这是小费。","py":"希尔 伊斯特 特林克盖尔特"},
+      {"de":"Ich komme gleich runter.","zh":"我马上下楼。","py":"伊希 科默 格莱希 龙特"},
+      {"de":"Sind Sie schon vor dem Haus?","zh":"您已经到楼下了吗？","py":"辛特 齐 肖恩 佛尔 登 豪斯"},
+      {"de":"Bitte ohne Zwiebeln, nicht scharf. Türcode: 4321","zh":"备注模板：不要洋葱、不要辣，门禁码4321","py":"比特 欧呢 茨维贝尔恩，尼希特 沙尔夫"},
+      {"de":"Bitte klingeln, ich bin oben.","zh":"备注模板：请按门铃，我在楼上。","py":"比特 克林恩，伊希 宾 欧本"},
+      {"de":"Extra Pommes bitte, danke.","zh":"备注模板：多一份薯条，谢谢。","py":"埃克斯特拉 波姆斯 比特，当克"},
+      {"de":"Ich möchte etwas zum Mitnehmen bestellen.","zh":"我想点打包带走（到店自提）。","py":"伊希 麦希特 埃特瓦斯 粗姆 米特内门 贝施泰伦"},
+      {"de":"Ich habe eine Bestellung zum Abholen.","zh":"我有一份预定好的自提订单。","py":"伊希 哈贝 埃内 贝施泰龙 粗姆 阿普霍伦"},
+      {"de":"die Besteckstation","zh":"餐具台","py":"迪 贝施泰克-施塔齐翁"},
+      {"de":"der Besteckwagen","zh":"餐具车","py":"德尔 贝施泰克瓦根"},
+      {"de":"die Gewürzstation","zh":"调料台","py":"迪 格维尔茨-施塔齐翁"},
+      {"de":"das Gewürzregal","zh":"调料架","py":"达斯 格维尔茨雷加尔"},
+      {"de":"der Salzstreuer","zh":"盐瓶","py":"德尔 扎尔茨施特罗伊尔"},
+      {"de":"der Pfefferstreuer","zh":"胡椒瓶","py":"德尔 普费弗施特罗伊尔"},
+      {"de":"die Zuckerdose","zh":"糖罐","py":"迪 粗克多瑟"},
+      {"de":"die Sojasoße","zh":"酱油","py":"迪 佐雅佐瑟"},
+      {"de":"der Serviettenhalter","zh":"餐巾纸架","py":"德尔 泽尔维耶滕哈尔特"},
+      {"de":"der Zahnstocher","zh":"牙签","py":"德尔 灿施托赫"},
+      {"de":"der Strohhalm","zh":"吸管","py":"德尔 施特罗哈尔姆"},
+      {"de":"der Untersetzer","zh":"杯垫","py":"德尔 温特泽策"},
+      {"de":"die Tischdecke","zh":"桌布","py":"迪 提什德克"},
+      {"de":"die Theke","zh":"吧台/柜台","py":"迪 泰克"},
+      {"de":"die Durchreiche / der Pass","zh":"传菜口","py":"迪 杜尔希莱谢 / 德尔 帕斯"},
+      {"de":"der Servierwagen","zh":"传菜车/服务推车","py":"德尔 泽尔维尔瓦根"},
+      {"de":"die Warmhalteplatte","zh":"保温台/保温板","py":"迪 瓦姆哈尔特普拉特"},
+      {"de":"der Spülbereich","zh":"洗碗区","py":"德尔 施皮尔贝赖希"},
+      {"de":"das Lager","zh":"库房/储藏室","py":"达斯 拉格"},
+      {"de":"der Kühlraum","zh":"冷藏间","py":"德尔 屈尔劳姆"},
+      {"de":"der Personalraum","zh":"员工休息室","py":"德尔 佩尔佐纳尔劳姆"},
+      {"de":"die Garderobe","zh":"衣帽间","py":"迪 加德罗贝"},
+      {"de":"die Terrasse","zh":"露天座位区","py":"迪 特拉瑟"},
+      {"de":"der Hochstuhl","zh":"儿童餐椅","py":"德尔 霍赫施图尔"},
+      {"de":"der Notausgang","zh":"紧急出口","py":"德尔 诺特奥斯冈"},
+      {"de":"eindecken","zh":"摆台（餐前布置餐具）","py":"艾因德肯"},
+      {"de":"abräumen","zh":"收台/收盘子","py":"阿普罗伊门"},
+      {"de":"nachfüllen","zh":"补充/续（调料、纸巾）","py":"纳赫菲伦"},
+      {"de":"Wir decken die Tische ein.","zh":"我们在摆台。","py":"维尔 德肯 迪 提舍 艾因"},
+      {"de":"Das Besteck ist an der Besteckstation.","zh":"餐具在餐具台那儿。","py":"达斯 贝施泰克 伊斯特 安 德尔 贝施泰克-施塔齐翁"},
+      {"de":"Die Soßen stehen an der Gewürzstation.","zh":"调料都在调料台上。","py":"迪 佐森 施泰恩 安 德尔 格维尔茨-施塔齐翁"},
+      {"de":"Ich fülle die Salzstreuer nach.","zh":"我去补盐瓶。","py":"伊希 菲勒 迪 扎尔茨施特罗伊尔 纳赫"},
+      {"de":"Ich hole neues Besteck.","zh":"我去拿新餐具。","py":"伊希 霍勒 诺伊斯 贝施泰克"},
+      {"de":"Sie können an der Theke bestellen.","zh":"您可以在吧台点单。","py":"齐 克嫩 安 德尔 泰克 贝施泰伦"},
+      {"de":"Bitte an der Kasse bezahlen.","zh":"请到收银台付款。","py":"比特 安 德尔 卡瑟 贝差伦"},
+      {"de":"Die Toiletten sind hinten links.","zh":"洗手间在后面左边。","py":"迪 托伊莱腾 辛特 欣腾 林克斯"},
+      {"de":"Brauchen Sie einen Hochstuhl?","zh":"需要儿童餐椅吗？","py":"布劳肯 齐 艾嫩 霍赫施图尔"},
+      {"de":"der Schnaps","zh":"烧酒/烈酒（饭后消食酒）","py":"德尔 施纳普斯"},
+      {"de":"der Glückskeks","zh":"幸运饼干","py":"德尔 格吕克斯克克斯"},
+      {"de":"Möchten Sie noch einen Schnaps?","zh":"还要来杯烧酒吗？","py":"麦希腾 齐 诺赫 艾嫩 施纳普斯？"},
+      {"de":"Das geht aufs Haus.","zh":"店里请客，免费送","py":"达斯 盖特 奥夫斯 豪斯。"},
+      {"de":"Ich fahre noch.","zh":"我一会儿还得开车（婉拒酒）","py":"伊希 法勒 诺赫。"},
+      {"de":"der Milchschaum","zh":"奶泡","py":"德尔 米尔希绍姆"},
+      {"de":"Mit Sahne oder mit Milch?","zh":"加奶油还是加牛奶？","py":"米特 扎讷 奥德尔 米特 米尔希？"},
+      {"de":"das Mittagsmenü","zh":"午市套餐","py":"达斯 米塔克斯梅纽"},
+      {"de":"der Aufpreis","zh":"加价/额外收费","py":"德尔 奥夫普莱斯"},
+      {"de":"Möchten Sie Hot Pot oder à la carte?","zh":"您想要火锅还是单点？","py":"麦希腾 齐 霍特 波特 奥德尔 阿 拉 卡尔特？"},
+      {"de":"Zum Essen haben Sie auch schon gewählt.","zh":"吃的您也已经选好了。","py":"粗姆 埃森 哈本 齐 奥赫 肖恩 格韦尔特。"},
+      {"de":"Haben Sie zum Essen schon gewählt?","zh":"吃的您选好了吗？","py":"哈本 齐 粗姆 埃森 肖恩 格韦尔特？"},
+      {"de":"à la carte","zh":"单点（不点套餐/锅底）","py":"阿 拉 卡尔特"},
+      {"de":"Sie können sich einen Platz aussuchen.","zh":"您可以随便坐。","py":"齐 克嫩 西希 艾嫩 普拉茨 奥斯祖赫恩"},
+      {"de":"Suchen Sie sich bitte einen Platz aus.","zh":"请随便挑个位子坐。","py":"祖赫恩 齐 西希 比特 艾嫩 普拉茨 奥斯"},
+      {"de":"Setzen Sie sich, wohin Sie möchten.","zh":"您想坐哪儿就坐哪儿。","py":"泽岑 齐 西希，沃欣 齐 麦希腾"},
+      {"de":"Nehmen Sie bitte Platz.","zh":"请坐。","py":"内梅恩 齐 比特 普拉茨"},
+      {"de":"Freie Platzwahl.","zh":"随便坐（自由选位，告示上常见）。","py":"弗莱厄 普拉茨瓦尔"},
+      {"de":"Die Plätze am Fenster sind frei.","zh":"靠窗的位子空着。","py":"迪 普莱策 阿姆 芬斯特 辛特 弗莱"},
+      {"de":"Können wir uns hinsetzen, wo wir wollen?","zh":"我们可以随便坐吗？","py":"克嫩 维尔 温斯 欣泽岑，沃 维尔 沃伦"},
+      {"de":"Ist dieser Platz noch frei?","zh":"这个位子还空着吗？","py":"伊斯特 地泽尔 普拉茨 诺赫 弗莱"},
+      {"de":"aussuchen","zh":"挑选/自己选","py":"奥斯祖赫恩"},
+      {"de":"sich hinsetzen","zh":"坐下","py":"西希 欣泽岑"},
+      {"de":"die Platzwahl","zh":"选座/挑位子","py":"迪 普拉茨瓦尔"},
+      {"de":"der Fensterplatz","zh":"靠窗座位","py":"德尔 芬斯特普拉茨"}
+    ]
+  },
+  {
+    "name": "餐厅询问语句",
+    "level": "a2",
+    "icon": "🙋",
+    "phrases": [
+      {"de":"Ein Tisch für zwei Personen, bitte.","zh":"请给我们一张两人桌。","py":"艾因 提什 菲尔 茨威 佩尔佐嫩 比特"},
+      {"de":"Haben Sie einen Tisch am Fenster?","zh":"有靠窗的桌子吗？","py":"哈本 齐 艾嫩 提什 阿姆 芬斯特"},
+      {"de":"Können wir draußen sitzen?","zh":"我们能坐外面吗？","py":"克嫩 维尔 德劳森 齐岑？"},
+      {"de":"Wie lange ist die Wartezeit?","zh":"要等多久？","py":"维 兰格 伊斯特 迪 瓦尔特采特"},
+      {"de":"Können wir hier bestellen?","zh":"我们可以在这儿点餐吗？","py":"克嫩 维尔 希尔 贝施特伦"},
+      {"de":"Können wir bitte bestellen?","zh":"我们可以点餐了吗？","py":"克嫩 维尔 比特 贝施特伦"},
+      {"de":"Haben Sie eine Speisekarte auf Englisch?","zh":"有英文菜单吗？","py":"哈本 齐 埃内 施派泽卡尔特 奥夫 恩格利施"},
+      {"de":"Was ist das für ein Gericht?","zh":"这是什么菜？","py":"瓦斯 伊斯特 达斯 菲尔 艾因 格里希特"},
+      {"de":"Was ist da drin?","zh":"里面有什么？","py":"瓦斯 伊斯特 达 德林"},
+      {"de":"Ist das vegetarisch?","zh":"这个是素的吗？","py":"伊斯特 达斯 费格塔里施"},
+      {"de":"Ist da Fleisch drin?","zh":"里面有肉吗？","py":"伊斯特 达 弗莱施 德林"},
+      {"de":"Ich habe eine Allergie gegen Nüsse.","zh":"我对坚果过敏。","py":"伊希 哈贝 埃内 阿勒尔吉 盖根 纽瑟"},
+      {"de":"Ohne Zwiebeln, bitte.","zh":"请不要放洋葱。","py":"奥讷 茨维贝尔恩 比特"},
+      {"de":"Was können Sie empfehlen?","zh":"您能推荐什么？","py":"瓦斯 克嫩 齐 恩普费伦？"},
+      {"de":"Was ist die Tagessuppe?","zh":"今日例汤是什么？","py":"瓦斯 伊斯特 迪 塔格斯祖珀"},
+      {"de":"Gibt es ein Tagesgericht?","zh":"有今日特餐吗？","py":"吉普特 埃斯 艾因 塔格斯格里希特"},
+      {"de":"Was trinken Sie?","zh":"您喝点什么？","py":"瓦斯 特林肯 齐"},
+      {"de":"Ich nehme ein Wasser.","zh":"我要一杯水。","py":"伊希 内梅 艾因 瓦瑟"},
+      {"de":"Still oder mit Kohlensäure?","zh":"无气还是有气？","py":"施蒂尔 奥德尔 米特 科伦佐伊雷"},
+      {"de":"Ohne Eis, bitte.","zh":"请不要加冰。","py":"奥讷 艾斯 比特"},
+      {"de":"Noch etwas zu trinken?","zh":"还要喝点什么？","py":"诺赫 埃特瓦斯 粗 特林肯"},
+      {"de":"Haben Sie schon gewählt?","zh":"您选好了吗？","py":"哈本 齐 肖恩 格韦尔特"},
+      {"de":"Ich brauche noch etwas Zeit.","zh":"我还需要一点时间。","py":"伊希 布劳赫 诺赫 埃特瓦斯 采特"},
+      {"de":"Ich hätte gern ...","zh":"我想要……","py":"伊希 黑特 盖恩"},
+      {"de":"Das Gleiche, bitte.","zh":"我也要一样的。","py":"达斯 格莱歇 比特"},
+      {"de":"Noch ein Bier, bitte.","zh":"再来一杯啤酒。","py":"诺赫 艾因 比尔 比特"},
+      {"de":"Könnte ich noch Brot haben?","zh":"可以再给我一些面包吗？","py":"克恩特 伊希 诺赫 布罗特 哈本"},
+      {"de":"Das habe ich nicht bestellt.","zh":"这个我没点。","py":"达斯 哈贝 伊希 尼希特 贝施特尔特"},
+      {"de":"Das Essen ist kalt.","zh":"菜是凉的。","py":"达斯 埃森 伊斯特 卡尔特"},
+      {"de":"Könnten Sie das bitte aufwärmen?","zh":"可以帮忙热一下吗？","py":"克恩腾 齐 达斯 比特 奥夫韦尔梅恩"},
+      {"de":"Es fehlt noch ein Besteck.","zh":"还缺一副餐具。","py":"埃斯 费尔特 诺赫 艾因 贝施泰克"},
+      {"de":"Können wir noch eine Gabel haben?","zh":"可以再给一把叉子吗？","py":"克嫩 维尔 诺赫 埃内 加贝尔 哈本"},
+      {"de":"Es hat sehr gut geschmeckt.","zh":"很好吃。","py":"埃斯 哈特 泽尔 古特 格施梅克特"},
+      {"de":"Können wir zusammen bezahlen?","zh":"我们可以一起付吗？","py":"克嫩 维尔 粗扎门 贝察伦"},
+      {"de":"Getrennt, bitte.","zh":"请分开付。","py":"格特伦特 比特"},
+      {"de":"Zusammen, bitte.","zh":"请一起付。","py":"粗扎门，比特。"},
+      {"de":"Können wir die Reste einpacken?","zh":"剩菜可以打包吗？","py":"克嫩 维尔 迪 雷斯特 艾因帕肯"},
+      {"de":"Zum Mitnehmen, bitte.","zh":"请打包带走。","py":"粗姆 米特内门，比特。"},
+      {"de":"Kann ich das zum Mitnehmen haben?","zh":"这个可以外带吗？","py":"坎 伊希 达斯 粗姆 米特内门 哈本"},
+      {"de":"Bis wann haben Sie geöffnet?","zh":"你们营业到几点？","py":"比斯 万 哈本 齐 格厄夫内特"}
+    ]
+  },
+  {
+    "name": "菜单·菜品",
+    "level": "a2",
+    "icon": "🍽️",
+    "phrases": [
+      {"de":"Edamame","zh":"V1 毛豆（黄豆·海盐）","py":"埃达马默"},
+      {"de":"Summerrolls Veggie","zh":"V2 素春卷（罗勒·黄瓜·芒果·牛油果·米粉·花生酱）","py":"萨默罗尔斯 韦吉"},
+      {"de":"Summerrolls Shrimp","zh":"V3 虾仁春卷（同上加虾）","py":"萨默罗尔斯 施林普"},
+      {"de":"Mini Springroll","zh":"V4 迷你炸春卷 6 只","py":"米尼 施普林罗尔"},
+      {"de":"Veggie Gyoza","zh":"V5 素煎饺 6 只（脆皮·蔬菜）","py":"韦吉 格约扎"},
+      {"de":"Chicken Gyoza","zh":"V6 鸡肉煎饺 6 只","py":"奇肯 格约扎"},
+      {"de":"Beef Gyoza","zh":"V7 牛肉煎饺 6 只","py":"比夫 格约扎"},
+      {"de":"Takoyaki","zh":"V8 章鱼小丸子 6 只（蛋黄酱）","py":"塔科亚基"},
+      {"de":"Kimchi Salat","zh":"V9 韩式辣泡菜","py":"金奇 萨拉特"},
+      {"de":"Avocado Salat","zh":"V10 牛油果沙拉（混合生菜·毛豆·芒果）","py":"阿沃卡多 萨拉特"},
+      {"de":"Salmon Tatar Salat","zh":"V11 三文鱼塔塔沙拉","py":"萨尔蒙 塔塔尔 萨拉特"},
+      {"de":"Wakame Salat","zh":"V12 日式海藻沙拉","py":"瓦卡默 萨拉特"},
+      {"de":"Cocos Shrimp","zh":"V13 椰香炸虾 5 只","py":"科科斯 施林普"},
+      {"de":"Chili Wonton","zh":"V14 辣馄饨（鸡肉·虾·香菜）","py":"奇利 万通"},
+      {"de":"Miso Soup","zh":"V15 味噌汤","py":"米佐 苏普"},
+      {"de":"Wonton Soup","zh":"V16 馄饨汤（鸡肉·虾·蔬菜）","py":"万通 苏普"},
+      {"de":"Tom Yam Gung Soup","zh":"V17 冬阴功汤（虾·蔬菜·香菜）","py":"托姆 亚姆 贡 苏普"},
+      {"de":"Tom Kha Gai Soup","zh":"V18 椰奶鸡汤（鸡肉·蔬菜·椰奶·香菜）","py":"托姆 卡 盖 苏普"},
+      {"de":"Shrimp Dumplings","zh":"V19 蒸虾饺 4 只","py":"施林普 邓普林斯"},
+      {"de":"Yaki Udon Yasai","zh":"U1 素炒乌冬","py":"亚基 乌东 亚萨伊"},
+      {"de":"Yaki Udon Toriniku","zh":"U2 鸡肉炒乌冬","py":"亚基 乌东 托里尼库"},
+      {"de":"Yaki Udon Gyuniku","zh":"U3 牛肉炒乌冬","py":"亚基 乌东 久尼库"},
+      {"de":"Yaki Udon Kamoniku","zh":"U4 鸭肉炒乌冬","py":"亚基 乌东 卡莫尼库"},
+      {"de":"Yaki Udon Ebi","zh":"U5 虾仁炒乌冬","py":"亚基 乌东 埃比"},
+      {"de":"Fried with vegetables","zh":"C1 素炒年糕","py":"弗莱特 维特 韦杰塔布尔斯"},
+      {"de":"Fried with chicken","zh":"C2 鸡肉炒年糕","py":"弗莱特 维特 奇肯"},
+      {"de":"Fried with beef","zh":"C3 牛肉炒年糕","py":"弗莱特 维特 比夫"},
+      {"de":"Fried with duck","zh":"C4 鸭肉炒年糕","py":"弗莱特 维特 达克"},
+      {"de":"Fried with shrimp","zh":"C5 虾仁炒年糕","py":"弗莱特 维特 施林普"},
+      {"de":"Ramen with Vegetables","zh":"R1 素拉面","py":"拉门 维特 韦杰塔布尔斯"},
+      {"de":"Ramen with Chicken","zh":"R2 鸡肉拉面","py":"拉门 维特 奇肯"},
+      {"de":"Ramen with Beef","zh":"R3 牛肉拉面","py":"拉门 维特 比夫"},
+      {"de":"Ramen with Shrimp","zh":"R4 虾仁拉面","py":"拉门 维特 施林普"},
+      {"de":"Szechuan Boiled Beef","zh":"T1 水煮牛肉（牛柳·特制川辣·香菜）","py":"塞楚安 博伊尔特 比夫"},
+      {"de":"Spicy Crispy Chicken","zh":"T2 香辣脆皮鸡（鸡块·蔬菜·香菜）","py":"斯派西 克里斯皮 奇肯"},
+      {"de":"Spicy Crispy King Prawns","zh":"T3 香辣脆皮大虾（带壳）","py":"斯派西 克里斯皮 金 普罗恩斯"},
+      {"de":"Mapo Tofu","zh":"T4 麻婆豆腐（豆腐·蔬菜·川辣）","py":"马坡 托富"},
+      {"de":"Mapo Tofu with Chicken","zh":"T4a 鸡肉麻婆豆腐","py":"马坡 托富 维特 奇肯"},
+      {"de":"Veggie Bao","zh":"A1 素刈包（生菜·豆腐·芒果·胡萝卜·黄瓜）","py":"韦吉 包"},
+      {"de":"Chicken Bao","zh":"A2 鸡肉刈包（脆皮鸡柳）","py":"奇肯 包"},
+      {"de":"Bulgogi Bao","zh":"A3 韩式烤牛肉刈包","py":"布尔戈基 包"},
+      {"de":"Crispy Duck Bao","zh":"A4 脆皮鸭刈包","py":"克里斯皮 达克 包"},
+      {"de":"Sesam Chicken","zh":"B1 芝麻鸡（煎鸡柳·蔬菜·芝麻）","py":"泽扎姆 奇肯"},
+      {"de":"Red Thai Curry Chicken","zh":"B2 红咖喱鸡（椰奶·蔬菜·罗勒）","py":"雷特 泰 库里 奇肯"},
+      {"de":"Hawaii Chicken","zh":"B3 夏威夷鸡（菠萝·芒果·椰奶）","py":"哈瓦伊 奇肯"},
+      {"de":"Crispy Panko Chicken","zh":"B4 面包糠炸鸡柳","py":"克里斯皮 潘科 奇肯"},
+      {"de":"Chili Beef","zh":"B5 辣子牛柳（鲜辣椒）","py":"奇利 比夫"},
+      {"de":"Bulgogie","zh":"B6 韩式烤牛肉（洋葱·蔬菜）","py":"布尔戈基"},
+      {"de":"Gongbao Crispy Duck","zh":"B7 宫保脆皮鸭（干辣椒）","py":"贡包 克里斯皮 达克"},
+      {"de":"Sake Teriyaki","zh":"B8 照烧三文鱼","py":"萨凯 特里亚基"},
+      {"de":"Tom Yam Prawns","zh":"B9 冬阴功大虾（带壳·泰式）","py":"托姆 亚姆 普罗恩斯"},
+      {"de":"Tofu Pack Choi","zh":"B10 白菜豆腐","py":"托富 帕克 乔伊"},
+      {"de":"Nasi Goreng","zh":"B11 印尼炒饭（蛋炒饭·鸭肉·黄咖喱）","py":"纳西 戈伦"},
+      {"de":"Veggie Tteobokki","zh":"B12 素炒年糕条（韩式·不配米饭）","py":"韦吉 特博基"},
+      {"de":"Shrimps Tteobokki","zh":"B13 虾仁炒年糕条（韩式·不配米饭）","py":"施林普斯 特博基"},
+      {"de":"Veggie Dumplings","zh":"B14 素饺子 12 只（粉丝·香菇·不配米饭）","py":"韦吉 邓普林斯"},
+      {"de":"Chicken Dumplings","zh":"B15 鸡肉饺子 12 只（熊葱·不配米饭）","py":"奇肯 邓普林斯"},
+      {"de":"Sake Set","zh":"N1／S1 三文鱼套（握寿司／刺身）","py":"萨凯 塞特"},
+      {"de":"Mix Set","zh":"N2／S3 综合套（三文鱼·金枪鱼·鰤鱼等）","py":"米克斯 塞特"},
+      {"de":"Sake Maguro Set","zh":"N3／S2 三文鱼金枪鱼套","py":"萨凯 马古罗 塞特"},
+      {"de":"Maguro Set","zh":"N4 金枪鱼套","py":"马古罗 塞特"},
+      {"de":"Kappa Maki","zh":"M1 黄瓜卷 12 只","py":"卡帕 马基"},
+      {"de":"Sake Maki","zh":"M2 三文鱼卷 12 只","py":"萨凯 马基"},
+      {"de":"Avocado Maki","zh":"M3 牛油果卷 12 只","py":"阿沃卡多 马基"},
+      {"de":"Avocado Mango Maki","zh":"M5 牛油果芒果卷 8 只（外层带芝麻）","py":"阿沃卡多 芒果 马基"},
+      {"de":"Avocado Ebi Maki","zh":"M6 牛油果虾卷 8 只","py":"阿沃卡多 埃比 马基"},
+      {"de":"Avocado Sake Maki","zh":"M7 牛油果三文鱼卷 8 只","py":"阿沃卡多 萨凯 马基"},
+      {"de":"Chicken Avocado Maki","zh":"M8 鸡肉牛油果卷 8 只","py":"奇肯 阿沃卡多 马基"},
+      {"de":"Avocado Inari Maki","zh":"I1 牛油果豆皮寿司 2 只（芝麻酱）","py":"阿沃卡多 伊纳里 马基"},
+      {"de":"Mango Inari Maki","zh":"I2 芒果豆皮寿司 2 只（芒果酱）","py":"芒果 伊纳里 马基"},
+      {"de":"Lachs Inari Maki","zh":"I3 三文鱼豆皮寿司 2 只（松露蛋黄酱）","py":"拉克斯 伊纳里 马基"},
+      {"de":"Mix Inari","zh":"I4 综合豆皮寿司（牛油果·芒果·三文鱼各一）","py":"米克斯 伊纳里"},
+      {"de":"Rainbow Roll","zh":"X1 彩虹卷（三文鱼·金枪鱼·鰤鱼·牛油果·水芹）","py":"雷因博 罗尔"},
+      {"de":"Crunchy Salmon Roll","zh":"X2 脆三文鱼卷（天妇罗·脆面包糠·照烧酱）","py":"克朗奇 萨尔蒙 罗尔"},
+      {"de":"Pink Alaska","zh":"X3 粉红阿拉斯加（三文鱼·奶油奶酪·鱼子）","py":"平克 阿拉斯卡"},
+      {"de":"Spicy Tuna","zh":"X4 辣金枪鱼卷（牛油果外皮·辣蛋黄酱）","py":"斯派西 图纳"},
+      {"de":"Dragon Roll","zh":"X5 龙卷（天妇罗虾·火炙鳗鱼·松露蛋黄酱）","py":"德拉贡 罗尔"},
+      {"de":"Agamo Roll","zh":"X6 脆皮鸭卷（黄瓜·细香葱·照烧酱）","py":"阿加莫 罗尔"},
+      {"de":"Sweet Power","zh":"X7 火炙三文鱼卷（牛油果·芒果·寿司酱）","py":"斯威特 帕乌尔"},
+      {"de":"Sweet Green","zh":"X8 红薯天妇罗卷（芒果·黄瓜·罗勒·芒果酱）","py":"斯威特 格林"},
+      {"de":"Mikado Roll","zh":"X9 御门卷（牛油果·花生·榛子）","py":"米卡多 罗尔"},
+      {"de":"Korean Beef Roll","zh":"X10 韩式牛肉卷（生菜·洋葱）","py":"科里安 比夫 罗尔"},
+      {"de":"Sake Bowl","zh":"K1 三文鱼盖饭（玉米·牛油果·毛豆·小番茄·生菜）","py":"萨凯 博尔"},
+      {"de":"Chicken Bowl","zh":"K2 鸡肉盖饭","py":"奇肯 博尔"},
+      {"de":"Ebi Bowl","zh":"K3 虾仁盖饭","py":"埃比 博尔"},
+      {"de":"Veggie Bowl","zh":"K4 素食盖饭（豆腐）","py":"韦吉 博尔"},
+      {"de":"Fried Rice","zh":"E2 蛋炒饭","py":"弗莱特 莱斯"},
+      {"de":"Süßkartoffelpommes","zh":"E3 红薯薯条","py":"聚斯卡尔托费尔波梅斯"},
+      {"de":"Mochi","zh":"D1 麻糬","py":"莫奇"},
+      {"de":"Matcha Tiramisu","zh":"D2 抹茶提拉米苏（自制）","py":"马查 提拉米苏"},
+      {"de":"Apfel Gyoza","zh":"D3 苹果煎饺 5 只","py":"阿普费尔 格约扎"},
+      {"de":"Cheesecake","zh":"D4 芝士蛋糕（自制）","py":"奇斯凯克"},
+      {"de":"Crispy Chicken","zh":"L1 脆皮鸡（脆皮鸡肉·蔬菜）","py":"克里斯皮 奇肯"},
+      {"de":"Wok fried Chicken","zh":"L2 铁锅炒鸡（鸡肉·蔬菜）","py":"沃克 弗莱特 奇肯"},
+      {"de":"Veggie Wok Yellow Curry","zh":"L3 素炒黄咖喱（蔬菜·黄咖喱·素食·微辣）","py":"韦吉 沃克 耶洛 库里"},
+      {"de":"Fried Rice with Chicken","zh":"L4 鸡肉蛋炒饭（鸡蛋·鸡肉）","py":"弗莱特 莱斯 维特 奇肯"},
+      {"de":"Agamo Don","zh":"L5 脆皮鸭盖饭（脆皮鸭柳·蔬菜）","py":"阿加莫 东"},
+      {"de":"Tom Yam Shrimps","zh":"L6 冬阴功虾（虾·蔬菜·辣）","py":"托姆 亚姆 施林普斯"},
+      {"de":"Poke Bowl Veggie","zh":"L7 素波奇盖饭（豆腐·玉米·牛油果·毛豆·小番茄·生菜·芒果·照烧酱）","py":"波凯 博尔 韦吉"},
+      {"de":"Poke Bowl Sake","zh":"L8 三文鱼波奇盖饭（三文鱼·玉米·牛油果·毛豆·小番茄·生菜·照烧酱）","py":"波凯 博尔 萨凯"},
+      {"de":"Maki Mix","zh":"L9 综合卷 18 只（三文鱼·黄瓜·牛油果）","py":"马基 米克斯"},
+      {"de":"die Weizennudeln","zh":"小麦面（乌冬）","py":"迪 瓦岑努德尔恩"},
+      {"de":"die Nudelsuppe","zh":"汤面/拉面汤","py":"迪 努德尔祖佩"},
+      {"de":"der Reiskuchen","zh":"年糕","py":"德尔 莱斯库亨"},
+      {"de":"mit Reis","zh":"配米饭","py":"米特 莱斯"},
+      {"de":"ohne Reis","zh":"不配米饭","py":"奥讷 莱斯"},
+      {"de":"die Soßenauswahl","zh":"酱汁可选","py":"迪 佐森奥斯瓦尔"},
+      {"de":"mit Schale","zh":"带壳","py":"米特 沙勒"},
+      {"de":"der Aal","zh":"鳗鱼","py":"德尔 阿尔"},
+      {"de":"die Sojabohne","zh":"黄豆/毛豆","py":"迪 佐亚博讷"},
+      {"de":"das Meersalz","zh":"海盐","py":"达斯 梅尔扎尔茨"},
+      {"de":"die Erdnuss","zh":"花生","py":"迪 埃尔特努斯"},
+      {"de":"die Haselnuss","zh":"榛子","py":"迪 哈泽尔努斯"},
+      {"de":"der Bärlauch","zh":"熊葱/野蒜","py":"德尔 贝尔劳赫"},
+      {"de":"die Kresse","zh":"水芹","py":"迪 克雷瑟"},
+      {"de":"die Teigtasche","zh":"饺子/面皮包","py":"迪 泰克塔舍"},
+      {"de":"das Bällchen","zh":"小丸子","py":"达斯 贝尔兴"},
+      {"de":"der Algensalat","zh":"海藻沙拉","py":"德尔 阿尔根萨拉特"},
+      {"de":"die Reisnudeln","zh":"米粉","py":"迪 莱斯努德尔恩"},
+      {"de":"die Glasnudeln","zh":"粉丝","py":"迪 格拉斯努德尔恩"},
+      {"de":"die Erdnusssoße","zh":"花生酱","py":"迪 埃尔特努斯佐瑟"},
+      {"de":"der Eierreis","zh":"蛋炒饭","py":"德尔 艾尔莱斯"},
+      {"de":"das Hühnerfilet","zh":"鸡柳","py":"达斯 胡恩菲莱"},
+      {"de":"das Entenfilet","zh":"鸭柳","py":"达斯 恩腾菲莱"},
+      {"de":"das Rindfilet","zh":"牛柳","py":"达斯 林特菲莱"},
+      {"de":"die Hühnerstreifen","zh":"鸡肉丝","py":"迪 胡恩施特赖芬"},
+      {"de":"die Hühnerstücke","zh":"鸡块","py":"迪 胡恩施提克"},
+      {"de":"die Riesengarnele","zh":"大虾/明虾","py":"迪 里森加内勒"},
+      {"de":"das Pankomehl","zh":"日式面包糠","py":"达斯 潘科梅尔"},
+      {"de":"flambiert","zh":"火炙的","py":"弗拉姆比尔特"},
+      {"de":"der Apfelsaft","zh":"苹果汁","py":"德尔 阿普费尔扎夫特"},
+      {"de":"der Orangensaft","zh":"橙汁","py":"德尔 奥朗任扎夫特"},
+      {"de":"der Mangosaft","zh":"芒果汁","py":"德尔 芒果扎夫特"},
+      {"de":"gespritzt","zh":"兑苏打水的","py":"格施普里茨特"},
+      {"de":"der Spritzer","zh":"兑苏打的酒/果汁","py":"德尔 施普里策尔"},
+      {"de":"der Holunder","zh":"接骨木","py":"德尔 霍伦德尔"},
+      {"de":"das Sodawasser","zh":"苏打水","py":"达斯 佐达瓦瑟"},
+      {"de":"der Weißwein","zh":"白葡萄酒","py":"德尔 魏斯瓦因"},
+      {"de":"der Rotwein","zh":"红葡萄酒","py":"德尔 罗特瓦因"},
+      {"de":"vom Fass","zh":"扎啤/桶装","py":"佛姆 法斯"},
+      {"de":"der Verlängerte","zh":"奥地利淡美式咖啡","py":"德尔 费尔伦格尔特"},
+      {"de":"der Große Braune","zh":"奥地利大杯奶咖","py":"德尔 格罗瑟 布劳讷"},
+      {"de":"der Grüntee","zh":"绿茶","py":"德尔 格吕恩特"},
+      {"de":"der Jasmintee","zh":"茉莉花茶","py":"德尔 雅斯明特"},
+      {"de":"der Schwarztee","zh":"红茶","py":"德尔 施瓦尔茨特"},
+      {"de":"glutenhaltiges Getreide","zh":"含麸质谷物（A）","py":"格卢滕哈尔提格斯 格特赖德"},
+      {"de":"die Krebstiere","zh":"甲壳类（B）","py":"迪 克雷普斯提勒"},
+      {"de":"das Soja","zh":"大豆（F）","py":"达斯 佐亚"},
+      {"de":"das Schwefeldioxid","zh":"二氧化硫（O）","py":"达斯 施韦费尔迪奥克西德"},
+      {"de":"die Sulfite","zh":"亚硫酸盐（O）","py":"迪 祖尔菲特"},
+      {"de":"die Lupinen","zh":"羽扇豆（P）","py":"迪 鲁皮嫩"},
+      {"de":"die Weichtiere","zh":"软体动物（R）","py":"迪 魏希提勒"},
+      {"de":"Alle Menüs sind von Montag bis Freitag von elf bis fünfzehn Uhr.","zh":"所有套餐周一至周五 11:00–15:00 供应。","py":"阿勒 梅纽斯 辛特 冯 蒙塔克 比斯 弗莱塔克 冯 埃尔夫 比斯 芬夫岑 乌尔"},
+      {"de":"Außer an Feiertagen.","zh":"节假日除外。","py":"奥瑟 安 福伊尔塔根"},
+      {"de":"Mit Miso Suppe oder Mini Frühlingsrollen und Reis serviert.","zh":"配味噌汤或迷你春卷和米饭。","py":"米特 米佐 祖佩 奥德尔 米尼 弗吕灵斯洛伦 温特 莱斯 泽尔维尔特"},
+      {"de":"der Wok","zh":"炒锅","py":"德尔 沃克"},
+      {"de":"die Cherrytomate","zh":"小番茄","py":"迪 切里托马特"},
+      {"de":"die Teriyaki-Soße","zh":"照烧酱","py":"迪 特里亚基佐瑟"},
+      {"de":"die Misosuppe","zh":"味噌汤","py":"迪 米佐祖佩"}
+    ]
+  },
+  {
+    "name": "购物·出行·旅行",
+    "level": "a2",
+    "icon": "🛍️",
+    "phrases": [
+      {"de":"Was kostet das?","zh":"这个多少钱？","py":"瓦斯 科斯特特 达斯"},
+      {"de":"Wie viel kostet es?","zh":"它多少钱？","py":"维 菲尔 科斯特特 埃斯"},
+      {"de":"Was kostet das alles zusammen?","zh":"这些一共多少钱？","py":"瓦斯 科斯特特 达斯 阿勒斯 粗扎门"},
+      {"de":"Das ist günstig.","zh":"这很便宜。","py":"达斯 伊斯特 金斯提希"},
+      {"de":"Haben Sie etwas Billigeres?","zh":"有更便宜的吗？","py":"哈本 齐 埃特瓦斯 比利格雷斯"},
+      {"de":"Ich möchte das kaufen.","zh":"我想买这个。","py":"伊希 麦希特 达斯 考芬"},
+      {"de":"Ich nehme das.","zh":"我要这个。","py":"伊希 内默 达斯"},
+      {"de":"Kann ich das anprobieren?","zh":"我可以试穿吗？","py":"坎 伊希 达斯 安普罗比伦"},
+      {"de":"Wo sind die Umkleidekabinen?","zh":"试衣间在哪里？","py":"沃 辛特 迪 乌姆克莱德卡宾恩"},
+      {"de":"Das passt gut.","zh":"这个很合身。","py":"达斯 帕斯特 古特"},
+      {"de":"Das passt mir nicht.","zh":"这个不合适我。","py":"达斯 帕斯特 米尔 尼希特"},
+      {"de":"Zahlen bitte.","zh":"请结账。","py":"察伦 比特"},
+      {"de":"Bar oder Karte?","zh":"现金还是刷卡？","py":"巴尔 奥德尔 卡尔特"},
+      {"de":"Die Quittung bitte.","zh":"请给我收据。","py":"迪 克维通 比特"},
+      {"de":"Haben Sie eine Tüte?","zh":"有袋子吗？","py":"哈本 齐 埃内 提特？"},
+      {"de":"Gibt es Rabatt?","zh":"有折扣吗？","py":"吉普特 埃斯 拉巴特"},
+      {"de":"Das ist im Angebot.","zh":"这个在特价。","py":"达斯 伊斯特 伊姆 安格博特"},
+      {"de":"Kann ich umtauschen?","zh":"可以换货吗？","py":"坎 伊希 乌姆套兴"},
+      {"de":"Kann ich das zurückgeben?","zh":"可以退货吗？","py":"坎 伊希 达斯 粗吕克根本"},
+      {"de":"Ich schaue nur.","zh":"我只是看看。","py":"伊希 施奥呃 努尔"},
+      {"de":"Wo finde ich die Kasse?","zh":"收银台在哪里？","py":"沃 芬德 伊希 迪 卡斯"},
+      {"de":"Gibt es Ermäßigung für Studenten?","zh":"学生有优惠吗？","py":"吉普特 埃斯 尔梅西根 菲尔 施图登腾"},
+      {"de":"Haben Sie Kleingeld?","zh":"您有零钱吗？","py":"哈本 齐 克莱因格尔德"},
+      {"de":"Welche Größe haben Sie?","zh":"您穿什么尺码？","py":"维尔黑 格勒瑟 哈本 齐"},
+      {"de":"Ich trage Größe M.","zh":"我穿M码。","py":"伊希 特拉格 格勒瑟 艾姆"},
+      {"de":"Haben Sie das in einer anderen Farbe?","zh":"这个有其他颜色吗？","py":"哈本 齐 达斯 因 埃讷尔 安德伦 法尔贝"},
+      {"de":"der Rabatt","zh":"折扣","py":"德尔 拉巴特"},
+      {"de":"der Ausverkauf","zh":"清仓","py":"德尔 奥斯费尔考夫"},
+      {"de":"die Quittung","zh":"收据","py":"迪 克维通"},
+      {"de":"die Zahlung","zh":"付款","py":"迪 扎伦"},
+      {"de":"mit Karte","zh":"刷卡","py":"米特 卡尔特"},
+      {"de":"die Kreditkarte","zh":"信用卡","py":"迪 克雷迪特卡尔特"},
+      {"de":"die Debitkarte","zh":"借记卡","py":"迪 德比特卡尔特"},
+      {"de":"das Wechselgeld","zh":"零钱","py":"达斯 魏克塞尔格尔德"},
+      {"de":"der Bon","zh":"小票","py":"德尔 博恩"},
+      {"de":"die Garantie","zh":"保修","py":"迪 加兰蒂"},
+      {"de":"die Reklamation","zh":"投诉","py":"迪 雷克拉玛齐翁"},
+      {"de":"umtauschen","zh":"换货/退换","py":"乌姆套兴"},
+      {"de":"zurückgeben","zh":"退货","py":"粗吕克根本"},
+      {"de":"der Einkaufswagen","zh":"购物车","py":"德尔 艾因考夫斯瓦根"},
+      {"de":"der Einkaufskorb","zh":"购物篮","py":"德尔 艾因考夫斯科尔普"},
+      {"de":"die Tüte","zh":"袋子","py":"迪 提特"},
+      {"de":"die Tragetasche","zh":"手提袋","py":"迪 特拉格塔舍"},
+      {"de":"das Modell","zh":"型号","py":"达斯 摩德尔"},
+      {"de":"die Marke","zh":"品牌","py":"迪 马尔克"},
+      {"de":"die Kollektion","zh":"系列","py":"迪 科勒克齐翁"},
+      {"de":"das Sonderangebot","zh":"特价商品","py":"达斯 宗德尔安格博特"},
+      {"de":"der Gutschein","zh":"优惠券","py":"德尔 古特施莱因"},
+      {"de":"die Treuekarte","zh":"积分卡","py":"迪 特洛伊卡尔特"},
+      {"de":"die Mode","zh":"时尚","py":"迪 摩德"},
+      {"de":"trendy","zh":"时髦的","py":"特伦迪"},
+      {"de":"altmodisch","zh":"过时的","py":"阿尔特摩迪施"},
+      {"de":"klassisch","zh":"经典的","py":"克拉西施"},
+      {"de":"der Stil","zh":"风格","py":"德尔 施提尔"},
+      {"de":"das Outfit","zh":"套装/着装","py":"达斯 奥特菲特"},
+      {"de":"die Saison","zh":"季节/时令","py":"迪 泽宗"},
+      {"de":"die Frühjahrsmode","zh":"春季时尚","py":"迪 弗吕雅尔斯摩德"},
+      {"de":"die Herbstmode","zh":"秋季时尚","py":"迪 赫尔布斯特摩德"},
+      {"de":"das Schnäppchen","zh":"便宜货","py":"达斯 施奈普黑恩"},
+      {"de":"der Schlussverkauf","zh":"季末清仓","py":"德尔 施卢斯费尔考夫"},
+      {"de":"der Black Friday","zh":"黑色星期五","py":"德尔 布雷克 弗莱德"},
+      {"de":"die Umkleidekabine","zh":"试衣间","py":"迪 乌姆克莱德卡宾"},
+      {"de":"die Größentabelle","zh":"尺码表","py":"迪 格若斯腾塔贝勒"},
+      {"de":"eng","zh":"紧/窄","py":"恩克"},
+      {"de":"figurbetont","zh":"修身的","py":"菲古尔贝托恩特"},
+      {"de":"lässig","zh":"休闲的","py":"雷希"},
+      {"de":"elegant","zh":"优雅的","py":"埃雷冈特"},
+      {"de":"sportlich","zh":"运动的","py":"施博特利希"},
+      {"de":"festlich","zh":"正式的","py":"费斯特利希"},
+      {"de":"das Kunstleder","zh":"人造皮革","py":"达斯 孔斯特雷德尔"},
+      {"de":"das Leder","zh":"皮革","py":"达斯 雷德尔"},
+      {"de":"die Baumwolle","zh":"棉","py":"迪 鲍姆沃勒"},
+      {"de":"die Seide","zh":"丝绸","py":"迪 扎德"},
+      {"de":"das Leinen","zh":"亚麻","py":"达斯 莱嫩"},
+      {"de":"die Wolle","zh":"羊毛","py":"迪 沃勒"},
+      {"de":"das Polyester","zh":"聚酯","py":"达斯 波里埃斯特尔"},
+      {"de":"das Nilon","zh":"尼龙","py":"达斯 尼洛恩"},
+      {"de":"handgemacht","zh":"手工制作的","py":"汉特格马赫特"},
+      {"de":"nachhaltig","zh":"可持续的","py":"纳赫哈尔提希"},
+      {"de":"das Pfand","zh":"瓶罐押金（德国特色）","py":"达斯 普凡特"},
+      {"de":"der Pfandautomat","zh":"退瓶机","py":"德尔 普凡特奥托马特"},
+      {"de":"der Kassenbon","zh":"购物小票","py":"德尔 卡森邦"},
+      {"de":"das Regal","zh":"货架","py":"达斯 雷加尔"},
+      {"de":"das Haltbarkeitsdatum","zh":"保质期","py":"达斯 哈尔特巴凯茨达图姆"},
+      {"de":"Wo ist die Haltestelle?","zh":"车站在哪里？","py":"沃 伊斯特 迪 哈尔特施泰勒"},
+      {"de":"Wo ist die U-Bahn-Station?","zh":"地铁站在哪里？","py":"沃 伊斯特 地 乌班 施塔细欧恩"},
+      {"de":"Wann fährt der nächste Zug ab?","zh":"下一班火车几点出发？","py":"万 费尔特 德尔 内希斯特 粗克 阿普"},
+      {"de":"Eine Fahrkarte nach Wien bitte.","zh":"请给一张去维也纳的票。","py":"埃内 法尔卡尔特 纳赫 维恩 比特"},
+      {"de":"Hin und zurück.","zh":"来回票。","py":"欣 温特 粗吕克"},
+      {"de":"Einfach.","zh":"单程。","py":"艾因法赫"},
+      {"de":"Zweite Klasse bitte.","zh":"请给二等座。","py":"茨威特 克拉瑟 比特"},
+      {"de":"Welcher Bahnsteig?","zh":"几号站台？","py":"维尔黑尔 班施泰格"},
+      {"de":"Wie lange dauert die Fahrt?","zh":"行程需要多久？","py":"维 朗厄 道尔特 迪 法尔特"},
+      {"de":"Wo muss ich umsteigen?","zh":"我在哪里换乘？","py":"沃 穆斯 伊希 乌姆施泰根"},
+      {"de":"Bitte rufen Sie ein Taxi.","zh":"请叫一辆出租车。","py":"比特 鲁芬 齐 艾因 塔克西"},
+      {"de":"Zum Flughafen bitte.","zh":"请去机场。","py":"粗姆 弗卢格哈芬 比特"},
+      {"de":"Wie weit ist es noch?","zh":"还有多远？","py":"维 魏特 伊斯特 埃斯 诺赫"},
+      {"de":"Links abbiegen.","zh":"向左拐。","py":"林克斯 阿比根"},
+      {"de":"Rechts abbiegen.","zh":"向右拐。","py":"雷希茨 阿比根"},
+      {"de":"Geradeaus.","zh":"直走。","py":"格拉德奥斯"},
+      {"de":"Kann ich zu Fuß gehen?","zh":"我可以步行去吗？","py":"坎 伊希 粗 福斯 盖恩"},
+      {"de":"Der Stau ist sehr lang.","zh":"堵车很严重。","py":"德尔 施陶 伊斯特 泽尔 朗"},
+      {"de":"Ich habe meinen Zug verpasst.","zh":"我错过了火车。","py":"伊希 哈贝 迈嫩 粗克 费尔帕斯特"},
+      {"de":"Gibt es einen Sitzplatz?","zh":"有座位吗？","py":"吉普特 埃斯 艾嫩 齐茨普拉茨"},
+      {"de":"Wie komme ich zur Stadtmitte?","zh":"我怎么去市中心？","py":"维 科默 伊希 粗尔 施塔特米特"},
+      {"de":"Wo kann ich parken?","zh":"我可以在哪里停车？","py":"沃 坎 伊希 帕尔肯"},
+      {"de":"Der Bus hat Verspätung.","zh":"公交车晚点了。","py":"德尔 布斯 哈特 费尔施佩通"},
+      {"de":"Fährt dieser Bus zum Zentrum?","zh":"这辆车去市中心吗？","py":"费尔特 地泽尔 布斯 粗姆 岑特鲁姆"},
+      {"de":"Halten Sie hier an bitte.","zh":"请在这里停。","py":"哈尔腾 齐 希尔 安 比特"},
+      {"de":"An der nächsten Kreuzung links.","zh":"在下一个路口左转。","py":"安 德尔 内希斯滕 克洛伊宗 林克斯"},
+      {"de":"Etwa zehn Minuten zu Fuß.","zh":"步行约10分钟。","py":"埃特瓦 岑 米努腾 粗 福斯"},
+      {"de":"Welche Linie fährt zum Zentrum?","zh":"哪条线去市中心？","py":"维尔黑 里尼 费尔特 粗姆 岑特鲁姆"},
+      {"de":"Wo ist die U-Bahn?","zh":"地铁站在哪里？","py":"沃 伊斯特 迪 乌班"},
+      {"de":"die Kreuzung","zh":"十字路口","py":"迪 克洛伊尊"},
+      {"de":"die Kurve","zh":"弯道","py":"迪 库尔韦"},
+      {"de":"die Einbahnstraße","zh":"单行道","py":"迪 艾因班施特拉瑟"},
+      {"de":"die Bundesstraße","zh":"联邦公路","py":"迪 邦德斯施特拉瑟"},
+      {"de":"die Sackgasse","zh":"死胡同","py":"迪 扎克加斯"},
+      {"de":"der Gehweg","zh":"人行道","py":"德尔 根韦克"},
+      {"de":"der Radweg","zh":"自行车道","py":"德尔 拉特韦克"},
+      {"de":"die Rolltreppe","zh":"自动扶梯","py":"迪 洛尔特雷普"},
+      {"de":"wenden","zh":"掉头","py":"文顿"},
+      {"de":"parken","zh":"停车","py":"帕尔肯"},
+      {"de":"überholen","zh":"超车","py":"于贝尔霍伦"},
+      {"de":"die Vorfahrt","zh":"优先通行权","py":"迪 福尔法尔特"},
+      {"de":"der Stau","zh":"堵车","py":"德尔 施陶"},
+      {"de":"die Umleitung","zh":"绕行","py":"迪 乌姆莱通"},
+      {"de":"die Ausfahrt","zh":"出口匝道","py":"迪 奥斯法尔特"},
+      {"de":"der Führerschein","zh":"驾照","py":"德尔 菲勒施莱因"},
+      {"de":"der Fahrplan","zh":"时刻表","py":"德尔 法普兰"},
+      {"de":"der Flug","zh":"航班","py":"德尔 弗鲁克"},
+      {"de":"das Verkehrsmittel","zh":"交通工具","py":"达斯 费尔克尔斯米特尔"},
+      {"de":"der Wagen","zh":"车","py":"德尔 瓦根"},
+      {"de":"der Reifen","zh":"轮胎","py":"德尔 拉伊芬"},
+      {"de":"der Unfall","zh":"事故","py":"德尔 温法尔"},
+      {"de":"der Umzug","zh":"搬家","py":"德尔 乌姆粗克"},
+      {"de":"die Jugendherberge","zh":"青年旅舍","py":"迪 尤根特黑尔贝格"},
+      {"de":"der Besuch","zh":"拜访/参观","py":"德尔 贝祖赫"},
+      {"de":"Ich habe eine Reservierung.","zh":"我有预订。","py":"伊希 哈贝 埃内 雷泽维荣"},
+      {"de":"Haben Sie ein Zimmer frei?","zh":"有空房间吗？","py":"哈本 齐 艾因 齐默尔 弗莱"},
+      {"de":"Ein Einzelzimmer bitte.","zh":"请给一间单人间。","py":"艾因 艾因泽尔齐默尔 比特"},
+      {"de":"Ein Doppelzimmer bitte.","zh":"请给一间双人间。","py":"艾因 多普尔齐默尔 比特"},
+      {"de":"Wie viel kostet die Nacht?","zh":"一晚多少钱？","py":"维 菲尔 科斯特特 迪 纳赫特"},
+      {"de":"Für drei Nächte bitte.","zh":"请给三晚。","py":"菲尔 德莱 内希特 比特"},
+      {"de":"Frühstück inbegriffen?","zh":"包含早餐吗？","py":"弗吕施提克 因贝格里芬"},
+      {"de":"Wann ist Check-in?","zh":"几点可以入住？","py":"万 伊斯特 切克因"},
+      {"de":"Wann ist Check-out?","zh":"几点必须退房？","py":"万 伊斯特 切克奥特"},
+      {"de":"Der Schlüssel bitte.","zh":"请给钥匙。","py":"德尔 施吕瑟尔 比特"},
+      {"de":"Mein Zimmer ist nicht sauber.","zh":"我的房间不干净。","py":"麦因 齐默尔 伊斯特 尼希特 扎乌贝尔"},
+      {"de":"Die Klimaanlage funktioniert nicht.","zh":"空调坏了。","py":"迪 克利玛安拉格 丰克细欧尼尔特 尼希特"},
+      {"de":"Die Heizung funktioniert nicht.","zh":"暖气坏了。","py":"迪 海宗 丰克细欧尼尔特 尼希特"},
+      {"de":"Gibt es WLAN?","zh":"有无线网络吗？","py":"吉普特 埃斯 维兰"},
+      {"de":"Was ist das WLAN-Passwort?","zh":"无线网络密码是什么？","py":"瓦斯 伊斯特 达斯 维兰 帕斯沃尔特"},
+      {"de":"Wecken Sie mich um 7 Uhr.","zh":"请7点叫醒我。","py":"韦肯 齐 米希 乌姆 泽本 乌尔"},
+      {"de":"Können Sie mein Gepäck aufbewahren?","zh":"您能帮我保管行李吗？","py":"克嫩 齐 麦因 格佩克 奥夫贝瓦伦"},
+      {"de":"Ich möchte auschecken.","zh":"我要退房。","py":"伊希 麦希特 奥斯切肯"},
+      {"de":"Wo ist der Aufzug?","zh":"电梯在哪里？","py":"沃 伊斯特 德尔 奥夫粗克"},
+      {"de":"Haben Sie einen Safe?","zh":"有保险箱吗？","py":"哈本 齐 艾嫩 泽夫"},
+      {"de":"Bitte reinigen Sie mein Zimmer.","zh":"请打扫我的房间。","py":"比特 莱尼根 齐 麦因 齐默尔"},
+      {"de":"Kann ich früher einchecken?","zh":"我可以早点入住吗？","py":"坎 伊希 弗吕尔 艾因切肯"},
+      {"de":"Kann ich später auschecken?","zh":"我可以晚点退房吗？","py":"坎 伊希 施佩特尔 奥斯切肯"},
+      {"de":"Das Zimmer gefällt mir sehr gut.","zh":"我非常喜欢这个房间。","py":"达斯 齐默尔 格费尔特 米尔 泽尔 古特"},
+      {"de":"Wo ist das Restaurant?","zh":"餐厅在哪里？","py":"沃 伊斯特 达斯 雷斯托朗"},
+      {"de":"Handtücher bitte.","zh":"请给毛巾。","py":"汉特图赫尔 比特"},
+      {"de":"Ich möchte verlängern.","zh":"我想延长住宿。","py":"伊希 麦希特 费尔伦格尔恩"},
+      {"de":"Haben Sie ein ruhigeres Zimmer?","zh":"有更安静的房间吗？","py":"哈本 齐 艾因 鲁伊格雷斯 齐默尔"},
+      {"de":"Auf welchen Namen?","zh":"以什么名字？","py":"奥夫 维尔黑恩 纳梅恩"},
+      {"de":"Für wie viele Nächte?","zh":"住几晚？","py":"菲尔 维 菲勒 内希特"},
+      {"de":"der Reisepass","zh":"护照","py":"德尔 莱施帕斯"},
+      {"de":"das Visum","zh":"签证","py":"达斯 维祖姆"},
+      {"de":"die Buchung","zh":"预订","py":"迪 布洪"},
+      {"de":"der Rucksack","zh":"背包","py":"德尔 鲁克扎克"},
+      {"de":"das Handgepäck","zh":"手提行李","py":"达斯 汉特格佩克"},
+      {"de":"der Check-in","zh":"登机手续","py":"德尔 切克因"},
+      {"de":"das Gate","zh":"登机口","py":"达斯 盖特"},
+      {"de":"die Verspätung","zh":"延误","py":"迪 费尔斯贝通"},
+      {"de":"die Unterkunft","zh":"住宿","py":"迪 乌腾孔夫特"},
+      {"de":"das Hostel","zh":"青年旅舍","py":"达斯 霍斯特尔"},
+      {"de":"die Vollpension","zh":"全食宿","py":"迪 福尔彭细欧恩"},
+      {"de":"der Stadtplan","zh":"城市地图","py":"德尔 施塔特普兰"},
+      {"de":"das Souvenir","zh":"纪念品","py":"达斯 祖维尼尔"},
+      {"de":"die Währung","zh":"货币","py":"迪 韦荣"},
+      {"de":"der Wechselkurs","zh":"汇率","py":"德尔 魏克塞尔库尔斯"},
+      {"de":"die Reiseversicherung","zh":"旅行保险","py":"迪 莱斯费尔济黑荣"},
+      {"de":"der Reisende","zh":"旅行者","py":"德尔 莱泽恩德"},
+      {"de":"das Abenteuer","zh":"冒险","py":"达斯 阿本托伊尔"},
+      {"de":"das Bürgeramt","zh":"市民服务中心","py":"达斯 比尔格尔阿姆特"},
+      {"de":"das Einwohnermeldeamt","zh":"户籍登记处","py":"达斯 艾因沃讷梅尔德阿姆特"},
+      {"de":"das Finanzamt","zh":"税务局","py":"达斯 菲纳茨阿姆特"},
+      {"de":"das Arbeitsamt","zh":"就业办公室","py":"达斯 阿尔拜茨阿姆特"},
+      {"de":"die Ausländerbehörde","zh":"外国人管理局","py":"迪 奥斯伦德尔贝霍尔德"},
+      {"de":"die Botschaft","zh":"大使馆","py":"迪 博特沙夫特"},
+      {"de":"das Konsulat","zh":"领事馆","py":"达斯 孔祖拉特"},
+      {"de":"die Polizeiwache","zh":"派出所","py":"迪 波利蔡瓦黑"},
+      {"de":"die Feuerwehr","zh":"消防局","py":"迪 福伊尔韦尔"},
+      {"de":"das Gericht","zh":"法院","py":"达斯 格里希特"},
+      {"de":"das Gefängnis","zh":"监狱","py":"达斯 格芬尼斯"},
+      {"de":"die Stadtverwaltung","zh":"市政府","py":"迪 施塔特费尔瓦尔通"},
+      {"de":"das Standesamt","zh":"民政局","py":"达斯 施坦德斯阿姆特"},
+      {"de":"die Zulassungsstelle","zh":"车管所","py":"迪 粗拉松斯施泰勒"},
+      {"de":"das Sozialamt","zh":"社会福利局","py":"达斯 佐察尔阿姆特"},
+      {"de":"die Krankenkasse","zh":"医疗保险公司","py":"迪 克兰肯卡瑟"},
+      {"de":"die Behörde","zh":"政府机关","py":"迪 贝霍尔德"},
+      {"de":"die Warteschlange","zh":"排队","py":"迪 瓦尔特施朗格"},
+      {"de":"die Wartenummer","zh":"排号","py":"迪 瓦尔特努默尔"},
+      {"de":"der Antrag","zh":"申请表","py":"德尔 安特拉克"},
+      {"de":"die Aufenthaltsgenehmigung","zh":"居留许可","py":"迪 奥夫恩特哈尔茨格内米根"},
+      {"de":"die Klinik","zh":"诊所/医院","py":"迪 克利尼克"},
+      {"de":"die Arztpraxis","zh":"医生诊所","py":"迪 阿尔茨特普拉克西斯"},
+      {"de":"die Notaufnahme","zh":"急诊室","py":"迪 诺特奥夫纳梅"},
+      {"de":"der Zahnarzt","zh":"牙医诊所","py":"德尔 灿阿尔茨特"},
+      {"de":"die Kinderklinik","zh":"儿童医院","py":"迪 金德尔克利尼克"},
+      {"de":"die Kita","zh":"托儿所","py":"迪 基塔"},
+      {"de":"die Hochschule","zh":"高等学校","py":"迪 霍赫施勒"},
+      {"de":"die Volkshochschule","zh":"成人教育中心","py":"迪 福尔克斯霍赫施勒"},
+      {"de":"die Sprachschule","zh":"语言学校","py":"迪 施普拉赫施勒"},
+      {"de":"das Studentenwohnheim","zh":"学生宿舍","py":"达斯 施图登腾沃恩海姆"},
+      {"de":"die Turnhalle","zh":"体育馆","py":"迪 图恩哈勒"},
+      {"de":"der Sportplatz","zh":"运动场","py":"德尔 施波特普拉茨"},
+      {"de":"das Hallenbad","zh":"室内游泳池","py":"达斯 哈伦巴特"},
+      {"de":"das Freibad","zh":"露天泳池","py":"达斯 弗莱巴特"},
+      {"de":"die Sauna","zh":"桑拿房","py":"迪 扎乌纳"},
+      {"de":"das Fitnessstudio","zh":"健身房","py":"达斯 菲特内斯施图迪欧"},
+      {"de":"der Spielplatz","zh":"儿童游乐场","py":"德尔 施皮尔普拉茨"}
+    ]
+  },
+  {
+    "name": "情景对话·搭配",
     "level": "a2",
     "icon": "🗣️",
     "phrases": [
-      {
-        "de": "Ich möchte bestellen.",
-        "zh": "我想点菜。",
-        "py": "伊希 默希特 贝斯泰伦"
-      },
-      {
-        "de": "Was empfehlen Sie heute?",
-        "zh": "今天您推荐什么？",
-        "py": "瓦斯 恩普费伦 济 豪特"
-      },
-      {
-        "de": "Was ist das Tagesgericht?",
-        "zh": "今日特餐是什么？",
-        "py": "瓦斯 伊斯特 达斯 塔格斯格里希特"
-      },
-      {
-        "de": "Ist das scharf?",
-        "zh": "这个辣吗？",
-        "py": "伊斯特 达斯 施卡尔夫"
-      },
-      {
-        "de": "Ich mag kein Scharf.",
-        "zh": "我不喜欢辣。",
-        "py": "伊希 马克 凯因 施卡尔夫"
-      },
-      {
-        "de": "Ohne Koriander bitte.",
-        "zh": "请不要加香菜。",
-        "py": "奥嫩 科里安德尔 比特"
-      },
-      {
-        "de": "Enthält das Gluten?",
-        "zh": "这含有麸质吗？",
-        "py": "恩特哈尔特 达斯 格鲁腾"
-      },
-      {
-        "de": "Ich bin allergisch gegen Erdnüsse.",
-        "zh": "我对花生过敏。",
-        "py": "伊希 宾 阿勒吉施 根 尔德尼斯"
-      },
-      {
-        "de": "Haben Sie eine vegetarische Option?",
-        "zh": "有素食选项吗？",
-        "py": "哈本 济 艾嫩 韦格塔里舍 奥普细欧恩"
-      },
-      {
-        "de": "Wie viele Stück sind das?",
-        "zh": "这是几件？",
-        "py": "维 菲勒 施图克 辛特 达斯"
-      },
-      {
-        "de": "Kann ich das auch zum Mitnehmen?",
-        "zh": "这个也可以外带吗？",
-        "py": "坎 伊希 达斯 奥赫 楚姆 米特内梅"
-      },
-      {
-        "de": "Das schmeckt ausgezeichnet!",
-        "zh": "这太好吃了！",
-        "py": "达斯 施梅克特 奥斯格查黑内特"
-      },
-      {
-        "de": "Noch eine Portion bitte.",
-        "zh": "再来一份请。",
-        "py": "诺赫 艾嫩 波尔细欧恩 比特"
-      },
-      {
-        "de": "Bitte bringen Sie die Rechnung.",
-        "zh": "请给我账单。",
-        "py": "比特 布林根 济 地 雷希农"
-      },
-      {
-        "de": "Ist die Bedienung inbegriffen?",
-        "zh": "服务费包含在内吗？",
-        "py": "伊斯特 地 贝迪嫩 因贝格里芬"
-      },
-      {
-        "de": "Kann ich bitte Wasser haben?",
-        "zh": "请给我水好吗？",
-        "py": "坎 伊希 比特 瓦瑟 哈本"
-      },
-      {
-        "de": "Was ist der Unterschied zwischen R1 und R2?",
-        "zh": "R1和R2有什么区别？",
-        "py": "瓦斯 伊斯特 德尔 乌腾斯克伊特 茨威顺"
-      },
-      {
-        "de": "Welches Gericht würden Sie empfehlen?",
-        "zh": "您会推荐哪道菜？",
-        "py": "维尔黑斯 格里希特 维尔顿 济 恩普费伦"
-      },
-      {
-        "de": "Wie lange dauert es?",
-        "zh": "需要多长时间？",
-        "py": "维 郎格 道尔特 埃斯"
-      },
-      {
-        "de": "Etwa 10-15 Minuten.",
-        "zh": "大约10-15分钟。",
-        "py": "埃特瓦 泽恩 菲因夫辰 米努腾"
-      },
-      {
-        "de": "Das war sehr lecker!",
-        "zh": "这非常好吃！",
-        "py": "达斯 瓦尔 泽尔 勒克尔"
-      },
-      {
-        "de": "Die Portion war sehr groß.",
-        "zh": "份量很大。",
-        "py": "地 波尔细欧恩 瓦尔 泽尔 格罗斯"
-      },
-      {
-        "de": "Ich habe keinen Hunger mehr.",
-        "zh": "我不饿了。",
-        "py": "伊希 哈贝 凯嫩 洪格尔 梅尔"
-      },
-      {
-        "de": "Kann ich das einpacken lassen?",
-        "zh": "可以帮我打包吗？",
-        "py": "坎 伊希 达斯 艾因帕肯 拉森"
-      },
-      {
-        "de": "Einen Tisch für zwei bitte.",
-        "zh": "请给两位安排桌子。",
-        "py": "艾嫩 提什 菲尔 茨威 比特"
-      },
-      {
-        "de": "Haben Sie noch einen freien Tisch?",
-        "zh": "还有空桌吗？",
-        "py": "哈本 济 诺赫 艾嫩 弗莱恩 提什"
-      },
-      {
-        "de": "Wir möchten draußen sitzen.",
-        "zh": "我们想坐外面。",
-        "py": "维尔 默希腾 德劳森 齐腾"
-      },
-      {
-        "de": "Die Speisekarte bitte.",
-        "zh": "请给菜单。",
-        "py": "地 施派泽卡尔特 比特"
-      }
+      {"de":"Wo ist der nächste Supermarkt?","zh":"最近的超市在哪？","py":"沃 伊斯特 德尔 内希斯特 祖佩尔马尔克特"},
+      {"de":"Wie komme ich zum Bahnhof?","zh":"怎么去火车站？","py":"维 科默 伊希 粗姆 班霍夫"},
+      {"de":"Gibt es hier eine Apotheke?","zh":"这附近有药店吗？","py":"吉普特 埃斯 希尔 埃内 阿波泰克"},
+      {"de":"Wo finde ich eine öffentliche Toilette?","zh":"哪里有公共厕所？","py":"沃 芬德 伊希 埃内 厄芬特利黑 托阿雷特"},
+      {"de":"Ist das Museum heute geöffnet?","zh":"博物馆今天开门吗？","py":"伊斯特 达斯 穆泽乌姆 霍伊特 格厄夫内特"},
+      {"de":"Wann macht die Bank auf?","zh":"银行几点开门？","py":"万 马赫特 迪 班克 奥夫"},
+      {"de":"Wann schließt die Bibliothek?","zh":"图书馆几点关门？","py":"万 施利斯特 迪 比布利欧特克"},
+      {"de":"Wie weit ist es bis zum Rathaus?","zh":"到市政厅有多远？","py":"维 魏特 伊斯特 埃斯 比斯 粗姆 拉特豪斯"},
+      {"de":"Gibt es hier einen Geldautomaten?","zh":"这有自动取款机吗？","py":"吉普特 埃斯 希尔 艾嫩 格尔德奥托马腾"},
+      {"de":"Ist der Eintritt frei?","zh":"入场免费吗？","py":"伊斯特 德尔 艾因特里特 弗莱"},
+      {"de":"Was kostet der Eintritt?","zh":"门票多少钱？","py":"瓦斯 科斯特特 德尔 艾因特里特"},
+      {"de":"Gibt es eine Ermäßigung?","zh":"有优惠吗？","py":"吉普特 埃斯 埃内 尔梅西根"},
+      {"de":"Wo ist der Eingang?","zh":"入口在哪？","py":"沃 伊斯特 德尔 艾因刚"},
+      {"de":"Wo ist der Ausgang?","zh":"出口在哪？","py":"沃 伊斯特 德尔 奥斯刚"},
+      {"de":"Ist hier in der Nähe ein Park?","zh":"附近有公园吗？","py":"伊斯特 希尔 因 德尔 内黑 艾因 帕尔克"},
+      {"de":"Wo ist die nächste Bushaltestelle?","zh":"最近的公交站在哪？","py":"沃 伊斯特 迪 内希斯特 布斯哈尔特施泰勒"},
+      {"de":"Hat das Geschäft sonntags geöffnet?","zh":"这家店周日营业吗？","py":"哈特 达斯 格谢夫特 佐恩塔克斯 格厄夫内特"},
+      {"de":"Wo kann ich ein Ticket kaufen?","zh":"在哪买票？","py":"沃 坎 伊希 艾因 提克特 考芬"},
+      {"de":"Gibt es einen Aufzug?","zh":"有电梯吗？","py":"吉普特 埃斯 艾嫩 奥夫粗克"},
+      {"de":"Ist der Ort barrierefrei?","zh":"这地方无障碍吗？","py":"伊斯特 德尔 奥尔特 巴里厄弗莱"},
+      {"de":"Wo ist die Information?","zh":"问询处在哪？","py":"沃 伊斯特 迪 因丰马齐翁"},
+      {"de":"Kann ich hier fotografieren?","zh":"这里可以拍照吗？","py":"坎 伊希 希尔 丰托格拉菲伦"},
+      {"de":"Wie sind die Öffnungszeiten?","zh":"营业时间是几点？","py":"维 辛特 迪 厄夫农斯采腾"},
+      {"de":"Ist heute ein Feiertag?","zh":"今天是节假日吗？","py":"伊斯特 霍伊特 艾因 福伊尔塔克"},
+      {"de":"Wo ist der Treffpunkt?","zh":"集合点在哪？","py":"沃 伊斯特 德尔 特雷夫蓬克特"},
+      {"de":"Gibt es hier WLAN?","zh":"这里有无线网吗？","py":"吉普特 埃斯 希尔 维兰"},
+      {"de":"Wo kann ich mich anmelden?","zh":"我在哪登记？","py":"沃 坎 伊希 米希 安梅尔登"},
+      {"de":"Brauche ich einen Termin?","zh":"我需要预约吗？","py":"布劳赫 伊希 艾嫩 特尔明"},
+      {"de":"Wo muss ich mich anstellen?","zh":"我该在哪排队？","py":"沃 穆斯 伊希 米希 安施泰伦"},
+      {"de":"Guten Abend! Haben Sie reserviert?","zh":"晚上好！您预订了吗？","py":"古腾 阿本特！哈本 齐 雷泽尔维尔特？"},
+      {"de":"Ja, auf den Namen Li.","zh":"是的，以李的名字。","py":"雅 奥夫 登 纳梅 李"},
+      {"de":"Für zwei Personen, bitte.","zh":"请给两位。","py":"菲尔 茨威 佩尔佐嫩 比特"},
+      {"de":"Darf ich Ihnen die Karte bringen?","zh":"可以给您菜单吗？","py":"达尔夫 伊希 伊嫩 迪 卡尔特 布林根"},
+      {"de":"Ich empfehle das Schnitzel.","zh":"我推荐炸肉排。","py":"伊希 恩普费勒 达斯 施尼策尔"},
+      {"de":"Ich nehme das Schnitzel.","zh":"我要炸肉排。","py":"伊希 内默 达斯 施尼策尔"},
+      {"de":"Und zu trinken?","zh":"饮品呢？","py":"温特 粗 特林肯"},
+      {"de":"Ein Glas Weißwein bitte.","zh":"请给一杯白葡萄酒。","py":"艾因 格拉斯 魏斯瓦因 比特"},
+      {"de":"Noch etwas?","zh":"还要别的吗？","py":"诺赫 埃特瓦斯"},
+      {"de":"Nein danke, das ist alles.","zh":"不了谢谢，就这些。","py":"奈因 当克 达斯 伊斯特 阿勒斯"},
+      {"de":"Das Essen war ausgezeichnet!","zh":"食物非常棒！","py":"达斯 埃森 瓦尔 奥斯格查黑内特"},
+      {"de":"Zusammen bitte.","zh":"请一起付。","py":"粗扎门 比特"},
+      {"de":"Das macht 48 Euro.","zh":"一共48欧元。","py":"达斯 马赫特 阿赫特温菲尔齐希 奥伊罗"},
+      {"de":"Vielen Dank! Auf Wiedersehen!","zh":"非常感谢！再见！","py":"菲伦 当克 奥夫 维德泽恩"},
+      {"de":"Hat es geschmeckt?","zh":"好吃吗？","py":"哈特 埃斯 格施梅克特"},
+      {"de":"Ja, es war köstlich!","zh":"是的，非常美味！","py":"雅 埃斯 瓦尔 科斯特利希"},
+      {"de":"Ist der Tisch frei?","zh":"这桌空着吗？","py":"伊斯特 德尔 提什 弗莱"},
+      {"de":"Leider besetzt.","zh":"遗憾，有人了。","py":"莱德尔 贝泽茨特"},
+      {"de":"Haben Sie draußen Platz?","zh":"外面有位置吗？","py":"哈本 齐 德劳森 普拉茨"},
+      {"de":"Drinnen oder draußen?","zh":"室内还是室外？","py":"德里嫩 奥德尔 德劳森"},
+      {"de":"Nichtraucherbereich bitte.","zh":"请给禁烟区。","py":"尼希特劳黑尔贝莱赫 比特"},
+      {"de":"Kann ich eine Allergie angeben?","zh":"我可以说明过敏吗？","py":"坎 伊希 埃内 阿勒吉 安根本"},
+      {"de":"Ich bin gegen Nüsse allergisch.","zh":"我对坚果过敏。","py":"伊希 宾 盖根 尼斯 阿勒吉施"},
+      {"de":"Ist Gluten enthalten?","zh":"含麸质吗？","py":"伊斯特 格鲁腾 恩特哈尔腾"},
+      {"de":"Das Essen kommt gleich.","zh":"食物马上来。","py":"达斯 埃森 科姆特 格莱赫"},
+      {"de":"Kann ich Ihnen helfen?","zh":"我能帮您吗？","py":"坎 伊希 伊嫩 黑尔芬"},
+      {"de":"Ich schaue mich nur um.","zh":"我只是随便看看。","py":"伊希 绍呃 米希 努尔 乌姆"},
+      {"de":"Ich suche ein Geschenk.","zh":"我在找礼物。","py":"伊希 祖黑 艾因 格施恩克"},
+      {"de":"Für wen ist das?","zh":"这是给谁的？","py":"菲尔 韦恩 伊斯特 达斯"},
+      {"de":"Für meine Mutter.","zh":"给我妈妈。","py":"菲尔 麦讷 穆特尔"},
+      {"de":"Was ist Ihr Budget?","zh":"您的预算是多少？","py":"瓦斯 伊斯特 伊尔 布德格特"},
+      {"de":"Ungefähr 50 Euro.","zh":"大约50欧元。","py":"乌恩格费尔 菲因夫齐希 奥伊罗"},
+      {"de":"Haben Sie das in Rot?","zh":"这个有红色的吗？","py":"哈本 齐 达斯 因 罗特"},
+      {"de":"Nur in Blau und Schwarz.","zh":"只有蓝色和黑色。","py":"努尔 因 布劳 温特 施瓦尔茨"},
+      {"de":"Die Umkleidekabine ist dort.","zh":"试衣间在那边。","py":"迪 乌姆克莱德卡宾 伊斯特 多尔特"},
+      {"de":"Wie passt es?","zh":"合身吗？","py":"维 帕斯特 埃斯"},
+      {"de":"Es passt gut, aber es ist zu lang.","zh":"很合身，但太长了。","py":"埃斯 帕斯特 古特 阿伯 埃斯 伊斯特 粗 朗"},
+      {"de":"Wir können es kürzen.","zh":"我们可以改短。","py":"维尔 克嫩 埃斯 库尔泽恩"},
+      {"de":"89 Euro.","zh":"89欧元。","py":"诺伊因温阿赫齐希 奥伊罗"},
+      {"de":"Gibt es einen Rabatt?","zh":"有折扣吗？","py":"吉普特 埃斯 艾嫩 拉巴特"},
+      {"de":"Im Moment leider nicht.","zh":"现在遗憾没有。","py":"伊姆 摩门特 莱德尔 尼希特"},
+      {"de":"Ich nehme es.","zh":"我要了。","py":"伊希 内默 埃斯"},
+      {"de":"Mit Karte oder bar?","zh":"刷卡还是现金？","py":"米特 卡尔特 奥德尔 巴尔"},
+      {"de":"Mit Karte.","zh":"刷卡。","py":"米特 卡尔特"},
+      {"de":"Möchten Sie eine Tüte?","zh":"需要袋子吗？","py":"麦希腾 齐 埃内 提特"},
+      {"de":"Ja bitte.","zh":"是的，谢谢。","py":"雅 比特"},
+      {"de":"Hier ist Ihre Quittung.","zh":"这是您的收据。","py":"希尔 伊斯特 伊雷 克维通"},
+      {"de":"Innerhalb von 14 Tagen.","zh":"14天内可以。","py":"因内尔哈尔普 冯 菲尔泽恩 塔根"},
+      {"de":"Brauchen Sie den Kassenbon?","zh":"需要收据吗？","py":"布劳黑恩 齐 登 卡森博恩"},
+      {"de":"Ja, für die Rückgabe.","zh":"是的，为了退货。","py":"雅 菲尔 迪 吕克加贝"},
+      {"de":"Vielen Dank und auf Wiedersehen!","zh":"非常感谢，再见！","py":"菲伦 当克 温特 奥夫 维德泽恩"},
+      {"de":"Auf Wiedersehen! Guten Tag noch!","zh":"再见！祝您好！","py":"奥夫 维德泽恩 古腾 塔克 诺赫"},
+      {"de":"eine Rolle spielen","zh":"扮演重要作用","py":"埃内 洛勒 斯皮伦"},
+      {"de":"eine Entscheidung treffen","zh":"做决定","py":"埃内 恩特施莱顿 特勒芬"},
+      {"de":"einen Fehler machen","zh":"犯错","py":"艾嫩 费勒 马赫恩"},
+      {"de":"Fortschritte machen","zh":"取得进步","py":"福尔特斯里特 马赫恩"},
+      {"de":"Rücksicht nehmen","zh":"照顾考虑","py":"吕克齐希特 内梅恩"},
+      {"de":"in Kontakt bleiben","zh":"保持联系","py":"因 孔塔克特 布莱本"},
+      {"de":"zum Ausdruck bringen","zh":"表达","py":"粗姆 奥斯德鲁克 布林根"},
+      {"de":"in Frage kommen","zh":"值得考虑","py":"因 弗拉格 科门"},
+      {"de":"zur Verfügung stehen","zh":"可供使用","py":"粗尔 费尔菲根 施泰恩"},
+      {"de":"in Anspruch nehmen","zh":"使用/要求","py":"因 安斯普鲁赫 内梅恩"},
+      {"de":"Bescheid wissen","zh":"知情/了解","py":"贝沙伊特 维森"},
+      {"de":"Bescheid geben","zh":"通知","py":"贝沙伊特 盖本"},
+      {"de":"auf dem Laufenden bleiben","zh":"保持了解","py":"奥夫 登 劳芬顿 布莱本"},
+      {"de":"zur Sprache kommen","zh":"被提及","py":"粗尔 施普拉赫 科门"},
+      {"de":"in Betracht ziehen","zh":"考虑","py":"因 贝特拉赫特 茨嗯"},
+      {"de":"den Überblick behalten","zh":"保持全局","py":"登 于贝尔布利克 贝哈尔腾"},
+      {"de":"Recht haben","zh":"对/有理","py":"雷希特 哈本"},
+      {"de":"Unrecht haben","zh":"错/没理","py":"乌恩雷希特 哈本"},
+      {"de":"Spaß machen","zh":"有趣","py":"施帕斯 马赫恩"},
+      {"de":"ernst nehmen","zh":"认真对待","py":"尔恩斯特 内梅恩"},
+      {"de":"Abstand halten","zh":"保持距离","py":"阿普施坦特 哈尔腾"},
+      {"de":"zur Not","zh":"必要时","py":"粗尔 诺特"},
+      {"de":"auf Anhieb","zh":"立刻/一次就","py":"奥夫 安黑普"},
+      {"de":"im Großen und Ganzen","zh":"总体而言","py":"伊姆 格罗森 温特 甘泽恩"},
+      {"de":"nach und nach","zh":"逐渐","py":"纳赫 温特 纳赫"},
+      {"de":"ab und zu","zh":"偶尔","py":"阿普 温特 粗"},
+      {"de":"hin und wieder","zh":"时不时","py":"欣 温特 维德尔"},
+      {"de":"von Zeit zu Zeit","zh":"不时","py":"冯 采特 粗 采特"},
+      {"de":"auf jeden Fall","zh":"无论如何","py":"奥夫 耶登 法尔"},
+      {"de":"auf keinen Fall","zh":"绝对不","py":"奥夫 凯嫩 法尔"},
+      {"de":"einverstanden sein","zh":"同意","py":"艾因费尔施坦登 扎因"},
+      {"de":"erkältet sein","zh":"感冒","py":"埃尔凯尔特特 扎因"},
+      {"de":"fertig sein","zh":"完成了","py":"费尔提希 扎因"},
+      {"de":"fit sein","zh":"身体好","py":"菲特 扎因"},
+      {"de":"gültig sein","zh":"有效","py":"居尔提希 扎因"},
+      {"de":"unterwegs sein","zh":"在路上","py":"温特韦克斯 扎因"},
+      {"de":"verabredet sein","zh":"有约","py":"费尔阿普雷德特 扎因"},
+      {"de":"sich umziehen","zh":"换衣服","py":"西希 乌姆齐恩"},
+      {"de":"z.B. (zum Beispiel)","zh":"例如","py":"粗姆 拜施皮尔"},
+      {"de":"d.h. (das heißt)","zh":"即/也就是说","py":"达斯 海斯特"},
+      {"de":"usw. (und so weiter)","zh":"等等","py":"温特 佐 魏特尔"},
+      {"de":"u.a. (unter anderem)","zh":"其中/尤其","py":"乌腾 安德雷姆"},
+      {"de":"bzw. (beziehungsweise)","zh":"分别/或者","py":"贝齐荣斯魏斯"},
+      {"de":"ca. (circa)","zh":"大约","py":"齐尔卡"},
+      {"de":"inkl. (inklusive)","zh":"包含","py":"因克鲁西韦"},
+      {"de":"exkl. (exklusive)","zh":"不包含","py":"埃克斯克鲁西韦"},
+      {"de":"MwSt. (Mehrwertsteuer)","zh":"增值税","py":"梅尔韦尔特斯托伊尔"},
+      {"de":"Tel. (Telefon)","zh":"电话","py":"特勒丰"},
+      {"de":"Nr. (Nummer)","zh":"号码","py":"努默尔"},
+      {"de":"Str. (Straße)","zh":"街道","py":"施特拉瑟"},
+      {"de":"Plz. (Postleitzahl)","zh":"邮编","py":"波斯特莱特查尔"},
+      {"de":"Abb. (Abbildung)","zh":"图/插图","py":"阿普比尔顿"},
+      {"de":"Hrsg. (Herausgeber)","zh":"编者","py":"黑劳斯根本尔"},
+      {"de":"ebd. (ebenda)","zh":"同上","py":"埃本达"},
+      {"de":"ggf. (gegebenenfalls)","zh":"如有必要","py":"根本恩芬法尔斯"},
+      {"de":"m.E. (meines Erachtens)","zh":"依我看","py":"迈嫩斯 尔阿赫腾斯"},
+      {"de":"o.g. (oben genannt)","zh":"上述","py":"奥本 格南特"},
+      {"de":"u.U. (unter Umständen)","zh":"在某些情况下","py":"乌腾 乌姆斯坦顿"},
+      {"de":"lt. (laut)","zh":"根据","py":"劳特"},
+      {"de":"s. (siehe)","zh":"见/参见","py":"泽呃"},
+      {"de":"i.d.R. (in der Regel)","zh":"通常","py":"因 德尔 雷格尔"},
+      {"de":"m.f.G. (mit freundlichen Grüßen)","zh":"友好问候（邮件结尾）","py":"米特 弗洛伊恩特利黑恩 格吕森"},
+      {"de":"Mfg (Mit freundlichen Grüßen)","zh":"此致（邮件简写）","py":"米特 弗洛伊恩特利黑恩 格吕森"},
+      {"de":"gez. (gezeichnet)","zh":"签署","py":"格察黑恩特"},
+      {"de":"v.a. (vor allem)","zh":"尤其","py":"福尔 阿伦"},
+      {"de":"i.A. (im Auftrag)","zh":"代表","py":"因姆 奥夫特拉克"},
+      {"de":"p.a. (per annum)","zh":"每年","py":"佩尔 安努姆"},
+      {"de":"GmbH (Gesellschaft mit beschränkter Haftung)","zh":"有限公司","py":"格泽尔沙夫特 米特 贝斯雷恩克特尔 哈夫通"},
+      {"de":"Servus! (=Hallo/Tschüss)","zh":"你好/再见！","py":"塞尔乌斯"},
+      {"de":"Baba! (=Tschüss)","zh":"再见！（维也纳口语）","py":"巴巴"},
+      {"de":"Passt! (=OK)","zh":"行！没问题！","py":"帕斯特"},
+      {"de":"Geh bitte! (=Echt?)","zh":"你开玩笑吧！","py":"根 比特"},
+      {"de":"Schauen wir mal.","zh":"我们看看吧。","py":"绍恩 维尔 马尔"},
+      {"de":"Das wird scho. (=Das wird schon.)","zh":"会好的。","py":"达斯 维尔特 肖"},
+      {"de":"der Tschecherl","zh":"小咖啡馆（维也纳）","py":"德尔 切赫尔"},
+      {"de":"das Kaffeehaus","zh":"咖啡馆（文化场所）","py":"达斯 卡菲豪斯"},
+      {"de":"die Melange","zh":"维也纳牛奶咖啡","py":"迪 梅朗热"},
+      {"de":"der Einspänner","zh":"黑咖啡加奶油","py":"德尔 艾因斯潘嫩尔"},
+      {"de":"der Tafelspitz","zh":"水煮牛肉","py":"德尔 塔弗尔斯皮茨"},
+      {"de":"der Kaiserschmarrn","zh":"皇帝甜饼","py":"德尔 凯泽斯玛恩"},
+      {"de":"der Apfelstrudel","zh":"苹果卷","py":"德尔 阿普费尔施特鲁德尔"},
+      {"de":"die Sachertorte","zh":"萨赫蛋糕","py":"迪 扎赫尔托尔特"},
+      {"de":"das Gulasch","zh":"炖牛肉（奥匈传统菜）","py":"达斯 古拉什"},
+      {"de":"der Heurige","zh":"新酒/酒馆","py":"德尔 霍伊里格"},
+      {"de":"das Dirndl","zh":"传统女装","py":"达斯 迪尔恩德尔"},
+      {"de":"die Lederhose","zh":"皮裤","py":"迪 雷德尔霍斯"},
+      {"de":"das Oktoberfest","zh":"啤酒节","py":"达斯 奥克托贝尔费斯特"},
+      {"de":"der Christkindlmarkt","zh":"圣诞市场","py":"德尔 克里斯特金德尔马尔克特"}
     ]
   },
   {
-    "name": "饮料酒水咖啡",
-    "level": "a2",
-    "icon": "🥤",
-    "phrases": [
-      {
-        "de": "Alkoholfrei",
-        "zh": "无酒精饮品",
-        "py": "阿尔科霍尔弗莱"
-      },
-      {
-        "de": "Cola",
-        "zh": "可乐",
-        "py": "科拉"
-      },
-      {
-        "de": "Cola Zero",
-        "zh": "零度可乐",
-        "py": "科拉 采罗"
-      },
-      {
-        "de": "Eistee",
-        "zh": "冰茶",
-        "py": "艾斯特"
-      },
-      {
-        "de": "Fanta",
-        "zh": "芬达",
-        "py": "凡塔"
-      },
-      {
-        "de": "Römerquelle",
-        "zh": "罗默尔奎勒矿泉水",
-        "py": "罗默尔克韦勒"
-      },
-      {
-        "de": "still",
-        "zh": "静水/无气",
-        "py": "施提尔"
-      },
-      {
-        "de": "prickelnd",
-        "zh": "气泡水",
-        "py": "普里克恩特"
-      },
-      {
-        "de": "Aloe Vera",
-        "zh": "芦荟汁",
-        "py": "阿洛埃 韦拉"
-      },
-      {
-        "de": "Apfelsaft",
-        "zh": "苹果汁",
-        "py": "阿普费尔扎夫特"
-      },
-      {
-        "de": "Apfelsaft gespritzt",
-        "zh": "苹果汁苏打水",
-        "py": "阿普费尔扎夫特 格施普里茨特"
-      },
-      {
-        "de": "Orangensaft",
-        "zh": "橙汁",
-        "py": "奥朗根扎夫特"
-      },
-      {
-        "de": "Orangensaft gespritzt",
-        "zh": "橙汁苏打水",
-        "py": "奥朗根扎夫特 格施普里茨特"
-      },
-      {
-        "de": "Lycheesaft",
-        "zh": "荔枝汁",
-        "py": "利奇扎夫特"
-      },
-      {
-        "de": "Mangosaft",
-        "zh": "芒果汁",
-        "py": "芒果扎夫特"
-      },
-      {
-        "de": "Red Bull",
-        "zh": "红牛",
-        "py": "雷德 布尔"
-      },
-      {
-        "de": "Saft mit Wasser",
-        "zh": "果汁加水",
-        "py": "扎夫特 米特 瓦瑟"
-      },
-      {
-        "de": "Glas Wasser",
-        "zh": "玻璃杯装水",
-        "py": "格拉斯 瓦瑟"
-      },
-      {
-        "de": "SODAS und Homemade Tea",
-        "zh": "苏打水与自制茶饮",
-        "py": "佐达斯 温特 霍姆梅德 提"
-      },
-      {
-        "de": "Soda Wasser",
-        "zh": "苏打水",
-        "py": "佐达 瓦瑟"
-      },
-      {
-        "de": "Soda Zitrone",
-        "zh": "柠檬苏打",
-        "py": "佐达 齐特罗内"
-      },
-      {
-        "de": "Holunder Soda",
-        "zh": "接骨木苏打",
-        "py": "霍伦德尔 佐达"
-      },
-      {
-        "de": "Himbeer Soda",
-        "zh": "覆盆子苏打",
-        "py": "欣贝尔 佐达"
-      },
-      {
-        "de": "Erdbeer Soda",
-        "zh": "草莓苏打",
-        "py": "埃尔特贝尔 佐达"
-      },
-      {
-        "de": "Kirsch Soda",
-        "zh": "樱桃苏打",
-        "py": "基尔施 佐达"
-      },
-      {
-        "de": "Mango Soda",
-        "zh": "芒果苏打",
-        "py": "芒果 佐达"
-      },
-      {
-        "de": "Minze",
-        "zh": "薄荷",
-        "py": "明策"
-      },
-      {
-        "de": "Limette",
-        "zh": "青柠",
-        "py": "利梅特"
-      },
-      {
-        "de": "Erdbeer Frucht Eistee",
-        "zh": "草莓水果冰茶",
-        "py": "埃尔特贝尔 弗鲁赫特 艾斯特"
-      },
-      {
-        "de": "Mango Frucht Eistee",
-        "zh": "芒果水果冰茶",
-        "py": "芒果 弗鲁赫特 艾斯特"
-      },
-      {
-        "de": "Limetten Frucht Eistee",
-        "zh": "青柠水果冰茶",
-        "py": "利梅滕 弗鲁赫特 艾斯特"
-      },
-      {
-        "de": "Jugendgetränk",
-        "zh": "青少年饮品",
-        "py": "尤根特格特伦克"
-      },
-      {
-        "de": "Bier",
-        "zh": "啤酒",
-        "py": "比尔"
-      },
-      {
-        "de": "Wieselburger Fass",
-        "zh": "维塞尔堡生啤",
-        "py": "维塞尔布尔格尔 法斯"
-      },
-      {
-        "de": "Wieselburger Stammbräu",
-        "zh": "维塞尔堡原浆啤酒",
-        "py": "维塞尔布尔格尔 施塔姆布罗伊"
-      },
-      {
-        "de": "Alkoholfreies Bier",
-        "zh": "无酒精啤酒",
-        "py": "阿尔科霍尔弗莱斯 比尔"
-      },
-      {
-        "de": "Japanisches Bier",
-        "zh": "日本啤酒",
-        "py": "雅帕尼舍斯 比尔"
-      },
-      {
-        "de": "Flasche",
-        "zh": "瓶装",
-        "py": "弗拉舍"
-      },
-      {
-        "de": "Fass",
-        "zh": "桶装/生啤",
-        "py": "法斯"
-      },
-      {
-        "de": "Wein und Aperitif",
-        "zh": "葡萄酒与开胃酒",
-        "py": "瓦因 温特 阿佩里提夫"
-      },
-      {
-        "de": "Weißwein",
-        "zh": "白葡萄酒",
-        "py": "魏斯瓦因"
-      },
-      {
-        "de": "Grüner Veltliner",
-        "zh": "绿维特利纳（白葡萄酒）",
-        "py": "格吕讷尔 费尔特利讷"
-      },
-      {
-        "de": "Rotwein",
-        "zh": "红葡萄酒",
-        "py": "罗特瓦因"
-      },
-      {
-        "de": "Zweigelt",
-        "zh": "茨威格（红葡萄酒）",
-        "py": "茨威格尔特"
-      },
-      {
-        "de": "Weißer Spritzer",
-        "zh": "白葡萄酒苏打",
-        "py": "魏瑟尔 施普里策尔"
-      },
-      {
-        "de": "Kaiser Spritzer",
-        "zh": "凯撒苏打",
-        "py": "凯泽尔 施普里策尔"
-      },
-      {
-        "de": "Aperol",
-        "zh": "阿佩罗",
-        "py": "阿佩罗尔"
-      },
-      {
-        "de": "Aperol Prosecco",
-        "zh": "阿佩罗起泡酒",
-        "py": "阿佩罗尔 普罗塞科"
-      },
-      {
-        "de": "Hugo",
-        "zh": "雨果（接骨木花+薄荷+青柠）",
-        "py": "胡戈"
-      },
-      {
-        "de": "Sake",
-        "zh": "清酒",
-        "py": "萨克"
-      },
-      {
-        "de": "Kaffee",
-        "zh": "咖啡",
-        "py": "卡菲"
-      },
-      {
-        "de": "Espresso",
-        "zh": "浓缩咖啡",
-        "py": "埃斯普雷索"
-      },
-      {
-        "de": "Doppelter Espresso",
-        "zh": "双份浓缩咖啡",
-        "py": "多佩尔特尔 埃斯普雷索"
-      },
-      {
-        "de": "Verlängerter",
-        "zh": "美式咖啡",
-        "py": "费尔伦格尔特尔"
-      },
-      {
-        "de": "Melange",
-        "zh": "维也纳咖啡",
-        "py": "梅朗热"
-      },
-      {
-        "de": "Cappuccino",
-        "zh": "卡布奇诺",
-        "py": "卡布奇诺"
-      },
-      {
-        "de": "Großer Brauner",
-        "zh": "大杯牛奶咖啡",
-        "py": "格罗瑟尔 布劳讷尔"
-      },
-      {
-        "de": "Latte Macchiato",
-        "zh": "拿铁玛奇朵",
-        "py": "拉特 玛奇阿托"
-      },
-      {
-        "de": "Tee",
-        "zh": "茶",
-        "py": "提"
-      },
-      {
-        "de": "Jasmintee",
-        "zh": "茉莉花茶",
-        "py": "雅斯明特"
-      },
-      {
-        "de": "Grüntee",
-        "zh": "绿茶",
-        "py": "格吕恩特"
-      },
-      {
-        "de": "Schwarztee",
-        "zh": "红茶",
-        "py": "施瓦尔茨特"
-      },
-      {
-        "de": "div. Sorten",
-        "zh": "多种口味",
-        "py": "迪韦尔泽 佐尔滕"
-      }
-    ]
-  },
-  {
-    "name": "公共场所·机构",
-    "level": "a2",
-    "icon": "🏛️",
-    "phrases": [
-      {
-        "de": "das Bürgeramt",
-        "zh": "市民服务中心",
-        "py": "达斯 比尔格尔阿姆特"
-      },
-      {
-        "de": "das Einwohnermeldeamt",
-        "zh": "户籍登记处",
-        "py": "达斯 艾因沃嫩梅尔德阿姆特"
-      },
-      {
-        "de": "das Finanzamt",
-        "zh": "税务局",
-        "py": "达斯 菲纳茨阿姆特"
-      },
-      {
-        "de": "das Arbeitsamt",
-        "zh": "就业办公室",
-        "py": "达斯 阿尔拜茨阿姆特"
-      },
-      {
-        "de": "die Ausländerbehörde",
-        "zh": "外国人管理局",
-        "py": "迪 奥斯伦德尔贝霍尔德"
-      },
-      {
-        "de": "die Botschaft",
-        "zh": "大使馆",
-        "py": "迪 博特沙夫特"
-      },
-      {
-        "de": "das Konsulat",
-        "zh": "领事馆",
-        "py": "达斯 孔祖拉特"
-      },
-      {
-        "de": "die Polizeiwache",
-        "zh": "派出所",
-        "py": "迪 波利蔡瓦黑"
-      },
-      {
-        "de": "die Feuerwehr",
-        "zh": "消防局",
-        "py": "迪 福伊尔韦尔"
-      },
-      {
-        "de": "das Gericht",
-        "zh": "法院",
-        "py": "达斯 格里希特"
-      },
-      {
-        "de": "das Gefängnis",
-        "zh": "监狱",
-        "py": "达斯 格芬尼斯"
-      },
-      {
-        "de": "die Stadtverwaltung",
-        "zh": "市政府",
-        "py": "迪 施塔特费尔瓦尔通"
-      },
-      {
-        "de": "das Standesamt",
-        "zh": "民政局",
-        "py": "达斯 施坦德斯阿姆特"
-      },
-      {
-        "de": "die Zulassungsstelle",
-        "zh": "车管所",
-        "py": "迪 楚拉松斯施泰勒"
-      },
-      {
-        "de": "das Sozialamt",
-        "zh": "社会福利局",
-        "py": "达斯 佐察尔阿姆特"
-      },
-      {
-        "de": "die Krankenkasse",
-        "zh": "医疗保险公司",
-        "py": "迪 克兰肯卡瑟"
-      },
-      {
-        "de": "die Behörde",
-        "zh": "政府机关",
-        "py": "迪 贝霍尔德"
-      },
-      {
-        "de": "die Warteschlange",
-        "zh": "排队",
-        "py": "迪 瓦尔特施朗格"
-      },
-      {
-        "de": "die Wartenummer",
-        "zh": "排号",
-        "py": "迪 瓦尔特努梅尔"
-      },
-      {
-        "de": "der Antrag",
-        "zh": "申请表",
-        "py": "德尔 安特拉克"
-      },
-      {
-        "de": "die Aufenthaltsgenehmigung",
-        "zh": "居留许可",
-        "py": "迪 奥夫恩特哈尔茨格内米根"
-      },
-      {
-        "de": "die Klinik",
-        "zh": "诊所/医院",
-        "py": "迪 克利尼克"
-      },
-      {
-        "de": "die Arztpraxis",
-        "zh": "医生诊所",
-        "py": "迪 阿尔茨特普拉克西斯"
-      },
-      {
-        "de": "die Notaufnahme",
-        "zh": "急诊室",
-        "py": "迪 诺特奥夫纳梅"
-      },
-      {
-        "de": "der Zahnarzt",
-        "zh": "牙医诊所",
-        "py": "德尔 灿阿尔茨特"
-      },
-      {
-        "de": "die Kinderklinik",
-        "zh": "儿童医院",
-        "py": "迪 金德尔克利尼克"
-      },
-      {
-        "de": "die Kita",
-        "zh": "托儿所",
-        "py": "迪 基塔"
-      },
-      {
-        "de": "die Hochschule",
-        "zh": "高等学校",
-        "py": "迪 霍赫施勒"
-      },
-      {
-        "de": "die Volkshochschule",
-        "zh": "成人教育中心",
-        "py": "迪 福尔克斯霍赫施勒"
-      },
-      {
-        "de": "die Sprachschule",
-        "zh": "语言学校",
-        "py": "迪 施普拉赫施勒"
-      },
-      {
-        "de": "das Studentenwohnheim",
-        "zh": "学生宿舍",
-        "py": "达斯 施图登腾沃恩海姆"
-      },
-      {
-        "de": "die Turnhalle",
-        "zh": "体育馆",
-        "py": "迪 图恩哈勒"
-      },
-      {
-        "de": "der Sportplatz",
-        "zh": "运动场",
-        "py": "德尔 施波特普拉茨"
-      },
-      {
-        "de": "das Hallenbad",
-        "zh": "室内游泳池",
-        "py": "达斯 哈伦巴特"
-      },
-      {
-        "de": "das Freibad",
-        "zh": "露天泳池",
-        "py": "达斯 弗莱巴特"
-      },
-      {
-        "de": "die Sauna",
-        "zh": "桑拿房",
-        "py": "迪 扎乌纳"
-      },
-      {
-        "de": "das Fitnessstudio",
-        "zh": "健身房",
-        "py": "达斯 菲特内斯施图迪欧"
-      },
-      {
-        "de": "der Spielplatz",
-        "zh": "儿童游乐场",
-        "py": "德尔 施皮尔普拉茨"
-      }
-    ]
-  },
-  {
-    "name": "情景对话",
-    "level": "a2",
-    "icon": "🗣️",
-    "phrases": [
-      {
-        "de": "Wo ist der nächste Supermarkt?",
-        "zh": "最近的超市在哪？",
-        "py": "沃 伊斯特 德尔 内希斯特 祖佩尔马尔克特"
-      },
-      {
-        "de": "Wie komme ich zum Bahnhof?",
-        "zh": "怎么去火车站？",
-        "py": "维 科梅 伊希 楚姆 班霍夫"
-      },
-      {
-        "de": "Gibt es hier eine Apotheke?",
-        "zh": "这附近有药店吗？",
-        "py": "吉普特 埃斯 黑尔 艾嫩 阿波泰克"
-      },
-      {
-        "de": "Wo finde ich eine öffentliche Toilette?",
-        "zh": "哪里有公共厕所？",
-        "py": "沃 芬德 伊希 艾嫩 厄芬特利黑 托阿雷特"
-      },
-      {
-        "de": "Ist das Museum heute geöffnet?",
-        "zh": "博物馆今天开门吗？",
-        "py": "伊斯特 达斯 穆泽乌姆 豪特 格厄夫内特"
-      },
-      {
-        "de": "Wann macht die Bank auf?",
-        "zh": "银行几点开门？",
-        "py": "万 马赫特 地 班克 奥夫"
-      },
-      {
-        "de": "Wann schließt die Bibliothek?",
-        "zh": "图书馆几点关门？",
-        "py": "万 施利斯特 地 比布利欧特克"
-      },
-      {
-        "de": "Wie weit ist es bis zum Rathaus?",
-        "zh": "到市政厅有多远？",
-        "py": "维 魏特 伊斯特 埃斯 比斯 楚姆 拉特豪斯"
-      },
-      {
-        "de": "Gibt es hier einen Geldautomaten?",
-        "zh": "这有自动取款机吗？",
-        "py": "吉普特 埃斯 黑尔 艾嫩 格尔德奥托马腾"
-      },
-      {
-        "de": "Ist der Eintritt frei?",
-        "zh": "入场免费吗？",
-        "py": "伊斯特 德尔 艾因特里特 弗莱"
-      },
-      {
-        "de": "Was kostet der Eintritt?",
-        "zh": "门票多少钱？",
-        "py": "瓦斯 科斯特 德尔 艾因特里特"
-      },
-      {
-        "de": "Gibt es eine Ermäßigung?",
-        "zh": "有优惠吗？",
-        "py": "吉普特 埃斯 艾嫩 尔梅西根"
-      },
-      {
-        "de": "Wo ist der Eingang?",
-        "zh": "入口在哪？",
-        "py": "沃 伊斯特 德尔 艾因刚"
-      },
-      {
-        "de": "Wo ist der Ausgang?",
-        "zh": "出口在哪？",
-        "py": "沃 伊斯特 德尔 奥斯刚"
-      },
-      {
-        "de": "Ist hier in der Nähe ein Park?",
-        "zh": "附近有公园吗？",
-        "py": "伊斯特 黑尔 因 德尔 内黑 艾因 帕尔克"
-      },
-      {
-        "de": "Wo ist die nächste Bushaltestelle?",
-        "zh": "最近的公交站在哪？",
-        "py": "沃 伊斯特 地 内希斯特 布斯哈尔特施泰勒"
-      },
-      {
-        "de": "Hat das Geschäft sonntags geöffnet?",
-        "zh": "这家店周日营业吗？",
-        "py": "哈特 达斯 格谢夫特 松塔克斯 格厄夫内特"
-      },
-      {
-        "de": "Wo kann ich ein Ticket kaufen?",
-        "zh": "在哪买票？",
-        "py": "沃 坎 伊希 艾因 提克特 考芬"
-      },
-      {
-        "de": "Gibt es einen Aufzug?",
-        "zh": "有电梯吗？",
-        "py": "吉普特 埃斯 艾嫩 奥夫楚克"
-      },
-      {
-        "de": "Ist der Ort barrierefrei?",
-        "zh": "这地方无障碍吗？",
-        "py": "伊斯特 德尔 奥尔特 巴里厄弗莱"
-      },
-      {
-        "de": "Wo ist die Information?",
-        "zh": "问询处在哪？",
-        "py": "沃 伊斯特 地 因丰马细欧恩"
-      },
-      {
-        "de": "Kann ich hier fotografieren?",
-        "zh": "这里可以拍照吗？",
-        "py": "坎 伊希 黑尔 丰托格拉菲伦"
-      },
-      {
-        "de": "Wie sind die Öffnungszeiten?",
-        "zh": "营业时间是几点？",
-        "py": "维 辛特 地 厄夫农斯采腾"
-      },
-      {
-        "de": "Ist heute ein Feiertag?",
-        "zh": "今天是节假日吗？",
-        "py": "伊斯特 豪特 艾因 福伊尔塔克"
-      },
-      {
-        "de": "Wo ist der Treffpunkt?",
-        "zh": "集合点在哪？",
-        "py": "沃 伊斯特 德尔 特雷夫蓬克特"
-      },
-      {
-        "de": "Gibt es hier WLAN?",
-        "zh": "这里有无线网吗？",
-        "py": "吉普特 埃斯 黑尔 维兰"
-      },
-      {
-        "de": "Wo kann ich mich anmelden?",
-        "zh": "我在哪登记？",
-        "py": "沃 坎 伊希 米希 安梅尔登"
-      },
-      {
-        "de": "Brauche ich einen Termin?",
-        "zh": "我需要预约吗？",
-        "py": "布劳黑 伊希 艾嫩 特尔明"
-      },
-      {
-        "de": "Wo muss ich mich anstellen?",
-        "zh": "我该在哪排队？",
-        "py": "沃 米斯 伊希 米希 安施泰伦"
-      },
-      {
-        "de": "Guten Abend! Haben Sie reserviert?",
-        "zh": "晚上好！您预订了吗？",
-        "py": "古腾 阿本特 哈本 济 雷泽维尔特"
-      },
-      {
-        "de": "Ja, auf den Namen Li.",
-        "zh": "是的，以李的名字。",
-        "py": "雅 奥夫 顿 纳梅 李"
-      },
-      {
-        "de": "Für zwei Personen, bitte.",
-        "zh": "请给两位。",
-        "py": "菲尔 茨威 佩尔佐嫩 比特"
-      },
-      {
-        "de": "Darf ich Ihnen die Karte bringen?",
-        "zh": "可以给您菜单吗？",
-        "py": "达尔夫 伊希 伊嫩 地 卡尔特 布林根"
-      },
-      {
-        "de": "Ich empfehle das Schnitzel.",
-        "zh": "我推荐炸肉排。",
-        "py": "伊希 恩普费勒 达斯 施尼泽尔"
-      },
-      {
-        "de": "Ich nehme das Schnitzel.",
-        "zh": "我要炸肉排。",
-        "py": "伊希 内梅 达斯 施尼泽尔"
-      },
-      {
-        "de": "Und zu trinken?",
-        "zh": "饮品呢？",
-        "py": "温特 楚 特里恩肯"
-      },
-      {
-        "de": "Ein Glas Weißwein bitte.",
-        "zh": "请给一杯白葡萄酒。",
-        "py": "艾因 格拉斯 魏斯魏因 比特"
-      },
-      {
-        "de": "Noch etwas?",
-        "zh": "还要别的吗？",
-        "py": "诺赫 埃特瓦斯"
-      },
-      {
-        "de": "Nein danke, das ist alles.",
-        "zh": "不了谢谢，就这些。",
-        "py": "奈因 当克 达斯 伊斯特 阿勒斯"
-      },
-      {
-        "de": "Das Essen war ausgezeichnet!",
-        "zh": "食物非常棒！",
-        "py": "达斯 埃森 瓦尔 奥斯格查黑内特"
-      },
-      {
-        "de": "Zusammen oder getrennt?",
-        "zh": "一起还是分开付？",
-        "py": "楚扎门 奥德尔 格特伦特"
-      },
-      {
-        "de": "Zusammen bitte.",
-        "zh": "请一起付。",
-        "py": "楚扎门 比特"
-      },
-      {
-        "de": "Das macht 48 Euro.",
-        "zh": "一共48欧元。",
-        "py": "达斯 马赫特 阿赫特温菲尔齐希 奥伊罗"
-      },
-      {
-        "de": "Vielen Dank! Auf Wiedersehen!",
-        "zh": "非常感谢！再见！",
-        "py": "费伦 当克 奥夫 维德泽恩"
-      },
-      {
-        "de": "Hat es geschmeckt?",
-        "zh": "好吃吗？",
-        "py": "哈特 埃斯 格施梅克特"
-      },
-      {
-        "de": "Ja, es war köstlich!",
-        "zh": "是的，非常美味！",
-        "py": "雅 埃斯 瓦尔 科斯特利希"
-      },
-      {
-        "de": "Ist der Tisch frei?",
-        "zh": "这桌空着吗？",
-        "py": "伊斯特 德尔 提什 弗莱"
-      },
-      {
-        "de": "Leider besetzt.",
-        "zh": "遗憾，有人了。",
-        "py": "莱德尔 贝泽茨特"
-      },
-      {
-        "de": "Haben Sie draußen Platz?",
-        "zh": "外面有位置吗？",
-        "py": "哈本 济 德劳森 普拉茨"
-      },
-      {
-        "de": "Drinnen oder draußen?",
-        "zh": "室内还是室外？",
-        "py": "德里嫩 奥德尔 德劳森"
-      },
-      {
-        "de": "Nichtraucherbereich bitte.",
-        "zh": "请给禁烟区。",
-        "py": "尼希特劳黑尔贝莱赫 比特"
-      },
-      {
-        "de": "Kann ich eine Allergie angeben?",
-        "zh": "我可以说明过敏吗？",
-        "py": "坎 伊希 艾嫩 阿勒吉 安根本"
-      },
-      {
-        "de": "Ich bin gegen Nüsse allergisch.",
-        "zh": "我对坚果过敏。",
-        "py": "伊希 宾 根 尼斯 阿勒吉施"
-      },
-      {
-        "de": "Ist Gluten enthalten?",
-        "zh": "含麸质吗？",
-        "py": "伊斯特 格鲁腾 恩特哈尔腾"
-      },
-      {
-        "de": "Das Essen kommt gleich.",
-        "zh": "食物马上来。",
-        "py": "达斯 埃森 科姆特 格莱赫"
-      },
-      {
-        "de": "Kann ich Ihnen helfen?",
-        "zh": "我能帮您吗？",
-        "py": "坎 伊希 伊嫩 黑尔芬"
-      },
-      {
-        "de": "Ich schaue mich nur um.",
-        "zh": "我只是随便看看。",
-        "py": "伊希 绍呃 米希 努尔 乌姆"
-      },
-      {
-        "de": "Ich suche ein Geschenk.",
-        "zh": "我在找礼物。",
-        "py": "伊希 祖黑 艾因 格施恩克"
-      },
-      {
-        "de": "Für wen ist das?",
-        "zh": "这是给谁的？",
-        "py": "菲尔 韦恩 伊斯特 达斯"
-      },
-      {
-        "de": "Für meine Mutter.",
-        "zh": "给我妈妈。",
-        "py": "菲尔 迈嫩 穆特尔"
-      },
-      {
-        "de": "Was ist Ihr Budget?",
-        "zh": "您的预算是多少？",
-        "py": "瓦斯 伊斯特 伊尔 布德格特"
-      },
-      {
-        "de": "Ungefähr 50 Euro.",
-        "zh": "大约50欧元。",
-        "py": "乌恩格费尔 菲因夫齐希 奥伊罗"
-      },
-      {
-        "de": "Haben Sie das in Rot?",
-        "zh": "这个有红色的吗？",
-        "py": "哈本 济 达斯 因 罗特"
-      },
-      {
-        "de": "Nur in Blau und Schwarz.",
-        "zh": "只有蓝色和黑色。",
-        "py": "努尔 因 布劳 温特 施瓦尔茨"
-      },
-      {
-        "de": "Die Umkleidekabine ist dort.",
-        "zh": "试衣间在那边。",
-        "py": "地 乌姆克莱德卡宾 伊斯特 多尔特"
-      },
-      {
-        "de": "Wie passt es?",
-        "zh": "合身吗？",
-        "py": "维 帕斯特 埃斯"
-      },
-      {
-        "de": "Es passt gut, aber es ist zu lang.",
-        "zh": "很合身，但太长了。",
-        "py": "埃斯 帕斯特 古特 阿贝尔 埃斯 伊斯特 楚 朗"
-      },
-      {
-        "de": "Wir können es kürzen.",
-        "zh": "我们可以改短。",
-        "py": "维尔 克嫩 埃斯 库尔泽恩"
-      },
-      {
-        "de": "89 Euro.",
-        "zh": "89欧元。",
-        "py": "诺伊因温阿赫齐希 奥伊罗"
-      },
-      {
-        "de": "Gibt es einen Rabatt?",
-        "zh": "有折扣吗？",
-        "py": "吉普特 埃斯 艾嫩 拉巴特"
-      },
-      {
-        "de": "Im Moment leider nicht.",
-        "zh": "现在遗憾没有。",
-        "py": "因姆 摩门特 莱德尔 尼希特"
-      },
-      {
-        "de": "Ich nehme es.",
-        "zh": "我要了。",
-        "py": "伊希 内梅 埃斯"
-      },
-      {
-        "de": "Mit Karte oder bar?",
-        "zh": "刷卡还是现金？",
-        "py": "米特 卡尔特 奥德尔 巴尔"
-      },
-      {
-        "de": "Mit Karte.",
-        "zh": "刷卡。",
-        "py": "米特 卡尔特"
-      },
-      {
-        "de": "Möchten Sie eine Tüte?",
-        "zh": "需要袋子吗？",
-        "py": "默希腾 济 艾嫩 图特"
-      },
-      {
-        "de": "Ja bitte.",
-        "zh": "是的，谢谢。",
-        "py": "雅 比特"
-      },
-      {
-        "de": "Hier ist Ihre Quittung.",
-        "zh": "这是您的收据。",
-        "py": "黑尔 伊斯特 伊雷 克维通"
-      },
-      {
-        "de": "Innerhalb von 14 Tagen.",
-        "zh": "14天内可以。",
-        "py": "因内尔哈尔普 丰 菲尔泽恩 塔根"
-      },
-      {
-        "de": "Brauchen Sie den Kassenbon?",
-        "zh": "需要收据吗？",
-        "py": "布劳黑恩 济 顿 卡森博恩"
-      },
-      {
-        "de": "Ja, für die Rückgabe.",
-        "zh": "是的，为了退货。",
-        "py": "雅 菲尔 地 吕克加贝"
-      },
-      {
-        "de": "Vielen Dank und auf Wiedersehen!",
-        "zh": "非常感谢，再见！",
-        "py": "费伦 当克 温特 奥夫 维德泽恩"
-      },
-      {
-        "de": "Auf Wiedersehen! Guten Tag noch!",
-        "zh": "再见！祝您好！",
-        "py": "奥夫 维德泽恩 古腾 塔克 诺赫"
-      }
-    ]
-  },
-  {
-    "name": "A2核心动词",
+    "name": "动词·形容词",
     "level": "a2",
     "icon": "🔵",
     "phrases": [
-      {
-        "de": "aufstehen",
-        "zh": "起床",
-        "py": "奥夫施泰恩"
-      },
-      {
-        "de": "erinnern",
-        "zh": "记得",
-        "py": "尔伊嫩"
-      },
-      {
-        "de": "aufräumen",
-        "zh": "整理",
-        "py": "奥夫罗伊门"
-      },
-      {
-        "de": "putzen",
-        "zh": "打扫",
-        "py": "普腾"
-      },
-      {
-        "de": "bügeln",
-        "zh": "熨烫",
-        "py": "比格尔恩"
-      },
-      {
-        "de": "bauen",
-        "zh": "建造",
-        "py": "鲍恩"
-      },
-      {
-        "de": "pflanzen",
-        "zh": "种植",
-        "py": "普兰泽恩"
-      },
-      {
-        "de": "recyceln",
-        "zh": "回收",
-        "py": "雷西克尔恩"
-      },
-      {
-        "de": "wegwerfen",
-        "zh": "扔掉",
-        "py": "韦克韦尔芬"
-      },
-      {
-        "de": "einschalten",
-        "zh": "打开（电器）",
-        "py": "艾因斯卡尔腾"
-      },
-      {
-        "de": "ausschalten",
-        "zh": "关闭（电器）",
-        "py": "奥斯斯卡尔腾"
-      },
-      {
-        "de": "laden",
-        "zh": "充电/装载",
-        "py": "拉顿"
-      },
-      {
-        "de": "scannen",
-        "zh": "扫描",
-        "py": "斯坎嫩"
-      },
-      {
-        "de": "kopieren",
-        "zh": "复印",
-        "py": "科皮伦"
-      },
-      {
-        "de": "tippen",
-        "zh": "打字",
-        "py": "蒂朋"
-      },
-      {
-        "de": "klicken",
-        "zh": "点击",
-        "py": "克利肯"
-      },
-      {
-        "de": "speichern",
-        "zh": "保存",
-        "py": "施派黑恩"
-      },
-      {
-        "de": "löschen",
-        "zh": "删除",
-        "py": "洛申"
-      },
-      {
-        "de": "installieren",
-        "zh": "安装",
-        "py": "因斯塔里伦"
-      },
-      {
-        "de": "updaten",
-        "zh": "更新",
-        "py": "阿普达腾"
-      },
-      {
-        "de": "downloaden",
-        "zh": "下载",
-        "py": "道洛顿"
-      },
-      {
-        "de": "uploaden",
-        "zh": "上传",
-        "py": "阿普洛顿"
-      },
-      {
-        "de": "abschließen",
-        "zh": "锁上/结束",
-        "py": "阿普施利森"
-      },
-      {
-        "de": "ansehen",
-        "zh": "观看",
-        "py": "安泽恩"
-      },
-      {
-        "de": "aufmachen",
-        "zh": "打开",
-        "py": "奥夫马亨"
-      },
-      {
-        "de": "aufpassen",
-        "zh": "当心/照看",
-        "py": "奥夫帕森"
-      },
-      {
-        "de": "ausgeben",
-        "zh": "花费",
-        "py": "奥斯盖本"
-      },
-      {
-        "de": "ausgehen",
-        "zh": "外出",
-        "py": "奥斯盖恩"
-      },
-      {
-        "de": "auspacken",
-        "zh": "拆开",
-        "py": "奥斯帕肯"
-      },
-      {
-        "de": "aussprechen",
-        "zh": "发音",
-        "py": "奥斯施普雷亨"
-      },
-      {
-        "de": "austragen",
-        "zh": "投递",
-        "py": "奥斯特拉根"
-      },
-      {
-        "de": "basteln",
-        "zh": "手工制作",
-        "py": "巴斯特恩"
-      },
-      {
-        "de": "beantworten",
-        "zh": "回答",
-        "py": "贝安特沃滕"
-      },
-      {
-        "de": "beenden",
-        "zh": "结束",
-        "py": "贝恩登"
-      },
-      {
-        "de": "begründen",
-        "zh": "论证",
-        "py": "贝格林登"
-      },
-      {
-        "de": "beraten",
-        "zh": "咨询/建议",
-        "py": "贝拉滕"
-      },
-      {
-        "de": "berichten",
-        "zh": "报道",
-        "py": "贝里希滕"
-      },
-      {
-        "de": "bestehen",
-        "zh": "通过/存在",
-        "py": "贝施特恩"
-      },
-      {
-        "de": "bitten",
-        "zh": "请求",
-        "py": "比滕"
-      },
-      {
-        "de": "buchen",
-        "zh": "预订",
-        "py": "布亨"
-      },
-      {
-        "de": "chatten",
-        "zh": "聊天",
-        "py": "查滕"
-      },
-      {
-        "de": "einpacken",
-        "zh": "打包",
-        "py": "艾因帕肯"
-      },
-      {
-        "de": "einziehen",
-        "zh": "搬入",
-        "py": "艾因齐恩"
-      },
-      {
-        "de": "fallen",
-        "zh": "掉落",
-        "py": "法伦"
-      },
-      {
-        "de": "fotografieren",
-        "zh": "拍照",
-        "py": "福托格拉菲伦"
-      },
-      {
-        "de": "hängen",
-        "zh": "挂",
-        "py": "亨恩"
-      },
-      {
-        "de": "herstellen",
-        "zh": "生产",
-        "py": "黑尔施特伦"
-      },
-      {
-        "de": "hoffen",
-        "zh": "希望",
-        "py": "霍芬"
-      },
-      {
-        "de": "husten",
-        "zh": "咳嗽",
-        "py": "胡斯滕"
-      },
-      {
-        "de": "joggen",
-        "zh": "慢跑",
-        "py": "乔根"
-      },
-      {
-        "de": "klappen",
-        "zh": "顺利/成功",
-        "py": "克拉彭"
-      },
-      {
-        "de": "leidtun",
-        "zh": "感到抱歉",
-        "py": "莱特图恩"
-      },
-      {
-        "de": "leihen",
-        "zh": "借",
-        "py": "莱恩"
-      },
-      {
-        "de": "liefern",
-        "zh": "送货",
-        "py": "利费恩"
-      },
-      {
-        "de": "lügen",
-        "zh": "说谎",
-        "py": "吕根"
-      },
-      {
-        "de": "malen",
-        "zh": "画",
-        "py": "马伦"
-      },
-      {
-        "de": "meinen",
-        "zh": "认为",
-        "py": "迈嫩"
-      },
-      {
-        "de": "merken",
-        "zh": "注意到",
-        "py": "梅尔肯"
-      },
-      {
-        "de": "notieren",
-        "zh": "记下",
-        "py": "诺蒂伦"
-      },
-      {
-        "de": "packen",
-        "zh": "打包/抓住",
-        "py": "帕肯"
-      },
-      {
-        "de": "passen",
-        "zh": "合适",
-        "py": "帕森"
-      },
-      {
-        "de": "prüfen",
-        "zh": "检查",
-        "py": "普吕芬"
-      },
-      {
-        "de": "raten",
-        "zh": "猜/建议",
-        "py": "拉滕"
-      },
-      {
-        "de": "rechnen",
-        "zh": "计算",
-        "py": "雷希嫩"
-      },
-      {
-        "de": "reden",
-        "zh": "说话",
-        "py": "雷登"
-      },
-      {
-        "de": "reiten",
-        "zh": "骑马",
-        "py": "拉伊滕"
-      },
-      {
-        "de": "renovieren",
-        "zh": "翻新",
-        "py": "雷诺维伦"
-      },
-      {
-        "de": "rufen",
-        "zh": "喊/叫",
-        "py": "鲁芬"
-      },
-      {
-        "de": "sammeln",
-        "zh": "收集",
-        "py": "萨梅恩"
-      },
-      {
-        "de": "schaffen",
-        "zh": "做到/完成",
-        "py": "沙芬"
-      },
-      {
-        "de": "schenken",
-        "zh": "赠送",
-        "py": "申肯"
-      },
-      {
-        "de": "schimpfen",
-        "zh": "责骂",
-        "py": "申普芬"
-      },
-      {
-        "de": "schneien",
-        "zh": "下雪",
-        "py": "施奈恩"
-      },
-      {
-        "de": "sparen",
-        "zh": "节省",
-        "py": "施帕伦"
-      },
-      {
-        "de": "stattfinden",
-        "zh": "举行",
-        "py": "施塔特芬登"
-      },
-      {
-        "de": "sterben",
-        "zh": "死",
-        "py": "施泰尔本"
-      },
-      {
-        "de": "stören",
-        "zh": "打扰",
-        "py": "施特伦"
-      },
-      {
-        "de": "surfen",
-        "zh": "冲浪/上网",
-        "py": "祖尔芬"
-      },
-      {
-        "de": "teilnehmen",
-        "zh": "参加",
-        "py": "泰尔内门"
-      },
-      {
-        "de": "trainieren",
-        "zh": "训练",
-        "py": "特雷尼伦"
-      },
-      {
-        "de": "träumen",
-        "zh": "做梦",
-        "py": "特罗伊门"
-      },
-      {
-        "de": "üben",
-        "zh": "练习",
-        "py": "于本"
-      },
-      {
-        "de": "umsteigen",
-        "zh": "换乘",
-        "py": "乌姆施泰根"
-      },
-      {
-        "de": "unternehmen",
-        "zh": "做(活动)",
-        "py": "温特内门"
-      },
-      {
-        "de": "untersuchen",
-        "zh": "检查",
-        "py": "温特祖亨"
-      },
-      {
-        "de": "verbieten",
-        "zh": "禁止",
-        "py": "费尔比滕"
-      },
-      {
-        "de": "vereinbaren",
-        "zh": "约定",
-        "py": "费尔艾因巴伦"
-      },
-      {
-        "de": "verpassen",
-        "zh": "错过",
-        "py": "费尔帕森"
-      },
-      {
-        "de": "verreisen",
-        "zh": "出行",
-        "py": "费尔莱森"
-      },
-      {
-        "de": "verschieben",
-        "zh": "推迟",
-        "py": "费尔施本"
-      },
-      {
-        "de": "wechseln",
-        "zh": "更换",
-        "py": "韦克瑟恩"
-      },
-      {
-        "de": "wecken",
-        "zh": "唤醒",
-        "py": "韦肯"
-      },
-      {
-        "de": "wehtun",
-        "zh": "疼",
-        "py": "韦图恩"
-      },
-      {
-        "de": "wünschen",
-        "zh": "希望",
-        "py": "翁申"
-      },
-      {
-        "de": "zeichnen",
-        "zh": "画/绘",
-        "py": "蔡希嫩"
-      },
-      {
-        "de": "zuhören",
-        "zh": "倾听",
-        "py": "楚赫伦"
-      },
-      {
-        "de": "zumachen",
-        "zh": "关上",
-        "py": "楚马亨"
-      }
-    ]
-  },
-  {
-    "name": "A2名词",
-    "level": "a2",
-    "icon": "🟡",
-    "phrases": [
-      {
-        "de": "die Idee",
-        "zh": "主意",
-        "py": "迪 伊地"
-      },
-      {
-        "de": "der Grund",
-        "zh": "原因/理由",
-        "py": "德尔 格鲁恩特"
-      },
-      {
-        "de": "die Möglichkeit",
-        "zh": "可能性",
-        "py": "迪 默格利希凯特"
-      },
-      {
-        "de": "der Unterschied",
-        "zh": "区别",
-        "py": "德尔 乌腾斯克伊特"
-      },
-      {
-        "de": "die Bedeutung",
-        "zh": "意义/含义",
-        "py": "迪 贝多伊通"
-      },
-      {
-        "de": "das Interesse",
-        "zh": "兴趣",
-        "py": "达斯 因特雷斯"
-      },
-      {
-        "de": "die Entscheidung",
-        "zh": "决定",
-        "py": "迪 恩特施莱顿"
-      },
-      {
-        "de": "der Erfolg",
-        "zh": "成功",
-        "py": "德尔 尔福尔克"
-      },
-      {
-        "de": "das Ziel",
-        "zh": "目标",
-        "py": "达斯 齐尔"
-      },
-      {
-        "de": "das Recht",
-        "zh": "权利/法律",
-        "py": "达斯 雷希特"
-      },
-      {
-        "de": "die Pflicht",
-        "zh": "义务",
-        "py": "迪 普夫里希特"
-      },
-      {
-        "de": "die Freiheit",
-        "zh": "自由",
-        "py": "迪 弗莱海特"
-      },
-      {
-        "de": "die Wahrheit",
-        "zh": "真相",
-        "py": "迪 瓦尔海特"
-      },
-      {
-        "de": "die Meinung",
-        "zh": "意见",
-        "py": "迪 迈农"
-      },
-      {
-        "de": "die Gefahr",
-        "zh": "危险",
-        "py": "迪 格法尔"
-      },
-      {
-        "de": "die Chance",
-        "zh": "机会",
-        "py": "迪 沙恩斯"
-      },
-      {
-        "de": "der Vorteil",
-        "zh": "优势",
-        "py": "德尔 福尔泰尔"
-      },
-      {
-        "de": "der Nachteil",
-        "zh": "劣势",
-        "py": "德尔 纳赫泰尔"
-      },
-      {
-        "de": "die Erfahrung",
-        "zh": "经验",
-        "py": "迪 尔法荣"
-      }
-    ]
-  },
-  {
-    "name": "A2形容词·副词",
-    "level": "a2",
-    "icon": "🟢",
-    "phrases": [
-      {
-        "de": "offen",
-        "zh": "开着",
-        "py": "奥芬"
-      },
-      {
-        "de": "unmöglich",
-        "zh": "不可能",
-        "py": "乌恩默格利希"
-      },
-      {
-        "de": "notwendig",
-        "zh": "必要",
-        "py": "诺特文迪希"
-      },
-      {
-        "de": "nötig",
-        "zh": "需要",
-        "py": "诺蒂希"
-      },
-      {
-        "de": "zu viel",
-        "zh": "太多",
-        "py": "楚 菲尔"
-      },
-      {
-        "de": "zu wenig",
-        "zh": "太少",
-        "py": "楚 韦尼希"
-      },
-      {
-        "de": "alle",
-        "zh": "所有",
-        "py": "阿勒"
-      },
-      {
-        "de": "einige",
-        "zh": "一些",
-        "py": "艾尼格"
-      },
-      {
-        "de": "mehrere",
-        "zh": "几个",
-        "py": "梅雷雷"
-      },
-      {
-        "de": "viele",
-        "zh": "很多",
-        "py": "菲勒"
-      },
-      {
-        "de": "wenige",
-        "zh": "很少",
-        "py": "韦尼格"
-      },
-      {
-        "de": "jeder",
-        "zh": "每个",
-        "py": "耶德尔"
-      },
-      {
-        "de": "anders",
-        "zh": "不同",
-        "py": "安德雷斯"
-      },
-      {
-        "de": "schlechter",
-        "zh": "更坏",
-        "py": "施莱希特尔"
-      },
-      {
-        "de": "mehr",
-        "zh": "更多",
-        "py": "梅尔"
-      },
-      {
-        "de": "weniger",
-        "zh": "更少",
-        "py": "韦尼格尔"
-      },
-      {
-        "de": "am besten",
-        "zh": "最好",
-        "py": "安姆 贝斯腾"
-      },
-      {
-        "de": "am liebsten",
-        "zh": "最喜欢",
-        "py": "安姆 利布斯腾"
-      },
-      {
-        "de": "ziemlich",
-        "zh": "相当",
-        "py": "齐姆利希"
-      },
-      {
-        "de": "kaum",
-        "zh": "几乎不",
-        "py": "考姆"
-      },
-      {
-        "de": "gar nicht",
-        "zh": "根本不",
-        "py": "加尔 尼希特"
-      },
-      {
-        "de": "unten",
-        "zh": "下面",
-        "py": "乌腾"
-      },
-      {
-        "de": "vorne",
-        "zh": "前面",
-        "py": "福尔嫩"
-      },
-      {
-        "de": "innen",
-        "zh": "里面",
-        "py": "伊嫩"
-      },
-      {
-        "de": "außen",
-        "zh": "外面",
-        "py": "奥瑟恩"
-      },
-      {
-        "de": "nah",
-        "zh": "近",
-        "py": "纳"
-      },
-      {
-        "de": "überall",
-        "zh": "到处",
-        "py": "于贝尔阿尔"
-      },
-      {
-        "de": "irgendwo",
-        "zh": "某处",
-        "py": "伊尔根特沃"
-      },
-      {
-        "de": "nirgendwo",
-        "zh": "任何地方都不",
-        "py": "尼尔根特沃"
-      },
-      {
-        "de": "gemeinsam",
-        "zh": "共同",
-        "py": "格迈因扎姆"
-      },
-      {
-        "de": "vorher",
-        "zh": "之前",
-        "py": "福尔黑尔"
-      },
-      {
-        "de": "danach",
-        "zh": "之后",
-        "py": "达纳赫"
-      },
-      {
-        "de": "plötzlich",
-        "zh": "突然",
-        "py": "普勒茨利希"
-      },
-      {
-        "de": "zum Glück",
-        "zh": "幸运地",
-        "py": "楚姆 格吕克"
-      }
-    ]
-  },
-  {
-    "name": "数字·数量",
-    "level": "a2",
-    "icon": "🔢",
-    "phrases": [
-      {
-        "de": "keine",
-        "zh": "没有",
-        "py": "凯嫩"
-      },
-      {
-        "de": "jeder / jede / jedes",
-        "zh": "每个",
-        "py": "耶德尔 耶德 耶德斯"
-      },
-      {
-        "de": "mancher / manche / manches",
-        "zh": "某些",
-        "py": "曼黑尔 曼黑 曼黑斯"
-      },
-      {
-        "de": "beide",
-        "zh": "两者都",
-        "py": "拜德"
-      },
-      {
-        "de": "sämtliche",
-        "zh": "全部",
-        "py": "泽姆特利黑"
-      },
-      {
-        "de": "die Hälfte",
-        "zh": "一半",
-        "py": "迪 黑尔夫特"
-      },
-      {
-        "de": "ein Drittel",
-        "zh": "三分之一",
-        "py": "艾因 德里特尔"
-      },
-      {
-        "de": "ein Viertel",
-        "zh": "四分之一",
-        "py": "艾因 菲尔特尔"
-      },
-      {
-        "de": "drei Viertel",
-        "zh": "四分之三",
-        "py": "德莱 菲尔特尔"
-      },
-      {
-        "de": "ein Paar",
-        "zh": "一对/几个",
-        "py": "艾因 帕尔"
-      },
-      {
-        "de": "ein Dutzend",
-        "zh": "一打",
-        "py": "艾因 杜腾特"
-      },
-      {
-        "de": "das Doppelte",
-        "zh": "两倍",
-        "py": "达斯 多普尔特"
-      },
-      {
-        "de": "das Dreifache",
-        "zh": "三倍",
-        "py": "达斯 德莱法黑"
-      },
-      {
-        "de": "100 Gramm",
-        "zh": "100克",
-        "py": "洪德特 格拉姆"
-      },
-      {
-        "de": "ein Kilo",
-        "zh": "一公斤",
-        "py": "艾因 基洛"
-      },
-      {
-        "de": "ein Liter",
-        "zh": "一升",
-        "py": "艾因 里特尔"
-      },
-      {
-        "de": "ein Meter",
-        "zh": "一米",
-        "py": "艾因 梅特尔"
-      },
-      {
-        "de": "ein Kilometer",
-        "zh": "一公里",
-        "py": "艾因 基洛梅特尔"
-      },
-      {
-        "de": "ein Quadratmeter",
-        "zh": "一平方米",
-        "py": "艾因 克瓦德拉特梅特尔"
-      },
-      {
-        "de": "eine Stunde",
-        "zh": "一小时",
-        "py": "艾嫩 施通德"
-      },
-      {
-        "de": "eine Woche",
-        "zh": "一周",
-        "py": "艾嫩 沃黑"
-      },
-      {
-        "de": "ein Monat",
-        "zh": "一个月",
-        "py": "艾因 摩纳特"
-      },
-      {
-        "de": "ein Jahr",
-        "zh": "一年",
-        "py": "艾因 雅尔"
-      },
-      {
-        "de": "pro Stück",
-        "zh": "每件",
-        "py": "普罗 施图克"
-      },
-      {
-        "de": "pro Person",
-        "zh": "每人",
-        "py": "普罗 佩尔佐恩"
-      }
-    ]
-  },
-  {
-    "name": "职业·职场",
-    "level": "a2",
-    "icon": "💼",
-    "phrases": [
-      {
-        "de": "das Gehalt",
-        "zh": "薪资",
-        "py": "达斯 格哈尔特"
-      },
-      {
-        "de": "der Lohn",
-        "zh": "工资",
-        "py": "德尔 洛恩"
-      },
-      {
-        "de": "die Chefin",
-        "zh": "女老板",
-        "py": "迪 斯雪芬"
-      },
-      {
-        "de": "das Team",
-        "zh": "团队",
-        "py": "达斯 提姆"
-      },
-      {
-        "de": "die Abteilung",
-        "zh": "部门",
-        "py": "迪 阿普泰伦"
-      },
-      {
-        "de": "die Besprechung",
-        "zh": "会议",
-        "py": "迪 贝施普雷洪"
-      },
-      {
-        "de": "das Meeting",
-        "zh": "会议（英语借词）",
-        "py": "达斯 米丁"
-      },
-      {
-        "de": "die Präsentation",
-        "zh": "演示",
-        "py": "迪 普雷泽恩塔细欧恩"
-      },
-      {
-        "de": "der Bericht",
-        "zh": "报告",
-        "py": "德尔 贝里希特"
-      },
-      {
-        "de": "die Kundin",
-        "zh": "客户（女）",
-        "py": "迪 孔丁"
-      },
-      {
-        "de": "das Projekt",
-        "zh": "项目",
-        "py": "达斯 普罗耶克特"
-      },
-      {
-        "de": "die Deadline",
-        "zh": "截止日期",
-        "py": "迪 德德莱因"
-      },
-      {
-        "de": "der Schreibtisch",
-        "zh": "办公桌",
-        "py": "德尔 施莱布提什"
-      },
-      {
-        "de": "das Passwort",
-        "zh": "密码",
-        "py": "达斯 帕斯沃尔特"
-      },
-      {
-        "de": "die Datei",
-        "zh": "文件",
-        "py": "迪 达太"
-      },
-      {
-        "de": "der Krankenstand",
-        "zh": "病假",
-        "py": "德尔 克兰肯施坦特"
-      },
-      {
-        "de": "die Kündigung",
-        "zh": "辞职/解雇",
-        "py": "迪 肯迪根"
-      },
-      {
-        "de": "das Vorstellungsgespräch",
-        "zh": "面试",
-        "py": "达斯 福尔施泰伦斯格斯普雷赫"
-      }
-    ]
-  },
-  {
-    "name": "居家·设施",
-    "level": "a2",
-    "icon": "🏠",
-    "phrases": [
-      {
-        "de": "die Decke",
-        "zh": "天花板",
-        "py": "迪 德克"
-      },
-      {
-        "de": "der Boden",
-        "zh": "地板",
-        "py": "德尔 博顿"
-      },
-      {
-        "de": "die Wand",
-        "zh": "墙",
-        "py": "迪 万特"
-      },
-      {
-        "de": "das Dach",
-        "zh": "屋顶",
-        "py": "达斯 达赫"
-      },
-      {
-        "de": "der Keller",
-        "zh": "地下室",
-        "py": "德尔 凯勒"
-      },
-      {
-        "de": "der Dachboden",
-        "zh": "阁楼",
-        "py": "德尔 达赫博顿"
-      },
-      {
-        "de": "die Terrasse",
-        "zh": "露台",
-        "py": "迪 特拉斯"
-      },
-      {
-        "de": "die Garage",
-        "zh": "车库",
-        "py": "迪 加拉舍"
-      },
-      {
-        "de": "das Treppenhaus",
-        "zh": "楼道",
-        "py": "达斯 特雷朋豪斯"
-      },
-      {
-        "de": "die Klingel",
-        "zh": "门铃",
-        "py": "迪 克林格尔"
-      },
-      {
-        "de": "die Sprechanlage",
-        "zh": "对讲机",
-        "py": "迪 施普雷赫安拉格"
-      },
-      {
-        "de": "die Gefriertruhe",
-        "zh": "冷冻柜",
-        "py": "迪 格弗里尔特鲁呃"
-      },
-      {
-        "de": "die Waschmaschine",
-        "zh": "洗衣机",
-        "py": "迪 瓦施玛斯乘"
-      },
-      {
-        "de": "der Trockner",
-        "zh": "烘干机",
-        "py": "德尔 特罗克内尔"
-      },
-      {
-        "de": "der Staubsauger",
-        "zh": "吸尘器",
-        "py": "德尔 施陶普扎乌格尔"
-      },
-      {
-        "de": "der Wäscheständer",
-        "zh": "晾衣架",
-        "py": "德尔 韦舍斯坦德尔"
-      },
-      {
-        "de": "die Steckdose",
-        "zh": "插座",
-        "py": "迪 施特克多斯"
-      },
-      {
-        "de": "der Lichtschalter",
-        "zh": "灯开关",
-        "py": "德尔 利希特斯卡尔特尔"
-      },
-      {
-        "de": "die Heizung",
-        "zh": "暖气",
-        "py": "迪 海宗"
-      },
-      {
-        "de": "die Klimaanlage",
-        "zh": "空调",
-        "py": "迪 克利玛安拉格"
-      },
-      {
-        "de": "das Schloss",
-        "zh": "城堡/宫殿",
-        "py": "达斯 施洛斯"
-      },
-      {
-        "de": "der Sicherheitsriegel",
-        "zh": "安全插销",
-        "py": "德尔 济黑尔海茨里格尔"
-      }
-    ]
-  },
-  {
-    "name": "运动·体育",
-    "level": "a2",
-    "icon": "⚽",
-    "phrases": [
-      {
-        "de": "der Basketball",
-        "zh": "篮球",
-        "py": "德尔 巴斯克特巴尔"
-      },
-      {
-        "de": "der Tennis",
-        "zh": "网球",
-        "py": "德尔 腾尼斯"
-      },
-      {
-        "de": "der Volleyball",
-        "zh": "排球",
-        "py": "德尔 沃莱巴尔"
-      },
-      {
-        "de": "das Schwimmen",
-        "zh": "游泳",
-        "py": "达斯 施维梅恩"
-      },
-      {
-        "de": "das Laufen",
-        "zh": "跑步",
-        "py": "达斯 劳芬"
-      },
-      {
-        "de": "das Radfahren",
-        "zh": "骑车",
-        "py": "达斯 拉特法伦"
-      },
-      {
-        "de": "das Wandern",
-        "zh": "徒步",
-        "py": "达斯 万德恩"
-      },
-      {
-        "de": "das Klettern",
-        "zh": "攀岩",
-        "py": "达斯 克雷特恩"
-      },
-      {
-        "de": "der Ski",
-        "zh": "滑雪",
-        "py": "德尔 斯基"
-      },
-      {
-        "de": "das Eislaufen",
-        "zh": "溜冰",
-        "py": "达斯 艾斯劳芬"
-      },
-      {
-        "de": "das Turnen",
-        "zh": "体操",
-        "py": "达斯 图内恩"
-      },
-      {
-        "de": "der Kampfsport",
-        "zh": "格斗运动",
-        "py": "德尔 坎普夫斯波特"
-      },
-      {
-        "de": "das Yoga",
-        "zh": "瑜伽",
-        "py": "达斯 约加"
-      },
-      {
-        "de": "der Trainer",
-        "zh": "教练",
-        "py": "德尔 特勒嫩尔"
-      },
-      {
-        "de": "der Spieler",
-        "zh": "球员",
-        "py": "德尔 施皮勒"
-      },
-      {
-        "de": "das Tor",
-        "zh": "球门/进球",
-        "py": "达斯 托尔"
-      },
-      {
-        "de": "das Foul",
-        "zh": "犯规",
-        "py": "达斯 福尔"
-      },
-      {
-        "de": "der Elfmeter",
-        "zh": "点球",
-        "py": "德尔 埃尔夫梅特尔"
-      },
-      {
-        "de": "die Halbzeit",
-        "zh": "中场",
-        "py": "迪 哈尔普茨艾特"
-      },
-      {
-        "de": "verlieren",
-        "zh": "失去",
-        "py": "费尔里伦"
-      },
-      {
-        "de": "unentschieden",
-        "zh": "平局",
-        "py": "乌恩恩特施莱顿"
-      },
-      {
-        "de": "der Weltmeister",
-        "zh": "世界冠军",
-        "py": "德尔 威尔特迈斯特尔"
-      },
-      {
-        "de": "die Olympiade",
-        "zh": "奥林匹克",
-        "py": "迪 奥林皮阿德"
-      },
-      {
-        "de": "der Marathon",
-        "zh": "马拉松",
-        "py": "德尔 玛拉通"
-      },
-      {
-        "de": "das Trikot",
-        "zh": "运动球衣",
-        "py": "达斯 特里科"
-      },
-      {
-        "de": "der Schiedsrichter",
-        "zh": "裁判",
-        "py": "德尔 施意茨里希特尔"
-      }
-    ]
-  },
-  {
-    "name": "自然·动植物",
-    "level": "a2",
-    "icon": "🦁",
-    "phrases": [
-      {
-        "de": "die Orchidee",
-        "zh": "兰花",
-        "py": "迪 奥尔基德"
-      },
-      {
-        "de": "der Lavendel",
-        "zh": "薰衣草",
-        "py": "德尔 拉文德尔"
-      },
-      {
-        "de": "das Veilchen",
-        "zh": "紫罗兰",
-        "py": "达斯 菲尔黑恩"
-      },
-      {
-        "de": "die Lilie",
-        "zh": "百合",
-        "py": "迪 里利"
-      },
-      {
-        "de": "die Chrysantheme",
-        "zh": "菊花",
-        "py": "迪 克吕萨恩特梅"
-      },
-      {
-        "de": "die Dahlie",
-        "zh": "大丽花",
-        "py": "迪 大利"
-      },
-      {
-        "de": "der Kaktus",
-        "zh": "仙人掌",
-        "py": "德尔 卡克图斯"
-      },
-      {
-        "de": "die Aloe Vera",
-        "zh": "芦荟",
-        "py": "迪 阿洛 维拉"
-      },
-      {
-        "de": "der Bambus",
-        "zh": "竹子",
-        "py": "德尔 班布斯"
-      },
-      {
-        "de": "die Eiche",
-        "zh": "橡树",
-        "py": "迪 艾黑"
-      },
-      {
-        "de": "die Birke",
-        "zh": "白桦树",
-        "py": "迪 比尔克"
-      },
-      {
-        "de": "die Fichte",
-        "zh": "云杉",
-        "py": "迪 菲希特"
-      },
-      {
-        "de": "die Tanne",
-        "zh": "冷杉",
-        "py": "迪 坦嫩"
-      },
-      {
-        "de": "die Linde",
-        "zh": "椴树",
-        "py": "迪 林德"
-      },
-      {
-        "de": "der Ahorn",
-        "zh": "枫树",
-        "py": "德尔 阿霍恩"
-      },
-      {
-        "de": "die Weide",
-        "zh": "柳树",
-        "py": "迪 魏德"
-      },
-      {
-        "de": "das Moos",
-        "zh": "苔藓",
-        "py": "达斯 摩斯"
-      },
-      {
-        "de": "der Farn",
-        "zh": "蕨类",
-        "py": "德尔 法尔恩"
-      },
-      {
-        "de": "die Distel",
-        "zh": "蓟",
-        "py": "迪 迪斯特尔"
-      },
-      {
-        "de": "das Unkraut",
-        "zh": "杂草",
-        "py": "达斯 乌恩克劳特"
-      },
-      {
-        "de": "der Stamm",
-        "zh": "树干",
-        "py": "德尔 施塔姆"
-      },
-      {
-        "de": "die Frucht",
-        "zh": "果实",
-        "py": "迪 弗鲁赫特"
-      },
-      {
-        "de": "der Leopard",
-        "zh": "豹子",
-        "py": "德尔 雷欧帕尔特"
-      },
-      {
-        "de": "das Nashorn",
-        "zh": "犀牛",
-        "py": "达斯 纳斯霍恩"
-      },
-      {
-        "de": "das Nilpferd",
-        "zh": "河马",
-        "py": "达斯 尼尔普费尔特"
-      },
-      {
-        "de": "die Giraffe",
-        "zh": "长颈鹿",
-        "py": "迪 吉拉弗"
-      },
-      {
-        "de": "das Zebra",
-        "zh": "斑马",
-        "py": "达斯 泽布拉"
-      },
-      {
-        "de": "der Gorilla",
-        "zh": "大猩猩",
-        "py": "德尔 戈里拉"
-      },
-      {
-        "de": "der Schimpanse",
-        "zh": "黑猩猩",
-        "py": "德尔 施孟帕恩斯"
-      },
-      {
-        "de": "der Hase",
-        "zh": "兔子",
-        "py": "德尔 哈斯"
-      },
-      {
-        "de": "das Eichhörnchen",
-        "zh": "松鼠",
-        "py": "达斯 艾希霍恩肯"
-      },
-      {
-        "de": "der Igel",
-        "zh": "刺猬",
-        "py": "德尔 伊格尔"
-      },
-      {
-        "de": "der Adler",
-        "zh": "鹰",
-        "py": "德尔 阿德勒尔"
-      },
-      {
-        "de": "die Eule",
-        "zh": "猫头鹰",
-        "py": "迪 欧勒"
-      },
-      {
-        "de": "der Papagei",
-        "zh": "鹦鹉",
-        "py": "德尔 帕帕盖"
-      },
-      {
-        "de": "der Pinguin",
-        "zh": "企鹅",
-        "py": "德尔 平吉因"
-      },
-      {
-        "de": "der Delfin",
-        "zh": "海豚",
-        "py": "德尔 德尔芬"
-      },
-      {
-        "de": "der Wal",
-        "zh": "鲸鱼",
-        "py": "德尔 瓦尔"
-      },
-      {
-        "de": "der Hai",
-        "zh": "鲨鱼",
-        "py": "德尔 海"
-      },
-      {
-        "de": "der Oktopus",
-        "zh": "章鱼",
-        "py": "德尔 奥克托普斯"
-      },
-      {
-        "de": "die Schildkröte",
-        "zh": "乌龟",
-        "py": "迪 施黑尔德克罗特"
-      },
-      {
-        "de": "das Krokodil",
-        "zh": "鳄鱼",
-        "py": "达斯 克罗科迪尔"
-      },
-      {
-        "de": "der Marienkäfer",
-        "zh": "瓢虫",
-        "py": "德尔 玛里恩凯弗尔"
-      }
-    ]
-  },
-  {
-    "name": "自然·地理",
-    "level": "a2",
-    "icon": "🌍",
-    "phrases": [
-      {
-        "de": "der Kontinent",
-        "zh": "大洲",
-        "py": "德尔 孔蒂嫩特"
-      },
-      {
-        "de": "die Hauptstadt",
-        "zh": "首都",
-        "py": "迪 豪普特施塔特"
-      },
-      {
-        "de": "die Grenze",
-        "zh": "边界",
-        "py": "迪 格伦泽"
-      },
-      {
-        "de": "der Norden",
-        "zh": "北方",
-        "py": "德尔 诺尔顿"
-      },
-      {
-        "de": "der Süden",
-        "zh": "南方",
-        "py": "德尔 祖顿"
-      },
-      {
-        "de": "der Osten",
-        "zh": "东方",
-        "py": "德尔 奥斯腾"
-      },
-      {
-        "de": "der Westen",
-        "zh": "西方",
-        "py": "德尔 韦斯腾"
-      },
-      {
-        "de": "das Gebirge",
-        "zh": "山脉",
-        "py": "达斯 格比尔格"
-      },
-      {
-        "de": "der Gipfel",
-        "zh": "山顶",
-        "py": "德尔 吉普弗尔"
-      },
-      {
-        "de": "das Tal",
-        "zh": "山谷",
-        "py": "达斯 塔尔"
-      },
-      {
-        "de": "die Ebene",
-        "zh": "平原",
-        "py": "迪 埃贝嫩"
-      },
-      {
-        "de": "die Wüste",
-        "zh": "沙漠",
-        "py": "迪 维斯特"
-      },
-      {
-        "de": "der Regenwald",
-        "zh": "雨林",
-        "py": "德尔 雷根瓦尔特"
-      },
-      {
-        "de": "die Savanne",
-        "zh": "热带草原",
-        "py": "迪 扎万嫩"
-      },
-      {
-        "de": "die Steppe",
-        "zh": "草原",
-        "py": "迪 施特普"
-      },
-      {
-        "de": "das Moor",
-        "zh": "沼泽",
-        "py": "达斯 摩尔"
-      },
-      {
-        "de": "die Bucht",
-        "zh": "海湾",
-        "py": "迪 布赫特"
-      },
-      {
-        "de": "die Insel",
-        "zh": "岛屿",
-        "py": "迪 因泽尔"
-      },
-      {
-        "de": "die Halbinsel",
-        "zh": "半岛",
-        "py": "迪 哈尔普因泽尔"
-      },
-      {
-        "de": "das Kap",
-        "zh": "海角",
-        "py": "达斯 卡普"
-      },
-      {
-        "de": "der Gletscher",
-        "zh": "冰川",
-        "py": "德尔 格雷特舍尔"
-      },
-      {
-        "de": "der Wasserfall",
-        "zh": "瀑布",
-        "py": "德尔 瓦瑟法尔"
-      },
-      {
-        "de": "der Vulkan",
-        "zh": "火山",
-        "py": "德尔 乌尔坎"
-      },
-      {
-        "de": "das Erdbeben",
-        "zh": "地震",
-        "py": "达斯 尔德贝本"
-      },
-      {
-        "de": "der Tsunami",
-        "zh": "海啸",
-        "py": "德尔 楚纳米"
-      },
-      {
-        "de": "der Hurrikan",
-        "zh": "飓风",
-        "py": "德尔 胡里坎"
-      },
-      {
-        "de": "das Klima",
-        "zh": "气候",
-        "py": "达斯 克利玛"
-      },
-      {
-        "de": "die Atmosphäre",
-        "zh": "大气层",
-        "py": "迪 阿特摩斯费雷"
-      }
-    ]
-  },
-  {
-    "name": "天气·气候",
-    "level": "a2",
-    "icon": "🌸",
-    "phrases": [
-      {
-        "de": "die Jahreszeit",
-        "zh": "季节",
-        "py": "迪 雅雷斯查特"
-      },
-      {
-        "de": "die Frühlingssonne",
-        "zh": "春日阳光",
-        "py": "迪 弗吕灵斯宗嫩"
-      },
-      {
-        "de": "die Sommerhitze",
-        "zh": "夏日酷热",
-        "py": "迪 佐默尔希泽"
-      },
-      {
-        "de": "das Herbstlaub",
-        "zh": "秋叶",
-        "py": "达斯 赫尔布斯特劳普"
-      },
-      {
-        "de": "der Winterfrost",
-        "zh": "冬日霜冻",
-        "py": "德尔 文特尔弗罗斯特"
-      },
-      {
-        "de": "der Frühlingsregen",
-        "zh": "春雨",
-        "py": "德尔 弗吕灵斯雷根"
-      },
-      {
-        "de": "das Sommergewitter",
-        "zh": "夏日雷暴",
-        "py": "达斯 佐默尔格维特尔"
-      },
-      {
-        "de": "der Herbststurm",
-        "zh": "秋风暴",
-        "py": "德尔 赫尔布斯特斯图尔姆"
-      },
-      {
-        "de": "der Winterschnee",
-        "zh": "冬雪",
-        "py": "德尔 文特尔施奈"
-      },
-      {
-        "de": "Es taut.",
-        "zh": "在融雪/解冻",
-        "py": "埃斯 陶特"
-      },
-      {
-        "de": "Der erste Schnee fällt.",
-        "zh": "第一场雪降下了。",
-        "py": "德尔 尔斯特 施奈 费尔特"
-      },
-      {
-        "de": "Die Blumen blühen.",
-        "zh": "花儿开放了。",
-        "py": "地 布卢门 布吕恩"
-      },
-      {
-        "de": "Die Blätter fallen.",
-        "zh": "树叶飘落。",
-        "py": "地 布雷特尔 法伦"
-      },
-      {
-        "de": "Es wird kälter.",
-        "zh": "天气变冷了。",
-        "py": "埃斯 维尔特 凯尔特尔"
-      },
-      {
-        "de": "der Temperaturwechsel",
-        "zh": "气温变化",
-        "py": "德尔 腾佩拉图尔韦克瑟尔"
-      },
-      {
-        "de": "die Pollenallergie",
-        "zh": "花粉过敏",
-        "py": "迪 波伦阿勒吉"
-      },
-      {
-        "de": "sonnig und warm",
-        "zh": "晴朗温暖",
-        "py": "宗尼希 温特 瓦尔姆"
-      },
-      {
-        "de": "bewölkt und regnerisch",
-        "zh": "阴天多雨",
-        "py": "贝沃尔克特 温特 雷格内里希"
-      },
-      {
-        "de": "trocken und heiß",
-        "zh": "干燥炎热",
-        "py": "特罗肯 温特 海斯"
-      },
-      {
-        "de": "feucht und kalt",
-        "zh": "潮湿寒冷",
-        "py": "丰伊希特 温特 卡尔特"
-      },
-      {
-        "de": "der Klimawandel",
-        "zh": "气候变化",
-        "py": "德尔 克利玛万德尔"
-      },
-      {
-        "de": "die Treibhausgase",
-        "zh": "温室气体",
-        "py": "迪 特莱普豪斯加斯"
-      },
-      {
-        "de": "die globale Erwärmung",
-        "zh": "全球变暖",
-        "py": "迪 格洛巴雷 尔韦尔门"
-      },
-      {
-        "de": "erneuerbare Energie",
-        "zh": "可再生能源",
-        "py": "尔诺伊尔巴雷 埃内吉"
-      }
+      {"de":"erinnern","zh":"记得","py":"尔伊嫩"},
+      {"de":"bauen","zh":"建造","py":"鲍恩"},
+      {"de":"pflanzen","zh":"种植","py":"普兰泽恩"},
+      {"de":"recyceln","zh":"回收","py":"雷西克尔恩"},
+      {"de":"wegwerfen","zh":"扔掉","py":"韦克韦尔芬"},
+      {"de":"einschalten","zh":"打开（电器）","py":"艾因斯卡尔腾"},
+      {"de":"ausschalten","zh":"关闭（电器）","py":"奥斯斯卡尔腾"},
+      {"de":"laden","zh":"充电/装载","py":"拉登"},
+      {"de":"scannen","zh":"扫描","py":"斯坎嫩"},
+      {"de":"kopieren","zh":"复印","py":"科皮伦"},
+      {"de":"tippen","zh":"打字","py":"蒂朋"},
+      {"de":"klicken","zh":"点击","py":"克利肯"},
+      {"de":"speichern","zh":"保存","py":"施派黑恩"},
+      {"de":"löschen","zh":"删除","py":"洛申"},
+      {"de":"installieren","zh":"安装","py":"因斯塔里伦"},
+      {"de":"updaten","zh":"更新","py":"阿普达腾"},
+      {"de":"downloaden","zh":"下载","py":"道洛顿"},
+      {"de":"uploaden","zh":"上传","py":"阿普洛顿"},
+      {"de":"abschließen","zh":"锁上/结束","py":"阿普施利森"},
+      {"de":"ansehen","zh":"观看","py":"安泽恩"},
+      {"de":"aufmachen","zh":"打开","py":"奥夫马亨"},
+      {"de":"aufpassen","zh":"当心/照看","py":"奥夫帕森"},
+      {"de":"ausgeben","zh":"花费","py":"奥斯盖本"},
+      {"de":"ausgehen","zh":"外出","py":"奥斯盖恩"},
+      {"de":"auspacken","zh":"拆开","py":"奥斯帕肯"},
+      {"de":"aussprechen","zh":"发音","py":"奥斯施普雷亨"},
+      {"de":"austragen","zh":"投递","py":"奥斯特拉根"},
+      {"de":"basteln","zh":"手工制作","py":"巴斯特恩"},
+      {"de":"beantworten","zh":"回答","py":"贝安特沃滕"},
+      {"de":"beenden","zh":"结束","py":"贝恩登"},
+      {"de":"begründen","zh":"论证","py":"贝格林登"},
+      {"de":"beraten","zh":"咨询/建议","py":"贝拉滕"},
+      {"de":"berichten","zh":"报道","py":"贝里希滕"},
+      {"de":"bestehen","zh":"通过/存在","py":"贝施特恩"},
+      {"de":"bitten","zh":"请求","py":"比滕"},
+      {"de":"buchen","zh":"预订","py":"布亨"},
+      {"de":"chatten","zh":"聊天","py":"查滕"},
+      {"de":"einpacken","zh":"打包","py":"艾因帕肯"},
+      {"de":"einziehen","zh":"搬入","py":"艾因齐恩"},
+      {"de":"fallen","zh":"掉落","py":"法伦"},
+      {"de":"fotografieren","zh":"拍照","py":"福托格拉菲伦"},
+      {"de":"hängen","zh":"挂","py":"亨恩"},
+      {"de":"herstellen","zh":"生产","py":"黑尔施特伦"},
+      {"de":"hoffen","zh":"希望","py":"霍芬"},
+      {"de":"husten","zh":"咳嗽","py":"胡斯腾"},
+      {"de":"joggen","zh":"慢跑","py":"乔根"},
+      {"de":"klappen","zh":"顺利/成功","py":"克拉彭"},
+      {"de":"leidtun","zh":"感到抱歉","py":"莱特图恩"},
+      {"de":"leihen","zh":"借","py":"莱恩"},
+      {"de":"liefern","zh":"送货","py":"利费恩"},
+      {"de":"lügen","zh":"说谎","py":"吕根"},
+      {"de":"malen","zh":"画","py":"马伦"},
+      {"de":"meinen","zh":"认为","py":"迈嫩"},
+      {"de":"merken","zh":"注意到","py":"梅尔肯"},
+      {"de":"notieren","zh":"记下","py":"诺蒂伦"},
+      {"de":"packen","zh":"打包/抓住","py":"帕肯"},
+      {"de":"passen","zh":"合适","py":"帕森"},
+      {"de":"prüfen","zh":"检查","py":"普吕芬"},
+      {"de":"raten","zh":"猜/建议","py":"拉滕"},
+      {"de":"rechnen","zh":"计算","py":"雷希嫩"},
+      {"de":"reden","zh":"说话","py":"雷登"},
+      {"de":"reiten","zh":"骑马","py":"拉伊滕"},
+      {"de":"renovieren","zh":"翻新","py":"雷诺维伦"},
+      {"de":"rufen","zh":"喊/叫","py":"鲁芬"},
+      {"de":"sammeln","zh":"收集","py":"萨梅恩"},
+      {"de":"schaffen","zh":"做到/完成","py":"沙芬"},
+      {"de":"schenken","zh":"赠送","py":"申肯"},
+      {"de":"schimpfen","zh":"责骂","py":"申普芬"},
+      {"de":"schneien","zh":"下雪","py":"施奈恩"},
+      {"de":"sparen","zh":"节省","py":"施帕伦"},
+      {"de":"stattfinden","zh":"举行","py":"施塔特芬登"},
+      {"de":"sterben","zh":"死","py":"施泰尔本"},
+      {"de":"stören","zh":"打扰","py":"施特伦"},
+      {"de":"surfen","zh":"冲浪/上网","py":"祖尔芬"},
+      {"de":"teilnehmen","zh":"参加","py":"泰尔内门"},
+      {"de":"trainieren","zh":"训练","py":"特雷尼伦"},
+      {"de":"träumen","zh":"做梦","py":"特罗伊门"},
+      {"de":"üben","zh":"练习","py":"于本"},
+      {"de":"umsteigen","zh":"换乘","py":"乌姆施泰根"},
+      {"de":"unternehmen","zh":"做(活动)","py":"温特尔内门"},
+      {"de":"untersuchen","zh":"检查","py":"温特祖亨"},
+      {"de":"verbieten","zh":"禁止","py":"费尔比滕"},
+      {"de":"vereinbaren","zh":"约定","py":"费尔艾因巴伦"},
+      {"de":"verpassen","zh":"错过","py":"费尔帕森"},
+      {"de":"verreisen","zh":"出行","py":"费尔莱森"},
+      {"de":"verschieben","zh":"推迟","py":"费尔施本"},
+      {"de":"wechseln","zh":"更换","py":"韦克瑟恩"},
+      {"de":"wecken","zh":"唤醒","py":"韦肯"},
+      {"de":"wehtun","zh":"疼","py":"韦图恩"},
+      {"de":"wünschen","zh":"希望","py":"翁申"},
+      {"de":"zeichnen","zh":"画/绘","py":"蔡希嫩"},
+      {"de":"zuhören","zh":"倾听","py":"粗赫伦"},
+      {"de":"zumachen","zh":"关上","py":"粗马亨"},
+      {"de":"aktiv","zh":"积极的","py":"阿克蒂夫"},
+      {"de":"aktuell","zh":"当前的","py":"阿克图埃尔"},
+      {"de":"arm","zh":"穷的","py":"阿姆"},
+      {"de":"aufregend","zh":"激动人心的","py":"奥夫雷根特"},
+      {"de":"beliebt","zh":"受欢迎的","py":"贝利普特"},
+      {"de":"bequem","zh":"舒适的","py":"贝克韦姆"},
+      {"de":"berühmt","zh":"著名的","py":"贝吕姆特"},
+      {"de":"blöd","zh":"愚蠢的","py":"布勒特"},
+      {"de":"blond","zh":"金发的","py":"布隆特"},
+      {"de":"deutlich","zh":"清楚的","py":"多伊特利希"},
+      {"de":"dick","zh":"厚的/胖的","py":"迪克"},
+      {"de":"direkt","zh":"直接的","py":"迪雷克特"},
+      {"de":"dringend","zh":"紧急的","py":"德林根特"},
+      {"de":"dumm","zh":"笨的","py":"杜姆"},
+      {"de":"dünn","zh":"薄的/瘦的","py":"丢恩"},
+      {"de":"echt","zh":"真的","py":"埃希特"},
+      {"de":"fantastisch","zh":"极好的","py":"凡塔斯提什"},
+      {"de":"faul","zh":"懒的","py":"法乌尔"},
+      {"de":"fett","zh":"油腻的/肥的","py":"费特"},
+      {"de":"fleißig","zh":"勤奋的","py":"弗莱西希"},
+      {"de":"freiwillig","zh":"自愿的","py":"弗莱维利希"},
+      {"de":"furchtbar","zh":"可怕的","py":"富尔希特巴尔"},
+      {"de":"freundlich","zh":"友好的","py":"弗罗因特利希"},
+      {"de":"froh","zh":"高兴的","py":"弗罗"},
+      {"de":"gefährlich","zh":"危险的","py":"格费尔利希"},
+      {"de":"hart","zh":"硬的","py":"哈特"},
+      {"de":"intelligent","zh":"聪明的","py":"因特利根特"},
+      {"de":"klug","zh":"聪明的","py":"克卢克"},
+      {"de":"komisch","zh":"奇怪的/滑稽的","py":"科米什"},
+      {"de":"kostenlos","zh":"免费的","py":"科斯滕洛斯"},
+      {"de":"kühl","zh":"凉的","py":"屈尔"},
+      {"de":"modern","zh":"现代的","py":"摩德恩"},
+      {"de":"nass","zh":"湿的","py":"纳斯"},
+      {"de":"nervös","zh":"紧张的","py":"内尔沃斯"},
+      {"de":"nett","zh":"友好的","py":"内特"},
+      {"de":"nützlich","zh":"有用的","py":"纽茨利希"},
+      {"de":"online","zh":"在线的","py":"昂莱因"},
+      {"de":"praktisch","zh":"实用的","py":"普拉克提什"},
+      {"de":"preiswert","zh":"划算的","py":"普莱斯韦特"},
+      {"de":"privat","zh":"私人的","py":"普里瓦特"},
+      {"de":"reich","zh":"富有的","py":"莱希"},
+      {"de":"romantisch","zh":"浪漫的","py":"罗曼提什"},
+      {"de":"rund","zh":"圆的","py":"伦特"},
+      {"de":"schädlich","zh":"有害的","py":"谢特利希"},
+      {"de":"schlimm","zh":"糟糕的","py":"施利姆"},
+      {"de":"schrecklich","zh":"可怕的","py":"施雷克利希"},
+      {"de":"schriftlich","zh":"书面的","py":"施里夫特利希"},
+      {"de":"schwach","zh":"弱的","py":"施瓦赫"},
+      {"de":"schwanger","zh":"怀孕的","py":"施万格"},
+      {"de":"sicher","zh":"安全的/肯定的","py":"西希尔"},
+      {"de":"spannend","zh":"扣人心弦的","py":"施潘恩特"},
+      {"de":"stark","zh":"强壮的","py":"施塔尔克"},
+      {"de":"streng","zh":"严格的","py":"施特伦"},
+      {"de":"stressig","zh":"有压力的","py":"施特雷西希"},
+      {"de":"super","zh":"超棒的","py":"祖佩"},
+      {"de":"sympathisch","zh":"讨人喜欢的","py":"辛帕提什"},
+      {"de":"tief","zh":"深的","py":"提夫"},
+      {"de":"toll","zh":"棒极了的","py":"托尔"},
+      {"de":"traurig","zh":"悲伤的","py":"特劳里希"},
+      {"de":"trocken","zh":"干的","py":"特罗肯"},
+      {"de":"typisch","zh":"典型的","py":"蒂皮什"},
+      {"de":"verschieden","zh":"不同的","py":"费尔申登"},
+      {"de":"vorsichtig","zh":"小心的","py":"福尔西希提希"},
+      {"de":"wach","zh":"清醒的","py":"瓦赫"},
+      {"de":"wahr","zh":"真实的","py":"瓦尔"},
+      {"de":"wahrscheinlich","zh":"很可能的","py":"瓦尔沙因利希"},
+      {"de":"weich","zh":"软的","py":"魏希"},
+      {"de":"witzig","zh":"风趣的","py":"维齐希"},
+      {"de":"nächste","zh":"下一个的","py":"内希斯特"},
+      {"de":"offen","zh":"开着","py":"奥芬"},
+      {"de":"unmöglich","zh":"不可能","py":"乌恩默格利希"},
+      {"de":"notwendig","zh":"必要","py":"诺特文迪希"},
+      {"de":"nötig","zh":"需要","py":"诺提希"},
+      {"de":"zu viel","zh":"太多","py":"粗 菲尔"},
+      {"de":"zu wenig","zh":"太少","py":"粗 韦尼希"},
+      {"de":"alle","zh":"所有","py":"阿勒"},
+      {"de":"einige","zh":"一些","py":"艾尼格"},
+      {"de":"mehrere","zh":"几个","py":"梅雷雷"},
+      {"de":"viele","zh":"很多","py":"菲勒"},
+      {"de":"wenige","zh":"很少","py":"韦尼格"},
+      {"de":"jeder","zh":"每个","py":"耶德尔"},
+      {"de":"anders","zh":"不同","py":"安德雷斯"},
+      {"de":"schlechter","zh":"更坏","py":"施莱希特尔"},
+      {"de":"mehr","zh":"更多","py":"梅尔"},
+      {"de":"weniger","zh":"更少","py":"韦尼格尔"},
+      {"de":"am besten","zh":"最好","py":"阿姆 贝斯腾"},
+      {"de":"am liebsten","zh":"最喜欢","py":"阿姆 利布斯腾"},
+      {"de":"ziemlich","zh":"相当","py":"齐姆利希"},
+      {"de":"kaum","zh":"几乎不","py":"考姆"},
+      {"de":"gar nicht","zh":"根本不","py":"加尔 尼希特"},
+      {"de":"unten","zh":"下面","py":"乌腾"},
+      {"de":"vorne","zh":"前面","py":"福尔嫩"},
+      {"de":"innen","zh":"里面","py":"伊嫩"},
+      {"de":"außen","zh":"外面","py":"奥瑟恩"},
+      {"de":"nah","zh":"近","py":"纳"},
+      {"de":"überall","zh":"到处","py":"于贝尔阿尔"},
+      {"de":"irgendwo","zh":"某处","py":"伊尔根特沃"},
+      {"de":"nirgendwo","zh":"任何地方都不","py":"尼尔根特沃"},
+      {"de":"gemeinsam","zh":"共同","py":"格迈因扎姆"},
+      {"de":"vorher","zh":"之前","py":"福尔黑尔"},
+      {"de":"danach","zh":"之后","py":"达纳赫"},
+      {"de":"plötzlich","zh":"突然","py":"普勒茨利希"},
+      {"de":"zum Glück","zh":"幸运地","py":"粗姆 格吕克"},
+      {"de":"als","zh":"当/作为/比","py":"阿尔斯"},
+      {"de":"außer","zh":"除…之外","py":"奥瑟"},
+      {"de":"außerdem","zh":"此外","py":"奥瑟登"},
+      {"de":"außerhalb","zh":"在…之外","py":"奥瑟哈尔普"},
+      {"de":"besonders","zh":"特别","py":"贝宗德斯"},
+      {"de":"bisschen","zh":"一点","py":"比斯兴"},
+      {"de":"dabei","zh":"在场/同时","py":"达拜"},
+      {"de":"dafür","zh":"为此/赞成","py":"达菲尔"},
+      {"de":"damals","zh":"当时","py":"达马尔斯"},
+      {"de":"deshalb","zh":"因此","py":"德斯哈尔普"},
+      {"de":"doch","zh":"却/还是","py":"多赫"},
+      {"de":"drinnen","zh":"在里面","py":"德里嫩"},
+      {"de":"drüben","zh":"在那边","py":"德吕本"},
+      {"de":"egal","zh":"无所谓","py":"埃加尔"},
+      {"de":"eigentlich","zh":"其实","py":"艾根特利希"},
+      {"de":"erst","zh":"才/起先","py":"埃尔斯特"},
+      {"de":"etwas","zh":"一些/某物","py":"埃特瓦斯"},
+      {"de":"ganz","zh":"完全/整个","py":"甘茨"},
+      {"de":"gegenüber","zh":"对面","py":"格根于伯"},
+      {"de":"her","zh":"朝这边","py":"黑尔"},
+      {"de":"heraus","zh":"出来","py":"黑劳斯"},
+      {"de":"herein","zh":"进来","py":"黑赖因"},
+      {"de":"hin","zh":"朝那边","py":"欣"},
+      {"de":"hoffentlich","zh":"但愿","py":"霍芬特利希"},
+      {"de":"mal","zh":"一下/曾经","py":"马尔"},
+      {"de":"meistens","zh":"大多","py":"迈斯滕斯"},
+      {"de":"nebenan","zh":"隔壁","py":"内本安"},
+      {"de":"nirgends","zh":"哪里都不","py":"尼尔根茨"},
+      {"de":"pro","zh":"每","py":"普罗"},
+      {"de":"schade","zh":"可惜","py":"沙德"},
+      {"de":"selbst","zh":"自己/甚至","py":"泽尔布斯特"},
+      {"de":"sogar","zh":"甚至","py":"佐加"},
+      {"de":"sonst","zh":"否则","py":"宗斯特"},
+      {"de":"total","zh":"完全/总共","py":"托塔尔"},
+      {"de":"unbedingt","zh":"一定","py":"温贝丁特"},
+      {"de":"vorbei","zh":"过去了","py":"福尔拜"},
+      {"de":"vorwärts","zh":"向前","py":"福尔韦尔茨"},
+      {"de":"welcher","zh":"哪个","py":"韦尔希尔"},
+      {"de":"wenigstens","zh":"至少","py":"韦尼希斯滕斯"},
+      {"de":"wenn","zh":"如果/当","py":"文"},
+      {"de":"wirklich","zh":"真的","py":"维尔克利希"},
+      {"de":"zuerst","zh":"首先","py":"粗埃尔斯特"},
+      {"de":"zuletzt","zh":"最后","py":"粗莱茨特"},
+      {"de":"hervorragend","zh":"出色的/卓越的","py":"赫尔佛拉根特"},
+      {"de":"beeindruckend","zh":"令人印象深刻的","py":"贝艾因德鲁肯特"},
+      {"de":"zuverlässig","zh":"可靠的","py":"粗费尔莱西希"},
+      {"de":"großzügig","zh":"慷慨大方的","py":"格罗斯聚基希"},
+      {"de":"bescheiden","zh":"谦虚的","py":"贝沙伊登"},
+      {"de":"humorvoll","zh":"幽默的","py":"胡莫尔佛尔"},
+      {"de":"charmant","zh":"有魅力的","py":"沙尔曼特"},
+      {"de":"das Lob","zh":"表扬/称赞","py":"达斯 洛普"},
+      {"de":"das Kompliment","zh":"赞美/恭维话","py":"达斯 孔普利门特"},
+      {"de":"loben","zh":"表扬","py":"洛本"}
     ]
   },
   {
@@ -4222,2531 +1356,420 @@ module.exports = [
     "level": "a2",
     "icon": "📌",
     "phrases": [
-      {
-        "de": "Ich kann Deutsch sprechen.",
-        "zh": "我会说德语。",
-        "py": "伊希 坎 多伊奇 施普雷恩"
-      },
-      {
-        "de": "Kannst du mir helfen?",
-        "zh": "你能帮我吗？",
-        "py": "坎斯特 度 米尔 黑尔芬"
-      },
-      {
-        "de": "Er kann nicht kommen.",
-        "zh": "他不能来。",
-        "py": "尔 坎 尼希特 科门"
-      },
-      {
-        "de": "Ich muss arbeiten.",
-        "zh": "我必须工作。",
-        "py": "伊希 姆斯 阿尔拜腾"
-      },
-      {
-        "de": "Du musst das nicht machen.",
-        "zh": "你不必做这个。",
-        "py": "度 姆斯特 达斯 尼希特 马赫恩"
-      },
-      {
-        "de": "Sie müssen das Formular ausfüllen.",
-        "zh": "您必须填写表格。",
-        "py": "济 米森 达斯 丰姆拉尔 奥斯费伦"
-      },
-      {
-        "de": "Ich will nach Wien fahren.",
-        "zh": "我想去维也纳。",
-        "py": "伊希 维尔 纳赫 维恩 法伦"
-      },
-      {
-        "de": "Was willst du essen?",
-        "zh": "你想吃什么？",
-        "py": "瓦斯 维尔斯特 度 埃森"
-      },
-      {
-        "de": "Wir wollen zusammen lernen.",
-        "zh": "我们想一起学习。",
-        "py": "维尔 沃伦 楚扎门 勒嫩"
-      },
-      {
-        "de": "Ich soll um 8 Uhr da sein.",
-        "zh": "我应该8点到那里。",
-        "py": "伊希 佐尔 乌姆 阿赫特 乌尔 达 扎因"
-      },
-      {
-        "de": "Du sollst die Wahrheit sagen.",
-        "zh": "你应该说实话。",
-        "py": "度 佐尔斯特 地 瓦尔海特 扎根"
-      },
-      {
-        "de": "Er soll sehr klug sein.",
-        "zh": "据说他很聪明。",
-        "py": "尔 佐尔 泽尔 克鲁克 扎因"
-      },
-      {
-        "de": "Darf ich hier rauchen?",
-        "zh": "我可以在这里吸烟吗？",
-        "py": "达尔夫 伊希 黑尔 劳黑恩"
-      },
-      {
-        "de": "Hier darf man nicht parken.",
-        "zh": "这里不允许停车。",
-        "py": "黑尔 达尔夫 曼 尼希特 帕尔肯"
-      },
-      {
-        "de": "Kinder dürfen das nicht sehen.",
-        "zh": "孩子们不能看这个。",
-        "py": "金德尔 丢尔芬 达斯 尼希特 泽恩"
-      },
-      {
-        "de": "Ich möchte einen Kaffee.",
-        "zh": "我想要一杯咖啡。",
-        "py": "伊希 默希特 艾嫩 卡菲"
-      },
-      {
-        "de": "Möchten Sie etwas trinken?",
-        "zh": "您想喝点什么？",
-        "py": "默希腾 济 埃特瓦斯 特里恩肯"
-      },
-      {
-        "de": "Er möchte Arzt werden.",
-        "zh": "他想成为医生。",
-        "py": "尔 默希特 阿尔茨特 韦尔顿"
-      },
-      {
-        "de": "Ich mag Schokolade.",
-        "zh": "我喜欢巧克力。",
-        "py": "伊希 马克 斯科拉德"
-      },
-      {
-        "de": "Magst du Sport?",
-        "zh": "你喜欢运动吗？",
-        "py": "马克斯特 度 斯博特"
-      },
-      {
-        "de": "Sie mag keine Zwiebeln.",
-        "zh": "她不喜欢洋葱。",
-        "py": "济 马克 凯嫩 茨维本"
-      },
-      {
-        "de": "Er kann gut singen.",
-        "zh": "他唱歌唱得好。",
-        "py": "尔 坎 古特 辛根"
-      },
-      {
-        "de": "Sie kann gut kochen.",
-        "zh": "她做饭做得好。",
-        "py": "济 坎 古特 科赫恩"
-      },
-      {
-        "de": "Ich kann leider nicht kommen.",
-        "zh": "遗憾，我不能来。",
-        "py": "伊希 坎 莱德尔 尼希特 科门"
-      },
-      {
-        "de": "Du musst nicht so laut sprechen.",
-        "zh": "你不必说那么大声。",
-        "py": "度 姆斯特 尼希特 佐 劳特 施普雷恩"
-      },
-      {
-        "de": "Wir müssen früh aufstehen.",
-        "zh": "我们必须早起。",
-        "py": "维尔 米森 弗吕 奥夫施泰恩"
-      },
-      {
-        "de": "Man kann nicht alles haben.",
-        "zh": "人不能拥有一切。",
-        "py": "曼 坎 尼希特 阿勒斯 哈本"
-      },
-      {
-        "de": "Das darf nicht wahr sein!",
-        "zh": "这不可能是真的！",
-        "py": "达斯 达尔夫 尼希特 瓦尔 扎因"
-      },
-      {
-        "de": "Kann ich bitte die Rechnung haben?",
-        "zh": "请给我账单好吗？",
-        "py": "坎 伊希 比特 地 雷希农 哈本"
-      },
-      {
-        "de": "Dürfte ich Sie etwas fragen?",
-        "zh": "请问我可以问您一个问题吗？",
-        "py": "丢尔夫特 伊希 济 埃特瓦斯 弗拉根"
-      },
-      {
-        "de": "Ich habe gegessen.",
-        "zh": "我吃了。",
-        "py": "伊希 哈贝 格埃森"
-      },
-      {
-        "de": "Er hat gearbeitet.",
-        "zh": "他工作了。",
-        "py": "尔 哈特 格阿尔拜特"
-      },
-      {
-        "de": "Sie hat geschlafen.",
-        "zh": "她睡了。",
-        "py": "济 哈特 格施拉芬"
-      },
-      {
-        "de": "Wir haben gespielt.",
-        "zh": "我们玩了。",
-        "py": "维尔 哈本 格施皮尔特"
-      },
-      {
-        "de": "Ich habe das Buch gelesen.",
-        "zh": "我读了这本书。",
-        "py": "伊希 哈贝 达斯 布赫 格雷泽恩"
-      },
-      {
-        "de": "Er hat einen Brief geschrieben.",
-        "zh": "他写了一封信。",
-        "py": "尔 哈特 艾嫩 布里夫 格施莱本"
-      },
-      {
-        "de": "Sie haben Deutsch gelernt.",
-        "zh": "他们学了德语。",
-        "py": "济 哈本 多伊奇 格雷尔特"
-      },
-      {
-        "de": "Ich bin gegangen.",
-        "zh": "我走了。",
-        "py": "伊希 宾 格根根"
-      },
-      {
-        "de": "Er ist gekommen.",
-        "zh": "他来了。",
-        "py": "尔 伊斯特 格科门"
-      },
-      {
-        "de": "Sie ist geflogen.",
-        "zh": "她飞了。",
-        "py": "济 伊斯特 格弗洛根"
-      },
-      {
-        "de": "Wir sind gefahren.",
-        "zh": "我们开车去了。",
-        "py": "维尔 辛特 格法伦"
-      },
-      {
-        "de": "Ich bin aufgestanden.",
-        "zh": "我起床了。",
-        "py": "伊希 宾 奥夫格斯坦登"
-      },
-      {
-        "de": "Er ist eingeschlafen.",
-        "zh": "他睡着了。",
-        "py": "尔 伊斯特 艾因格施拉芬"
-      },
-      {
-        "de": "Sie sind angekommen.",
-        "zh": "他们到达了。",
-        "py": "济 辛特 安格科门"
-      },
-      {
-        "de": "Ich habe das vergessen.",
-        "zh": "我忘了这个。",
-        "py": "伊希 哈贝 达斯 费尔格森"
-      },
-      {
-        "de": "Hast du das gemacht?",
-        "zh": "你做了这个吗？",
-        "py": "哈斯特 度 达斯 格马赫特"
-      },
-      {
-        "de": "Was hast du heute gemacht?",
-        "zh": "你今天做了什么？",
-        "py": "瓦斯 哈斯特 度 豪特 格马赫特"
-      },
-      {
-        "de": "Ich habe viel gearbeitet.",
-        "zh": "我工作了很多。",
-        "py": "伊希 哈贝 菲尔 格阿尔拜特"
-      },
-      {
-        "de": "Wir haben gut gegessen.",
-        "zh": "我们吃得很好。",
-        "py": "维尔 哈本 古特 格埃森"
-      },
-      {
-        "de": "Er hat gut gespielt.",
-        "zh": "他玩得很好。",
-        "py": "尔 哈特 古特 格施皮尔特"
-      },
-      {
-        "de": "Sie hat schön gesungen.",
-        "zh": "她唱得很好听。",
-        "py": "济 哈特 舍恩 格松根"
-      },
-      {
-        "de": "Ich habe ihn gesehen.",
-        "zh": "我看见他了。",
-        "py": "伊希 哈贝 伊恩 格泽恩"
-      },
-      {
-        "de": "Hast du ihn getroffen?",
-        "zh": "你遇到他了吗？",
-        "py": "哈斯特 度 伊恩 格特罗芬"
-      },
-      {
-        "de": "Ich habe das nicht gewusst.",
-        "zh": "我不知道这件事。",
-        "py": "伊希 哈贝 达斯 尼希特 格乌斯特"
-      },
-      {
-        "de": "Sie haben das Spiel gewonnen.",
-        "zh": "他们赢了比赛。",
-        "py": "济 哈本 达斯 施皮尔 格沃嫩"
-      },
-      {
-        "de": "Wir haben verloren.",
-        "zh": "我们输了。",
-        "py": "维尔 哈本 费尔洛伦"
-      },
-      {
-        "de": "Ich bin müde geworden.",
-        "zh": "我变得疲倦了。",
-        "py": "伊希 宾 米德 格沃尔顿"
-      },
-      {
-        "de": "Es ist kalt geworden.",
-        "zh": "天变冷了。",
-        "py": "埃斯 伊斯特 卡尔特 格沃尔顿"
-      },
-      {
-        "de": "Der Zug ist pünktlich angekommen.",
-        "zh": "火车准时到达了。",
-        "py": "德尔 楚克 伊斯特 彭克特利希 安格科门"
-      },
-      {
-        "de": "Das Wetter ist schön gewesen.",
-        "zh": "天气很好。",
-        "py": "达斯 韦特尔 伊斯特 舍恩 格韦泽恩"
-      },
-      {
-        "de": "groß – größer – am größten",
-        "zh": "大 – 更大 – 最大",
-        "py": "格罗斯 格若瑟尔 安姆 格若斯腾"
-      },
-      {
-        "de": "klein – kleiner – am kleinsten",
-        "zh": "小 – 更小 – 最小",
-        "py": "克莱因 克莱嫩尔 安姆 克莱嫩斯腾"
-      },
-      {
-        "de": "alt – älter – am ältesten",
-        "zh": "老 – 更老 – 最老",
-        "py": "阿尔特 艾尔特尔 安姆 艾尔特斯腾"
-      },
-      {
-        "de": "jung – jünger – am jüngsten",
-        "zh": "年轻 – 更年轻 – 最年轻",
-        "py": "永 永格尔 安姆 永斯腾"
-      },
-      {
-        "de": "gut – besser – am besten",
-        "zh": "好 – 更好 – 最好",
-        "py": "古特 贝瑟尔 安姆 贝斯腾"
-      },
-      {
-        "de": "schlecht – schlechter – am schlechtesten",
-        "zh": "坏 – 更坏 – 最坏",
-        "py": "施莱希特 施莱希特尔 安姆 施莱希特斯腾"
-      },
-      {
-        "de": "viel – mehr – am meisten",
-        "zh": "多 – 更多 – 最多",
-        "py": "菲尔 梅尔 安姆 迈斯腾"
-      },
-      {
-        "de": "wenig – weniger – am wenigsten",
-        "zh": "少 – 更少 – 最少",
-        "py": "韦尼希 韦尼格尔 安姆 韦尼希斯腾"
-      },
-      {
-        "de": "schnell – schneller – am schnellsten",
-        "zh": "快 – 更快 – 最快",
-        "py": "施奈尔 施奈勒尔 安姆 施奈尔斯腾"
-      },
-      {
-        "de": "langsam – langsamer – am langsamsten",
-        "zh": "慢 – 更慢 – 最慢",
-        "py": "朗萨姆 朗萨梅尔 安姆 朗萨姆斯腾"
-      },
-      {
-        "de": "teuer – teurer – am teuersten",
-        "zh": "贵 – 更贵 – 最贵",
-        "py": "托伊尔 托伊勒尔 安姆 托伊尔斯腾"
-      },
-      {
-        "de": "billig – billiger – am billigsten",
-        "zh": "便宜 – 更便宜 – 最便宜",
-        "py": "比利希 比利格尔 安姆 比利希斯腾"
-      },
-      {
-        "de": "kalt – kälter – am kältesten",
-        "zh": "冷 – 更冷 – 最冷",
-        "py": "卡尔特 凯尔特尔 安姆 凯尔特斯腾"
-      },
-      {
-        "de": "warm – wärmer – am wärmsten",
-        "zh": "暖 – 更暖 – 最暖",
-        "py": "瓦尔姆 韦尔梅尔 安姆 韦尔姆斯腾"
-      },
-      {
-        "de": "heiß – heißer – am heißesten",
-        "zh": "热 – 更热 – 最热",
-        "py": "海斯 海瑟尔 安姆 海斯腾"
-      },
-      {
-        "de": "lang – länger – am längsten",
-        "zh": "长 – 更长 – 最长",
-        "py": "朗 伦格尔 安姆 伦斯腾"
-      },
-      {
-        "de": "kurz – kürzer – am kürzesten",
-        "zh": "短 – 更短 – 最短",
-        "py": "库尔茨 库尔泽尔 安姆 库尔泽斯腾"
-      },
-      {
-        "de": "stark – stärker – am stärksten",
-        "zh": "强 – 更强 – 最强",
-        "py": "施塔尔克 斯特尔克尔 安姆 斯特尔克斯腾"
-      },
-      {
-        "de": "schwach – schwächer – am schwächsten",
-        "zh": "弱 – 更弱 – 最弱",
-        "py": "施瓦赫 施韦黑尔 安姆 施韦赫斯腾"
-      },
-      {
-        "de": "schön – schöner – am schönsten",
-        "zh": "美 – 更美 – 最美",
-        "py": "舍恩 舍嫩尔 安姆 舍嫩斯腾"
-      },
-      {
-        "de": "interessant – interessanter – am interessantesten",
-        "zh": "有趣 – 更有趣 – 最有趣",
-        "py": "因特雷桑特 因特雷桑特尔 安姆 因特雷桑特斯腾"
-      },
-      {
-        "de": "wichtig – wichtiger – am wichtigsten",
-        "zh": "重要 – 更重要 – 最重要",
-        "py": "维希蒂希 维希蒂格尔 安姆 维希蒂希斯腾"
-      },
-      {
-        "de": "Er ist größer als ich.",
-        "zh": "他比我高。",
-        "py": "尔 伊斯特 格若瑟尔 阿尔斯 伊希"
-      },
-      {
-        "de": "Sie ist kleiner als er.",
-        "zh": "她比他矮。",
-        "py": "济 伊斯特 克莱嫩尔 阿尔斯 尔"
-      },
-      {
-        "de": "Das ist das beste Essen.",
-        "zh": "这是最好的食物。",
-        "py": "达斯 伊斯特 达斯 贝斯特 埃森"
-      },
-      {
-        "de": "Wien ist schöner als Berlin.",
-        "zh": "维也纳比柏林更美。",
-        "py": "维恩 伊斯特 舍嫩尔 阿尔斯 贝尔林"
-      },
-      {
-        "de": "Je mehr, desto besser.",
-        "zh": "越多越好。",
-        "py": "耶 梅尔 德斯托 贝瑟尔"
-      },
-      {
-        "de": "Immer besser!",
-        "zh": "越来越好！",
-        "py": "伊梅尔 贝瑟尔"
-      },
-      {
-        "de": "Nicht schlechter als erwartet.",
-        "zh": "不比预期的差。",
-        "py": "尼希特 施莱希特尔 阿尔斯 尔瓦尔特"
-      },
-      {
-        "de": "So schnell wie möglich.",
-        "zh": "尽可能快。",
-        "py": "佐 施奈尔 维 默格利希"
-      }
+      {"de":"Ich kann Deutsch sprechen.","zh":"我会说德语。","py":"伊希 坎 多伊奇 施普雷兴"},
+      {"de":"Kannst du mir helfen?","zh":"你能帮我吗？","py":"坎斯特 度 米尔 黑尔芬"},
+      {"de":"Er kann nicht kommen.","zh":"他不能来。","py":"埃尔 坎 尼希特 科门"},
+      {"de":"Ich muss arbeiten.","zh":"我必须工作。","py":"伊希 穆斯 阿尔拜腾"},
+      {"de":"Du musst das nicht machen.","zh":"你不必做这个。","py":"度 姆斯特 达斯 尼希特 马赫恩"},
+      {"de":"Sie müssen das Formular ausfüllen.","zh":"您必须填写表格。","py":"齐 米森 达斯 丰姆拉尔 奥斯费伦"},
+      {"de":"Ich will nach Wien fahren.","zh":"我想去维也纳。","py":"伊希 维尔 纳赫 维恩 法伦"},
+      {"de":"Was willst du essen?","zh":"你想吃什么？","py":"瓦斯 维尔斯特 度 埃森"},
+      {"de":"Wir wollen zusammen lernen.","zh":"我们想一起学习。","py":"维尔 沃伦 粗扎门 勒嫩"},
+      {"de":"Ich soll um 8 Uhr da sein.","zh":"我应该8点到那里。","py":"伊希 佐尔 乌姆 阿赫特 乌尔 达 扎因"},
+      {"de":"Du sollst die Wahrheit sagen.","zh":"你应该说实话。","py":"度 佐尔斯特 迪 瓦尔海特 扎根"},
+      {"de":"Er soll sehr klug sein.","zh":"据说他很聪明。","py":"埃尔 佐尔 泽尔 克鲁克 扎因"},
+      {"de":"Darf ich hier rauchen?","zh":"我可以在这里吸烟吗？","py":"达尔夫 伊希 希尔 劳黑恩"},
+      {"de":"Hier darf man nicht parken.","zh":"这里不允许停车。","py":"希尔 达尔夫 曼 尼希特 帕尔肯"},
+      {"de":"Kinder dürfen das nicht sehen.","zh":"孩子们不能看这个。","py":"金德尔 丢尔芬 达斯 尼希特 泽恩"},
+      {"de":"Ich möchte einen Kaffee.","zh":"我想要一杯咖啡。","py":"伊希 麦希特 艾嫩 卡菲"},
+      {"de":"Möchten Sie etwas trinken?","zh":"您想喝点什么？","py":"麦希腾 齐 埃特瓦斯 特林肯？"},
+      {"de":"Er möchte Arzt werden.","zh":"他想成为医生。","py":"埃尔 麦希特 阿尔茨特 韦尔登"},
+      {"de":"Ich mag Schokolade.","zh":"我喜欢巧克力。","py":"伊希 马克 斯科拉德"},
+      {"de":"Magst du Sport?","zh":"你喜欢运动吗？","py":"马克斯特 度 斯博特"},
+      {"de":"Sie mag keine Zwiebeln.","zh":"她不喜欢洋葱。","py":"齐 马克 凯嫩 茨维本"},
+      {"de":"Er kann gut singen.","zh":"他唱歌唱得好。","py":"埃尔 坎 古特 辛根"},
+      {"de":"Sie kann gut kochen.","zh":"她做饭做得好。","py":"齐 坎 古特 科赫恩"},
+      {"de":"Ich kann leider nicht kommen.","zh":"遗憾，我不能来。","py":"伊希 坎 莱德尔 尼希特 科门"},
+      {"de":"Du musst nicht so laut sprechen.","zh":"你不必说那么大声。","py":"度 姆斯特 尼希特 佐 劳特 施普雷兴"},
+      {"de":"Wir müssen früh aufstehen.","zh":"我们必须早起。","py":"维尔 米森 弗吕 奥夫施泰恩"},
+      {"de":"Man kann nicht alles haben.","zh":"人不能拥有一切。","py":"曼 坎 尼希特 阿勒斯 哈本"},
+      {"de":"Das darf nicht wahr sein!","zh":"这不可能是真的！","py":"达斯 达尔夫 尼希特 瓦尔 扎因"},
+      {"de":"Kann ich bitte die Rechnung haben?","zh":"请给我账单好吗？","py":"坎 伊希 比特 迪 雷希农 哈本"},
+      {"de":"Dürfte ich Sie etwas fragen?","zh":"请问我可以问您一个问题吗？","py":"丢尔夫特 伊希 齐 埃特瓦斯 弗拉根"},
+      {"de":"Ich habe gegessen.","zh":"我吃了。","py":"伊希 哈贝 格埃森"},
+      {"de":"Er hat gearbeitet.","zh":"他工作了。","py":"埃尔 哈特 格阿尔拜特"},
+      {"de":"Sie hat geschlafen.","zh":"她睡了。","py":"齐 哈特 格施拉芬"},
+      {"de":"Wir haben gespielt.","zh":"我们玩了。","py":"维尔 哈本 格施皮尔特"},
+      {"de":"Ich habe das Buch gelesen.","zh":"我读了这本书。","py":"伊希 哈贝 达斯 布赫 格雷泽恩"},
+      {"de":"Er hat einen Brief geschrieben.","zh":"他写了一封信。","py":"埃尔 哈特 艾嫩 布里夫 格施莱本"},
+      {"de":"Sie haben Deutsch gelernt.","zh":"他们学了德语。","py":"齐 哈本 多伊奇 格雷尔特"},
+      {"de":"Ich bin gegangen.","zh":"我走了。","py":"伊希 宾 格根根"},
+      {"de":"Er ist gekommen.","zh":"他来了。","py":"埃尔 伊斯特 格科门"},
+      {"de":"Sie ist geflogen.","zh":"她飞了。","py":"齐 伊斯特 格弗洛根"},
+      {"de":"Wir sind gefahren.","zh":"我们开车去了。","py":"维尔 辛特 格法伦"},
+      {"de":"Ich bin aufgestanden.","zh":"我起床了。","py":"伊希 宾 奥夫格斯坦登"},
+      {"de":"Er ist eingeschlafen.","zh":"他睡着了。","py":"埃尔 伊斯特 艾因格施拉芬"},
+      {"de":"Sie sind angekommen.","zh":"他们到达了。","py":"齐 辛特 安格科门"},
+      {"de":"Ich habe das vergessen.","zh":"我忘了这个。","py":"伊希 哈贝 达斯 费尔格森"},
+      {"de":"Hast du das gemacht?","zh":"你做了这个吗？","py":"哈斯特 度 达斯 格马赫特"},
+      {"de":"Was hast du heute gemacht?","zh":"你今天做了什么？","py":"瓦斯 哈斯特 度 霍伊特 格马赫特"},
+      {"de":"Ich habe viel gearbeitet.","zh":"我工作了很多。","py":"伊希 哈贝 菲尔 格阿尔拜特"},
+      {"de":"Wir haben gut gegessen.","zh":"我们吃得很好。","py":"维尔 哈本 古特 格埃森"},
+      {"de":"Er hat gut gespielt.","zh":"他玩得很好。","py":"埃尔 哈特 古特 格施皮尔特"},
+      {"de":"Sie hat schön gesungen.","zh":"她唱得很好听。","py":"齐 哈特 舍恩 格松根"},
+      {"de":"Ich habe ihn gesehen.","zh":"我看见他了。","py":"伊希 哈贝 伊恩 格泽恩"},
+      {"de":"Hast du ihn getroffen?","zh":"你遇到他了吗？","py":"哈斯特 度 伊恩 格特罗芬"},
+      {"de":"Ich habe das nicht gewusst.","zh":"我不知道这件事。","py":"伊希 哈贝 达斯 尼希特 格乌斯特"},
+      {"de":"Sie haben das Spiel gewonnen.","zh":"他们赢了比赛。","py":"齐 哈本 达斯 施皮尔 格沃嫩"},
+      {"de":"Wir haben verloren.","zh":"我们输了。","py":"维尔 哈本 费尔洛伦"},
+      {"de":"Ich bin müde geworden.","zh":"我变得疲倦了。","py":"伊希 宾 米德 格沃尔登"},
+      {"de":"Es ist kalt geworden.","zh":"天变冷了。","py":"埃斯 伊斯特 卡尔特 格沃尔登"},
+      {"de":"Der Zug ist pünktlich angekommen.","zh":"火车准时到达了。","py":"德尔 粗克 伊斯特 平克特利希 安格科门"},
+      {"de":"Das Wetter ist schön gewesen.","zh":"天气很好。","py":"达斯 韦特尔 伊斯特 舍恩 格韦泽恩"},
+      {"de":"groß – größer – am größten","zh":"大 – 更大 – 最大","py":"格罗斯 格若瑟尔 安姆 格若斯腾"},
+      {"de":"klein – kleiner – am kleinsten","zh":"小 – 更小 – 最小","py":"克莱因 克莱嫩尔 安姆 克莱嫩斯腾"},
+      {"de":"alt – älter – am ältesten","zh":"老 – 更老 – 最老","py":"阿尔特 艾尔特尔 安姆 艾尔特斯腾"},
+      {"de":"jung – jünger – am jüngsten","zh":"年轻 – 更年轻 – 最年轻","py":"永 永格尔 安姆 永斯腾"},
+      {"de":"gut – besser – am besten","zh":"好 – 更好 – 最好","py":"古特 贝瑟尔 安姆 贝斯腾"},
+      {"de":"schlecht – schlechter – am schlechtesten","zh":"坏 – 更坏 – 最坏","py":"施莱希特 施莱希特尔 安姆 施莱希特斯腾"},
+      {"de":"viel – mehr – am meisten","zh":"多 – 更多 – 最多","py":"菲尔 梅尔 安姆 迈斯腾"},
+      {"de":"wenig – weniger – am wenigsten","zh":"少 – 更少 – 最少","py":"韦尼希 韦尼格尔 安姆 韦尼希斯腾"},
+      {"de":"schnell – schneller – am schnellsten","zh":"快 – 更快 – 最快","py":"施奈尔 施奈勒尔 安姆 施奈尔斯腾"},
+      {"de":"langsam – langsamer – am langsamsten","zh":"慢 – 更慢 – 最慢","py":"朗萨姆 朗萨梅尔 安姆 朗萨姆斯腾"},
+      {"de":"teuer – teurer – am teuersten","zh":"贵 – 更贵 – 最贵","py":"托伊尔 托伊勒尔 安姆 托伊尔斯腾"},
+      {"de":"billig – billiger – am billigsten","zh":"便宜 – 更便宜 – 最便宜","py":"比利希 比利格尔 安姆 比利希斯腾"},
+      {"de":"kalt – kälter – am kältesten","zh":"冷 – 更冷 – 最冷","py":"卡尔特 凯尔特尔 安姆 凯尔特斯腾"},
+      {"de":"warm – wärmer – am wärmsten","zh":"暖 – 更暖 – 最暖","py":"瓦尔姆 韦尔梅尔 安姆 韦尔姆斯腾"},
+      {"de":"heiß – heißer – am heißesten","zh":"热 – 更热 – 最热","py":"海斯 海瑟尔 安姆 海斯腾"},
+      {"de":"lang – länger – am längsten","zh":"长 – 更长 – 最长","py":"朗 伦格尔 安姆 伦斯腾"},
+      {"de":"kurz – kürzer – am kürzesten","zh":"短 – 更短 – 最短","py":"库尔茨 库尔泽尔 安姆 库尔泽斯腾"},
+      {"de":"stark – stärker – am stärksten","zh":"强 – 更强 – 最强","py":"施塔尔克 斯特尔克尔 安姆 斯特尔克斯腾"},
+      {"de":"schwach – schwächer – am schwächsten","zh":"弱 – 更弱 – 最弱","py":"施瓦赫 施韦黑尔 安姆 施韦赫斯腾"},
+      {"de":"schön – schöner – am schönsten","zh":"美 – 更美 – 最美","py":"舍恩 舍嫩尔 安姆 舍嫩斯腾"},
+      {"de":"interessant – interessanter – am interessantesten","zh":"有趣 – 更有趣 – 最有趣","py":"因特雷桑特 因特雷桑特尔 安姆 因特雷桑特斯腾"},
+      {"de":"wichtig – wichtiger – am wichtigsten","zh":"重要 – 更重要 – 最重要","py":"维希提希 维希蒂格尔 安姆 维希提希斯腾"},
+      {"de":"Er ist größer als ich.","zh":"他比我高。","py":"埃尔 伊斯特 格若瑟尔 阿尔斯 伊希"},
+      {"de":"Sie ist kleiner als er.","zh":"她比他矮。","py":"齐 伊斯特 克莱嫩尔 阿尔斯 埃尔"},
+      {"de":"Das ist das beste Essen.","zh":"这是最好的食物。","py":"达斯 伊斯特 达斯 贝斯特 埃森"},
+      {"de":"Wien ist schöner als Berlin.","zh":"维也纳比柏林更美。","py":"维恩 伊斯特 舍嫩尔 阿尔斯 贝尔林"},
+      {"de":"Je mehr, desto besser.","zh":"越多越好。","py":"耶 梅尔 德斯托 贝瑟尔"},
+      {"de":"Immer besser!","zh":"越来越好！","py":"伊默尔 贝瑟尔"},
+      {"de":"Nicht schlechter als erwartet.","zh":"不比预期的差。","py":"尼希特 施莱希特尔 阿尔斯 尔瓦尔特"},
+      {"de":"So schnell wie möglich.","zh":"尽可能快。","py":"佐 施内尔 维 默格利希"},
+      {"de":"keine","zh":"没有","py":"凯嫩"},
+      {"de":"jeder / jede / jedes","zh":"每个","py":"耶德尔 耶德 耶德斯"},
+      {"de":"mancher / manche / manches","zh":"某些","py":"曼黑尔 曼黑 曼黑斯"},
+      {"de":"beide","zh":"两者都","py":"拜德"},
+      {"de":"sämtliche","zh":"全部","py":"泽姆特利黑"},
+      {"de":"die Hälfte","zh":"一半","py":"迪 黑尔夫特"},
+      {"de":"ein Drittel","zh":"三分之一","py":"艾因 德里特尔"},
+      {"de":"ein Viertel","zh":"四分之一","py":"艾因 菲尔特尔"},
+      {"de":"drei Viertel","zh":"四分之三","py":"德莱 菲尔特尔"},
+      {"de":"ein Paar","zh":"一对/几个","py":"艾因 帕尔"},
+      {"de":"ein Dutzend","zh":"一打","py":"艾因 杜腾特"},
+      {"de":"das Doppelte","zh":"两倍","py":"达斯 多普尔特"},
+      {"de":"das Dreifache","zh":"三倍","py":"达斯 德莱法黑"},
+      {"de":"100 Gramm","zh":"100克","py":"洪德特 格拉姆"},
+      {"de":"ein Kilo","zh":"一公斤","py":"艾因 基洛"},
+      {"de":"ein Liter","zh":"一升","py":"艾因 里特尔"},
+      {"de":"ein Meter","zh":"一米","py":"艾因 梅特尔"},
+      {"de":"ein Kilometer","zh":"一公里","py":"艾因 基洛梅特尔"},
+      {"de":"ein Quadratmeter","zh":"一平方米","py":"艾因 克瓦德拉特梅特尔"},
+      {"de":"eine Stunde","zh":"一小时","py":"埃内 施通德"},
+      {"de":"eine Woche","zh":"一周","py":"埃内 沃赫"},
+      {"de":"ein Monat","zh":"一个月","py":"艾因 摩纳特"},
+      {"de":"ein Jahr","zh":"一年","py":"艾因 雅尔"},
+      {"de":"pro Stück","zh":"每件","py":"普罗 施图克"},
+      {"de":"pro Person","zh":"每人","py":"普罗 佩尔佐恩"}
     ]
   },
   {
-    "name": "搭配·短语",
+    "name": "生活百科",
     "level": "a2",
-    "icon": "🔗",
+    "icon": "🌍",
     "phrases": [
-      {
-        "de": "eine Rolle spielen",
-        "zh": "扮演重要作用",
-        "py": "艾嫩 洛勒 斯皮伦"
-      },
-      {
-        "de": "eine Entscheidung treffen",
-        "zh": "做决定",
-        "py": "艾嫩 恩特施莱顿 特勒芬"
-      },
-      {
-        "de": "einen Fehler machen",
-        "zh": "犯错",
-        "py": "艾嫩 费勒 马赫恩"
-      },
-      {
-        "de": "Fortschritte machen",
-        "zh": "取得进步",
-        "py": "福尔特斯里特 马赫恩"
-      },
-      {
-        "de": "Rücksicht nehmen",
-        "zh": "照顾考虑",
-        "py": "吕克齐希特 内梅恩"
-      },
-      {
-        "de": "in Kontakt bleiben",
-        "zh": "保持联系",
-        "py": "因 孔塔克特 布莱本"
-      },
-      {
-        "de": "zum Ausdruck bringen",
-        "zh": "表达",
-        "py": "楚姆 奥斯德鲁克 布林根"
-      },
-      {
-        "de": "in Frage kommen",
-        "zh": "值得考虑",
-        "py": "因 弗拉格 科门"
-      },
-      {
-        "de": "zur Verfügung stehen",
-        "zh": "可供使用",
-        "py": "楚尔 费尔菲根 施泰恩"
-      },
-      {
-        "de": "in Anspruch nehmen",
-        "zh": "使用/要求",
-        "py": "因 安斯普鲁赫 内梅恩"
-      },
-      {
-        "de": "Bescheid wissen",
-        "zh": "知情/了解",
-        "py": "贝施莱特 维森"
-      },
-      {
-        "de": "Bescheid geben",
-        "zh": "通知",
-        "py": "贝施莱特 根本"
-      },
-      {
-        "de": "auf dem Laufenden bleiben",
-        "zh": "保持了解",
-        "py": "奥夫 登姆 劳芬顿 布莱本"
-      },
-      {
-        "de": "zur Sprache kommen",
-        "zh": "被提及",
-        "py": "楚尔 施普拉赫 科门"
-      },
-      {
-        "de": "in Betracht ziehen",
-        "zh": "考虑",
-        "py": "因 贝特拉赫特 茨嗯"
-      },
-      {
-        "de": "den Überblick behalten",
-        "zh": "保持全局",
-        "py": "登 于贝尔布利克 贝哈尔腾"
-      },
-      {
-        "de": "Recht haben",
-        "zh": "对/有理",
-        "py": "雷希特 哈本"
-      },
-      {
-        "de": "Unrecht haben",
-        "zh": "错/没理",
-        "py": "乌恩雷希特 哈本"
-      },
-      {
-        "de": "Spaß machen",
-        "zh": "有趣",
-        "py": "施帕斯 马赫恩"
-      },
-      {
-        "de": "ernst nehmen",
-        "zh": "认真对待",
-        "py": "尔恩斯特 内梅恩"
-      },
-      {
-        "de": "Abstand halten",
-        "zh": "保持距离",
-        "py": "阿普施坦特 哈尔腾"
-      },
-      {
-        "de": "zur Not",
-        "zh": "必要时",
-        "py": "楚尔 诺特"
-      },
-      {
-        "de": "auf Anhieb",
-        "zh": "立刻/一次就",
-        "py": "奥夫 安黑普"
-      },
-      {
-        "de": "im Großen und Ganzen",
-        "zh": "总体而言",
-        "py": "因姆 格罗森 温特 甘泽恩"
-      },
-      {
-        "de": "nach und nach",
-        "zh": "逐渐",
-        "py": "纳赫 温特 纳赫"
-      },
-      {
-        "de": "ab und zu",
-        "zh": "偶尔",
-        "py": "阿普 温特 楚"
-      },
-      {
-        "de": "hin und wieder",
-        "zh": "时不时",
-        "py": "欣 温特 维德尔"
-      },
-      {
-        "de": "von Zeit zu Zeit",
-        "zh": "不时",
-        "py": "丰 查特 楚 查特"
-      },
-      {
-        "de": "auf jeden Fall",
-        "zh": "无论如何",
-        "py": "奥夫 耶顿 法尔"
-      },
-      {
-        "de": "auf keinen Fall",
-        "zh": "绝对不",
-        "py": "奥夫 凯嫩 法尔"
-      }
-    ]
-  },
-  {
-    "name": "缩写",
-    "level": "a2",
-    "icon": "📝",
-    "phrases": [
-      {
-        "de": "z.B. (zum Beispiel)",
-        "zh": "例如",
-        "py": "楚姆 拜施皮尔"
-      },
-      {
-        "de": "d.h. (das heißt)",
-        "zh": "即/也就是说",
-        "py": "达斯 海斯特"
-      },
-      {
-        "de": "usw. (und so weiter)",
-        "zh": "等等",
-        "py": "温特 佐 魏特尔"
-      },
-      {
-        "de": "u.a. (unter anderem)",
-        "zh": "其中/尤其",
-        "py": "乌腾 安德雷姆"
-      },
-      {
-        "de": "bzw. (beziehungsweise)",
-        "zh": "分别/或者",
-        "py": "贝齐荣斯魏斯"
-      },
-      {
-        "de": "ca. (circa)",
-        "zh": "大约",
-        "py": "齐尔卡"
-      },
-      {
-        "de": "inkl. (inklusive)",
-        "zh": "包含",
-        "py": "因克鲁西韦"
-      },
-      {
-        "de": "exkl. (exklusive)",
-        "zh": "不包含",
-        "py": "埃克斯克鲁西韦"
-      },
-      {
-        "de": "MwSt. (Mehrwertsteuer)",
-        "zh": "增值税",
-        "py": "梅尔韦尔特斯托伊尔"
-      },
-      {
-        "de": "Tel. (Telefon)",
-        "zh": "电话",
-        "py": "特勒丰"
-      },
-      {
-        "de": "Nr. (Nummer)",
-        "zh": "号码",
-        "py": "努梅尔"
-      },
-      {
-        "de": "Str. (Straße)",
-        "zh": "街道",
-        "py": "施特拉斯"
-      },
-      {
-        "de": "Plz. (Postleitzahl)",
-        "zh": "邮编",
-        "py": "波斯特莱特查尔"
-      },
-      {
-        "de": "Abb. (Abbildung)",
-        "zh": "图/插图",
-        "py": "阿普比尔顿"
-      },
-      {
-        "de": "Hrsg. (Herausgeber)",
-        "zh": "编者",
-        "py": "黑劳斯根本尔"
-      },
-      {
-        "de": "ebd. (ebenda)",
-        "zh": "同上",
-        "py": "埃本达"
-      },
-      {
-        "de": "ggf. (gegebenenfalls)",
-        "zh": "如有必要",
-        "py": "根本恩芬法尔斯"
-      },
-      {
-        "de": "m.E. (meines Erachtens)",
-        "zh": "依我看",
-        "py": "迈嫩斯 尔阿赫腾斯"
-      },
-      {
-        "de": "o.g. (oben genannt)",
-        "zh": "上述",
-        "py": "奥本 格南特"
-      },
-      {
-        "de": "u.U. (unter Umständen)",
-        "zh": "在某些情况下",
-        "py": "乌腾 乌姆斯坦顿"
-      },
-      {
-        "de": "lt. (laut)",
-        "zh": "根据",
-        "py": "劳特"
-      },
-      {
-        "de": "s. (siehe)",
-        "zh": "见/参见",
-        "py": "泽呃"
-      },
-      {
-        "de": "i.d.R. (in der Regel)",
-        "zh": "通常",
-        "py": "因 德尔 雷格尔"
-      },
-      {
-        "de": "m.f.G. (mit freundlichen Grüßen)",
-        "zh": "友好问候（邮件结尾）",
-        "py": "米特 弗洛伊恩特利黑恩 格吕森"
-      },
-      {
-        "de": "Mfg (Mit freundlichen Grüßen)",
-        "zh": "此致（邮件简写）",
-        "py": "米特 弗洛伊恩特利黑恩 格吕森"
-      },
-      {
-        "de": "gez. (gezeichnet)",
-        "zh": "签署",
-        "py": "格察黑恩特"
-      },
-      {
-        "de": "v.a. (vor allem)",
-        "zh": "尤其",
-        "py": "福尔 阿伦"
-      },
-      {
-        "de": "i.A. (im Auftrag)",
-        "zh": "代表",
-        "py": "因姆 奥夫特拉克"
-      },
-      {
-        "de": "p.a. (per annum)",
-        "zh": "每年",
-        "py": "佩尔 安努姆"
-      },
-      {
-        "de": "GmbH (Gesellschaft mit beschränkter Haftung)",
-        "zh": "有限公司",
-        "py": "格泽尔沙夫特 米特 贝斯雷恩克特尔 哈夫通"
-      }
-    ]
-  },
-  {
-    "name": "地区·变体",
-    "level": "a2",
-    "icon": "🇦🇹",
-    "phrases": [
-      {
-        "de": "Servus! (=Hallo/Tschüss)",
-        "zh": "你好/再见！",
-        "py": "塞尔乌斯"
-      },
-      {
-        "de": "Baba! (=Tschüss)",
-        "zh": "再见！（维也纳口语）",
-        "py": "巴巴"
-      },
-      {
-        "de": "Passt! (=OK)",
-        "zh": "行！没问题！",
-        "py": "帕斯特"
-      },
-      {
-        "de": "Geh bitte! (=Echt?)",
-        "zh": "你开玩笑吧！",
-        "py": "根 比特"
-      },
-      {
-        "de": "Schauen wir mal.",
-        "zh": "我们看看吧。",
-        "py": "绍恩 维尔 马尔"
-      },
-      {
-        "de": "Das wird scho. (=Das wird schon.)",
-        "zh": "会好的。",
-        "py": "达斯 维尔特 肖"
-      },
-      {
-        "de": "der Tschecherl",
-        "zh": "小咖啡馆（维也纳）",
-        "py": "德尔 切赫尔"
-      },
-      {
-        "de": "das Kaffeehaus",
-        "zh": "咖啡馆（文化场所）",
-        "py": "达斯 卡菲豪斯"
-      },
-      {
-        "de": "der Melange",
-        "zh": "维也纳牛奶咖啡",
-        "py": "德尔 梅朗日"
-      },
-      {
-        "de": "der Einspänner",
-        "zh": "黑咖啡加奶油",
-        "py": "德尔 艾因斯潘嫩尔"
-      },
-      {
-        "de": "der Tafelspitz",
-        "zh": "水煮牛肉",
-        "py": "德尔 塔弗尔斯皮茨"
-      },
-      {
-        "de": "der Kaiserschmarrn",
-        "zh": "皇帝甜饼",
-        "py": "德尔 凯泽斯玛恩"
-      },
-      {
-        "de": "der Apfelstrudel",
-        "zh": "苹果卷",
-        "py": "德尔 阿普费尔施特鲁德尔"
-      },
-      {
-        "de": "die Sachertorte",
-        "zh": "萨赫蛋糕",
-        "py": "迪 扎赫尔托尔特"
-      },
-      {
-        "de": "das Gulasch",
-        "zh": "炖牛肉（奥匈传统菜）",
-        "py": "达斯 古拉什"
-      },
-      {
-        "de": "der Heurige",
-        "zh": "新酒/酒馆",
-        "py": "德尔 霍伊里格"
-      },
-      {
-        "de": "das Dirndl",
-        "zh": "传统女装",
-        "py": "达斯 迪尔恩德尔"
-      },
-      {
-        "de": "die Lederhose",
-        "zh": "皮裤",
-        "py": "迪 雷德尔霍斯"
-      },
-      {
-        "de": "das Oktoberfest",
-        "zh": "啤酒节",
-        "py": "达斯 奥克托贝尔费斯特"
-      },
-      {
-        "de": "der Christkindlmarkt",
-        "zh": "圣诞市场",
-        "py": "德尔 克里斯特金德尔马尔克特"
-      }
-    ]
-  },
-  {
-    "name": "服饰穿戴",
-    "level": "a2",
-    "icon": "👗",
-    "phrases": [
-      {
-        "de": "der Anzug",
-        "zh": "西装",
-        "py": "德尔 安楚克"
-      },
-      {
-        "de": "die Bluse",
-        "zh": "女衬衫",
-        "py": "迪 布鲁泽"
-      },
-      {
-        "de": "das Kleid",
-        "zh": "连衣裙",
-        "py": "达斯 克莱特"
-      },
-      {
-        "de": "der Mantel",
-        "zh": "大衣",
-        "py": "德尔 曼特尔"
-      },
-      {
-        "de": "die Mütze",
-        "zh": "帽子",
-        "py": "迪 缪策"
-      },
-      {
-        "de": "der Pullover",
-        "zh": "套头衫",
-        "py": "德尔 普洛沃"
-      },
-      {
-        "de": "der Rock",
-        "zh": "裙子",
-        "py": "德尔 罗克"
-      },
-      {
-        "de": "der Stiefel",
-        "zh": "靴子",
-        "py": "德尔 施蒂费尔"
-      },
-      {
-        "de": "das T-Shirt",
-        "zh": "T恤",
-        "py": "达斯 提恤"
-      },
-      {
-        "de": "die Kette",
-        "zh": "项链",
-        "py": "迪 凯特"
-      },
-      {
-        "de": "der Ring",
-        "zh": "戒指",
-        "py": "德尔 林克"
-      },
-      {
-        "de": "die Brille",
-        "zh": "眼镜",
-        "py": "迪 布里勒"
-      },
-      {
-        "de": "die Wäsche",
-        "zh": "要洗的衣物",
-        "py": "迪 韦舍"
-      },
-      {
-        "de": "der Schirm",
-        "zh": "伞",
-        "py": "德尔 施尔姆"
-      }
-    ]
-  },
-  {
-    "name": "餐具洗护",
-    "level": "a2",
-    "icon": "🍴",
-    "phrases": [
-      {
-        "de": "die Seife",
-        "zh": "肥皂",
-        "py": "迪 扎伊费"
-      },
-      {
-        "de": "das Handtuch",
-        "zh": "毛巾",
-        "py": "达斯 汉特图赫"
-      },
-      {
-        "de": "die Creme",
-        "zh": "护肤霜",
-        "py": "迪 克雷姆"
-      },
-      {
-        "de": "das Parfüm",
-        "zh": "香水",
-        "py": "达斯 帕尔菲姆"
-      }
-    ]
-  },
-  {
-    "name": "居家家具",
-    "level": "a2",
-    "icon": "🛋️",
-    "phrases": [
-      {
-        "de": "das Schlafzimmer",
-        "zh": "卧室",
-        "py": "达斯 施拉夫齐默"
-      },
-      {
-        "de": "das Wohnzimmer",
-        "zh": "客厅",
-        "py": "达斯 沃恩齐默"
-      },
-      {
-        "de": "das Stockwerk",
-        "zh": "楼层",
-        "py": "达斯 施托克韦克"
-      },
-      {
-        "de": "das Zelt",
-        "zh": "帐篷",
-        "py": "达斯 采尔特"
-      }
-    ]
-  },
-  {
-    "name": "电子数码",
-    "level": "a2",
-    "icon": "📱",
-    "phrases": [
-      {
-        "de": "der Apparat",
-        "zh": "仪器/装置",
-        "py": "德尔 阿帕拉特"
-      },
-      {
-        "de": "der Fotoapparat",
-        "zh": "照相机",
-        "py": "德尔 福托阿帕拉特"
-      },
-      {
-        "de": "das Mobiltelefon",
-        "zh": "手机",
-        "py": "达斯 莫比尔特勒丰"
-      },
-      {
-        "de": "das Radio",
-        "zh": "收音机",
-        "py": "达斯 拉迪欧"
-      },
-      {
-        "de": "der Fernseher",
-        "zh": "电视机",
-        "py": "德尔 费恩泽尔"
-      },
-      {
-        "de": "das E-Book",
-        "zh": "电子书",
-        "py": "达斯 伊布克"
-      },
-      {
-        "de": "die Homepage",
-        "zh": "主页",
-        "py": "迪 霍姆佩奇"
-      },
-      {
-        "de": "die Webseite",
-        "zh": "网页",
-        "py": "迪 韦布扎伊特"
-      },
-      {
-        "de": "die Mailbox",
-        "zh": "语音信箱",
-        "py": "迪 梅尔博克斯"
-      },
-      {
-        "de": "das Gerät",
-        "zh": "设备",
-        "py": "达斯 格雷特"
-      },
-      {
-        "de": "der Motor",
-        "zh": "发动机",
-        "py": "德尔 摩托"
-      },
-      {
-        "de": "der Motorroller",
-        "zh": "小摩托",
-        "py": "德尔 摩托罗勒"
-      }
-    ]
-  },
-  {
-    "name": "文体娱乐",
-    "level": "a2",
-    "icon": "🎭",
-    "phrases": [
-      {
-        "de": "der Ball",
-        "zh": "球",
-        "py": "德尔 巴尔"
-      },
-      {
-        "de": "die Band",
-        "zh": "乐队",
-        "py": "迪 班特"
-      },
-      {
-        "de": "die Gitarre",
-        "zh": "吉他",
-        "py": "迪 吉塔勒"
-      },
-      {
-        "de": "das Klavier",
-        "zh": "钢琴",
-        "py": "达斯 克拉维尔"
-      },
-      {
-        "de": "das Instrument",
-        "zh": "乐器",
-        "py": "达斯 因斯特鲁门特"
-      },
-      {
-        "de": "der Krimi",
-        "zh": "侦探片",
-        "py": "德尔 克里米"
-      },
-      {
-        "de": "das Spiel",
-        "zh": "游戏/比赛",
-        "py": "达斯 施皮尔"
-      },
-      {
-        "de": "das Rätsel",
-        "zh": "谜语",
-        "py": "达斯 雷策尔"
-      },
-      {
-        "de": "der Witz",
-        "zh": "笑话",
-        "py": "德尔 维茨"
-      },
-      {
-        "de": "das Training",
-        "zh": "训练",
-        "py": "达斯 特雷宁"
-      },
-      {
-        "de": "der Zirkus",
-        "zh": "马戏团",
-        "py": "德尔 齐尔库斯"
-      },
-      {
-        "de": "das Festival",
-        "zh": "音乐节",
-        "py": "达斯 费斯提瓦尔"
-      },
-      {
-        "de": "das Plakat",
-        "zh": "海报",
-        "py": "达斯 普拉卡特"
-      },
-      {
-        "de": "das Poster",
-        "zh": "海报",
-        "py": "达斯 波斯特"
-      },
-      {
-        "de": "der Star",
-        "zh": "明星",
-        "py": "德尔 施塔"
-      },
-      {
-        "de": "der Fan",
-        "zh": "粉丝",
-        "py": "德尔 凡"
-      },
-      {
-        "de": "das Interview",
-        "zh": "采访",
-        "py": "达斯 因特维尤"
-      },
-      {
-        "de": "die Sendung",
-        "zh": "节目",
-        "py": "迪 岑东"
-      },
-      {
-        "de": "das Programm",
-        "zh": "节目/程序",
-        "py": "达斯 普罗格拉姆"
-      },
-      {
-        "de": "die Tour",
-        "zh": "旅行团",
-        "py": "迪 图尔"
-      },
-      {
-        "de": "der Rundgang",
-        "zh": "参观/巡视",
-        "py": "德尔 伦特冈"
-      },
-      {
-        "de": "der Spaziergang",
-        "zh": "散步",
-        "py": "德尔 施帕齐尔冈"
-      },
-      {
-        "de": "der Workshop",
-        "zh": "工作坊",
-        "py": "德尔 沃克肖普"
-      },
-      {
-        "de": "der Wettbewerb",
-        "zh": "比赛",
-        "py": "德尔 韦特贝韦尔普"
-      },
-      {
-        "de": "die Veranstaltung",
-        "zh": "活动",
-        "py": "迪 费尔安施塔尔通"
-      },
-      {
-        "de": "die Feier",
-        "zh": "庆典",
-        "py": "迪 法伊尔"
-      }
-    ]
-  },
-  {
-    "name": "身体健康",
-    "level": "a2",
-    "icon": "🏥",
-    "phrases": [
-      {
-        "de": "der Körper",
-        "zh": "身体",
-        "py": "德尔 克尔佩"
-      },
-      {
-        "de": "der Magen",
-        "zh": "胃",
-        "py": "德尔 马根"
-      },
-      {
-        "de": "der Schmerz",
-        "zh": "疼痛",
-        "py": "德尔 施梅尔茨"
-      },
-      {
-        "de": "die Krankheit",
-        "zh": "疾病",
-        "py": "迪 克兰克海特"
-      },
-      {
-        "de": "das Medikament",
-        "zh": "药",
-        "py": "达斯 梅迪卡门特"
-      },
-      {
-        "de": "das Mittel",
-        "zh": "药剂/手段",
-        "py": "达斯 米特尔"
-      },
-      {
-        "de": "die Sprechstunde",
-        "zh": "门诊时间",
-        "py": "迪 施普雷希施图讷"
-      },
-      {
-        "de": "das Rezept",
-        "zh": "处方/食谱",
-        "py": "达斯 雷采普特"
-      }
-    ]
-  },
-  {
-    "name": "食物餐点",
-    "level": "a2",
-    "icon": "🍽️",
-    "phrases": [
-      {
-        "de": "die Bohne",
-        "zh": "豆子",
-        "py": "迪 博讷"
-      },
-      {
-        "de": "die Nudel",
-        "zh": "面条",
-        "py": "迪 努德尔"
-      },
-      {
-        "de": "die Pizza",
-        "zh": "披萨",
-        "py": "迪 皮萨"
-      },
-      {
-        "de": "die Torte",
-        "zh": "蛋糕",
-        "py": "迪 托尔特"
-      },
-      {
-        "de": "der Hamburger",
-        "zh": "汉堡",
-        "py": "德尔 汉堡格"
-      },
-      {
-        "de": "die Süßigkeiten",
-        "zh": "糖果",
-        "py": "迪 聚西希凯滕"
-      },
-      {
-        "de": "das Mittagessen",
-        "zh": "午餐",
-        "py": "达斯 米塔克埃森"
-      }
-    ]
-  },
-  {
-    "name": "动物·自然",
-    "level": "a2",
-    "icon": "🦁",
-    "phrases": [
-      {
-        "de": "das Rind",
-        "zh": "牛",
-        "py": "达斯 林特"
-      },
-      {
-        "de": "die Landschaft",
-        "zh": "风景",
-        "py": "迪 兰特沙夫特"
-      },
-      {
-        "de": "der Strand",
-        "zh": "海滩",
-        "py": "德尔 施特兰特"
-      }
-    ]
-  },
-  {
-    "name": "交通出行",
-    "level": "a2",
-    "icon": "🚗",
-    "phrases": [
-      {
-        "de": "der Fahrplan",
-        "zh": "时刻表",
-        "py": "德尔 法普兰"
-      },
-      {
-        "de": "der Flug",
-        "zh": "航班",
-        "py": "德尔 弗鲁克"
-      },
-      {
-        "de": "das Verkehrsmittel",
-        "zh": "交通工具",
-        "py": "达斯 费尔克尔斯米特尔"
-      },
-      {
-        "de": "der Wagen",
-        "zh": "车",
-        "py": "德尔 瓦根"
-      },
-      {
-        "de": "der Reifen",
-        "zh": "轮胎",
-        "py": "德尔 拉伊芬"
-      },
-      {
-        "de": "der Unfall",
-        "zh": "事故",
-        "py": "德尔 温法尔"
-      },
-      {
-        "de": "das Schiff",
-        "zh": "船",
-        "py": "达斯 希夫"
-      },
-      {
-        "de": "der Umzug",
-        "zh": "搬家",
-        "py": "德尔 乌姆楚克"
-      },
-      {
-        "de": "die Jugendherberge",
-        "zh": "青年旅舍",
-        "py": "迪 尤根特黑尔贝格"
-      },
-      {
-        "de": "der Besuch",
-        "zh": "拜访/参观",
-        "py": "德尔 贝祖赫"
-      }
-    ]
-  },
-  {
-    "name": "人物职业",
-    "level": "a2",
-    "icon": "👥",
-    "phrases": [
-      {
-        "de": "der Babysitter",
-        "zh": "保姆",
-        "py": "德尔 贝比西特"
-      },
-      {
-        "de": "der Mitarbeiter",
-        "zh": "员工/同事",
-        "py": "德尔 米特阿拜特"
-      },
-      {
-        "de": "die Partnerin",
-        "zh": "女伴/女搭档",
-        "py": "迪 帕特讷林"
-      },
-      {
-        "de": "der Rentner",
-        "zh": "退休者",
-        "py": "德尔 伦特讷"
-      },
-      {
-        "de": "der Tourist",
-        "zh": "游客",
-        "py": "德尔 图里斯特"
-      },
-      {
-        "de": "die Mannschaft",
-        "zh": "队伍/球队",
-        "py": "迪 曼沙夫特"
-      }
-    ]
-  },
-  {
-    "name": "学习办公",
-    "level": "a2",
-    "icon": "📑",
-    "phrases": [
-      {
-        "de": "die Ausbildung",
-        "zh": "职业培训",
-        "py": "迪 奥斯比尔东"
-      },
-      {
-        "de": "die Bewerbung",
-        "zh": "求职申请",
-        "py": "迪 贝韦尔本"
-      },
-      {
-        "de": "das Stipendium",
-        "zh": "奖学金",
-        "py": "达斯 施蒂彭迪乌姆"
-      },
-      {
-        "de": "das Heft",
-        "zh": "本子",
-        "py": "达斯 黑夫特"
-      },
-      {
-        "de": "der Kalender",
-        "zh": "日历",
-        "py": "德尔 卡伦德"
-      },
-      {
-        "de": "die Notiz",
-        "zh": "笔记",
-        "py": "迪 诺蒂茨"
-      },
-      {
-        "de": "der Zettel",
-        "zh": "纸条",
-        "py": "德尔 采特尔"
-      },
-      {
-        "de": "der Artikel",
-        "zh": "文章/物品",
-        "py": "德尔 阿蒂克尔"
-      },
-      {
-        "de": "die Übersetzung",
-        "zh": "翻译",
-        "py": "迪 于伯采尊"
-      },
-      {
-        "de": "der Titel",
-        "zh": "标题",
-        "py": "德尔 蒂特尔"
-      },
-      {
-        "de": "die Seite",
-        "zh": "页/一面",
-        "py": "迪 扎伊特"
-      },
-      {
-        "de": "der Kontakt",
-        "zh": "联系",
-        "py": "德尔 孔塔克特"
-      },
-      {
-        "de": "der Bescheid",
-        "zh": "通知/答复",
-        "py": "德尔 贝沙伊特"
-      },
-      {
-        "de": "der Tipp",
-        "zh": "提示",
-        "py": "德尔 提普"
-      },
-      {
-        "de": "der Vorschlag",
-        "zh": "建议",
-        "py": "德尔 福尔施拉克"
-      },
-      {
-        "de": "die Cafeteria",
-        "zh": "自助餐厅",
-        "py": "迪 卡费特里亚"
-      },
-      {
-        "de": "die Werkstatt",
-        "zh": "修理厂/车间",
-        "py": "迪 韦克施塔特"
-      }
-    ]
-  },
-  {
-    "name": "抽象事物",
-    "level": "a2",
-    "icon": "💭",
-    "phrases": [
-      {
-        "de": "die Ahnung",
-        "zh": "头绪/预感",
-        "py": "迪 阿农"
-      },
-      {
-        "de": "das Ding",
-        "zh": "东西",
-        "py": "达斯 丁"
-      },
-      {
-        "de": "die Sache",
-        "zh": "事情",
-        "py": "迪 萨赫"
-      },
-      {
-        "de": "das Gegenteil",
-        "zh": "反面/相反",
-        "py": "达斯 格根泰尔"
-      },
-      {
-        "de": "die Menge",
-        "zh": "大量",
-        "py": "迪 门格"
-      },
-      {
-        "de": "der Rest",
-        "zh": "剩余",
-        "py": "德尔 雷斯特"
-      },
-      {
-        "de": "das Paar",
-        "zh": "一对",
-        "py": "达斯 帕尔"
-      },
-      {
-        "de": "das Stück",
-        "zh": "块/件",
-        "py": "达斯 施蒂克"
-      },
-      {
-        "de": "die Qualität",
-        "zh": "质量",
-        "py": "迪 克瓦利泰特"
-      },
-      {
-        "de": "das Produkt",
-        "zh": "产品",
-        "py": "达斯 普罗杜克特"
-      },
-      {
-        "de": "das Paket",
-        "zh": "包裹",
-        "py": "达斯 帕凯特"
-      },
-      {
-        "de": "die Geldbörse",
-        "zh": "钱包",
-        "py": "迪 盖尔特伯泽"
-      },
-      {
-        "de": "die Ermäßigung",
-        "zh": "优惠/减价",
-        "py": "迪 埃尔梅西贡"
-      },
-      {
-        "de": "die Bitte",
-        "zh": "请求",
-        "py": "迪 比特"
-      },
-      {
-        "de": "die Entschuldigung",
-        "zh": "道歉",
-        "py": "迪 恩特舒尔迪贡"
-      },
-      {
-        "de": "die Lüge",
-        "zh": "谎言",
-        "py": "迪 吕格"
-      },
-      {
-        "de": "der Traum",
-        "zh": "梦",
-        "py": "德尔 特劳姆"
-      },
-      {
-        "de": "der Wunsch",
-        "zh": "愿望",
-        "py": "德尔 翁什"
-      },
-      {
-        "de": "die Nachricht",
-        "zh": "消息",
-        "py": "迪 纳赫里希特"
-      },
-      {
-        "de": "die Postkarte",
-        "zh": "明信片",
-        "py": "迪 波斯特卡特"
-      },
-      {
-        "de": "die Zeitung",
-        "zh": "报纸",
-        "py": "迪 蔡通"
-      },
-      {
-        "de": "die Zeitschrift",
-        "zh": "杂志",
-        "py": "迪 蔡特施里夫特"
-      },
-      {
-        "de": "das Zentrum",
-        "zh": "中心",
-        "py": "达斯 岑特鲁姆"
-      },
-      {
-        "de": "die Zahl",
-        "zh": "数字",
-        "py": "迪 察尔"
-      },
-      {
-        "de": "die Reihe",
-        "zh": "排/系列",
-        "py": "迪 拉伊厄"
-      },
-      {
-        "de": "das Wiedersehen",
-        "zh": "再会",
-        "py": "达斯 维德泽恩"
-      },
-      {
-        "de": "die Ferien",
-        "zh": "假期",
-        "py": "迪 费里恩"
-      },
-      {
-        "de": "die Fundsachen",
-        "zh": "失物",
-        "py": "迪 丰特扎肯"
-      },
-      {
-        "de": "die Situation",
-        "zh": "情况",
-        "py": "迪 西图阿齐昂"
-      }
-    ]
-  },
-  {
-    "name": "A2形容词",
-    "level": "a2",
-    "icon": "🟢",
-    "phrases": [
-      {
-        "de": "aktiv",
-        "zh": "积极的",
-        "py": "阿克蒂夫"
-      },
-      {
-        "de": "aktuell",
-        "zh": "当前的",
-        "py": "阿克图埃尔"
-      },
-      {
-        "de": "arm",
-        "zh": "穷的",
-        "py": "阿姆"
-      },
-      {
-        "de": "aufregend",
-        "zh": "激动人心的",
-        "py": "奥夫雷根特"
-      },
-      {
-        "de": "beliebt",
-        "zh": "受欢迎的",
-        "py": "贝利普特"
-      },
-      {
-        "de": "bequem",
-        "zh": "舒适的",
-        "py": "贝克韦姆"
-      },
-      {
-        "de": "berühmt",
-        "zh": "著名的",
-        "py": "贝吕姆特"
-      },
-      {
-        "de": "blöd",
-        "zh": "愚蠢的",
-        "py": "布勒特"
-      },
-      {
-        "de": "blond",
-        "zh": "金发的",
-        "py": "布隆特"
-      },
-      {
-        "de": "deutlich",
-        "zh": "清楚的",
-        "py": "多伊特利希"
-      },
-      {
-        "de": "dick",
-        "zh": "厚的/胖的",
-        "py": "迪克"
-      },
-      {
-        "de": "direkt",
-        "zh": "直接的",
-        "py": "迪雷克特"
-      },
-      {
-        "de": "dringend",
-        "zh": "紧急的",
-        "py": "德林根特"
-      },
-      {
-        "de": "dumm",
-        "zh": "笨的",
-        "py": "杜姆"
-      },
-      {
-        "de": "dünn",
-        "zh": "薄的/瘦的",
-        "py": "丢恩"
-      },
-      {
-        "de": "echt",
-        "zh": "真的",
-        "py": "埃希特"
-      },
-      {
-        "de": "fantastisch",
-        "zh": "极好的",
-        "py": "凡塔斯提什"
-      },
-      {
-        "de": "faul",
-        "zh": "懒的",
-        "py": "法乌尔"
-      },
-      {
-        "de": "fett",
-        "zh": "油腻的/肥的",
-        "py": "费特"
-      },
-      {
-        "de": "fleißig",
-        "zh": "勤奋的",
-        "py": "弗莱西希"
-      },
-      {
-        "de": "freiwillig",
-        "zh": "自愿的",
-        "py": "弗莱维利希"
-      },
-      {
-        "de": "furchtbar",
-        "zh": "可怕的",
-        "py": "富尔希特巴"
-      },
-      {
-        "de": "freundlich",
-        "zh": "友好的",
-        "py": "弗罗因特利希"
-      },
-      {
-        "de": "froh",
-        "zh": "高兴的",
-        "py": "弗罗"
-      },
-      {
-        "de": "gefährlich",
-        "zh": "危险的",
-        "py": "格费尔利希"
-      },
-      {
-        "de": "hart",
-        "zh": "硬的",
-        "py": "哈特"
-      },
-      {
-        "de": "intelligent",
-        "zh": "聪明的",
-        "py": "因特利根特"
-      },
-      {
-        "de": "klug",
-        "zh": "聪明的",
-        "py": "克卢克"
-      },
-      {
-        "de": "komisch",
-        "zh": "奇怪的/滑稽的",
-        "py": "科米什"
-      },
-      {
-        "de": "kostenlos",
-        "zh": "免费的",
-        "py": "科斯滕洛斯"
-      },
-      {
-        "de": "kühl",
-        "zh": "凉的",
-        "py": "屈尔"
-      },
-      {
-        "de": "modern",
-        "zh": "现代的",
-        "py": "摩德恩"
-      },
-      {
-        "de": "nass",
-        "zh": "湿的",
-        "py": "纳斯"
-      },
-      {
-        "de": "nervös",
-        "zh": "紧张的",
-        "py": "内尔沃斯"
-      },
-      {
-        "de": "nett",
-        "zh": "友好的",
-        "py": "内特"
-      },
-      {
-        "de": "nützlich",
-        "zh": "有用的",
-        "py": "纽茨利希"
-      },
-      {
-        "de": "online",
-        "zh": "在线的",
-        "py": "昂莱因"
-      },
-      {
-        "de": "praktisch",
-        "zh": "实用的",
-        "py": "普拉克提什"
-      },
-      {
-        "de": "preiswert",
-        "zh": "划算的",
-        "py": "普莱斯韦特"
-      },
-      {
-        "de": "privat",
-        "zh": "私人的",
-        "py": "普里瓦特"
-      },
-      {
-        "de": "reich",
-        "zh": "富有的",
-        "py": "拉伊希"
-      },
-      {
-        "de": "romantisch",
-        "zh": "浪漫的",
-        "py": "罗曼提什"
-      },
-      {
-        "de": "rund",
-        "zh": "圆的",
-        "py": "伦特"
-      },
-      {
-        "de": "schädlich",
-        "zh": "有害的",
-        "py": "谢特利希"
-      },
-      {
-        "de": "schlimm",
-        "zh": "糟糕的",
-        "py": "施利姆"
-      },
-      {
-        "de": "schrecklich",
-        "zh": "可怕的",
-        "py": "施雷克利希"
-      },
-      {
-        "de": "schriftlich",
-        "zh": "书面的",
-        "py": "施里夫特利希"
-      },
-      {
-        "de": "schwach",
-        "zh": "弱的",
-        "py": "施瓦赫"
-      },
-      {
-        "de": "schwanger",
-        "zh": "怀孕的",
-        "py": "施万格"
-      },
-      {
-        "de": "sicher",
-        "zh": "安全的/肯定的",
-        "py": "西希尔"
-      },
-      {
-        "de": "spannend",
-        "zh": "扣人心弦的",
-        "py": "施潘恩特"
-      },
-      {
-        "de": "stark",
-        "zh": "强壮的",
-        "py": "施塔克"
-      },
-      {
-        "de": "streng",
-        "zh": "严格的",
-        "py": "施特伦"
-      },
-      {
-        "de": "stressig",
-        "zh": "有压力的",
-        "py": "施特雷西希"
-      },
-      {
-        "de": "super",
-        "zh": "超棒的",
-        "py": "祖佩"
-      },
-      {
-        "de": "sympathisch",
-        "zh": "讨人喜欢的",
-        "py": "辛帕提什"
-      },
-      {
-        "de": "tief",
-        "zh": "深的",
-        "py": "蒂夫"
-      },
-      {
-        "de": "toll",
-        "zh": "棒极了的",
-        "py": "托尔"
-      },
-      {
-        "de": "traurig",
-        "zh": "悲伤的",
-        "py": "特劳里希"
-      },
-      {
-        "de": "trocken",
-        "zh": "干的",
-        "py": "特罗肯"
-      },
-      {
-        "de": "typisch",
-        "zh": "典型的",
-        "py": "蒂皮什"
-      },
-      {
-        "de": "verschieden",
-        "zh": "不同的",
-        "py": "费尔申登"
-      },
-      {
-        "de": "vorsichtig",
-        "zh": "小心的",
-        "py": "福尔西希提希"
-      },
-      {
-        "de": "wach",
-        "zh": "清醒的",
-        "py": "瓦赫"
-      },
-      {
-        "de": "wahr",
-        "zh": "真实的",
-        "py": "瓦尔"
-      },
-      {
-        "de": "wahrscheinlich",
-        "zh": "很可能的",
-        "py": "瓦尔沙因利希"
-      },
-      {
-        "de": "weich",
-        "zh": "软的",
-        "py": "瓦伊希"
-      },
-      {
-        "de": "witzig",
-        "zh": "风趣的",
-        "py": "维齐希"
-      },
-      {
-        "de": "nächste",
-        "zh": "下一个的",
-        "py": "内希斯特"
-      }
-    ]
-  },
-  {
-    "name": "A2副词·连词",
-    "level": "a2",
-    "icon": "⚪",
-    "phrases": [
-      {
-        "de": "als",
-        "zh": "当/作为/比",
-        "py": "阿尔斯"
-      },
-      {
-        "de": "außer",
-        "zh": "除…之外",
-        "py": "奥瑟"
-      },
-      {
-        "de": "außerdem",
-        "zh": "此外",
-        "py": "奥瑟登"
-      },
-      {
-        "de": "außerhalb",
-        "zh": "在…之外",
-        "py": "奥瑟哈尔普"
-      },
-      {
-        "de": "besonders",
-        "zh": "特别",
-        "py": "贝宗德斯"
-      },
-      {
-        "de": "bisschen",
-        "zh": "一点",
-        "py": "比斯兴"
-      },
-      {
-        "de": "dabei",
-        "zh": "在场/同时",
-        "py": "达拜"
-      },
-      {
-        "de": "dafür",
-        "zh": "为此/赞成",
-        "py": "达菲尔"
-      },
-      {
-        "de": "damals",
-        "zh": "当时",
-        "py": "达马尔斯"
-      },
-      {
-        "de": "deshalb",
-        "zh": "因此",
-        "py": "德斯哈尔普"
-      },
-      {
-        "de": "doch",
-        "zh": "却/还是",
-        "py": "多赫"
-      },
-      {
-        "de": "drinnen",
-        "zh": "在里面",
-        "py": "德里嫩"
-      },
-      {
-        "de": "drüben",
-        "zh": "在那边",
-        "py": "德吕本"
-      },
-      {
-        "de": "egal",
-        "zh": "无所谓",
-        "py": "埃加尔"
-      },
-      {
-        "de": "eigentlich",
-        "zh": "其实",
-        "py": "艾根特利希"
-      },
-      {
-        "de": "erst",
-        "zh": "才/起先",
-        "py": "埃尔斯特"
-      },
-      {
-        "de": "etwas",
-        "zh": "一些/某物",
-        "py": "埃特瓦斯"
-      },
-      {
-        "de": "ganz",
-        "zh": "完全/整个",
-        "py": "甘茨"
-      },
-      {
-        "de": "gegenüber",
-        "zh": "对面",
-        "py": "格根于伯"
-      },
-      {
-        "de": "her",
-        "zh": "朝这边",
-        "py": "黑尔"
-      },
-      {
-        "de": "heraus",
-        "zh": "出来",
-        "py": "黑劳斯"
-      },
-      {
-        "de": "herein",
-        "zh": "进来",
-        "py": "黑赖因"
-      },
-      {
-        "de": "hin",
-        "zh": "朝那边",
-        "py": "欣"
-      },
-      {
-        "de": "hoffentlich",
-        "zh": "但愿",
-        "py": "霍芬特利希"
-      },
-      {
-        "de": "mal",
-        "zh": "一下/曾经",
-        "py": "马尔"
-      },
-      {
-        "de": "meistens",
-        "zh": "大多",
-        "py": "迈斯滕斯"
-      },
-      {
-        "de": "nebenan",
-        "zh": "隔壁",
-        "py": "内本安"
-      },
-      {
-        "de": "nirgends",
-        "zh": "哪里都不",
-        "py": "尼尔根茨"
-      },
-      {
-        "de": "pro",
-        "zh": "每",
-        "py": "普罗"
-      },
-      {
-        "de": "schade",
-        "zh": "可惜",
-        "py": "沙德"
-      },
-      {
-        "de": "selbst",
-        "zh": "自己/甚至",
-        "py": "泽尔布斯特"
-      },
-      {
-        "de": "sogar",
-        "zh": "甚至",
-        "py": "佐加"
-      },
-      {
-        "de": "sonst",
-        "zh": "否则",
-        "py": "宗斯特"
-      },
-      {
-        "de": "total",
-        "zh": "完全/总共",
-        "py": "托塔尔"
-      },
-      {
-        "de": "unbedingt",
-        "zh": "一定",
-        "py": "温贝丁特"
-      },
-      {
-        "de": "vorbei",
-        "zh": "过去了",
-        "py": "福尔拜"
-      },
-      {
-        "de": "vorwärts",
-        "zh": "向前",
-        "py": "福尔韦尔茨"
-      },
-      {
-        "de": "welcher",
-        "zh": "哪个",
-        "py": "韦尔希尔"
-      },
-      {
-        "de": "wenigstens",
-        "zh": "至少",
-        "py": "韦尼希斯滕斯"
-      },
-      {
-        "de": "wenn",
-        "zh": "如果/当",
-        "py": "文"
-      },
-      {
-        "de": "wirklich",
-        "zh": "真的",
-        "py": "维尔克利希"
-      },
-      {
-        "de": "zuerst",
-        "zh": "首先",
-        "py": "楚埃尔斯特"
-      },
-      {
-        "de": "zuletzt",
-        "zh": "最后",
-        "py": "楚莱茨特"
-      }
-    ]
-  },
-  {
-    "name": "A2常用短语",
-    "level": "a2",
-    "icon": "🔗",
-    "phrases": [
-      {
-        "de": "einverstanden sein",
-        "zh": "同意",
-        "py": "艾因费尔施坦登 扎因"
-      },
-      {
-        "de": "erkältet sein",
-        "zh": "感冒",
-        "py": "埃尔凯尔特特 扎因"
-      },
-      {
-        "de": "fertig sein",
-        "zh": "完成了",
-        "py": "费尔提希 扎因"
-      },
-      {
-        "de": "fit sein",
-        "zh": "身体好",
-        "py": "菲特 扎因"
-      },
-      {
-        "de": "gültig sein",
-        "zh": "有效",
-        "py": "居尔提希 扎因"
-      },
-      {
-        "de": "recht haben",
-        "zh": "有理/说得对",
-        "py": "雷希特 哈本"
-      },
-      {
-        "de": "spazieren gehen",
-        "zh": "去散步",
-        "py": "施帕齐伦 盖恩"
-      },
-      {
-        "de": "unterwegs sein",
-        "zh": "在路上",
-        "py": "温特韦克斯 扎因"
-      },
-      {
-        "de": "verabredet sein",
-        "zh": "有约",
-        "py": "费尔阿普雷德特 扎因"
-      },
-      {
-        "de": "sich umziehen",
-        "zh": "换衣服",
-        "py": "西希 乌姆齐恩"
-      }
-    ]
-  },
-  {
-    "name": "厨房用具",
-    "level": "a2",
-    "icon": "🍳",
-    "phrases": [
-      {
-        "de": "das Glas",
-        "zh": "玻璃杯",
-        "py": "达斯 格拉斯"
-      },
-      {
-        "de": "der Herd",
-        "zh": "炉灶",
-        "py": "德尔 黑尔特"
-      },
-      {
-        "de": "der Kühlschrank",
-        "zh": "冰箱",
-        "py": "德尔 屈尔施兰克"
-      },
-      {
-        "de": "der Backofen",
-        "zh": "烤箱",
-        "py": "德尔 巴克奥芬"
-      },
-      {
-        "de": "die Mikrowelle",
-        "zh": "微波炉",
-        "py": "迪 米克罗韦勒"
-      },
-      {
-        "de": "die Spülmaschine",
-        "zh": "洗碗机",
-        "py": "迪 施皮尔玛斯乘"
-      },
-      {
-        "de": "die Gabel",
-        "zh": "叉子",
-        "py": "迪 加贝尔"
-      },
-      {
-        "de": "der Löffel",
-        "zh": "勺子",
-        "py": "德尔 勒费尔"
-      },
-      {
-        "de": "das Messer",
-        "zh": "刀",
-        "py": "达斯 梅瑟"
-      },
-      {
-        "de": "der Teller",
-        "zh": "盘子",
-        "py": "德尔 特勒"
-      },
-      {
-        "de": "die Tasse",
-        "zh": "杯子",
-        "py": "迪 塔瑟"
-      },
-      {
-        "de": "der Topf",
-        "zh": "锅",
-        "py": "德尔 托普夫"
-      },
-      {
-        "de": "die Schere",
-        "zh": "剪刀",
-        "py": "迪 谢勒"
-      },
-      {
-        "de": "die Pfanne",
-        "zh": "平底锅",
-        "py": "迪 普凡讷"
-      },
-      {
-        "de": "die Schüssel",
-        "zh": "碗/大盆",
-        "py": "迪 施徽塞尔"
-      },
-      {
-        "de": "das Schneidebrett",
-        "zh": "砧板",
-        "py": "达斯 施奈德布雷特"
-      },
-      {
-        "de": "der Wasserkocher",
-        "zh": "电热水壶",
-        "py": "德尔 瓦瑟科赫尔"
-      },
-      {
-        "de": "das Sieb",
-        "zh": "滤网/筛子",
-        "py": "达斯 集普"
-      },
-      {
-        "de": "die Schürze",
-        "zh": "围裙",
-        "py": "迪 施徽尔策"
-      },
-      {
-        "de": "die Waage",
-        "zh": "秤",
-        "py": "迪 瓦格"
-      },
-      {
-        "de": "der Mixer",
-        "zh": "搅拌机",
-        "py": "德尔 米克瑟尔"
-      },
-      {
-        "de": "der Deckel",
-        "zh": "盖子",
-        "py": "德尔 戴克尔"
-      },
-      {
-        "de": "der Kochlöffel",
-        "zh": "木勺",
-        "py": "德尔 科赫勒费尔"
-      }
-    ]
-  },
-  {
-    "name": "烹饪动词",
-    "level": "a2",
-    "icon": "🔪",
-    "phrases": [
-      {
-        "de": "grillen",
-        "zh": "烤（炉）",
-        "py": "格里伦"
-      },
-      {
-        "de": "kochen",
-        "zh": "做饭",
-        "py": "科赫恩"
-      },
-      {
-        "de": "schneiden",
-        "zh": "切",
-        "py": "施奈顿"
-      },
-      {
-        "de": "reiben",
-        "zh": "磨碎",
-        "py": "莱本"
-      },
-      {
-        "de": "schälen",
-        "zh": "削皮",
-        "py": "施雪伦"
-      },
-      {
-        "de": "braten",
-        "zh": "煎炒",
-        "py": "布拉腾"
-      },
-      {
-        "de": "backen",
-        "zh": "烤",
-        "py": "巴肯"
-      },
-      {
-        "de": "dünsten",
-        "zh": "蒸",
-        "py": "丹斯腾"
-      },
-      {
-        "de": "frittieren",
-        "zh": "炸",
-        "py": "弗里蒂伦"
-      },
-      {
-        "de": "würzen",
-        "zh": "调味",
-        "py": "维尔泽恩"
-      },
-      {
-        "de": "salzen",
-        "zh": "加盐",
-        "py": "萨尔泽恩"
-      },
-      {
-        "de": "umrühren",
-        "zh": "搅拌",
-        "py": "乌姆吕伦"
-      },
-      {
-        "de": "mischen",
-        "zh": "混合",
-        "py": "米施恩"
-      },
-      {
-        "de": "kneten",
-        "zh": "揉",
-        "py": "克内腾"
-      },
-      {
-        "de": "aufwärmen",
-        "zh": "加热",
-        "py": "奥夫韦尔梅恩"
-      },
-      {
-        "de": "servieren",
-        "zh": "上菜",
-        "py": "泽尔维伦"
-      },
-      {
-        "de": "gießen",
-        "zh": "浇水",
-        "py": "吉森"
-      },
-      {
-        "de": "probieren",
-        "zh": "尝试",
-        "py": "普罗比伦"
-      },
-      {
-        "de": "dämpfen",
-        "zh": "蒸",
-        "py": "戴姆普芬"
-      },
-      {
-        "de": "rühren",
-        "zh": "搅拌",
-        "py": "吕伦"
-      },
-      {
-        "de": "erhitzen",
-        "zh": "加热",
-        "py": "埃尔希岑"
-      },
-      {
-        "de": "zubereiten",
-        "zh": "准备(食物)",
-        "py": "楚贝赖滕"
-      }
+      {"de":"die Idee","zh":"主意","py":"迪 伊地"},
+      {"de":"der Grund","zh":"原因/理由","py":"德尔 格鲁恩特"},
+      {"de":"die Möglichkeit","zh":"可能性","py":"迪 默格利希凯特"},
+      {"de":"der Unterschied","zh":"区别","py":"德尔 乌腾斯克伊特"},
+      {"de":"die Bedeutung","zh":"意义/含义","py":"迪 贝多伊通"},
+      {"de":"das Interesse","zh":"兴趣","py":"达斯 因特雷斯"},
+      {"de":"die Entscheidung","zh":"决定","py":"迪 恩特施莱顿"},
+      {"de":"der Erfolg","zh":"成功","py":"德尔 尔福尔克"},
+      {"de":"das Ziel","zh":"目标","py":"达斯 齐尔"},
+      {"de":"das Recht","zh":"权利/法律","py":"达斯 雷希特"},
+      {"de":"die Pflicht","zh":"义务","py":"迪 普夫里希特"},
+      {"de":"die Freiheit","zh":"自由","py":"迪 弗莱海特"},
+      {"de":"die Wahrheit","zh":"真相","py":"迪 瓦尔海特"},
+      {"de":"die Meinung","zh":"意见","py":"迪 迈农"},
+      {"de":"die Gefahr","zh":"危险","py":"迪 格法尔"},
+      {"de":"die Chance","zh":"机会","py":"迪 沙恩斯"},
+      {"de":"der Vorteil","zh":"优势","py":"德尔 福尔泰尔"},
+      {"de":"der Nachteil","zh":"劣势","py":"德尔 纳赫泰尔"},
+      {"de":"die Erfahrung","zh":"经验","py":"迪 尔法荣"},
+      {"de":"das Gehalt","zh":"薪资","py":"达斯 格哈尔特"},
+      {"de":"der Lohn","zh":"工资","py":"德尔 洛恩"},
+      {"de":"die Chefin","zh":"女老板","py":"迪 斯雪芬"},
+      {"de":"das Team","zh":"团队","py":"达斯 提姆"},
+      {"de":"die Abteilung","zh":"部门","py":"迪 阿普泰伦"},
+      {"de":"die Besprechung","zh":"会议","py":"迪 贝施普雷洪"},
+      {"de":"das Meeting","zh":"会议（英语借词）","py":"达斯 米丁"},
+      {"de":"die Präsentation","zh":"演示","py":"迪 普雷泽恩塔齐翁"},
+      {"de":"der Bericht","zh":"报告","py":"德尔 贝里希特"},
+      {"de":"die Kundin","zh":"客户（女）","py":"迪 孔丁"},
+      {"de":"das Projekt","zh":"项目","py":"达斯 普罗耶克特"},
+      {"de":"die Deadline","zh":"截止日期","py":"迪 德特莱因"},
+      {"de":"der Schreibtisch","zh":"办公桌","py":"德尔 施莱布提什"},
+      {"de":"das Passwort","zh":"密码","py":"达斯 帕斯沃尔特"},
+      {"de":"die Datei","zh":"文件","py":"迪 达太"},
+      {"de":"der Krankenstand","zh":"病假","py":"德尔 克兰肯施坦特"},
+      {"de":"die Kündigung","zh":"辞职/解雇","py":"迪 肯迪根"},
+      {"de":"das Vorstellungsgespräch","zh":"面试","py":"达斯 佛尔施泰伦斯格斯普雷赫"},
+      {"de":"der Babysitter","zh":"保姆","py":"德尔 贝比西特"},
+      {"de":"der Mitarbeiter","zh":"员工/同事","py":"德尔 米特阿拜特"},
+      {"de":"die Partnerin","zh":"女伴/女搭档","py":"迪 帕特讷林"},
+      {"de":"der Rentner","zh":"退休者","py":"德尔 伦特讷"},
+      {"de":"der Tourist","zh":"游客","py":"德尔 图里斯特"},
+      {"de":"die Mannschaft","zh":"队伍/球队","py":"迪 曼沙夫特"},
+      {"de":"die Decke","zh":"天花板","py":"迪 德克"},
+      {"de":"der Boden","zh":"地板","py":"德尔 博顿"},
+      {"de":"die Wand","zh":"墙","py":"迪 万特"},
+      {"de":"das Dach","zh":"屋顶","py":"达斯 达赫"},
+      {"de":"der Keller","zh":"地下室","py":"德尔 凯勒"},
+      {"de":"der Dachboden","zh":"阁楼","py":"德尔 达赫博顿"},
+      {"de":"die Terrasse","zh":"露台","py":"迪 特拉瑟"},
+      {"de":"die Garage","zh":"车库","py":"迪 加拉舍"},
+      {"de":"das Treppenhaus","zh":"楼道","py":"达斯 特雷朋豪斯"},
+      {"de":"die Klingel","zh":"门铃","py":"迪 克林格尔"},
+      {"de":"die Sprechanlage","zh":"对讲机","py":"迪 施普雷赫安拉格"},
+      {"de":"die Gefriertruhe","zh":"冷冻柜","py":"迪 格弗里尔特鲁呃"},
+      {"de":"die Waschmaschine","zh":"洗衣机","py":"迪 瓦施玛斯乘"},
+      {"de":"der Trockner","zh":"烘干机","py":"德尔 特罗克内尔"},
+      {"de":"der Staubsauger","zh":"吸尘器","py":"德尔 施陶普扎乌格尔"},
+      {"de":"der Wäscheständer","zh":"晾衣架","py":"德尔 韦舍斯坦德尔"},
+      {"de":"die Steckdose","zh":"插座","py":"迪 施特克多斯"},
+      {"de":"der Lichtschalter","zh":"灯开关","py":"德尔 利希特斯卡尔特尔"},
+      {"de":"die Heizung","zh":"暖气","py":"迪 海宗"},
+      {"de":"die Klimaanlage","zh":"空调","py":"迪 克利玛安拉格"},
+      {"de":"das Schloss","zh":"城堡/宫殿","py":"达斯 施洛斯"},
+      {"de":"der Sicherheitsriegel","zh":"安全插销","py":"德尔 济黑尔海茨里格尔"},
+      {"de":"das Schlafzimmer","zh":"卧室","py":"达斯 施拉夫齐默"},
+      {"de":"das Wohnzimmer","zh":"客厅","py":"达斯 沃恩齐默"},
+      {"de":"das Stockwerk","zh":"楼层","py":"达斯 施托克韦克"},
+      {"de":"das Zelt","zh":"帐篷","py":"达斯 采尔特"},
+      {"de":"der Basketball","zh":"篮球","py":"德尔 巴斯克特巴尔"},
+      {"de":"der Tennis","zh":"网球","py":"德尔 腾尼斯"},
+      {"de":"der Volleyball","zh":"排球","py":"德尔 沃莱巴尔"},
+      {"de":"das Schwimmen","zh":"游泳（这项运动，名词）","py":"达斯 施维门"},
+      {"de":"das Laufen","zh":"跑步","py":"达斯 劳芬"},
+      {"de":"das Radfahren","zh":"骑车","py":"达斯 拉特法伦"},
+      {"de":"das Wandern","zh":"徒步（这项活动，名词）","py":"达斯 万德恩"},
+      {"de":"das Klettern","zh":"攀岩","py":"达斯 克雷特恩"},
+      {"de":"der Ski","zh":"滑雪","py":"德尔 斯基"},
+      {"de":"das Eislaufen","zh":"溜冰","py":"达斯 艾斯劳芬"},
+      {"de":"das Turnen","zh":"体操","py":"达斯 图内恩"},
+      {"de":"der Kampfsport","zh":"格斗运动","py":"德尔 坎普夫斯波特"},
+      {"de":"das Yoga","zh":"瑜伽","py":"达斯 约加"},
+      {"de":"der Trainer","zh":"教练","py":"德尔 特勒嫩尔"},
+      {"de":"der Spieler","zh":"球员","py":"德尔 施皮勒"},
+      {"de":"das Tor","zh":"球门/进球","py":"达斯 托尔"},
+      {"de":"das Foul","zh":"犯规","py":"达斯 法乌尔"},
+      {"de":"der Elfmeter","zh":"点球","py":"德尔 埃尔夫梅特尔"},
+      {"de":"die Halbzeit","zh":"中场","py":"迪 哈尔普茨艾特"},
+      {"de":"verlieren","zh":"失去","py":"费尔里伦"},
+      {"de":"unentschieden","zh":"平局","py":"乌恩恩特施莱顿"},
+      {"de":"der Weltmeister","zh":"世界冠军","py":"德尔 威尔特迈斯特尔"},
+      {"de":"die Olympiade","zh":"奥林匹克","py":"迪 奥林皮阿德"},
+      {"de":"der Marathon","zh":"马拉松","py":"德尔 玛拉通"},
+      {"de":"das Trikot","zh":"运动球衣","py":"达斯 特里科"},
+      {"de":"der Schiedsrichter","zh":"裁判","py":"德尔 施意茨里希特尔"},
+      {"de":"die Orchidee","zh":"兰花","py":"迪 奥尔基德"},
+      {"de":"der Lavendel","zh":"薰衣草","py":"德尔 拉文德尔"},
+      {"de":"das Veilchen","zh":"紫罗兰","py":"达斯 菲尔黑恩"},
+      {"de":"die Lilie","zh":"百合","py":"迪 里利"},
+      {"de":"die Chrysantheme","zh":"菊花","py":"迪 克吕萨恩特梅"},
+      {"de":"die Dahlie","zh":"大丽花","py":"迪 大利"},
+      {"de":"der Kaktus","zh":"仙人掌","py":"德尔 卡克图斯"},
+      {"de":"die Aloe Vera","zh":"芦荟","py":"迪 阿洛 维拉"},
+      {"de":"der Bambus","zh":"竹子","py":"德尔 班布斯"},
+      {"de":"die Eiche","zh":"橡树","py":"迪 艾黑"},
+      {"de":"die Birke","zh":"白桦树","py":"迪 比尔克"},
+      {"de":"die Fichte","zh":"云杉","py":"迪 菲希特"},
+      {"de":"die Tanne","zh":"冷杉","py":"迪 坦嫩"},
+      {"de":"die Linde","zh":"椴树","py":"迪 林德"},
+      {"de":"der Ahorn","zh":"枫树","py":"德尔 阿霍恩"},
+      {"de":"die Weide","zh":"柳树","py":"迪 魏德"},
+      {"de":"das Moos","zh":"苔藓","py":"达斯 摩斯"},
+      {"de":"der Farn","zh":"蕨类","py":"德尔 法尔恩"},
+      {"de":"die Distel","zh":"蓟","py":"迪 迪斯特尔"},
+      {"de":"das Unkraut","zh":"杂草","py":"达斯 乌恩克劳特"},
+      {"de":"der Stamm","zh":"树干","py":"德尔 施塔姆"},
+      {"de":"die Frucht","zh":"果实","py":"迪 弗鲁赫特"},
+      {"de":"der Leopard","zh":"豹子","py":"德尔 雷欧帕尔特"},
+      {"de":"das Nashorn","zh":"犀牛","py":"达斯 纳斯霍恩"},
+      {"de":"das Nilpferd","zh":"河马","py":"达斯 尼尔普费尔特"},
+      {"de":"die Giraffe","zh":"长颈鹿","py":"迪 吉拉弗"},
+      {"de":"das Zebra","zh":"斑马","py":"达斯 泽布拉"},
+      {"de":"der Gorilla","zh":"大猩猩","py":"德尔 戈里拉"},
+      {"de":"der Schimpanse","zh":"黑猩猩","py":"德尔 施孟帕恩斯"},
+      {"de":"der Hase","zh":"兔子","py":"德尔 哈斯"},
+      {"de":"das Eichhörnchen","zh":"松鼠","py":"达斯 艾希霍恩肯"},
+      {"de":"der Igel","zh":"刺猬","py":"德尔 伊格尔"},
+      {"de":"der Adler","zh":"鹰","py":"德尔 阿德勒尔"},
+      {"de":"die Eule","zh":"猫头鹰","py":"迪 欧勒"},
+      {"de":"der Papagei","zh":"鹦鹉","py":"德尔 帕帕盖"},
+      {"de":"der Pinguin","zh":"企鹅","py":"德尔 平古因"},
+      {"de":"der Delfin","zh":"海豚","py":"德尔 德尔芬"},
+      {"de":"der Wal","zh":"鲸鱼","py":"德尔 瓦尔"},
+      {"de":"der Hai","zh":"鲨鱼","py":"德尔 海"},
+      {"de":"der Oktopus","zh":"章鱼","py":"德尔 奥克托普斯"},
+      {"de":"die Schildkröte","zh":"乌龟","py":"迪 施黑尔德克罗特"},
+      {"de":"das Krokodil","zh":"鳄鱼","py":"达斯 克罗科迪尔"},
+      {"de":"der Marienkäfer","zh":"瓢虫","py":"德尔 玛里恩凯弗尔"},
+      {"de":"das Rind","zh":"牛","py":"达斯 林特"},
+      {"de":"die Landschaft","zh":"风景","py":"迪 兰特沙夫特"},
+      {"de":"der Strand","zh":"海滩","py":"德尔 施特兰特"},
+      {"de":"der Kontinent","zh":"大洲","py":"德尔 孔蒂嫩特"},
+      {"de":"die Hauptstadt","zh":"首都","py":"迪 豪普特施塔特"},
+      {"de":"die Grenze","zh":"边界","py":"迪 格伦泽"},
+      {"de":"der Norden","zh":"北方","py":"德尔 诺尔顿"},
+      {"de":"der Süden","zh":"南方","py":"德尔 祖顿"},
+      {"de":"der Osten","zh":"东方","py":"德尔 奥斯腾"},
+      {"de":"der Westen","zh":"西方","py":"德尔 韦斯腾"},
+      {"de":"das Gebirge","zh":"山脉","py":"达斯 格比尔格"},
+      {"de":"der Gipfel","zh":"山顶","py":"德尔 吉普弗尔"},
+      {"de":"das Tal","zh":"山谷","py":"达斯 塔尔"},
+      {"de":"die Ebene","zh":"平原","py":"迪 埃贝嫩"},
+      {"de":"die Wüste","zh":"沙漠","py":"迪 维斯特"},
+      {"de":"der Regenwald","zh":"雨林","py":"德尔 雷根瓦尔特"},
+      {"de":"die Savanne","zh":"热带草原","py":"迪 扎万嫩"},
+      {"de":"die Steppe","zh":"草原","py":"迪 施特普"},
+      {"de":"das Moor","zh":"沼泽","py":"达斯 摩尔"},
+      {"de":"die Bucht","zh":"海湾","py":"迪 布赫特"},
+      {"de":"die Insel","zh":"岛屿","py":"迪 因泽尔"},
+      {"de":"die Halbinsel","zh":"半岛","py":"迪 哈尔普因泽尔"},
+      {"de":"das Kap","zh":"海角","py":"达斯 卡普"},
+      {"de":"der Gletscher","zh":"冰川","py":"德尔 格雷特舍尔"},
+      {"de":"der Wasserfall","zh":"瀑布","py":"德尔 瓦瑟法尔"},
+      {"de":"der Vulkan","zh":"火山","py":"德尔 乌尔坎"},
+      {"de":"das Erdbeben","zh":"地震","py":"达斯 尔德贝本"},
+      {"de":"der Tsunami","zh":"海啸","py":"德尔 粗纳米"},
+      {"de":"der Hurrikan","zh":"飓风","py":"德尔 胡里坎"},
+      {"de":"das Klima","zh":"气候","py":"达斯 克利玛"},
+      {"de":"die Atmosphäre","zh":"大气层","py":"迪 阿特摩斯费雷"},
+      {"de":"die Jahreszeit","zh":"季节","py":"迪 雅雷斯查特"},
+      {"de":"die Frühlingssonne","zh":"春日阳光","py":"迪 弗吕灵斯宗嫩"},
+      {"de":"die Sommerhitze","zh":"夏日酷热","py":"迪 佐默尔希泽"},
+      {"de":"das Herbstlaub","zh":"秋叶","py":"达斯 赫尔布斯特劳普"},
+      {"de":"der Winterfrost","zh":"冬日霜冻","py":"德尔 温特尔弗罗斯特"},
+      {"de":"der Frühlingsregen","zh":"春雨","py":"德尔 弗吕灵斯雷根"},
+      {"de":"das Sommergewitter","zh":"夏日雷暴","py":"达斯 佐默尔格维特尔"},
+      {"de":"der Herbststurm","zh":"秋风暴","py":"德尔 赫尔布斯特斯图尔姆"},
+      {"de":"der Winterschnee","zh":"冬雪","py":"德尔 温特尔施奈"},
+      {"de":"Es taut.","zh":"在融雪/解冻","py":"埃斯 陶特"},
+      {"de":"Der erste Schnee fällt.","zh":"第一场雪降下了。","py":"德尔 埃尔斯特 施奈 费尔特"},
+      {"de":"Die Blumen blühen.","zh":"花儿开放了。","py":"迪 布卢门 布吕恩"},
+      {"de":"Die Blätter fallen.","zh":"树叶飘落。","py":"迪 布雷特尔 法伦"},
+      {"de":"Es wird kälter.","zh":"天气变冷了。","py":"埃斯 维尔特 凯尔特尔"},
+      {"de":"der Temperaturwechsel","zh":"气温变化","py":"德尔 腾佩拉图尔韦克瑟尔"},
+      {"de":"die Pollenallergie","zh":"花粉过敏","py":"迪 波伦阿勒吉"},
+      {"de":"sonnig und warm","zh":"晴朗温暖","py":"宗尼希 温特 瓦尔姆"},
+      {"de":"bewölkt und regnerisch","zh":"阴天多雨","py":"贝沃尔克特 温特 雷格内里希"},
+      {"de":"trocken und heiß","zh":"干燥炎热","py":"特罗肯 温特 海斯"},
+      {"de":"feucht und kalt","zh":"潮湿寒冷","py":"丰伊希特 温特 卡尔特"},
+      {"de":"der Klimawandel","zh":"气候变化","py":"德尔 克利玛万德尔"},
+      {"de":"die Treibhausgase","zh":"温室气体","py":"迪 特莱普豪斯加斯"},
+      {"de":"die globale Erwärmung","zh":"全球变暖","py":"迪 格洛巴雷 尔韦尔门"},
+      {"de":"erneuerbare Energie","zh":"可再生能源","py":"尔诺伊尔巴雷 埃内吉"},
+      {"de":"der Anzug","zh":"西装","py":"德尔 安粗克"},
+      {"de":"die Bluse","zh":"女衬衫","py":"迪 布鲁泽"},
+      {"de":"der Stiefel","zh":"靴子","py":"德尔 施提弗尔"},
+      {"de":"die Kette","zh":"项链","py":"迪 凯特"},
+      {"de":"der Ring","zh":"戒指","py":"德尔 林克"},
+      {"de":"die Wäsche","zh":"要洗的衣物","py":"迪 韦舍"},
+      {"de":"der Schirm","zh":"伞","py":"德尔 施尔姆"},
+      {"de":"der Apparat","zh":"仪器/装置","py":"德尔 阿帕拉特"},
+      {"de":"der Fotoapparat","zh":"照相机","py":"德尔 福托阿帕拉特"},
+      {"de":"das Mobiltelefon","zh":"手机","py":"达斯 莫比尔特勒丰"},
+      {"de":"das Radio","zh":"收音机","py":"达斯 拉迪欧"},
+      {"de":"der Fernseher","zh":"电视机","py":"德尔 费恩泽尔"},
+      {"de":"das E-Book","zh":"电子书","py":"达斯 伊布克"},
+      {"de":"die Homepage","zh":"主页","py":"迪 霍姆佩奇"},
+      {"de":"die Webseite","zh":"网页","py":"迪 韦布扎伊特"},
+      {"de":"die Mailbox","zh":"语音信箱","py":"迪 梅尔博克斯"},
+      {"de":"das Gerät","zh":"设备","py":"达斯 格雷特"},
+      {"de":"der Motor","zh":"发动机","py":"德尔 摩托"},
+      {"de":"der Motorroller","zh":"小摩托","py":"德尔 摩托罗勒"},
+      {"de":"der Ball","zh":"球","py":"德尔 巴尔"},
+      {"de":"die Band","zh":"乐队","py":"迪 班特"},
+      {"de":"die Gitarre","zh":"吉他","py":"迪 吉塔勒"},
+      {"de":"das Klavier","zh":"钢琴","py":"达斯 克拉维尔"},
+      {"de":"das Instrument","zh":"乐器","py":"达斯 因斯特鲁门特"},
+      {"de":"der Krimi","zh":"侦探片","py":"德尔 克里米"},
+      {"de":"das Spiel","zh":"游戏/比赛","py":"达斯 施皮尔"},
+      {"de":"das Rätsel","zh":"谜语","py":"达斯 雷策尔"},
+      {"de":"der Witz","zh":"笑话","py":"德尔 维茨"},
+      {"de":"das Training","zh":"训练","py":"达斯 特雷宁"},
+      {"de":"der Zirkus","zh":"马戏团","py":"德尔 齐尔库斯"},
+      {"de":"das Festival","zh":"音乐节","py":"达斯 费斯提瓦尔"},
+      {"de":"das Plakat","zh":"海报","py":"达斯 普拉卡特"},
+      {"de":"das Poster","zh":"海报","py":"达斯 波斯特"},
+      {"de":"der Star","zh":"明星","py":"德尔 施塔"},
+      {"de":"der Fan","zh":"粉丝","py":"德尔 凡"},
+      {"de":"das Interview","zh":"采访","py":"达斯 因特维尤"},
+      {"de":"die Sendung","zh":"节目","py":"迪 岑东"},
+      {"de":"das Programm","zh":"节目/程序","py":"达斯 普罗格拉姆"},
+      {"de":"die Tour","zh":"旅行团","py":"迪 图尔"},
+      {"de":"der Rundgang","zh":"参观/巡视","py":"德尔 伦特冈"},
+      {"de":"der Spaziergang","zh":"散步","py":"德尔 施帕齐尔冈"},
+      {"de":"der Workshop","zh":"工作坊","py":"德尔 沃克肖普"},
+      {"de":"der Wettbewerb","zh":"比赛","py":"德尔 韦特贝韦尔普"},
+      {"de":"die Veranstaltung","zh":"活动","py":"迪 费尔安施塔尔通"},
+      {"de":"die Feier","zh":"庆典","py":"迪 法伊尔"},
+      {"de":"der Körper","zh":"身体","py":"德尔 克尔佩"},
+      {"de":"der Magen","zh":"胃","py":"德尔 马根"},
+      {"de":"der Schmerz","zh":"疼痛","py":"德尔 施梅尔茨"},
+      {"de":"die Krankheit","zh":"疾病","py":"迪 克兰克海特"},
+      {"de":"das Medikament","zh":"药","py":"达斯 梅迪卡门特"},
+      {"de":"das Mittel","zh":"药剂/手段","py":"达斯 米特尔"},
+      {"de":"die Sprechstunde","zh":"门诊时间","py":"迪 施普雷希施图讷"},
+      {"de":"das Rezept","zh":"处方/食谱","py":"达斯 雷采普特"},
+      {"de":"die Ausbildung","zh":"职业培训","py":"迪 奥斯比尔东"},
+      {"de":"die Bewerbung","zh":"求职申请","py":"迪 贝韦尔本"},
+      {"de":"das Stipendium","zh":"奖学金","py":"达斯 施蒂彭迪乌姆"},
+      {"de":"das Heft","zh":"本子","py":"达斯 黑夫特"},
+      {"de":"der Kalender","zh":"日历","py":"德尔 卡伦德"},
+      {"de":"die Notiz","zh":"笔记","py":"迪 诺蒂茨"},
+      {"de":"der Zettel","zh":"纸条","py":"德尔 采特尔"},
+      {"de":"der Artikel","zh":"文章/物品","py":"德尔 阿蒂克尔"},
+      {"de":"die Übersetzung","zh":"翻译","py":"迪 于伯采尊"},
+      {"de":"der Titel","zh":"标题","py":"德尔 蒂特尔"},
+      {"de":"die Seite","zh":"页/一面","py":"迪 扎伊特"},
+      {"de":"der Kontakt","zh":"联系","py":"德尔 孔塔克特"},
+      {"de":"der Bescheid","zh":"通知/答复","py":"德尔 贝沙伊特"},
+      {"de":"der Tipp","zh":"提示","py":"德尔 提普"},
+      {"de":"der Vorschlag","zh":"建议","py":"德尔 福尔施拉克"},
+      {"de":"die Cafeteria","zh":"自助餐厅","py":"迪 卡费特里亚"},
+      {"de":"die Werkstatt","zh":"修理厂/车间","py":"迪 韦克施塔特"},
+      {"de":"die Ahnung","zh":"头绪/预感","py":"迪 阿农"},
+      {"de":"das Ding","zh":"东西","py":"达斯 丁"},
+      {"de":"die Sache","zh":"事情","py":"迪 扎赫"},
+      {"de":"das Gegenteil","zh":"反面/相反","py":"达斯 格根泰尔"},
+      {"de":"die Menge","zh":"大量","py":"迪 门格"},
+      {"de":"der Rest","zh":"剩余","py":"德尔 雷斯特"},
+      {"de":"das Paar","zh":"一对","py":"达斯 帕尔"},
+      {"de":"das Stück","zh":"块/件","py":"达斯 施蒂克"},
+      {"de":"die Qualität","zh":"质量","py":"迪 克瓦利泰特"},
+      {"de":"das Produkt","zh":"产品","py":"达斯 普罗杜克特"},
+      {"de":"das Paket","zh":"包裹","py":"达斯 帕凯特"},
+      {"de":"die Geldbörse","zh":"钱包","py":"迪 盖尔特伯泽"},
+      {"de":"die Ermäßigung","zh":"优惠/减价","py":"迪 埃尔梅西贡"},
+      {"de":"die Bitte","zh":"请求","py":"迪 比特"},
+      {"de":"die Entschuldigung","zh":"道歉","py":"迪 恩特舒尔迪贡"},
+      {"de":"die Lüge","zh":"谎言","py":"迪 吕格"},
+      {"de":"der Traum","zh":"梦","py":"德尔 特劳姆"},
+      {"de":"der Wunsch","zh":"愿望","py":"德尔 翁什"},
+      {"de":"die Nachricht","zh":"消息","py":"迪 纳赫里希特"},
+      {"de":"die Postkarte","zh":"明信片","py":"迪 波斯特卡尔特"},
+      {"de":"die Zeitung","zh":"报纸","py":"迪 蔡通"},
+      {"de":"die Zeitschrift","zh":"杂志","py":"迪 蔡特施里夫特"},
+      {"de":"das Zentrum","zh":"中心","py":"达斯 岑特鲁姆"},
+      {"de":"die Zahl","zh":"数字","py":"迪 察尔"},
+      {"de":"die Reihe","zh":"排/系列","py":"迪 拉伊厄"},
+      {"de":"das Wiedersehen","zh":"再会","py":"达斯 维德泽恩"},
+      {"de":"die Ferien","zh":"假期","py":"迪 费里恩"},
+      {"de":"die Fundsachen","zh":"失物","py":"迪 丰特扎肯"},
+      {"de":"die Situation","zh":"情况","py":"迪 西图阿齐翁"}
     ]
   }
 ];

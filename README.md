@@ -4,24 +4,17 @@
 
 ## 扩充词汇 & 离线包同步（重要）
 
-**唯一数据源 = `packageData/data/level-{0,a1,a2,b1,b2}.js`。** 加词只改这里：
-
-```js
-// 往对应级别文件里某分类的 phrases 加一行，或新增一个分类对象：
-{ name:'分类名', level:'a1', icon:'🙋', phrases:[
-    { de:'Guten Morgen!', zh:'早上好！', py:'古腾 摩根' },   // ← 新词
-] }
-```
-
-改完跑一次同步脚本，**小程序 + 桌面离线 HTML + 小程序内嵌离线包三处自动一致**：
+**唯一数据源 = 网站仓库 [deutsch-lernen-site](https://github.com/717986230/deutsch-lernen-site) 的 `data/categories.json`。**
+加词、改词都去网站仓库改，小程序这边只同步：
 
 ```bash
-npm run build:offline
+npm run sync:site        # 从网站 main 分支拉词库，重写 packageData/data/level-*.js
+npm run build:offline    # 再生成离线包
 ```
 
-它从 `packageData` 重新生成 `桌面/德语学习手册-明亮版.html` 和 `packageOffline/offline-html.js`。
-> ⚠️ 不要手改这两个产物；HTML 外壳（样式/发音/语法等版块）改 `tools/offline-template.html`。
-> 桌面的「深色原版」HTML 不在管线内，属历史文件。
+`sync:site` 也可以指定本地文件：`npm run sync:site -- ../deutsch-lernen-site/data/categories.json`。
+> ⚠️ `packageData/data/level-*.js`、`packageOffline/offline-html.js` 和桌面明亮版 HTML 都是生成的，不要手改。
+> HTML 外壳（样式/发音/语法等版块）改 `tools/offline-template.html`。
 
 ## 架构总览
 
