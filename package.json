@@ -4,7 +4,8 @@
   "description": "德语学习微信小程序",
   "scripts": {
     "sync:site": "node tools/sync-from-site.js",
-    "build:offline": "node tools/build-offline-html.js"
+    "build:offline": "node tools/build-offline-html.js",
+    "build:counts": "node tools/counts.js"
   },
   "dependencies": {
     "mobx-miniprogram": "^6.12.3",

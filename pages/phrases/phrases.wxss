@@ -110,3 +110,6 @@
 
 /* 全部级别下的引导提示 */
 .cat-hint { font-size: 24rpx; color: #afafaf; padding: 16rpx 4rpx 8rpx; }
+
+/* 分页脚：已加载 X / Y 条 */
+.page-foot { text-align: center; font-size: 24rpx; color: #777777; padding: 28rpx 0 40rpx; }

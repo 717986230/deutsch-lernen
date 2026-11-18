@@ -1,7 +1,7 @@
 /*
  * 自动生成英语词库：从 ECDICT（开源英中词典）抓取，按中国考试等级(中考/高考/四级/六级)筛选，
  * 中文释义直接用，IPA 音标自动转中文谐音，按词性归类。
- * 输出 packageData/data/en-auto.js（与手写 en.js 合并，手写优先）。
+ * 输出 tools/en-data/en-auto.js（与手写 en.js 合并，手写优先）。
  * 用法：node tools/gen-en.js
  */
 const https = require('https')
@@ -10,12 +10,12 @@ const path = require('path')
 const readline = require('readline')
 
 const URL = 'https://raw.githubusercontent.com/skywind3000/ECDICT/master/ecdict.csv'
-const OUT = path.join(__dirname, '..', 'packageData', 'data', 'en-auto.js')
+const OUT = path.join(__dirname, 'en-data', 'en-auto.js')
 
 // 已手写的词（优先保留，自动跳过）
 const handWords = new Set()
 try {
-  require(path.join(__dirname, '..', 'packageData', 'data', 'en.js'))
+  require(path.join(__dirname, 'en-data', 'en.js'))
     .forEach(c => c.phrases.forEach(p => handWords.add(p.de.toLowerCase())))
 } catch (e) {}
 

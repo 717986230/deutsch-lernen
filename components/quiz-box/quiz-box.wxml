@@ -32,6 +32,9 @@
 
   <!-- 底部按钮 -->
   <view class="quiz-actions">
+    <view wx:if="{{answered && showNext}}" class="quiz-btn quiz-btn--next" bindtap="onNext">
+      <text>下一题 →</text>
+    </view>
     <view class="quiz-btn quiz-btn--restart" bindtap="onRestart">
       <text>重新开始</text>
     </view>

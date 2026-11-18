@@ -66,6 +66,7 @@
               score="{{score}}" total="{{total}}"
               question="{{question}}" hint="{{hint}}"
               opts="{{opts}}" showProgress="{{false}}"
-              bind:select="onSelect" bind:restart="onRestart" bind:exit="onExit" />
+              answered="{{answered}}" showNext="{{true}}"
+              bind:select="onSelect" bind:next="onNext" bind:restart="onRestart" bind:exit="onExit" />
   </view>
 </scroll-view>

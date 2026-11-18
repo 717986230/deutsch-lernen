@@ -1,10 +1,12 @@
 const FILE_NAME = 'deutsch-lernen-offline.html'
+const counts = require('../../constants/counts')
 
 Page({
   data: {
     busy: false,
     ready: false,     // HTML 是否已写入本地
     filePath: '',
+    counts, // 生成文件 constants/counts.js
   },
 
   // 异步加载分包里的 HTML 字符串并写入本地文件空间

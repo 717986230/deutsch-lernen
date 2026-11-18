@@ -47,19 +47,21 @@ function search(keyword) {
   var kw = keyword.trim().toLowerCase();
   return loadCategories().then(function (cats) {
     var results = [];
-    cats.forEach(function (cat) {
-      cat.phrases.forEach(function (phrase) {
+    cats.forEach(function (cat, ci) {
+      cat.phrases.forEach(function (phrase, pi) {
         if (
           phrase.de.toLowerCase().indexOf(kw) !== -1 ||
           phrase.zh.indexOf(keyword.trim()) !== -1 ||
           phrase.py.indexOf(keyword.trim()) !== -1
         ) {
           results.push({
+            id: ci + '-' + pi,
             de: phrase.de,
             zh: phrase.zh,
             py: phrase.py,
             cat: cat.name,
-            icon: cat.icon
+            icon: cat.icon,
+            level: cat.level
           });
         }
       });
@@ -69,8 +71,10 @@ function search(keyword) {
 }
 
 /**
- * 拍平所有词句（测验用），给每条词句加稳定 id（`${ci}-${pi}`）
- * @returns {Promise<Array<Phrase & {id}>>}
+ * 拍平所有词句（测验 / 生词本用），给每条词句加稳定 id（`${ci}-${pi}`），
+ * 并带上 level / cat：测验答错要按 id+级别+分类记入生词本，干扰项也要
+ * 按同级别/同分类抽取。
+ * @returns {Promise<Array<Phrase & {id, level, cat}>>}
  */
 function getAllPhrases() {
   return loadCategories().then(function (cats) {
@@ -81,7 +85,9 @@ function getAllPhrases() {
           id: ci + '-' + pi,
           de: phrase.de,
           zh: phrase.zh,
-          py: phrase.py
+          py: phrase.py,
+          level: cat.level,
+          cat: cat.name
         });
       });
     });

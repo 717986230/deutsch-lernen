@@ -1,4 +1,7 @@
 <view class="phrase-card {{_flipped ? 'phrase-card--active' : ''}}" bindtap="onTap">
+  <view class="phrase-card__speak" catchtap="onSpeakTap">
+    <text class="phrase-card__speak-icon">🔊</text>
+  </view>
   <view class="phrase-card__fav" catchtap="onFavTap">
     <text class="phrase-card__fav-icon {{_isFav ? 'phrase-card__fav-icon--on' : ''}}">{{_isFav ? '★' : '☆'}}</text>
   </view>

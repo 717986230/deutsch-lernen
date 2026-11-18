@@ -5,6 +5,21 @@
 
     <!-- 模式选择 -->
     <block wx:if="{{!mode}}">
+      <!-- 出题范围 -->
+      <view class="quiz-opt-label">出题范围</view>
+      <scroll-view class="level-tabs" scroll-x>
+        <view wx:for="{{levelTabs}}" wx:key="key"
+              class="level-tab {{activeLevel === item.key ? 'level-tab-active' : ''}}"
+              bindtap="onLevelTap" data-level="{{item.key}}">{{item.label}}</view>
+      </scroll-view>
+      <!-- 每轮题量 -->
+      <view class="quiz-opt-label">每轮题量</view>
+      <view class="len-row">
+        <view wx:for="{{roundLens}}" wx:key="*this"
+              class="len-btn {{roundLen === item ? 'len-btn-active' : ''}}"
+              bindtap="onLenTap" data-len="{{item}}">{{item}} 题</view>
+      </view>
+
       <view class="mode-grid">
         <view wx:for="{{modes}}" wx:key="key" class="mode-card"
               bindtap="startQuiz" data-mode="{{item.key}}">
@@ -13,17 +28,40 @@
           <view class="mode-desc">{{item.desc}}</view>
         </view>
       </view>
-      <view class="tip-hint">💡 数字测验请前往「数字」页</view>
+      <view class="tip-hint">💡 数字测验请前往「数字」页 · 答错的词自动加入生词本</view>
     </block>
 
     <!-- 测验进行中 -->
     <view wx:elif="{{loading}}" class="loading">题库加载中…</view>
     <view wx:elif="{{loadError}}" class="loading" bindtap="retryLoad">加载失败，点击重试</view>
+    <view wx:elif="{{empty}}" class="loading">该范围暂无此题型，换个出题范围试试
+      <view class="quiz-btn quiz-btn--exit" bindtap="onExit" style="margin-top:32rpx"><text>返回</text></view>
+    </view>
+
+    <!-- 结算页 -->
+    <view wx:elif="{{finished}}" class="result-box">
+      <view style="font-size:64rpx">🎉</view>
+      <view class="result-score">{{score}} / {{total}}（{{pct}}%）</view>
+      <view class="result-msg">{{score / total >= 0.8 ? '太棒了，掌握得很好！' : (score / total >= 0.5 ? '不错，继续加油！' : '多练几遍会更熟练！')}}</view>
+      <view wx:if="{{addedToSrs > 0}}" class="result-note">❌ 答错的 {{wrongList.length}} 个词里，有 {{addedToSrs}} 个已自动加入 📌 生词本，稍后按遗忘曲线复习</view>
+      <view wx:if="{{wrongList.length > 0}}" class="wrong-list">
+        <view class="wrong-title">本轮错题</view>
+        <view wx:for="{{wrongList}}" wx:key="de" class="wrong-item">
+          <text class="wrong-de">{{item.de}}</text>
+          <text class="wrong-zh">{{item.zh}}</text>
+        </view>
+      </view>
+      <view class="quiz-actions" style="margin-top:36rpx">
+        <view class="quiz-btn" bindtap="onRestart"><text>🔁 再来一组</text></view>
+        <view class="quiz-btn quiz-btn--exit" bindtap="onExit"><text>退出</text></view>
+      </view>
+    </view>
 
     <quiz-box wx:else
               score="{{score}}" total="{{total}}"
               question="{{question}}" hint="{{hint}}"
               opts="{{opts}}" showProgress="{{true}}"
-              bind:select="onSelect" bind:restart="onRestart" bind:exit="onExit" />
+              answered="{{answered}}" showNext="{{true}}"
+              bind:select="onSelect" bind:next="onNext" bind:restart="onRestart" bind:exit="onExit" />
   </view>
 </scroll-view>

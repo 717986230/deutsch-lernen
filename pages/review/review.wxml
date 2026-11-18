@@ -1,0 +1,69 @@
+<scroll-view class="page" scroll-y>
+  <view class="container">
+    <view class="hero-label" style="text-align:center;padding-top:40rpx">Wiederholen</view>
+    <view style="text-align:center;font-size:48rpx;font-weight:400;color:#3c3c3c;margin:16rpx 0 40rpx">生词本复习</view>
+
+    <!-- 汇总页 -->
+    <block wx:if="{{stage === 'list'}}">
+      <view class="stat-row">
+        <view class="stat-card">
+          <view class="stat-num">{{counts.due}}</view>
+          <view class="stat-label">今日待复习</view>
+        </view>
+        <view class="stat-card">
+          <view class="stat-num">{{counts.total}}</view>
+          <view class="stat-label">生词总数</view>
+        </view>
+        <view class="stat-card">
+          <view class="stat-num">{{counts.mastered}}</view>
+          <view class="stat-label">已掌握</view>
+        </view>
+      </view>
+      <view class="tip">📌 按遗忘曲线安排复习：看中文先回想，再点「显示答案」自评。答错的词、收藏的生词都会出现在这里。</view>
+      <view wx:if="{{counts.total === 0}}" class="empty">
+        <view style="font-size:64rpx">📌</view>
+        <view class="empty-text">生词本还是空的。去「词句」页点 ☆ 收藏要记的词，或做测验——答错的词会自动进来。</view>
+        <view class="btn-primary" bindtap="onBack"><text>去词句页看看</text></view>
+      </view>
+      <view wx:else>
+        <view wx:if="{{counts.due > 0}}" class="btn-primary" bindtap="startReview"><text>▶ 开始复习（{{counts.due}} 个到期）</text></view>
+        <view wx:else class="done-hint">🎉 今日复习完成！暂时没有到期的生词，明天再来。</view>
+        <view class="btn-secondary" bindtap="startReview" data-all="1"><text>🔁 练习全部生词（{{counts.total}} 个）</text></view>
+      </view>
+    </block>
+
+    <!-- 答题卡：主动回忆 -->
+    <block wx:elif="{{stage === 'card'}}">
+      <view class="progress">还剩 {{remaining}} 个 · 已复习 {{doneCount}}</view>
+      <view class="progress-bar"><view class="progress-fill" style="width: {{progressPct}}%;"></view></view>
+
+      <view class="recall-card">
+        <view class="recall-zh">{{current.zh}}</view>
+        <view wx:if="{{!revealed}}" class="recall-hint">先在心里回想德语怎么说……</view>
+        <block wx:if="{{revealed}}">
+          <view class="recall-de">{{current.de}}
+            <view class="speak-btn" catchtap="onSpeak"><text class="speak-btn-icon">🔊</text></view>
+          </view>
+          <view wx:if="{{current.py}}" class="recall-py">谐音参考：{{current.py}}</view>
+          <view wx:if="{{current.cat}}" class="recall-meta">{{current.cat}}</view>
+          <view class="grade-row">
+            <view class="grade-btn grade-forgot" bindtap="onGrade" data-grade="0"><text>忘了</text></view>
+            <view class="grade-btn grade-fuzzy" bindtap="onGrade" data-grade="1"><text>模糊</text></view>
+            <view class="grade-btn grade-known" bindtap="onGrade" data-grade="2"><text>记住了</text></view>
+          </view>
+        </block>
+        <view wx:if="{{!revealed}}" class="btn-primary" bindtap="onReveal"><text>显示答案</text></view>
+      </view>
+    </block>
+
+    <!-- 完成页 -->
+    <block wx:elif="{{stage === 'done'}}">
+      <view class="done-box">
+        <view style="font-size:64rpx">✅</view>
+        <view class="done-title">这轮复习完成！</view>
+        <view class="done-text">记住的词复习间隔会拉长，忘了的词很快会再出现。每天来一次，效果最好。</view>
+        <view class="btn-primary" bindtap="onBack"><text>返回</text></view>
+      </view>
+    </block>
+  </view>
+</scroll-view>

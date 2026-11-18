@@ -1,5 +1,6 @@
 const { store } = require('../../stores/learning-store')
 const analytics = require('../../services/analytics-service')
+const tts = require('../../services/tts-service')
 
 Component({
   properties: {
@@ -55,6 +56,11 @@ Component({
       store.toggleFavorite(favId)
       try { analytics.track(analytics.EVENTS.FAVORITE_TOGGLE, { favId, on: !isFav }) } catch (e) {}
       this.setData({ _isFav: !isFav })
+    },
+
+    // 朗读德语（catchtap，不触发翻卡）
+    onSpeakTap(e) {
+      try { tts.speak(this.properties.de) } catch (e) {}
     }
   }
 })

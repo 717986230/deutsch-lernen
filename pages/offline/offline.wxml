@@ -2,7 +2,7 @@
   <view class="container">
     <view class="ico">📥</view>
     <view class="title">下载离线学习包</view>
-    <view class="sub">把完整版德语学习手册（发音·数字·语法·2977 词句·测验）导出为一个 HTML 文件，存到手机后无网也能学。</view>
+    <view class="sub">把完整版德语学习手册（发音·数字·语法·{{counts.phraseCount}} 词句·测验）导出为一个 HTML 文件，存到手机后无网也能学。</view>
 
     <view class="card">
       <view class="card-row"><text class="dot">①</text><text>点下方「导出离线网页」</text></view>
@@ -13,7 +13,7 @@
 
     <view class="btn {{busy ? 'btn-disabled' : ''}}" bindtap="onExport">{{busy ? '处理中…' : '导出离线网页'}}</view>
 
-    <view class="tip">💡 该网页完全离线、自包含，无需联网；约 280KB，几乎不占空间。</view>
+    <view class="tip">💡 该网页完全离线、自包含，无需联网，几乎不占空间。</view>
     <view class="tip2">提示：微信不能直接存到手机「下载」文件夹，需经聊天中转，这是平台规则。</view>
   </view>
 </scroll-view>

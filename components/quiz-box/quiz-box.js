@@ -5,13 +5,19 @@ Component({
     question: { type: String, value: '' },
     hint: { type: String, value: '' },
     opts: { type: Array, value: [] },
-    showProgress: { type: Boolean, value: false }
+    showProgress: { type: Boolean, value: false },
+    // 答完题后由页面置 true，显示「下一题」按钮（不再自动跳题）
+    answered: { type: Boolean, value: false },
+    showNext: { type: Boolean, value: false }
   },
 
   methods: {
     onSelect(e) {
       const index = e.currentTarget.dataset.index
       this.triggerEvent('select', { index })
+    },
+    onNext() {
+      this.triggerEvent('next', {})
     },
     onRestart() {
       this.triggerEvent('restart', {})

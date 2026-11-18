@@ -53,7 +53,13 @@ Page({
       total: this.data.total + 1,
       score: this.data.score + (isCorrect ? 1 : 0),
     })
-    this._nextTimer = setTimeout(() => this._nextQ(), 1200)
+    // 不再 1.2 秒自动跳题：答完停住，等用户点「下一题」
+  },
+
+  // 答完后手动下一题
+  onNext() {
+    if (!this.data.answered) return
+    this._nextQ()
   },
 
   onRestart() {
@@ -62,15 +68,10 @@ Page({
   },
 
   onExit() {
-    if (this._nextTimer) { clearTimeout(this._nextTimer); this._nextTimer = null }
     this.setData({ mode: '' })
   },
 
-  onUnload() {
-    if (this._nextTimer) { clearTimeout(this._nextTimer); this._nextTimer = null }
-  },
+  onUnload() {},
 
-  onHide() {
-    if (this._nextTimer) { clearTimeout(this._nextTimer); this._nextTimer = null }
-  },
+  onHide() {},
 })

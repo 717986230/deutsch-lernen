@@ -16,6 +16,8 @@ const EVENTS = {
   FAVORITE_TOGGLE:'favorite_toggle', // 收藏/取消收藏
   SEARCH:         'search',          // 搜索
   LEVEL_SWITCH:   'level_switch',    // 级别切换
+  REVIEW_START:   'review_start',    // 开始一轮生词复习
+  REVIEW_GRADE:   'review_grade',    // 复习自评（0 忘了 / 1 模糊 / 2 记住了）
 }
 
 // ── 配置 ──────────────────────────────────────────────────

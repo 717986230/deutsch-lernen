@@ -24,15 +24,8 @@ const DESKTOP_OUT = path.join(os.homedir(), 'Desktop', '德语学习手册-明�
 function build() {
   const { getCategories } = require(path.join(ROOT, 'packageData', 'data', 'index.js'))
   const categories = getCategories()
-  const catCount = categories.length
-  const phraseCount = categories.reduce((s, c) => s + c.phrases.length, 0)
-
-  // 各级别分类数 / 词句数（首页计数的唯一数据源，避免写死过期）
-  const byLevel = {}
-  categories.forEach(c => {
-    const k = byLevel[c.level] || (byLevel[c.level] = { c: 0, p: 0 })
-    k.c++; k.p += c.phrases.length
-  })
+  // 计数走单一来源 tools/counts.js（首页/词句页/离线页共读同一份数据）
+  const { phraseCount, catCount, byLevel } = require('./counts').getCounts()
 
   let tpl = fs.readFileSync(TEMPLATE, 'utf8')
   if (!tpl.includes('/*__CATEGORIES__*/')) {
@@ -52,12 +45,14 @@ function build() {
   let html = tpl.replace('/*__CATEGORIES__*/', () => injected)
 
   // 注入英语词库：手写 en.js（优先）+ 自动 en-auto.js（ECDICT 生成）
+  // 英语数据已移出 packageData 分包（小程序内从不引用，白占 474KB），
+  // 只在构建离线包时从 tools/en-data/ 读。
   try {
-    const enPath = path.join(__dirname, '..', 'packageData', 'data', 'en.js')
+    const enPath = path.join(__dirname, 'en-data', 'en.js')
     delete require.cache[require.resolve(enPath)]
     let enCats = require(enPath)
     try {
-      const autoPath = path.join(__dirname, '..', 'packageData', 'data', 'en-auto.js')
+      const autoPath = path.join(__dirname, 'en-data', 'en-auto.js')
       delete require.cache[require.resolve(autoPath)]
       const autoCats = require(autoPath)
       enCats = enCats.concat(autoCats)

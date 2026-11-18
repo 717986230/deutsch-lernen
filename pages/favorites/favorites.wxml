@@ -4,22 +4,41 @@
     <text class="fav-loading-text">加载中…</text>
   </view>
 
-  <!-- Empty state -->
-  <view wx:elif="{{list.length === 0}}" class="fav-empty">
-    <text class="fav-empty-icon">☆</text>
-    <text class="fav-empty-text">还没有收藏，去词句页点 ☆ 收藏吧</text>
+  <!-- 加载失败（与空态分离：失败给重试，不再误显示“还没有收藏”） -->
+  <view wx:elif="{{loadError}}" class="fav-error">
+    <text class="fav-error-icon">⚠️</text>
+    <text class="fav-error-text">加载失败，请检查网络后重试</text>
+    <view class="fav-retry" bindtap="retryLoad"><text>点击重试</text></view>
   </view>
 
-  <!-- List -->
-  <view wx:else class="fav-list">
-    <view class="fav-header">
-      <text class="fav-header-text">共 {{list.length}} 条收藏</text>
+  <block wx:else>
+    <!-- 今日待复习入口（生词本 SRS） -->
+    <view wx:if="{{srsCounts.total > 0}}" class="srs-card" bindtap="goReview">
+      <view class="srs-card-left">
+        <text class="srs-card-title">📌 今日待复习 {{srsCounts.due}} 个</text>
+        <text class="srs-card-sub">生词 {{srsCounts.total}} 个 · 已掌握 {{srsCounts.mastered}} 个，点击开始复习 →</text>
+      </view>
+      <text class="srs-card-arrow">›</text>
     </view>
-    <view wx:for="{{list}}" wx:key="favId" class="fav-item">
-      <phrase-card de="{{item.de}}" zh="{{item.zh}}" py="{{item.py}}" />
-      <view class="fav-remove" data-favid="{{item.favId}}" bindtap="onUnfav">
-        <text class="fav-remove-text">取消收藏</text>
+
+    <!-- Empty state -->
+    <view wx:if="{{list.length === 0}}" class="fav-empty">
+      <text class="fav-empty-icon">☆</text>
+      <text class="fav-empty-text">还没有收藏，去词句页点 ☆ 收藏吧</text>
+    </view>
+
+    <!-- List -->
+    <view wx:else class="fav-list">
+      <view class="fav-header">
+        <text class="fav-header-text">共 {{list.length}} 条收藏</text>
+        <text class="fav-add-srs" bindtap="addAllToSrs">＋ 全部加入生词本</text>
+      </view>
+      <view wx:for="{{list}}" wx:key="favId" class="fav-item">
+        <phrase-card de="{{item.de}}" zh="{{item.zh}}" py="{{item.py}}" />
+        <view class="fav-remove" data-favid="{{item.favId}}" bindtap="onUnfav">
+          <text class="fav-remove-text">取消收藏</text>
+        </view>
       </view>
     </view>
-  </view>
+  </block>
 </view>
